@@ -36,7 +36,7 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Features Section */}
-      <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-black/80 to-gray-900/80">
+      <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-black/80 to-gray-900/80 dark:bg-clip-text">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-foreground text-gray-400">Powerful Features for Modern Teams</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,7 +63,7 @@ export default function Home() {
             <FeatureCard
               icon={<Headset className="h-10 w-10 text-purple-400" />}
               title="Customer Support Integration"
-              description="Seamlessly assist customers by viewing their browser session with permission"
+              description="Seamlessly guide and assist customers directly within their browser session"
             />
             <FeatureCard
               icon={<Pipeline className="h-10 w-10 text-cyan-400" />}
