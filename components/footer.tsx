@@ -28,8 +28,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Product</h3>
+          <div className="text-foreground">
+            <h3 className="text-lg font-semibold mb-6 text-white">Product</h3>
             <ul className="space-y-4">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-6">Resources</h3>
+            <h3 className="text-lg font-semibold mb-6 text-white">Resources</h3>
             <ul className="space-y-4">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">
@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-6">Company</h3>
+            <h3 className="text-lg font-semibold mb-6 text-white">Company</h3>
             <ul className="space-y-4">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">

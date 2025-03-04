@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Cyqle - Collaborative Cloud Browser with AI Automation",
   description: "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

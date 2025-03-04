@@ -17,7 +17,7 @@ export default function ParallaxBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-40 overflow-hidden">
+    <div className="fixed inset-0 -z-10 overflow-hidden">
       <div
         ref={backgroundRef}
         className="absolute inset-0"

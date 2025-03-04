@@ -8,7 +8,7 @@ import Footer from "@/components/footer"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-transparent text-white overflow-hidden">
+    <div className="min-h-screen bg-transparent text-foreground overflow-hidden">
       <ParallaxBackground />
       <Navbar />
 
@@ -18,7 +18,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-cyan-500 to-purple-600 mb-6">
             The Collaborative Cloud Browser
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mb-10">
+          <p className="text-xl md:text-2xl max-w-3xl mb-10 text-orange-400 font-semibold">
             Supercharge your team's workflow with AI-powered automation in a collaborative browser environment
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -28,7 +28,7 @@ export default function Home() {
             >
               Get Started <ChevronRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="border-gray-700 hover:bg-gray-800">
+            <Button size="lg" variant="outline" className="border-gray-700">
               Book a Demo
             </Button>
           </div>
@@ -38,7 +38,7 @@ export default function Home() {
       {/* Features Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-black/80 to-gray-900/80">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Powerful Features for Modern Teams</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-foreground text-gray-400">Powerful Features for Modern Teams</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
               icon={<Bot className="h-10 w-10 text-purple-400" />}
@@ -142,7 +142,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold">AI-Powered Automation That Learns</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-300 dark:text-foreground">AI-Powered Automation That Learns</h2>
               <p className="text-gray-300 text-lg">
                 Cyqle's intelligent AI observes your team's actions and automates repetitive tasks, saving hours of
                 manual work.
@@ -207,10 +207,10 @@ export default function Home() {
                 key={index}
                 className="bg-gray-900/50 p-8 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all duration-300"
               >
-                <p className="text-gray-300 mb-6 italic">"{testimonial.quote}"</p>
+                <p className="text-white dark:text-gray-300 mb-6 italic">"{testimonial.quote}"</p>
                 <div>
-                  <p className="font-semibold">{testimonial.author}</p>
-                  <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                  <p className="font-semibold text-white">{testimonial.author}</p>
+                  <p className="text-gray-100 text-sm">{testimonial.role}</p>
                 </div>
               </div>
             ))}
@@ -222,7 +222,7 @@ export default function Home() {
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-r from-purple-900/30 to-cyan-900/30">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Team's Workflow?</h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+          <p className="text-xl dark:text-gray-300 text-white max-w-3xl mx-auto mb-10">
             Join the growing number of teams using Cyqle to collaborate, automate, and innovate.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -232,13 +232,13 @@ export default function Home() {
             >
               Start Free Trial
             </Button>
-            <Button size="lg" variant="outline" className="border-gray-700 hover:bg-gray-800">
+            <Button size="lg" variant="outline" className="border-gray-700 hover:bg-gray-800 hover:text-gray-100">
               Schedule Demo
             </Button>
           </div>
           <div className="mt-10 flex items-center justify-center">
-            <Lock className="h-5 w-5 text-gray-400 mr-2" />
-            <p className="text-gray-400">14-day free trial. No credit card required.</p>
+            <Lock className="h-5 w-5 dark:text-gray-400 text-gray-600 mr-2" />
+            <p className="dark:text-gray-400 text-gray-600">14-day free trial. No credit card required.</p>
           </div>
         </div>
       </AnimatedSection>

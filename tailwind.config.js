@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const { themeVariants, prefersLight, prefersDark } = require("tailwindcss-theme-variants");
+
 module.exports = {
   darkMode: ["class"],
   content: [
@@ -18,7 +20,7 @@ module.exports = {
     },
     extend: {
       zIndex: {
-        '-10': '-10',
+        "-10": "-10",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -76,6 +78,17 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
-
+  plugins: [
+    require("tailwindcss-animate"),
+    themeVariants({
+      themes: {
+        light: {
+          mediaQuery: prefersLight /* "@media (prefers-color-scheme: light)" */,
+        },
+        dark: {
+          mediaQuery: prefersDark /* "@media (prefers-color-scheme: dark)" */,
+        },
+      },
+    }),
+  ],
+};
