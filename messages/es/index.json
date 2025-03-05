@@ -1,62 +1,62 @@
 {
   "metadata": {
-    "title": "Cyqle - Navegador Colaborativo en la Nube con Automatización IA",
-    "description": "Potencia el flujo de trabajo de tu equipo con automatización impulsada por IA en un entorno de navegador colaborativo"
+    "title": "Cyqle - Navegador colaborativo en la nube con automatización de IA",
+    "description": "Impulsa el flujo de trabajo de tu equipo con automatización potenciada por IA en un entorno de navegador colaborativo"
   },
   "navbar": {
     "features": "Características",
-    "useCases": "Casos de Uso",
+    "useCases": "Casos de uso",
     "pricing": "Precios",
     "about": "Acerca de",
-    "signIn": "Iniciar Sesión",
-    "getStarted": "Comenzar Ahora"
+    "signIn": "Iniciar sesión",
+    "getStarted": "Empezar"
   },
   "hero": {
-    "title": "El Navegador Colaborativo en la Nube",
-    "description": "Potencia el flujo de trabajo de tu equipo con automatización impulsada por IA en un entorno de navegador colaborativo",
-    "getStarted": "Comenzar Ahora",
-    "bookDemo": "Reservar Demo"
+    "title": "Navegador Colaborativo Inteligente",
+    "description": "Impulsa el flujo de trabajo de tu equipo con automatización potenciada por IA en un entorno de navegador colaborativo",
+    "getStarted": "Empezar",
+    "bookDemo": "Reservar demo"
   },
   "features": {
-    "title": "Potentes Características para Equipos Modernos",
+    "title": "Características potentes para equipos modernos",
     "aiAutomation": {
-      "title": "Automatización con IA",
-      "description": "Automatiza tareas repetitivas con IA que aprende de las acciones de tu equipo"
+      "title": "Automatización impulsada por IA",
+      "description": "Automatiza tareas repetitivas con una IA que aprende de las acciones de tu equipo"
     },
     "cloudNative": {
-      "title": "Navegador Nativo en la Nube",
+      "title": "Navegador nativo en la nube",
       "description": "Accede a tu entorno de navegación desde cualquier lugar, con todas tus herramientas y configuraciones intactas"
     },
     "collaboration": {
-      "title": "Colaboración en Tiempo Real",
-      "description": "Trabaja junto con múltiples miembros del equipo simultáneamente en la misma sesión de navegador"
+      "title": "Colaboración en tiempo real",
+      "description": "Trabaja junto con otros miembros del equipo en la misma sesión de navegador, al mismo tiempo"
     },
     "testing": {
-      "title": "Herramientas Avanzadas de Pruebas",
-      "description": "Realiza pruebas en múltiples entornos y configuraciones con un solo clic"
+      "title": "Herramientas de prueba avanzadas",
+      "description": "Prueba en múltiples entornos y configuraciones con un solo clic"
     },
     "support": {
-      "title": "Integración de Soporte al Cliente",
-      "description": "Guía y asiste a los clientes de manera fluida directamente en su sesión de navegador"
+      "title": "Integración de soporte al cliente",
+      "description": "Guía y asiste a los clientes directamente en su sesión de navegador de manera fluida"
     },
     "pipelines": {
-      "title": "Canalizaciones Personalizables",
+      "title": "Tuberías personalizables",
       "description": "Crea y optimiza flujos de trabajo para cualquier proceso"
     }
   },
   "useCases": {
-    "title": "Diseñado para Cada Equipo",
+    "title": "Diseñado para cada equipo",
     "development": {
-      "title": "Equipos de Desarrollo",
-      "description": "Colabora en código, prueba funcionalidades y resuelve problemas juntos en tiempo real."
+      "title": "Equipos de desarrollo",
+      "description": "Colabora en código, prueba características y depura problemas juntos en tiempo real."
     },
     "qa": {
-      "title": "QA y Pruebas",
-      "description": "Automatiza escenarios de prueba y comparte resultados instantáneamente con tu equipo."
+      "title": "QA y pruebas",
+      "description": "Automatiza escenarios de prueba y comparte los resultados al instante con tu equipo."
     },
     "customerSupport": {
-      "title": "Soporte al Cliente",
-      "description": "Ve lo que tus clientes ven y guíalos a través de soluciones sin esfuerzo."
+      "title": "Soporte al cliente",
+      "description": "Ver lo que ven tus clientes y guiarlos a través de soluciones de manera fluida."
     },
     "operations": {
       "title": "Operaciones",
@@ -64,53 +64,53 @@
     }
   },
   "aiSection": {
-    "title": "Automatización con IA que Aprende",
+    "title": "Automatización potenciada por IA que aprende",
     "description": "La IA de Cyqle observa las acciones de tu equipo y automatiza tareas repetitivas, ahorrando horas de trabajo manual.",
     "items": [
-      "Graba y reproduce interacciones complejas del navegador",
-      "La IA sugiere oportunidades de automatización basadas en patrones",
-      "Programa tareas automatizadas para ejecutarse en momentos específicos",
-      "Comparte scripts de automatización en toda tu organización",
-      "Integra con tus herramientas y flujos de trabajo existentes"
+      "Grabar y reproducir interacciones complejas en el navegador",
+      "IA sugiere oportunidades de automatización basadas en patrones",
+      "Programar tareas automatizadas para que se ejecuten en momentos específicos",
+      "Compartir scripts de automatización en toda la organización",
+      "Integrar con tus herramientas y flujos de trabajo existentes"
     ],
-    "exploreFeatures": "Explorar Funciones de IA"
+    "exploreFeatures": "Explorar características de IA"
   },
   "testimonials": {
-    "title": "Confiado por Equipos Innovadores",
+    "title": "Confiado por equipos innovadores",
     "items": [
       {
-        "quote": "Cyqle ha transformado la forma en que nuestro equipo de soporte ayuda a los clientes. Hemos reducido los tiempos de resolución en un 40%.",
+        "quote": "Cyqle ha transformado la forma en que nuestro equipo de soporte asiste a los clientes. Hemos reducido los tiempos de resolución en un 40%.",
         "author": "Sarah Johnson",
         "role": "Jefa de Éxito del Cliente, TechCorp"
       },
       {
-        "quote": "Las capacidades de automatización con IA han ahorrado a nuestro equipo de QA innumerables horas de pruebas repetitivas. ¡Un cambio radical!",
+        "quote": "Las capacidades de automatización de IA han ahorrado a nuestro equipo de QA innumerables horas de pruebas repetitivas. Un cambio de juego!",
         "author": "Michael Chen",
         "role": "Líder de QA, InnovateSoft"
       },
       {
-        "quote": "Nuestros equipos de desarrollo y operaciones ahora trabajan en perfecta sincronía gracias al entorno colaborativo de Cyqle.",
-        "author": "Alex Rodriguez",
+        "quote": "Nuestros equipos de desarrollo y operaciones ahora trabajan en perfecta sincronización gracias al entorno colaborativo de Cyqle.",
+        "author": "Alex Rodríguez",
         "role": "CTO, FutureTech"
       }
     ]
   },
   "cta": {
-    "title": "¿Listo para Transformar el Flujo de Trabajo de tu Equipo?",
+    "title": "¿Listo para transformar el flujo de trabajo de tu equipo?",
     "description": "Únete al creciente número de equipos que utilizan Cyqle para colaborar, automatizar e innovar.",
-    "startTrial": "Iniciar Prueba Gratuita",
-    "scheduleDemo": "Programar Demo",
+    "startTrial": "Iniciar prueba gratuita",
+    "scheduleDemo": "Programar demo",
     "trialInfo": "Prueba gratuita de 14 días. No se requiere tarjeta de crédito."
   },
   "footer": {
-    "description": "El navegador colaborativo en la nube con automatización impulsada por IA para equipos modernos.",
+    "description": "El navegador colaborativo en la nube con automatización potenciada por IA para equipos modernos.",
     "product": {
       "title": "Producto",
       "features": "Características",
-      "useCases": "Casos de Uso",
+      "useCases": "Casos de uso",
       "pricing": "Precios",
       "integrations": "Integraciones",
-      "roadmap": "Plan de Desarrollo"
+      "roadmap": "Hoja de ruta"
     },
     "resources": {
       "title": "Recursos",
@@ -121,7 +121,7 @@
       "api": "API"
     },
     "company": {
-      "title": "Empresa",
+      "title": "Compañía",
       "about": "Acerca de",
       "careers": "Carreras",
       "contact": "Contacto",
@@ -129,8 +129,8 @@
       "terms": "Términos"
     },
     "copyright": "© {year} Cyqle. Todos los derechos reservados.",
-    "privacyPolicy": "Política de Privacidad",
-    "termsOfService": "Términos de Servicio",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio",
     "cookies": "Cookies"
   }
 }
