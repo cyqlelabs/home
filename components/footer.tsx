@@ -13,11 +13,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16">
           <div className="col-span-1 md:col-span-1">
             <a href="#" className="text-2xl font-bold text-white flex items-center mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-400">Cyqle</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-400">
+                Cyqle
+              </span>
             </a>
-            <p className="text-gray-400 mb-6">
-              {t('footer.description')}
-            </p>
+            <p className="text-gray-400 mb-6">{t('footer.description')}</p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="h-5 w-5" />

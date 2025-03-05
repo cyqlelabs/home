@@ -17,7 +17,9 @@ export default function FeatureCard({ icon, title, description, className }: Fea
       )}
     >
       <div className="mb-5">{icon}</div>
-      <h3 className="text-xl dark:text-foreground text-gray-300 font-semibold mb-3 group-hover:text-purple-400 transition-colors">{title}</h3>
+      <h3 className="text-xl dark:text-foreground text-gray-300 font-semibold mb-3 group-hover:text-purple-400 transition-colors">
+        {title}
+      </h3>
       <p className="text-gray-400">{description}</p>
     </div>
   );

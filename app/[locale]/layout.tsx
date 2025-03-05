@@ -20,16 +20,14 @@ export function generateMetadata({ params: { locale } }: Omit<Props, 'children'>
       template: '%s | Cyqle',
       default: 'Cyqle - Collaborative Cloud Browser with AI Automation',
     },
-    description: 'Supercharge your team\'s workflow with AI-powered automation in a collaborative browser environment',
+    description:
+      "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment",
   };
 }
 
 const locales = ['en', 'es'];
 
-export default async function RootLayout({
-  children,
-  params: { locale },
-}: Props) {
+export default async function RootLayout({ children, params: { locale } }: Props) {
   // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale)) notFound();
 
@@ -49,9 +47,7 @@ export default async function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider>
-          <LanguageProvider messages={messages}>
-            {children}
-          </LanguageProvider>
+          <LanguageProvider messages={messages}>{children}</LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

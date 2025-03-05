@@ -6,15 +6,12 @@ import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const NavigationMenu = React.forwardRef<
-React.ElementRef<typeof NavigationMenuPrimitive.Root>,
-React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root>
+  React.ElementRef<typeof NavigationMenuPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root>
 >(({ className, children, ...props }, ref) => (
   <NavigationMenuPrimitive.Root
     ref={ref}
-    className={cn(
-      'relative z-10 flex max-w-max flex-1 items-center justify-center',
-      className,
-    )}
+    className={cn('relative z-10 flex max-w-max flex-1 items-center justify-center', className)}
     {...props}
   >
     {children}
@@ -24,15 +21,12 @@ React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root>
 NavigationMenu.displayName = NavigationMenuPrimitive.Root.displayName;
 
 const NavigationMenuList = React.forwardRef<
-React.ElementRef<typeof NavigationMenuPrimitive.List>,
-React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.List>
+  React.ElementRef<typeof NavigationMenuPrimitive.List>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.List>
 >(({ className, ...props }, ref) => (
   <NavigationMenuPrimitive.List
     ref={ref}
-    className={cn(
-      'group flex flex-1 list-none items-center justify-center space-x-1',
-      className,
-    )}
+    className={cn('group flex flex-1 list-none items-center justify-center space-x-1', className)}
     {...props}
   />
 ));
@@ -45,8 +39,8 @@ const navigationMenuTriggerStyle = cva(
 );
 
 const NavigationMenuTrigger = React.forwardRef<
-React.ElementRef<typeof NavigationMenuPrimitive.Trigger>,
-React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Trigger>
+  React.ElementRef<typeof NavigationMenuPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
   <NavigationMenuPrimitive.Trigger
     ref={ref}
@@ -63,8 +57,8 @@ React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Trigger>
 NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName;
 
 const NavigationMenuContent = React.forwardRef<
-React.ElementRef<typeof NavigationMenuPrimitive.Content>,
-React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Content>
+  React.ElementRef<typeof NavigationMenuPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Content>
 >(({ className, ...props }, ref) => (
   <NavigationMenuPrimitive.Content
     ref={ref}
@@ -80,8 +74,8 @@ NavigationMenuContent.displayName = NavigationMenuPrimitive.Content.displayName;
 const NavigationMenuLink = NavigationMenuPrimitive.Link;
 
 const NavigationMenuViewport = React.forwardRef<
-React.ElementRef<typeof NavigationMenuPrimitive.Viewport>,
-React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
+  React.ElementRef<typeof NavigationMenuPrimitive.Viewport>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
 >(({ className, ...props }, ref) => (
   <div className={cn('absolute left-0 top-full flex justify-center')}>
     <NavigationMenuPrimitive.Viewport
@@ -94,12 +88,11 @@ React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
     />
   </div>
 ));
-NavigationMenuViewport.displayName =
-  NavigationMenuPrimitive.Viewport.displayName;
+NavigationMenuViewport.displayName = NavigationMenuPrimitive.Viewport.displayName;
 
 const NavigationMenuIndicator = React.forwardRef<
-React.ElementRef<typeof NavigationMenuPrimitive.Indicator>,
-React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Indicator>
+  React.ElementRef<typeof NavigationMenuPrimitive.Indicator>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Indicator>
 >(({ className, ...props }, ref) => (
   <NavigationMenuPrimitive.Indicator
     ref={ref}
@@ -112,8 +105,7 @@ React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Indicator>
     <div className="relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm bg-border shadow-md" />
   </NavigationMenuPrimitive.Indicator>
 ));
-NavigationMenuIndicator.displayName =
-  NavigationMenuPrimitive.Indicator.displayName;
+NavigationMenuIndicator.displayName = NavigationMenuPrimitive.Indicator.displayName;
 
 export {
   navigationMenuTriggerStyle,
