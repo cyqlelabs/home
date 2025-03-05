@@ -4,11 +4,14 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Moon, Sun } from "lucide-react"
 import { useTheme } from "@/components/theme-provider"
+import { useTranslations } from "@/components/language-provider"
+import LanguageSwitcher from "@/components/language-switcher"
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
+  const t = useTranslations()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,33 +39,35 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#" className={`dark:text-gray-300 ${isScrolled && theme !== "dark" ? "text-white" : "text-gray-500"} hover:opacity-75 transition-colors`}>
-              Features
+              {t('navbar.features')}
             </a>
             <a href="#" className={`dark:text-gray-300 ${isScrolled && theme !== "dark" ? "text-white" : "text-gray-500"} hover:opacity-75 transition-colors`}>
-              Use Cases
+              {t('navbar.useCases')}
             </a>
             <a href="#" className={`dark:text-gray-300 ${isScrolled && theme !== "dark" ? "text-white" : "text-gray-500"} hover:opacity-75 transition-colors`}> 
-              Pricing
+              {t('navbar.pricing')}
             </a>
             <a href="#" className={`dark:text-gray-300 ${isScrolled && theme !== "dark" ? "text-white" : "text-gray-500"} hover:opacity-75 transition-colors`}>
-              About
+              {t('navbar.about')}
             </a>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher />
             {/* <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}> */}
             {/*   {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className={`h-5 w-5 ${isScrolled && "text-gray-300"}`} />} */}
             {/* </Button> */}
             <Button variant="ghost" className={`dark:text-gray-300 hover:text-foreground ${isScrolled && theme !== "dark" ? "text-white" : "text-gray-500"}`}>
-              Sign In
+              {t('navbar.signIn')}
             </Button>
             <Button className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700">
-              Get Started
+              {t('navbar.getStarted')}
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center space-x-4">
+            <LanguageSwitcher />
             {/* <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}> */}
             {/*   {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className={`h-5 w-5 ${isScrolled && "text-gray-300"}`} />} */}
             {/* </Button> */}
@@ -79,23 +84,23 @@ export default function Navbar() {
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col space-y-4">
               <a href="#" className={`dark:text-gray-300 ${theme !== "dark" ? "text-white" : "text-gray-500"} hover:opacity-75 transition-colors py-2`}>
-                Features
+                {t('navbar.features')}
               </a>
               <a href="#" className={`dark:text-gray-300 ${theme !== "dark" ? "text-white" : "text-gray-500"} hover:opacity-75 transition-colors py-2`}>
-                Use Cases
+                {t('navbar.useCases')}
               </a>
               <a href="#" className={`dark:text-gray-300 ${theme !== "dark" ? "text-white" : "text-gray-500"} hover:opacity-75 transition-colors py-2`}>
-                Pricing
+                {t('navbar.pricing')}
               </a>
               <a href="#" className={`dark:text-gray-300 ${theme !== "dark" ? "text-white" : "text-gray-500"} hover:opacity-75 transition-colors py-2`}>
-                About
+                {t('navbar.about')}
               </a>
               <div className="pt-4 flex flex-col space-y-3">
                 <Button variant="outline" className="w-full justify-center">
-                  Sign In
+                  {t('navbar.signIn')}
                 </Button>
                 <Button className="w-full justify-center bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700">
-                  Get Started
+                  {t('navbar.getStarted')}
                 </Button>
               </div>
             </nav>

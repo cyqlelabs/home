@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "title": "Cyqle - Collaborative Cloud Browser with AI Automation",
+    "description": "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment"
+  },
+  "navbar": {
+    "features": "Features",
+    "useCases": "Use Cases",
+    "pricing": "Pricing",
+    "about": "About",
+    "signIn": "Sign In",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "The Collaborative Cloud Browser",
+    "description": "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment",
+    "getStarted": "Get Started",
+    "bookDemo": "Book a Demo"
+  },
+  "features": {
+    "title": "Powerful Features for Modern Teams",
+    "aiAutomation": {
+      "title": "AI-Powered Automation",
+      "description": "Automate repetitive tasks with intelligent AI that learns from your team's actions"
+    },
+    "cloudNative": {
+      "title": "Cloud-Native Browser",
+      "description": "Access your browsing environment from anywhere, with all your tools and settings intact"
+    },
+    "collaboration": {
+      "title": "Real-Time Collaboration",
+      "description": "Work together in the same browser session with multiple team members simultaneously"
+    },
+    "testing": {
+      "title": "Advanced Testing Tools",
+      "description": "Test across multiple environments and configurations with a single click"
+    },
+    "support": {
+      "title": "Customer Support Integration",
+      "description": "Seamlessly guide and assist customers directly within their browser session"
+    },
+    "pipelines": {
+      "title": "Customizable Pipelines",
+      "description": "Create and optimize workflows for any process"
+    }
+  },
+  "useCases": {
+    "title": "Designed for Every Team",
+    "development": {
+      "title": "Development Teams",
+      "description": "Collaborate on code, test features, and debug issues together in real-time."
+    },
+    "qa": {
+      "title": "QA & Testing",
+      "description": "Automate test scenarios and share results instantly with your team."
+    },
+    "customerSupport": {
+      "title": "Customer Support",
+      "description": "See what your customers see and guide them through solutions effortlessly."
+    },
+    "operations": {
+      "title": "Operations",
+      "description": "Build and optimize workflows with AI assistance."
+    }
+  },
+  "aiSection": {
+    "title": "AI-Powered Automation That Learns",
+    "description": "Cyqle's intelligent AI observes your team's actions and automates repetitive tasks, saving hours of manual work.",
+    "items": [
+      "Record and replay complex browser interactions",
+      "AI suggests automation opportunities based on patterns",
+      "Schedule automated tasks to run at specific times",
+      "Share automation scripts across your organization",
+      "Integrate with your existing tools and workflows"
+    ],
+    "exploreFeatures": "Explore AI Features"
+  },
+  "testimonials": {
+    "title": "Trusted by Innovative Teams",
+    "items": [
+      {
+        "quote": "Cyqle has transformed how our support team assists customers. We've reduced resolution times by 40%.",
+        "author": "Sarah Johnson",
+        "role": "Head of Customer Success, TechCorp"
+      },
+      {
+        "quote": "The AI automation capabilities have saved our QA team countless hours of repetitive testing. Game changer!",
+        "author": "Michael Chen",
+        "role": "QA Lead, InnovateSoft"
+      },
+      {
+        "quote": "Our development and operations teams now work in perfect sync thanks to Cyqle's collaborative environment.",
+        "author": "Alex Rodriguez",
+        "role": "CTO, FutureTech"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Transform Your Team's Workflow?",
+    "description": "Join the growing number of teams using Cyqle to collaborate, automate, and innovate.",
+    "startTrial": "Start Free Trial",
+    "scheduleDemo": "Schedule Demo",
+    "trialInfo": "14-day free trial. No credit card required."
+  },
+  "footer": {
+    "description": "The collaborative cloud browser with AI-powered automation for modern teams.",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "useCases": "Use Cases",
+      "pricing": "Pricing",
+      "integrations": "Integrations",
+      "roadmap": "Roadmap"
+    },
+    "resources": {
+      "title": "Resources",
+      "documentation": "Documentation",
+      "blog": "Blog",
+      "community": "Community",
+      "support": "Support",
+      "api": "API"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "careers": "Careers",
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "copyright": "© {year} Cyqle. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookies": "Cookies"
+  }
+}
