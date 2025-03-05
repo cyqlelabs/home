@@ -1,6 +1,6 @@
-"use client"
+'use client';
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef } from 'react';
 
 export default function ParallaxBackground() {
   const backgroundRef = useRef<HTMLDivElement>(null);
@@ -12,8 +12,8 @@ export default function ParallaxBackground() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -21,7 +21,7 @@ export default function ParallaxBackground() {
       <div
         ref={backgroundRef}
         className="absolute inset-0"
-        style={{ height: "150%", width: "100%" }}
+        style={{ height: '150%', width: '100%' }}
       >
         <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
 

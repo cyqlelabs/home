@@ -14,23 +14,23 @@ export default function LanguageSwitcher() {
     // Get current pathname relative to locale root
     const currentLocale = getLocaleFromURL();
     const pathnameWithoutLocale = pathname.replace(`/${currentLocale}`, '');
-    
+
     // Navigate to the same page with the new locale
     router.push(`/${newLocale}${pathnameWithoutLocale || '/'}`);
   };
 
   return (
     <div className="flex space-x-2">
-      <Button 
-        variant={locale !== 'en' ? 'default' : 'ghost'} 
+      <Button
+        variant={locale === 'en' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => switchLocale('en')}
         className={locale === 'en' ? 'bg-purple-600 hover:bg-purple-700' : ''}
       >
         EN
       </Button>
-      <Button 
-        variant={locale === 'es' ? 'default' : 'ghost'} 
+      <Button
+        variant={locale === 'es' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => switchLocale('es')}
         className={locale === 'es' ? 'bg-purple-600 hover:bg-purple-700' : ''}
