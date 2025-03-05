@@ -1,19 +1,18 @@
 'use client';
 
-import { ReactNode } from 'react';
-import { useTranslations as useNextIntlTranslations } from 'next-intl';
-import { NextIntlClientProvider } from 'next-intl';
+import { type ReactNode } from 'react';
+import { useTranslations as useNextIntlTranslations, NextIntlClientProvider } from 'next-intl';
 import { getLocaleFromURL } from '@/lib/utils';
 
 export function LanguageProvider({
   children,
-  messages
+  messages,
 }: {
   children: ReactNode;
   messages?: Record<string, any>;
 }) {
   const locale = getLocaleFromURL();
-  
+
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       {children}

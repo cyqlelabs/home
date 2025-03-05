@@ -1,13 +1,13 @@
-import type React from "react"
-import "../globals.css"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-import { notFound } from "next/navigation"
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server'
-import { LanguageProvider } from "@/components/language-provider"
+import React from 'react';
+import '../globals.css';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import { ThemeProvider } from '@/components/theme-provider';
+import { notFound } from 'next/navigation';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { LanguageProvider } from '@/components/language-provider';
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ['latin'] });
 
 type Props = {
   children: React.ReactNode;
@@ -21,14 +21,14 @@ export function generateMetadata({ params: { locale } }: Omit<Props, 'children'>
       default: 'Cyqle - Collaborative Cloud Browser with AI Automation',
     },
     description: 'Supercharge your team\'s workflow with AI-powered automation in a collaborative browser environment',
-  }
+  };
 }
 
-const locales = ['en', 'es']
+const locales = ['en', 'es'];
 
 export default async function RootLayout({
   children,
-  params: { locale }
+  params: { locale },
 }: Props) {
   // Validate that the incoming `locale` parameter is valid
   if (!locales.includes(locale)) notFound();
@@ -37,7 +37,7 @@ export default async function RootLayout({
   unstable_setRequestLocale(locale);
 
   const t = await getTranslations('metadata');
-  
+
   // Get messages for client-side
   const messages = (await import(`../../messages/${locale}/index.json`)).default;
 
@@ -55,5 +55,5 @@ export default async function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }

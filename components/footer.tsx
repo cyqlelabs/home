@@ -1,11 +1,11 @@
-"use client"
+'use client';
 
-import { Github, Twitter, Linkedin, Facebook } from "lucide-react"
-import { useTranslations } from "@/components/language-provider"
+import { Github, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { useTranslations } from '@/components/language-provider';
 
 export default function Footer() {
-  const t = useTranslations()
-  const year = new Date().getFullYear()
+  const t = useTranslations();
+  const year = new Date().getFullYear();
 
   return (
     <footer className="relative z-10 bg-gray-950 pt-20 pb-10 border-t border-gray-800">
@@ -150,6 +150,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
