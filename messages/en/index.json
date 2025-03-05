@@ -21,7 +21,7 @@
     "title": "Powerful Features for Modern Teams",
     "aiAutomation": {
       "title": "AI-Powered Automation",
-      "description": "Automate repetitive tasks with intelligent AI that learns from your team's actions"
+      "description": "Automate repetitive tasks with AI that learns from your team's actions"
     },
     "cloudNative": {
       "title": "Cloud-Native Browser",
@@ -65,7 +65,7 @@
   },
   "aiSection": {
     "title": "AI-Powered Automation That Learns",
-    "description": "Cyqle's intelligent AI observes your team's actions and automates repetitive tasks, saving hours of manual work.",
+    "description": "Cyqle's AI observes your team's actions and automates repetitive tasks, saving hours of manual work.",
     "items": [
       "Record and replay complex browser interactions",
       "AI suggests automation opportunities based on patterns",
