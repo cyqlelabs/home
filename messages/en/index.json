@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Cyqle - Collaborative Cloud Browser with AI Automation",
-    "description": "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment"
+    "title": "Cyqle - The AI-Powered Collaborative Cloud Browser",
+    "description": "Transform your team's workflow with the world's first collaborative cloud browser featuring intelligent AI automation."
   },
   "navbar": {
     "features": "Features",
@@ -9,95 +9,96 @@
     "pricing": "Pricing",
     "about": "About",
     "signIn": "Sign In",
-    "getStarted": "Get Started"
+    "getStarted": "Start Free Trial"
   },
   "hero": {
-    "title": "The Collaborative Cloud Browser",
-    "description": "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment",
-    "getStarted": "Get Started",
-    "bookDemo": "Book a Demo"
+    "title": "Smart Browser for Next-Level Collaboration",
+    "description": "Unlock seamless collaboration and automation in the cloud. Cyqle's AI-powered browser transforms how teams work together.",
+    "getStarted": "Start Free Trial",
+    "bookDemo": "See it in Action",
+    "trialInfo": "14-day free trial. No credit card required."
   },
   "features": {
-    "title": "Powerful Features for Modern Teams",
+    "title": "Powerful Features Built for Teams",
     "aiAutomation": {
-      "title": "AI-Powered Automation",
-      "description": "Automate repetitive tasks with AI that learns from your team's actions"
+      "title": "Smart AI Automation",
+      "description": "AI that learns from your team's workflow and automates repetitive tasks, saving you hours every day."
     },
     "cloudNative": {
       "title": "Cloud-Native Browser",
-      "description": "Access your browsing environment from anywhere, with all your tools and settings intact"
+      "description": "Access your complete browsing environment from anywhere, with all tools and settings perfectly synced."
     },
     "collaboration": {
       "title": "Real-Time Collaboration",
-      "description": "Work together in the same browser session with multiple team members simultaneously"
+      "description": "Work together seamlessly in the same browser session, no matter where your team is located."
     },
     "testing": {
       "title": "Advanced Testing Tools",
-      "description": "Test across multiple environments and configurations with a single click"
+      "description": "Run tests across multiple environments with one click and share results instantly."
     },
     "support": {
-      "title": "Customer Support Integration",
-      "description": "Seamlessly guide and assist customers directly within their browser session"
+      "title": "Built-in Customer Support",
+      "description": "Guide and assist customers directly within their browser session for faster resolution."
     },
     "pipelines": {
-      "title": "Customizable Pipelines",
-      "description": "Create and optimize workflows for any process"
+      "title": "Customizable Workflows",
+      "description": "Create and optimize workflows for any process with drag-and-drop simplicity."
     }
   },
   "useCases": {
-    "title": "Designed for Every Team",
+    "title": "Built for Every Team's Success",
     "development": {
       "title": "Development Teams",
-      "description": "Collaborate on code, test features, and debug issues together in real-time."
+      "description": "Collaborate in real-time on code, test features, and debug together seamlessly."
     },
     "qa": {
-      "title": "QA & Testing",
-      "description": "Automate test scenarios and share results instantly with your team."
+      "title": "QA & Testing Teams",
+      "description": "Automate test scenarios, share results instantly, and reduce testing time by up to 70%."
     },
     "customerSupport": {
-      "title": "Customer Support",
-      "description": "See what your customers see and guide them through solutions effortlessly."
+      "title": "Customer Support Teams",
+      "description": "See exactly what your customers see and guide them to solutions in real-time."
     },
     "operations": {
-      "title": "Operations",
-      "description": "Build and optimize workflows with AI assistance."
+      "title": "Operations Teams",
+      "description": "Build, optimize, and automate workflows with AI-powered insights."
     }
   },
   "aiSection": {
-    "title": "AI-Powered Automation That Learns",
-    "description": "Cyqle's AI observes your team's actions and automates repetitive tasks, saving hours of manual work.",
+    "title": "AI That Learns and Adapts to Your Team",
+    "description": "Cyqle's AI observes, learns, and automates your team's workflow, freeing you to focus on what matters most.",
     "items": [
-      "Record and replay complex browser interactions",
-      "AI suggests automation opportunities based on patterns",
-      "Schedule automated tasks to run at specific times",
-      "Share automation scripts across your organization",
-      "Integrate with your existing tools and workflows"
+      "AI records and automates repetitive tasks",
+      "Smart suggestions based on your workflow patterns",
+      "Schedule automations to run 24/7",
+      "Share and manage automation scripts organization-wide",
+      "Seamless integration with your existing tools"
     ],
     "exploreFeatures": "Explore AI Features"
   },
   "testimonials": {
-    "title": "Trusted by Innovative Teams",
+    "title": "Trusted by Leading Teams Worldwide",
     "items": [
       {
-        "quote": "Cyqle has transformed how our support team assists customers. We've reduced resolution times by 40%.",
+        "quote": "Cyqle has cut our customer resolution time by 40%. A game-changer for our support team!",
         "author": "Sarah Johnson",
         "role": "Head of Customer Success, TechCorp"
       },
       {
-        "quote": "The AI automation capabilities have saved our QA team countless hours of repetitive testing. Game changer!",
+        "quote": "Our QA team's productivity has soared. Cyqle's automation has saved us hundreds of hours.",
         "author": "Michael Chen",
         "role": "QA Lead, InnovateSoft"
       },
       {
-        "quote": "Our development and operations teams now work in perfect sync thanks to Cyqle's collaborative environment.",
+        "quote": "Cyqle has bridged the gap between our development and operations teams. Collaboration has never been better!",
         "author": "Alex Rodriguez",
         "role": "CTO, FutureTech"
       }
     ]
   },
   "cta": {
-    "title": "Ready to Transform Your Team's Workflow?",
-    "description": "Join the growing number of teams using Cyqle to collaborate, automate, and innovate.",
+    "title": "Ready to Elevate Your Team's Performance?",
+    "description": "Join thousands of teams already using Cyqle to collaborate smarter, automate faster, and achieve more.",
     "startTrial": "Start Free Trial",
     "scheduleDemo": "Schedule Demo",
     "trialInfo": "14-day free trial. No credit card required."
