@@ -13,7 +13,7 @@
     "react/prop-types": "off",
     "@typescript-eslint/quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
     "@typescript-eslint/semi": ["error", "always"],
-    "@typescript-eslint/space-before-function-paren": ["error", "never"],
+    "@typescript-eslint/space-before-function-paren": "off",
     "@typescript-eslint/member-delimiter-style": ["error", {
       "multiline": {
         "delimiter": "semi",
