@@ -21,7 +21,7 @@
     "title": "Potentes Características para Equipos Modernos",
     "aiAutomation": {
       "title": "Automatización con IA",
-      "description": "Automatiza tareas repetitivas con IA inteligente que aprende de las acciones de tu equipo"
+      "description": "Automatiza tareas repetitivas con IA que aprende de las acciones de tu equipo"
     },
     "cloudNative": {
       "title": "Navegador Nativo en la Nube",
@@ -65,7 +65,7 @@
   },
   "aiSection": {
     "title": "Automatización con IA que Aprende",
-    "description": "La IA inteligente de Cyqle observa las acciones de tu equipo y automatiza tareas repetitivas, ahorrando horas de trabajo manual.",
+    "description": "La IA de Cyqle observa las acciones de tu equipo y automatiza tareas repetitivas, ahorrando horas de trabajo manual.",
     "items": [
       "Graba y reproduce interacciones complejas del navegador",
       "La IA sugiere oportunidades de automatización basadas en patrones",
