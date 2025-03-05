@@ -12,7 +12,7 @@ export default function FeatureCard({ icon, title, description, className }: Fea
   return (
     <div
       className={cn(
-        'bg-gray-900/50 p-8 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all duration-300 group',
+        'bg-gray-900/50 p-8 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all duration-300 group backdrop-blur-xl',
         className,
       )}
     >
