@@ -14,7 +14,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <AnimatedSection className="relative z-10">
-        <video autoPlay muted loop style={{ backgroundSize: "cover" }} className="min-w-full min-h-full dark:opacity-30 opacity-80 absolute -z-10">
+        <video autoPlay muted loop style={{ backgroundSize: "cover" }} className="min-w-full min-h-full dark:opacity-[.25] opacity-80 absolute -z-10">
           <source src="/vid1.mp4" type="video/mp4" />
         </video>
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
