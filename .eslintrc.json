@@ -1,7 +1,8 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "standard-with-typescript"
+    "standard-with-typescript",
+    "prettier"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -26,6 +27,15 @@
     "@typescript-eslint/comma-dangle": ["error", "always-multiline"],
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/prefer-nullish-coalescing": "warn",
+    "@typescript-eslint/consistent-type-assertions": "warn",
+    "@typescript-eslint/restrict-template-expressions": "warn",
+    "@typescript-eslint/no-unsafe-argument": "warn",
+    "@typescript-eslint/no-redeclare": "warn",
+    "react/no-unescaped-entities": "warn",
+    "react-hooks/rules-of-hooks": "warn",
+    "@next/next/no-img-element": "warn",
     "eol-last": ["error", "always"],
     "no-trailing-spaces": "error"
   },

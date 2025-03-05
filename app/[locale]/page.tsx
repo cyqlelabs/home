@@ -1,5 +1,15 @@
 import { Button } from '@/components/ui/button';
-import { ChevronRight, Cloud, Zap, Users, TestTube, Headset, PlugIcon as Pipeline, Bot, Lock } from 'lucide-react';
+import {
+  ChevronRight,
+  Cloud,
+  Zap,
+  Users,
+  TestTube,
+  Headset,
+  PlugIcon as Pipeline,
+  Bot,
+  Lock,
+} from 'lucide-react';
 import ParallaxBackground from '@/components/parallax-background';
 import FeatureCard from '@/components/feature-card';
 import AnimatedSection from '@/components/animated-section';
@@ -31,7 +41,13 @@ export default async function Home({ params: { locale } }: Props) {
 
       {/* Hero Section */}
       <AnimatedSection className="relative z-10">
-        <video autoPlay muted loop style={{ backgroundSize: 'cover' }} className="min-w-full min-h-full dark:opacity-[.25] opacity-80 absolute -z-10">
+        <video
+          autoPlay
+          muted
+          loop
+          style={{ backgroundSize: 'cover' }}
+          className="min-w-full min-h-full dark:opacity-[.25] opacity-80 absolute -z-10"
+        >
           <source src="/vid1.mp4" type="video/mp4" />
         </video>
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
@@ -58,7 +74,9 @@ export default async function Home({ params: { locale } }: Props) {
       {/* Features Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-black/80 to-gray-900/80 dark:bg-clip-text">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-foreground text-gray-400">{featuresT('title')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-foreground text-gray-400">
+            {featuresT('title')}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
               icon={<Bot className="h-10 w-10 text-purple-400" />}
@@ -114,9 +132,7 @@ export default async function Home({ params: { locale } }: Props) {
                   </div>
                   <h3 className="text-2xl font-semibold">{useCasesT('development.title')}</h3>
                 </div>
-                <p className="text-gray-400">
-                  {useCasesT('development.description')}
-                </p>
+                <p className="text-gray-400">{useCasesT('development.description')}</p>
               </div>
 
               <div className="space-y-3">
@@ -136,9 +152,7 @@ export default async function Home({ params: { locale } }: Props) {
                   </div>
                   <h3 className="text-2xl font-semibold">{useCasesT('customerSupport.title')}</h3>
                 </div>
-                <p className="text-gray-400">
-                  {useCasesT('customerSupport.description')}
-                </p>
+                <p className="text-gray-400">{useCasesT('customerSupport.description')}</p>
               </div>
 
               <div className="space-y-3">
@@ -148,9 +162,7 @@ export default async function Home({ params: { locale } }: Props) {
                   </div>
                   <h3 className="text-2xl font-semibold">{useCasesT('operations.title')}</h3>
                 </div>
-                <p className="text-gray-400">
-                  {useCasesT('operations.description')}
-                </p>
+                <p className="text-gray-400">{useCasesT('operations.description')}</p>
               </div>
             </div>
           </div>
@@ -162,10 +174,10 @@ export default async function Home({ params: { locale } }: Props) {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-300 dark:text-foreground">{aiSectionT('title')}</h2>
-              <p className="text-gray-300 text-lg">
-                {aiSectionT('description')}
-              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-300 dark:text-foreground">
+                {aiSectionT('title')}
+              </h2>
+              <p className="text-gray-300 text-lg">{aiSectionT('description')}</p>
               <ul className="space-y-4">
                 {aiSectionT.raw('items').map((item: string, index: number) => (
                   <li key={index} className="flex items-start">
@@ -194,7 +206,9 @@ export default async function Home({ params: { locale } }: Props) {
       {/* Testimonials */}
       <AnimatedSection className="relative z-10 py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">{testimonialsT('title')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+            {testimonialsT('title')}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonialsT.raw('items').map((testimonial: any, index: number) => (
               <div
@@ -226,7 +240,11 @@ export default async function Home({ params: { locale } }: Props) {
             >
               {ctaT('startTrial')}
             </Button>
-            <Button size="lg" variant="outline" className="border-gray-700 hover:bg-gray-800 hover:text-gray-100">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-gray-700 hover:bg-gray-800 hover:text-gray-100"
+            >
               {ctaT('scheduleDemo')}
             </Button>
           </div>
