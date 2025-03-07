@@ -37,7 +37,7 @@ export default async function RootLayout({ children, params: { locale } }: Props
   const t = await getTranslations('metadata');
 
   // Get messages for client-side
-  const messages = (await import(`../../messages/${locale}/index.json`)).default;
+  const messages = (await import(`../../i18n/messages/${locale}/index.json`)).default;
 
   return (
     <html lang={locale} className="dark">
