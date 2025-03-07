@@ -2,11 +2,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin();
 
-let userConfig = undefined;
-try {
-  userConfig = await import('./v0-user-next.config');
-} catch (e) {
-  // ignore error
+let userConfig = {
 }
 
 /** @type {import('next').NextConfig} */
