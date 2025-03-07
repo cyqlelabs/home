@@ -259,3 +259,8 @@ export default async function Home({ params: { locale } }: Props) {
     </div>
   );
 }
+
+// Generate static params for each locale
+export async function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'es' }];
+}

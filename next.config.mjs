@@ -3,7 +3,12 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 let userConfig = {
-}
+  output: 'export',
+  images: { unoptimized: true },
+  basePath: '',
+  distDir: 'dist',
+  trailingSlash: true,
+};
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
