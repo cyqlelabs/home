@@ -3,10 +3,10 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 let userConfig = {
-  output: 'export',
+  output: (process.env.NODE_ENV === 'production' && 'export') || undefined,
   images: { unoptimized: true },
   basePath: '',
-  distDir: 'dist',
+  distDir: (process.env.NODE_ENV === 'production' && 'dist') || undefined,
   trailingSlash: true,
 };
 
