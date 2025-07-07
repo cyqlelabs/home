@@ -15,6 +15,7 @@ import FeatureCard from '@/components/feature-card';
 import AnimatedSection from '@/components/animated-section';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+import MoreInfoButton from '@/components/more-info-button';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 type Props = {
@@ -57,13 +58,8 @@ export default async function Home({ params: { locale } }: Props) {
             {heroT('description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
-            >
-              {heroT('getStarted')} <ChevronRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-gray-700">
+            <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
+            <Button disabled={true} size="lg" variant="outline" className="border-gray-700">
               {heroT('bookDemo')}
             </Button>
           </div>
