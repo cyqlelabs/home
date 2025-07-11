@@ -46,7 +46,7 @@ export default async function Home({ params: { locale } }: Props) {
           autoPlay
           muted
           loop
-          className="absolute top-0 left-0 w-full h-full object-cover dark:opacity-[.25] opacity-80 -z-10"
+          className="absolute top-0 left-0 w-full h-full object-cover dark:opacity-[.20] opacity-80 -z-10"
         >
           <source src="/vid2.mp4" type="video/mp4" />
         </video>
