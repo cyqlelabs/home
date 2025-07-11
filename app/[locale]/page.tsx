@@ -48,7 +48,7 @@ export default async function Home({ params: { locale } }: Props) {
           loop
           className="absolute top-0 left-0 w-full h-full object-cover dark:opacity-[.25] opacity-80 -z-10"
         >
-          <source src="/vid1.mp4" type="video/mp4" />
+          <source src="/vid2.mp4" type="video/mp4" />
         </video>
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center gap-6 text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
           <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-cyan-500 to-purple-600 mb-6">
