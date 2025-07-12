@@ -20,6 +20,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+  other: {
+    'og:logo': 'https://cyqle.in/favicon/android-chrome-192x192.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
