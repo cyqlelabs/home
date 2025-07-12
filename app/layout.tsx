@@ -6,7 +6,20 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Cyqle',
-  description: 'Cyqle Home Page',
+  description: 'The Collaborative Smart Browser',
+  openGraph: {
+    locale: 'en_US',
+    url: 'https://cyqle.in',
+    type: 'website',
+    images: [
+      {
+        url: '/favicon/android-chrome-192x192.png',
+        width: 192,
+        height: 192,
+        alt: 'Cyqle Logo',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -50,7 +50,7 @@ export function generateMetadata({ params: { locale } }: Omit<Props, 'children'>
     openGraph: {
       type: 'website',
       locale,
-      url: 'https://cyqle.com',
+      url: 'https://cyqle.in',
       title: 'Cyqle - Collaborative Cloud Browser with AI Automation',
       description:
         "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment",
