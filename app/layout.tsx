@@ -13,15 +13,15 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://cyqle.in/favicon/android-chrome-192x192.png',
-        width: 192,
-        height: 192,
+        url: 'https://cyqle.in/logo-up.png',
+        width: 768,
+        height: 768,
         alt: 'Cyqle Logo',
       },
     ],
   },
   other: {
-    'og:logo': 'https://cyqle.in/favicon/android-chrome-192x192.png',
+    'og:logo': 'https://cyqle.in/logo-up.png',
   },
 };
 
