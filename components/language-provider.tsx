@@ -2,16 +2,19 @@
 
 import { type ReactNode } from 'react';
 import { useTranslations as useNextIntlTranslations, NextIntlClientProvider } from 'next-intl';
-import { getLocaleFromURL } from '@/lib/utils';
+import { getLocaleFromCookie } from '@/lib/utils';
 
 export function LanguageProvider({
   children,
   messages,
+  locale: serverLocale,
 }: {
   children: ReactNode;
   messages?: Record<string, any>;
+  locale?: string;
 }) {
-  const locale = getLocaleFromURL();
+  const clientLocale = getLocaleFromCookie();
+  const locale = serverLocale || clientLocale;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages} timeZone="UTC">
