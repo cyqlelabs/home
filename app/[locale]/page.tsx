@@ -54,8 +54,18 @@ export default async function Home({ params: { locale } }: Props) {
           <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-cyan-500 to-purple-600 mb-6">
             {heroT('title')}
           </h1>
-          <p className="text-xl md:text-2xl max-w-4xl mb-10 text-orange-400 font-semibold">
-            {heroT('description')}
+          <p className="text-xl md:text-2xl mb-10 text-orange-400 font-semibold max-w-4xl">
+            {(() => {
+              const desc = heroT('description').split('.');
+
+              return (
+                <>
+                  {desc[0]}.
+                  <br />
+                  {desc[1]}.
+                </>
+              );
+            })()}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
