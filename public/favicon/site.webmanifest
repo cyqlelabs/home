@@ -3,7 +3,7 @@
     "short_name": "",
     "icons": [
         {
-            "src": "/logo-up.png",
+            "src": "https://cyqle.in/logo-up.png",
             "sizes": "768x768",
             "type": "image/png"
         }
