@@ -57,7 +57,7 @@ export function generateMetadata({ params: { locale } }: Omit<Props, 'children'>
       siteName: 'Cyqle',
       images: [
         {
-          url: '/placeholder-logo.png',
+          url: '/favicon/android-chrome-192x192.png',
           width: 1200,
           height: 630,
           alt: 'Cyqle - Collaborative Cloud Browser with AI Automation',
@@ -69,7 +69,7 @@ export function generateMetadata({ params: { locale } }: Omit<Props, 'children'>
       title: 'Cyqle - Collaborative Cloud Browser with AI Automation',
       description:
         "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment",
-      images: ['/placeholder-logo.png'],
+      images: ['/favicon/android-chrome-192x192.png'],
       creator: '@cyqle',
     },
     robots: {
