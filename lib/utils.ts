@@ -5,17 +5,14 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getLocaleFromCookie(): string {
+export function getLocaleFromURL(): string {
   if (typeof window === 'undefined') return 'en'; // Default to English on server
 
-  const cookies = document.cookie.split(';');
-  const localeCookie = cookies.find((cookie) => cookie.trim().startsWith('NEXT_LOCALE='));
+  const path = window.location.pathname;
+  const parts = path.split('/').filter(Boolean);
 
-  if (localeCookie) {
-    const locale = localeCookie.split('=')[1];
-    if (['en', 'es'].includes(locale)) {
-      return locale;
-    }
+  if (parts.length > 0 && ['en', 'es'].includes(parts[0])) {
+    return parts[0];
   }
 
   return 'en'; // Default fallback

@@ -1,19 +1,22 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { Button } from './ui/button';
+import { getLocaleFromURL } from '@/lib/utils';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
+  const pathname = usePathname();
 
   const switchLocale = (newLocale: string) => {
-    // Set cookie for locale preference
-    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
+    // Get current pathname relative to locale root
+    const currentLocale = getLocaleFromURL();
+    const pathnameWithoutLocale = pathname.replace(`/${currentLocale}`, '');
 
-    // Refresh the page to apply new locale
-    router.refresh();
+    // Navigate to the same page with the new locale
+    router.push(`/${newLocale}${pathnameWithoutLocale || '/'}`);
   };
 
   return (

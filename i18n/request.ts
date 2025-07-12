@@ -1,10 +1,11 @@
 import { getRequestConfig } from 'next-intl/server';
+import { getLocaleFromURL } from '../lib/utils';
 
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
 
   if (!locale) {
-    locale = 'en';
+    locale = getLocaleFromURL();
   }
 
   return {
