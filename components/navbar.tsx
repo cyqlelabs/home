@@ -72,12 +72,16 @@ export default function Navbar() {
             {/*   {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className={`h-5 w-5 ${isScrolled && "text-gray-300"}`} />} */}
             {/* </Button> */}
             <Button
+              disabled
               variant="ghost"
               className={`dark:text-gray-300 hover:text-foreground ${isScrolled && theme !== 'dark' ? 'text-white' : 'text-gray-500'}`}
             >
               {t('navbar.signIn')}
             </Button>
-            <Button className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700">
+            <Button
+              disabled
+              className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+            >
               {t('navbar.getStarted')}
             </Button>
           </div>
