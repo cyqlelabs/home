@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/favicon/android-chrome-192x192.png',
+        url: 'https://cyqle.in/favicon/android-chrome-192x192.png',
         width: 192,
         height: 192,
         alt: 'Cyqle Logo',
