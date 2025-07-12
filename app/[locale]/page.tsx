@@ -16,6 +16,7 @@ import AnimatedSection from '@/components/animated-section';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import MoreInfoButton from '@/components/more-info-button';
+import ResponsiveVideo from '@/components/responsive-video';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 type Props = {
@@ -42,14 +43,11 @@ export default async function Home({ params: { locale } }: Props) {
 
       {/* Hero Section */}
       <AnimatedSection className="relative z-10 min-h-screen overflow-hidden flex items-center">
-        <video
-          autoPlay
-          muted
-          loop
-          className="absolute top-0 left-0 w-full h-full object-cover dark:opacity-[.20] opacity-80 -z-10"
-        >
-          <source src="/vid2.mp4" type="video/mp4" />
-        </video>
+        <ResponsiveVideo
+          desktopSrc="/vid2.mp4"
+          mobileSrc="/vid2-p.mp4"
+          className="absolute top-0 left-0 w-full h-full object-cover dark:opacity-[.15] opacity-15 -z-10"
+        />
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center gap-6 text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
           <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-cyan-500 to-purple-600 mb-6">
             {heroT('title')}
