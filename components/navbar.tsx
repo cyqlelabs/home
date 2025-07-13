@@ -41,7 +41,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a
-              href="#"
+              href="#features"
               className={`dark:text-gray-300 ${isScrolled && theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors`}
             >
               {t('navbar.features')}
@@ -59,7 +59,7 @@ export default function Navbar() {
               {t('navbar.pricing')}
             </a>
             <a
-              href="#"
+              href="/pitch.html"
               className={`dark:text-gray-300 ${isScrolled && theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors`}
             >
               {t('navbar.about')}
