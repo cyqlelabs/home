@@ -13,7 +13,7 @@ export default function MoreInfoButton({ children }: MoreInfoButtonProps) {
       size="lg"
       className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
       onClick={() => {
-        window.location.assign('/pitch.html');
+        window.location.assign('#features');
       }}
     >
       {children} <ChevronRight className="ml-2 h-4 w-4" />

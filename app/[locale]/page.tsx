@@ -73,7 +73,7 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
         </div>
       </AnimatedSection>
-
+      <div id="features" />
       {/* Features Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-black/80 to-gray-900/80 dark:bg-clip-text">
         <div className="container mx-auto px-4">
