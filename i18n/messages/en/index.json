@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Cyqle - The AI-Powered Collaborative Cloud Browser",
+    "title": "Cyqle | The AI-Powered Collaborative Cloud Browser",
     "description": "Transform your workflow with the world's first collaborative cloud browser featuring intelligent AI automation."
   },
   "navbar": {
@@ -9,76 +9,68 @@
     "pricing": "Pricing",
     "about": "About",
     "signIn": "Sign In",
-    "getStarted": "Start Free Trial"
+    "getStarted": "Start for Free"
   },
   "hero": {
     "title": "The Collaborative Smart Browser",
-    "description": "Seamless cloud collaboration and automation. Cyqle's AI browser transforms how people work together.",
-    "getStarted": "Start Free Trial",
-    "moreInfo": "More Info",
-    "bookDemo": "See it in Action",
-    "trialInfo": "14-day free trial. No credit card required."
+    "description": "Connects to your stack, with a built-in AI agent to automate any workflow.",
+    "getStarted": "Start for Free",
+    "bookDemo": "Book a Demo",
+    "trialInfo": "Free 14-day trial. No card required.",
+    "moreInfo": "More Info"
   },
   "features": {
-    "title": "Powerful Features for Modern Work",
+    "title": "A Faster Way to Work in Sync",
     "aiAutomation": {
-      "title": "Smart AI Automation",
-      "description": "AI that learns from your workflow and automates repetitive tasks, saving you hours every day."
+      "title": "AI That Works For You",
+      "description": "Record any browser action and turn it into a reusable, shareable automation. Let our AI handle the grunt work."
     },
     "cloudNative": {
-      "title": "Cloud-Native Browser",
-      "description": "Access your complete Browse environment from anywhere, with all tools and settings perfectly synced."
+      "title": "Access From Anywhere",
+      "description": "Your entire browsing environment lives in the cloud. Pick up exactly where you left off, on any device."
     },
     "collaboration": {
-      "title": "Real-Time Collaboration",
-      "description": "Work together seamlessly in the same browser session, no matter where you are located."
-    },
-    "testing": {
-      "title": "Advanced Testing Tools",
-      "description": "Run tests across multiple environments with one click and share results instantly."
+      "title": "True Multiplayer Browsing",
+      "description": "Invite your team into a shared session. See each other's cursors, type together, and solve problems in real-time."
     },
     "support": {
-      "title": "Built-in Customer Support",
-      "description": "Guide and assist customers directly within their browser session for faster resolution."
-    },
-    "pipelines": {
-      "title": "Customizable Workflows",
-      "description": "Create and optimize workflows for any process with drag-and-drop simplicity."
+      "title": "Interactive Customer Support",
+      "description": "Instantly see what your customer sees. Take control, annotate their screen, and resolve issues on the first call."
     }
   },
   "useCases": {
-    "title": "Built for Every Professional's Success",
+    "title": "Designed for High-Performance Teams",
     "development": {
       "title": "Development",
-      "description": "Collaborate in real-time on code, test features, and debug together seamlessly."
+      "description": "Share local development environments, debug collaboratively, and ensure every team member is on the same page."
     },
     "qa": {
       "title": "QA & Testing",
-      "description": "Automate test scenarios, share results instantly, and reduce testing time by up to 70%."
+      "description": "Reduce testing cycles by 70%. Automate browser tests, reproduce bugs instantly, and collaborate on fixes."
     },
     "customerSupport": {
       "title": "Customer Support",
-      "description": "See exactly what your customers see and guide them to solutions in real-time."
+      "description": "Cut resolution times in half. Instantly launch a shared session to see, guide, and solve customer issues."
     },
     "operations": {
       "title": "Operations",
-      "description": "Build, optimize, and automate workflows with AI-powered insights."
+      "description": "Automate routine checks, data entry, and system monitoring without writing a single line of code."
     }
   },
   "aiSection": {
-    "title": "AI That Learns and Adapts to Your Work",
-    "description": "Cyqle's AI observes, learns, and automates your workflow, freeing you to focus on what matters most.",
+    "title": "Put Your Workflow on Autopilot",
+    "description": "Our AI watches how you work, identifies repetitive patterns, and suggests automations you can build in seconds. No code required.",
     "items": [
-      "AI records and automates repetitive tasks",
-      "Smart suggestions based on your workflow patterns",
-      "Schedule automations to run 24/7",
-      "Share and manage automation scripts across your organization",
-      "Seamless integration with your existing tools"
+      "Automate any task with one-click recording",
+      "Get intelligent automation suggestions",
+      "Schedule jobs to run anytime, on any site",
+      "Build a shared library of automations for your team",
+      "Connect to your stack with powerful integrations"
     ],
     "exploreFeatures": "Explore AI Features"
   },
   "testimonials": {
-    "title": "Trusted by Professionals Worldwide",
+    "title": "Why Top Teams Choose Cyqle",
     "items": [
       {
         "quote": "Cyqle has cut our customer resolution time by 40%. A game-changer for our support operations!",
@@ -98,14 +90,14 @@
     ]
   },
   "cta": {
-    "title": "Ready to Elevate Your Performance?",
-    "description": "Join thousands already using Cyqle to collaborate smarter, automate faster, and achieve more.",
-    "startTrial": "Start Free Trial",
-    "scheduleDemo": "Schedule Demo",
-    "trialInfo": "14-day free trial. No credit card required."
+    "title": "Stop Switching. Start Building.",
+    "description": "Transform how your team develops, tests, and supports users. Get started with your free trial today.",
+    "startTrial": "Start Your Free Trial",
+    "scheduleDemo": "Schedule a Demo",
+    "trialInfo": "Free 14-day trial. No card required."
   },
   "footer": {
-    "description": "The collaborative cloud browser with AI-powered automation for modern work.",
+    "description": "The shared browser for high-performance teams.",
     "product": {
       "title": "Product",
       "features": "Features",
@@ -124,7 +116,7 @@
     },
     "company": {
       "title": "Company",
-      "about": "About",
+      "about": "About Us",
       "careers": "Careers",
       "contact": "Contact",
       "privacy": "Privacy",

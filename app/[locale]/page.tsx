@@ -53,17 +53,7 @@ export default async function Home({ params: { locale } }: Props) {
             {heroT('title')}
           </h1>
           <p className="text-xl md:text-2xl mb-10 text-orange-400 font-semibold max-w-4xl">
-            {(() => {
-              const desc = heroT('description').split('.');
-
-              return (
-                <>
-                  {desc[0]}.
-                  <br />
-                  {desc[1]}.
-                </>
-              );
-            })()}
+            {heroT('description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
@@ -80,7 +70,7 @@ export default async function Home({ params: { locale } }: Props) {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-foreground text-gray-400">
             {featuresT('title')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <FeatureCard
               icon={<Bot className="h-10 w-10 text-purple-400" />}
               title={featuresT('aiAutomation.title')}
@@ -97,19 +87,9 @@ export default async function Home({ params: { locale } }: Props) {
               description={featuresT('collaboration.description')}
             />
             <FeatureCard
-              icon={<TestTube className="h-10 w-10 text-cyan-400" />}
-              title={featuresT('testing.title')}
-              description={featuresT('testing.description')}
-            />
-            <FeatureCard
               icon={<Headset className="h-10 w-10 text-purple-400" />}
               title={featuresT('support.title')}
               description={featuresT('support.description')}
-            />
-            <FeatureCard
-              icon={<Pipeline className="h-10 w-10 text-cyan-400" />}
-              title={featuresT('pipelines.title')}
-              description={featuresT('pipelines.description')}
             />
           </div>
         </div>

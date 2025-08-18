@@ -1,114 +1,106 @@
 {
   "metadata": {
-    "title": "Cyqle - El Navegador en la Nube Colaborativo con IA",
-    "description": "Transforma tu flujo de trabajo con el primer navegador en la nube colaborativo del mundo, con automatización inteligente de IA."
+    "title": "Cyqle | El Navegador Colaborativo en la Nube con IA",
+    "description": "Transforma tu flujo de trabajo con el primer navegador colaborativo en la nube del mundo, con automatización inteligente por IA."
   },
   "navbar": {
-    "features": "Características",
+    "features": "Funcionalidades",
     "useCases": "Casos de Uso",
     "pricing": "Precios",
     "about": "Nosotros",
     "signIn": "Iniciar Sesión",
-    "getStarted": "Empezar Prueba Gratuita"
+    "getStarted": "Comenzar Gratis"
   },
   "hero": {
-    "title": "Navegador Colaborativo Inteligente",
-    "description": "Desbloquea la colaboración y automatización en la nube. Nuestro navegador con IA transforma el trabajo en equipo.",
-    "getStarted": "Empezar Prueba Gratuita",
-    "moreInfo": "Más Información",
-    "bookDemo": "Ver en Acción",
-    "trialInfo": "Prueba gratuita de 14 días. No se requiere tarjeta de crédito."
+    "title": "El Navegador Inteligente y Colaborativo",
+    "description": "Se conecta a tus herramientas, con un agente de IA integrado para automatizar cualquier flujo de trabajo.",
+    "getStarted": "Comenzar Gratis",
+    "bookDemo": "Agendar una Demo",
+    "trialInfo": "Prueba gratis de 14 días. No se requiere tarjeta.",
+    "moreInfo": "Más Información"
   },
   "features": {
-    "title": "Potentes Funciones para el Trabajo Moderno",
+    "title": "Una Forma Más Rápida de Trabajar en Sincronía",
     "aiAutomation": {
-      "title": "Automatización Inteligente con IA",
-      "description": "IA que aprende de tu flujo de trabajo y automatiza tareas repetitivas, ahorrándote horas cada día."
+      "title": "IA que Trabaja para Ti",
+      "description": "Graba cualquier acción del navegador y conviértela en una automatización reutilizable y compartible. Deja que nuestra IA se encargue del trabajo pesado."
     },
     "cloudNative": {
-      "title": "Navegador Nativo en la Nube",
-      "description": "Accede a tu entorno de navegación completo desde cualquier lugar, con todas las herramientas y configuraciones perfectamente sincronizadas."
+      "title": "Accede desde Cualquier Lugar",
+      "description": "Todo tu entorno de navegación vive en la nube. Retoma exactamente donde lo dejaste, en cualquier dispositivo."
     },
     "collaboration": {
-      "title": "Colaboración en Tiempo Real",
-      "description": "Trabaja de forma colaborativa en la misma sesión del navegador, sin importar dónde te encuentres."
-    },
-    "testing": {
-      "title": "Herramientas de Prueba Avanzadas",
-      "description": "Ejecuta pruebas en múltiples entornos con un solo clic y comparte los resultados al instante."
+      "title": "Navegación Multijugador Real",
+      "description": "Invita a tu equipo a una sesión compartida. Vean los cursores de los demás, escriban juntos y resuelvan problemas en tiempo real."
     },
     "support": {
-      "title": "Soporte al Cliente Integrado",
-      "description": "Guía y asiste a los clientes directamente dentro de su sesión del navegador para una resolución más rápida."
-    },
-    "pipelines": {
-      "title": "Flujos de Trabajo Personalizables",
-      "description": "Crea y optimiza flujos de trabajo para cualquier proceso con la simplicidad de arrastrar y soltar."
+      "title": "Soporte al Cliente Interactivo",
+      "description": "Ve al instante lo que ve tu cliente. Toma el control, anota en su pantalla y resuelve problemas en la primera llamada."
     }
   },
   "useCases": {
-    "title": "Diseñado para el Éxito de Cada Profesional",
+    "title": "Diseñado para Equipos de Alto Rendimiento",
     "development": {
       "title": "Desarrollo",
-      "description": "Colabora en tiempo real en el código, prueba funciones y depura de forma conjunta y sin problemas."
+      "description": "Comparte entornos de desarrollo locales, depura en colaboración y asegura que todo el equipo esté en la misma página."
     },
     "qa": {
-      "title": "Control de Calidad y Pruebas",
-      "description": "Automatiza escenarios de prueba, comparte resultados al instante y reduce el tiempo de prueba hasta en un 70%."
+      "title": "QA y Pruebas",
+      "description": "Reduce los ciclos de prueba en un 70%. Automatiza pruebas de navegador, reproduce errores al instante y colabora en las soluciones."
     },
     "customerSupport": {
       "title": "Soporte al Cliente",
-      "description": "Ve exactamente lo que tus clientes ven y guíales hacia soluciones en tiempo real."
+      "description": "Reduce los tiempos de resolución a la mitad. Inicia una sesión compartida al instante para ver, guiar y resolver los problemas de los clientes."
     },
     "operations": {
       "title": "Operaciones",
-      "description": "Crea, optimiza y automatiza flujos de trabajo con información impulsada por IA."
+      "description": "Automatiza revisiones de rutina, ingreso de datos y monitoreo de sistemas sin escribir una sola línea de código."
     }
   },
   "aiSection": {
-    "title": "IA que Aprende y se Adapta a Tu Trabajo",
-    "description": "La IA de Cyqle observa, aprende y automatiza tu flujo de trabajo, liberándote para que te centres en lo más importante.",
+    "title": "Pon tu Flujo de Trabajo en Piloto Automático",
+    "description": "Nuestra IA observa cómo trabajas, identifica patrones repetitivos y sugiere automatizaciones que puedes crear en segundos. No se requiere código.",
     "items": [
-      "La IA registra y automatiza tareas repetitivas",
-      "Sugerencias inteligentes basadas en tus patrones de flujo de trabajo",
-      "Programa automatizaciones para que se ejecuten 24/7",
-      "Comparte y gestiona scripts de automatización en toda tu organización",
-      "Integración perfecta con tus herramientas existentes"
+      "Automatiza cualquier tarea grabando con un solo clic",
+      "Recibe sugerencias de automatización inteligentes",
+      "Programa tareas para que se ejecuten en cualquier momento y en cualquier sitio",
+      "Crea una biblioteca compartida de automatizaciones para tu equipo",
+      "Conéctate a tus herramientas con potentes integraciones"
     ],
     "exploreFeatures": "Explorar Funciones de IA"
   },
   "testimonials": {
-    "title": "Confiado por Profesionales en Todo el Mundo",
+    "title": "Por Qué los Mejores Equipos Eligen Cyqle",
     "items": [
       {
-        "quote": "Cyqle ha reducido nuestro tiempo de resolución de clientes en un 40%. ¡Un cambio de juego para nuestras operaciones de soporte!",
+        "quote": "Cyqle ha reducido nuestro tiempo de resolución con clientes en un 40%. ¡Ha cambiado las reglas del juego para nuestras operaciones de soporte!",
         "author": "Sarah Johnson",
         "role": "Directora de Éxito del Cliente, TechCorp"
       },
       {
-        "quote": "Nuestra productividad de control de calidad se ha disparado. La automatización de Cyqle nos ha ahorrado cientos de horas.",
+        "quote": "Nuestra productividad de QA se ha disparado. La automatización de Cyqle nos ha ahorrado cientos de horas.",
         "author": "Michael Chen",
-        "role": "Líder de Control de Calidad, InnovateSoft"
+        "role": "Líder de QA, InnovateSoft"
       },
       {
-        "quote": "Cyqle ha tendido un puente entre nuestro desarrollo y operaciones. ¡La colaboración nunca ha sido mejor!",
+        "quote": "Cyqle ha cerrado la brecha entre nuestro desarrollo y operaciones. ¡La colaboración nunca ha sido mejor!",
         "author": "Alex Rodriguez",
-        "role": "CTO, FutureTech"
+        "role": "Director de Tecnología (CTO), FutureTech"
       }
     ]
   },
   "cta": {
-    "title": "¿Listo para Elevar tu Rendimiento?",
-    "description": "Únete a miles que ya usan Cyqle para colaborar de forma más inteligente, automatizar más rápido y lograr más.",
-    "startTrial": "Empezar Prueba Gratuita",
-    "scheduleDemo": "Programar Demostración",
-    "trialInfo": "Prueba gratuita de 14 días. No se requiere tarjeta de crédito."
+    "title": "Deja de Cambiar. Empieza a Crear.",
+    "description": "Transforma cómo tu equipo desarrolla, prueba y da soporte a los usuarios. Comienza con tu prueba gratuita hoy mismo.",
+    "startTrial": "Comienza tu Prueba Gratuita",
+    "scheduleDemo": "Agendar una Demo",
+    "trialInfo": "Prueba gratis de 14 días. No se requiere tarjeta."
   },
   "footer": {
-    "description": "El navegador en la nube colaborativo con automatización impulsada por IA para el trabajo moderno.",
+    "description": "El navegador compartido para equipos de alto rendimiento.",
     "product": {
       "title": "Producto",
-      "features": "Características",
+      "features": "Funcionalidades",
       "useCases": "Casos de Uso",
       "pricing": "Precios",
       "integrations": "Integraciones",
@@ -125,7 +117,7 @@
     "company": {
       "title": "Empresa",
       "about": "Nosotros",
-      "careers": "Carreras",
+      "careers": "Empleo",
       "contact": "Contacto",
       "privacy": "Privacidad",
       "terms": "Términos"
