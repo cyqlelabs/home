@@ -121,10 +121,10 @@ export default async function Home({ params: { locale } }: Props) {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">{useCasesT('title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="rounded-xl overflow-hidden shadow-2xl shadow-purple-500/10">
-              <img
-                src="/placeholder.svg?height=600&width=800"
-                alt="Cyqle dashboard interface"
-                className="w-full h-auto"
+              <ResponsiveVideo
+                desktopSrc="/demo1.mp4"
+                mobileSrc="/demo1.mp4"
+                className="w-full h-full"
               />
             </div>
             <div className="space-y-8">
