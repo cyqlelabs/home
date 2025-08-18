@@ -33,9 +33,9 @@
       "title": "True Multiplayer Browsing",
       "description": "Invite your team into a shared session. See each other's cursors, type together, and solve problems in real-time."
     },
-    "support": {
-      "title": "Interactive Customer Support",
-      "description": "Instantly see what your customer sees. Take control, annotate their screen, and resolve issues on the first call."
+    "instantEnvironments": {
+      "title": "On-Demand Workspaces",
+      "description": "Instantly launch tailored browser sessions for flawless sales demos, new hire onboarding, or secure testing. All tabs and logins, ready in a click."
     }
   },
   "useCases": {

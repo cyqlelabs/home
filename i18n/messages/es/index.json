@@ -33,9 +33,9 @@
       "title": "Navegación Multijugador Real",
       "description": "Invita a tu equipo a una sesión compartida. Vean los cursores de los demás, escriban juntos y resuelvan problemas en tiempo real."
     },
-    "support": {
-      "title": "Soporte al Cliente Interactivo",
-      "description": "Ve al instante lo que ve tu cliente. Toma el control, anota en su pantalla y resuelve problemas en la primera llamada."
+    "instantEnvironments": {
+      "title": "Espacios de Trabajo al Instante",
+      "description": "Inicia al instante sesiones de navegador personalizadas para demos de ventas impecables, la incorporación de nuevos empleados o pruebas seguras. Todas las pestañas y logins, listos con un solo clic."
     }
   },
   "useCases": {

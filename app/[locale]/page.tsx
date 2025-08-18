@@ -88,8 +88,8 @@ export default async function Home({ params: { locale } }: Props) {
             />
             <FeatureCard
               icon={<Headset className="h-10 w-10 text-purple-400" />}
-              title={featuresT('support.title')}
-              description={featuresT('support.description')}
+              title={featuresT('instantEnvironments.title')}
+              description={featuresT('instantEnvironments.description')}
             />
           </div>
         </div>
