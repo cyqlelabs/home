@@ -57,8 +57,8 @@ export default async function Home({ params: { locale } }: Props) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
-            <Button disabled={true} size="lg" variant="outline" className="border-gray-700">
-              {heroT('bookDemo')}
+            <Button asChild size="lg" variant="outline" className="border-gray-700">
+              <a href="mailto:demo@cyqle.in">{heroT('bookDemo')}</a>
             </Button>
           </div>
         </div>
