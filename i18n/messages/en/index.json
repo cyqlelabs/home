@@ -31,7 +31,7 @@
     },
     "collaboration": {
       "title": "True Multiplayer Browsing",
-      "description": "Invite your team into a shared session. See each other's cursors, type together, and solve problems in real-time."
+      "description": "Invite someone else to a shared session. See each other's cursors, type together, and solve problems in real-time."
     },
     "instantEnvironments": {
       "title": "On-Demand Workspaces",
@@ -42,7 +42,7 @@
     "title": "Master your workflow.",
     "development": {
       "title": "Development",
-      "description": "Share local development environments, debug collaboratively, and ensure every team member is on the same page."
+      "description": "Share local development environments, debug collaboratively, and ensure everyone is on the same page."
     },
     "qa": {
       "title": "QA & Testing",
@@ -64,7 +64,7 @@
       "Automate any task with one-click recording",
       "Get intelligent automation suggestions",
       "Schedule jobs to run anytime, on any site",
-      "Build a shared library of automations for your team",
+      "Build a shared library of automations",
       "Connect to your stack with powerful integrations"
     ],
     "exploreFeatures": "Explore AI Features"

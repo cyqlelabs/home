@@ -31,7 +31,7 @@
     },
     "collaboration": {
       "title": "Navegación Multijugador Real",
-      "description": "Invita a tu equipo a una sesión compartida. Vean los cursores de los demás, escriban juntos y resuelvan problemas en tiempo real."
+      "description": "Invita a una o más personas. Vean los cursores de los demás, escriban juntos y resuelvan problemas en tiempo real."
     },
     "instantEnvironments": {
       "title": "Espacios de Trabajo al Instante",
@@ -42,7 +42,7 @@
     "title": "Diseñado para Equipos de Alto Rendimiento",
     "development": {
       "title": "Desarrollo",
-      "description": "Comparte entornos de desarrollo locales, depura en colaboración y asegura que todo el equipo esté en la misma página."
+      "description": "Comparte entornos de desarrollo locales, depura en colaboración y asegura que todos estén en la misma página."
     },
     "qa": {
       "title": "QA y Pruebas",
@@ -64,7 +64,7 @@
       "Automatiza cualquier tarea grabando con un solo clic",
       "Recibe sugerencias de automatización inteligentes",
       "Programa tareas para que se ejecuten en cualquier momento y en cualquier sitio",
-      "Crea una biblioteca compartida de automatizaciones para tu equipo",
+      "Crea una biblioteca compartida de automatizaciones",
       "Conéctate a tus herramientas con potentes integraciones"
     ],
     "exploreFeatures": "Explorar Funciones de IA"
