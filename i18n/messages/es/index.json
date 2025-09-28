@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Cyqle | El Navegador Colaborativo en la Nube con IA",
-    "description": "Transforma tu flujo de trabajo con el primer navegador colaborativo en la nube del mundo, con automatización inteligente por IA."
+    "title": "Cyqle | El Entorno P2P para Agentes de IA y Humanos",
+    "description": "Transforma tu flujo de trabajo con el primer entorno colaborativo en la nube del mundo, con automatización inteligente por IA."
   },
   "navbar": {
     "features": "Funcionalidades",
@@ -12,8 +12,8 @@
     "getStarted": "Comenzar Gratis"
   },
   "hero": {
-    "title": "El Navegador Inteligente y Colaborativo",
-    "description": "Con un agente de IA que automatiza todo tu stack.",
+    "title": "El Entorno P2P Colaborativo",
+    "description": "Con agentes de IA que automatizan todo tu stack.",
     "getStarted": "Comenzar Gratis",
     "bookDemo": "Agendar una Demo",
     "trialInfo": "Prueba gratis de 14 días. No se requiere tarjeta.",
@@ -23,19 +23,19 @@
     "title": "Una manera fácil de sincronizar",
     "aiAutomation": {
       "title": "IA que Trabaja para Ti",
-      "description": "Graba cualquier acción del navegador y conviértela en una automatización reutilizable y compartible. Deja que la IA se encargue del trabajo pesado."
+      "description": "Graba cualquier acción y conviértela en una automatización reutilizable y compartible. Deja que la IA se encargue del trabajo pesado."
     },
     "cloudNative": {
       "title": "Accede desde Cualquier Lugar",
-      "description": "Todo tu entorno de navegación vive en la nube. Retoma exactamente donde lo dejaste, en cualquier dispositivo."
+      "description": "Todo tu entorno de escritorio vive en la nube. Retoma exactamente donde lo dejaste, en cualquier dispositivo."
     },
     "collaboration": {
-      "title": "Navegación Multijugador Real",
-      "description": "Invita a una o más personas. Vean los cursores de los demás, escriban juntos y resuelvan problemas en tiempo real."
+      "title": "Escritorio Multijugador Real",
+      "description": "Invita a una o más personas a una sesión compartida. Vean los cursores de los demás, escriban juntos y resuelvan problemas en tiempo real."
     },
     "instantEnvironments": {
       "title": "Espacios de Trabajo al Instante",
-      "description": "Inicia al instante sesiones de navegador personalizadas para demos de ventas impecables, la incorporación de nuevos empleados o pruebas seguras. Todas las pestañas y logins, listos con un solo clic."
+      "description": "Inicia al instante entornos personalizados para demos de ventas impecables, la incorporación de nuevos empleados o pruebas seguras. Todas las apps y logins, listos con un solo clic."
     }
   },
   "useCases": {
@@ -46,7 +46,7 @@
     },
     "qa": {
       "title": "QA y Pruebas",
-      "description": "Reduce los ciclos de prueba en un 70%. Automatiza pruebas de navegador, reproduce errores al instante y colabora en las soluciones."
+      "description": "Reduce los ciclos de prueba en un 70%. Automatiza pruebas de escritorio, reproduce errores al instante y colabora en las soluciones."
     },
     "customerSupport": {
       "title": "Soporte al Cliente",
@@ -97,7 +97,7 @@
     "trialInfo": "Prueba gratis de 14 días. No se requiere tarjeta."
   },
   "footer": {
-    "description": "La forma inteligente de trabajar en la Web.",
+    "description": "El entorno P2P para agentes de IA y humanos.",
     "product": {
       "title": "Producto",
       "features": "Funcionalidades",
