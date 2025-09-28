@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Cyqle | The AI-Powered Collaborative Cloud Browser",
-    "description": "Transform your workflow with the world's first collaborative cloud browser featuring intelligent AI automation."
+    "title": "Cyqle | The P2P Environment for AI Agents and Humans",
+    "description": "Transform your workflow with the world's first collaborative cloud environment featuring intelligent AI automation."
   },
   "navbar": {
     "features": "Features",
@@ -12,8 +12,8 @@
     "getStarted": "Start for Free"
   },
   "hero": {
-    "title": "The Collaborative Smart Browser",
-    "description": "With the AI Agent that automates your entire stack.",
+    "title": "The Collaborative P2P Environment",
+    "description": "With AI Agents that automate your entire stack.",
     "getStarted": "Start for Free",
     "bookDemo": "Book a Demo",
     "trialInfo": "Free 14-day trial. No card required.",
@@ -23,19 +23,19 @@
     "title": "An easier way to sync",
     "aiAutomation": {
       "title": "AI That Works For You",
-      "description": "Record any browser action and turn it into a reusable, shareable automation. Let the AI handle the grunt work."
+      "description": "Record any action and turn it into a reusable, shareable automation. Let the AI handle the grunt work."
     },
     "cloudNative": {
       "title": "Access From Anywhere",
-      "description": "Your entire browsing environment lives in the cloud. Pick up exactly where you left off, on any device."
+      "description": "Your entire desktop environment lives in the cloud. Pick up exactly where you left off, on any device."
     },
     "collaboration": {
-      "title": "True Multiplayer Browsing",
+      "title": "True Multiplayer Desktop",
       "description": "Invite someone else to a shared session. See each other's cursors, type together, and solve problems in real-time."
     },
     "instantEnvironments": {
       "title": "On-Demand Workspaces",
-      "description": "Instantly launch tailored browser sessions for flawless sales demos, new hire onboarding, or secure testing. All tabs and logins, ready in a click."
+      "description": "Instantly launch tailored environments for flawless sales demos, new hire onboarding, or secure testing. All apps and logins, ready in a click."
     }
   },
   "useCases": {
@@ -46,7 +46,7 @@
     },
     "qa": {
       "title": "QA & Testing",
-      "description": "Reduce testing cycles by 70%. Automate browser tests, reproduce bugs instantly, and collaborate on fixes."
+      "description": "Reduce testing cycles by 70%. Automate desktop tests, reproduce bugs instantly, and collaborate on fixes."
     },
     "customerSupport": {
       "title": "Customer Support",
@@ -97,7 +97,7 @@
     "trialInfo": "Free 14-day trial. No card required."
   },
   "footer": {
-    "description": "The Intelligent Way to Work on the Web.",
+    "description": "The P2P environment for AI agents and humans.",
     "product": {
       "title": "Product",
       "features": "Features",
