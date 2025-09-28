@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Cyqle | El Entorno P2P para Agentes de IA y Humanos",
-    "description": "Transforma tu flujo de trabajo con el primer entorno colaborativo en la nube del mundo, con automatización inteligente por IA."
+    "title": "Cyqle | El Entorno Cloud Colaborativo para Equipos y Agentes de IA",
+    "description": "Unifica tu flujo de trabajo en un entorno cloud colaborativo con automatización inteligente de IA."
   },
   "navbar": {
     "features": "Funcionalidades",
@@ -9,73 +9,72 @@
     "pricing": "Precios",
     "about": "Nosotros",
     "signIn": "Iniciar Sesión",
-    "getStarted": "Comenzar Gratis"
+    "getStarted": "Empieza Gratis"
   },
   "hero": {
     "title": "El Entorno P2P Colaborativo",
-    "description": "Con agentes de IA que automatizan todo tu stack.",
-    "getStarted": "Comenzar Gratis",
-    "bookDemo": "Agendar una Demo",
-    "trialInfo": "Prueba gratis de 14 días. No se requiere tarjeta.",
-    "moreInfo": "Más Información"
+    "description": "Con Agentes de IA que automatizan tareas en todo tu stack.",
+    "getStarted": "Empieza Gratis",
+    "bookDemo": "Agendar Demo",
+    "trialInfo": "Prueba gratis de 14 días. Sin tarjeta."
   },
   "features": {
-    "title": "Una manera fácil de sincronizar",
+    "title": "Todo en un solo lugar",
     "aiAutomation": {
-      "title": "IA que Trabaja para Ti",
-      "description": "Graba cualquier acción y conviértela en una automatización reutilizable y compartible. Deja que la IA se encargue del trabajo pesado."
+      "title": "IA que trabaja para ti",
+      "description": "Graba cualquier acción y conviértela en una automatización reutilizable. Deja que la IA haga el trabajo pesado."
     },
     "cloudNative": {
-      "title": "Accede desde Cualquier Lugar",
-      "description": "Todo tu entorno de escritorio vive en la nube. Retoma exactamente donde lo dejaste, en cualquier dispositivo."
+      "title": "Acceso desde cualquier lugar",
+      "description": "Tu escritorio en la nube. Retoma tu trabajo donde lo dejaste, desde cualquier dispositivo."
     },
     "collaboration": {
-      "title": "Escritorio Multijugador Real",
-      "description": "Invita a una o más personas a una sesión compartida. Vean los cursores de los demás, escriban juntos y resuelvan problemas en tiempo real."
+      "title": "Un Escritorio Multijugador",
+      "description": "Invita a tu equipo a una sesión compartida. Vean sus cursores y resuelvan problemas en tiempo real."
     },
     "instantEnvironments": {
-      "title": "Espacios de Trabajo al Instante",
-      "description": "Inicia al instante entornos personalizados para demos de ventas impecables, la incorporación de nuevos empleados o pruebas seguras. Todas las apps y logins, listos con un solo clic."
+      "title": "Espacios de Trabajo a Demanda",
+      "description": "Lanza entornos a medida para demos de ventas, onboarding de empleados o pruebas seguras, al instante."
     }
   },
   "useCases": {
-    "title": "Diseñado para Equipos de Alto Rendimiento",
+    "title": "Acelera cada flujo de trabajo",
     "development": {
       "title": "Desarrollo",
-      "description": "Comparte entornos de desarrollo locales, depura en colaboración y asegura que todos estén en la misma página."
+      "description": "Comparte entornos de desarrollo local, depura en equipo y mantén a todos en la misma página."
     },
     "qa": {
       "title": "QA y Pruebas",
-      "description": "Reduce los ciclos de prueba en un 70%. Automatiza pruebas de escritorio, reproduce errores al instante y colabora en las soluciones."
+      "description": "Reduce los ciclos de prueba un 70%. Automatiza pruebas, reproduce bugs al instante y colabora en las soluciones."
     },
     "customerSupport": {
       "title": "Soporte al Cliente",
-      "description": "Reduce los tiempos de resolución a la mitad. Inicia una sesión compartida al instante para ver, guiar y resolver los problemas de los clientes."
+      "description": "Reduce a la mitad los tiempos de resolución. Inicia sesiones compartidas para guiar y resolver problemas de clientes."
     },
     "operations": {
       "title": "Operaciones",
-      "description": "Automatiza revisiones de rutina, ingreso de datos y monitoreo de sistemas sin escribir una sola línea de código."
+      "description": "Automatiza revisiones de rutina, ingreso de datos y monitoreo de sistemas sin escribir una línea de código."
     }
   },
   "aiSection": {
-    "title": "Tus tareas en Piloto Automático",
-    "description": "Nuestra IA observa cómo trabajas, identifica patrones repetitivos y sugiere automatizaciones que puedes crear en segundos. No se requiere código.",
+    "title": "Pon tu trabajo en piloto automático",
+    "description": "Nuestra IA observa cómo trabajas, identifica patrones repetitivos y sugiere automatizaciones que puedes crear en segundos. Sin código.",
     "items": [
-      "Automatiza cualquier tarea grabando con un solo clic",
+      "Automatiza cualquier tarea grabando con un clic",
       "Recibe sugerencias de automatización inteligentes",
-      "Programa tareas para que se ejecuten en cualquier momento y en cualquier sitio",
-      "Crea una biblioteca compartida de automatizaciones",
-      "Conéctate a tus herramientas con potentes integraciones"
+      "Programa tareas para ejecutarse en cualquier sitio",
+      "Crea una librería compartida de automatizaciones",
+      "Conecta tu stack con potentes integraciones"
     ],
-    "exploreFeatures": "Explorar Funciones de IA"
+    "exploreFeatures": "Explorar Funcionalidades de IA"
   },
   "testimonials": {
-    "title": "Por Qué los Mejores Equipos Eligen Cyqle",
+    "title": "Por qué los mejores equipos eligen Cyqle",
     "items": [
       {
-        "quote": "Cyqle ha reducido nuestro tiempo de resolución con clientes en un 40%. ¡Ha cambiado las reglas del juego para nuestras operaciones de soporte!",
+        "quote": "Cyqle redujo nuestro tiempo de resolución un 40%. ¡Cambió por completo nuestras operaciones de soporte!",
         "author": "Sarah Johnson",
-        "role": "Directora de Éxito del Cliente, TechCorp"
+        "role": "Líder de Éxito del Cliente, TechCorp"
       },
       {
         "quote": "Nuestra productividad de QA se ha disparado. La automatización de Cyqle nos ha ahorrado cientos de horas.",
@@ -83,28 +82,28 @@
         "role": "Líder de QA, InnovateSoft"
       },
       {
-        "quote": "Cyqle ha cerrado la brecha entre nuestro desarrollo y operaciones. ¡La colaboración nunca ha sido mejor!",
+        "quote": "Cyqle cerró la brecha entre desarrollo y operaciones. ¡La colaboración nunca ha sido mejor!",
         "author": "Alex Rodriguez",
-        "role": "Director de Tecnología (CTO), FutureTech"
+        "role": "CTO, FutureTech"
       }
     ]
   },
   "cta": {
-    "title": "Deja de Cambiar. Empieza a Crear.",
-    "description": "Transformá la forma en que trabajas y colaboras. Empezá hoy tu prueba gratis.",
-    "startTrial": "Comienza tu Prueba Gratuita",
+    "title": "Menos Tareas. Más Entregas.",
+    "description": "Unifica cómo desarrollas, pruebas y das soporte a usuarios. Comienza tu prueba gratis hoy.",
+    "startTrial": "Comienza tu Prueba Gratis",
     "scheduleDemo": "Agendar una Demo",
-    "trialInfo": "Prueba gratis de 14 días. No se requiere tarjeta."
+    "trialInfo": "Prueba gratis de 14 días. Sin tarjeta."
   },
   "footer": {
-    "description": "El entorno P2P para agentes de IA y humanos.",
+    "description": "El entorno cloud colaborativo para equipos y agentes de IA.",
     "product": {
       "title": "Producto",
       "features": "Funcionalidades",
       "useCases": "Casos de Uso",
       "pricing": "Precios",
       "integrations": "Integraciones",
-      "roadmap": "Hoja de Ruta"
+      "roadmap": "Roadmap"
     },
     "resources": {
       "title": "Recursos",
