@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Cyqle | The P2P Environment for AI Agents and Humans",
-    "description": "Transform your workflow with the world's first collaborative cloud environment featuring intelligent AI automation."
+    "title": "Cyqle | The Collaborative Cloud Environment for Teams & AI Agents",
+    "description": "Unify your workflow in a collaborative cloud environment powered by intelligent AI automation."
   },
   "navbar": {
     "features": "Features",
@@ -13,33 +13,33 @@
   },
   "hero": {
     "title": "The Collaborative P2P Environment",
-    "description": "With AI Agents that automate your entire stack.",
+    "description": "With AI Agents that automate tasks across your stack.",
     "getStarted": "Start for Free",
     "bookDemo": "Book a Demo",
     "trialInfo": "Free 14-day trial. No card required.",
     "moreInfo": "More Info"
   },
   "features": {
-    "title": "An easier way to sync",
+    "title": "Everything in One Place",
     "aiAutomation": {
       "title": "AI That Works For You",
-      "description": "Record any action and turn it into a reusable, shareable automation. Let the AI handle the grunt work."
+      "description": "Record any action and turn it into a reusable, shareable automation. Let AI handle the grunt work for you."
     },
     "cloudNative": {
       "title": "Access From Anywhere",
-      "description": "Your entire desktop environment lives in the cloud. Pick up exactly where you left off, on any device."
+      "description": "Your cloud desktop environment. Pick up where you left off, on any device, at any time."
     },
     "collaboration": {
       "title": "True Multiplayer Desktop",
-      "description": "Invite someone else to a shared session. See each other's cursors, type together, and solve problems in real-time."
+      "description": "Invite your team to a shared session. See cursors, type together, and solve problems in real-time."
     },
     "instantEnvironments": {
       "title": "On-Demand Workspaces",
-      "description": "Instantly launch tailored environments for flawless sales demos, new hire onboarding, or secure testing. All apps and logins, ready in a click."
+      "description": "Instantly launch tailored environments for sales demos, new hire onboarding, or secure testing."
     }
   },
   "useCases": {
-    "title": "Master your workflow.",
+    "title": "Accelerate Every Workflow",
     "development": {
       "title": "Development",
       "description": "Share local development environments, debug collaboratively, and ensure everyone is on the same page."
@@ -58,14 +58,14 @@
     }
   },
   "aiSection": {
-    "title": "Put Yourself on Autopilot",
+    "title": "Put Your Workflow on Autopilot",
     "description": "Our AI watches how you work, identifies repetitive patterns, and suggests automations you can build in seconds. No code required.",
     "items": [
       "Automate any task with one-click recording",
       "Get intelligent automation suggestions",
       "Schedule jobs to run anytime, on any site",
       "Build a shared library of automations",
-      "Connect to your stack with powerful integrations"
+      "Connect your stack with powerful integrations"
     ],
     "exploreFeatures": "Explore AI Features"
   },
@@ -91,13 +91,13 @@
   },
   "cta": {
     "title": "Stop Switching. Start Shipping.",
-    "description": "Transform how you develop, test, and deliver value to your users. Get started with your free trial today.",
+    "description": "Unify how you develop, test, and support users. Start your free trial today.",
     "startTrial": "Start Your Free Trial",
     "scheduleDemo": "Schedule a Demo",
     "trialInfo": "Free 14-day trial. No card required."
   },
   "footer": {
-    "description": "The P2P environment for AI agents and humans.",
+    "description": "The collaborative cloud environment for teams & AI agents.",
     "product": {
       "title": "Product",
       "features": "Features",
