@@ -53,7 +53,19 @@ export default async function Home({ params: { locale } }: Props) {
             {heroT('title')}
           </h1>
           <p className="text-xl md:text-2xl mb-10 text-slate-200 font-semibold max-w-4xl">
-            {heroT('description')}
+            {(() => {
+              const desc = heroT('description').split('.');
+
+              return (
+                <>
+                  <span className="md:hidden">
+                    {desc[0]}.<br />
+                    {desc[1]}.
+                  </span>
+                  <span className="hidden md:flex">{desc.join('.')}</span>
+                </>
+              );
+            })()}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
