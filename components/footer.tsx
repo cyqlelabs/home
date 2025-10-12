@@ -12,8 +12,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16">
           <div className="col-span-1 md:col-span-1">
-            <a href="#" className="text-2xl font-bold text-white flex items-center mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-400">
+            <a href="#" className="text-2xl font-bold text-white flex items-center gap-3 mb-6">
+              <img
+                src="/logo-up.png"
+                alt="Cyqle Logo"
+                className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 object-contain"
+              />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 via-slate-200 to-slate-300">
                 Cyqle
               </span>
             </a>
