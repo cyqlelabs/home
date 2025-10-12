@@ -13,6 +13,10 @@
   },
   "hero": {
     "title": "The Collaborative Cloud Desktop",
+    "titlePrefix": "The Collaborative Cloud",
+    "titleWord1": "Desktop",
+    "titleWord2": "Browser",
+    "titleSuffix": "",
     "description": "Put your workflow on autopilot. Bring your agents, or use ours.",
     "getStarted": "Start for Free",
     "bookDemo": "Book a Demo",

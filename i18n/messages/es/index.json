@@ -13,6 +13,10 @@
   },
   "hero": {
     "title": "El Escritorio Colaborativo en la Nube",
+    "titlePrefix": "El",
+    "titleWord1": "Escritorio",
+    "titleWord2": "Navegador",
+    "titleSuffix": "Colaborativo en la Nube",
     "description": "Todo tu workflow, en automático. Con tus agentes o los nuestros.",
     "getStarted": "Empieza Gratis",
     "bookDemo": "Agendar Demo",
