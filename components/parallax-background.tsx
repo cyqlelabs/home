@@ -25,9 +25,9 @@ export default function ParallaxBackground() {
       >
         <div className="absolute inset-0 bg-grid-pattern opacity-20"></div>
 
-        <div className="absolute top-[20%] left-[15%] w-80 h-80 bg-purple-500/20 rounded-full blur-[120px] animate-blob"></div>
-        <div className="absolute top-[60%] right-[10%] w-80 h-80 bg-cyan-500/20 rounded-full blur-[120px] animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-[15%] left-[50%] w-80 h-80 bg-purple-500/20 rounded-full blur-[120px] animate-blob animation-delay-4000"></div>
+        <div className="absolute top-[20%] left-[15%] w-80 h-80 bg-gray-400/20 rounded-full blur-[120px] animate-blob"></div>
+        <div className="absolute top-[60%] right-[10%] w-80 h-80 bg-[#FF7600]/20 rounded-full blur-[120px] animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-[15%] left-[50%] w-80 h-80 bg-gray-500/20 rounded-full blur-[120px] animate-blob animation-delay-4000"></div>
       </div>
     </div>
   );

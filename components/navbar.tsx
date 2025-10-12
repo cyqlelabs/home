@@ -31,8 +31,13 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-bold text-foreground flex items-center">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-400">
+            <a href="#" className="text-2xl font-bold text-foreground flex items-center gap-3">
+              <img
+                src="/logo-up.png"
+                alt="Cyqle Logo"
+                className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 object-contain"
+              />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300">
                 Cyqle
               </span>
             </a>
@@ -80,7 +85,7 @@ export default function Navbar() {
             </Button>
             <Button
               disabled
-              className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+              className="bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 text-slate-800 hover:from-gray-500 hover:via-gray-300 hover:to-gray-500 shadow-lg"
             >
               {t('navbar.getStarted')}
             </Button>
@@ -140,7 +145,7 @@ export default function Navbar() {
                 <Button variant="outline" className="w-full justify-center">
                   {t('navbar.signIn')}
                 </Button>
-                <Button className="w-full justify-center bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700">
+                <Button className="w-full justify-center bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 text-gray-900 hover:from-gray-500 hover:via-gray-300 hover:to-gray-500 shadow-lg">
                   {t('navbar.getStarted')}
                 </Button>
               </div>

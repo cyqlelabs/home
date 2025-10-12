@@ -11,7 +11,7 @@ export default function MoreInfoButton({ children }: MoreInfoButtonProps) {
   return (
     <Button
       size="lg"
-      className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
+      className="bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg"
       onClick={() => {
         window.location.assign('#features');
       }}

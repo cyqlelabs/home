@@ -25,7 +25,7 @@ export default function LanguageSwitcher() {
         variant={locale === 'en' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => switchLocale('en')}
-        className={locale === 'en' ? 'bg-purple-600 hover:bg-purple-700' : ''}
+        className={locale === 'en' ? 'bg-black text-white hover:bg-gray-900' : ''}
       >
         EN
       </Button>
@@ -33,7 +33,7 @@ export default function LanguageSwitcher() {
         variant={locale === 'es' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => switchLocale('es')}
-        className={locale === 'es' ? 'bg-purple-600 hover:bg-purple-700' : ''}
+        className={locale === 'es' ? 'bg-black text-white hover:bg-gray-900' : ''}
       >
         ES
       </Button>
