@@ -17,6 +17,7 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import MoreInfoButton from '@/components/more-info-button';
 import ResponsiveVideo from '@/components/responsive-video';
+import RotatingWord from '@/components/rotating-word';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 type Props = {
@@ -50,7 +51,12 @@ export default async function Home({ params: { locale } }: Props) {
         />
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center gap-6 text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
           <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF7600]/80 via-[#FF7600] to-[#FF7600]/80 mb-6">
-            {heroT('title')}
+            {heroT('titlePrefix')}{' '}
+            <RotatingWord
+              words={[heroT('titleWord1'), heroT('titleWord2')]}
+              className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF7600]/80 via-[#FF7600] to-[#FF7600]/80"
+            />
+            {heroT('titleSuffix') !== 'hero.titleSuffix' ? ` ${heroT('titleSuffix')}` : ''}
           </h1>
           <p className="text-xl md:text-2xl mb-10 text-slate-200 font-semibold max-w-4xl">
             {(() => {
