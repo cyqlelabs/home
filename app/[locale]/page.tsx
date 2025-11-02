@@ -53,7 +53,7 @@ export default async function Home({ params: { locale } }: Props) {
           <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF7600]/80 via-[#FF7600] to-[#FF7600]/80 mb-6">
             {heroT('titlePrefix')}{' '}
             <RotatingWord
-              words={[heroT('titleWord1'), heroT('titleWord2')]}
+              words={[heroT('titleWord1'), heroT('titleWord2'), heroT('titleWord3')]}
               className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF7600]/80 via-[#FF7600] to-[#FF7600]/80"
             />
             {heroT('titleSuffix') !== 'hero.titleSuffix' ? ` ${heroT('titleSuffix')}` : ''}
