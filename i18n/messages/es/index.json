@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Cyqle | El Entorno Cloud Colaborativo para Equipos y Agentes de IA",
-    "description": "Unifica tu flujo de trabajo en un entorno cloud colaborativo con automatización inteligente de IA."
+    "title": "Cyqle | El Escritorio Cloud Multijugador para Humanos y Agentes IA",
+    "description": "Un entorno compartido, persistente, para tu equipo y agentes de IA."
   },
   "navbar": {
     "features": "Funcionalidades",
@@ -12,12 +12,12 @@
     "getStarted": "Empieza Gratis"
   },
   "hero": {
-    "title": "El Escritorio Colaborativo en la Nube",
+    "title": "El Escritorio Cloud Multijugador",
     "titlePrefix": "El",
     "titleWord1": "Escritorio",
     "titleWord2": "Navegador",
-    "titleSuffix": "Colaborativo en la Nube",
-    "description": "Todo tu workflow, en automático. Con tus agentes o los nuestros.",
+    "titleSuffix": "Multijugador",
+    "description": "Un entorno compartido, persistente, para tu equipo y agentes de IA.",
     "getStarted": "Empieza Gratis",
     "bookDemo": "Agendar Demo",
     "trialInfo": "Prueba gratis de 14 días. Sin tarjeta.",
@@ -26,44 +26,44 @@
   "features": {
     "title": "Todo en un solo lugar",
     "aiAutomation": {
-      "title": "IA que trabaja para ti",
-      "description": "Graba cualquier acción y conviértela en una automatización reutilizable. Deja que la IA haga el trabajo pesado."
+      "title": "Despliega tu fuerza de IA",
+      "description": "Graba cualquier acción y crea automatizaciones reutilizables. Despliega agentes para tareas repetitivas."
     },
     "cloudNative": {
       "title": "Acceso desde cualquier lugar",
-      "description": "Tu escritorio en la nube. Retoma tu trabajo donde lo dejaste, desde cualquier dispositivo."
+      "description": "Tu escritorio cloud persistente. Retoma tu trabajo donde lo dejaste, en cualquier dispositivo."
     },
     "collaboration": {
-      "title": "Un Escritorio Multijugador",
+      "title": "Escritorio Multijugador Real",
       "description": "Invita a tu equipo a una sesión compartida. Vean sus cursores y resuelvan problemas en tiempo real."
     },
     "instantEnvironments": {
       "title": "Espacios de Trabajo a Demanda",
-      "description": "Lanza entornos a medida para demos de ventas, onboarding de empleados o pruebas seguras, al instante."
+      "description": "Lanza entornos seguros y aislados para demos, onboarding o pruebas al instante."
     }
   },
   "useCases": {
     "title": "Acelera cada flujo de trabajo",
     "development": {
       "title": "Desarrollo",
-      "description": "Comparte entornos de desarrollo local, depura en equipo y mantén a todos en la misma página."
+      "description": "Comparte entornos de dev, depura en tiempo real y mantén a todo tu equipo en sintonía."
     },
     "qa": {
       "title": "QA y Pruebas",
-      "description": "Reduce los ciclos de prueba un 70%. Automatiza pruebas, reproduce bugs al instante y colabora en las soluciones."
+      "description": "Automatiza pruebas de UI, reproduce bugs en sesiones compartidas y colabora en fixes al instante."
     },
     "customerSupport": {
       "title": "Soporte al Cliente",
-      "description": "Reduce a la mitad los tiempos de resolución. Inicia sesiones compartidas para guiar y resolver problemas de clientes."
+      "description": "Inicia una sesión compartida al instante para ver, guiar y resolver problemas de clientes."
     },
     "operations": {
       "title": "Operaciones",
-      "description": "Automatiza revisiones de rutina, ingreso de datos y monitoreo de sistemas sin escribir una línea de código."
+      "description": "Despliega agentes para automatizar chequeos, data entry y monitoreo. Sin una línea de código."
     }
   },
   "aiSection": {
     "title": "Pon tu trabajo en piloto automático",
-    "description": "Nuestra IA observa cómo trabajas, identifica patrones repetitivos y sugiere automatizaciones que puedes crear en segundos. Sin código.",
+    "description": "Trae tus propios agentes o crea nuevos. Graba acciones para crear potentes automatizaciones en segundos.",
     "items": [
       "Automatiza cualquier tarea grabando con un clic",
       "Recibe sugerencias de automatización inteligentes",
@@ -94,14 +94,14 @@
     ]
   },
   "cta": {
-    "title": "Colaboración real. Por fin.",
-    "description": "Unificá a tu equipo, herramientas y agentes en un único entorno. Es hora de alcanzar la sincronía total.",
+    "title": "Un Espacio de Trabajo Compartido.",
+    "description": "Reúne a tu equipo, herramientas y agentes en un solo entorno cloud en tiempo real. Es hora de trabajar en sintonía.",
     "startTrial": "Comienza tu Prueba Gratis",
     "scheduleDemo": "Agendar una Demo",
     "trialInfo": "Prueba gratis de 14 días. Sin tarjeta."
   },
   "footer": {
-    "description": "El entorno cloud colaborativo para equipos y agentes de IA.",
+    "description": "El escritorio cloud multijugador para humanos y agentes de IA.",
     "product": {
       "title": "Producto",
       "features": "Funcionalidades",

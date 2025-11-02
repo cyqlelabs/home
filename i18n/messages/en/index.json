@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Cyqle | The Collaborative Cloud Environment for Teams & AI Agents",
-    "description": "Unify your workflow in a collaborative cloud environment powered by intelligent AI automation."
+    "title": "Cyqle | The Multiplayer Cloud Desktop for Humans & AI Agents",
+    "description": "A persistent, shared environment for your team and your AI agents."
   },
   "navbar": {
     "features": "Features",
@@ -12,12 +12,12 @@
     "getStarted": "Start for Free"
   },
   "hero": {
-    "title": "The Collaborative Cloud Desktop",
-    "titlePrefix": "The Collaborative Cloud",
+    "title": "The Multiplayer Cloud Desktop",
+    "titlePrefix": "The Multiplayer Cloud",
     "titleWord1": "Desktop",
     "titleWord2": "Browser",
     "titleSuffix": "",
-    "description": "Put your workflow on autopilot. Bring your agents, or use ours.",
+    "description": "A persistent, shared environment for your team and AI agents",
     "getStarted": "Start for Free",
     "bookDemo": "Book a Demo",
     "trialInfo": "Free 14-day trial. No card required.",
@@ -26,12 +26,12 @@
   "features": {
     "title": "Everything in One Place",
     "aiAutomation": {
-      "title": "AI That Works For You",
-      "description": "Record any action and turn it into a reusable, shareable automation. Let AI handle the grunt work for you."
+      "title": "Deploy Your AI Workforce",
+      "description": "Record any action to create reusable automations. Deploy agents to handle repetitive tasks."
     },
     "cloudNative": {
       "title": "Access From Anywhere",
-      "description": "Your cloud desktop environment. Pick up where you left off, on any device, at any time."
+      "description": "Your persistent cloud desktop. Pick up where you left off, on any device, at any time."
     },
     "collaboration": {
       "title": "True Multiplayer Desktop",
@@ -39,31 +39,31 @@
     },
     "instantEnvironments": {
       "title": "On-Demand Workspaces",
-      "description": "Instantly launch tailored environments for sales demos, new hire onboarding, or secure testing."
+      "description": "Instantly launch secure, isolated environments for demos, new hire onboarding, or testing."
     }
   },
   "useCases": {
     "title": "Accelerate Every Workflow",
     "development": {
       "title": "Development",
-      "description": "Share local development environments, debug collaboratively, and ensure everyone is on the same page."
+      "description": "Share dev environments, debug in real-time, and keep your entire team in sync."
     },
     "qa": {
       "title": "QA & Testing",
-      "description": "Reduce testing cycles by 70%. Automate desktop tests, reproduce bugs instantly, and collaborate on fixes."
+      "description": "Automate UI tests, reproduce bugs in shared sessions, and collaborate instantly on fixes."
     },
     "customerSupport": {
       "title": "Customer Support",
-      "description": "Cut resolution times in half. Instantly launch a shared session to see, guide, and solve customer issues."
+      "description": "Instantly launch a shared session to see, guide, and solve customer issues in real-time."
     },
     "operations": {
       "title": "Operations",
-      "description": "Automate routine checks, data entry, and system monitoring without writing a single line of code."
+      "description": "Deploy agents to automate routine checks, data entry, and system monitoring. No code required."
     }
   },
   "aiSection": {
     "title": "Put Your Work on Autopilot",
-    "description": "Our AI watches how you work, identifies repetitive patterns, and suggests automations you can build in seconds. No code required.",
+    "description": "Bring your own agents or build new ones. Record actions to create powerful automations in seconds.",
     "items": [
       "Automate any task with one-click recording",
       "Get intelligent automation suggestions",
@@ -101,7 +101,7 @@
     "trialInfo": "Free 14-day trial. No card required."
   },
   "footer": {
-    "description": "The collaborative cloud environment for teams & AI agents.",
+    "description": "The multiplayer cloud desktop for humans & AI agents.",
     "product": {
       "title": "Product",
       "features": "Features",
