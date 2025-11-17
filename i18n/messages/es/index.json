@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Cyqle | El Escritorio Cloud P2P para Colaboración Instantánea",
-    "description": "Una computadora en la nube persistente y de baja latencia para que tu equipo construya, pruebe y automatice juntos."
+    "description": "Un ordenador cloud persistente para que tu equipo construya, testee y automatice en conjunto."
   },
   "navbar": {
     "features": "Funcionalidades",
@@ -9,7 +9,7 @@
     "pricing": "Precios",
     "about": "Nosotros",
     "signIn": "Iniciar Sesión",
-    "getStarted": "Empieza Gratis"
+    "getStarted": "Empezar Gratis"
   },
   "hero": {
     "title": "El Escritorio Cloud P2P",
@@ -18,98 +18,98 @@
     "titleWord2": "Espacio",
     "titleWord3": "Equipo",
     "titleSuffix": "Cloud P2P",
-    "description": "Un escritorio en la nube persistente y completo para colaboración. en tiempo real y automatización con IA.",
-    "getStarted": "Empieza Gratis",
+    "description": "Un escritorio cloud completo y persistente para colaboración en tiempo real y automatización con IA.",
+    "getStarted": "Empezar Gratis",
     "bookDemo": "Agendar Demo",
-    "trialInfo": "Prueba de 14 días gratis. Sin tarjeta de crédito.",
-    "moreInfo": "Más Información"
+    "trialInfo": "Prueba gratuita de 14 días. Sin tarjeta.",
+    "moreInfo": "Más Info"
   },
   "features": {
     "title": "Un Escritorio Completo, Reinventado",
     "aiAutomation": {
       "title": "Automatización Integrada",
-      "description": "Tu escritorio cloud incluye grabación nativa. Automatiza tareas repetitivas de la interfaz sin esfuerzo."
+      "description": "Tu escritorio cloud incluye grabación nativa. Automatiza tareas repetitivas de interfaz sin esfuerzo."
     },
     "cloudNative": {
       "title": "Persistente y Portátil",
-      "description": "Un entorno Linux real que vive en la nube. Pausa tu trabajo y retómalo en cualquier dispositivo, exactamente como lo dejaste."
+      "description": "Un entorno Linux real que vive en la nube. Pausa tu trabajo y retómalo en cualquier dispositivo, tal como lo dejaste."
     },
     "collaboration": {
-      "title": "Sincronización P2P en Tiempo Real",
-      "description": "El streaming directo peer-to-peer asegura una colaboración fluída. Comparte pantalla y controles de forma segura."
+      "title": "Sincronización P2P Real",
+      "description": "El streaming directo peer-to-peer asegura una colaboración fluida. Comparte pantalla y control de forma segura."
     },
     "instantEnvironments": {
-      "title": "Aprovisionamiento Instantáneo",
-      "description": "Genera entornos de escritorio aislados y totalmente configurados para demos, pruebas o desarrollo en segundos."
+      "title": "Despliegue Instantáneo",
+      "description": "Crea entornos de escritorio aislados y configurados en segundos para demos, testing o desarrollo."
     }
   },
   "useCases": {
-    "title": "Tu Espacio para Cada Flujo de Trabajo",
+    "title": "Tu Espacio para cada Flujo de Trabajo",
     "development": {
       "title": "Desarrollo Remoto",
-      "description": "Programa en una potente máquina en la nube. Haz 'pair programming' con latencia cero y mantén entornos consistentes."
+      "description": "Programa en un entorno cloud persistente. Haz pair programming en tiempo real manteniendo la consistencia del entorno."
     },
     "qa": {
-      "title": "QA y Pruebas",
-      "description": "Reproduce errores en un entorno compartido y limpio. Invita a los desarrolladores a tu sesión para depurar al instante."
+      "title": "QA y Testing",
+      "description": "Reproduce bugs en un entorno limpio y compartido. Invita a desarrolladores a tu sesión para depurar al instante."
     },
     "customerSupport": {
       "title": "Soporte Colaborativo",
-      "description": "No solo digas a los clientes qué hacer, muéstralo. Lanza una sesión compartida para guiar a los usuarios en problemas complejos."
+      "description": "No solo digas qué hacer, muéstralo. Lanza una sesión compartida para guiar a los usuarios en problemas complejos."
     },
     "operations": {
       "title": "Operaciones Seguras",
-      "description": "Accede a herramientas internas y dashboards desde un escritorio cloud seguro y aislado, sin exponer redes locales."
+      "description": "Accede a herramientas internas y dashboards desde un escritorio cloud aislado sin exponer redes locales."
     }
   },
   "aiSection": {
     "title": "Potencia tu Escritorio",
-    "description": "Aunque es una computadora completa en la nube, Cyqle también incluye potentes herramientas de IA para trabajar más rápido.",
+    "description": "Además de ser un ordenador cloud completo, Cyqle incluye potentes herramientas de IA para trabajar más rápido.",
     "items": [
-      "Graba interacciones del escritorio para reproducirlas (Replay)",
-      "Delega tareas repetitivas de la GUI a agentes",
-      "Programa flujos de trabajo para ejecutarse en segundo plano",
-      "Mantén una librería compartida de automatizaciones de equipo",
-      "Intégralo perfectamente con tu stack actual"
+      "Graba interacciones de escritorio para reproducirlas",
+      "Delega tareas repetitivas de interfaz a agentes",
+      "Programa flujos de trabajo en segundo plano",
+      "Mantén una librería compartida de automatizaciones",
+      "Integración fluida con tu stack actual"
     ],
     "exploreFeatures": "Explorar Funcionalidades"
   },
   "testimonials": {
-    "title": "Por qué los Equipos se Pasan a Cyqle",
+    "title": "Por qué los equipos se pasan a Cyqle",
     "items": [
       {
-        "quote": "Por fin, un escritorio cloud que se siente como una máquina local. La conexión P2P hace que la colaboración sea instantánea.",
+        "quote": "Por fin, un escritorio cloud que se siente como uno local. La conexión P2P hace que la colaboración sea instantánea.",
         "author": "Sarah Johnson",
         "role": "Directora de Ingeniería, TechCorp"
       },
       {
-        "quote": "Poder levantar un escritorio nuevo para cada prueba de QA y compartirlo con los devs ha salvado nuestro flujo de trabajo.",
+        "quote": "Poder levantar un escritorio limpio para cada test de QA y compartirlo con desarrollo es un salvavidas.",
         "author": "Michael Chen",
         "role": "Líder de QA, InnovateSoft"
       },
       {
-        "quote": "La persistencia es clave. Dejo mis cálculos pesados corriendo en Cyqle y reviso el progreso desde mi teléfono más tarde.",
+        "quote": "La persistencia es clave. Dejo mis procesos pesados corriendo en Cyqle y reviso desde el móvil más tarde.",
         "author": "Alex Rodriguez",
         "role": "CTO, FutureTech"
       }
     ]
   },
   "cta": {
-    "title": "La Computadora de tu Equipo en la Nube.",
-    "description": "Experimenta la velocidad del streaming P2P combinada con el poder de un escritorio cloud persistente. Trabajen juntos, desde donde sea.",
-    "startTrial": "Inicia tu Prueba Gratuita",
-    "scheduleDemo": "Agendar una Demo",
-    "trialInfo": "Prueba de 14 días gratis. Sin tarjeta de crédito."
+    "title": "El ordenador de tu equipo, en la nube.",
+    "description": "Vive la velocidad del streaming P2P combinada con la potencia de un escritorio cloud persistente. Trabajad juntos, desde donde sea.",
+    "startTrial": "Empieza tu Prueba Gratuita",
+    "scheduleDemo": "Agendar Demo",
+    "trialInfo": "Prueba gratuita de 14 días. Sin tarjeta."
   },
   "footer": {
-    "description": "El escritorio cloud P2P para una colaboración y automatización sin límites.",
+    "description": "El escritorio cloud P2P para colaboración fluida y automatización.",
     "product": {
       "title": "Producto",
       "features": "Funcionalidades",
       "useCases": "Casos de Uso",
       "pricing": "Precios",
       "integrations": "Integraciones",
-      "roadmap": "Hoja de Ruta"
+      "roadmap": "Roadmap"
     },
     "resources": {
       "title": "Recursos",
@@ -122,14 +122,14 @@
     "company": {
       "title": "Empresa",
       "about": "Sobre Nosotros",
-      "careers": "Empleo",
+      "careers": "Carreras",
       "contact": "Contacto",
       "privacy": "Privacidad",
       "terms": "Términos"
     },
     "copyright": "© {year} Cyqle. Todos los derechos reservados.",
     "privacyPolicy": "Política de Privacidad",
-    "termsOfService": "Términos de Servicio",
+    "termsOfService": "Términos del Servicio",
     "cookies": "Cookies"
   }
 }
