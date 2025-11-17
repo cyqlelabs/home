@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Cyqle | El Escritorio Cloud Multijugador para Humanos y Agentes IA",
-    "description": "Un entorno compartido, persistente, para tu equipo y agentes de IA."
+    "title": "Cyqle | El Escritorio Cloud P2P para Colaboración Instantánea",
+    "description": "Una computadora en la nube persistente y de baja latencia para que tu equipo construya, pruebe y automatice juntos."
   },
   "navbar": {
     "features": "Funcionalidades",
@@ -12,104 +12,104 @@
     "getStarted": "Empieza Gratis"
   },
   "hero": {
-    "title": "El Escritorio Cloud Multijugador",
-    "titlePrefix": "El",
+    "title": "El Escritorio Cloud P2P",
+    "titlePrefix": "Tu",
     "titleWord1": "Escritorio",
-    "titleWord2": "Navegador",
-    "titleWord3": "SO",
-    "titleSuffix": "Multijugador",
-    "description": "Un entorno compartido, persistente, para tu equipo y agentes de IA.",
+    "titleWord2": "Espacio",
+    "titleWord3": "Equipo",
+    "titleSuffix": "Cloud P2P",
+    "description": "Un escritorio en la nube persistente y completo para colaboración. en tiempo real y automatización con IA.",
     "getStarted": "Empieza Gratis",
     "bookDemo": "Agendar Demo",
-    "trialInfo": "Prueba gratis de 14 días. Sin tarjeta.",
+    "trialInfo": "Prueba de 14 días gratis. Sin tarjeta de crédito.",
     "moreInfo": "Más Información"
   },
   "features": {
-    "title": "Todo en un solo lugar",
+    "title": "Un Escritorio Completo, Reinventado",
     "aiAutomation": {
-      "title": "Despliega tu fuerza de IA",
-      "description": "Graba cualquier acción y crea automatizaciones reutilizables. Despliega agentes para tareas repetitivas."
+      "title": "Automatización Integrada",
+      "description": "Tu escritorio cloud incluye grabación nativa. Automatiza tareas repetitivas de la interfaz sin esfuerzo."
     },
     "cloudNative": {
-      "title": "Acceso desde cualquier lugar",
-      "description": "Tu escritorio cloud persistente. Retoma tu trabajo donde lo dejaste, en cualquier dispositivo."
+      "title": "Persistente y Portátil",
+      "description": "Un entorno Linux real que vive en la nube. Pausa tu trabajo y retómalo en cualquier dispositivo, exactamente como lo dejaste."
     },
     "collaboration": {
-      "title": "Escritorio Multijugador Real",
-      "description": "Invita a tu equipo a una sesión compartida. Vean sus cursores y resuelvan problemas en tiempo real."
+      "title": "Sincronización P2P en Tiempo Real",
+      "description": "El streaming directo peer-to-peer asegura una colaboración fluída. Comparte pantalla y controles de forma segura."
     },
     "instantEnvironments": {
-      "title": "Espacios de Trabajo a Demanda",
-      "description": "Lanza entornos seguros y aislados para demos, onboarding o pruebas al instante."
+      "title": "Aprovisionamiento Instantáneo",
+      "description": "Genera entornos de escritorio aislados y totalmente configurados para demos, pruebas o desarrollo en segundos."
     }
   },
   "useCases": {
-    "title": "Acelera cada flujo de trabajo",
+    "title": "Tu Espacio para Cada Flujo de Trabajo",
     "development": {
-      "title": "Desarrollo",
-      "description": "Comparte entornos de dev, depura en tiempo real y mantén a todo tu equipo en sintonía."
+      "title": "Desarrollo Remoto",
+      "description": "Programa en una potente máquina en la nube. Haz 'pair programming' con latencia cero y mantén entornos consistentes."
     },
     "qa": {
       "title": "QA y Pruebas",
-      "description": "Automatiza pruebas de UI, reproduce bugs en sesiones compartidas y colabora en fixes al instante."
+      "description": "Reproduce errores en un entorno compartido y limpio. Invita a los desarrolladores a tu sesión para depurar al instante."
     },
     "customerSupport": {
-      "title": "Soporte al Cliente",
-      "description": "Inicia una sesión compartida al instante para ver, guiar y resolver problemas de clientes."
+      "title": "Soporte Colaborativo",
+      "description": "No solo digas a los clientes qué hacer, muéstralo. Lanza una sesión compartida para guiar a los usuarios en problemas complejos."
     },
     "operations": {
-      "title": "Operaciones",
-      "description": "Despliega agentes para automatizar chequeos, data entry y monitoreo. Sin una línea de código."
+      "title": "Operaciones Seguras",
+      "description": "Accede a herramientas internas y dashboards desde un escritorio cloud seguro y aislado, sin exponer redes locales."
     }
   },
   "aiSection": {
-    "title": "Pon tu trabajo en piloto automático",
-    "description": "Trae tus propios agentes o crea nuevos. Graba acciones para crear potentes automatizaciones en segundos.",
+    "title": "Potencia tu Escritorio",
+    "description": "Aunque es una computadora completa en la nube, Cyqle también incluye potentes herramientas de IA para trabajar más rápido.",
     "items": [
-      "Automatiza cualquier tarea grabando con un clic",
-      "Recibe sugerencias de automatización inteligentes",
-      "Programa tareas para ejecutarse en cualquier sitio",
-      "Crea una librería compartida de automatizaciones",
-      "Conecta tu stack con potentes integraciones"
+      "Graba interacciones del escritorio para reproducirlas (Replay)",
+      "Delega tareas repetitivas de la GUI a agentes",
+      "Programa flujos de trabajo para ejecutarse en segundo plano",
+      "Mantén una librería compartida de automatizaciones de equipo",
+      "Intégralo perfectamente con tu stack actual"
     ],
     "exploreFeatures": "Explorar Funcionalidades"
   },
   "testimonials": {
-    "title": "Por qué los mejores equipos eligen Cyqle",
+    "title": "Por qué los Equipos se Pasan a Cyqle",
     "items": [
       {
-        "quote": "Cyqle redujo nuestro tiempo de resolución un 40%. ¡Cambió por completo nuestras operaciones de soporte!",
+        "quote": "Por fin, un escritorio cloud que se siente como una máquina local. La conexión P2P hace que la colaboración sea instantánea.",
         "author": "Sarah Johnson",
-        "role": "Líder de Éxito del Cliente, TechCorp"
+        "role": "Directora de Ingeniería, TechCorp"
       },
       {
-        "quote": "Nuestra productividad de QA se ha disparado. La automatización de Cyqle nos ha ahorrado cientos de horas.",
+        "quote": "Poder levantar un escritorio nuevo para cada prueba de QA y compartirlo con los devs ha salvado nuestro flujo de trabajo.",
         "author": "Michael Chen",
         "role": "Líder de QA, InnovateSoft"
       },
       {
-        "quote": "Cyqle cerró la brecha entre desarrollo y operaciones. ¡La colaboración nunca ha sido mejor!",
+        "quote": "La persistencia es clave. Dejo mis cálculos pesados corriendo en Cyqle y reviso el progreso desde mi teléfono más tarde.",
         "author": "Alex Rodriguez",
         "role": "CTO, FutureTech"
       }
     ]
   },
   "cta": {
-    "title": "Un Espacio de Trabajo Compartido.",
-    "description": "Reúne a tu equipo, herramientas y agentes en un solo entorno cloud en tiempo real. Es hora de trabajar en sintonía.",
-    "startTrial": "Comienza tu Prueba Gratis",
+    "title": "La Computadora de tu Equipo en la Nube.",
+    "description": "Experimenta la velocidad del streaming P2P combinada con el poder de un escritorio cloud persistente. Trabajen juntos, desde donde sea.",
+    "startTrial": "Inicia tu Prueba Gratuita",
     "scheduleDemo": "Agendar una Demo",
-    "trialInfo": "Prueba gratis de 14 días. Sin tarjeta."
+    "trialInfo": "Prueba de 14 días gratis. Sin tarjeta de crédito."
   },
   "footer": {
-    "description": "El escritorio cloud multijugador para humanos y agentes de IA.",
+    "description": "El escritorio cloud P2P para una colaboración y automatización sin límites.",
     "product": {
       "title": "Producto",
       "features": "Funcionalidades",
       "useCases": "Casos de Uso",
       "pricing": "Precios",
       "integrations": "Integraciones",
-      "roadmap": "Roadmap"
+      "roadmap": "Hoja de Ruta"
     },
     "resources": {
       "title": "Recursos",
@@ -121,7 +121,7 @@
     },
     "company": {
       "title": "Empresa",
-      "about": "Nosotros",
+      "about": "Sobre Nosotros",
       "careers": "Empleo",
       "contact": "Contacto",
       "privacy": "Privacidad",

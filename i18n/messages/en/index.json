@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Cyqle | The Multiplayer Cloud Desktop for Humans & AI Agents",
-    "description": "A persistent, shared environment for your team and your AI agents."
+    "title": "Cyqle | The P2P Cloud Desktop for Instant Collaboration",
+    "description": "A persistent, low-latency cloud computer for your team to build, test, and automate together."
   },
   "navbar": {
     "features": "Features",
@@ -12,97 +12,97 @@
     "getStarted": "Start for Free"
   },
   "hero": {
-    "title": "The Multiplayer Cloud Desktop",
-    "titlePrefix": "The Multiplayer Cloud",
+    "title": "The P2P Cloud Desktop",
+    "titlePrefix": "The P2P Cloud",
     "titleWord1": "Desktop",
-    "titleWord2": "Browser",
-    "titleWord3": "OS",
+    "titleWord2": "Workspace",
+    "titleWord3": "Computer",
     "titleSuffix": "",
-    "description": "A persistent, shared environment for your team and AI agents",
+    "description": "A persistent, full-featured cloud desktop for real-time collaboration. and AI-driven automation.",
     "getStarted": "Start for Free",
     "bookDemo": "Book a Demo",
     "trialInfo": "Free 14-day trial. No card required.",
     "moreInfo": "More Info"
   },
   "features": {
-    "title": "Everything in One Place",
+    "title": "A Full Desktop, Reimagined",
     "aiAutomation": {
-      "title": "Deploy Your AI Workforce",
-      "description": "Record any action to create reusable automations. Deploy agents to handle repetitive tasks."
+      "title": "Integrated Automation",
+      "description": "Your cloud desktop comes with built-in recording capabilities. Automate repetitive UI tasks effortlessly."
     },
     "cloudNative": {
-      "title": "Access From Anywhere",
-      "description": "Your persistent cloud desktop. Pick up where you left off, on any device, at any time."
+      "title": "Persistent & Portable",
+      "description": "A real Linux environment that lives in the cloud. Pause your work and pick it up on any device, exactly as you left it."
     },
     "collaboration": {
-      "title": "True Multiplayer Desktop",
-      "description": "Invite your team to a shared session. See cursors, type together, and solve problems in real-time."
+      "title": "P2P Real-Time Sync",
+      "description": "Direct peer-to-peer streaming ensures fluid collaboration. Share your screen and controls securely."
     },
     "instantEnvironments": {
-      "title": "On-Demand Workspaces",
-      "description": "Instantly launch secure, isolated environments for demos, new hire onboarding, or testing."
+      "title": "Instant Provisioning",
+      "description": "Spin up isolated, fully configured desktop environments for demos, testing, or development in seconds."
     }
   },
   "useCases": {
-    "title": "Accelerate Every Workflow",
+    "title": "Your Workspace for Every Workflow",
     "development": {
-      "title": "Development",
-      "description": "Share dev environments, debug in real-time, and keep your entire team in sync."
+      "title": "Remote Development",
+      "description": "Code on a powerful cloud machine. Pair program with zero latency and keep environments consistent."
     },
     "qa": {
       "title": "QA & Testing",
-      "description": "Automate UI tests, reproduce bugs in shared sessions, and collaborate instantly on fixes."
+      "description": "Reproduce bugs in a shared, clean environment. Invite devs to your session to debug instantly."
     },
     "customerSupport": {
-      "title": "Customer Support",
-      "description": "Instantly launch a shared session to see, guide, and solve customer issues in real-time."
+      "title": "Collaborative Support",
+      "description": "Don't just tell customers what to do—show them. Launch a shared session to guide users through complex issues."
     },
     "operations": {
-      "title": "Operations",
-      "description": "Deploy agents to automate routine checks, data entry, and system monitoring. No code required."
+      "title": "Secure Operations",
+      "description": "Access internal tools and dashboards from a secure, isolated cloud desktop without exposing local networks."
     }
   },
   "aiSection": {
-    "title": "Put Your Work on Autopilot",
-    "description": "Bring your own agents or build new ones. Record actions to create powerful automations in seconds.",
+    "title": "Supercharge Your Desktop",
+    "description": "While it is a full cloud computer, Cyqle also includes powerful AI tools to help you work faster.",
     "items": [
-      "Automate any task with one-click recording",
-      "Get intelligent automation suggestions",
-      "Schedule jobs to run anytime, on any site",
-      "Build a shared library of automations",
-      "Connect your stack with powerful integrations"
+      "Record desktop interactions for replay",
+      "Delegate repetitive GUI tasks to agents",
+      "Schedule workflows to run in the background",
+      "Maintain a shared library of team automations",
+      "Seamlessly integrate with your existing stack"
     ],
     "exploreFeatures": "Explore Features"
   },
   "testimonials": {
-    "title": "Why Top Teams Choose Cyqle",
+    "title": "Why Teams Switch to Cyqle",
     "items": [
       {
-        "quote": "Cyqle has cut our customer resolution time by 40%. A game-changer for our support operations!",
+        "quote": "Finally, a cloud desktop that feels like a local machine. The P2P connection makes collaboration instant.",
         "author": "Sarah Johnson",
-        "role": "Head of Customer Success, TechCorp"
+        "role": "Head of Engineering, TechCorp"
       },
       {
-        "quote": "Our QA productivity has soared. Cyqle's automation has saved us hundreds of hours.",
+        "quote": "Being able to spin up a fresh desktop for every QA test and then share it with devs is a workflow lifesaver.",
         "author": "Michael Chen",
         "role": "QA Lead, InnovateSoft"
       },
       {
-        "quote": "Cyqle has bridged the gap between our development and operations. Collaboration has never been better!",
+        "quote": "The persistence is key. I leave my heavy computations running on Cyqle and check in from my phone later.",
         "author": "Alex Rodriguez",
         "role": "CTO, FutureTech"
       }
     ]
   },
   "cta": {
-    "title": "A Truly Shared Workspace.",
-    "description": "Bring your team, tools, and agents together in one real-time cloud environment. It's time to work in perfect sync.",
+    "title": "Your Team's Computer in the Cloud.",
+    "description": "Experience the speed of P2P streaming combined with the power of a persistent cloud desktop. Work together, anywhere.",
     "startTrial": "Start Your Free Trial",
     "scheduleDemo": "Schedule a Demo",
     "trialInfo": "Free 14-day trial. No card required."
   },
   "footer": {
-    "description": "The multiplayer cloud desktop for humans & AI agents.",
+    "description": "The P2P cloud desktop for seamless collaboration and automation.",
     "product": {
       "title": "Product",
       "features": "Features",
