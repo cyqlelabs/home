@@ -64,7 +64,7 @@ export default async function Home({ params: { locale } }: Props) {
 
               return (
                 <>
-                  <span className="md:hidden">
+                  <span className="">
                     {(desc.length === 1 && <>{desc[0]}</>) || (
                       <>
                         {desc[0]}
@@ -73,7 +73,6 @@ export default async function Home({ params: { locale } }: Props) {
                       </>
                     )}
                   </span>
-                  <span className="hidden md:flex">{desc.join('.')}</span>
                 </>
               );
             })()}
