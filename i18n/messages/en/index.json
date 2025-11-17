@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Cyqle | The P2P Cloud Desktop for Instant Collaboration",
-    "description": "A persistent, low-latency cloud computer for your team to build, test, and automate together."
+    "description": "A persistent cloud computer for your team to build, test, and automate together."
   },
   "navbar": {
     "features": "Features",
@@ -47,7 +47,7 @@
     "title": "Your Workspace for Every Workflow",
     "development": {
       "title": "Remote Development",
-      "description": "Code on a powerful cloud machine. Pair program with zero latency and keep environments consistent."
+      "description": "Code on a persistent cloud environment. Pair program in real-time and keep environments consistent."
     },
     "qa": {
       "title": "QA & Testing",
