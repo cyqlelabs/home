@@ -64,7 +64,7 @@ export default function Navbar() {
               {t('navbar.pricing')}
             </a>
             <a
-              href="/pitch.html"
+              href="https://drive.google.com/file/d/1oy9VKy-unionZApPwO1bFOgQnbjuHAdv/view?usp=sharing"
               className={`dark:text-gray-300 ${isScrolled && theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors`}
             >
               {t('navbar.about')}
@@ -136,7 +136,7 @@ export default function Navbar() {
                 {t('navbar.pricing')}
               </a>
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1oy9VKy-unionZApPwO1bFOgQnbjuHAdv/view?usp=sharing"
                 className={`dark:text-gray-300 ${theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors py-2`}
               >
                 {t('navbar.about')}
