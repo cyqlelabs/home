@@ -18,6 +18,7 @@ import Footer from '@/components/footer';
 import MoreInfoButton from '@/components/more-info-button';
 import ResponsiveVideo from '@/components/responsive-video';
 import RotatingWord from '@/components/rotating-word';
+import HeroBackground from '@/components/hero-background';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 type Props = {
@@ -41,14 +42,8 @@ export default async function Home({ params: { locale } }: Props) {
     <div className="min-h-screen bg-transparent text-foreground overflow-hidden">
       <ParallaxBackground />
       <Navbar />
-
-      {/* Hero Section */}
       <AnimatedSection className="relative z-10 min-h-screen overflow-hidden flex items-center">
-        <ResponsiveVideo
-          desktopSrc="/vid2.mp4"
-          mobileSrc="/vid2-p.mp4"
-          className="absolute top-0 left-0 w-full h-full object-cover dark:opacity-[.15] opacity-15 -z-10"
-        />
+        <HeroBackground />
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center gap-6 text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
           <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF7600]/80 via-[#FF7600] to-[#FF7600]/80 mb-6">
             {heroT('titlePrefix')}{' '}
@@ -116,7 +111,6 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
         </div>
       </AnimatedSection>
-
       {/* Use Cases Section */}
       <AnimatedSection className="relative z-10 py-20">
         <div className="container mx-auto px-4">
@@ -173,7 +167,6 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
         </div>
       </AnimatedSection>
-
       {/* AI Automation Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-gray-900/80 to-black/80">
         <div className="container mx-auto px-4">
@@ -207,7 +200,6 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
         </div>
       </AnimatedSection>
-
       {/* Testimonials */}
       <AnimatedSection className="relative z-10 py-20">
         <div className="container mx-auto px-4">
@@ -230,7 +222,6 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
         </div>
       </AnimatedSection>
-
       {/* CTA Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-r from-gray-900/30 to-gray-800">
         <div className="container mx-auto px-4 text-center">
@@ -255,7 +246,6 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
         </div>
       </AnimatedSection>
-
       <Footer />
     </div>
   );
