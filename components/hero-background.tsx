@@ -4,7 +4,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 
 export default function HeroBackground() {
   const isMobile = useIsMobile();
-  const imgSrc = isMobile ? '/bg1-m.png' : '/bg1.png';
+  const imgSrc = isMobile ? '/bg2-m.png' : '/bg2.png';
 
   return (
     <div className="absolute top-0 left-0 w-full h-full -z-20 opacity-[.2]">
