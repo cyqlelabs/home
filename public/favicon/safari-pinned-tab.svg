@@ -1,21 +1,15 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="250.000000pt" height="250.000000pt" viewBox="0 0 250.000000 250.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.11, written by Peter Selinger 2001-2013
-</metadata>
-<g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M1129 2246 c-2 -2 -20 -6 -39 -9 -116 -15 -287 -83 -393 -154 -229
--156 -361 -357 -434 -658 -10 -41 -11 -272 -2 -320 5 -27 11 -59 13 -70 62
--336 361 -652 704 -746 105 -29 111 -30 257 -34 85 -2 153 2 197 11 64 14 70
-13 109 -7 100 -51 246 -67 349 -40 291 78 451 387 345 669 -25 66 -26 76 -15
-120 19 76 25 140 24 262 -1 134 -7 174 -40 277 -81 256 -251 459 -494 590 -76
-40 -162 71 -285 100 -25 6 -291 14 -296 9z m219 -506 c219 -45 383 -232 399
--456 l5 -70 -68 -13 c-125 -23 -242 -94 -316 -191 -59 -78 -95 -167 -97 -239
--1 -22 -3 -23 -63 -18 -423 36 -608 547 -309 848 122 122 285 172 449 139z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <mask id="outer-ring" maskUnits="userSpaceOnUse">
+      <rect width="256" height="256" fill="#fff" />
+      <circle cx="174" cy="128" r="92" fill="#000" />
+    </mask>
+    <mask id="inner-crescent" maskUnits="userSpaceOnUse">
+      <rect width="256" height="256" fill="#fff" />
+      <circle cx="134" cy="128" r="74" fill="#000" />
+    </mask>
+  </defs>
+  <circle cx="118" cy="128" r="114" fill="#000" mask="url(#outer-ring)" />
+  <circle cx="176" cy="128" r="90" fill="#000" mask="url(#inner-crescent)" />
 </svg>

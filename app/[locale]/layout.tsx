@@ -1,116 +1,104 @@
-import React from 'react';
+import type { ReactNode } from 'react';
+
 import '../globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
 import { notFound } from 'next/navigation';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/components/language-provider';
+import {
+  formatDetection,
+  getCanonicalPath,
+  languageAlternates,
+  robotsConfig,
+  siteIcons,
+  siteMetadata,
+  type SiteLocale,
+} from '@/lib/site-metadata';
 
 const inter = Inter({ subsets: ['latin'] });
 
 type Props = {
-  children: React.ReactNode;
+  children: ReactNode;
   params: { locale: string };
 };
 
-export function generateMetadata({ params: { locale } }: Omit<Props, 'children'>) {
+const isSupportedLocale = (value: string): value is SiteLocale =>
+  siteMetadata.locales.includes(value as SiteLocale);
+
+export async function generateMetadata({
+  params: { locale },
+}: Omit<Props, 'children'>): Promise<Metadata> {
+  if (!isSupportedLocale(locale)) {
+    return {};
+  }
+
+  const t = await getTranslations({ locale, namespace: 'metadata' });
+  const canonicalPath = getCanonicalPath(locale);
+  const localeTag = locale === 'es' ? 'es_ES' : 'en_US';
+
   return {
+    metadataBase: new URL(siteMetadata.siteUrl),
+    alternates: {
+      canonical: canonicalPath,
+      languages: languageAlternates,
+    },
     title: {
-      template: '%s | Cyqle',
-      default: 'Cyqle - Collaborative Cloud Browser with AI Automation',
+      template: `%s | ${siteMetadata.name}`,
+      default: t('title'),
     },
-    description:
-      "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment",
-    keywords: 'collaborative browser, AI automation, team workflow, cloud browser, productivity',
-    authors: [{ name: 'Cyqle Team' }],
-    creator: 'Cyqle',
-    publisher: 'Cyqle',
-    formatDetection: {
-      email: false,
-      address: false,
-      telephone: false,
-    },
-    icons: {
-      icon: [
-        { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-        { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-        { url: '/favicon/favicon.ico' },
-      ],
-      apple: [{ url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
-      other: [
-        {
-          rel: 'mask-icon',
-          url: '/favicon/safari-pinned-tab.svg',
-          color: '#5bbad5',
-        },
-      ],
-    },
+    description: t('description'),
+    keywords: siteMetadata.keywords,
+    applicationName: siteMetadata.name,
+    authors: [{ name: siteMetadata.name }],
+    creator: siteMetadata.name,
+    publisher: siteMetadata.name,
+    category: 'technology',
+    formatDetection,
+    icons: siteIcons,
     manifest: '/favicon/site.webmanifest',
     openGraph: {
       type: 'website',
-      locale,
-      url: 'https://cyqle.in',
-      title: 'Cyqle - Collaborative Cloud Browser with AI Automation',
-      description:
-        "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment",
-      siteName: 'Cyqle',
+      locale: localeTag,
+      url: new URL(canonicalPath, siteMetadata.siteUrl).toString(),
+      siteName: siteMetadata.name,
+      title: t('title'),
+      description: t('description'),
       images: [
         {
-          url: '/logo-up.png',
+          url: siteMetadata.socialImage,
           width: 1200,
           height: 630,
-          alt: 'Cyqle - Collaborative Cloud Browser with AI Automation',
+          alt: `${siteMetadata.name} social preview`,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Cyqle - Collaborative Cloud Browser with AI Automation',
-      description:
-        "Supercharge your team's workflow with AI-powered automation in a collaborative browser environment",
-      images: ['/logo-up.png'],
-      creator: '@cyqle',
+      site: siteMetadata.twitter,
+      creator: siteMetadata.twitter,
+      title: t('title'),
+      description: t('description'),
+      images: [siteMetadata.socialImage],
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-    verification: {
-      google: 'google-site-verification-code',
-      yandex: 'yandex-verification-code',
-      yahoo: 'yahoo-site-verification-code',
+    robots: robotsConfig,
+    themeColor: siteMetadata.themeColor,
+    other: {
+      'og:logo': '/logo-up.png',
     },
   };
 }
 
-const locales = ['en', 'es'];
-
 export default async function RootLayout({ children, params: { locale } }: Props) {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale)) notFound();
+  if (!isSupportedLocale(locale)) notFound();
 
-  // Enable static rendering
   unstable_setRequestLocale(locale);
 
-  const t = await getTranslations('metadata');
-
-  // Get messages for client-side
   const messages = (await import(`../../i18n/messages/${locale}/index.json`)).default;
 
   return (
     <html lang={locale} className="dark">
-      <head>
-        <title>{t('title')}</title>
-        <meta name="description" content={t('description')} />
-      </head>
       <body className={inter.className}>
         <ThemeProvider>
           <LanguageProvider messages={messages}>{children}</LanguageProvider>
