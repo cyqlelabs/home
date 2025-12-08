@@ -31,8 +31,8 @@
       "description": "Your cloud desktop comes with built-in recording capabilities. Automate repetitive UI tasks effortlessly."
     },
     "cloudNative": {
-      "title": "Persistent & Portable",
-      "description": "A real Linux environment that lives in the cloud. Pause your work and pick it up on any device, exactly as you left it."
+      "title": "Flexible Persistence",
+      "description": "Ephemeral by default for fresh starts, or optionally persistent to pause and resume anywhere."
     },
     "collaboration": {
       "title": "P2P Real-Time Sync",
