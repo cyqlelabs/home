@@ -31,8 +31,8 @@
       "description": "Tu escritorio cloud incluye grabación nativa. Automatiza tareas repetitivas de interfaz sin esfuerzo."
     },
     "cloudNative": {
-      "title": "Persistente y Portátil",
-      "description": "Un entorno Linux real que vive en la nube. Pausa tu trabajo y retómalo en cualquier dispositivo, tal como lo dejaste."
+      "title": "Persistencia Flexible",
+      "description": "Efímero por defecto para inicios limpios, o persistente para pausar y retomar donde quieras."
     },
     "collaboration": {
       "title": "Sincronización P2P Real",
