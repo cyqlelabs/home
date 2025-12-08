@@ -33,7 +33,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <a href="#" className="text-2xl font-bold text-foreground flex items-center gap-3">
               <img
-                src="/logo-up.png"
+                src="/logo-mid.png"
                 alt="Cyqle Logo"
                 className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 object-contain"
               />

@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <a href="#" className="text-2xl font-bold text-white flex items-center gap-3 mb-6">
               <img
-                src="/logo-up.png"
+                src="/logo-mid.png"
                 alt="Cyqle Logo"
                 className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 object-contain"
               />
