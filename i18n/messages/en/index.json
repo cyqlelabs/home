@@ -53,6 +53,14 @@
     "instantEnvironments": {
       "title": "Instant Provisioning",
       "description": "Spin up isolated, fully configured desktop environments for demos, testing, or development in seconds."
+    },
+    "apiAccess": {
+      "title": "API Access",
+      "description": "Programmatically spawn sessions, run commands, and manage your infrastructure via our robust API."
+    },
+    "snapshots": {
+      "title": "Snapshots & Templates",
+      "description": "Create reusable snapshots of your environment. Share templates to standardize development across your team."
     }
   },
   "useCases": {

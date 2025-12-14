@@ -11,6 +11,8 @@ import {
   Lock,
   MousePointer2,
   Shield,
+  Terminal,
+  Copy,
 } from 'lucide-react';
 import ParallaxBackground from '@/components/parallax-background';
 import FeatureCard from '@/components/feature-card';
@@ -124,6 +126,16 @@ export default async function Home({ params: { locale } }: Props) {
               icon={<Zap className="h-10 w-10 text-[#FF7600]" />}
               title={featuresT('instantEnvironments.title')}
               description={featuresT('instantEnvironments.description')}
+            />
+            <FeatureCard
+              icon={<Terminal className="h-10 w-10 text-gray-300" />}
+              title={featuresT('apiAccess.title')}
+              description={featuresT('apiAccess.description')}
+            />
+            <FeatureCard
+              icon={<Copy className="h-10 w-10 text-gray-400" />}
+              title={featuresT('snapshots.title')}
+              description={featuresT('snapshots.description')}
             />
           </div>
         </div>

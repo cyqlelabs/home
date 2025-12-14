@@ -53,6 +53,14 @@
     "instantEnvironments": {
       "title": "Despliegue Instantáneo",
       "description": "Crea entornos de escritorio aislados y configurados en segundos para demos, testing o desarrollo."
+    },
+    "apiAccess": {
+      "title": "Acceso API",
+      "description": "Inicia sesiones programáticamente, ejecuta comandos y gestiona tu infraestructura a través de nuestra robusta API."
+    },
+    "snapshots": {
+      "title": "Snapshots y Plantillas",
+      "description": "Crea snapshots reutilizables de tu entorno. Comparte plantillas para estandarizar el desarrollo en tu equipo."
     }
   },
   "useCases": {
