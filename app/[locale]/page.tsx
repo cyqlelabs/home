@@ -9,6 +9,8 @@ import {
   PlugIcon as Pipeline,
   Bot,
   Lock,
+  MousePointer2,
+  Shield,
 } from 'lucide-react';
 import ParallaxBackground from '@/components/parallax-background';
 import FeatureCard from '@/components/feature-card';
@@ -87,24 +89,39 @@ export default async function Home({ params: { locale } }: Props) {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 dark:text-foreground text-gray-400">
             {featuresT('title')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
               icon={<Bot className="h-10 w-10 text-[#FF7600]" />}
               title={featuresT('aiAutomation.title')}
               description={featuresT('aiAutomation.description')}
             />
             <FeatureCard
-              icon={<Cloud className="h-10 w-10 text-gray-300" />}
+              icon={<MousePointer2 className="h-10 w-10 text-gray-300" />}
+              title={featuresT('multiCursor.title')}
+              description={featuresT('multiCursor.description')}
+            />
+            <FeatureCard
+              icon={<Cloud className="h-10 w-10 text-gray-400" />}
               title={featuresT('cloudNative.title')}
               description={featuresT('cloudNative.description')}
             />
             <FeatureCard
-              icon={<Users className="h-10 w-10 text-gray-400" />}
+              icon={<Users className="h-10 w-10 text-[#FF7600]" />}
               title={featuresT('collaboration.title')}
               description={featuresT('collaboration.description')}
             />
             <FeatureCard
-              icon={<Headset className="h-10 w-10 text-[#FF7600]" />}
+              icon={<Shield className="h-10 w-10 text-gray-300" />}
+              title={featuresT('rootAccess.title')}
+              description={featuresT('rootAccess.description')}
+            />
+            <FeatureCard
+              icon={<Lock className="h-10 w-10 text-gray-400" />}
+              title={featuresT('dataPrivacy.title')}
+              description={featuresT('dataPrivacy.description')}
+            />
+            <FeatureCard
+              icon={<Zap className="h-10 w-10 text-[#FF7600]" />}
               title={featuresT('instantEnvironments.title')}
               description={featuresT('instantEnvironments.description')}
             />
