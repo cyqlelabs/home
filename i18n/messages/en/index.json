@@ -30,6 +30,10 @@
       "title": "Integrated Automation",
       "description": "Your cloud desktop comes with built-in recording capabilities. Automate repetitive UI tasks effortlessly."
     },
+    "multiCursor": {
+      "title": "True Multiplayer Control",
+      "description": "Work in parallel, not in turns. Every user gets their own cursor and keyboard input for simultaneous collaboration."
+    },
     "cloudNative": {
       "title": "Flexible Persistence",
       "description": "Ephemeral by default for fresh starts, or optionally persistent to pause and resume anywhere."
@@ -37,6 +41,14 @@
     "collaboration": {
       "title": "P2P Real-Time Sync",
       "description": "Direct peer-to-peer streaming ensures fluid collaboration. Share your screen and controls securely."
+    },
+    "rootAccess": {
+      "title": "Full Admin Privileges",
+      "description": "It's your machine. Get full root access to install any tool, library, or dependency your workflow requires."
+    },
+    "dataPrivacy": {
+      "title": "Session-Scoped Encryption",
+      "description": "Your filesystem is encrypted on-the-fly with unique keys. When you close an ephemeral session, the data is gone forever."
     },
     "instantEnvironments": {
       "title": "Instant Provisioning",

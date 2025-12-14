@@ -30,6 +30,10 @@
       "title": "Automatización Integrada",
       "description": "Tu escritorio cloud incluye grabación nativa. Automatiza tareas repetitivas de interfaz sin esfuerzo."
     },
+    "multiCursor": {
+      "title": "Control Multijugador Verdadero",
+      "description": "Trabaja en paralelo, no por turnos. Cada usuario obtiene su propio cursor y teclado para colaboración simultánea."
+    },
     "cloudNative": {
       "title": "Persistencia Flexible",
       "description": "Efímero por defecto para inicios limpios, o persistente para pausar y retomar donde quieras."
@@ -37,6 +41,14 @@
     "collaboration": {
       "title": "Sincronización P2P Real",
       "description": "El streaming directo peer-to-peer asegura una colaboración fluida. Comparte pantalla y control de forma segura."
+    },
+    "rootAccess": {
+      "title": "Privilegios de Administrador Completos",
+      "description": "Es tu máquina. Obtén acceso root completo para instalar cualquier herramienta, librería o dependencia que tu flujo de trabajo requiera."
+    },
+    "dataPrivacy": {
+      "title": "Encriptación por Sesión",
+      "description": "Tu sistema de archivos se encripta al vuelo con claves únicas. Cuando cierras una sesión efímera, los datos desaparecen para siempre."
     },
     "instantEnvironments": {
       "title": "Despliegue Instantáneo",
