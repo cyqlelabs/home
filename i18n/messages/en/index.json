@@ -149,6 +149,7 @@
         "unit": "/hour",
         "description": "Casual research and privacy.",
         "features": {
+          "subscription": "{price}/mo Option",
           "usage": "Pay-As-You-Go",
           "specs": "1 vCPU / 1 GB RAM",
           "priority": "Standard Priority",
