@@ -121,6 +121,56 @@
     "scheduleDemo": "Agendar Demo",
     "trialInfo": "Prueba gratuita de 14 días. Sin tarjeta."
   },
+  "pricing": {
+    "title": "Precios Simples y Transparentes",
+    "description": "Elige el plan perfecto para tu flujo de trabajo.",
+    "monthly": "/mes",
+    "popular": "Más Popular",
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "price": "$0",
+        "description": "Perfecto para probar.",
+        "features": {
+          "usage": "15 min de uso diario",
+          "concurrent": "1 Sesión Concurrente",
+          "persistence": "Sin Persistencia",
+          "specs": "1 vCPU / 1 GB RAM",
+          "api": "Acceso API",
+          "snapshots": "Snapshots"
+        },
+        "cta": "Empezar"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$29",
+        "description": "Para desarrolladores que necesitan potencia.",
+        "features": {
+          "usage": "Uso ilimitado",
+          "concurrent": "Desechables Ilimitadas",
+          "persistence": "2 Sesiones Persistentes",
+          "specs": "2 vCPU / 2 GB RAM",
+          "api": "Acceso API Completo",
+          "snapshots": "Snapshots y Templates Ilimitados"
+        },
+        "cta": "Empezar Prueba"
+      },
+      "team": {
+        "name": "Equipo",
+        "price": "$99",
+        "description": "Colabora sin límites.",
+        "features": {
+          "usage": "Uso ilimitado",
+          "concurrent": "Desechables Ilimitadas",
+          "persistence": "4 Sesiones Persistentes",
+          "specs": "2 vCPU / 4 GB RAM",
+          "api": "Acceso API Prioritario",
+          "snapshots": "Snapshots y Templates Ilimitados"
+        },
+        "cta": "Contactar Ventas"
+      }
+    }
+  },
   "footer": {
     "description": "El escritorio cloud P2P para colaboración fluida y automatización.",
     "product": {
@@ -151,5 +201,52 @@
     "privacyPolicy": "Política de Privacidad",
     "termsOfService": "Términos del Servicio",
     "cookies": "Cookies"
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "El Escritorio Cloud P2P",
+      "description": "Un ordenador cloud persistente diseñado para que los equipos construyan, prueben y automaticen juntos."
+    },
+    "mission": {
+      "title": "Construyendo el Futuro de la Colaboración",
+      "content": "Cyqle ofrece una solución fundamental a desafíos como la deriva del entorno, el retraso en la colaboración y las brechas de seguridad mediante un ordenador seguro y persistente en la nube para colaboración en tiempo real."
+    },
+    "features": {
+      "title": "Características Clave y Arquitectura",
+      "p2p": {
+        "title": "Sincronización P2P en Tiempo Real",
+        "description": "El streaming directo peer-to-peer (P2P) proporciona una colaboración fluida y de baja latencia, a diferencia del uso compartido de pantalla tradicional que evita el enrutamiento del servidor central."
+      },
+      "provisioning": {
+        "title": "Aprovisionamiento Instantáneo",
+        "description": "Se pueden crear entornos de escritorio Linux completamente configurados y aislados para desarrollo, pruebas o demostraciones en segundos."
+      },
+      "persistence": {
+        "title": "Persistente y Portátil",
+        "description": "Un entorno Linux real en la nube que permite a los usuarios pausar el trabajo en un dispositivo y reanudarlo en cualquier otro, exactamente como lo dejaron."
+      },
+      "automation": {
+        "title": "Automatización Integrada",
+        "description": "Incluye capacidades de grabación integradas y actúa como un sandbox para desplegar agentes de IA personalizados para automatizar tareas repetitivas de la interfaz de usuario."
+      }
+    },
+    "isolation": {
+      "title": "Aislamiento Ligero y Seguridad",
+      "description": "Cyqle utiliza contenerización ligera avanzada para proporcionar un aislamiento instantáneo con una sobrecarga mínima, asegurando que cada sesión sea segura e independiente.",
+      "points": [
+        "Aislamiento completo de procesos para cada sesión",
+        "Sistema de archivos por capas para entornos privados y efímeros",
+        "Control granular de recursos para garantizar un rendimiento constante"
+      ]
+    },
+    "useCases": {
+      "title": "Potenciando Flujos de Trabajo",
+      "items": [
+        "Desarrollo Remoto: Programación en pareja en tiempo real en un entorno cloud persistente.",
+        "Soporte Colaborativo: Guiar a los usuarios a través de problemas utilizando una sesión segura y compartida.",
+        "QA y Pruebas: Reproducir y depurar errores instantáneamente en un entorno compartido y limpio.",
+        "Operaciones Seguras: Acceso a herramientas internas desde un escritorio en la nube aislado sin VPN."
+      ]
+    }
   }
 }

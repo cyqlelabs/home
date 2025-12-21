@@ -121,6 +121,56 @@
     "scheduleDemo": "Schedule a Demo",
     "trialInfo": "Free 14-day trial. No card required."
   },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "description": "Choose the perfect plan for your workflow.",
+    "monthly": "/month",
+    "popular": "Most Popular",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "price": "$0",
+        "description": "Perfect for testing the waters.",
+        "features": {
+          "usage": "15 mins daily usage",
+          "concurrent": "1 Concurrent Session",
+          "persistence": "No Persistence",
+          "specs": "1 vCPU / 1 GB RAM",
+          "api": "API Access",
+          "snapshots": "Snapshots"
+        },
+        "cta": "Get Started"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$29",
+        "description": "For developers who need power.",
+        "features": {
+          "usage": "Unlimited usage",
+          "concurrent": "Unlimited Disposable",
+          "persistence": "2 Persistent Sessions",
+          "specs": "2 vCPU / 2 GB RAM",
+          "api": "Full API Access",
+          "snapshots": "Unlimited Snapshots & Templates"
+        },
+        "cta": "Start Trial"
+      },
+      "team": {
+        "name": "Team",
+        "price": "$99",
+        "description": "Collaborate without limits.",
+        "features": {
+          "usage": "Unlimited usage",
+          "concurrent": "Unlimited Disposable",
+          "persistence": "4 Persistent Sessions",
+          "specs": "2 vCPU / 4 GB RAM",
+          "api": "Priority API Access",
+          "snapshots": "Unlimited Snapshots & Templates"
+        },
+        "cta": "Contact Sales"
+      }
+    }
+  },
   "footer": {
     "description": "The P2P cloud desktop for seamless collaboration and automation.",
     "product": {
@@ -151,5 +201,52 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "cookies": "Cookies"
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "The P2P Cloud Desktop",
+      "description": "A persistent cloud computer designed for teams to build, test, and automate together."
+    },
+    "mission": {
+      "title": "Building the Future of Collaboration",
+      "content": "Cyqle provides a foundational solution to challenges like environment drift, collaboration lag, and security gaps by offering a secure, persistent computer in the cloud for real-time collaboration."
+    },
+    "features": {
+      "title": "Key Features & Architecture",
+      "p2p": {
+        "title": "P2P Real-Time Sync",
+        "description": "Direct peer-to-peer (P2P) streaming provides fluid, low-latency collaboration, differing from traditional screen sharing by avoiding central server routing."
+      },
+      "provisioning": {
+        "title": "Instant Provisioning",
+        "description": "Fully configured, isolated Linux desktop environments for development, testing, or demos can be spun up in seconds."
+      },
+      "persistence": {
+        "title": "Persistent & Portable",
+        "description": "A real Linux environment in the cloud allowing users to pause work on one device and resume on any other, exactly as they left it."
+      },
+      "automation": {
+        "title": "Integrated Automation",
+        "description": "Includes built-in recording capabilities and acts as a sandbox for deploying custom AI agents to automate repetitive UI tasks."
+      }
+    },
+    "isolation": {
+      "title": "Lightweight Isolation & Security",
+      "description": "Cyqle uses advanced lightweight containerization to provide instant isolation with minimal overhead, ensuring each session remains secure and independent.",
+      "points": [
+        "Complete process isolation for every session",
+        "Layered filesystem for private, ephemeral environments",
+        "Granular resource control to ensure consistent performance"
+      ]
+    },
+    "useCases": {
+      "title": "Empowering Workflows",
+      "items": [
+        "Remote Development: Real-time pair programming on a persistent cloud environment.",
+        "Collaborative Support: Guiding users through issues using a secure, shared session.",
+        "QA & Testing: Reproducing and instantly debugging bugs in a shared, clean environment.",
+        "Secure Operations: Accessing internal tools from an isolated cloud desktop without a VPN."
+      ]
+    }
   }
 }
