@@ -209,6 +209,40 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
         </div>
       </AnimatedSection>
+      <div id="ai" />
+      {/* AI Automation Section */}
+      <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-gray-900/80 to-black/80">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1 space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-300 dark:text-foreground">
+                {aiSectionT('title')}
+              </h2>
+              <p className="text-gray-300 text-lg">{aiSectionT('description')}</p>
+              <ul className="space-y-4">
+                {aiSectionT.raw('items').map((item: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="bg-gradient-to-r from-orange-300 to-[#FF7600] rounded-full p-1 mr-3 mt-1">
+                      <ChevronRight className="h-4 w-4 text-black" />
+                    </div>
+                    <span className="text-gray-300">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button className="mt-6 bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg">
+                {aiSectionT('exploreFeatures')}
+              </Button>
+            </div>
+            <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
+              <img
+                src="/placeholder.svg?height=600&width=800"
+                alt="AI automation interface"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
       <div id="pricing" />
       {/* Pricing Section */}
       <AnimatedSection className="relative z-10 py-20">
@@ -292,40 +326,6 @@ export default async function Home({ params: { locale } }: Props) {
                 </CardFooter>
               </Card>
             ))}
-          </div>
-        </div>
-      </AnimatedSection>
-      <div id="ai" />
-      {/* AI Automation Section */}
-      <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-gray-900/80 to-black/80">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-300 dark:text-foreground">
-                {aiSectionT('title')}
-              </h2>
-              <p className="text-gray-300 text-lg">{aiSectionT('description')}</p>
-              <ul className="space-y-4">
-                {aiSectionT.raw('items').map((item: string, index: number) => (
-                  <li key={index} className="flex items-start">
-                    <div className="bg-gradient-to-r from-orange-300 to-[#FF7600] rounded-full p-1 mr-3 mt-1">
-                      <ChevronRight className="h-4 w-4 text-black" />
-                    </div>
-                    <span className="text-gray-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button className="mt-6 bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg">
-                {aiSectionT('exploreFeatures')}
-              </Button>
-            </div>
-            <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
-              <img
-                src="/placeholder.svg?height=600&width=800"
-                alt="AI automation interface"
-                className="w-full h-auto"
-              />
-            </div>
           </div>
         </div>
       </AnimatedSection>

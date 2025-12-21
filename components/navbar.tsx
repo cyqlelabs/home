@@ -6,7 +6,6 @@ import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '@/components/theme-provider';
 import { useTranslations } from '@/components/language-provider';
 import LanguageSwitcher from '@/components/language-switcher';
-import { usePathname } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
 
@@ -16,12 +15,9 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
   const t = useTranslations();
   const locale = useLocale();
-  const pathname = usePathname();
-
-  const isHomePage = pathname === `/${locale}` || pathname === '/';
 
   const getLink = (id: string) => {
-    return isHomePage ? `#${id}` : `/${locale}#${id}`;
+    return `/${locale}#${id}`;
   };
 
   useEffect(() => {
