@@ -200,9 +200,9 @@ function FeatureList({
       {Object.keys(features).map((feature) => {
         let content;
 
-        if (feature === 'subscription' && plan === 'pro') {
+        if (feature === 'subscription') {
           const multiplier = TIERS[selectedTier].multiplier || 1;
-          const price = `$${20 * multiplier}`;
+          const price = `$${((plan === 'lite' && 10) || 20) * multiplier}`;
           content = t(`plans.${plan}.features.${feature}`, { price });
         } else {
           content = t(`plans.${plan}.features.${feature}`);

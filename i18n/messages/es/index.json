@@ -149,6 +149,7 @@
         "unit": "/hora",
         "description": "Investigación casual y privacidad.",
         "features": {
+          "subscription": "Opción de {price}/mes",
           "usage": "Pago por Uso",
           "specs": "1 vCPU / 1 GB RAM",
           "priority": "Prioridad Estándar",
