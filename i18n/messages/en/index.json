@@ -9,7 +9,7 @@
     "pricing": "Pricing",
     "about": "About",
     "signIn": "Sign In",
-    "getStarted": "Start for Free"
+    "getStarted": "Get Started"
   },
   "hero": {
     "title": "The P2P Cloud Desktop",
@@ -19,9 +19,9 @@
     "titleWord3": "Computer",
     "titleSuffix": "",
     "description": "A persistent cloud desktop for collaboration and AI-driven automation.",
-    "getStarted": "Start for Free",
+    "getStarted": "Get Started",
     "bookDemo": "Book a Demo",
-    "trialInfo": "Free 14-day trial. No card required.",
+    "trialInfo": "Free tier available. No credit card required.",
     "moreInfo": "More Info"
   },
   "features": {
@@ -117,9 +117,9 @@
   "cta": {
     "title": "Your Team's Computer in the Cloud.",
     "description": "Experience the speed of P2P streaming combined with the power of a persistent cloud desktop. Work together, anywhere.",
-    "startTrial": "Start Your Free Trial",
+    "startTrial": "Get Started Now",
     "scheduleDemo": "Schedule a Demo",
-    "trialInfo": "Free 14-day trial. No card required."
+    "trialInfo": "15-minute free sessions. No credit card required."
   },
   "pricing": {
     "title": "Simple, Transparent Pricing",
@@ -129,45 +129,71 @@
     "plans": {
       "free": {
         "name": "Free",
-        "price": "$0",
-        "description": "Perfect for testing the waters.",
+        "price": "$0.00",
+        "unit": "",
+        "description": "Perfect for a quick test drive.",
         "features": {
-          "usage": "15 mins daily usage",
-          "concurrent": "1 Concurrent Session",
-          "persistence": "No Persistence",
+          "time": "15 Minute Session Limit",
           "specs": "1 vCPU / 1 GB RAM",
-          "api": "API Access",
-          "snapshots": "Snapshots"
+          "priority": "Low Priority Queue",
+          "persistence": "No Persistence",
+          "idle": "2 Min Idle Timeout"
+        },
+        "cta": "Try for Free"
+      },
+      "lite": {
+        "name": "Lite",
+        "price": "$0.05",
+        "unit": "/hour",
+        "description": "Casual research and privacy.",
+        "features": {
+          "usage": "Pay-As-You-Go",
+          "specs": "1 vCPU / 1 GB RAM",
+          "priority": "Standard Priority",
+          "persistence": "No Persistence",
+          "billing": "Billed per Minute"
         },
         "cta": "Get Started"
       },
       "pro": {
         "name": "Pro",
-        "price": "$19",
-        "description": "For developers who need power.",
+        "price": "$0.30",
+        "unit": "/hour",
+        "description": "Built for serious work.",
         "features": {
-          "usage": "Unlimited usage",
-          "concurrent": "Unlimited Disposable",
-          "persistence": "3 Persistent Sessions",
-          "specs": "2 vCPU / 2 GB RAM",
-          "api": "Full API Access",
-          "snapshots": "Unlimited Snapshots & Templates"
+          "subscription": "$10/mo Option",
+          "specs": "2 vCPU / 4 GB RAM",
+          "priority": "High Priority Queue",
+          "persistence": "Persistent Home Storage",
+          "snapshots": "Unlimited Snapshots"
         },
-        "cta": "Start Trial"
+        "cta": "Go Pro"
+      }
+    },
+    "powerTiers": {
+      "title": "Power Tiers",
+      "description": "Scale your resources for demanding tasks.",
+      "table": {
+        "tier": "Tier",
+        "specs": "Specs",
+        "multiplier": "Multiplier"
       },
-      "team": {
-        "name": "Team",
-        "price": "$79",
-        "description": "Collaborate without limits.",
-        "features": {
-          "usage": "Unlimited usage",
-          "concurrent": "Unlimited Disposable",
-          "persistence": "10 Persistent Sessions",
-          "specs": "4 vCPU / 8 GB RAM",
-          "api": "Priority API Access",
-          "snapshots": "Unlimited Snapshots & Templates"
+      "tiers": {
+        "standard": {
+          "name": "Standard",
+          "specs": "2 vCPU / 4GB RAM",
+          "multiplier": "1x"
         },
-        "cta": "Contact Sales"
+        "turbo": {
+          "name": "Turbo",
+          "specs": "4 vCPU / 8GB RAM",
+          "multiplier": "2x"
+        },
+        "max": {
+          "name": "Max",
+          "specs": "8 vCPU / 16GB RAM",
+          "multiplier": "4x"
+        }
       }
     }
   },

@@ -13,7 +13,6 @@ import {
   Shield,
   Terminal,
   Copy,
-  Check,
   X as XIcon,
 } from 'lucide-react';
 import ParallaxBackground from '@/components/parallax-background';
@@ -25,16 +24,8 @@ import MoreInfoButton from '@/components/more-info-button';
 import ResponsiveVideo from '@/components/responsive-video';
 import RotatingWord from '@/components/rotating-word';
 import HeroBackground from '@/components/hero-background';
+import PricingSection from '@/components/pricing-section';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 
 type Props = {
   params: { locale: string };
@@ -246,88 +237,7 @@ export default async function Home({ params: { locale } }: Props) {
       <div id="pricing" />
       {/* Pricing Section */}
       <AnimatedSection className="relative z-10 py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{pricingT('title')}</h2>
-            <p className="text-xl text-gray-400">{pricingT('description')}</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {['free', 'pro', 'team'].map((plan) => (
-              <Card
-                key={plan}
-                className={`bg-gray-900/50 border-gray-800 flex flex-col ${
-                  plan === 'pro' ? 'border-[#FF7600] shadow-lg shadow-[#FF7600]/10 relative' : ''
-                }`}
-              >
-                {plan === 'pro' && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <Badge className="bg-[#FF7600] text-white hover:bg-[#FF7600]/90">
-                      {pricingT('popular')}
-                    </Badge>
-                  </div>
-                )}
-                <CardHeader>
-                  <CardTitle className="text-2xl text-white">
-                    {pricingT(`plans.${plan}.name`)}
-                  </CardTitle>
-                  <CardDescription className="text-gray-400">
-                    {pricingT(`plans.${plan}.description`)}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <div className="mb-6">
-                    <span className="text-4xl font-bold text-white">
-                      {pricingT(`plans.${plan}.price`)}
-                    </span>
-                    {plan !== 'free' && (
-                      <span className="text-gray-400 ml-2">{pricingT('monthly')}</span>
-                    )}
-                  </div>
-                  <ul className="space-y-3">
-                    {['usage', 'concurrent', 'persistence', 'specs', 'api', 'snapshots'].map(
-                      (feature) => {
-                        const isDisabled =
-                          plan === 'free' && (feature === 'api' || feature === 'snapshots');
-                        return (
-                          <li
-                            key={feature}
-                            className={`flex items-center gap-3 ${
-                              isDisabled ? 'text-gray-600' : 'text-gray-300'
-                            }`}
-                          >
-                            {isDisabled ? (
-                              <XIcon className="h-4 w-4 text-gray-600 shrink-0" />
-                            ) : (
-                              <Check
-                                className={`h-4 w-4 shrink-0 ${
-                                  plan === 'pro' ? 'text-[#FF7600]' : 'text-gray-400'
-                                }`}
-                              />
-                            )}
-                            <span className={isDisabled ? 'line-through' : ''}>
-                              {pricingT(`plans.${plan}.features.${feature}`)}
-                            </span>
-                          </li>
-                        );
-                      },
-                    )}
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button
-                    className={`w-full ${
-                      plan === 'pro'
-                        ? 'bg-[#FF7600] hover:bg-[#FF7600]/90 text-white'
-                        : 'bg-white text-black hover:bg-gray-200'
-                    }`}
-                  >
-                    {pricingT(`plans.${plan}.cta`)}
-                  </Button>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
-        </div>
+        <PricingSection />
       </AnimatedSection>
       {/* Testimonials */}
       <AnimatedSection className="relative z-10 py-20">
