@@ -6,18 +6,30 @@ import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '@/components/theme-provider';
 import { useTranslations } from '@/components/language-provider';
 import LanguageSwitcher from '@/components/language-switcher';
+import { usePathname } from 'next/navigation';
+import { useLocale } from 'next-intl';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const t = useTranslations();
+  const locale = useLocale();
+  const pathname = usePathname();
+
+  const isHomePage = pathname === `/${locale}` || pathname === '/';
+
+  const getLink = (id: string) => {
+    return isHomePage ? `#${id}` : `/${locale}#${id}`;
+  };
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -25,13 +37,18 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/80 backdrop-blur-md py-3' : 'bg-transparent py-5'
+        isScrolled
+          ? 'bg-black/90 backdrop-blur-md py-3 shadow-2xl border-b border-white/5'
+          : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-bold text-foreground flex items-center gap-3">
+            <Link
+              href={`/${locale}`}
+              className="text-2xl font-bold text-foreground flex items-center gap-3"
+            >
               <img
                 src="/logo-mid.png"
                 alt="Cyqle Logo"
@@ -40,35 +57,35 @@ export default function Navbar() {
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-100 via-slate-200 to-slate-300">
                 Cyqle
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a
-              href="#features"
-              className={`dark:text-gray-300 ${isScrolled && theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors`}
+            <Link
+              href={getLink('features')}
+              className="text-slate-300 hover:text-white transition-colors"
             >
               {t('navbar.features')}
-            </a>
-            <a
-              href="#"
-              className={`dark:text-gray-300 ${isScrolled && theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors`}
+            </Link>
+            <Link
+              href={getLink('useCases')}
+              className="text-slate-300 hover:text-white transition-colors"
             >
               {t('navbar.useCases')}
-            </a>
-            <a
-              href="#"
-              className={`dark:text-gray-300 ${isScrolled && theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors`}
+            </Link>
+            <Link
+              href={getLink('pricing')}
+              className="text-slate-300 hover:text-white transition-colors"
             >
               {t('navbar.pricing')}
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1oy9VKy-unionZApPwO1bFOgQnbjuHAdv/view?usp=sharing"
-              className={`dark:text-gray-300 ${isScrolled && theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors`}
+            </Link>
+            <Link
+              href={`/${locale}/about`}
+              className="text-slate-300 hover:text-white transition-colors"
             >
               {t('navbar.about')}
-            </a>
+            </Link>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -76,11 +93,7 @@ export default function Navbar() {
             {/* <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}> */}
             {/*   {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className={`h-5 w-5 ${isScrolled && "text-gray-300"}`} />} */}
             {/* </Button> */}
-            <Button
-              disabled
-              variant="ghost"
-              className={`dark:text-gray-300 hover:text-foreground ${isScrolled && theme !== 'dark' ? 'text-white' : 'text-gray-500'}`}
-            >
+            <Button disabled variant="ghost" className="text-slate-300 hover:text-white">
               {t('navbar.signIn')}
             </Button>
             <Button
@@ -100,13 +113,10 @@ export default function Navbar() {
             <Button
               variant="ghost"
               size="icon"
+              className="text-white"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
-              {isMobileMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className={`h-6 w-6 ${isScrolled && 'text-gray-300'}`} />
-              )}
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
@@ -114,33 +124,33 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-gray-900/95 backdrop-blur-md">
+        <div className="md:hidden bg-black/95 backdrop-blur-md">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col space-y-4">
-              <a
-                href="#"
-                className={`dark:text-gray-300 ${theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors py-2`}
+              <Link
+                href={getLink('features')}
+                className="text-slate-300 hover:text-white transition-colors py-2"
               >
                 {t('navbar.features')}
-              </a>
-              <a
-                href="#"
-                className={`dark:text-gray-300 ${theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors py-2`}
+              </Link>
+              <Link
+                href={getLink('useCases')}
+                className="text-slate-300 hover:text-white transition-colors py-2"
               >
                 {t('navbar.useCases')}
-              </a>
-              <a
-                href="#"
-                className={`dark:text-gray-300 ${theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors py-2`}
+              </Link>
+              <Link
+                href={getLink('pricing')}
+                className="text-slate-300 hover:text-white transition-colors py-2"
               >
                 {t('navbar.pricing')}
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1oy9VKy-unionZApPwO1bFOgQnbjuHAdv/view?usp=sharing"
-                className={`dark:text-gray-300 ${theme !== 'dark' ? 'text-white' : 'text-gray-500'} hover:opacity-75 transition-colors py-2`}
+              </Link>
+              <Link
+                href={`/${locale}/about`}
+                className="text-slate-300 hover:text-white transition-colors py-2"
               >
                 {t('navbar.about')}
-              </a>
+              </Link>
               <div className="pt-4 flex flex-col space-y-3">
                 <Button variant="outline" className="w-full justify-center">
                   {t('navbar.signIn')}
