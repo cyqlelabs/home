@@ -143,12 +143,12 @@
       },
       "pro": {
         "name": "Pro",
-        "price": "$29",
+        "price": "$19",
         "description": "Para desarrolladores que necesitan potencia.",
         "features": {
           "usage": "Uso ilimitado",
           "concurrent": "Desechables Ilimitadas",
-          "persistence": "2 Sesiones Persistentes",
+          "persistence": "3 Sesiones Persistentes",
           "specs": "2 vCPU / 2 GB RAM",
           "api": "Acceso API Completo",
           "snapshots": "Snapshots y Templates Ilimitados"
@@ -157,13 +157,13 @@
       },
       "team": {
         "name": "Equipo",
-        "price": "$99",
+        "price": "$79",
         "description": "Colabora sin límites.",
         "features": {
           "usage": "Uso ilimitado",
           "concurrent": "Desechables Ilimitadas",
-          "persistence": "4 Sesiones Persistentes",
-          "specs": "2 vCPU / 4 GB RAM",
+          "persistence": "10 Sesiones Persistentes",
+          "specs": "4 vCPU / 8 GB RAM",
           "api": "Acceso API Prioritario",
           "snapshots": "Snapshots y Templates Ilimitados"
         },
