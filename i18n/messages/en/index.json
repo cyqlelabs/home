@@ -126,6 +126,7 @@
     "description": "Choose the perfect plan for your workflow.",
     "monthly": "/month",
     "popular": "Most Popular",
+    "billingLegend": "* billed per minute",
     "plans": {
       "free": {
         "name": "Free",
@@ -150,8 +151,8 @@
           "usage": "Pay-As-You-Go",
           "specs": "1 vCPU / 1 GB RAM",
           "priority": "Standard Priority",
-          "persistence": "No Persistence",
-          "billing": "Billed per Minute"
+          "persistence": "2 GB persistence, 30-day retention",
+          "api": "API Access"
         },
         "cta": "Get Started"
       },
@@ -164,8 +165,9 @@
           "subscription": "$10/mo Option",
           "specs": "2 vCPU / 4 GB RAM",
           "priority": "High Priority Queue",
-          "persistence": "Persistent Home Storage",
-          "snapshots": "Unlimited Snapshots"
+          "persistence": "10 GB persistence, 30-day retention",
+          "snapshots": "Unlimited Snapshots",
+          "api": "API Access"
         },
         "cta": "Go Pro"
       }
@@ -182,17 +184,20 @@
         "standard": {
           "name": "Standard",
           "specs": "2 vCPU / 4GB RAM",
-          "multiplier": "1x"
+          "multiplier": "1x",
+          "persistence": "10 GB persistence, 30-day retention"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
-          "multiplier": "2x"
+          "multiplier": "2x",
+          "persistence": "20 GB persistence, 60-day retention"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
-          "multiplier": "4x"
+          "multiplier": "4x",
+          "persistence": "40 GB persistence, unlimited"
         }
       }
     }

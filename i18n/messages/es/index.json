@@ -126,6 +126,7 @@
     "description": "Elige el plan perfecto para tu flujo de trabajo.",
     "monthly": "/mes",
     "popular": "Más Popular",
+    "billingLegend": "Facturado por minuto",
     "plans": {
       "free": {
         "name": "Gratis",
@@ -150,22 +151,23 @@
           "usage": "Pago por Uso",
           "specs": "1 vCPU / 1 GB RAM",
           "priority": "Prioridad Estándar",
-          "persistence": "Sin Persistencia",
-          "billing": "Facturado por Minuto"
+          "persistence": "2 GB persistencia, 30 días retención",
+          "api": "Acceso API"
         },
         "cta": "Empezar"
       },
       "pro": {
         "name": "Pro",
         "price": "$0.30",
-        "unit": "/hora",
+        "unit": "/hour",
         "description": "Diseñado para trabajo serio.",
         "features": {
           "subscription": "Opción de $10/mes",
           "specs": "2 vCPU / 4 GB RAM",
           "priority": "Cola de Prioridad Alta",
-          "persistence": "Almacenamiento Persistente",
-          "snapshots": "Snapshots Ilimitados"
+          "persistence": "10 GB persistencia, 30 días retención",
+          "snapshots": "Snapshots Ilimitados",
+          "api": "Acceso API"
         },
         "cta": "Hazte Pro"
       }
@@ -182,17 +184,20 @@
         "standard": {
           "name": "Standard",
           "specs": "2 vCPU / 4GB RAM",
-          "multiplier": "1x"
+          "multiplier": "1x",
+          "persistence": "10 GB persistencia, 30 días retención"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
-          "multiplier": "2x"
+          "multiplier": "2x",
+          "persistence": "20 GB persistencia, 60 días retención"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
-          "multiplier": "4x"
+          "multiplier": "4x",
+          "persistence": "40 GB persistencia, ilimitada"
         }
       }
     }
