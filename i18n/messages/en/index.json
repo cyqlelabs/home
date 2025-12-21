@@ -127,6 +127,7 @@
     "monthly": "/month",
     "popular": "Most Popular",
     "billingLegend": "* billed per minute",
+    "perDesktop": "per desktop",
     "plans": {
       "free": {
         "name": "Free",
@@ -162,7 +163,7 @@
         "unit": "/hour",
         "description": "Built for serious work.",
         "features": {
-          "subscription": "$10/mo Option",
+          "subscription": "{price}/mo Option",
           "specs": "2 vCPU / 4 GB RAM",
           "priority": "High Priority Queue",
           "persistence": "10 GB persistence, 30-day retention",
