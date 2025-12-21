@@ -131,6 +131,11 @@ export default function PricingSection() {
                         <>
                           <span className="text-gray-400 ml-2">{t(`plans.${plan}.unit`)}</span>
                           <span className="text-xs text-gray-500 pl-2">{t('billingLegend')}</span>
+                          {(plan === 'lite' || plan === 'pro') && (
+                            <Badge variant="secondary" className="ml-2 text-[10px] px-1 py-0 h-5">
+                              {t('perDesktop')}
+                            </Badge>
+                          )}
                         </>
                       )}
                     </>
@@ -193,7 +198,15 @@ function FeatureList({
   return (
     <ul className="space-y-3">
       {Object.keys(features).map((feature) => {
-        let content = t(`plans.${plan}.features.${feature}`);
+        let content;
+
+        if (feature === 'subscription' && plan === 'pro') {
+          const multiplier = TIERS[selectedTier].multiplier || 1;
+          const price = `$${10 * multiplier}`;
+          content = t(`plans.${plan}.features.${feature}`, { price });
+        } else {
+          content = t(`plans.${plan}.features.${feature}`);
+        }
 
         // Dynamic overrides
         if (feature === 'specs') {

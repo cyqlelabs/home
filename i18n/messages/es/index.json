@@ -127,6 +127,7 @@
     "monthly": "/mes",
     "popular": "Más Popular",
     "billingLegend": "Facturado por minuto",
+    "perDesktop": "por escritorio",
     "plans": {
       "free": {
         "name": "Gratis",
@@ -162,7 +163,7 @@
         "unit": "/hour",
         "description": "Diseñado para trabajo serio.",
         "features": {
-          "subscription": "Opción de $10/mes",
+          "subscription": "Opción de {price}/mes",
           "specs": "2 vCPU / 4 GB RAM",
           "priority": "Cola de Prioridad Alta",
           "persistence": "10 GB persistencia, 30 días retención",
