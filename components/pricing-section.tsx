@@ -128,7 +128,10 @@ export default function PricingSection() {
                     <>
                       <span className="text-4xl font-bold text-white">{price}</span>
                       {t(`plans.${plan}.unit`) && (
-                        <span className="text-gray-400 ml-2">{t(`plans.${plan}.unit`)}</span>
+                        <>
+                          <span className="text-gray-400 ml-2">{t(`plans.${plan}.unit`)}</span>
+                          <span className="text-xs text-gray-500 pl-2">{t('billingLegend')}</span>
+                        </>
                       )}
                     </>
                   ) : (
@@ -198,6 +201,12 @@ function FeatureList({
             content = TIERS[selectedTier].specs;
           } else if ((plan === 'free' || plan === 'lite') && !isAvailable) {
             // Keep the static content (1 vCPU / 1 GB) as fallback/explanation
+          }
+        }
+
+        if (feature === 'persistence') {
+          if (plan === 'pro' && isAvailable) {
+            content = t(`powerTiers.tiers.${selectedTier}.persistence`);
           }
         }
 
