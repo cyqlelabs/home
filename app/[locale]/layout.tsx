@@ -101,7 +101,9 @@ export default async function RootLayout({ children, params: { locale } }: Props
     <html lang={locale} className="dark">
       <body className={inter.className}>
         <ThemeProvider>
-          <LanguageProvider messages={messages}>{children}</LanguageProvider>
+          <LanguageProvider messages={messages} locale={locale}>
+            {children}
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
