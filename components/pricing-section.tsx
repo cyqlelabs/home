@@ -93,10 +93,14 @@ export default function PricingSection() {
           const available = isPlanAvailable(plan, selectedTier);
           const price = getPrice(plan, selectedTier);
 
+          // Reorder Pro to top on mobile if a high-performance tier is selected
+          const orderClass =
+            plan === 'pro' && selectedTier !== 'basic' ? 'order-first md:order-none' : '';
+
           return (
             <Card
               key={plan}
-              className={`bg-gray-900/50 border-gray-800 flex flex-col transition-all duration-300 ${
+              className={`bg-gray-900/50 border-gray-800 flex flex-col transition-all duration-300 ${orderClass} ${
                 available
                   ? plan === 'lite'
                     ? 'border-[#FF7600] shadow-lg shadow-[#FF7600]/10 scale-105 z-10'
@@ -104,6 +108,7 @@ export default function PricingSection() {
                   : 'opacity-50 grayscale border-transparent'
               }`}
             >
+              {' '}
               {plan === 'lite' && available && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <Badge className="bg-[#FF7600] text-white hover:bg-[#FF7600]/90">
@@ -131,56 +136,12 @@ export default function PricingSection() {
                   )}
                 </div>
 
-                {/* Dynamic Specs Display */}
-                <div className="mb-4 p-2 bg-black/20 rounded text-sm text-center text-gray-300 font-mono">
-                  {available ? TIERS[selectedTier].specs : '---'}
-                </div>
-
-                <ul className="space-y-3">
-                  {['usage', 'priority', 'persistence', 'snapshots'].map((key) => {
-                    // Check if feature exists in translation before trying to render
-                    // Note: We need a way to safely check keys or just iterate what's there.
-                    // The previous code used Object.keys(pricingT.raw(...)).
-                    // Since we are using a client component, we rely on next-intl.
-                    // A safe way is to assume specific keys or try to load the object.
-                    // For now, let's map the known keys if possible, or use a helper.
-                    // Ideally, we replicate the loop from page.tsx:
-                    return null;
-                  })}
-
-                  {/* Re-implementing the feature list using raw object access pattern if supported,
-                      or hardcoding the common keys for now to avoid complexity with next-intl in client components
-                      if `raw` isn't readily available without configuration.
-
-                      Actually, useTranslations can't easily iterate keys unless we pass the features object as a prop
-                      or use a specific structure.
-
-                      Let's use the 'rich' pattern or just hardcode standard keys if they vary.
-                      The keys in JSON are: "usage", "specs", "priority", "persistence", "idle" (Free), "billing" (Lite), "subscription" (Pro).
-                      They are not consistent.
-                  */}
-
-                  {/*
-                      We will pass the features list as a prop or handle it differently.
-                      Actually, `page.tsx` used `Object.keys(pricingT.raw(...))`.
-                      We can do the same if we pass the messages or features map.
-                   */}
-                </ul>
-
-                {/*
-                   Correction: To keep it simple and robust, I will extract the features rendering
-                   logic or just accept that I need to access the messages structure.
-
-                   Alternative: Render the features in the parent and pass them?
-                   No, that's messy.
-
-                   Better: Use `t.raw('plans.' + plan + '.features')` if supported.
-                   `next-intl`'s `useTranslations` usually supports `raw` if configured,
-                   but strictly typing might be an issue.
-
-                   Let's try to fetch the keys.
-                */}
-                <FeatureList plan={plan} t={t} />
+                <FeatureList
+                  plan={plan}
+                  t={t}
+                  selectedTier={selectedTier}
+                  isAvailable={available}
+                />
               </CardContent>
               <CardFooter>
                 <Button
@@ -206,7 +167,17 @@ export default function PricingSection() {
   );
 }
 
-function FeatureList({ plan, t }: { plan: string; t: any }) {
+function FeatureList({
+  plan,
+  t,
+  selectedTier,
+  isAvailable,
+}: {
+  plan: string;
+  t: any;
+  selectedTier: Tier;
+  isAvailable: boolean;
+}) {
   // Hacky way to get keys since t.raw might be restricted or typed
   // We can try to retrieve the object.
   let features = {};
@@ -218,14 +189,27 @@ function FeatureList({ plan, t }: { plan: string; t: any }) {
 
   return (
     <ul className="space-y-3">
-      {Object.keys(features).map((feature) => (
-        <li key={feature} className="flex items-center gap-3 text-gray-300">
-          <Check
-            className={`h-4 w-4 shrink-0 ${plan === 'lite' ? 'text-[#FF7600]' : 'text-gray-400'}`}
-          />
-          <span>{t(`plans.${plan}.features.${feature}`)}</span>
-        </li>
-      ))}
+      {Object.keys(features).map((feature) => {
+        let content = t(`plans.${plan}.features.${feature}`);
+
+        // Dynamic overrides
+        if (feature === 'specs') {
+          if (plan === 'pro' && isAvailable) {
+            content = TIERS[selectedTier].specs;
+          } else if ((plan === 'free' || plan === 'lite') && !isAvailable) {
+            // Keep the static content (1 vCPU / 1 GB) as fallback/explanation
+          }
+        }
+
+        return (
+          <li key={feature} className="flex items-center gap-3 text-gray-300">
+            <Check
+              className={`h-4 w-4 shrink-0 ${plan === 'lite' ? 'text-[#FF7600]' : 'text-gray-400'}`}
+            />
+            <span>{content}</span>
+          </li>
+        );
+      })}
     </ul>
   );
 }
