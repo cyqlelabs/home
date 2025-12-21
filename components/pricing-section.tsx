@@ -202,7 +202,7 @@ function FeatureList({
 
         if (feature === 'subscription' && plan === 'pro') {
           const multiplier = TIERS[selectedTier].multiplier || 1;
-          const price = `$${10 * multiplier}`;
+          const price = `$${20 * multiplier}`;
           content = t(`plans.${plan}.features.${feature}`, { price });
         } else {
           content = t(`plans.${plan}.features.${feature}`);
