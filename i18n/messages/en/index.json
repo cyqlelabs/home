@@ -137,6 +137,7 @@
         "features": {
           "time": "15 Minute Session Limit",
           "specs": "1 vCPU / 1 GB RAM",
+          "bandwidth": "Up to 10mb/s bandwidth",
           "priority": "Low Priority Queue",
           "persistence": "No Persistence",
           "idle": "2 Min Idle Timeout"
@@ -152,8 +153,9 @@
           "subscription": "{price}/mo Option",
           "usage": "Pay-As-You-Go",
           "specs": "1 vCPU / 1 GB RAM",
+          "bandwidth": "50mb/s bandwidth",
           "priority": "Standard Priority",
-          "persistence": "2 GB persistence, 30-day retention",
+          "persistence": "5 GB persistence, 30-day retention",
           "api": "API Access"
         },
         "cta": "Get Started"
@@ -166,8 +168,9 @@
         "features": {
           "subscription": "{price}/mo Option",
           "specs": "2 vCPU / 4 GB RAM",
+          "bandwidth": "100mb/s bandwidth",
           "priority": "High Priority Queue",
-          "persistence": "10 GB persistence, 30-day retention",
+          "persistence": "20 GB persistence, 30-day retention",
           "snapshots": "Unlimited Snapshots",
           "api": "API Access"
         },
@@ -187,13 +190,13 @@
           "name": "Standard",
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
-          "persistence": "10 GB persistence, 30-day retention"
+          "persistence": "20 GB persistence, 30-day retention"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
-          "persistence": "20 GB persistence, 60-day retention"
+          "persistence": "30 GB persistence, 60-day retention"
         },
         "max": {
           "name": "Max",
