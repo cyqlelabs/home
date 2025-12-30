@@ -137,6 +137,7 @@
         "features": {
           "time": "Límite de Sesión de 15 Minutos",
           "specs": "1 vCPU / 1 GB RAM",
+          "bandwidth": "Hasta 10mb/s de ancho de banda",
           "priority": "Cola de Prioridad Baja",
           "persistence": "Sin Persistencia",
           "idle": "Cierre por Inactividad (2 Min)"
@@ -152,6 +153,7 @@
           "subscription": "Opción de {price}/mes",
           "usage": "Pago por Uso",
           "specs": "1 vCPU / 1 GB RAM",
+          "bandwidth": "50mb/s de ancho de banda",
           "priority": "Prioridad Estándar",
           "persistence": "2 GB persistencia, 30 días retención",
           "api": "Acceso API"
@@ -166,6 +168,7 @@
         "features": {
           "subscription": "Opción de {price}/mes",
           "specs": "2 vCPU / 4 GB RAM",
+          "bandwidth": "100mb/s de ancho de banda",
           "priority": "Cola de Prioridad Alta",
           "persistence": "10 GB persistencia, 30 días retención",
           "snapshots": "Snapshots Ilimitados",

@@ -43,7 +43,6 @@ export default async function Home({ params: { locale } }: Props) {
   const aiSectionT = await getTranslations('aiSection');
   const testimonialsT = await getTranslations('testimonials');
   const ctaT = await getTranslations('cta');
-  const pricingT = await getTranslations('pricing');
 
   return (
     <div className="min-h-screen bg-transparent text-foreground overflow-hidden">
