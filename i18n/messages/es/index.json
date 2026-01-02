@@ -151,7 +151,6 @@
         "description": "Investigación casual y privacidad.",
         "features": {
           "subscription": "Opción de {price}/mes",
-          "usage": "Pago por Uso",
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "50mb/s de ancho de banda",
           "priority": "Prioridad Estándar",
