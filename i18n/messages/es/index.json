@@ -138,7 +138,6 @@
           "time": "Límite de Sesión de 15 Minutos",
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "Hasta 10mb/s de ancho de banda",
-          "concurrentSessions": "1 Sesión Paralela",
           "priority": "Cola de Prioridad Baja",
           "persistence": "Sin Persistencia",
           "idle": "Cierre por Inactividad (2 Min)"
@@ -154,7 +153,6 @@
           "subscription": "Opción de {price}/mes",
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "50mb/s de ancho de banda",
-          "concurrentSessions": "3 Sesiones Paralelas",
           "priority": "Prioridad Estándar",
           "persistence": "5 GB persistencia, 30 días retención",
           "api": "Acceso API"
@@ -170,7 +168,6 @@
           "subscription": "Opción de {price}/mes",
           "specs": "2 vCPU / 4 GB RAM",
           "bandwidth": "100mb/s de ancho de banda",
-          "concurrentSessions": "10 Sesiones Paralelas",
           "priority": "Cola de Prioridad Alta",
           "persistence": "20 GB persistencia, 30 días retención",
           "snapshots": "Snapshots Ilimitados",
