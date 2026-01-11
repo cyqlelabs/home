@@ -138,6 +138,7 @@
           "time": "15 Minute Session Limit",
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "Up to 10mb/s bandwidth",
+          "concurrentSessions": "1 Concurrent Session",
           "priority": "Low Priority Queue",
           "persistence": "No Persistence",
           "idle": "2 Min Idle Timeout"
@@ -153,6 +154,7 @@
           "subscription": "{price}/mo Option",
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "50mb/s bandwidth",
+          "concurrentSessions": "3 Concurrent Sessions",
           "priority": "Standard Priority",
           "persistence": "5 GB persistence, 30-day retention",
           "api": "API Access"
@@ -168,6 +170,7 @@
           "subscription": "{price}/mo Option",
           "specs": "2 vCPU / 4 GB RAM",
           "bandwidth": "100mb/s bandwidth",
+          "concurrentSessions": "10 Concurrent Sessions",
           "priority": "High Priority Queue",
           "persistence": "20 GB persistence, 30-day retention",
           "snapshots": "Unlimited Snapshots",
