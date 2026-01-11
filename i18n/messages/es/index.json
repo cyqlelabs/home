@@ -189,13 +189,13 @@
           "name": "Standard",
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
-          "persistence": "10 GB persistencia, 30 días retención"
+          "persistence": "20 GB persistencia, 30 días retención"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
-          "persistence": "20 GB persistencia, 60 días retención"
+          "persistence": "30 GB persistencia, 60 días retención"
         },
         "max": {
           "name": "Max",
