@@ -20,6 +20,10 @@ export default function Navbar() {
     return `/${locale}#${id}`;
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -126,24 +130,28 @@ export default function Navbar() {
               <Link
                 href={getLink('features')}
                 className="text-slate-300 hover:text-white transition-colors py-2"
+                onClick={closeMobileMenu}
               >
                 {t('navbar.features')}
               </Link>
               <Link
                 href={getLink('useCases')}
                 className="text-slate-300 hover:text-white transition-colors py-2"
+                onClick={closeMobileMenu}
               >
                 {t('navbar.useCases')}
               </Link>
               <Link
                 href={getLink('pricing')}
                 className="text-slate-300 hover:text-white transition-colors py-2"
+                onClick={closeMobileMenu}
               >
                 {t('navbar.pricing')}
               </Link>
               <Link
                 href={`/${locale}/about`}
                 className="text-slate-300 hover:text-white transition-colors py-2"
+                onClick={closeMobileMenu}
               >
                 {t('navbar.about')}
               </Link>
