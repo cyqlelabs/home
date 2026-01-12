@@ -150,7 +150,6 @@
         "unit": "/hora",
         "description": "Investigación casual y privacidad.",
         "features": {
-          "subscription": "Opción de {price}/mes",
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "50mb/s de ancho de banda",
           "priority": "Prioridad Estándar",
@@ -165,7 +164,6 @@
         "unit": "/hour",
         "description": "Diseñado para trabajo serio.",
         "features": {
-          "subscription": "Opción de {price}/mes",
           "specs": "2 vCPU / 4 GB RAM",
           "bandwidth": "100mb/s de ancho de banda",
           "priority": "Cola de Prioridad Alta",
