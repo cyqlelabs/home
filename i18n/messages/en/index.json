@@ -153,7 +153,7 @@
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "50mb/s bandwidth",
           "priority": "Standard Priority",
-          "persistence": "5 GB persistence, 30-day retention",
+          "persistence": "5 GB persistence",
           "api": "API Access"
         },
         "cta": "Get Started"
@@ -167,7 +167,7 @@
           "specs": "2 vCPU / 4 GB RAM",
           "bandwidth": "100mb/s bandwidth",
           "priority": "High Priority Queue",
-          "persistence": "20 GB persistence, 30-day retention",
+          "persistence": "20 GB persistence",
           "snapshots": "Unlimited Snapshots",
           "api": "API Access"
         },
@@ -187,19 +187,19 @@
           "name": "Standard",
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
-          "persistence": "20 GB persistence, 30-day retention"
+          "persistence": "20 GB persistence"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
-          "persistence": "30 GB persistence, 60-day retention"
+          "persistence": "30 GB persistence"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
-          "persistence": "40 GB persistence, unlimited"
+          "persistence": "40 GB persistence"
         }
       }
     }
