@@ -16,6 +16,7 @@ import { Check, X as XIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 type Tier = 'basic' | 'standard' | 'turbo' | 'max';
+type PricingMode = 'monthly' | 'payAsYouGo';
 
 const TIERS: Record<Tier, { name: string; specs: string; multiplier: number }> = {
   basic: { name: 'Basic', specs: '1 vCPU / 1 GB', multiplier: 0 },
@@ -27,27 +28,34 @@ const TIERS: Record<Tier, { name: string; specs: string; multiplier: number }> =
 export default function PricingSection() {
   const t = useTranslations('pricing');
   const [selectedTier, setSelectedTier] = useState<Tier>('basic');
+  const [pricingMode, setPricingMode] = useState<PricingMode>('monthly');
 
   const plans = ['free', 'lite', 'pro'] as const;
 
   const getPrice = (plan: string, tier: Tier) => {
     if (plan === 'free') return '$0.00';
+
     if (plan === 'lite') {
-      if (tier === 'basic') return '$0.05';
+      if (tier === 'basic') {
+        return pricingMode === 'monthly' ? '$10' : '$0.05';
+      }
       return 'N/A';
     }
-    // Pro
-    if (tier === 'basic') return 'N/A'; // Pro starts at Standard? Or allows Basic?
-    // Let's assume Pro STARTS at Standard ($0.30).
-    // If we apply multipliers:
-    // Standard (1x) = $0.30
-    // Turbo (2x) = $0.60
-    // Max (4x) = $1.20
 
-    // Base Pro Price is $0.30
-    const basePro = 0.3;
-    const multiplier = TIERS[tier].multiplier;
-    return `$${(basePro * multiplier).toFixed(2)}`;
+    // Pro
+    if (tier === 'basic') return 'N/A';
+
+    if (pricingMode === 'monthly') {
+      // Monthly subscription pricing
+      const baseMonthly = 20;
+      const multiplier = TIERS[tier].multiplier;
+      return `$${baseMonthly * multiplier}`;
+    } else {
+      // Pay-as-you-go pricing
+      const basePro = 0.3;
+      const multiplier = TIERS[tier].multiplier;
+      return `$${(basePro * multiplier).toFixed(2)}`;
+    }
   };
 
   const isPlanAvailable = (plan: string, tier: Tier) => {
@@ -62,6 +70,30 @@ export default function PricingSection() {
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('title')}</h2>
         <p className="text-xl text-gray-400 mb-8">{t('description')}</p>
+
+        {/* Pricing Mode Toggle */}
+        <div className="flex justify-center mb-6">
+          <Tabs
+            value={pricingMode}
+            onValueChange={(v) => setPricingMode(v as PricingMode)}
+            className="w-auto"
+          >
+            <TabsList className="bg-gray-900 border border-gray-800">
+              <TabsTrigger
+                value="monthly"
+                className="data-[state=active]:bg-[#FF7600] data-[state=active]:text-white text-gray-400"
+              >
+                Monthly
+              </TabsTrigger>
+              <TabsTrigger
+                value="payAsYouGo"
+                className="data-[state=active]:bg-[#FF7600] data-[state=active]:text-white text-gray-400"
+              >
+                Pay as You Go
+              </TabsTrigger>
+            </TabsList>
+          </Tabs>
+        </div>
 
         {/* Tier Selector */}
         <div className="flex justify-center mb-12">
@@ -127,10 +159,14 @@ export default function PricingSection() {
                   {available ? (
                     <>
                       <span className="text-4xl font-bold text-white">{price}</span>
-                      {t(`plans.${plan}.unit`) && (
+                      {plan !== 'free' && (
                         <>
-                          <span className="text-gray-400 ml-2">{t(`plans.${plan}.unit`)}</span>
-                          <span className="text-xs text-gray-500 pl-2">{t('billingLegend')}</span>
+                          <span className="text-gray-400 ml-2">
+                            {pricingMode === 'monthly' ? '/month' : '/hour'}
+                          </span>
+                          {pricingMode === 'payAsYouGo' && (
+                            <span className="text-xs text-gray-500 pl-2">{t('billingLegend')}</span>
+                          )}
                           {(plan === 'lite' || plan === 'pro') && (
                             <Badge variant="secondary" className="ml-2 text-[10px] px-1 py-0 h-5">
                               {t('perDesktop')}
@@ -198,15 +234,12 @@ function FeatureList({
   return (
     <ul className="space-y-3">
       {Object.keys(features).map((feature) => {
-        let content;
-
+        // Skip the subscription feature as it's no longer needed
         if (feature === 'subscription') {
-          const multiplier = TIERS[selectedTier].multiplier || 1;
-          const price = `$${((plan === 'lite' && 10) || 20) * multiplier}`;
-          content = t(`plans.${plan}.features.${feature}`, { price });
-        } else {
-          content = t(`plans.${plan}.features.${feature}`);
+          return null;
         }
+
+        let content = t(`plans.${plan}.features.${feature}`);
 
         // Dynamic overrides
         if (feature === 'specs') {

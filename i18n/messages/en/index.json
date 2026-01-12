@@ -150,7 +150,6 @@
         "unit": "/hour",
         "description": "Casual research and privacy.",
         "features": {
-          "subscription": "{price}/mo Option",
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "50mb/s bandwidth",
           "priority": "Standard Priority",
@@ -165,7 +164,6 @@
         "unit": "/hour",
         "description": "Built for serious work.",
         "features": {
-          "subscription": "{price}/mo Option",
           "specs": "2 vCPU / 4 GB RAM",
           "bandwidth": "100mb/s bandwidth",
           "priority": "High Priority Queue",
