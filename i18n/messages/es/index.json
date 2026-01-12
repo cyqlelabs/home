@@ -28,7 +28,7 @@
     "title": "Un Escritorio Completo, Reinventado",
     "aiAutomation": {
       "title": "Automatización Integrada",
-      "description": "Tu escritorio cloud incluye grabación nativa. Automatiza tareas repetitivas de interfaz sin esfuerzo."
+      "description": "Tu escritorio cloud incluye grabación nativa. Automatiza tareas repetitivas web sin esfuerzo."
     },
     "multiCursor": {
       "title": "Control Multijugador Verdadero",
@@ -71,11 +71,11 @@
     },
     "qa": {
       "title": "QA y Testing",
-      "description": "Reproduce bugs en un entorno limpio y compartido. Invita a desarrolladores a tu sesión para depurar al instante."
+      "description": "Reproduce bugs en un entorno limpio y compartido. Automatiza tests de regresión del navegador repetitivos e invita a desarrolladores a tu sesión para depurar al instante."
     },
     "customerSupport": {
       "title": "Soporte Colaborativo",
-      "description": "No solo digas qué hacer, muéstralo. Lanza una sesión compartida para guiar a los usuarios en problemas complejos."
+      "description": "No solo digas qué hacer, muéstralo. Lanza una sesión compartida para automatizar flujos de onboarding web complejos o guiar a los usuarios en problemas en tiempo real."
     },
     "operations": {
       "title": "Operaciones Seguras",
@@ -86,8 +86,8 @@
     "title": "Potencia tu Escritorio",
     "description": "Además de ser un ordenador cloud completo, Cyqle incluye potentes herramientas de IA para trabajar más rápido.",
     "items": [
-      "Graba interacciones de escritorio para reproducirlas",
-      "Delega tareas repetitivas de interfaz a agentes",
+      "Graba interacciones del navegador para reproducirlas",
+      "Delega tareas repetitivas web a agentes",
       "Programa flujos de trabajo en segundo plano",
       "Mantén una librería compartida de automatizaciones",
       "Integración fluida con tu stack actual"
@@ -248,7 +248,7 @@
       "title": "Características Clave y Arquitectura",
       "p2p": {
         "title": "Sincronización P2P en Tiempo Real",
-        "description": "El streaming directo peer-to-peer (P2P) proporciona una colaboración fluida y de baja latencia, a diferencia del uso compartido de pantalla tradicional que evita el enrutamiento del servidor central."
+        "description": "El streaming directo peer-to-peer (P2P) proporciona una colaboración fluida en tiempo real, a diferencia del uso compartido de pantalla tradicional que evita el enrutamiento del servidor central."
       },
       "provisioning": {
         "title": "Aprovisionamiento Instantáneo",
@@ -260,7 +260,7 @@
       },
       "automation": {
         "title": "Automatización Integrada",
-        "description": "Incluye capacidades de grabación integradas y actúa como un sandbox para desplegar agentes de IA personalizados para automatizar tareas repetitivas de la interfaz de usuario."
+        "description": "Incluye capacidades de grabación integradas y actúa como un sandbox para desplegar agentes de IA personalizados para automatizar tareas repetitivas web."
       }
     },
     "isolation": {
@@ -277,7 +277,7 @@
       "items": [
         "Desarrollo Remoto: Programación en pareja en tiempo real en un entorno cloud persistente.",
         "Soporte Colaborativo: Guiar a los usuarios a través de problemas utilizando una sesión segura y compartida.",
-        "QA y Pruebas: Reproducir y depurar errores instantáneamente en un entorno compartido y limpio.",
+        "QA y Pruebas: Reproducir y depurar errores instantáneamente en un entorno compartido y limpio usando automatización del navegador para replicar las rutas del usuario.",
         "Operaciones Seguras: Acceso a herramientas internas desde un escritorio en la nube aislado sin VPN."
       ]
     }
