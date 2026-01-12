@@ -36,7 +36,8 @@ export default function PricingSection() {
     if (plan === 'free') return '$0.00';
 
     if (plan === 'lite') {
-      return pricingMode === 'monthly' ? '$10' : '$0.05';
+      // Lite: $10/month or $0.50/credit (10 hours)
+      return pricingMode === 'monthly' ? '$10' : '$0.50';
     }
 
     // Pro - uses proTier
@@ -45,7 +46,8 @@ export default function PricingSection() {
       const multiplier = TIERS[proTier].multiplier;
       return `$${baseMonthly * multiplier}`;
     } else {
-      const basePro = 0.3;
+      // Credits pricing: Standard=$3, Turbo=$6, Max=$12 per credit (10 hours each)
+      const basePro = 3.0;
       const multiplier = TIERS[proTier].multiplier;
       return `$${(basePro * multiplier).toFixed(2)}`;
     }
@@ -167,12 +169,17 @@ export default function PricingSection() {
                   {plan !== 'free' && (
                     <>
                       <span className="text-gray-400 ml-2">
-                        {pricingMode === 'monthly' ? '/month' : '/hour'}
+                        {pricingMode === 'monthly' ? '/month' : '/credit'}
                       </span>
                       {pricingMode === 'payAsYouGo' && (
-                        <span className="text-xs text-gray-500 pl-2">{t('billingLegend')}</span>
+                        <div className="mt-2">
+                          <span className="text-sm text-green-400 font-semibold block">
+                            {t('creditEqualsHours')}
+                          </span>
+                          <span className="text-xs text-gray-500">{t('billingLegend')}</span>
+                        </div>
                       )}
-                      {(plan === 'lite' || plan === 'pro') && (
+                      {(plan === 'lite' || plan === 'pro') && pricingMode === 'monthly' && (
                         <Badge variant="secondary" className="ml-2 text-[10px] px-1 py-0 h-5">
                           {t('perDesktop')}
                         </Badge>

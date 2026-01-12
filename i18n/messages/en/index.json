@@ -126,7 +126,7 @@
     "description": "Choose the perfect plan for your workflow.",
     "monthly": "/month",
     "popular": "Most Popular",
-    "billingLegend": "* billed per minute",
+    "billingLegend": "Billed daily for actual usage",
     "perDesktop": "per desktop",
     "plans": {
       "free": {
@@ -146,8 +146,8 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "$0.05",
-        "unit": "/hour",
+        "price": "$0.50",
+        "unit": "/credit",
         "description": "Casual research and privacy.",
         "features": {
           "specs": "1 vCPU / 1 GB RAM",
@@ -160,8 +160,8 @@
       },
       "pro": {
         "name": "Pro",
-        "price": "$0.30",
-        "unit": "/hour",
+        "price": "$3.00",
+        "unit": "/credit",
         "description": "Built for serious work.",
         "features": {
           "specs": "2 vCPU / 4 GB RAM",
@@ -205,7 +205,8 @@
           "bandwidth": "200mb/s bandwidth"
         }
       }
-    }
+    },
+    "creditEqualsHours": "1 credit = 10 hours"
   },
   "footer": {
     "description": "The P2P cloud desktop for seamless collaboration and automation.",
