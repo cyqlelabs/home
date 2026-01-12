@@ -126,7 +126,7 @@
     "description": "Elige el plan perfecto para tu flujo de trabajo.",
     "monthly": "/mes",
     "popular": "Más Popular",
-    "billingLegend": "Facturado por minuto",
+    "billingLegend": "Facturado diariamente por uso real",
     "perDesktop": "por escritorio",
     "plans": {
       "free": {
@@ -146,8 +146,8 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "$0.05",
-        "unit": "/hora",
+        "price": "$0.50",
+        "unit": "/crédito",
         "description": "Investigación casual y privacidad.",
         "features": {
           "specs": "1 vCPU / 1 GB RAM",
@@ -160,8 +160,8 @@
       },
       "pro": {
         "name": "Pro",
-        "price": "$0.30",
-        "unit": "/hour",
+        "price": "$3.00",
+        "unit": "/crédito",
         "description": "Diseñado para trabajo serio.",
         "features": {
           "specs": "2 vCPU / 4 GB RAM",
@@ -205,7 +205,8 @@
           "bandwidth": "200mb/s de ancho de banda"
         }
       }
-    }
+    },
+    "creditEqualsHours": "1 crédito = 10 horas"
   },
   "footer": {
     "description": "El escritorio cloud P2P para colaboración fluida y automatización.",
