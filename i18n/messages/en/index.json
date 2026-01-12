@@ -28,7 +28,7 @@
     "title": "A Full Desktop, Reimagined",
     "aiAutomation": {
       "title": "Integrated Automation",
-      "description": "Your cloud desktop comes with built-in recording capabilities. Automate repetitive UI tasks effortlessly."
+      "description": "Your cloud desktop comes with built-in recording capabilities. Automate repetitive web tasks effortlessly."
     },
     "multiCursor": {
       "title": "True Multiplayer Control",
@@ -71,11 +71,11 @@
     },
     "qa": {
       "title": "QA & Testing",
-      "description": "Reproduce bugs in a shared, clean environment. Invite devs to your session to debug instantly."
+      "description": "Reproduce bugs in a shared, clean environment. Automate repetitive browser regression tests and invite devs to your session to debug instantly."
     },
     "customerSupport": {
       "title": "Collaborative Support",
-      "description": "Don't just tell customers what to do—show them. Launch a shared session to guide users through complex issues."
+      "description": "Don't just tell customers what to do—show them. Launch a shared session to automate complex web onboarding flows or guide users through issues in real-time."
     },
     "operations": {
       "title": "Secure Operations",
@@ -86,8 +86,8 @@
     "title": "Supercharge Your Desktop",
     "description": "While it is a full cloud computer, Cyqle also includes powerful AI tools to help you work faster.",
     "items": [
-      "Record desktop interactions for replay",
-      "Delegate repetitive GUI tasks to agents",
+      "Record browser interactions for replay",
+      "Delegate repetitive web tasks to agents",
       "Schedule workflows to run in the background",
       "Maintain a shared library of team automations",
       "Seamlessly integrate with your existing stack"
@@ -248,7 +248,7 @@
       "title": "Key Features & Architecture",
       "p2p": {
         "title": "P2P Real-Time Sync",
-        "description": "Direct peer-to-peer (P2P) streaming provides fluid, low-latency collaboration, differing from traditional screen sharing by avoiding central server routing."
+        "description": "Direct peer-to-peer (P2P) streaming provides fluid, real-time collaboration, differing from traditional screen sharing by avoiding central server routing."
       },
       "provisioning": {
         "title": "Instant Provisioning",
@@ -260,7 +260,7 @@
       },
       "automation": {
         "title": "Integrated Automation",
-        "description": "Includes built-in recording capabilities and acts as a sandbox for deploying custom AI agents to automate repetitive UI tasks."
+        "description": "Includes built-in recording capabilities and acts as a sandbox for deploying custom AI agents to automate repetitive web tasks."
       }
     },
     "isolation": {
@@ -277,7 +277,7 @@
       "items": [
         "Remote Development: Real-time pair programming on a persistent cloud environment.",
         "Collaborative Support: Guiding users through issues using a secure, shared session.",
-        "QA & Testing: Reproducing and instantly debugging bugs in a shared, clean environment.",
+        "QA & Testing: Reproducing and instantly debugging bugs in a shared, clean environment using browser automation to replicate user paths.",
         "Secure Operations: Accessing internal tools from an isolated cloud desktop without a VPN."
       ]
     }
