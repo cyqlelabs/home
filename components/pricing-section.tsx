@@ -207,6 +207,10 @@ function FeatureList({ plan, t, selectedTier }: { plan: string; t: any; selected
           content = t(`powerTiers.tiers.${selectedTier}.persistence`);
         }
 
+        if (feature === 'bandwidth' && plan === 'pro') {
+          content = t(`powerTiers.tiers.${selectedTier}.bandwidth`);
+        }
+
         return (
           <li key={feature} className="flex items-center gap-3 text-gray-300">
             <Check
