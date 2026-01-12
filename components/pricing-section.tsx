@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Check, X as XIcon } from 'lucide-react';
+import { Check, X as XIcon, Star } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 type Tier = 'basic' | 'standard' | 'turbo' | 'max';
@@ -58,32 +58,56 @@ export default function PricingSection() {
 
   return (
     <div className="container mx-auto px-4">
+      <style jsx>{`
+        @keyframes pulse-star {
+          0%,
+          100% {
+            transform: scale(1);
+            box-shadow: 0 2px 8px rgba(255, 215, 0, 0.5);
+          }
+          50% {
+            transform: scale(1.1);
+            box-shadow: 0 4px 16px rgba(255, 215, 0, 0.8);
+          }
+        }
+      `}</style>
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('title')}</h2>
         <p className="text-xl text-gray-400 mb-8">{t('description')}</p>
 
         {/* Pricing Mode Toggle */}
         <div className="flex justify-center mb-12">
-          <Tabs
-            value={pricingMode}
-            onValueChange={(v) => setPricingMode(v as PricingMode)}
-            className="w-auto"
-          >
-            <TabsList className="bg-gray-900 border border-gray-800">
-              <TabsTrigger
-                value="monthly"
-                className="data-[state=active]:bg-[#FF7600] data-[state=active]:text-white text-gray-400"
-              >
-                Monthly
-              </TabsTrigger>
-              <TabsTrigger
-                value="payAsYouGo"
-                className="data-[state=active]:bg-[#FF7600] data-[state=active]:text-white text-gray-400"
-              >
-                Pay as You Go
-              </TabsTrigger>
-            </TabsList>
-          </Tabs>
+          <div className="relative inline-block">
+            <Tabs
+              value={pricingMode}
+              onValueChange={(v) => setPricingMode(v as PricingMode)}
+              className="w-auto"
+            >
+              <TabsList className="bg-gray-900 border border-gray-800">
+                <TabsTrigger
+                  value="monthly"
+                  className="data-[state=active]:bg-[#FF7600] data-[state=active]:text-white text-gray-400"
+                >
+                  Monthly
+                </TabsTrigger>
+                <TabsTrigger
+                  value="payAsYouGo"
+                  className="data-[state=active]:bg-[#FF7600] data-[state=active]:text-white text-gray-400"
+                >
+                  Pay as You Go
+                </TabsTrigger>
+              </TabsList>
+            </Tabs>
+            <div
+              className="absolute -top-2 -left-2 bg-[#FFD700] rounded-full w-6 h-6 flex items-center justify-center pointer-events-none"
+              style={{
+                boxShadow: '0 2px 8px rgba(255, 215, 0, 0.5)',
+                animation: 'pulse-star 2s ease-in-out infinite',
+              }}
+            >
+              <Star className="w-4 h-4 text-[#1a1a1a] fill-[#1a1a1a]" />
+            </div>
+          </div>
         </div>
       </div>
 
