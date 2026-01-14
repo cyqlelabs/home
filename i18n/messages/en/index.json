@@ -511,6 +511,160 @@
       "email": "privacy@cyqle.in"
     }
   },
+  "cookiesPolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last Updated",
+    "effectiveDate": "January 14, 2026",
+    "introduction": "This Cookie Policy explains how Cyqle uses cookies and similar tracking technologies. We are committed to transparency and giving you full control over your privacy preferences.",
+    "complianceBanner": "2026 Compliant - GPC Signal Support & Equal Choice Design",
+    "quickOverview": {
+      "title": "Cookies at a Glance",
+      "minimal": {
+        "title": "Minimal Tracking",
+        "description": "We use only essential cookies and privacy-respecting analytics"
+      },
+      "gpc": {
+        "title": "GPC Signal Support",
+        "description": "We automatically honor Global Privacy Control signals from your browser"
+      },
+      "choice": {
+        "title": "Equal Choice",
+        "description": "Accept and Reject buttons have equal visual prominence"
+      },
+      "control": {
+        "title": "Full Control",
+        "description": "Change your preferences at any time through your browser or our settings"
+      }
+    },
+    "sections": {
+      "whatAreCookies": {
+        "title": "1. What Are Cookies?",
+        "badge": "Definition",
+        "intro": "Cookies are small text files that websites store on your device when you visit them. They help websites remember your preferences, improve functionality, and provide analytics.",
+        "description": "Cookies can be \"session cookies\" (deleted when you close your browser) or \"persistent cookies\" (stored for a set period). They can be \"first-party\" (set by the website you're visiting) or \"third-party\" (set by external services)."
+      },
+      "cookiesWeUse": {
+        "title": "2. Cookies We Use",
+        "badge": "Complete List",
+        "intro": "Cyqle uses a minimal set of cookies. On this marketing website (cyqle.in), we use essential cookies and optional analytics. Within the platform application itself, we ONLY use essential session cookies. We do NOT use advertising cookies or sell your data to third parties.",
+        "duration": "Duration",
+        "type": "Type",
+        "essential": {
+          "title": "Essential Cookies (Required)",
+          "intro": "These cookies are strictly necessary for the website to function and cannot be disabled without breaking core functionality:",
+          "session": {
+            "name": "cyqle_session",
+            "purpose": "Maintains your authenticated session and remembers you're logged in",
+            "duration": "30 days or until logout",
+            "type": "First-party, httpOnly, secure"
+          },
+          "note": "Legal Basis: These cookies are exempt from consent requirements under ePrivacy Directive as they are strictly necessary for service provision."
+        },
+        "analytics": {
+          "title": "Analytics Cookies (Optional - Marketing Website Only)",
+          "intro": "With your consent, we use privacy-respecting analytics on this marketing website to understand visitor behavior and improve our content. Analytics are NOT used within the Cyqle platform application itself:",
+          "plausible": {
+            "name": "Plausible Analytics (cyqle.in only)",
+            "purpose": "Tracks aggregate usage statistics on our marketing website without identifying individual users. Does not use cookies or track across websites. NOT used in the platform application.",
+            "duration": "No cookies stored (uses local storage with 24-hour expiry)",
+            "type": "First-party, privacy-focused"
+          },
+          "note": "Important: Analytics are only active on cyqle.in (this marketing website). When you use the Cyqle platform application, NO analytics cookies or tracking are used. You can opt out of marketing website analytics at any time."
+        },
+        "noTracking": {
+          "title": "What We DON'T Use",
+          "item1": "No third-party advertising cookies (Google Ads, Facebook Pixel, etc.)",
+          "item2": "No cross-site tracking or retargeting cookies",
+          "item3": "No fingerprinting techniques to identify users",
+          "item4": "No selling or sharing of data with data brokers"
+        }
+      },
+      "gpcSupport": {
+        "title": "3. Global Privacy Control (GPC) Support",
+        "badge": "2026 Requirement",
+        "intro": "Cyqle fully supports the Global Privacy Control (GPC) signal as required by 2026 privacy regulations.",
+        "whatIsGpc": {
+          "title": "What is GPC?",
+          "description": "Global Privacy Control (GPC) is a browser setting that allows you to automatically opt out of data sharing and sale across all websites you visit. When enabled, your browser sends a \"GPC: 1\" signal in the HTTP headers."
+        },
+        "howItWorks": {
+          "title": "How Cyqle Honors GPC Signals",
+          "item1": "When we detect a GPC signal, we automatically treat it as if you clicked \"Reject All\" on our cookie banner",
+          "item2": "We disable all optional cookies and analytics tracking",
+          "item3": "Your GPC preference is respected on every page load without requiring additional clicks"
+        },
+        "enable": {
+          "title": "How to Enable GPC",
+          "description": "You can enable GPC in the following browsers:",
+          "browser1": "Brave Browser: Settings → Shields → Global Privacy Control",
+          "browser2": "Firefox: Install the Global Privacy Control extension",
+          "browser3": "Chrome/Edge: Install the Global Privacy Control extension"
+        }
+      },
+      "cookieBanner": {
+        "title": "4. Cookie Banner Design (Symmetry of Choice)",
+        "badge": "Equal Prominence",
+        "intro": "Under 2026 regulations, cookie consent banners must provide equal prominence to both accepting and rejecting cookies. Our banner complies with these requirements.",
+        "symmetry": {
+          "title": "Symmetry of Choice Requirement",
+          "description": "We provide \"Accept All\" and \"Reject All\" buttons with equal visual prominence (same size, color intensity, and positioning). Neither option is pre-selected or designed to manipulate your choice.",
+          "exampleTitle": "Example Cookie Banner:",
+          "exampleText": "We use cookies to improve your experience. You can choose to accept or reject optional cookies.",
+          "acceptButton": "✓ Accept All",
+          "rejectButton": "✗ Reject All",
+          "customizeButton": "Customize Preferences"
+        },
+        "requirements": {
+          "title": "Design Requirements Met",
+          "item1": "Equal button size and visual weight for Accept and Reject options",
+          "item2": "No dark patterns (e.g., hiding the reject button, using guilt-inducing language)",
+          "item3": "Clear explanation of what each option means",
+          "item4": "Easy access to customize granular preferences"
+        }
+      },
+      "managing": {
+        "title": "5. Managing Your Cookie Preferences",
+        "badge": "Your Control",
+        "intro": "You have full control over your cookie preferences and can change them at any time.",
+        "changeMind": {
+          "title": "Change Your Mind Anytime",
+          "description": "You can update your cookie preferences at any time by clicking the \"Cookie Settings\" link in the footer of our website. Your new preferences will take effect immediately."
+        },
+        "browserSettings": {
+          "title": "Browser-Level Cookie Controls",
+          "description": "Most browsers allow you to manage cookies through their settings:",
+          "chrome": "Settings → Privacy and security → Cookies and other site data",
+          "firefox": "Settings → Privacy & Security → Cookies and Site Data",
+          "safari": "Preferences → Privacy → Manage Website Data",
+          "edge": "Settings → Cookies and site permissions → Manage and delete cookies",
+          "warning": "Warning: Blocking all cookies may prevent essential website functionality from working properly."
+        },
+        "deleteCookies": {
+          "title": "Deleting Existing Cookies",
+          "description": "You can delete all cookies stored by Cyqle at any time through your browser's settings. This will log you out and reset your preferences."
+        }
+      },
+      "thirdParty": {
+        "title": "6. Third-Party Services",
+        "badge": "Transparency",
+        "intro": "We use a minimal number of trusted third-party services on our marketing website. The platform application itself does not use any third-party analytics or tracking services.",
+        "plausible": {
+          "title": "Plausible Analytics (Marketing Website Only)",
+          "description": "We use Plausible Analytics exclusively on cyqle.in (this marketing website) for privacy-respecting analytics. Plausible does not use cookies, does not track users across websites, and is fully GDPR-compliant. This service is NOT used within the platform application.",
+          "link": "View Plausible's Privacy Policy →"
+        }
+      },
+      "changes": {
+        "title": "7. Changes to This Cookie Policy",
+        "description": "We may update this Cookie Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of material changes via email or a prominent notice on our website at least 30 days before they take effect."
+      }
+    },
+    "contact": {
+      "title": "Questions About Cookies?",
+      "description": "If you have questions about our use of cookies or wish to exercise your privacy rights, please contact us:",
+      "email": "privacy@cyqle.in"
+    }
+  },
   "termsOfService": {
     "title": "Terms of Service",
     "lastUpdated": "Last Updated",

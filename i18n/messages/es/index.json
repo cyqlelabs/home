@@ -511,6 +511,160 @@
       "email": "privacy@cyqle.in"
     }
   },
+  "cookiesPolicy": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última Actualización",
+    "effectiveDate": "14 de enero de 2026",
+    "introduction": "Esta Política de Cookies explica cómo Cyqle utiliza cookies y tecnologías de seguimiento similares. Estamos comprometidos con la transparencia y brindarle control total sobre sus preferencias de privacidad.",
+    "complianceBanner": "Cumplimiento 2026 - Soporte de Señal GPC y Diseño de Elección Igual",
+    "quickOverview": {
+      "title": "Cookies de un Vistazo",
+      "minimal": {
+        "title": "Seguimiento Mínimo",
+        "description": "Usamos solo cookies esenciales y análisis que respetan la privacidad"
+      },
+      "gpc": {
+        "title": "Soporte de Señal GPC",
+        "description": "Honramos automáticamente las señales de Control Global de Privacidad de su navegador"
+      },
+      "choice": {
+        "title": "Elección Igual",
+        "description": "Los botones Aceptar y Rechazar tienen igual prominencia visual"
+      },
+      "control": {
+        "title": "Control Total",
+        "description": "Cambie sus preferencias en cualquier momento a través de su navegador o nuestra configuración"
+      }
+    },
+    "sections": {
+      "whatAreCookies": {
+        "title": "1. ¿Qué Son las Cookies?",
+        "badge": "Definición",
+        "intro": "Las cookies son pequeños archivos de texto que los sitios web almacenan en su dispositivo cuando los visita. Ayudan a los sitios web a recordar sus preferencias, mejorar la funcionalidad y proporcionar análisis.",
+        "description": "Las cookies pueden ser \"cookies de sesión\" (eliminadas cuando cierra su navegador) o \"cookies persistentes\" (almacenadas por un período establecido). Pueden ser \"de primera parte\" (establecidas por el sitio web que está visitando) o \"de terceros\" (establecidas por servicios externos)."
+      },
+      "cookiesWeUse": {
+        "title": "2. Cookies que Utilizamos",
+        "badge": "Lista Completa",
+        "intro": "Cyqle utiliza un conjunto mínimo de cookies. En este sitio web de marketing (cyqle.in), usamos cookies esenciales y análisis opcionales. Dentro de la aplicación de plataforma, SOLO usamos cookies de sesión esenciales. NO usamos cookies publicitarias ni vendemos sus datos a terceros.",
+        "duration": "Duración",
+        "type": "Tipo",
+        "essential": {
+          "title": "Cookies Esenciales (Requeridas)",
+          "intro": "Estas cookies son estrictamente necesarias para que el sitio web funcione y no se pueden deshabilitar sin romper la funcionalidad principal:",
+          "session": {
+            "name": "cyqle_session",
+            "purpose": "Mantiene su sesión autenticada y recuerda que ha iniciado sesión",
+            "duration": "30 días o hasta cerrar sesión",
+            "type": "Primera parte, httpOnly, segura"
+          },
+          "note": "Base Legal: Estas cookies están exentas de requisitos de consentimiento bajo la Directiva ePrivacy ya que son estrictamente necesarias para la provisión del servicio."
+        },
+        "analytics": {
+          "title": "Cookies de Análisis (Opcionales - Solo Sitio Web de Marketing)",
+          "intro": "Con su consentimiento, utilizamos análisis que respetan la privacidad en este sitio web de marketing para comprender el comportamiento de los visitantes y mejorar nuestro contenido. Los análisis NO se utilizan dentro de la aplicación de plataforma Cyqle:",
+          "plausible": {
+            "name": "Plausible Analytics (solo cyqle.in)",
+            "purpose": "Rastrea estadísticas de uso agregadas en nuestro sitio web de marketing sin identificar usuarios individuales. No usa cookies ni rastrea entre sitios web. NO se usa en la aplicación de plataforma.",
+            "duration": "No se almacenan cookies (usa almacenamiento local con caducidad de 24 horas)",
+            "type": "Primera parte, enfocado en privacidad"
+          },
+          "note": "Importante: Los análisis solo están activos en cyqle.in (este sitio web de marketing). Cuando usa la aplicación de plataforma Cyqle, NO se utilizan cookies de análisis ni seguimiento. Puede optar por no participar en los análisis del sitio web de marketing en cualquier momento."
+        },
+        "noTracking": {
+          "title": "Lo que NO Usamos",
+          "item1": "Sin cookies publicitarias de terceros (Google Ads, Facebook Pixel, etc.)",
+          "item2": "Sin seguimiento entre sitios o cookies de reorientación",
+          "item3": "Sin técnicas de huellas digitales para identificar usuarios",
+          "item4": "Sin venta o intercambio de datos con intermediarios de datos"
+        }
+      },
+      "gpcSupport": {
+        "title": "3. Soporte de Control Global de Privacidad (GPC)",
+        "badge": "Requisito 2026",
+        "intro": "Cyqle soporta completamente la señal de Control Global de Privacidad (GPC) según lo requerido por las regulaciones de privacidad de 2026.",
+        "whatIsGpc": {
+          "title": "¿Qué es GPC?",
+          "description": "El Control Global de Privacidad (GPC) es una configuración del navegador que le permite optar automáticamente por no compartir ni vender datos en todos los sitios web que visita. Cuando está habilitado, su navegador envía una señal \"GPC: 1\" en los encabezados HTTP."
+        },
+        "howItWorks": {
+          "title": "Cómo Cyqle Honra las Señales GPC",
+          "item1": "Cuando detectamos una señal GPC, automáticamente la tratamos como si hubiera hecho clic en \"Rechazar Todo\" en nuestro banner de cookies",
+          "item2": "Deshabilitamos todas las cookies opcionales y el seguimiento de análisis",
+          "item3": "Su preferencia GPC se respeta en cada carga de página sin requerir clics adicionales"
+        },
+        "enable": {
+          "title": "Cómo Habilitar GPC",
+          "description": "Puede habilitar GPC en los siguientes navegadores:",
+          "browser1": "Navegador Brave: Configuración → Escudos → Control Global de Privacidad",
+          "browser2": "Firefox: Instale la extensión Global Privacy Control",
+          "browser3": "Chrome/Edge: Instale la extensión Global Privacy Control"
+        }
+      },
+      "cookieBanner": {
+        "title": "4. Diseño del Banner de Cookies (Simetría de Elección)",
+        "badge": "Prominencia Igual",
+        "intro": "Bajo las regulaciones de 2026, los banners de consentimiento de cookies deben proporcionar igual prominencia tanto para aceptar como para rechazar cookies. Nuestro banner cumple con estos requisitos.",
+        "symmetry": {
+          "title": "Requisito de Simetría de Elección",
+          "description": "Proporcionamos botones \"Aceptar Todo\" y \"Rechazar Todo\" con igual prominencia visual (mismo tamaño, intensidad de color y posicionamiento). Ninguna opción está preseleccionada o diseñada para manipular su elección.",
+          "exampleTitle": "Ejemplo de Banner de Cookies:",
+          "exampleText": "Utilizamos cookies para mejorar su experiencia. Puede elegir aceptar o rechazar cookies opcionales.",
+          "acceptButton": "✓ Aceptar Todo",
+          "rejectButton": "✗ Rechazar Todo",
+          "customizeButton": "Personalizar Preferencias"
+        },
+        "requirements": {
+          "title": "Requisitos de Diseño Cumplidos",
+          "item1": "Tamaño de botón igual y peso visual para las opciones Aceptar y Rechazar",
+          "item2": "Sin patrones oscuros (por ejemplo, ocultar el botón de rechazo, usar lenguaje que induzca culpa)",
+          "item3": "Explicación clara de lo que significa cada opción",
+          "item4": "Fácil acceso para personalizar preferencias granulares"
+        }
+      },
+      "managing": {
+        "title": "5. Gestión de Sus Preferencias de Cookies",
+        "badge": "Su Control",
+        "intro": "Tiene control total sobre sus preferencias de cookies y puede cambiarlas en cualquier momento.",
+        "changeMind": {
+          "title": "Cambie de Opinión en Cualquier Momento",
+          "description": "Puede actualizar sus preferencias de cookies en cualquier momento haciendo clic en el enlace \"Configuración de Cookies\" en el pie de página de nuestro sitio web. Sus nuevas preferencias entrarán en vigor de inmediato."
+        },
+        "browserSettings": {
+          "title": "Controles de Cookies a Nivel de Navegador",
+          "description": "La mayoría de los navegadores le permiten administrar cookies a través de su configuración:",
+          "chrome": "Configuración → Privacidad y seguridad → Cookies y otros datos del sitio",
+          "firefox": "Configuración → Privacidad y Seguridad → Cookies y Datos del Sitio",
+          "safari": "Preferencias → Privacidad → Administrar Datos del Sitio Web",
+          "edge": "Configuración → Permisos de cookies y sitios → Administrar y eliminar cookies",
+          "warning": "Advertencia: Bloquear todas las cookies puede impedir que la funcionalidad esencial del sitio web funcione correctamente."
+        },
+        "deleteCookies": {
+          "title": "Eliminación de Cookies Existentes",
+          "description": "Puede eliminar todas las cookies almacenadas por Cyqle en cualquier momento a través de la configuración de su navegador. Esto cerrará su sesión y restablecerá sus preferencias."
+        }
+      },
+      "thirdParty": {
+        "title": "6. Servicios de Terceros",
+        "badge": "Transparencia",
+        "intro": "Utilizamos un número mínimo de servicios de terceros confiables en nuestro sitio web de marketing. La aplicación de plataforma en sí no utiliza ningún servicio de análisis o seguimiento de terceros.",
+        "plausible": {
+          "title": "Plausible Analytics (Solo Sitio Web de Marketing)",
+          "description": "Utilizamos Plausible Analytics exclusivamente en cyqle.in (este sitio web de marketing) para análisis que respeta la privacidad. Plausible no usa cookies, no rastrea usuarios entre sitios web y cumple completamente con GDPR. Este servicio NO se utiliza dentro de la aplicación de plataforma.",
+          "link": "Ver Política de Privacidad de Plausible →"
+        }
+      },
+      "changes": {
+        "title": "7. Cambios a Esta Política de Cookies",
+        "description": "Podemos actualizar esta Política de Cookies de vez en cuando para reflejar cambios en nuestras prácticas o requisitos legales. Le notificaremos cambios materiales por correo electrónico o un aviso destacado en nuestro sitio web al menos 30 días antes de que entren en vigor."
+      }
+    },
+    "contact": {
+      "title": "¿Preguntas sobre Cookies?",
+      "description": "Si tiene preguntas sobre nuestro uso de cookies o desea ejercer sus derechos de privacidad, contáctenos:",
+      "email": "privacy@cyqle.in"
+    }
+  },
   "termsOfService": {
     "title": "Términos del Servicio",
     "lastUpdated": "Última Actualización",
