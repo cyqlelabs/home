@@ -333,7 +333,8 @@
           "item3": "Metadatos de procesos (aplicaciones en ejecución, consumo de recursos)",
           "item4": "Actividad de red originada desde su sesión (solo para monitoreo de seguridad)",
           "legalBasis": "Base Legal: Necesidad Contractual - El procesamiento de datos de sesión es esencial para proporcionarle un entorno de escritorio virtual aislado y funcional.",
-          "ephemeralNote": "Importante: Los datos de sesión en sesiones efímeras se cifran con claves únicas por sesión y se borran criptográficamente al terminar la sesión. Estos datos no se pueden recuperar después de la eliminación."
+          "ephemeralNote": "Importante: Los datos de sesión en sesiones efímeras se cifran con claves únicas por sesión y se borran criptográficamente al terminar la sesión. Estos datos no se pueden recuperar después de la eliminación.",
+          "noAccessNote": "Garantía Crítica de Privacidad: Cyqle NO tiene acceso ni interfiere con nada dentro de su sesión aislada. No podemos leer sus archivos, acceder a sus datos o monitorear sus actividades dentro de la sesión. Los únicos datos operacionales que podemos recopilar son registros anonimizados (duración de sesión, uso de recursos) y solo cuando usted nos lo permite expresamente (reportes de errores, solicitudes de soporte)."
         },
         "technicalData": {
           "title": "Datos Técnicos y de Diagnóstico",

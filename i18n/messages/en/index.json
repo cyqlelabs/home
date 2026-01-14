@@ -333,7 +333,8 @@
           "item3": "Process metadata (running applications, resource consumption)",
           "item4": "Network activity originating from your session (for security monitoring only)",
           "legalBasis": "Legal Basis: Contractual Necessity - Processing session data is essential to provide you with an isolated, functional virtual desktop environment.",
-          "ephemeralNote": "Important: Session data in ephemeral sessions is encrypted with unique, per-session keys and is cryptographically erased upon session termination. This data cannot be recovered after deletion."
+          "ephemeralNote": "Important: Session data in ephemeral sessions is encrypted with unique, per-session keys and is cryptographically erased upon session termination. This data cannot be recovered after deletion.",
+          "noAccessNote": "Critical Privacy Guarantee: Cyqle does NOT have access to or interfere with anything inside your jailed session. We cannot read your files, access your data, or monitor your activities within the session. The only operational data we may collect is anonymized logging (session duration, resource usage) and only when you expressly allow us (bug reports, support requests)."
         },
         "technicalData": {
           "title": "Technical & Diagnostic Data",
