@@ -2,9 +2,13 @@
 
 import { Github, Twitter, Linkedin, Facebook } from 'lucide-react';
 import { useTranslations } from '@/components/language-provider';
+import { useParams } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Footer() {
   const t = useTranslations();
+  const params = useParams();
+  const locale = params?.locale || 'en';
   const year = new Date().getFullYear();
 
   return (
@@ -120,14 +124,20 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href={`/${locale}/privacy-policy`}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   {t('footer.company.privacy')}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href={`/${locale}/terms-of-service`}
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   {t('footer.company.terms')}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -140,15 +150,24 @@ export default function Footer() {
             </p>
             <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">
+                <Link
+                  href={`/${locale}/privacy-policy`}
+                  className="text-gray-500 hover:text-white text-sm transition-colors"
+                >
                   {t('footer.privacyPolicy')}
-                </a>
-                <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">
+                </Link>
+                <Link
+                  href={`/${locale}/terms-of-service`}
+                  className="text-gray-500 hover:text-white text-sm transition-colors"
+                >
                   {t('footer.termsOfService')}
-                </a>
-                <a href="#" className="text-gray-500 hover:text-white text-sm transition-colors">
+                </Link>
+                <Link
+                  href={`/${locale}/cookies`}
+                  className="text-gray-500 hover:text-white text-sm transition-colors"
+                >
                   {t('footer.cookies')}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
