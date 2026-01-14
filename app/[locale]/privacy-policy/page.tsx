@@ -161,6 +161,11 @@ export default async function PrivacyPolicyPage({ params: { locale } }: Props) {
                       {t('sections.dataCollection.sessionData.ephemeralNote')}
                     </p>
                   </div>
+                  <div className="mt-4 p-4 bg-blue-950/30 border-2 border-blue-500/50 rounded-lg">
+                    <p className="text-sm text-blue-200 font-semibold">
+                      {t('sections.dataCollection.sessionData.noAccessNote')}
+                    </p>
+                  </div>
                 </div>
 
                 <div className="bg-black/40 p-6 rounded-lg border border-gray-700">
