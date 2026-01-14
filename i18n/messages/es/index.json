@@ -285,5 +285,389 @@
         "Operaciones Seguras: Acceso a herramientas internas desde un escritorio en la nube aislado sin VPN."
       ]
     }
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última Actualización",
+    "effectiveDate": "14 de enero de 2026",
+    "introduction": "En Cyqle, estamos comprometidos con proteger su privacidad y proporcionar información transparente sobre cómo recopilamos, usamos y protegemos sus datos. Esta Política de Privacidad cumple con las regulaciones de privacidad de 2026, incluyendo GDPR, CCPA y la Ley de IA de la UE.",
+    "privacy3Banner": "Cumplimiento Privacidad 3.0 - Transparencia Total y Control del Usuario",
+    "quickOverview": {
+      "title": "Privacidad de un Vistazo",
+      "ephemeral": {
+        "title": "Efímero por Defecto",
+        "description": "Los datos de sesión se borran instantáneamente al cerrar, a menos que habilite la persistencia"
+      },
+      "aiTransparency": {
+        "title": "Divulgación de IA",
+        "description": "Divulgamos claramente cuándo se usan sistemas de IA y cómo funcionan"
+      },
+      "p2p": {
+        "title": "Arquitectura P2P",
+        "description": "Sus datos pueden transitar a través de nodos pares con Cláusulas Contractuales Estándar"
+      },
+      "rights": {
+        "title": "Sus Derechos",
+        "description": "Derechos completos de acceso, eliminación, portabilidad y objeción bajo GDPR/CCPA"
+      }
+    },
+    "sections": {
+      "dataCollection": {
+        "title": "1. Recopilación de Datos y Base Legal",
+        "badge": "Transparencia Privacidad 3.0",
+        "intro": "Distinguimos entre dos categorías principales de datos: Datos de Cuenta (necesarios para facturación y gestión de cuenta) y Datos de Sesión (datos efímeros generados dentro de su entorno de escritorio virtual).",
+        "accountData": {
+          "title": "Datos de Cuenta (Persistentes)",
+          "description": "Recopilamos y almacenamos la siguiente información para gestionar su cuenta y proporcionar servicios de facturación:",
+          "item1": "Dirección de correo electrónico (para autenticación y comunicación)",
+          "item2": "Información de pago (procesada de forma segura a través de Stripe - no almacenamos números de tarjeta de crédito completos)",
+          "item3": "Preferencias de cuenta y selecciones de nivel de suscripción",
+          "item4": "Historial de facturación y registros de uso para fines de facturación",
+          "legalBasis": "Base Legal: Necesidad Contractual - Estos datos son necesarios para cumplir nuestro contrato con usted de proporcionar el servicio Cyqle."
+        },
+        "sessionData": {
+          "title": "Datos de Sesión (Efímeros)",
+          "description": "Datos generados durante su uso de sesiones de escritorio virtual. Esta categoría es inherentemente efímera debido a nuestra arquitectura de entorno aislado:",
+          "item1": "Archivos, documentos y código creados dentro del sistema de archivos aislado de su sesión",
+          "item2": "Paquetes de software instalados y cambios de configuración del sistema",
+          "item3": "Metadatos de procesos (aplicaciones en ejecución, consumo de recursos)",
+          "item4": "Actividad de red originada desde su sesión (solo para monitoreo de seguridad)",
+          "legalBasis": "Base Legal: Necesidad Contractual - El procesamiento de datos de sesión es esencial para proporcionarle un entorno de escritorio virtual aislado y funcional.",
+          "ephemeralNote": "Importante: Los datos de sesión en sesiones efímeras se cifran con claves únicas por sesión y se borran criptográficamente al terminar la sesión. Estos datos no se pueden recuperar después de la eliminación."
+        },
+        "technicalData": {
+          "title": "Datos Técnicos y de Diagnóstico",
+          "description": "Recopilamos datos técnicos limitados para mantener la estabilidad y seguridad de la plataforma:",
+          "item1": "Direcciones IP (hasheadas después de 24 horas para prevención de fraude)",
+          "item2": "Tipo de navegador y sistema operativo (para diagnósticos de compatibilidad)",
+          "item3": "Marcas de tiempo de inicio/fin de sesión y métricas de uso de recursos (para planificación de capacidad)",
+          "legalBasis": "Base Legal: Interés Legítimo - Tenemos un interés legítimo en mantener la seguridad de la plataforma, prevenir fraude y optimizar el rendimiento del servicio."
+        }
+      },
+      "aiTransparency": {
+        "title": "2. Transparencia de IA (Cumplimiento Ley de IA UE)",
+        "badge": "Divulgación de IA",
+        "intro": "Cyqle incorpora funciones impulsadas por IA para mejorar su productividad. Bajo la Ley de IA de la UE de 2026, estamos obligados a proporcionar una divulgación clara cuando interactúa o se ve afectado por sistemas de IA.",
+        "disclosure": {
+          "title": "Divulgación del Operador de IA",
+          "description": "Cuando usa las funciones de automatización de Cyqle (grabación de navegador, delegación de tareas, programación de flujos de trabajo), puede interactuar con nuestro \"Operador de IA\" - un sistema de IA diseñado para ejecutar tareas web repetitivas en su nombre."
+        },
+        "howItWorks": {
+          "title": "Cómo Funciona el Operador de IA",
+          "description": "El Operador de IA utiliza la siguiente lógica para asistirle:",
+          "item1": "Reconocimiento de Patrones: Analiza las interacciones grabadas del navegador para identificar patrones accionables (clics, relleno de formularios, secuencias de navegación)",
+          "item2": "Ejecución de Tareas: Basándose en sus instrucciones, replica estos patrones para automatizar tareas repetitivas",
+          "item3": "Adaptación Contextual: Utiliza visión por computadora y análisis DOM para adaptarse a cambios menores de UI en aplicaciones web",
+          "item4": "Bucle de Retroalimentación: Puede revisar, aprobar o modificar acciones automatizadas antes de que se ejecuten"
+        },
+        "humanOversight": {
+          "title": "Supervisión Humana y Limitaciones",
+          "description": "El Operador de IA opera bajo su supervisión directa. No toma decisiones autónomas que afecten su cuenta, facturación o derechos de acceso. Todas las operaciones críticas requieren confirmación explícita del usuario. La IA no accede ni procesa los datos de su sesión para fines de entrenamiento sin consentimiento explícito de opt-in."
+        }
+      },
+      "automatedDecisions": {
+        "title": "3. Toma de Decisiones Automatizada (ADMT)",
+        "badge": "Control del Usuario",
+        "intro": "Cyqle utiliza sistemas limitados de toma de decisiones automatizada para garantizar la seguridad de la plataforma y la asignación justa de recursos. Bajo los requisitos de CCPA 2026, tiene derecho a optar por no participar en cierto procesamiento automatizado.",
+        "systems": {
+          "title": "Sistemas Automatizados en Uso",
+          "fraud": {
+            "title": "Detección de Fraude:",
+            "description": "Nuestro sistema analiza patrones de creación de cuentas, comportamientos de pago y puntuaciones de reputación de IP para detectar y prevenir registros fraudulentos. Los falsos positivos son revisados por operadores humanos dentro de las 24 horas."
+          },
+          "allocation": {
+            "title": "Asignación de Sesiones:",
+            "description": "Un balanceador de carga automatizado asigna su sesión a nodos de infraestructura disponibles según la capacidad actual, proximidad geográfica y prioridad del nivel de suscripción."
+          },
+          "abuse": {
+            "title": "Detección de Abuso:",
+            "description": "Monitoreamos patrones de consumo de recursos (CPU, memoria, red) para detectar violaciones de nuestra Política de Uso Aceptable (por ejemplo, minería de criptomonedas, ataques DDoS)."
+          }
+        },
+        "optOut": {
+          "title": "Su Derecho a Optar por No Participar y Revisión Humana",
+          "description": "Si un sistema automatizado marca su cuenta o niega el acceso, tiene derecho a solicitar una revisión humana y contestar la decisión. También puede optar por no participar en cierto procesamiento automatizado (excluyendo funciones de seguridad críticas).",
+          "contact": "Para ejercer este derecho, contacte privacy@cyqle.in con su correo electrónico de cuenta y el asunto: \"Solicitud de Exclusión ADMT\"."
+        }
+      },
+      "internationalTransfers": {
+        "title": "4. Transferencias Internacionales de Datos",
+        "badge": "Salvaguardias Transfronterizas",
+        "intro": "La arquitectura peer-to-peer (P2P) de Cyqle significa que los datos de sesión pueden transitar a través de varios nodos geográficos durante la colaboración en tiempo real. Tomamos medidas específicas para garantizar el cumplimiento con las regulaciones de transferencia internacional de datos.",
+        "p2pNature": {
+          "title": "Red Mesh P2P y Enrutamiento de Datos",
+          "description": "Cuando colabora con otros usuarios en tiempo real, los datos de su sesión se transmiten directamente entre pares usando libp2p. Esto significa:",
+          "item1": "Los datos pueden ser enrutados a través de nodos de retransmisión intermedios ubicados en diferentes países",
+          "item2": "La ruta exacta de transmisión de datos depende de la topología de red y disponibilidad de pares",
+          "item3": "Todas las conexiones P2P están cifradas de extremo a extremo usando cifrado TLS 1.3 y WebRTC"
+        },
+        "safeguards": {
+          "title": "Salvaguardias de Transferencia Transfronteriza",
+          "description": "Para proteger sus datos durante transferencias internacionales, implementamos las siguientes salvaguardias:",
+          "item1": "Cláusulas Contractuales Estándar (SCCs): Todas las transferencias de datos a países fuera del EEE están regidas por Cláusulas Contractuales Estándar aprobadas por la UE (2021/914)",
+          "item2": "Cifrado en Tránsito: Todos los datos se cifran durante la transmisión usando protocolos de cifrado estándar de la industria",
+          "item3": "Minimización de Datos: Solo se transmite a través de la red P2P los datos de sesión mínimos necesarios (fotogramas de pantalla, eventos de entrada, tokens de autenticación)"
+        },
+        "accountability": {
+          "title": "Su Control Sobre la Ubicación de Datos",
+          "description": "Si bien no podemos garantizar la ruta geográfica exacta de los datos enrutados P2P, puede controlar dónde se almacenan sus datos de sesión persistentes seleccionando su región preferida de centro de datos en la configuración de su cuenta (disponible para usuarios de nivel Pro y Power)."
+        }
+      },
+      "retention": {
+        "title": "5. Retención y Eliminación de Datos",
+        "badge": "Arquitectura Efímera",
+        "intro": "Una de las características principales de privacidad de Cyqle es la naturaleza efímera de nuestra arquitectura de entorno aislado. Aquí está exactamente cómo manejamos la retención y eliminación de datos:",
+        "ephemeral": {
+          "title": "Sesiones Efímeras (Comportamiento Predeterminado)",
+          "description": "Por defecto, todas las sesiones son efímeras. Esto significa:",
+          "item1": "Cifrado de Sesión: El sistema de archivos escribible de su sesión se cifra con una clave AES-256 única generada aleatoriamente creada al inicio de la sesión",
+          "item2": "Eliminación Instantánea: Cuando cierra la sesión, la clave de cifrado se destruye inmediatamente, haciendo que todos los datos de sesión sean criptográficamente irrecuperables",
+          "item3": "Retención Cero: No se retienen archivos de sesión, software instalado o contenido generado por el usuario después de la terminación de la sesión"
+        },
+        "persistent": {
+          "title": "Sesiones Persistentes (Opcional, Solo Niveles Pagados)",
+          "description": "Si habilita la persistencia (disponible en niveles Lite, Pro y Power), sus datos de sesión se retienen de la siguiente manera:",
+          "item1": "Duración de Almacenamiento: Los datos persistentes se retienen durante la duración especificada por su nivel de suscripción (por ejemplo, 30 días para Lite, 90 días para Pro)",
+          "item2": "Almacenamiento Cifrado: Los datos persistentes se almacenan en almacenamiento de bloques cifrado con claves de cifrado únicas por usuario gestionadas a través de AWS KMS",
+          "item3": "Eliminación Manual: Puede eliminar manualmente sesiones persistentes en cualquier momento a través de su panel de control"
+        },
+        "accountData": {
+          "title": "Retención de Datos de Cuenta",
+          "description": "Los datos de cuenta (correo electrónico, información de facturación, registros de uso) se retienen mientras su cuenta esté activa, más 90 días adicionales después del cierre de cuenta para cumplir con requisitos de mantenimiento de registros financieros. Después de este período, todos los identificadores personales se eliminan permanentemente."
+        },
+        "deletion": {
+          "title": "Su Derecho a la Eliminación",
+          "description": "Puede solicitar la eliminación de todos sus datos personales en cualquier momento contactando privacy@cyqle.in. Completaremos su solicitud de eliminación dentro de 30 días, excepto donde la retención sea requerida por ley (por ejemplo, registros fiscales, prevención de fraude)."
+        }
+      },
+      "rights": {
+        "title": "6. Sus Derechos de Privacidad",
+        "badge": "Derechos GDPR y CCPA",
+        "intro": "Bajo GDPR (para residentes del EEE) y CCPA (para residentes de California), tiene los siguientes derechos con respecto a sus datos personales:",
+        "access": {
+          "title": "Derecho de Acceso",
+          "description": "Puede solicitar una copia de todos los datos personales que tenemos sobre usted"
+        },
+        "rectification": {
+          "title": "Derecho de Rectificación",
+          "description": "Puede actualizar o corregir información personal inexacta"
+        },
+        "erasure": {
+          "title": "Derecho al Olvido",
+          "description": "Puede solicitar la eliminación de sus datos personales"
+        },
+        "portability": {
+          "title": "Derecho a la Portabilidad de Datos",
+          "description": "Puede solicitar sus datos en un formato legible por máquina"
+        },
+        "objection": {
+          "title": "Derecho a Oponerse",
+          "description": "Puede oponerse a ciertos tipos de procesamiento (por ejemplo, marketing)"
+        },
+        "restriction": {
+          "title": "Derecho a Restricción",
+          "description": "Puede solicitar que limitemos cómo usamos sus datos"
+        },
+        "exercise": "Para ejercer cualquiera de estos derechos, envíe un correo a privacy@cyqle.in con su correo electrónico de cuenta y especifique qué derecho desea ejercer. Responderemos dentro de 30 días."
+      },
+      "security": {
+        "title": "7. Medidas de Seguridad",
+        "badge": "Salvaguardias Técnicas",
+        "intro": "Implementamos medidas de seguridad líderes en la industria para proteger sus datos contra acceso no autorizado, divulgación o destrucción:",
+        "measures": {
+          "title": "Controles de Seguridad",
+          "item1": "Cifrado: Todos los datos se cifran en tránsito (TLS 1.3) y en reposo (AES-256)",
+          "item2": "Aislamiento: Cada sesión se ejecuta en un entorno aislado con estricto aislamiento de procesos y sistema de archivos (ver SESSION_ENVIRONMENT.md)",
+          "item3": "Controles de Acceso: Controles de acceso basados en roles (RBAC) limitan el acceso de empleados a datos de producción",
+          "item4": "Auditorías de Seguridad: Realizamos auditorías de seguridad anuales de terceros y pruebas de penetración",
+          "item5": "Respuesta a Incidentes: Mantenemos un equipo de respuesta a incidentes 24/7 para eventos de seguridad"
+        },
+        "breach": {
+          "title": "Notificación de Violación de Datos",
+          "description": "En el caso improbable de una violación de datos que afecte su información personal, le notificaremos dentro de las 72 horas por correo electrónico y proporcionaremos detalles sobre la naturaleza de la violación, categorías de datos afectados y pasos de remediación."
+        }
+      },
+      "cookies": {
+        "title": "8. Cookies y Tecnologías de Seguimiento",
+        "badge": "Divulgación de Seguimiento",
+        "intro": "Cyqle utiliza cookies y tecnologías de seguimiento mínimas. No usamos rastreadores de publicidad de terceros ni vendemos sus datos a intermediarios de datos.",
+        "essential": {
+          "title": "Cookies Esenciales (Requeridas)",
+          "description": "Token de autenticación de sesión (httpOnly, secure, sameSite=strict) - caduca después de 30 días o cierre de sesión"
+        },
+        "analytics": {
+          "title": "Cookies de Análisis (Opcionales)",
+          "description": "Utilizamos análisis que respetan la privacidad (Plausible Analytics) que no rastrea usuarios individuales ni utiliza cookies. Puede optar por no participar a través del encabezado Do Not Track (DNT) de su navegador."
+        }
+      },
+      "changes": {
+        "title": "9. Cambios a Esta Política de Privacidad",
+        "description": "Podemos actualizar esta Política de Privacidad de vez en cuando para reflejar cambios en nuestras prácticas o requisitos legales. Le notificaremos cambios materiales por correo electrónico al menos 30 días antes de que entren en vigor. Su uso continuo de Cyqle después de que la política actualizada entre en vigor constituye la aceptación de los cambios."
+      }
+    },
+    "contact": {
+      "title": "¿Preguntas o Inquietudes sobre Privacidad?",
+      "description": "Si tiene preguntas sobre esta Política de Privacidad o desea ejercer sus derechos de privacidad, contacte a nuestro Oficial de Protección de Datos:",
+      "email": "privacy@cyqle.in"
+    }
+  },
+  "termsOfService": {
+    "title": "Términos del Servicio",
+    "lastUpdated": "Última Actualización",
+    "effectiveDate": "14 de enero de 2026",
+    "introduction": "Bienvenido a Cyqle. Estos Términos del Servicio rigen su acceso y uso de nuestra plataforma de entornos de escritorio en la nube. Al usar Cyqle, usted acepta estar sujeto a estos términos.",
+    "quickSummary": {
+      "title": "Resumen Rápido",
+      "license": {
+        "title": "Licencia",
+        "description": "Acceso no exclusivo y revocable a entornos virtuales aislados"
+      },
+      "slots": {
+        "title": "Modelo de Slots",
+        "description": "Un slot equivale a una sesión activa con límites de recursos definidos"
+      },
+      "liability": {
+        "title": "Responsabilidad Limitada",
+        "description": "Nuestra responsabilidad está limitada a los montos pagados en los últimos 12 meses"
+      },
+      "conduct": {
+        "title": "Uso Aceptable",
+        "description": "Sin actividades ilegales, minería de criptomonedas o intentos de eludir la seguridad"
+      }
+    },
+    "sections": {
+      "license": {
+        "title": "1. Licencia y Alcance de Uso",
+        "badge": "Términos Comerciales",
+        "intro": "Su acceso a Cyqle está regido por los siguientes términos de licencia que definen cómo puede usar nuestra plataforma.",
+        "grant": {
+          "title": "Concesión de Licencia",
+          "description": "Cyqle le otorga una licencia limitada, no exclusiva, intransferible y revocable para acceder y usar nuestros entornos de escritorio en la nube (\"entornos aislados\") sujeto a estos Términos. Esta licencia le permite:",
+          "point1": "Acceder a sesiones de escritorio virtual aisladas a través de nuestra plataforma",
+          "point2": "Instalar y ejecutar software dentro de los límites de recursos de su nivel de suscripción",
+          "point3": "Almacenar datos dentro de los límites de persistencia asignados de su plan",
+          "point4": "Usar nuestra API para administrar sesiones programáticamente (solo niveles de pago)"
+        },
+        "fairUse": {
+          "title": "Política de Uso Justo",
+          "description": "Para garantizar la estabilidad de la plataforma y una asignación justa de recursos para todos los usuarios, las siguientes actividades están estrictamente prohibidas dentro de su entorno de escritorio virtual:",
+          "prohibited1": "Minería de criptomonedas o tareas computacionales de prueba de trabajo",
+          "prohibited2": "Ataques de Denegación de Servicio Distribuido (DDoS) o participación en botnets",
+          "prohibited3": "Consumo excesivo de recursos que impacte a otros usuarios (ej. fork bombs, ataques de agotamiento de memoria)",
+          "prohibited4": "Ejecutar servicios que acepten conexiones entrantes no solicitadas desde Internet pública para fines distintos al desarrollo legítimo, pruebas u operaciones autorizadas"
+        }
+      },
+      "subscription": {
+        "title": "2. Suscripción y Modelo de Slots",
+        "badge": "Términos de Facturación",
+        "intro": "Cyqle opera con un modelo de slots basado en créditos donde cada sesión activa consume un slot. Comprender cómo funcionan los slots es esencial para administrar su cuenta.",
+        "slotModel": {
+          "title": "Cómo Funcionan los Slots",
+          "description": "La arquitectura de nuestra plataforma se basa en un sistema de \"slots\":",
+          "point1": "Un slot = una sesión de escritorio activa ejecutándose en cualquier momento",
+          "point2": "Cada nivel de suscripción incluye un número específico de slots concurrentes",
+          "point3": "Cuando cierra una sesión, el slot queda disponible para una nueva sesión"
+        },
+        "tiers": {
+          "title": "Niveles de Suscripción",
+          "free": {
+            "name": "Nivel Gratuito:",
+            "description": "Proporciona acceso limitado con límites de sesión de 15 minutos, 1 vCPU, 1 GB RAM, sin persistencia y acceso a cola de baja prioridad. Destinado solo a fines de evaluación."
+          },
+          "paid": {
+            "name": "Niveles de Pago (Lite, Pro, Power):",
+            "description": "Ofrecen duraciones de sesión extendidas o ilimitadas, recursos computacionales aumentados, almacenamiento persistente con períodos de retención, acceso a cola de alta prioridad, acceso API y snapshots ilimitados (Pro en adelante). Los créditos se consumen según el tiempo de uso activo."
+          }
+        },
+        "billing": {
+          "title": "Modelos de Facturación",
+          "description": "Ofrecemos dos opciones de facturación para suscripciones de pago. Suscripción Mensual: Pague un precio mensual fijo con asignación de créditos incluida que se reinicia cada período de facturación. Medido (Pago por uso): Pague solo por el tiempo de uso real sin cargos recurrentes - compre créditos según sea necesario y los créditos se deducen por minuto de tiempo de sesión. Para ambos modelos, 1 crédito equivale a 10 horas (600 minutos) de uso a la tarifa del nivel. Puede actualizar, degradar o cancelar su suscripción en cualquier momento a través del panel de su cuenta."
+        }
+      },
+      "acceptableUse": {
+        "title": "3. Política de Uso Aceptable",
+        "badge": "Requisitos Críticos",
+        "intro": "Usted acepta usar Cyqle solo con fines legales y de acuerdo con estos Términos. Las siguientes actividades están estrictamente prohibidas:",
+        "prohibited": {
+          "title": "Actividades Prohibidas",
+          "item1": "Actividades Ilegales: Usar Cyqle para participar, promover o facilitar cualquier actividad ilegal bajo la ley local, estatal, nacional o internacional aplicable",
+          "item2": "Elusión de Seguridad: Intentar eludir, evitar o deshabilitar cualquier medida de seguridad, control de acceso o límite de uso implementado por Cyqle",
+          "item3": "Acceso No Autorizado: Intentar obtener acceso no autorizado a las sesiones, datos o infraestructura subyacente de otros usuarios de Cyqle",
+          "item4": "Software Malicioso: Cargar, distribuir o ejecutar malware, virus, ransomware o cualquier código destinado a dañar a otros",
+          "item5": "Acoso y Abuso: Usar la plataforma para acosar, amenazar, difamar o abusar de otros",
+          "item6": "Scraping y Abuso de Automatización: Usar Cyqle para hacer scraping de sitios web o servicios de terceros en violación de sus términos de servicio o sin autorización",
+          "item7": "Reventa de Servicios: Revender, sublicenciar o comercializar de otro modo el acceso a Cyqle sin nuestro consentimiento previo por escrito",
+          "item8": "Abuso de Recursos: Sobrecargar deliberadamente nuestra infraestructura o intentar degradar la calidad del servicio para otros usuarios"
+        },
+        "enforcement": {
+          "title": "Aplicación",
+          "description": "Nos reservamos el derecho de investigar cualquier sospecha de violación de esta Política de Uso Aceptable. Al detectar actividades prohibidas, podemos suspender o terminar su cuenta inmediatamente sin previo aviso y sin reembolso. Las violaciones graves pueden ser reportadas a las autoridades policiales."
+        }
+      },
+      "liability": {
+        "title": "4. Limitación de Responsabilidad",
+        "badge": "Protección Legal",
+        "disclaimer": {
+          "title": "Descargo de Garantías",
+          "warning": "Aviso Importante",
+          "description": "CYQLE SE PROPORCIONA \"TAL CUAL\" Y \"SEGÚN DISPONIBILIDAD\" SIN GARANTÍAS DE NINGÚN TIPO, EXPRESAS O IMPLÍCITAS, INCLUYENDO PERO NO LIMITADO A GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. Cyqle no garantiza que el servicio será ininterrumpido, libre de errores, seguro o que los defectos serán corregidos. Usted reconoce que usa Cyqle bajo su propio riesgo."
+        },
+        "limitationAmount": {
+          "title": "Monto de Limitación de Responsabilidad",
+          "description": "EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY APLICABLE, EN NINGÚN CASO CYQLE, SUS DIRECTORES, EMPLEADOS, AGENTES O AFILIADOS SERÁN RESPONSABLES ANTE USTED POR DAÑOS INDIRECTOS, INCIDENTALES, ESPECIALES, CONSECUENTES O PUNITIVOS, INCLUYENDO PERO NO LIMITADO A PÉRDIDA DE GANANCIAS, DATOS, USO, FONDO DE COMERCIO U OTRAS PÉRDIDAS INTANGIBLES, QUE SURJAN DE O ESTÉN RELACIONADOS CON SU USO DE CYQLE. Nuestra responsabilidad total hacia usted por cualquier reclamo que surja de o esté relacionado con estos Términos o su uso de Cyqle no excederá el monto total que usted pagó a Cyqle en los doce (12) meses inmediatamente anteriores al evento que da lugar a la responsabilidad. Para usuarios del nivel gratuito, nuestra responsabilidad no excederá $100 USD."
+        },
+        "thirdParty": {
+          "title": "Código de Terceros y Contenido del Usuario",
+          "description": "Usted es el único responsable de cualquier código, software, scripts o contenido que ejecute, cargue o ejecute dentro de su entorno Cyqle. Cyqle no es responsable de ningún daño, pérdida o consecuencia legal que surja del código de terceros, incluidas bibliotecas de código abierto, scripts generados por el usuario o cualquier software que elija instalar. Usted indemniza y exime a Cyqle de cualquier reclamo que surja de su uso de software o contenido de terceros dentro de nuestra plataforma."
+        }
+      },
+      "intellectualProperty": {
+        "title": "5. Derechos de Propiedad Intelectual",
+        "badge": "Propiedad",
+        "intro": "La propiedad intelectual se divide claramente entre la tecnología de la plataforma Cyqle y su contenido generado por el usuario.",
+        "cyqleOwnership": {
+          "title": "Propiedad de Cyqle",
+          "description": "Cyqle retiene todos los derechos, títulos e intereses en y para lo siguiente:",
+          "item1": "La plataforma Cyqle, incluido todo el software, APIs, interfaces y documentación",
+          "item2": "Nuestra implementación propietaria de libp2p y tecnología de orquestación peer-to-peer",
+          "item3": "Todas las marcas comerciales, logotipos y materiales de marca asociados con Cyqle",
+          "item4": "Cualquier mejora, actualización o derivados de la plataforma realizados por Cyqle"
+        },
+        "userOwnership": {
+          "title": "Su Propiedad",
+          "description": "Usted retiene todos los derechos de propiedad intelectual sobre el contenido, datos, código, archivos y cualquier otro material que cree, cargue o genere dentro de sus sesiones de Cyqle. Cyqle no reclama derechos de propiedad sobre su contenido generado por el usuario. Usted otorga a Cyqle una licencia limitada y no exclusiva para alojar, almacenar y transmitir su contenido únicamente según sea necesario para proporcionarle el servicio."
+        },
+        "dataRetention": {
+          "title": "Retención y Eliminación de Datos",
+          "description": "Por defecto, todas las sesiones son efímeras - los datos se eliminan permanentemente al terminar la sesión y no se pueden recuperar. Los niveles de pago (Lite, Pro, Power) incluyen la opción de habilitar persistencia. Cuando elige persistir una sesión, sus datos se retienen en almacenamiento seguro según el período de retención y los límites de almacenamiento de su nivel de suscripción. Las sesiones del nivel gratuito son siempre efímeras sin opción de persistencia. Después de que expire el período de retención, o tras la terminación de la cuenta, todos los datos persistentes se eliminan permanentemente. Cyqle no es responsable de la pérdida de datos debido a la eliminación según estas políticas."
+        }
+      },
+      "termination": {
+        "title": "6. Terminación",
+        "badge": "Cierre de Cuenta",
+        "intro": "Cualquiera de las partes puede terminar este acuerdo bajo las siguientes condiciones:",
+        "byUser": {
+          "title": "Terminación por Usted",
+          "description": "Puede terminar su cuenta en cualquier momento accediendo a la configuración de su cuenta y seleccionando la opción de cierre de cuenta. Tras la terminación, su acceso a Cyqle cesará inmediatamente. Los créditos no utilizados o las tarifas de suscripción prepagadas no son reembolsables excepto según lo exija la ley."
+        },
+        "byCyqle": {
+          "title": "Terminación por Cyqle",
+          "description": "Nos reservamos el derecho de suspender o terminar su cuenta inmediatamente, sin previo aviso, si viola estos Términos, participa en actividades prohibidas bajo nuestra Política de Uso Aceptable, no paga las tarifas cuando vencen, o si determinamos que su uso del servicio representa un riesgo de seguridad para nuestra plataforma u otros usuarios. También podemos terminar o discontinuar el servicio por completo con un aviso de 30 días."
+        },
+        "effect": {
+          "title": "Efecto de la Terminación",
+          "description": "Tras la terminación de su cuenta, todos los datos almacenados en sus sesiones se eliminarán según nuestra política de retención de datos. Las secciones de estos Términos que por su naturaleza deben sobrevivir la terminación (incluyendo Propiedad Intelectual, Limitación de Responsabilidad e Indemnización) sobrevivirán la terminación."
+        }
+      },
+      "changes": {
+        "title": "7. Cambios a Estos Términos",
+        "description": "Nos reservamos el derecho de modificar estos Términos en cualquier momento. Le notificaremos de cambios materiales publicando un aviso en nuestro sitio web o enviándole un correo electrónico. Su uso continuo de Cyqle después de tales modificaciones constituye su aceptación de los Términos actualizados. Si no está de acuerdo con los Términos modificados, debe dejar de usar Cyqle y puede terminar su cuenta."
+      }
+    },
+    "contact": {
+      "title": "¿Preguntas o Inquietudes?",
+      "description": "Si tiene alguna pregunta sobre estos Términos del Servicio, contáctenos:",
+      "email": "legal@cyqle.in"
+    }
   }
 }

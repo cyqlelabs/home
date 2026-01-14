@@ -285,5 +285,389 @@
         "Secure Operations: Accessing internal tools from an isolated cloud desktop without a VPN."
       ]
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last Updated",
+    "effectiveDate": "January 14, 2026",
+    "introduction": "At Cyqle, we are committed to protecting your privacy and providing transparent information about how we collect, use, and protect your data. This Privacy Policy complies with 2026 privacy regulations including GDPR, CCPA, and the EU AI Act.",
+    "privacy3Banner": "Privacy 3.0 Compliant - Full Transparency & User Control",
+    "quickOverview": {
+      "title": "Privacy at a Glance",
+      "ephemeral": {
+        "title": "Ephemeral by Default",
+        "description": "Session data is wiped instantly when you close unless you enable persistence"
+      },
+      "aiTransparency": {
+        "title": "AI Disclosure",
+        "description": "We clearly disclose when AI systems are used and how they work"
+      },
+      "p2p": {
+        "title": "P2P Architecture",
+        "description": "Your data may transit through peer nodes with Standard Contractual Clauses"
+      },
+      "rights": {
+        "title": "Your Rights",
+        "description": "Full access, deletion, portability, and objection rights under GDPR/CCPA"
+      }
+    },
+    "sections": {
+      "dataCollection": {
+        "title": "1. Data Collection & Legal Basis",
+        "badge": "Privacy 3.0 Transparency",
+        "intro": "We distinguish between two primary categories of data: Account Data (necessary for billing and account management) and Session Data (ephemeral data generated within your virtual desktop environment).",
+        "accountData": {
+          "title": "Account Data (Persistent)",
+          "description": "We collect and store the following information to manage your account and provide billing services:",
+          "item1": "Email address (for authentication and communication)",
+          "item2": "Payment information (processed securely via Stripe - we do not store full credit card numbers)",
+          "item3": "Account preferences and subscription tier selections",
+          "item4": "Billing history and usage logs for invoicing purposes",
+          "legalBasis": "Legal Basis: Contractual Necessity - This data is required to fulfill our contract with you to provide the Cyqle service."
+        },
+        "sessionData": {
+          "title": "Session Data (Ephemeral)",
+          "description": "Data generated during your use of virtual desktop sessions. This category is inherently ephemeral due to our jailed environment architecture:",
+          "item1": "Files, documents, and code created within your session's isolated filesystem",
+          "item2": "Installed software packages and system configuration changes",
+          "item3": "Process metadata (running applications, resource consumption)",
+          "item4": "Network activity originating from your session (for security monitoring only)",
+          "legalBasis": "Legal Basis: Contractual Necessity - Processing session data is essential to provide you with an isolated, functional virtual desktop environment.",
+          "ephemeralNote": "Important: Session data in ephemeral sessions is encrypted with unique, per-session keys and is cryptographically erased upon session termination. This data cannot be recovered after deletion."
+        },
+        "technicalData": {
+          "title": "Technical & Diagnostic Data",
+          "description": "We collect limited technical data to maintain platform stability and security:",
+          "item1": "IP addresses (hashed after 24 hours for fraud prevention)",
+          "item2": "Browser type and operating system (for compatibility diagnostics)",
+          "item3": "Session start/end timestamps and resource usage metrics (for capacity planning)",
+          "legalBasis": "Legal Basis: Legitimate Interest - We have a legitimate interest in maintaining platform security, preventing fraud, and optimizing service performance."
+        }
+      },
+      "aiTransparency": {
+        "title": "2. AI Transparency (EU AI Act Compliance)",
+        "badge": "AI Disclosure",
+        "intro": "Cyqle incorporates AI-powered features to enhance your productivity. Under the 2026 EU AI Act, we are required to provide clear disclosure when you interact with or are affected by AI systems.",
+        "disclosure": {
+          "title": "AI Operator Disclosure",
+          "description": "When you use Cyqle's automation features (browser recording, task delegation, workflow scheduling), you may interact with our \"AI Operator\" - an AI system designed to execute repetitive web tasks on your behalf."
+        },
+        "howItWorks": {
+          "title": "How the AI Operator Works",
+          "description": "The AI Operator uses the following logic to assist you:",
+          "item1": "Pattern Recognition: It analyzes recorded browser interactions to identify actionable patterns (clicks, form fills, navigation sequences)",
+          "item2": "Task Execution: Based on your instructions, it replicates these patterns to automate repetitive tasks",
+          "item3": "Contextual Adaptation: It uses computer vision and DOM analysis to adapt to minor UI changes in web applications",
+          "item4": "Feedback Loop: You can review, approve, or modify automated actions before they execute"
+        },
+        "humanOversight": {
+          "title": "Human Oversight & Limitations",
+          "description": "The AI Operator operates under your direct supervision. It does not make autonomous decisions that affect your account, billing, or access rights. All critical operations require explicit user confirmation. The AI does not access or process your session data for training purposes without explicit opt-in consent."
+        }
+      },
+      "automatedDecisions": {
+        "title": "3. Automated Decision-Making (ADMT)",
+        "badge": "User Control",
+        "intro": "Cyqle uses limited automated decision-making systems to ensure platform security and fair resource allocation. Under 2026 CCPA requirements, you have the right to opt out of certain automated processing.",
+        "systems": {
+          "title": "Automated Systems in Use",
+          "fraud": {
+            "title": "Fraud Detection:",
+            "description": "Our system analyzes account creation patterns, payment behaviors, and IP reputation scores to detect and prevent fraudulent sign-ups. False positives are reviewed by human operators within 24 hours."
+          },
+          "allocation": {
+            "title": "Session Allocation:",
+            "description": "An automated load balancer allocates your session to available infrastructure nodes based on current capacity, geographic proximity, and subscription tier priority."
+          },
+          "abuse": {
+            "title": "Abuse Detection:",
+            "description": "We monitor resource consumption patterns (CPU, memory, network) to detect violations of our Acceptable Use Policy (e.g., cryptocurrency mining, DDoS attacks)."
+          }
+        },
+        "optOut": {
+          "title": "Your Right to Opt-Out & Human Review",
+          "description": "If an automated system flags your account or denies access, you have the right to request human review and contest the decision. You may also opt out of certain automated processing (excluding critical security functions).",
+          "contact": "To exercise this right, contact privacy@cyqle.in with your account email and the subject line: \"ADMT Opt-Out Request.\""
+        }
+      },
+      "internationalTransfers": {
+        "title": "4. International Data Transfers",
+        "badge": "Cross-Border Safeguards",
+        "intro": "Cyqle's peer-to-peer (P2P) architecture means that session data may transit through various geographic nodes during real-time collaboration. We take specific measures to ensure compliance with international data transfer regulations.",
+        "p2pNature": {
+          "title": "P2P Mesh Network & Data Routing",
+          "description": "When you collaborate with other users in real-time, your session data is transmitted directly between peers using libp2p. This means:",
+          "item1": "Data may be routed through intermediate relay nodes located in different countries",
+          "item2": "The exact path of data transmission depends on network topology and peer availability",
+          "item3": "All P2P connections are end-to-end encrypted using TLS 1.3 and WebRTC encryption"
+        },
+        "safeguards": {
+          "title": "Cross-Border Transfer Safeguards",
+          "description": "To protect your data during international transfers, we implement the following safeguards:",
+          "item1": "Standard Contractual Clauses (SCCs): All data transfers to countries outside the EEA are governed by EU-approved Standard Contractual Clauses (2021/914)",
+          "item2": "Encryption in Transit: All data is encrypted during transmission using industry-standard encryption protocols",
+          "item3": "Data Minimization: Only the minimum necessary session data is transmitted through the P2P network (screen frames, input events, authentication tokens)"
+        },
+        "accountability": {
+          "title": "Your Control Over Data Location",
+          "description": "While we cannot guarantee the exact geographic path of P2P-routed data, you can control where your persistent session data is stored by selecting your preferred data center region in your account settings (available for Pro and Power tier users)."
+        }
+      },
+      "retention": {
+        "title": "5. Data Retention & Deletion",
+        "badge": "Ephemeral Architecture",
+        "intro": "One of Cyqle's core privacy features is the ephemeral nature of our jailed environment architecture. Here's exactly how we handle data retention and deletion:",
+        "ephemeral": {
+          "title": "Ephemeral Sessions (Default Behavior)",
+          "description": "By default, all sessions are ephemeral. This means:",
+          "item1": "Session Encryption: Your session's writable filesystem is encrypted with a unique, randomly-generated AES-256 key created at session start",
+          "item2": "Instant Deletion: When you close the session, the encryption key is immediately destroyed, rendering all session data cryptographically irrecoverable",
+          "item3": "Zero Retention: No session files, installed software, or user-generated content is retained after session termination"
+        },
+        "persistent": {
+          "title": "Persistent Sessions (Optional, Paid Tiers Only)",
+          "description": "If you enable persistence (available on Lite, Pro, and Power tiers), your session data is retained as follows:",
+          "item1": "Storage Duration: Persistent data is retained for the duration specified by your subscription tier (e.g., 30 days for Lite, 90 days for Pro)",
+          "item2": "Encrypted Storage: Persistent data is stored in encrypted block storage with unique per-user encryption keys managed via AWS KMS",
+          "item3": "Manual Deletion: You can manually delete persistent sessions at any time through your dashboard"
+        },
+        "accountData": {
+          "title": "Account Data Retention",
+          "description": "Account data (email, billing information, usage logs) is retained for as long as your account is active, plus an additional 90 days after account closure to comply with financial record-keeping requirements. After this period, all personal identifiers are permanently deleted."
+        },
+        "deletion": {
+          "title": "Your Right to Deletion",
+          "description": "You may request deletion of all your personal data at any time by contacting privacy@cyqle.in. We will complete your deletion request within 30 days, except where retention is required by law (e.g., tax records, fraud prevention)."
+        }
+      },
+      "rights": {
+        "title": "6. Your Privacy Rights",
+        "badge": "GDPR & CCPA Rights",
+        "intro": "Under GDPR (for EEA residents) and CCPA (for California residents), you have the following rights regarding your personal data:",
+        "access": {
+          "title": "Right to Access",
+          "description": "You can request a copy of all personal data we hold about you"
+        },
+        "rectification": {
+          "title": "Right to Rectification",
+          "description": "You can update or correct inaccurate personal information"
+        },
+        "erasure": {
+          "title": "Right to Erasure (\"Right to be Forgotten\")",
+          "description": "You can request deletion of your personal data"
+        },
+        "portability": {
+          "title": "Right to Data Portability",
+          "description": "You can request your data in a machine-readable format"
+        },
+        "objection": {
+          "title": "Right to Object",
+          "description": "You can object to certain types of processing (e.g., marketing)"
+        },
+        "restriction": {
+          "title": "Right to Restriction",
+          "description": "You can request that we limit how we use your data"
+        },
+        "exercise": "To exercise any of these rights, email privacy@cyqle.in with your account email and specify which right you wish to exercise. We will respond within 30 days."
+      },
+      "security": {
+        "title": "7. Security Measures",
+        "badge": "Technical Safeguards",
+        "intro": "We implement industry-leading security measures to protect your data from unauthorized access, disclosure, or destruction:",
+        "measures": {
+          "title": "Security Controls",
+          "item1": "Encryption: All data is encrypted in transit (TLS 1.3) and at rest (AES-256)",
+          "item2": "Isolation: Each session runs in a jailed environment with strict process and filesystem isolation (see SESSION_ENVIRONMENT.md)",
+          "item3": "Access Controls: Role-based access controls (RBAC) limit employee access to production data",
+          "item4": "Security Audits: We conduct annual third-party security audits and penetration testing",
+          "item5": "Incident Response: We maintain a 24/7 incident response team for security events"
+        },
+        "breach": {
+          "title": "Data Breach Notification",
+          "description": "In the unlikely event of a data breach affecting your personal information, we will notify you within 72 hours via email and provide details about the nature of the breach, affected data categories, and remediation steps."
+        }
+      },
+      "cookies": {
+        "title": "8. Cookies & Tracking Technologies",
+        "badge": "Tracking Disclosure",
+        "intro": "Cyqle uses minimal cookies and tracking technologies. We do not use third-party advertising trackers or sell your data to data brokers.",
+        "essential": {
+          "title": "Essential Cookies (Required)",
+          "description": "Session authentication token (httpOnly, secure, sameSite=strict) - expires after 30 days or logout"
+        },
+        "analytics": {
+          "title": "Analytics Cookies (Optional)",
+          "description": "We use privacy-respecting analytics (Plausible Analytics) that does not track individual users or use cookies. You can opt out via your browser's Do Not Track (DNT) header."
+        }
+      },
+      "changes": {
+        "title": "9. Changes to This Privacy Policy",
+        "description": "We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of material changes via email at least 30 days before they take effect. Your continued use of Cyqle after the updated policy takes effect constitutes acceptance of the changes."
+      }
+    },
+    "contact": {
+      "title": "Privacy Questions or Concerns?",
+      "description": "If you have questions about this Privacy Policy or wish to exercise your privacy rights, please contact our Data Protection Officer:",
+      "email": "privacy@cyqle.in"
+    }
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last Updated",
+    "effectiveDate": "January 14, 2026",
+    "introduction": "Welcome to Cyqle. These Terms of Service govern your access to and use of our cloud desktop environment platform. By using Cyqle, you agree to be bound by these terms.",
+    "quickSummary": {
+      "title": "Quick Summary",
+      "license": {
+        "title": "License Grant",
+        "description": "Non-exclusive, revocable access to isolated virtual environments"
+      },
+      "slots": {
+        "title": "Slot Model",
+        "description": "One slot equals one active session with defined resource limits"
+      },
+      "liability": {
+        "title": "Limited Liability",
+        "description": "Our liability is limited to amounts paid in the last 12 months"
+      },
+      "conduct": {
+        "title": "Acceptable Use",
+        "description": "No illegal activities, crypto-mining, or security bypass attempts"
+      }
+    },
+    "sections": {
+      "license": {
+        "title": "1. License & Scope of Use",
+        "badge": "Commercial Terms",
+        "intro": "Your access to Cyqle is governed by the following license terms that define how you may use our platform.",
+        "grant": {
+          "title": "License Grant",
+          "description": "Cyqle grants you a limited, non-exclusive, non-transferable, and revocable license to access and use our cloud desktop environments (\"jailed environments\") subject to these Terms. This license permits you to:",
+          "point1": "Access isolated virtual desktop sessions through our platform",
+          "point2": "Install and run software within the resource limits of your subscription tier",
+          "point3": "Store data within the allocated persistence limits of your plan",
+          "point4": "Use our API to programmatically manage sessions (paid tiers only)"
+        },
+        "fairUse": {
+          "title": "Fair Use Policy",
+          "description": "To ensure platform stability and fair resource allocation for all users, the following activities are strictly prohibited within your virtual desktop environment:",
+          "prohibited1": "Cryptocurrency mining or proof-of-work computational tasks",
+          "prohibited2": "Distributed Denial of Service (DDoS) attacks or participation in botnets",
+          "prohibited3": "Excessive resource consumption that impacts other users (e.g., fork bombs, memory exhaustion attacks)",
+          "prohibited4": "Running services that accept unsolicited inbound connections from the public internet for purposes other than legitimate development, testing, or authorized operations"
+        }
+      },
+      "subscription": {
+        "title": "2. Subscription & Slot Model",
+        "badge": "Billing Terms",
+        "intro": "Cyqle operates on a credit-based slot model where each active session consumes one slot. Understanding how slots work is essential to managing your account.",
+        "slotModel": {
+          "title": "How Slots Work",
+          "description": "Our platform architecture is based on a \"slot\" system:",
+          "point1": "One slot = one active desktop session running at any given time",
+          "point2": "Each subscription tier includes a specific number of concurrent slots",
+          "point3": "When you close a session, the slot becomes available for a new session"
+        },
+        "tiers": {
+          "title": "Subscription Tiers",
+          "free": {
+            "name": "Free Tier:",
+            "description": "Provides limited access with 15-minute session limits, 1 vCPU, 1 GB RAM, no persistence, and low priority queue access. Intended for evaluation purposes only."
+          },
+          "paid": {
+            "name": "Paid Tiers (Lite, Pro, Power Tiers):",
+            "description": "Offer extended or unlimited session durations, increased computational resources, persistent storage with retention periods, high-priority queue access, API access, and unlimited snapshots (Pro and above). Credits are consumed based on active usage time."
+          }
+        },
+        "billing": {
+          "title": "Billing Models",
+          "description": "We offer two billing options for paid subscriptions. Monthly Subscription: Pay a fixed monthly price with included credit allocation that resets each billing period. Metered (Pay-as-you-go): Pay only for actual usage time with no recurring charges - buy credits as needed and credits are deducted per minute of session runtime. For both models, 1 credit equals 10 hours (600 minutes) of usage at the tier rate. You may upgrade, downgrade, or cancel your subscription at any time through your account dashboard."
+        }
+      },
+      "acceptableUse": {
+        "title": "3. Acceptable Use Policy",
+        "badge": "Critical Requirements",
+        "intro": "You agree to use Cyqle only for lawful purposes and in accordance with these Terms. The following activities are strictly prohibited:",
+        "prohibited": {
+          "title": "Prohibited Activities",
+          "item1": "Illegal Activities: Using Cyqle to engage in, promote, or facilitate any illegal activity under applicable local, state, national, or international law",
+          "item2": "Security Bypass: Attempting to bypass, circumvent, or disable any security measures, access controls, or usage limits implemented by Cyqle",
+          "item3": "Unauthorized Access: Attempting to gain unauthorized access to other users' sessions, data, or Cyqle's underlying infrastructure",
+          "item4": "Malicious Software: Uploading, distributing, or executing malware, viruses, ransomware, or any code intended to harm others",
+          "item5": "Harassment & Abuse: Using the platform to harass, threaten, defame, or abuse others",
+          "item6": "Scraping & Automation Abuse: Using Cyqle to scrape third-party websites or services in violation of their terms of service or without authorization",
+          "item7": "Reselling Services: Reselling, sublicensing, or otherwise commercializing access to Cyqle without our prior written consent",
+          "item8": "Resource Abuse: Deliberately overloading our infrastructure or attempting to degrade service quality for other users"
+        },
+        "enforcement": {
+          "title": "Enforcement",
+          "description": "We reserve the right to investigate any suspected violations of this Acceptable Use Policy. Upon detection of prohibited activities, we may immediately suspend or terminate your account without prior notice and without refund. Serious violations may be reported to law enforcement authorities."
+        }
+      },
+      "liability": {
+        "title": "4. Limitation of Liability",
+        "badge": "Legal Protection",
+        "disclaimer": {
+          "title": "Disclaimer of Warranties",
+          "warning": "Important Notice",
+          "description": "CYQLE IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. Cyqle does not warrant that the service will be uninterrupted, error-free, secure, or that defects will be corrected. You acknowledge that you use Cyqle at your own risk."
+        },
+        "limitationAmount": {
+          "title": "Limitation of Liability Amount",
+          "description": "TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL CYQLE, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, OR AFFILIATES BE LIABLE TO YOU FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OF CYQLE. Our total liability to you for any claims arising from or related to these Terms or your use of Cyqle shall not exceed the total amount you paid to Cyqle in the twelve (12) months immediately preceding the event giving rise to liability. For free tier users, our liability shall not exceed $100 USD."
+        },
+        "thirdParty": {
+          "title": "Third-Party Code & User Content",
+          "description": "You are solely responsible for any code, software, scripts, or content you run, upload, or execute within your Cyqle environment. Cyqle is not responsible for any damages, losses, or legal consequences arising from third-party code, including open-source libraries, user-generated scripts, or any software you choose to install. You indemnify and hold Cyqle harmless from any claims arising from your use of third-party software or content within our platform."
+        }
+      },
+      "intellectualProperty": {
+        "title": "5. Intellectual Property Rights",
+        "badge": "Ownership",
+        "intro": "Intellectual property ownership is clearly divided between Cyqle's platform technology and your user-generated content.",
+        "cyqleOwnership": {
+          "title": "Cyqle's Ownership",
+          "description": "Cyqle retains all right, title, and interest in and to the following:",
+          "item1": "The Cyqle platform, including all software, APIs, interfaces, and documentation",
+          "item2": "Our proprietary libp2p implementation and peer-to-peer orchestration technology",
+          "item3": "All trademarks, logos, and branding materials associated with Cyqle",
+          "item4": "Any improvements, enhancements, or derivatives of the platform made by Cyqle"
+        },
+        "userOwnership": {
+          "title": "Your Ownership",
+          "description": "You retain all intellectual property rights to the content, data, code, files, and any other materials you create, upload, or generate within your Cyqle sessions. Cyqle claims no ownership rights over your user-generated content. You grant Cyqle a limited, non-exclusive license to host, store, and transmit your content solely as necessary to provide the service to you."
+        },
+        "dataRetention": {
+          "title": "Data Retention & Deletion",
+          "description": "By default, all sessions are ephemeral - data is permanently deleted upon session termination and cannot be recovered. Paid tiers (Lite, Pro, Power) include the option to enable persistence. When you choose to persist a session, your data is retained in secure storage according to your subscription tier's retention period and storage limits. Free tier sessions are always ephemeral with no persistence option. After the retention period expires, or upon account termination, all persistent data is permanently deleted. Cyqle is not responsible for data loss due to deletion according to these policies."
+        }
+      },
+      "termination": {
+        "title": "6. Termination",
+        "badge": "Account Closure",
+        "intro": "Either party may terminate this agreement under the following conditions:",
+        "byUser": {
+          "title": "Termination by You",
+          "description": "You may terminate your account at any time by accessing your account settings and selecting the account closure option. Upon termination, your access to Cyqle will cease immediately. Any unused credits or prepaid subscription fees are non-refundable except as required by law."
+        },
+        "byCyqle": {
+          "title": "Termination by Cyqle",
+          "description": "We reserve the right to suspend or terminate your account immediately, without prior notice, if you violate these Terms, engage in prohibited activities under our Acceptable Use Policy, fail to pay fees when due, or if we determine that your use of the service poses a security risk to our platform or other users. We may also terminate or discontinue the service entirely with 30 days' notice."
+        },
+        "effect": {
+          "title": "Effect of Termination",
+          "description": "Upon termination of your account, all data stored in your sessions will be deleted according to our data retention policy. Sections of these Terms that by their nature should survive termination (including Intellectual Property, Limitation of Liability, and Indemnification) shall survive termination."
+        }
+      },
+      "changes": {
+        "title": "7. Changes to These Terms",
+        "description": "We reserve the right to modify these Terms at any time. We will notify you of material changes by posting a notice on our website or by sending you an email. Your continued use of Cyqle after such modifications constitutes your acceptance of the updated Terms. If you do not agree to the modified Terms, you must stop using Cyqle and may terminate your account."
+      }
+    },
+    "contact": {
+      "title": "Questions or Concerns?",
+      "description": "If you have any questions about these Terms of Service, please contact us:",
+      "email": "legal@cyqle.in"
+    }
   }
 }
