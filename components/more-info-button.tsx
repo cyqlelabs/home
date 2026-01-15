@@ -10,8 +10,9 @@ interface MoreInfoButtonProps {
 export default function MoreInfoButton({ children }: MoreInfoButtonProps) {
   return (
     <Button
-      size="lg"
-      className="bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg"
+      size="sm"
+      variant="outline"
+      className="border-gray-600 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-500"
       onClick={() => {
         window.location.assign('#features');
       }}
