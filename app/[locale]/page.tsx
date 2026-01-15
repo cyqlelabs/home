@@ -21,6 +21,7 @@ import AnimatedSection from '@/components/animated-section';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import MoreInfoButton from '@/components/more-info-button';
+import PowerOnButton from '@/components/power-on-button';
 import ResponsiveVideo from '@/components/responsive-video';
 import RotatingWord from '@/components/rotating-word';
 import HeroBackground from '@/components/hero-background';
@@ -78,11 +79,14 @@ export default async function Home({ params: { locale } }: Props) {
               );
             })()}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
-            <Button asChild size="lg" className="bg-black text-white hover:bg-gray-900 shadow-lg">
-              <a href="mailto:demo@cyqle.in">{heroT('bookDemo')}</a>
-            </Button>
+          <div className="flex flex-col items-center gap-10">
+            <PowerOnButton />
+            <div className="flex flex-col sm:flex-row gap-3">
+              <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
+              <Button asChild size="sm" className="bg-black text-white hover:bg-gray-900 shadow-lg">
+                <a href="mailto:demo@cyqle.in">{heroT('bookDemo')}</a>
+              </Button>
+            </div>
           </div>
         </div>
       </AnimatedSection>

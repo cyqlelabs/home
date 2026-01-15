@@ -93,14 +93,13 @@ export default function Navbar() {
             {/* <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}> */}
             {/*   {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className={`h-5 w-5 ${isScrolled && "text-gray-300"}`} />} */}
             {/* </Button> */}
-            <Button disabled variant="ghost" className="text-slate-300 hover:text-white">
-              {t('navbar.signIn')}
-            </Button>
             <Button
-              disabled
-              className="bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 text-slate-800 hover:from-gray-500 hover:via-gray-300 hover:to-gray-500 shadow-lg"
+              asChild
+              size="sm"
+              variant="outline"
+              className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-600"
             >
-              {t('navbar.getStarted')}
+              <a href="https://app.cyqle.in">{t('navbar.tryForFree')}</a>
             </Button>
           </div>
 
@@ -156,11 +155,13 @@ export default function Navbar() {
                 {t('navbar.about')}
               </Link>
               <div className="pt-4 flex flex-col space-y-3">
-                <Button variant="outline" className="w-full justify-center">
-                  {t('navbar.signIn')}
-                </Button>
-                <Button className="w-full justify-center bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 text-gray-900 hover:from-gray-500 hover:via-gray-300 hover:to-gray-500 shadow-lg">
-                  {t('navbar.getStarted')}
+                <Button
+                  asChild
+                  size="sm"
+                  variant="outline"
+                  className="w-full justify-center border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-600"
+                >
+                  <a href="https://app.cyqle.in">{t('navbar.tryForFree')}</a>
                 </Button>
               </div>
             </nav>
