@@ -5,7 +5,7 @@ export const siteMetadata = {
   locales: ['en', 'es'] as const,
   title: 'Cyqle | The P2P Cloud Desktop for Instant Collaboration',
   description:
-    'A persistent P2P cloud desktop that lets teams build, test, and automate together with AI-powered workflows.',
+    'A persistent P2P cloud desktop for instant team collaboration. Build, test, and automate together with AI-powered workflows. Start free today.',
   keywords: [
     'cloud desktop',
     'p2p collaboration',
