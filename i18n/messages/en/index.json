@@ -149,10 +149,10 @@
         "unit": "/credit",
         "description": "Casual research and privacy.",
         "features": {
-          "specs": "1 vCPU / 1 GB RAM",
+          "specs": "1 vCPU / 2 GB RAM",
           "bandwidth": "50mb/s bandwidth",
           "priority": "Standard Priority",
-          "persistence": "5 GB persistence",
+          "persistence": "10 GB persistence",
           "api": "API Access"
         },
         "cta": "Get Started"
@@ -193,14 +193,14 @@
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
-          "persistence": "30 GB persistence",
+          "persistence": "40 GB persistence",
           "bandwidth": "150mb/s bandwidth"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
-          "persistence": "40 GB persistence",
+          "persistence": "80 GB persistence",
           "bandwidth": "200mb/s bandwidth"
         }
       }
