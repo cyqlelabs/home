@@ -139,7 +139,7 @@
           "bandwidth": "Hasta 10mb/s de ancho de banda",
           "priority": "Cola de Prioridad Baja",
           "persistence": "Sin Persistencia",
-          "idle": "Cierre por Inactividad (2 Min)"
+          "idle": "Cierre por Inactividad (5 Min)"
         },
         "cta": "Probar Gratis"
       },

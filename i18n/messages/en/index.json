@@ -139,7 +139,7 @@
           "bandwidth": "Up to 10mb/s bandwidth",
           "priority": "Low Priority Queue",
           "persistence": "No Persistence",
-          "idle": "2 Min Idle Timeout"
+          "idle": "5 Min Idle Timeout"
         },
         "cta": "Try for Free"
       },
