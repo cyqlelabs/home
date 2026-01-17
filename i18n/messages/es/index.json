@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Cyqle | El Escritorio Cloud P2P para Colaboración Instantánea",
-    "description": "Un escritorio cloud P2P persistente para colaboración instantánea. Construye, testea y automatiza con flujos de IA. Pruébalo gratis hoy."
+    "description": "Un ordenador cloud persistente para colaboración instantánea en equipo. Construye, testea y automatiza juntos con flujos de trabajo impulsados por IA. Pruébalo gratis."
   },
   "navbar": {
     "features": "Funcionalidades",
@@ -12,12 +12,12 @@
   },
   "hero": {
     "title": "El Escritorio Cloud P2P",
-    "titlePrefix": "Tu",
+    "titlePrefix": "El Cloud P2P",
     "titleWord1": "Escritorio",
-    "titleWord2": "Espacio",
-    "titleWord3": "Equipo",
-    "titleSuffix": "Cloud P2P",
-    "description": "Un escritorio cloud persistente para colaboración y automatización con IA.",
+    "titleWord2": "Espacio de Trabajo",
+    "titleWord3": "Ordenador",
+    "titleSuffix": "",
+    "description": "Un escritorio cloud persistente para colaboración y automatización impulsada por IA.",
     "getStarted": "Empezar Ahora",
     "bookDemo": "Agendar Demo",
     "trialInfo": "Plan gratuito disponible. Sin tarjeta de crédito.",
@@ -83,7 +83,7 @@
   },
   "aiSection": {
     "title": "Potencia tu Escritorio",
-    "description": "Además de ser un ordenador cloud completo, Cyqle incluye potentes herramientas de IA para trabajar más rápido.",
+    "description": "Aunque es un ordenador cloud completo, Cyqle también incluye potentes herramientas de IA para ayudarte a trabajar más rápido.",
     "items": [
       "Graba interacciones del navegador para reproducirlas",
       "Delega tareas repetitivas web a agentes",
@@ -142,7 +142,7 @@
           "bandwidth": "Hasta 10mb/s de ancho de banda",
           "priority": "Cola de Prioridad Baja",
           "persistence": "Sin Persistencia",
-          "idle": "Cierre por Inactividad (5 Min)"
+          "idle": "Tiempo de Espera Inactivo 5 Min"
         },
         "cta": "Probar Gratis"
       },
@@ -152,10 +152,10 @@
         "unit": "/crédito",
         "description": "Investigación casual y privacidad.",
         "features": {
-          "specs": "1 vCPU / 1 GB RAM",
+          "specs": "1 vCPU / 2 GB RAM",
           "bandwidth": "50mb/s de ancho de banda",
           "priority": "Prioridad Estándar",
-          "persistence": "5 GB persistencia, 30 días retención",
+          "persistence": "10 GB persistencia",
           "api": "Acceso API"
         },
         "cta": "Empezar"
@@ -169,7 +169,7 @@
           "specs": "2 vCPU / 4 GB RAM",
           "bandwidth": "100mb/s de ancho de banda",
           "priority": "Cola de Prioridad Alta",
-          "persistence": "20 GB persistencia, 30 días retención",
+          "persistence": "20 GB persistencia",
           "snapshots": "Snapshots Ilimitados",
           "api": "Acceso API"
         },
@@ -189,21 +189,21 @@
           "name": "Standard",
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
-          "persistence": "20 GB persistencia, 30 días retención",
+          "persistence": "20 GB persistencia",
           "bandwidth": "100mb/s de ancho de banda"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
-          "persistence": "30 GB persistencia, 60 días retención",
+          "persistence": "40 GB persistencia",
           "bandwidth": "150mb/s de ancho de banda"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
-          "persistence": "40 GB persistencia, ilimitada",
+          "persistence": "80 GB persistencia",
           "bandwidth": "200mb/s de ancho de banda"
         }
       }
@@ -456,7 +456,7 @@
           "description": "Puede actualizar o corregir información personal inexacta"
         },
         "erasure": {
-          "title": "Derecho al Olvido",
+          "title": "Derecho de Supresión (\"Derecho al Olvido\")",
           "description": "Puede solicitar la eliminación de sus datos personales"
         },
         "portability": {
@@ -766,7 +766,7 @@
         "badge": "Protección Legal",
         "disclaimer": {
           "title": "Descargo de Garantías",
-          "warning": "Aviso Importante",
+          "warning": "Aviso importante",
           "description": "CYQLE SE PROPORCIONA \"TAL CUAL\" Y \"SEGÚN DISPONIBILIDAD\" SIN GARANTÍAS DE NINGÚN TIPO, EXPRESAS O IMPLÍCITAS, INCLUYENDO PERO NO LIMITADO A GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. Cyqle no garantiza que el servicio será ininterrumpido, libre de errores, seguro o que los defectos serán corregidos. Usted reconoce que usa Cyqle bajo su propio riesgo."
         },
         "limitationAmount": {
