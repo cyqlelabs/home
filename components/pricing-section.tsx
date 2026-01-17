@@ -90,13 +90,13 @@ export default function PricingSection() {
                   value="monthly"
                   className="data-[state=active]:bg-[#FF7600] data-[state=active]:text-white text-gray-400"
                 >
-                  Monthly
+                  {t('monthlyLabel')}
                 </TabsTrigger>
                 <TabsTrigger
                   value="payAsYouGo"
                   className="data-[state=active]:bg-[#FF7600] data-[state=active]:text-white text-gray-400"
                 >
-                  Pay as You Go
+                  {t('payAsYouGoLabel')}
                 </TabsTrigger>
               </TabsList>
             </Tabs>
@@ -156,7 +156,7 @@ export default function PricingSection() {
                             value={tierKey}
                             className="data-[state=active]:bg-[#FF7600] data-[state=active]:text-white text-gray-400 text-xs px-2"
                           >
-                            {TIERS[tierKey].name}
+                            {t(`powerTiers.tiers.${tierKey}.name`)}
                           </TabsTrigger>
                         ))}
                       </TabsList>
@@ -169,7 +169,7 @@ export default function PricingSection() {
                   {plan !== 'free' && (
                     <>
                       <span className="text-gray-400 ml-2">
-                        {pricingMode === 'monthly' ? '/month' : '/credit'}
+                        {pricingMode === 'monthly' ? t('monthly') : t('credit')}
                       </span>
                       {pricingMode === 'payAsYouGo' && (
                         <div className="mt-2">
@@ -231,7 +231,7 @@ function FeatureList({ plan, t, selectedTier }: { plan: string; t: any; selected
 
         // Dynamic overrides for Pro plan
         if (feature === 'specs' && plan === 'pro') {
-          content = TIERS[selectedTier].specs;
+          content = t(`powerTiers.tiers.${selectedTier}.specs`);
         }
 
         if (feature === 'persistence' && plan === 'pro') {
