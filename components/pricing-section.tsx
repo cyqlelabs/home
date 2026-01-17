@@ -18,11 +18,19 @@ import { useTranslations } from 'next-intl';
 type Tier = 'basic' | 'standard' | 'turbo' | 'max';
 type PricingMode = 'monthly' | 'payAsYouGo';
 
-const TIERS: Record<Tier, { name: string; specs: string; multiplier: number }> = {
-  basic: { name: 'Basic', specs: '1 vCPU / 1 GB', multiplier: 0 },
-  standard: { name: 'Standard', specs: '2 vCPU / 4 GB', multiplier: 1 },
-  turbo: { name: 'Turbo', specs: '4 vCPU / 8 GB', multiplier: 3 },
-  max: { name: 'Max', specs: '8 vCPU / 16 GB', multiplier: 6 },
+const TIERS: Record<
+  Tier,
+  { name: string; specs: string; monthlyMultiplier: number; payPerUseMultiplier: number }
+> = {
+  basic: { name: 'Basic', specs: '1 vCPU / 1 GB', monthlyMultiplier: 0, payPerUseMultiplier: 0 },
+  standard: {
+    name: 'Standard',
+    specs: '2 vCPU / 4 GB',
+    monthlyMultiplier: 1,
+    payPerUseMultiplier: 1,
+  },
+  turbo: { name: 'Turbo', specs: '4 vCPU / 8 GB', monthlyMultiplier: 2, payPerUseMultiplier: 3 },
+  max: { name: 'Max', specs: '8 vCPU / 16 GB', monthlyMultiplier: 4, payPerUseMultiplier: 6 },
 };
 
 export default function PricingSection() {
@@ -43,12 +51,12 @@ export default function PricingSection() {
     // Pro - uses proTier
     if (pricingMode === 'monthly') {
       const baseMonthly = 20;
-      const multiplier = TIERS[proTier].multiplier;
+      const multiplier = TIERS[proTier].monthlyMultiplier;
       return `$${baseMonthly * multiplier}`;
     } else {
       // Credits pricing: Standard=$0.50, Turbo=$1.50, Max=$3 per credit (10 hours each)
       const basePro = 0.5;
-      const multiplier = TIERS[proTier].multiplier;
+      const multiplier = TIERS[proTier].payPerUseMultiplier;
       return `$${(basePro * multiplier).toFixed(2)}`;
     }
   };
