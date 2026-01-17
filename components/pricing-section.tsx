@@ -80,6 +80,15 @@ export default function PricingSection() {
             box-shadow: 0 4px 16px rgba(255, 215, 0, 0.8);
           }
         }
+        @keyframes pulse-green {
+          0%,
+          100% {
+            text-shadow: 0 0 8px rgba(74, 222, 128, 0.6);
+          }
+          50% {
+            text-shadow: 0 0 16px rgba(74, 222, 128, 0.9);
+          }
+        }
       `}</style>
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('title')}</h2>
@@ -181,7 +190,12 @@ export default function PricingSection() {
                       </span>
                       {pricingMode === 'payAsYouGo' && (
                         <div className="mt-2">
-                          <span className="text-sm text-green-400 font-semibold block">
+                          <span
+                            className="text-sm text-green-400 font-semibold block"
+                            style={{
+                              animation: 'pulse-green 2s ease-in-out infinite',
+                            }}
+                          >
                             {t('creditEqualsHours')}
                           </span>
                           <span className="text-xs text-gray-500">{t('billingLegend')}</span>
