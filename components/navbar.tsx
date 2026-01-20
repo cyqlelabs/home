@@ -8,6 +8,7 @@ import { useTranslations } from '@/components/language-provider';
 import LanguageSwitcher from '@/components/language-switcher';
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
+import { trackCTA, trackAndNavigate } from '@/lib/analytics';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -99,7 +100,14 @@ export default function Navbar() {
               variant="outline"
               className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-600"
             >
-              <a href="https://app.cyqle.in">{t('navbar.tryForFree')}</a>
+              <a
+                href="https://app.cyqle.in"
+                onClick={(e) =>
+                  trackAndNavigate('https://app.cyqle.in', trackCTA.navbarTryForFree, e)
+                }
+              >
+                {t('navbar.tryForFree')}
+              </a>
             </Button>
           </div>
 
@@ -161,7 +169,15 @@ export default function Navbar() {
                   variant="outline"
                   className="w-full justify-center border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-600"
                 >
-                  <a href="https://app.cyqle.in">{t('navbar.tryForFree')}</a>
+                  <a
+                    href="https://app.cyqle.in"
+                    onClick={(e) => {
+                      closeMobileMenu();
+                      trackAndNavigate('https://app.cyqle.in', trackCTA.navbarTryForFree, e);
+                    }}
+                  >
+                    {t('navbar.tryForFree')}
+                  </a>
                 </Button>
               </div>
             </nav>
