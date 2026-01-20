@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import './globals.css';
 import { type Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import {
   formatDetection,
   languageAlternates,
@@ -67,6 +68,21 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang={siteMetadata.defaultLocale} className="dark">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-49YSLV4EWB"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-49YSLV4EWB');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
