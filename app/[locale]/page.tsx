@@ -26,6 +26,8 @@ import ResponsiveVideo from '@/components/responsive-video';
 import RotatingWord from '@/components/rotating-word';
 import HeroBackground from '@/components/hero-background';
 import PricingSection from '@/components/pricing-section';
+import TrackedLink from '@/components/tracked-link';
+import TrackedButton from '@/components/tracked-button';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 type Props = {
@@ -84,7 +86,9 @@ export default async function Home({ params: { locale } }: Props) {
             <div className="flex flex-col sm:flex-row gap-3">
               <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
               <Button asChild size="sm" className="bg-black text-white hover:bg-gray-900 shadow-lg">
-                <a href="mailto:demo@cyqle.in">{heroT('bookDemo')}</a>
+                <TrackedLink href="mailto:demo@cyqle.in" trackingKey="bookDemo">
+                  {heroT('bookDemo')}
+                </TrackedLink>
               </Button>
             </div>
           </div>
@@ -272,15 +276,20 @@ export default async function Home({ params: { locale } }: Props) {
             {ctaT('description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
+            <TrackedButton
               size="lg"
               className="bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg"
+              trackingKey="ctaStartTrial"
             >
               {ctaT('startTrial')}
-            </Button>
-            <Button size="lg" className="bg-black text-white hover:bg-gray-900 shadow-lg">
+            </TrackedButton>
+            <TrackedButton
+              size="lg"
+              className="bg-black text-white hover:bg-gray-900 shadow-lg"
+              trackingKey="ctaScheduleDemo"
+            >
               {ctaT('scheduleDemo')}
-            </Button>
+            </TrackedButton>
           </div>
           <div className="mt-10 flex items-center justify-center">
             <Lock className="h-5 w-5 dark:text-gray-400 text-gray-600 mr-2" />

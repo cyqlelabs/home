@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { trackCTA } from '@/lib/analytics';
 import {
   Card,
   CardContent,
@@ -220,6 +221,9 @@ export default function PricingSection() {
               </CardContent>
               <CardFooter>
                 <Button
+                  onClick={() =>
+                    trackCTA.pricingPlan(plan, pricingMode, plan === 'pro' ? proTier : undefined)
+                  }
                   className={`w-full ${
                     plan === 'pro'
                       ? 'bg-white text-black hover:bg-gray-200'
