@@ -1,169 +1,169 @@
 {
   "metadata": {
-    "title": "El Escritorio Cloud P2P para Colaboración Instantánea",
-    "description": "Un ordenador cloud persistente para colaboración instantánea en equipo. Construye, testea y automatiza juntos con flujos de trabajo impulsados por IA. Pruébalo gratis."
+    "title": "Tu Escritorio en la Nube para Colaborar en Tiempo Real",
+    "description": "Una computadora en la nube donde todo tu equipo trabaja al mismo tiempo. Desarrolla, prueba y automatiza con IA. Empieza gratis, sin tarjeta."
   },
   "navbar": {
-    "features": "Funcionalidades",
-    "useCases": "Casos de Uso",
+    "features": "Qué hace",
+    "useCases": "Para qué sirve",
     "pricing": "Precios",
     "about": "Nosotros",
-    "tryForFree": "Prueba Gratis"
+    "tryForFree": "Probar gratis"
   },
   "hero": {
-    "title": "El Escritorio Cloud P2P",
-    "titlePrefix": "El",
-    "titleWord1": "Escritorio Cloud P2P",
-    "titleWord2": "Espacio de Trabajo Cloud P2P",
-    "titleWord3": "Ordenador Cloud P2P",
+    "title": "Tu Escritorio en la Nube",
+    "titlePrefix": "Tu",
+    "titleWord1": "Escritorio en la Nube",
+    "titleWord2": "Espacio de Trabajo Compartido",
+    "titleWord3": "Computadora en Equipo",
     "titleSuffix": "",
-    "description": "Un escritorio cloud persistente para colaboración y automatización impulsada por IA.",
-    "getStarted": "Empezar Ahora",
-    "bookDemo": "Agendar Demo",
-    "trialInfo": "Plan gratuito disponible. Sin tarjeta de crédito.",
-    "moreInfo": "Más Info"
+    "description": "Donde tu equipo trabaja junto, en tiempo real. Con IA que automatiza lo repetitivo.",
+    "getStarted": "Empezar gratis",
+    "bookDemo": "Ver demo",
+    "trialInfo": "Gratis para siempre. Sin tarjeta.",
+    "moreInfo": "Ver más"
   },
   "features": {
-    "title": "Un Escritorio Completo, Reinventado",
+    "title": "Todo lo que necesitas, sin complicaciones",
     "aiAutomation": {
-      "title": "Automatización Integrada",
-      "description": "Tu escritorio cloud incluye grabación nativa. Automatiza tareas repetitivas web sin esfuerzo."
+      "title": "IA que trabaja por vos",
+      "description": "Graba lo que haces en el navegador y deja que la IA lo repita. Automatiza tareas web sin código."
     },
     "multiCursor": {
-      "title": "Control Multijugador Verdadero",
-      "description": "Trabaja en paralelo, no por turnos. Cada usuario obtiene su propio cursor y teclado para colaboración simultánea."
+      "title": "Todos escriben al mismo tiempo",
+      "description": "No más turnos. Cada persona con su cursor y teclado, trabajando en paralelo. Como Google Docs, pero para todo."
     },
     "cloudNative": {
-      "title": "Persistencia Flexible",
-      "description": "Efímero por defecto para inicios limpios, o persistente para pausar y retomar donde quieras."
+      "title": "Usa y tira, o guarda para después",
+      "description": "Por defecto todo desaparece al cerrar. Pero si querés, guardalo y seguí mañana desde donde quedaste."
     },
     "collaboration": {
-      "title": "Sincronización P2P Real",
-      "description": "El streaming directo peer-to-peer asegura una colaboración fluida. Interactúa de manera segura."
+      "title": "Conexión directa P2P",
+      "description": "El escritorio se conecta directo a cada usuario. Sin intermediarios, sin lag. Colaboración en tiempo real."
     },
     "rootAccess": {
-      "title": "Privilegios de Administrador Completos",
-      "description": "Es tu máquina. Obtén acceso root completo para instalar cualquier herramienta, librería o dependencia que tu flujo de trabajo requiera."
+      "title": "Acceso total como admin",
+      "description": "Es tu máquina. Instalá lo que quieras: cualquier herramienta, librería o dependencia que necesites."
     },
     "dataPrivacy": {
-      "title": "Encriptación por Sesión",
-      "description": "Tu sistema de archivos se encripta al vuelo con claves únicas. Cuando cierras una sesión efímera, los datos desaparecen para siempre."
+      "title": "Cifrado que desaparece",
+      "description": "Cada sesión tiene su propia clave. Cuando cerrás, los datos se borran para siempre. Sin vuelta atrás."
     },
     "instantEnvironments": {
-      "title": "Despliegue Instantáneo",
-      "description": "Crea entornos de escritorio aislados y configurados en segundos para demos, testing o desarrollo."
+      "title": "Entornos en segundos",
+      "description": "Levantá un escritorio limpio en segundos para demos, pruebas o desarrollo. Cuando termines, lo eliminás."
     },
     "apiAccess": {
-      "title": "Acceso API",
-      "description": "Inicia sesiones programáticamente, ejecuta comandos y gestiona tu infraestructura a través de nuestra robusta API."
+      "title": "API para automatizar todo",
+      "description": "Crea sesiones, ejecuta comandos y gestiona todo desde código. Integración total con tus herramientas."
     },
     "snapshots": {
-      "title": "Snapshots y Plantillas",
-      "description": "Crea snapshots reutilizables de tu entorno. Comparte plantillas para estandarizar el desarrollo en tu equipo."
+      "title": "Guardá y compartí entornos",
+      "description": "Hace un snapshot de tu setup completo. Compartilo con el equipo para que todos tengan el mismo ambiente."
     }
   },
   "useCases": {
-    "title": "Tu Espacio para cada Flujo de Trabajo",
+    "title": "Para qué te sirve",
     "development": {
-      "title": "Desarrollo Remoto",
-      "description": "Programa en un entorno cloud persistente. Haz pair programming en tiempo real manteniendo la consistencia del entorno."
+      "title": "Desarrollo en equipo",
+      "description": "Programa desde la nube. Hace pair programming de verdad, los dos escribiendo al mismo tiempo. El entorno siempre igual para todos."
     },
     "qa": {
-      "title": "QA y Testing",
-      "description": "Reproduce bugs en un entorno limpio y compartido. Automatiza tests de regresión del navegador repetitivos e invita a desarrolladores a tu sesión para depurar al instante."
+      "title": "Testing y QA",
+      "description": "Reproduce bugs en un ambiente limpio. Automatiza tests del navegador sin código. Invita al dev a tu sesión y depuren juntos."
     },
     "customerSupport": {
-      "title": "Soporte Colaborativo",
-      "description": "No solo digas qué hacer, muéstralo. Lanza una sesión compartida para automatizar flujos de onboarding web complejos o guiar a los usuarios en problemas en tiempo real."
+      "title": "Soporte que resuelve",
+      "description": "No expliques por chat, mostrá cómo se hace. Abrí una sesión compartida y guía a tu cliente en vivo. Automatiza onboardings complejos."
     },
     "operations": {
-      "title": "Operaciones Seguras",
-      "description": "Accede a herramientas internas y dashboards desde un escritorio cloud aislado sin exponer redes locales."
+      "title": "Ops sin riesgos",
+      "description": "Accede a herramientas internas desde un escritorio aislado. Sin exponer tu red local ni dejar rastros."
     },
     "admin": {
-      "title": "Oficina Virtual",
-      "description": "Colabora en hojas de cálculo, documentos y tareas administrativas en un escritorio compartido. Modifica múltiples ventanas simultáneamente durante las llamadas."
+      "title": "Trabajo administrativo",
+      "description": "Colabora en planillas, documentos y tareas en un mismo escritorio. Varios editando distintas ventanas al mismo tiempo."
     }
   },
   "aiSection": {
-    "title": "Potencia tu Escritorio",
-    "description": "Aunque es un ordenador cloud completo, Cyqle también incluye potentes herramientas de IA para ayudarte a trabajar más rápido.",
+    "title": "IA que hace el trabajo pesado",
+    "description": "Es una computadora completa en la nube, pero además tiene IA integrada para que no pierdas tiempo en lo repetitivo.",
     "items": [
-      "Graba interacciones del navegador para reproducirlas",
-      "Delega tareas repetitivas web a agentes",
-      "Programa flujos de trabajo en segundo plano",
-      "Mantén una librería compartida de automatizaciones",
-      "Integración fluida con tu stack actual"
+      "Graba lo que haces en el navegador y dejá que la IA lo repita",
+      "Delega tareas web aburridas a agentes automáticos",
+      "Programa workflows para que corran solos en segundo plano",
+      "Guarda automatizaciones y compartelas con el equipo",
+      "Se integra con las herramientas que ya usas"
     ],
-    "exploreFeatures": "Explorar Funcionalidades"
+    "exploreFeatures": "Ver qué hace"
   },
   "testimonials": {
-    "title": "Por qué los equipos se pasan a Cyqle",
+    "title": "Lo que dicen los equipos que ya lo usan",
     "items": [
       {
-        "quote": "Reducimos el tiempo de reproducción de bugs de 45 minutos a menos de 5. Ahora cuando QA encuentra algo, solo comparte el link de sesión—se acabó el 'en mi máquina funciona.' La configuración no es perfecta todavía, pero el ahorro de tiempo es real.",
+        "quote": "Antes tardábamos 45 minutos en reproducir un bug. Ahora son menos de 5. QA manda el link de la sesión y listo—se acabó el 'en mi máquina funciona'. Todavía hay cosas por pulir, pero el tiempo que ahorramos es real.",
         "author": "Sarah Chen",
-        "role": "Líder de Ingeniería en Startup SaaS Serie B (equipo de 12 personas)",
-        "metric": "40min ahorrados por bug"
+        "role": "Líder de Ingeniería, Startup SaaS Serie B (12 personas)",
+        "metric": "40min menos por bug"
       },
       {
-        "quote": "Nuestro equipo de soporte se ahogaba en tickets de 'cómo configuro X'. Ahora levantan una sesión Cyqle, graban el flujo una vez y envían a los clientes un link de repetición. El volumen de tickets cayó 34% en dos meses.",
+        "quote": "Soporte vivía ahogado en tickets del tipo 'cómo configuro X'. Ahora levantan una sesión, graban el proceso una vez y mandan el link. Los clientes lo ven y lo hacen solos. Bajamos los tickets 34% en dos meses.",
         "author": "Marcus Rivera",
-        "role": "Director de Customer Success, Plataforma B2B de Infraestructura",
+        "role": "Director de Customer Success, Plataforma B2B",
         "metric": "34% menos tickets"
       },
       {
-        "quote": "Estoy construyendo agentes de IA que ejecutan diversos flujos de trabajo en la shell, y los escritorios sandbox de Cyqle son perfectos para probar sin arriesgar mi setup local. Levanto una sesión, dejo que el agente ejecute sus experimentos, y luego la elimino. Pasé de 3 crashes de agentes rompiendo mi máquina a cero.",
-        "author": "Jordan Martinez",
-        "role": "Desarrollador independiente de IA, Construyendo herramientas de automatización",
-        "metric": "Cero crashes locales"
+        "quote": "Estoy haciendo agentes de IA que corren cosas en la terminal. Los sandboxes de Cyqle son perfectos para probar sin arriesgar mi máquina local. Levanto una sesión, dejo que el agente haga sus experimentos, y después la borro. De 3 crashes por semana a cero.",
+        "author": "Jordan Martínez",
+        "role": "Dev independiente de IA",
+        "metric": "Cero crashes"
       }
     ]
   },
   "cta": {
-    "title": "El ordenador de tu equipo, en la nube.",
-    "description": "Vive la colaboración P2P directa combinada con la potencia de un escritorio cloud persistente. Colabora con tu equipo, desde cualquier lugar.",
-    "startTrial": "Empezar Ahora",
-    "scheduleDemo": "Agendar Demo",
-    "trialInfo": "Sesiones gratuitas de 15 min. Sin tarjeta de crédito."
+    "title": "Tu escritorio en la nube, para todo el equipo",
+    "description": "Colaboración P2P directa. Escritorio que persiste. Trabaja con tu equipo desde donde estés.",
+    "startTrial": "Empezar gratis",
+    "scheduleDemo": "Ver demo",
+    "trialInfo": "Gratis para siempre. Sin tarjeta."
   },
   "pricing": {
-    "title": "Precios Simples y Transparentes",
-    "description": "Elige el plan perfecto para tu flujo de trabajo.",
+    "title": "Precios simples, sin sorpresas",
+    "description": "Elegí el plan que te sirve.",
     "monthly": "/mes",
     "credit": "/crédito",
     "monthlyLabel": "Mensual",
-    "payAsYouGoLabel": "Pago por Uso",
-    "popular": "Más Popular",
-    "billingLegend": "Facturado diariamente por uso real",
+    "payAsYouGoLabel": "Pagas lo que usas",
+    "popular": "Más elegido",
+    "billingLegend": "Se cobra solo por uso real",
     "perDesktop": "por escritorio",
     "plans": {
       "free": {
         "name": "Gratis",
         "price": "$0.00",
         "unit": "",
-        "description": "Perfecto para una prueba rápida.",
+        "description": "Para probar y ver si te sirve.",
         "features": {
-          "time": "Límite de Sesión de 15 Minutos",
+          "time": "Sesiones de 15 minutos",
           "specs": "1 vCPU / 1 GB RAM",
-          "bandwidth": "Hasta 10mb/s de ancho de banda",
-          "priority": "Cola de Prioridad Baja",
-          "persistence": "Sin Persistencia",
-          "idle": "Tiempo de Espera Inactivo 5 Min"
+          "bandwidth": "Hasta 10mb/s",
+          "priority": "Prioridad baja",
+          "persistence": "No se guarda nada",
+          "idle": "Se apaga a los 5 min sin uso"
         },
-        "cta": "Probar Gratis"
+        "cta": "Probar gratis"
       },
       "lite": {
         "name": "Lite",
         "price": "$0.50",
         "unit": "/crédito",
-        "description": "Investigación casual y privacidad.",
+        "description": "Para uso casual con privacidad.",
         "features": {
           "specs": "1 vCPU / 2 GB RAM",
-          "bandwidth": "50mb/s de ancho de banda",
-          "priority": "Prioridad Estándar",
-          "persistence": "20 GB persistencia",
-          "api": "Acceso API"
+          "bandwidth": "50mb/s",
+          "priority": "Prioridad estándar",
+          "persistence": "20 GB para guardar",
+          "api": "Acceso a la API"
         },
         "cta": "Empezar"
       },
@@ -171,24 +171,24 @@
         "name": "Pro",
         "price": "$3.00",
         "unit": "/crédito",
-        "description": "Diseñado para trabajo serio.",
+        "description": "Para trabajo en serio.",
         "features": {
           "specs": "2 vCPU / 4 GB RAM",
-          "bandwidth": "100mb/s de ancho de banda",
-          "priority": "Cola de Prioridad Alta",
-          "persistence": "40 GB persistencia",
-          "snapshots": "Snapshots Ilimitados",
-          "api": "Acceso API"
+          "bandwidth": "100mb/s",
+          "priority": "Prioridad alta",
+          "persistence": "40 GB para guardar",
+          "snapshots": "Snapshots ilimitados",
+          "api": "Acceso a la API"
         },
-        "cta": "Hazte Pro"
+        "cta": "Ir a Pro"
       }
     },
     "powerTiers": {
-      "title": "Tiers de Potencia",
-      "description": "Escala tus recursos para tareas exigentes.",
+      "title": "Más potencia",
+      "description": "Más recursos cuando los necesites.",
       "table": {
-        "tier": "Tier",
-        "specs": "Especificaciones",
+        "tier": "Nivel",
+        "specs": "Recursos",
         "multiplier": "Multiplicador"
       },
       "tiers": {
@@ -196,40 +196,40 @@
           "name": "Standard",
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
-          "persistence": "40 GB persistencia",
-          "bandwidth": "100mb/s de ancho de banda"
+          "persistence": "40 GB",
+          "bandwidth": "100mb/s"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
-          "persistence": "60 GB persistencia",
-          "bandwidth": "150mb/s de ancho de banda"
+          "persistence": "60 GB",
+          "bandwidth": "150mb/s"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
-          "persistence": "120 GB persistencia",
-          "bandwidth": "200mb/s de ancho de banda"
+          "persistence": "120 GB",
+          "bandwidth": "200mb/s"
         }
       }
     },
     "creditEqualsHours": "1 crédito = 10 horas"
   },
   "footer": {
-    "description": "El escritorio cloud P2P para colaboración fluida y automatización.",
+    "description": "Tu escritorio en la nube para colaborar en tiempo real con IA integrada.",
     "product": {
       "title": "Producto",
-      "features": "Funcionalidades",
-      "useCases": "Casos de Uso",
+      "features": "Qué hace",
+      "useCases": "Para qué sirve",
       "pricing": "Precios",
       "integrations": "Integraciones",
       "roadmap": "Roadmap"
     },
     "resources": {
       "title": "Recursos",
-      "documentation": "Documentación",
+      "documentation": "Docs",
       "blog": "Blog",
       "community": "Comunidad",
       "support": "Soporte",
@@ -237,106 +237,107 @@
     },
     "company": {
       "title": "Empresa",
-      "about": "Sobre Nosotros",
-      "careers": "Carreras",
+      "about": "Nosotros",
+      "careers": "Trabajá con nosotros",
       "contact": "Contacto",
       "privacy": "Privacidad",
       "terms": "Términos"
     },
     "copyright": "© {year} Cyqle. Todos los derechos reservados.",
-    "privacyPolicy": "Política de Privacidad",
-    "termsOfService": "Términos del Servicio",
+    "privacyPolicy": "Privacidad",
+    "termsOfService": "Términos",
     "cookies": "Cookies"
   },
   "aboutPage": {
     "hero": {
-      "title": "Colaboración sin turnos",
-      "subtitle": "Construimos esto porque estábamos cansados de preguntar \"¿Ven mi pantalla?\" y porque \"funciona en mi máquina\" no debería ser un chiste."
+      "title": "Colaborar sin hacer fila",
+      "subtitle": "Hicimos esto porque nos cansamos de preguntar \"¿ven mi pantalla?\" y porque \"en mi máquina funciona\" no debería ser un chiste."
     },
     "problem": {
-      "badge": "El Problema",
-      "title": "Has Estado en Esta Reunión",
-      "intro": "Alguien comparte su pantalla...",
-      "scenario1": "Alguien comparte su pantalla. \"¿Todos pueden ver esto?\" La mitad del equipo está haciendo otras cosas. La otra mitad observa pasivamente. Nadie está realmente comprometido porque ver a otra persona trabajar es fundamentalmente aburrido.",
-      "scenario2": "O peor: estás depurando con un compañero por Slack. Ellos describen lo que ven. Tú pegas comandos de terminal. Veinte mensajes después, ambos están frustrados y el error sigue ahí.",
-      "scenario3": "O: estás configurando un entorno de demostración. Otra vez. Por tercera vez esta semana. Porque el último desapareció cuando cerraste tu portátil.",
-      "truth": "Las herramientas que usamos para colaborar fueron revolucionarias en 2010. Pero es 2026, y todavía estamos turnándonos con un solo cursor como si fuera un micrófono en un karaoke."
+      "badge": "El problema",
+      "title": "Ya viviste esta reunión",
+      "intro": "Alguien comparte pantalla...",
+      "scenario1": "Alguien comparte pantalla. \"¿Todos lo ven?\" La mitad está en otra cosa. La otra mitad solo mira. Nadie realmente comprometido porque ver a otro trabajar es fundamentalmente aburrido.",
+      "scenario2": "O peor: estás debuggeando con alguien por Slack. Te describen lo que ven. Vos mandas comandos. Veinte mensajes después, los dos frustrados y el bug sigue ahí.",
+      "scenario3": "O: estás armando un ambiente de demo. De nuevo. Por tercera vez esta semana. Porque el último se borró cuando cerraste la notebook.",
+      "truth": "Las herramientas que usamos para colaborar eran geniales en 2010. Pero ya es 2026, y seguimos haciendo fila para usar el cursor como si fuera el micrófono en el karaoke."
     },
     "insight": {
-      "badge": "El Cambio",
-      "title": "¿Y Si No Tuvieras Que Turnarte?",
+      "badge": "El cambio",
+      "title": "¿Y si no tuvieras que hacer fila?",
       "questions": [
-        "¿Qué pasaría si en lugar de compartir tu pantalla, compartieras tu ordenador completo—y todos pudieran escribir al mismo tiempo?",
-        "¿Qué pasaría si tu entorno no desapareciera al cerrar tu portátil?",
-        "¿Qué pasaría si reproducir un error no requiriera 15 capturas de pantalla y un video de Loom?",
-        "¿Qué pasaría si la automatización del navegador no requiriera escribir código?"
+        "¿Qué pasaría si en vez de compartir pantalla, compartieras tu computadora entera—y todos pudieran escribir al mismo tiempo?",
+        "¿Qué pasaría si tu entorno no desapareciera cuando cerrás la notebook?",
+        "¿Qué pasaría si reproducir un bug no necesitara 15 capturas y un video de Loom?",
+        "¿Qué pasaría si automatizar el navegador no necesitara código?"
       ],
       "answer": "Por eso existe Cyqle."
     },
     "story": {
-      "badge": "Historia de Origen",
-      "title": "Cómo Comenzó Esto",
-      "year2017": "Allá por 2017, trabajaba en una startup que necesitaba automatizar interacciones con sitios web de terceros. Construimos una API que podía generar navegadores y ejecutar scripts—flujos de inicio de sesión, extracción de datos, automatización de UI.",
-      "pivot": "La startup cerró. Pero seguí construyendo porque la idea central parecía valiosa.",
-      "year2025": "Avancemos a 2025. Los agentes de IA estaban en todas partes. Pensé: ¿y si esta plataforma de automatización de navegador tuviera IA integrada? Los usuarios podrían grabar sus flujos de trabajo y dejar que la IA manejara las partes complicadas—adaptarse a cambios de sitios web, manejar errores, completar la tarea.",
-      "realization": "Entonces me di cuenta: ¿por qué limitarlo a navegadores? ¿Por qué no ofrecer el escritorio completo? Hacerlo colaborativo. Añadir soporte multi-cursor para que los equipos puedan trabajar en paralelo. Convertirlo en un sandbox donde los agentes de IA puedan realmente hacer cosas.",
-      "present": "Eso es Cyqle hoy. Un ordenador cloud genuinamente multijugador con automatización de IA integrada."
+      "badge": "Cómo empezó",
+      "title": "De dónde salió esto",
+      "year2017": "En 2017, trabajaba en una startup que necesitaba automatizar sitios web. Hicimos una API que levantaba navegadores y ejecutaba scripts—login, scraping, automatización de UI.",
+      "pivot": "La startup cerró. Pero seguí porque la idea tenía sentido.",
+      "year2025": "Saltamos a 2025. Agentes de IA por todos lados. Se me ocurrió: ¿y si esto tuviera IA integrada? Grabas tu workflow y la IA maneja lo complicado—se adapta a cambios de sitios, maneja errores, completa la tarea.",
+      "realization": "Ahí caí: ¿por qué solo navegadores? ¿Por qué no el escritorio entero? Hacerlo colaborativo. Multi-cursor para que todos trabajen al mismo tiempo. Un sandbox donde los agentes de IA puedan hacer cosas de verdad.",
+      "present": "Eso es Cyqle hoy. Una computadora en la nube, realmente multijugador, con IA integrada."
     },
     "solution": {
-      "badge": "Qué Es Realmente",
-      "title": "Un Escritorio Linux Completo Que No Desaparece",
-      "paragraph1": "Cyqle es un entorno Linux real en la nube. Pero en lugar de que una persona conduzca mientras otros miran, todos trabajan simultáneamente. Múltiples personas escribiendo en paralelo, cada una con su propio cursor y foco de ventana.",
-      "paragraph2": "No es compartir pantalla. No es una VM a la que te conectas solo por SSH. Es un ordenador genuinamente multijugador que puedes iniciar en segundos, colaborar en tiempo real, luego cerrar—o persistir y reanudar desde cualquier dispositivo.",
+      "badge": "Qué es realmente",
+      "title": "Un escritorio Linux completo que no desaparece",
+      "paragraph1": "Cyqle es un entorno Linux real en la nube. Pero en lugar de que uno maneje y los demás miren, todos trabajan al mismo tiempo. Varias personas escribiendo en paralelo, cada una con su cursor y ventana.",
+      "paragraph2": "No es compartir pantalla. No es una VM a la que te conectas por SSH. Es una computadora realmente multijugador que arrancas en segundos, colaboras en vivo, después cerrás—o guardas y retomas desde donde sea.",
       "realityCheck": "Se acabó:",
       "painPoints": [
         "\"¿Ven mi pantalla?\" (ya están ahí)",
-        "Describir errores por chat (solo invítalos)",
-        "\"Funciona en mi máquina\" (usa la misma máquina)",
-        "Reconstruir entornos de demostración (haz snapshots y reutilízalos)",
-        "Escribir scripts de automatización para tareas simples (solo grábalo)"
+        "Describir errores por chat (mejor invítalos)",
+        "\"En mi máquina funciona\" (usen la misma máquina)",
+        "Reconstruir ambientes de demo (hacé snapshots y reutilizalos)",
+        "Escribir scripts para tareas simples (grabalo y listo)"
       ]
     },
     "difference": {
-      "badge": "Realidad Técnica",
-      "title": "Por Qué Esto No Ha Existido Antes",
-      "intro": "Construir un escritorio cloud multijugador no es solo difícil—es un montón de problemas difíciles que nadie quería resolver:",
+      "badge": "Realidad técnica",
+      "title": "Por qué esto no existía antes",
+      "intro": "Hacer un escritorio multijugador en la nube no es solo difícil—son muchos problemas complicados que nadie quería resolver:",
       "challenges": [
-        "Streaming P2P verdadero sin cuellos de botella de servidor central",
-        "Aprovisionamiento instantáneo sin la sobrecarga de virtualización tradicional",
-        "Soporte multi-cursor a nivel de sistema (la mayoría de plataformas no están diseñadas para esto)",
-        "Aislamiento por sesión sin complejidad de contenedores anidados",
-        "Cifrado que realmente destruye los datos cuando cierras una sesión efímera"
+        "Streaming P2P real sin que un servidor sea cuello de botella",
+        "Arranque instantáneo sin la pesadez de virtualización tradicional",
+        "Multi-cursor a nivel de sistema (la mayoría de plataformas no están diseñadas para esto)",
+        "Aislamiento por sesión sin la complejidad de contenedores anidados",
+        "Cifrado que realmente destruye los datos cuando cerrás una sesión efímera"
       ],
-      "conclusion": "Pasamos años resolviendo estos problemas para que no tengas que pensar en ellos. Solo obtienes un ordenador que funciona, en la nube, con todo tu equipo trabajando en él a la vez."
+      "conclusion": "Pasamos años resolviendo esto para que no tengas que pensarlo. Solo tenés una computadora que funciona, en la nube, con todo el equipo trabajando al mismo tiempo."
     },
     "forWhom": {
-      "badge": "¿Es Para Ti?",
-      "title": "Amarás Cyqle Si:",
+      "badge": "¿Es para vos?",
+      "title": "Te va a servir si:",
       "items": [
-        "Estás cansado de describir errores en lugar de simplemente mostrarlos",
-        "Necesitas integrar a alguien y \"déjame hacerlo contigo\" sería más fácil que explicar",
-        "Estás ejecutando pruebas de navegador y escribir scripts de prueba parece excesivo",
-        "Quieres un entorno de demostración limpio y desechable que no filtre datos de clientes",
-        "Compartir pantalla se siente como trabajar con una mano atada a la espalda",
-        "\"Funciona en mi máquina\" te ha mordido más de una vez",
-        "Alguna vez has querido colaborar en la misma terminal sin compartir sesiones complejas"
+        "Estás cansado de describir errores en vez de mostrarlos directamente",
+        "Necesitas entrenar a alguien y \"hacelo conmigo\" es más fácil que explicar",
+        "Estás probando navegadores y escribir scripts de test parece demasiado",
+        "Querés un ambiente de demo limpio y descartable sin riesgo de filtrar datos",
+        "Compartir pantalla se siente como trabajar con una mano atada",
+        "\"En mi máquina funciona\" te pasó más de una vez",
+        "Alguna vez quisiste colaborar en la misma terminal sin configurar SSH compartido",
+        "Estás construyendo agentes de IA y necesitás un sandbox seguro para desplegarlos"
       ]
     },
     "vision": {
-      "badge": "Hacia Dónde Vamos",
-      "title": "El Futuro Que Estamos Construyendo",
-      "intro": "Creemos que el futuro del trabajo no se trata de mejores videollamadas. Se trata de contexto compartido. Entornos efímeros que creas para una tarea y desechas. Automatización que no requiere títulos de ingeniería.",
+      "badge": "Hacia dónde vamos",
+      "title": "El futuro que estamos construyendo",
+      "intro": "Creemos que el futuro del trabajo no es mejores videollamadas. Es contexto compartido. Entornos efímeros que creás para una tarea y descartás. Automatización que no necesita un título de ingeniería.",
       "future": [
-        "Los equipos colaboran en la misma máquina sin fricción ni lag",
-        "Los agentes de IA trabajan junto a humanos, manejando tareas repetitivas mientras te enfocas en lo que importa",
-        "Tu entorno de trabajo es tan portátil como tu email—accede desde cualquier lugar, exactamente como lo dejaste",
-        "La seguridad no significa bloquear a las personas—significa entornos aislados que desaparecen cuando terminas"
+        "Equipos colaborando en la misma máquina sin fricción ni lag",
+        "Agentes de IA trabajando junto a humanos, haciendo lo repetitivo mientras vos te enfocás en lo importante",
+        "Tu entorno de trabajo tan portable como tu email—accedés desde donde sea, justo como lo dejaste",
+        "Seguridad que no bloquea personas—solo entornos aislados que desaparecen cuando terminás"
       ]
     },
     "cta": {
-      "title": "Véelo Tú Mismo",
-      "description": "Ofrecemos un nivel gratuito. Sin tarjeta de crédito. Inicia una sesión, invita a un compañero y experimenta cómo se siente la verdadera colaboración en tiempo real.",
-      "button": "Prueba Cyqle Gratis"
+      "title": "Probalo vos mismo",
+      "description": "Hay un plan gratis. Sin tarjeta. Arrancá una sesión, invita a alguien del equipo y experimentá cómo se siente colaborar en tiempo real de verdad.",
+      "button": "Probar Cyqle gratis"
     }
   },
   "privacyPolicy": {
