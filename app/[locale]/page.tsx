@@ -65,13 +65,15 @@ export default async function Home({ params: { locale } }: Props) {
       <AnimatedSection className="relative z-10 min-h-screen overflow-hidden flex items-center">
         <HeroBackground />
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center gap-6 text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#FF7600] mb-6 break-words hyphens-none">
-            <RotatingPhrase
-              phrases={[heroT('titlePhrase1'), heroT('titlePhrase2'), heroT('titlePhrase3')]}
-              className="text-[#FF7600]"
-            />
-          </h1>
-          <p className="text-xl md:text-2xl mb-10 text-slate-200 font-semibold max-w-4xl">
+          <div className="h-[8rem] sm:h-[6rem] md:h-[7rem] flex items-center justify-center w-full px-2">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#FF7600]">
+              <RotatingPhrase
+                phrases={[heroT('titlePhrase1'), heroT('titlePhrase2'), heroT('titlePhrase3')]}
+                className="text-[#FF7600]"
+              />
+            </h1>
+          </div>
+          <p className="text-xl md:text-2xl mb-10 text-slate-200 font-semibold max-w-4xl mt-2 [text-wrap:balance]">
             {(() => {
               const desc = heroT('description').split('.').filter(Boolean);
 
