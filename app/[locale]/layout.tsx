@@ -7,6 +7,7 @@ import { notFound } from 'next/navigation';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/components/language-provider';
+import SchemaJsonLd from '@/components/schema-jsonld';
 import {
   formatDetection,
   robotsConfig,
@@ -39,7 +40,7 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(siteMetadata.siteUrl),
     title: {
-      template: `%s | ${siteMetadata.name}`,
+      template: `${siteMetadata.name} | %s`,
       default: t('title'),
     },
     description: t('description'),
@@ -77,10 +78,15 @@ export async function generateMetadata({
       images: [siteMetadata.socialImage],
     },
     robots: robotsConfig,
-    themeColor: siteMetadata.themeColor,
     other: {
       'og:logo': '/logo-up.png',
     },
+  };
+}
+
+export function generateViewport() {
+  return {
+    themeColor: siteMetadata.themeColor,
   };
 }
 
@@ -94,6 +100,7 @@ export default async function RootLayout({ children, params: { locale } }: Props
   return (
     <html lang={locale} className="dark">
       <body className={inter.className}>
+        <SchemaJsonLd />
         <ThemeProvider>
           <LanguageProvider messages={messages} locale={locale}>
             {children}
