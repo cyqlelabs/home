@@ -17,6 +17,8 @@ export default function RotatingPhrase({
   const [isAnimating, setIsAnimating] = useState(false);
   const [charOpacities, setCharOpacities] = useState<number[]>(Array(phrases[0].length).fill(1));
   const [charYOffsets, setCharYOffsets] = useState<number[]>(Array(phrases[0].length).fill(0));
+  const [charXOffsets, setCharXOffsets] = useState<number[]>(Array(phrases[0].length).fill(0));
+  const [charRotations, setCharRotations] = useState<number[]>(Array(phrases[0].length).fill(0));
   const [charScales, setCharScales] = useState<number[]>(Array(phrases[0].length).fill(1));
   const [charBlurs, setCharBlurs] = useState<number[]>(Array(phrases[0].length).fill(0));
   const currentIndexRef = useRef(0);
@@ -68,12 +70,12 @@ export default function RotatingPhrase({
           if (currentStep > settleStep && i < targetPhrase.length) {
             return 1;
           }
-          // Smooth opacity pulsing
+          // Smooth opacity pulsing (more dramatic for ghostly effect)
           const charProgress = Math.min(currentStep / settleStep, 1);
           const intensity = Math.sin(charProgress * Math.PI);
-          const wave = Math.sin((currentStep + i * 3) * 0.6);
-          // Oscillate between 0.6 and 1.0
-          return 0.8 + wave * 0.2 * intensity;
+          const wave = Math.sin((currentStep + i * 3) * 0.5);
+          // Oscillate between 0.5 and 1.0
+          return 0.75 + wave * 0.25 * intensity;
         });
 
         // Generate vertical offsets (Matrix-style glitch with sinusoidal easing)
@@ -91,17 +93,47 @@ export default function RotatingPhrase({
           return direction * intensity * 8;
         });
 
+        // Generate horizontal offsets (water wave effect)
+        const xOffsets = Array.from({ length: maxLength }, (_, i) => {
+          const settleStep = i * 1.2 + 5;
+          if (currentStep > settleStep && i < targetPhrase.length) {
+            return 0;
+          }
+          // Calculate progress for this character (0 to 1)
+          const charProgress = Math.min(currentStep / settleStep, 1);
+          // Sinusoidal intensity for smooth water-like motion
+          const intensity = Math.sin(charProgress * Math.PI);
+          // Wave motion with offset for ripple effect (slower, more visible)
+          const wave = Math.sin(currentStep * 0.4 + i * 0.6);
+          return wave * intensity * 8;
+        });
+
+        // Generate rotation (water flow tilt)
+        const rotations = Array.from({ length: maxLength }, (_, i) => {
+          const settleStep = i * 1.2 + 5;
+          if (currentStep > settleStep && i < targetPhrase.length) {
+            return 0;
+          }
+          // Calculate progress for this character (0 to 1)
+          const charProgress = Math.min(currentStep / settleStep, 1);
+          // Rotation intensity
+          const intensity = Math.sin(charProgress * Math.PI);
+          // Rotation following horizontal wave (more pronounced)
+          const wave = Math.sin(currentStep * 0.4 + i * 0.6);
+          return wave * intensity * 15;
+        });
+
         // Generate scale variations with smooth easing
         const scales = Array.from({ length: maxLength }, (_, i) => {
           const settleStep = i * 1.2 + 5;
           if (currentStep > settleStep && i < targetPhrase.length) {
             return 1;
           }
-          // Smooth sinusoidal scale pulsing
+          // Smooth sinusoidal scale pulsing (more pronounced for fluid effect)
           const charProgress = Math.min(currentStep / settleStep, 1);
           const intensity = Math.sin(charProgress * Math.PI);
-          const wave = Math.sin((currentStep + i * 2) * 0.4);
-          return 1 + wave * 0.15 * intensity;
+          const wave = Math.sin((currentStep + i * 2) * 0.35);
+          return 1 + wave * 0.25 * intensity;
         });
 
         // Generate blur amounts with smooth easing
@@ -113,13 +145,15 @@ export default function RotatingPhrase({
           // Blur intensity follows smooth curve
           const charProgress = Math.min(currentStep / settleStep, 1);
           const intensity = Math.sin(charProgress * Math.PI);
-          return intensity * 2;
+          return intensity * 4;
         });
 
         displayTextRef.current = randomText;
         setDisplayText(randomText);
         setCharOpacities(opacities);
         setCharYOffsets(yOffsets);
+        setCharXOffsets(xOffsets);
+        setCharRotations(rotations);
         setCharScales(scales);
         setCharBlurs(blurs);
         currentStep++;
@@ -130,6 +164,8 @@ export default function RotatingPhrase({
         setDisplayText(targetPhrase);
         setCharOpacities(Array(targetPhrase.length).fill(1));
         setCharYOffsets(Array(targetPhrase.length).fill(0));
+        setCharXOffsets(Array(targetPhrase.length).fill(0));
+        setCharRotations(Array(targetPhrase.length).fill(0));
         setCharScales(Array(targetPhrase.length).fill(1));
         setCharBlurs(Array(targetPhrase.length).fill(0));
         setIsAnimating(false);
@@ -158,6 +194,8 @@ export default function RotatingPhrase({
     <span className={className}>
       {displayText.split('').map((char, index) => {
         const yOffset = charYOffsets[index] ?? 0;
+        const xOffset = charXOffsets[index] ?? 0;
+        const rotation = charRotations[index] ?? 0;
         const scale = charScales[index] ?? 1;
         const blur = charBlurs[index] ?? 0;
         return (
@@ -166,8 +204,8 @@ export default function RotatingPhrase({
             className="inline-block"
             style={{
               opacity: charOpacities[index] ?? 1,
-              transform: `translateY(${yOffset}px) scale(${scale})`,
-              filter: blur > 0.3 ? `blur(${blur}px)` : undefined,
+              transform: `translateX(${xOffset}px) translateY(${yOffset}px) rotate(${rotation}deg) scale(${scale})`,
+              filter: blur > 0.1 ? `blur(${blur}px)` : undefined,
               transition:
                 'opacity 0.08s ease-in-out, transform 0.08s ease-in-out, filter 0.08s ease-in-out',
             }}
