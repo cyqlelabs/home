@@ -21,6 +21,7 @@ export default function RotatingPhrase({
   const [charRotations, setCharRotations] = useState<number[]>(Array(phrases[0].length).fill(0));
   const [charScales, setCharScales] = useState<number[]>(Array(phrases[0].length).fill(1));
   const [charBlurs, setCharBlurs] = useState<number[]>(Array(phrases[0].length).fill(0));
+  const [enableTransitions, setEnableTransitions] = useState(true);
   const currentIndexRef = useRef(0);
   const animationRef = useRef<NodeJS.Timeout | null>(null);
   const displayTextRef = useRef(phrases[0]);
@@ -32,148 +33,75 @@ export default function RotatingPhrase({
     }
 
     setIsAnimating(true);
-    const currentText = displayTextRef.current;
 
-    // Build character set from both current and target phrases
-    const charSet = Array.from(new Set([...currentText, ...targetPhrase].filter((c) => c !== ' ')));
+    // Disable transitions to instantly set initial state
+    setEnableTransitions(false);
 
-    const maxLength = Math.max(currentText.length, targetPhrase.length);
-    const steps = 25; // Number of random character iterations
+    // Update text and initial animation state together
+    displayTextRef.current = targetPhrase;
+    setDisplayText(targetPhrase);
+    setCharOpacities(Array(targetPhrase.length).fill(0));
+    setCharYOffsets(Array(targetPhrase.length).fill(-6));
+    setCharXOffsets(Array(targetPhrase.length).fill(0));
+    setCharRotations(Array(targetPhrase.length).fill(0));
+    setCharScales(Array(targetPhrase.length).fill(0.95));
+    setCharBlurs(Array(targetPhrase.length).fill(0));
+
+    const steps = 30; // Smooth wave animation steps
     let currentStep = 0;
 
     const animate = () => {
       if (currentStep < steps) {
-        // Generate random characters with cascading settle effect
-        const randomText = Array.from({ length: maxLength }, (_, i) => {
-          // Each character settles at a different time (wave from left to right)
-          const settleStep = i * 1.2 + 5; // Characters settle progressively
-
-          // If this character has settled, show the target character
-          if (currentStep > settleStep && i < targetPhrase.length) {
-            return targetPhrase[i];
-          }
-
-          // Otherwise show random character from the character set (slot spinning)
-          if (i < targetPhrase.length) {
-            if (targetPhrase[i] === ' ') {
-              return ' ';
-            }
-            return charSet[Math.floor(Math.random() * charSet.length)];
-          }
-          return '';
-        }).join('');
-
-        // Generate opacities with sinusoidal easing
-        const opacities = Array.from({ length: maxLength }, (_, i) => {
-          // Settled characters are always visible
-          const settleStep = i * 1.2 + 5;
-          if (currentStep > settleStep && i < targetPhrase.length) {
-            return 1;
-          }
-          // Smooth opacity pulsing (more dramatic for ghostly effect)
-          const charProgress = Math.min(currentStep / settleStep, 1);
-          const intensity = Math.sin(charProgress * Math.PI);
-          const wave = Math.sin((currentStep + i * 3) * 0.5);
-          // Oscillate between 0.5 and 1.0
-          return 0.75 + wave * 0.25 * intensity;
+        // Wave progresses from left to right with staggered timing
+        const opacities = Array.from({ length: targetPhrase.length }, (_, i) => {
+          // Each character starts fading in at a different time
+          const charDelay = i * 0.8; // Stagger amount
+          const progress = Math.max(0, Math.min(1, (currentStep - charDelay) / 15));
+          // Smooth ease-in-out
+          return progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
         });
 
-        // Generate vertical offsets (Matrix-style glitch with sinusoidal easing)
-        const yOffsets = Array.from({ length: maxLength }, (_, i) => {
-          const settleStep = i * 1.2 + 5;
-          if (currentStep > settleStep && i < targetPhrase.length) {
-            return 0;
-          }
-          // Calculate progress for this character (0 to 1)
-          const charProgress = Math.min(currentStep / settleStep, 1);
-          // Sinusoidal intensity that peaks in the middle and eases out
-          const intensity = Math.sin(charProgress * Math.PI);
-          // Random direction with smooth easing
-          const direction = Math.sin((currentStep + i) * 0.5) * 2 + (Math.random() - 0.5);
-          return direction * intensity * 8;
+        // Subtle vertical wave motion
+        const yOffsets = Array.from({ length: targetPhrase.length }, (_, i) => {
+          const charDelay = i * 0.8;
+          const progress = Math.max(0, Math.min(1, (currentStep - charDelay) / 15));
+          // Gentle upward movement that settles
+          const eased = 1 - Math.pow(1 - progress, 3);
+          return (1 - eased) * -6;
         });
 
-        // Generate horizontal offsets (water wave effect)
-        const xOffsets = Array.from({ length: maxLength }, (_, i) => {
-          const settleStep = i * 1.2 + 5;
-          if (currentStep > settleStep && i < targetPhrase.length) {
-            return 0;
-          }
-          // Calculate progress for this character (0 to 1)
-          const charProgress = Math.min(currentStep / settleStep, 1);
-          // Sinusoidal intensity for smooth water-like motion
-          const intensity = Math.sin(charProgress * Math.PI);
-          // Wave motion with offset for ripple effect (slower, more visible)
-          const wave = Math.sin(currentStep * 0.4 + i * 0.6);
-          return wave * intensity * 8;
+        // Very subtle scale effect
+        const scales = Array.from({ length: targetPhrase.length }, (_, i) => {
+          const charDelay = i * 0.8;
+          const progress = Math.max(0, Math.min(1, (currentStep - charDelay) / 15));
+          // Gentle scale from 0.95 to 1
+          const eased =
+            progress < 0.5 ? 2 * progress * progress : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+          return 0.95 + eased * 0.05;
         });
 
-        // Generate rotation (water flow tilt)
-        const rotations = Array.from({ length: maxLength }, (_, i) => {
-          const settleStep = i * 1.2 + 5;
-          if (currentStep > settleStep && i < targetPhrase.length) {
-            return 0;
-          }
-          // Calculate progress for this character (0 to 1)
-          const charProgress = Math.min(currentStep / settleStep, 1);
-          // Rotation intensity
-          const intensity = Math.sin(charProgress * Math.PI);
-          // Rotation following horizontal wave (more pronounced)
-          const wave = Math.sin(currentStep * 0.4 + i * 0.6);
-          return wave * intensity * 15;
-        });
-
-        // Generate scale variations with smooth easing
-        const scales = Array.from({ length: maxLength }, (_, i) => {
-          const settleStep = i * 1.2 + 5;
-          if (currentStep > settleStep && i < targetPhrase.length) {
-            return 1;
-          }
-          // Smooth sinusoidal scale pulsing (more pronounced for fluid effect)
-          const charProgress = Math.min(currentStep / settleStep, 1);
-          const intensity = Math.sin(charProgress * Math.PI);
-          const wave = Math.sin((currentStep + i * 2) * 0.35);
-          return 1 + wave * 0.25 * intensity;
-        });
-
-        // Generate blur amounts with smooth easing
-        const blurs = Array.from({ length: maxLength }, (_, i) => {
-          const settleStep = i * 1.2 + 5;
-          if (currentStep > settleStep && i < targetPhrase.length) {
-            return 0;
-          }
-          // Blur intensity follows smooth curve
-          const charProgress = Math.min(currentStep / settleStep, 1);
-          const intensity = Math.sin(charProgress * Math.PI);
-          return intensity * 4;
-        });
-
-        displayTextRef.current = randomText;
-        setDisplayText(randomText);
         setCharOpacities(opacities);
         setCharYOffsets(yOffsets);
-        setCharXOffsets(xOffsets);
-        setCharRotations(rotations);
         setCharScales(scales);
-        setCharBlurs(blurs);
         currentStep++;
-        animationRef.current = setTimeout(animate, 50);
+        animationRef.current = setTimeout(animate, 40);
       } else {
-        // Final state: show exact target phrase
-        displayTextRef.current = targetPhrase;
-        setDisplayText(targetPhrase);
+        // Final state: everything settled
         setCharOpacities(Array(targetPhrase.length).fill(1));
         setCharYOffsets(Array(targetPhrase.length).fill(0));
-        setCharXOffsets(Array(targetPhrase.length).fill(0));
-        setCharRotations(Array(targetPhrase.length).fill(0));
         setCharScales(Array(targetPhrase.length).fill(1));
-        setCharBlurs(Array(targetPhrase.length).fill(0));
         setIsAnimating(false);
         animationRef.current = null;
       }
     };
 
-    animate();
+    // Re-enable transitions and start animation on next frame
+    requestAnimationFrame(() => {
+      setEnableTransitions(true);
+      requestAnimationFrame(() => {
+        animate();
+      });
+    });
   }, []);
 
   useEffect(() => {
@@ -217,10 +145,10 @@ export default function RotatingPhrase({
                 className="inline-block will-change-transform"
                 style={{
                   opacity: charOpacities[index] ?? 1,
-                  transform: `translateX(${xOffset}px) translateY(${yOffset}px) rotate(${rotation}deg) scale(${scale})`,
-                  filter: blur > 0.1 ? `blur(${blur}px)` : undefined,
-                  transition:
-                    'opacity 0.08s ease-in-out, transform 0.08s ease-in-out, filter 0.08s ease-in-out',
+                  transform: `translateY(${yOffset}px) scale(${scale})`,
+                  transition: enableTransitions
+                    ? 'opacity 0.15s ease-in-out, transform 0.15s ease-in-out'
+                    : 'none',
                 }}
               >
                 {char}
