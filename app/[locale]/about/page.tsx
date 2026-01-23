@@ -5,6 +5,8 @@ import AnimatedSection from '@/components/animated-section';
 import ParallaxBackground from '@/components/parallax-background';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { type Metadata } from 'next';
+import { getSEOAlternates, type SiteLocale } from '@/lib/site-metadata';
 import {
   Network,
   Zap,
@@ -20,6 +22,17 @@ import {
 type Props = {
   params: { locale: string };
 };
+
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'aboutPage' });
+  const alternates = getSEOAlternates(locale as SiteLocale, '/about');
+  return {
+    title: t('hero.title'),
+    description: t('hero.description'),
+    alternates,
+  };
+}
 
 export default async function AboutPage({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);

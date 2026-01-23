@@ -9,8 +9,6 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/components/language-provider';
 import {
   formatDetection,
-  getCanonicalPath,
-  languageAlternates,
   robotsConfig,
   siteIcons,
   siteMetadata,
@@ -35,15 +33,11 @@ export async function generateMetadata({
   }
 
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  const canonicalPath = getCanonicalPath(locale);
   const localeTag = locale === 'es' ? 'es_ES' : 'en_US';
+  const rootPath = `/${locale}/`;
 
   return {
     metadataBase: new URL(siteMetadata.siteUrl),
-    alternates: {
-      canonical: canonicalPath,
-      languages: languageAlternates,
-    },
     title: {
       template: `%s | ${siteMetadata.name}`,
       default: t('title'),
@@ -61,7 +55,7 @@ export async function generateMetadata({
     openGraph: {
       type: 'website',
       locale: localeTag,
-      url: new URL(canonicalPath, siteMetadata.siteUrl).toString(),
+      url: new URL(rootPath, siteMetadata.siteUrl).toString(),
       siteName: siteMetadata.name,
       title: t('title'),
       description: t('description'),

@@ -67,3 +67,21 @@ export const getCanonicalPath = (locale?: SiteLocale) => {
 
   return `/${locale}/`;
 };
+
+export const getSEOAlternates = (locale: SiteLocale, path: string = '') => {
+  const cleanPath = path === '/' ? '' : path.startsWith('/') ? path : `/${path}`;
+
+  const languages: Record<string, string> = {
+    'x-default': `/en${cleanPath}`,
+  };
+
+  siteMetadata.locales.forEach((l) => {
+    const langTag = l === 'en' ? 'en-US' : 'es-ES';
+    languages[langTag] = `/${l}${cleanPath}`;
+  });
+
+  return {
+    canonical: `/${locale}${cleanPath}`,
+    languages,
+  };
+};

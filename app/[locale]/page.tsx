@@ -1,4 +1,6 @@
 import { Button } from '@/components/ui/button';
+import { type Metadata } from 'next';
+import Image from 'next/image';
 import {
   ChevronRight,
   Cloud,
@@ -29,10 +31,18 @@ import PricingSection from '@/components/pricing-section';
 import TrackedLink from '@/components/tracked-link';
 import TrackedButton from '@/components/tracked-button';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { getSEOAlternates, type SiteLocale } from '@/lib/site-metadata';
 
 type Props = {
   params: { locale: string };
 };
+
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+  const alternates = getSEOAlternates(locale as SiteLocale, '/');
+  return {
+    alternates,
+  };
+}
 
 export default async function Home({ params: { locale } }: Props) {
   // Enable static rendering
@@ -232,8 +242,10 @@ export default async function Home({ params: { locale } }: Props) {
               </Button>
             </div>
             <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
-              <img
-                src="/placeholder.svg?height=600&width=800"
+              <Image
+                src="/placeholder.svg"
+                width={800}
+                height={600}
                 alt="AI automation interface"
                 className="w-full h-auto"
               />
