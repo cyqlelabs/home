@@ -8,7 +8,13 @@ interface TrackedLinkProps {
   onClick?: () => void;
   children: ReactNode;
   className?: string;
-  trackingKey: 'bookDemo' | 'ctaStartTrial' | 'ctaScheduleDemo';
+  trackingKey:
+    | 'bookDemo'
+    | 'ctaStartTrial'
+    | 'ctaScheduleDemo'
+    | 'aboutPageCTA'
+    | 'powerOnButton'
+    | 'navbarTryForFree';
 }
 
 export default function TrackedLink({

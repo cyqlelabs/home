@@ -90,6 +90,17 @@ export const trackCTA = {
       event_callback: callback,
     });
   },
+
+  aboutPageCTA: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'CTA',
+      event_label: 'Try Cyqle Free - About Page',
+      button_location: 'about_page_cta',
+      button_text: 'Try Cyqle Free',
+      destination: 'https://app.cyqle.in',
+      event_callback: callback,
+    });
+  },
 };
 
 // Helper function for links that navigate away - ensures tracking completes before navigation

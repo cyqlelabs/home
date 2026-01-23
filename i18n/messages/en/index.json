@@ -115,7 +115,7 @@
   },
   "cta": {
     "title": "Your Team's Computer in the Cloud.",
-    "description": "Experience the speed of P2P streaming combined with the power of a persistent cloud desktop. Work together, anywhere.",
+    "description": "Experience direct P2P collaboration combined with the power of a persistent cloud desktop. Work together, anywhere.",
     "startTrial": "Get Started Now",
     "scheduleDemo": "Schedule a Demo",
     "trialInfo": "15-minute free sessions. No credit card required."
@@ -243,49 +243,93 @@
   },
   "aboutPage": {
     "hero": {
-      "title": "The P2P Cloud Desktop",
-      "description": "A persistent cloud computer designed for teams to build, test, and automate together."
+      "title": "True Multiplayer Work",
+      "subtitle": "We built this because we were tired of saying \"Can you see my screen?\" and because \"it works on my machine\" shouldn't be a punchline."
     },
-    "mission": {
-      "title": "Building the Future of Collaboration",
-      "content": "Cyqle provides a foundational solution to challenges like environment drift, collaboration lag, and security gaps by offering a secure, persistent computer in the cloud for real-time collaboration."
+    "problem": {
+      "badge": "The Problem",
+      "title": "You've Been in This Meeting",
+      "intro": "Someone shares their screen...",
+      "scenario1": "Someone shares their screen. \"Can everyone see this?\" Half the team is multitasking. The other half is watching passively. Nobody's actually engaged because watching someone else work is fundamentally boring.",
+      "scenario2": "Or worse: You're debugging with a teammate over Slack. They describe what they're seeing. You paste terminal commands. Twenty messages later, you're both frustrated and the bug is still there.",
+      "scenario3": "Or: You're setting up a demo environment. Again. For the third time this week. Because the last one disappeared when you closed your laptop.",
+      "truth": "The tools we use for collaboration were revolutionary in 2010. But it's 2026, and we're still taking turns with a single cursor like it's a microphone at a karaoke bar."
     },
-    "features": {
-      "title": "Key Features & Architecture",
-      "p2p": {
-        "title": "P2P Real-Time Sync",
-        "description": "Direct peer-to-peer (P2P) streaming provides fluid, real-time collaboration, differing from traditional screen sharing by avoiding central server routing."
-      },
-      "provisioning": {
-        "title": "Instant Provisioning",
-        "description": "Fully configured, isolated Linux desktop environments for development, testing, or demos can be spun up in seconds."
-      },
-      "persistence": {
-        "title": "Persistent & Portable",
-        "description": "A real Linux environment in the cloud allowing users to pause work on one device and resume on any other, exactly as they left it."
-      },
-      "automation": {
-        "title": "Integrated Automation",
-        "description": "Includes built-in recording capabilities and acts as a sandbox for deploying custom AI agents to automate repetitive web tasks."
-      }
+    "insight": {
+      "badge": "The Shift",
+      "title": "What If You Didn't Have to Take Turns?",
+      "questions": [
+        "What if instead of sharing your screen, you shared your entire computer—and everyone could type at the same time?",
+        "What if your environment didn't vanish when you closed your laptop?",
+        "What if reproducing a bug didn't require 15 screenshots and a Loom video?",
+        "What if browser automation didn't require writing code?"
+      ],
+      "answer": "That's why Cyqle exists."
     },
-    "isolation": {
-      "title": "Lightweight Isolation & Security",
-      "description": "Cyqle uses advanced lightweight containerization to provide instant isolation with minimal overhead, ensuring each session remains secure and independent.",
-      "points": [
-        "Complete process isolation for every session",
-        "Layered filesystem for private, ephemeral environments",
-        "Granular resource control to ensure consistent performance"
+    "story": {
+      "badge": "Origin Story",
+      "title": "How This Started",
+      "year2017": "Back in 2017, I was working at a startup that needed to automate interactions with third-party websites. We built an API that could spawn browsers and run scripts—login flows, data extraction, UI automation.",
+      "pivot": "The startup shut down. But I kept building because the core idea felt valuable.",
+      "year2025": "Fast forward to 2025. AI agents were everywhere. I thought: what if this browser automation platform had AI built in? Users could record their workflows and let AI handle the messy parts—adapting to website changes, dealing with errors, completing the task.",
+      "realization": "Then I realized: why limit this to browsers? Why not offer the full desktop? Make it collaborative. Add multi-cursor support so teams can work in parallel. Make it a sandbox where AI agents can actually do things.",
+      "present": "That's Cyqle today. A genuinely multiplayer cloud computer with AI automation baked in."
+    },
+    "solution": {
+      "badge": "What It Actually Is",
+      "title": "A Full Linux Desktop That Doesn't Disappear",
+      "paragraph1": "Cyqle is a real Linux environment in the cloud. But instead of one person driving while others watch, everyone works simultaneously. Multiple people typing in parallel, each with their own cursor and window focus.",
+      "paragraph2": "It's not screen sharing. It's not a VM you SSH into alone. It's a genuinely multiplayer computer that you can spin up in seconds, collaborate on in real-time, then close—or persist and resume from any device.",
+      "realityCheck": "No more:",
+      "painPoints": [
+        "\"Can you see my screen?\" (they're already there)",
+        "Describing bugs over chat (just invite them in)",
+        "\"It works on my machine\" (use the same machine)",
+        "Rebuilding demo environments (snapshot and reuse them)",
+        "Writing automation scripts for simple tasks (just record it)"
       ]
     },
-    "useCases": {
-      "title": "Empowering Workflows",
+    "difference": {
+      "badge": "Technical Reality",
+      "title": "Why This Hasn't Existed Before",
+      "intro": "Building a multiplayer cloud desktop isn't just hard—it's a stack of hard problems nobody wanted to solve:",
+      "challenges": [
+        "True P2P streaming without central server bottlenecks",
+        "Instant provisioning without the overhead of traditional virtualization",
+        "Multi-cursor support at the system level (most platforms aren't designed for this)",
+        "Per-session isolation without nested container complexity",
+        "Encryption that actually destroys data when you close an ephemeral session"
+      ],
+      "conclusion": "We spent years solving these so you don't have to think about them. You just get a computer that works, in the cloud, with your whole team on it at once."
+    },
+    "forWhom": {
+      "badge": "Is This For You?",
+      "title": "You'll Love Cyqle If:",
       "items": [
-        "Remote Development: Real-time pair programming on a persistent cloud environment.",
-        "Collaborative Support: Guiding users through issues using a secure, shared session.",
-        "QA & Testing: Reproducing and instantly debugging bugs in a shared, clean environment using browser automation to replicate user paths.",
-        "Secure Operations: Accessing internal tools from an isolated cloud desktop without a VPN."
+        "You're tired of describing bugs instead of just showing them",
+        "You need to onboard someone and \"let me just do it with you\" would be easier than explaining",
+        "You're running browser tests and writing test scripts feels like overkill",
+        "You want a clean, disposable demo environment that won't leak customer data",
+        "Screen sharing feels like working with one hand tied behind your back",
+        "\"Works on my machine\" has bitten you more than once",
+        "You've ever wanted to collaborate on the same terminal without complex session sharing"
       ]
+    },
+    "vision": {
+      "badge": "Where We're Going",
+      "title": "The Future We're Building",
+      "intro": "We believe the future of work isn't about better video calls. It's about shared context. Ephemeral environments you spin up for a task and throw away. Automation that doesn't require engineering degrees.",
+      "future": [
+        "Teams collaborate on the same machine without friction or lag",
+        "AI agents work alongside humans, handling repetitive tasks while you focus on what matters",
+        "Your work environment is as portable as your email—access it from anywhere, exactly as you left it",
+        "Security doesn't mean locking people out—it means isolated environments that vanish when you're done"
+      ]
+    },
+    "cta": {
+      "title": "See It Yourself",
+      "description": "We offer a free tier. No credit card. Spin up a session, invite a teammate, and experience what actual real-time collaboration feels like.",
+      "button": "Try Cyqle Free"
     }
   },
   "privacyPolicy": {

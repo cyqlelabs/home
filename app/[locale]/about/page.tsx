@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { type Metadata } from 'next';
 import { getSEOAlternates, type SiteLocale } from '@/lib/site-metadata';
+import TrackedLink from '@/components/tracked-link';
 import {
   Network,
   Zap,
@@ -27,9 +28,49 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   unstable_setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'aboutPage' });
   const alternates = getSEOAlternates(locale as SiteLocale, '/about');
+
+  const title =
+    locale === 'en'
+      ? 'About Cyqle: Multiplayer Cloud Desktop for Real-Time Collaboration'
+      : 'Acerca de Cyqle: Escritorio Cloud Multijugador para Colaboración en Tiempo Real';
+
+  const description =
+    locale === 'en'
+      ? 'Built for teams tired of taking turns. Cyqle is a P2P cloud desktop where everyone types in parallel—multiple people, multiple keyboards, same machine. No more "can you see my screen?" Perfect for remote debugging, pair programming, and real-time collaboration.'
+      : 'Construido para equipos cansados de turnarse. Cyqle es un escritorio cloud P2P donde todos escriben en paralelo—múltiples personas, múltiples teclados, misma máquina. Se acabó el "¿ven mi pantalla?" Perfecto para depuración remota, programación en pareja y colaboración en tiempo real.';
+
   return {
-    title: t('hero.title'),
-    description: t('hero.description'),
+    title,
+    description,
+    keywords: [
+      'multiplayer cloud desktop',
+      'real-time collaboration',
+      'remote pair programming',
+      'screen sharing alternative',
+      'collaborative debugging',
+      'P2P desktop',
+      'multi-cursor workspace',
+      'remote development environment',
+      'cloud collaboration platform',
+      'simultaneous editing',
+      'remote QA testing',
+      'browser automation',
+      'AI automation',
+      'ephemeral environments',
+    ],
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      locale: locale === 'en' ? 'en_US' : 'es_ES',
+      url: `https://cyqle.in/${locale}/about`,
+      siteName: 'Cyqle',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
     alternates,
   };
 }
@@ -45,151 +86,165 @@ export default async function AboutPage({ params: { locale } }: Props) {
 
       {/* Hero Section */}
       <AnimatedSection className="relative z-10 pt-32 pb-20">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF7600]/80 via-[#FF7600] to-[#FF7600]/80 mb-6">
+        <div className="container mx-auto px-4 text-center max-w-5xl">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
             {t('hero.title')}
           </h1>
-          <p className="text-xl md:text-2xl text-slate-200 font-semibold max-w-4xl mx-auto">
-            {t('hero.description')}
-          </p>
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">{t('hero.subtitle')}</p>
         </div>
       </AnimatedSection>
 
-      {/* Mission Section */}
-      <AnimatedSection className="relative z-10 py-16 bg-black/30 backdrop-blur-sm">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <Badge variant="outline" className="mb-4 border-[#FF7600] text-[#FF7600]">
-            {t('mission.title')}
+      {/* Problem Section */}
+      <AnimatedSection className="relative z-10 py-20 bg-black/30 backdrop-blur-sm">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Badge variant="outline" className="mb-6 border-[#FF7600] text-[#FF7600]">
+            {t('problem.badge')}
           </Badge>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed">{t('mission.content')}</p>
-        </div>
-      </AnimatedSection>
-
-      {/* Architecture & Features Grid */}
-      <AnimatedSection className="relative z-10 py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
-            {t('features.title')}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="bg-gray-900/50 border-gray-800">
-              <CardHeader>
-                <Network className="h-10 w-10 text-[#FF7600] mb-4" />
-                <CardTitle className="text-white">{t('features.p2p.title')}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-400 text-base">
-                  {t('features.p2p.description')}
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card className="bg-gray-900/50 border-gray-800">
-              <CardHeader>
-                <Zap className="h-10 w-10 text-[#FF7600] mb-4" />
-                <CardTitle className="text-white">{t('features.provisioning.title')}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-400 text-base">
-                  {t('features.provisioning.description')}
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card className="bg-gray-900/50 border-gray-800">
-              <CardHeader>
-                <HardDrive className="h-10 w-10 text-[#FF7600] mb-4" />
-                <CardTitle className="text-white">{t('features.persistence.title')}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-400 text-base">
-                  {t('features.persistence.description')}
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card className="bg-gray-900/50 border-gray-800">
-              <CardHeader>
-                <Bot className="h-10 w-10 text-[#FF7600] mb-4" />
-                <CardTitle className="text-white">{t('features.automation.title')}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-400 text-base">
-                  {t('features.automation.description')}
-                </CardDescription>
-              </CardContent>
-            </Card>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{t('problem.title')}</h2>
+          <p className="text-gray-400 mb-8 text-lg italic">{t('problem.intro')}</p>
+          <div className="space-y-6">
+            <p className="text-lg text-gray-300 leading-relaxed">{t('problem.scenario1')}</p>
+            <p className="text-lg text-gray-300 leading-relaxed">{t('problem.scenario2')}</p>
+            <p className="text-lg text-gray-300 leading-relaxed">{t('problem.scenario3')}</p>
+            <p className="text-lg text-gray-200 leading-relaxed font-medium mt-8">
+              {t('problem.truth')}
+            </p>
           </div>
         </div>
       </AnimatedSection>
 
-      {/* Isolation Section */}
+      {/* Insight Section */}
+      <AnimatedSection className="relative z-10 py-20">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Badge variant="outline" className="mb-6 border-[#FF7600] text-[#FF7600]">
+            {t('insight.badge')}
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">{t('insight.title')}</h2>
+          <div className="space-y-4 mb-8">
+            {t.raw('insight.questions').map((question: string, i: number) => (
+              <p key={i} className="text-lg text-gray-300 leading-relaxed italic">
+                {question}
+              </p>
+            ))}
+          </div>
+          <p className="text-2xl text-[#FF7600] font-bold">{t('insight.answer')}</p>
+        </div>
+      </AnimatedSection>
+
+      {/* Origin Story Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-gray-900/80 to-black/80">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center text-center mb-12">
-            <ShieldCheck className="h-16 w-16 text-[#FF7600] mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              {t('isolation.title')}
-            </h2>
-            <p className="text-gray-300 max-w-3xl text-lg">{t('isolation.description')}</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div className="bg-gray-800/40 p-6 rounded-lg border border-gray-700">
-              <div className="flex items-center gap-3 mb-3">
-                <Cpu className="h-6 w-6 text-blue-400" />
-                <h3 className="font-semibold text-white">Secure Sandbox</h3>
-              </div>
-              <p className="text-gray-400 text-sm">
-                Every session runs in a dedicated, isolated environment.
-              </p>
-            </div>
-            <div className="bg-gray-800/40 p-6 rounded-lg border border-gray-700">
-              <div className="flex items-center gap-3 mb-3">
-                <Files className="h-6 w-6 text-green-400" />
-                <h3 className="font-semibold text-white">Private Storage</h3>
-              </div>
-              <p className="text-gray-400 text-sm">
-                Session-scoped data remains private and ephemeral.
-              </p>
-            </div>
-            <div className="bg-gray-800/40 p-6 rounded-lg border border-gray-700">
-              <div className="flex items-center gap-3 mb-3">
-                <Server className="h-6 w-6 text-purple-400" />
-                <h3 className="font-semibold text-white">Guaranteed Speed</h3>
-              </div>
-              <p className="text-gray-400 text-sm">
-                Strict resource allocation prevents neighbor interference.
-              </p>
-            </div>
-          </div>
-          <div className="mt-8 text-center">
-            <ul className="inline-block text-left space-y-2">
-              {t.raw('isolation.points').map((point: string, i: number) => (
-                <li key={i} className="flex items-start gap-2 text-gray-300">
-                  <CheckCircle2 className="h-5 w-5 text-[#FF7600] shrink-0 mt-0.5" />
-                  <span>{point}</span>
-                </li>
-              ))}
-            </ul>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Badge variant="outline" className="mb-6 border-[#FF7600] text-[#FF7600]">
+            {t('story.badge')}
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">{t('story.title')}</h2>
+          <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
+            <p>{t('story.year2017')}</p>
+            <p className="text-gray-400 italic">{t('story.pivot')}</p>
+            <p>{t('story.year2025')}</p>
+            <p>{t('story.realization')}</p>
+            <p className="text-white font-semibold">{t('story.present')}</p>
           </div>
         </div>
       </AnimatedSection>
 
-      {/* Use Cases List */}
+      {/* Solution Section */}
       <AnimatedSection className="relative z-10 py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            {t('useCases.title')}
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Badge variant="outline" className="mb-6 border-[#FF7600] text-[#FF7600]">
+            {t('solution.badge')}
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">{t('solution.title')}</h2>
+          <div className="space-y-6 mb-8">
+            <p className="text-lg text-gray-300 leading-relaxed">{t('solution.paragraph1')}</p>
+            <p className="text-lg text-gray-300 leading-relaxed">{t('solution.paragraph2')}</p>
+          </div>
+          <h3 className="text-xl font-semibold text-white mb-4">{t('solution.realityCheck')}</h3>
+          <ul className="space-y-3">
+            {t.raw('solution.painPoints').map((point: string, i: number) => (
+              <li key={i} className="flex items-start gap-3">
+                <CheckCircle2 className="h-5 w-5 text-[#FF7600] shrink-0 mt-1" />
+                <span className="text-gray-300">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </AnimatedSection>
+
+      {/* Technical Difference Section */}
+      <AnimatedSection className="relative z-10 py-20 bg-black/30 backdrop-blur-sm">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Badge variant="outline" className="mb-6 border-[#FF7600] text-[#FF7600]">
+            {t('difference.badge')}
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+            {t('difference.title')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {t.raw('useCases.items').map((item: string, i: number) => (
+          <p className="text-lg text-gray-300 mb-6">{t('difference.intro')}</p>
+          <ul className="space-y-3 mb-8">
+            {t.raw('difference.challenges').map((challenge: string, i: number) => (
+              <li key={i} className="flex items-start gap-3">
+                <div className="h-2 w-2 mt-2.5 rounded-full bg-[#FF7600] shrink-0" />
+                <span className="text-gray-300">{challenge}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-lg text-gray-200 font-medium">{t('difference.conclusion')}</p>
+        </div>
+      </AnimatedSection>
+
+      {/* For Whom Section */}
+      <AnimatedSection className="relative z-10 py-20">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Badge variant="outline" className="mb-6 border-[#FF7600] text-[#FF7600]">
+            {t('forWhom.badge')}
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">{t('forWhom.title')}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {t.raw('forWhom.items').map((item: string, i: number) => (
               <div
                 key={i}
-                className="flex gap-4 p-4 rounded-lg bg-gray-900/30 border border-gray-800 hover:border-[#FF7600]/30 transition-colors"
+                className="flex gap-3 p-4 rounded-lg bg-gray-900/30 border border-gray-800 hover:border-[#FF7600]/30 transition-colors"
               >
-                <div className="h-2 w-2 mt-2.5 rounded-full bg-[#FF7600] shrink-0" />
-                <p className="text-gray-300">{item}</p>
+                <CheckCircle2 className="h-5 w-5 text-[#FF7600] shrink-0 mt-0.5" />
+                <span className="text-gray-300">{item}</span>
               </div>
             ))}
           </div>
+        </div>
+      </AnimatedSection>
+
+      {/* Vision Section */}
+      <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-gray-900/80 to-black/80">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Badge variant="outline" className="mb-6 border-[#FF7600] text-[#FF7600]">
+            {t('vision.badge')}
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">{t('vision.title')}</h2>
+          <p className="text-lg text-gray-300 mb-6 leading-relaxed">{t('vision.intro')}</p>
+          <ul className="space-y-3">
+            {t.raw('vision.future').map((point: string, i: number) => (
+              <li key={i} className="flex items-start gap-3">
+                <CheckCircle2 className="h-5 w-5 text-[#FF7600] shrink-0 mt-1" />
+                <span className="text-gray-300">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </AnimatedSection>
+
+      {/* CTA Section */}
+      <AnimatedSection className="relative z-10 py-20">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">{t('cta.title')}</h2>
+          <p className="text-xl text-gray-300 mb-8">{t('cta.description')}</p>
+          <TrackedLink
+            href="https://app.cyqle.in"
+            trackingKey="aboutPageCTA"
+            className="inline-block bg-[#FF7600] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#FF7600]/90 transition-colors"
+          >
+            {t('cta.button')}
+          </TrackedLink>
         </div>
       </AnimatedSection>
 
