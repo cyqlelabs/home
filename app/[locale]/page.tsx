@@ -65,10 +65,10 @@ export default async function Home({ params: { locale } }: Props) {
       <AnimatedSection className="relative z-10 min-h-screen overflow-hidden flex items-center">
         <HeroBackground />
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center gap-6 text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
-          <h1 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF7600]/80 via-[#FF7600] to-[#FF7600]/80 mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#FF7600] mb-6">
             <RotatingPhrase
               phrases={[heroT('titlePhrase1'), heroT('titlePhrase2'), heroT('titlePhrase3')]}
-              className="bg-clip-text text-transparent bg-gradient-to-r from-[#FF7600]/80 via-[#FF7600] to-[#FF7600]/80"
+              className="text-[#FF7600]"
             />
           </h1>
           <p className="text-xl md:text-2xl mb-10 text-slate-200 font-semibold max-w-4xl">
