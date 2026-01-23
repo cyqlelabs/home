@@ -191,29 +191,41 @@ export default function RotatingPhrase({
   }, [phrases, interval, animateToPhrase]);
 
   return (
-    <span className={className}>
-      {displayText.split('').map((char, index) => {
-        const yOffset = charYOffsets[index] ?? 0;
-        const xOffset = charXOffsets[index] ?? 0;
-        const rotation = charRotations[index] ?? 0;
-        const scale = charScales[index] ?? 1;
-        const blur = charBlurs[index] ?? 0;
-        return (
-          <span
-            key={index}
-            className="inline-block"
-            style={{
-              opacity: charOpacities[index] ?? 1,
-              transform: `translateX(${xOffset}px) translateY(${yOffset}px) rotate(${rotation}deg) scale(${scale})`,
-              filter: blur > 0.1 ? `blur(${blur}px)` : undefined,
-              transition:
-                'opacity 0.08s ease-in-out, transform 0.08s ease-in-out, filter 0.08s ease-in-out',
-            }}
-          >
-            {char === ' ' ? '\u00A0' : char}
-          </span>
-        );
-      })}
+    <span className={`${className} inline-flex flex-wrap justify-center`}>
+      {displayText.split(' ').map((word, wordIndex) => (
+        <span key={wordIndex} className="inline-flex whitespace-nowrap">
+          {word.split('').map((char, charIndex) => {
+            const index = displayText.split('').findIndex((c, i) => {
+              const wordsBeforeCurrent = displayText.split(' ').slice(0, wordIndex);
+              const charsBeforeWord = wordsBeforeCurrent.reduce((acc, w) => acc + w.length + 1, 0);
+              return i === charsBeforeWord + charIndex;
+            });
+            const yOffset = charYOffsets[index] ?? 0;
+            const xOffset = charXOffsets[index] ?? 0;
+            const rotation = charRotations[index] ?? 0;
+            const scale = charScales[index] ?? 1;
+            const blur = charBlurs[index] ?? 0;
+            return (
+              <span
+                key={charIndex}
+                className="inline-block"
+                style={{
+                  opacity: charOpacities[index] ?? 1,
+                  transform: `translateX(${xOffset}px) translateY(${yOffset}px) rotate(${rotation}deg) scale(${scale})`,
+                  filter: blur > 0.1 ? `blur(${blur}px)` : undefined,
+                  transition:
+                    'opacity 0.08s ease-in-out, transform 0.08s ease-in-out, filter 0.08s ease-in-out',
+                }}
+              >
+                {char}
+              </span>
+            );
+          })}
+          {wordIndex < displayText.split(' ').length - 1 && (
+            <span className="inline-block">&nbsp;</span>
+          )}
+        </span>
+      ))}
     </span>
   );
 }
