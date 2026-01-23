@@ -115,7 +115,7 @@
   },
   "cta": {
     "title": "El ordenador de tu equipo, en la nube.",
-    "description": "Vive la velocidad del streaming P2P combinada con la potencia de un escritorio cloud persistente. Trabajad juntos, desde donde sea.",
+    "description": "Vive la colaboración P2P directa combinada con la potencia de un escritorio cloud persistente. Colabora con tu equipo, desde cualquier lugar.",
     "startTrial": "Empezar Ahora",
     "scheduleDemo": "Agendar Demo",
     "trialInfo": "Sesiones gratuitas de 15 min. Sin tarjeta de crédito."
@@ -243,49 +243,93 @@
   },
   "aboutPage": {
     "hero": {
-      "title": "El Escritorio Cloud P2P",
-      "description": "Un ordenador cloud persistente diseñado para que los equipos construyan, prueben y automaticen juntos."
+      "title": "Colaboración sin turnos",
+      "subtitle": "Construimos esto porque estábamos cansados de preguntar \"¿Ven mi pantalla?\" y porque \"funciona en mi máquina\" no debería ser un chiste."
     },
-    "mission": {
-      "title": "Construyendo el Futuro de la Colaboración",
-      "content": "Cyqle ofrece una solución fundamental a desafíos como la deriva del entorno, el retraso en la colaboración y las brechas de seguridad mediante un ordenador seguro y persistente en la nube para colaboración en tiempo real."
+    "problem": {
+      "badge": "El Problema",
+      "title": "Has Estado en Esta Reunión",
+      "intro": "Alguien comparte su pantalla...",
+      "scenario1": "Alguien comparte su pantalla. \"¿Todos pueden ver esto?\" La mitad del equipo está haciendo otras cosas. La otra mitad observa pasivamente. Nadie está realmente comprometido porque ver a otra persona trabajar es fundamentalmente aburrido.",
+      "scenario2": "O peor: estás depurando con un compañero por Slack. Ellos describen lo que ven. Tú pegas comandos de terminal. Veinte mensajes después, ambos están frustrados y el error sigue ahí.",
+      "scenario3": "O: estás configurando un entorno de demostración. Otra vez. Por tercera vez esta semana. Porque el último desapareció cuando cerraste tu portátil.",
+      "truth": "Las herramientas que usamos para colaborar fueron revolucionarias en 2010. Pero es 2026, y todavía estamos turnándonos con un solo cursor como si fuera un micrófono en un karaoke."
     },
-    "features": {
-      "title": "Características Clave y Arquitectura",
-      "p2p": {
-        "title": "Sincronización P2P en Tiempo Real",
-        "description": "El streaming directo peer-to-peer (P2P) proporciona una colaboración fluida en tiempo real, a diferencia del uso compartido de pantalla tradicional que evita el enrutamiento del servidor central."
-      },
-      "provisioning": {
-        "title": "Aprovisionamiento Instantáneo",
-        "description": "Se pueden crear entornos de escritorio Linux completamente configurados y aislados para desarrollo, pruebas o demostraciones en segundos."
-      },
-      "persistence": {
-        "title": "Persistente y Portátil",
-        "description": "Un entorno Linux real en la nube que permite a los usuarios pausar el trabajo en un dispositivo y reanudarlo en cualquier otro, exactamente como lo dejaron."
-      },
-      "automation": {
-        "title": "Automatización Integrada",
-        "description": "Incluye capacidades de grabación integradas y actúa como un sandbox para desplegar agentes de IA personalizados para automatizar tareas repetitivas web."
-      }
+    "insight": {
+      "badge": "El Cambio",
+      "title": "¿Y Si No Tuvieras Que Turnarte?",
+      "questions": [
+        "¿Qué pasaría si en lugar de compartir tu pantalla, compartieras tu ordenador completo—y todos pudieran escribir al mismo tiempo?",
+        "¿Qué pasaría si tu entorno no desapareciera al cerrar tu portátil?",
+        "¿Qué pasaría si reproducir un error no requiriera 15 capturas de pantalla y un video de Loom?",
+        "¿Qué pasaría si la automatización del navegador no requiriera escribir código?"
+      ],
+      "answer": "Por eso existe Cyqle."
     },
-    "isolation": {
-      "title": "Aislamiento Ligero y Seguridad",
-      "description": "Cyqle utiliza contenerización ligera avanzada para proporcionar un aislamiento instantáneo con una sobrecarga mínima, asegurando que cada sesión sea segura e independiente.",
-      "points": [
-        "Aislamiento completo de procesos para cada sesión",
-        "Sistema de archivos por capas para entornos privados y efímeros",
-        "Control granular de recursos para garantizar un rendimiento constante"
+    "story": {
+      "badge": "Historia de Origen",
+      "title": "Cómo Comenzó Esto",
+      "year2017": "Allá por 2017, trabajaba en una startup que necesitaba automatizar interacciones con sitios web de terceros. Construimos una API que podía generar navegadores y ejecutar scripts—flujos de inicio de sesión, extracción de datos, automatización de UI.",
+      "pivot": "La startup cerró. Pero seguí construyendo porque la idea central parecía valiosa.",
+      "year2025": "Avancemos a 2025. Los agentes de IA estaban en todas partes. Pensé: ¿y si esta plataforma de automatización de navegador tuviera IA integrada? Los usuarios podrían grabar sus flujos de trabajo y dejar que la IA manejara las partes complicadas—adaptarse a cambios de sitios web, manejar errores, completar la tarea.",
+      "realization": "Entonces me di cuenta: ¿por qué limitarlo a navegadores? ¿Por qué no ofrecer el escritorio completo? Hacerlo colaborativo. Añadir soporte multi-cursor para que los equipos puedan trabajar en paralelo. Convertirlo en un sandbox donde los agentes de IA puedan realmente hacer cosas.",
+      "present": "Eso es Cyqle hoy. Un ordenador cloud genuinamente multijugador con automatización de IA integrada."
+    },
+    "solution": {
+      "badge": "Qué Es Realmente",
+      "title": "Un Escritorio Linux Completo Que No Desaparece",
+      "paragraph1": "Cyqle es un entorno Linux real en la nube. Pero en lugar de que una persona conduzca mientras otros miran, todos trabajan simultáneamente. Múltiples personas escribiendo en paralelo, cada una con su propio cursor y foco de ventana.",
+      "paragraph2": "No es compartir pantalla. No es una VM a la que te conectas solo por SSH. Es un ordenador genuinamente multijugador que puedes iniciar en segundos, colaborar en tiempo real, luego cerrar—o persistir y reanudar desde cualquier dispositivo.",
+      "realityCheck": "Se acabó:",
+      "painPoints": [
+        "\"¿Ven mi pantalla?\" (ya están ahí)",
+        "Describir errores por chat (solo invítalos)",
+        "\"Funciona en mi máquina\" (usa la misma máquina)",
+        "Reconstruir entornos de demostración (haz snapshots y reutilízalos)",
+        "Escribir scripts de automatización para tareas simples (solo grábalo)"
       ]
     },
-    "useCases": {
-      "title": "Potenciando Flujos de Trabajo",
+    "difference": {
+      "badge": "Realidad Técnica",
+      "title": "Por Qué Esto No Ha Existido Antes",
+      "intro": "Construir un escritorio cloud multijugador no es solo difícil—es un montón de problemas difíciles que nadie quería resolver:",
+      "challenges": [
+        "Streaming P2P verdadero sin cuellos de botella de servidor central",
+        "Aprovisionamiento instantáneo sin la sobrecarga de virtualización tradicional",
+        "Soporte multi-cursor a nivel de sistema (la mayoría de plataformas no están diseñadas para esto)",
+        "Aislamiento por sesión sin complejidad de contenedores anidados",
+        "Cifrado que realmente destruye los datos cuando cierras una sesión efímera"
+      ],
+      "conclusion": "Pasamos años resolviendo estos problemas para que no tengas que pensar en ellos. Solo obtienes un ordenador que funciona, en la nube, con todo tu equipo trabajando en él a la vez."
+    },
+    "forWhom": {
+      "badge": "¿Es Para Ti?",
+      "title": "Amarás Cyqle Si:",
       "items": [
-        "Desarrollo Remoto: Programación en pareja en tiempo real en un entorno cloud persistente.",
-        "Soporte Colaborativo: Guiar a los usuarios a través de problemas utilizando una sesión segura y compartida.",
-        "QA y Pruebas: Reproducir y depurar errores instantáneamente en un entorno compartido y limpio usando automatización del navegador para replicar las rutas del usuario.",
-        "Operaciones Seguras: Acceso a herramientas internas desde un escritorio en la nube aislado sin VPN."
+        "Estás cansado de describir errores en lugar de simplemente mostrarlos",
+        "Necesitas integrar a alguien y \"déjame hacerlo contigo\" sería más fácil que explicar",
+        "Estás ejecutando pruebas de navegador y escribir scripts de prueba parece excesivo",
+        "Quieres un entorno de demostración limpio y desechable que no filtre datos de clientes",
+        "Compartir pantalla se siente como trabajar con una mano atada a la espalda",
+        "\"Funciona en mi máquina\" te ha mordido más de una vez",
+        "Alguna vez has querido colaborar en la misma terminal sin compartir sesiones complejas"
       ]
+    },
+    "vision": {
+      "badge": "Hacia Dónde Vamos",
+      "title": "El Futuro Que Estamos Construyendo",
+      "intro": "Creemos que el futuro del trabajo no se trata de mejores videollamadas. Se trata de contexto compartido. Entornos efímeros que creas para una tarea y desechas. Automatización que no requiere títulos de ingeniería.",
+      "future": [
+        "Los equipos colaboran en la misma máquina sin fricción ni lag",
+        "Los agentes de IA trabajan junto a humanos, manejando tareas repetitivas mientras te enfocas en lo que importa",
+        "Tu entorno de trabajo es tan portátil como tu email—accede desde cualquier lugar, exactamente como lo dejaste",
+        "La seguridad no significa bloquear a las personas—significa entornos aislados que desaparecen cuando terminas"
+      ]
+    },
+    "cta": {
+      "title": "Véelo Tú Mismo",
+      "description": "Ofrecemos un nivel gratuito. Sin tarjeta de crédito. Inicia una sesión, invita a un compañero y experimenta cómo se siente la verdadera colaboración en tiempo real.",
+      "button": "Prueba Cyqle Gratis"
     }
   },
   "privacyPolicy": {
