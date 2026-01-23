@@ -5,11 +5,24 @@ import AnimatedSection from '@/components/animated-section';
 import ParallaxBackground from '@/components/parallax-background';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { type Metadata } from 'next';
+import { getSEOAlternates, type SiteLocale } from '@/lib/site-metadata';
 import { Scale, Shield, FileText, AlertCircle, Copyright, Ban, Users, Clock } from 'lucide-react';
 
 type Props = {
   params: { locale: string };
 };
+
+export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'termsOfService' });
+  const alternates = getSEOAlternates(locale as SiteLocale, '/terms-of-service');
+  return {
+    title: t('title'),
+    description: t('introduction'),
+    alternates,
+  };
+}
 
 export default async function TermsOfServicePage({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
