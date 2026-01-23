@@ -319,7 +319,8 @@
         "You want a clean, disposable demo environment that won't leak customer data",
         "Screen sharing feels like working with one hand tied behind your back",
         "\"Works on my machine\" has bitten you more than once",
-        "You've ever wanted to collaborate on the same terminal without complex session sharing"
+        "You've ever wanted to collaborate on the same terminal without complex session sharing",
+        "You're building AI agents and need a safe sandbox to deploy them"
       ]
     },
     "vision": {
