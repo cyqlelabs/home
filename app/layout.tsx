@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
-    template: `%s | ${siteMetadata.name}`,
+    template: `${siteMetadata.name} | %s`,
     default: siteMetadata.title,
   },
   description: siteMetadata.description,
@@ -59,11 +59,16 @@ export const metadata: Metadata = {
     images: [siteMetadata.socialImage],
   },
   robots: robotsConfig,
-  themeColor: siteMetadata.themeColor,
   other: {
     'og:logo': '/logo-up.png',
   },
 };
+
+export function generateViewport() {
+  return {
+    themeColor: siteMetadata.themeColor,
+  };
+}
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
