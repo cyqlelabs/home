@@ -191,9 +191,15 @@ export default function RotatingPhrase({
   }, [phrases, interval, animateToPhrase]);
 
   return (
-    <span className={`${className} inline-flex flex-wrap justify-center`}>
+    <span
+      className={`${className} inline-flex flex-wrap justify-center overflow-visible leading-tight max-w-full`}
+    >
       {displayText.split(' ').map((word, wordIndex) => (
-        <span key={wordIndex} className="inline-flex whitespace-nowrap">
+        <span
+          key={wordIndex}
+          className="inline-flex whitespace-nowrap"
+          style={{ marginLeft: wordIndex > 0 ? '0.25em' : '0' }}
+        >
           {word.split('').map((char, charIndex) => {
             const index = displayText.split('').findIndex((c, i) => {
               const wordsBeforeCurrent = displayText.split(' ').slice(0, wordIndex);
@@ -208,7 +214,7 @@ export default function RotatingPhrase({
             return (
               <span
                 key={charIndex}
-                className="inline-block"
+                className="inline-block will-change-transform"
                 style={{
                   opacity: charOpacities[index] ?? 1,
                   transform: `translateX(${xOffset}px) translateY(${yOffset}px) rotate(${rotation}deg) scale(${scale})`,
@@ -221,9 +227,6 @@ export default function RotatingPhrase({
               </span>
             );
           })}
-          {wordIndex < displayText.split(' ').length - 1 && (
-            <span className="inline-block">&nbsp;</span>
-          )}
         </span>
       ))}
     </span>
