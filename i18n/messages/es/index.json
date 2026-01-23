@@ -155,7 +155,7 @@
           "specs": "1 vCPU / 2 GB RAM",
           "bandwidth": "50mb/s de ancho de banda",
           "priority": "Prioridad Estándar",
-          "persistence": "10 GB persistencia",
+          "persistence": "20 GB persistencia",
           "api": "Acceso API"
         },
         "cta": "Empezar"
@@ -169,7 +169,7 @@
           "specs": "2 vCPU / 4 GB RAM",
           "bandwidth": "100mb/s de ancho de banda",
           "priority": "Cola de Prioridad Alta",
-          "persistence": "20 GB persistencia",
+          "persistence": "40 GB persistencia",
           "snapshots": "Snapshots Ilimitados",
           "api": "Acceso API"
         },
@@ -189,21 +189,21 @@
           "name": "Standard",
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
-          "persistence": "20 GB persistencia",
+          "persistence": "40 GB persistencia",
           "bandwidth": "100mb/s de ancho de banda"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
-          "persistence": "40 GB persistencia",
+          "persistence": "60 GB persistencia",
           "bandwidth": "150mb/s de ancho de banda"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
-          "persistence": "80 GB persistencia",
+          "persistence": "120 GB persistencia",
           "bandwidth": "200mb/s de ancho de banda"
         }
       }
