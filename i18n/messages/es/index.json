@@ -79,6 +79,10 @@
     "operations": {
       "title": "Operaciones Seguras",
       "description": "Accede a herramientas internas y dashboards desde un escritorio cloud aislado sin exponer redes locales."
+    },
+    "admin": {
+      "title": "Oficina Virtual",
+      "description": "Colabora en hojas de cálculo, documentos y tareas administrativas en un escritorio compartido. Modifica múltiples ventanas simultáneamente durante las llamadas."
     }
   },
   "aiSection": {
@@ -97,19 +101,22 @@
     "title": "Por qué los equipos se pasan a Cyqle",
     "items": [
       {
-        "quote": "Por fin, un escritorio cloud que se siente como uno local. La conexión P2P hace que la colaboración sea instantánea.",
-        "author": "Sarah Johnson",
-        "role": "Directora de Ingeniería, TechCorp"
+        "quote": "Reducimos el tiempo de reproducción de bugs de 45 minutos a menos de 5. Ahora cuando QA encuentra algo, solo comparte el link de sesión—se acabó el 'en mi máquina funciona.' La configuración no es perfecta todavía, pero el ahorro de tiempo es real.",
+        "author": "Sarah Chen",
+        "role": "Líder de Ingeniería en Startup SaaS Serie B (equipo de 12 personas)",
+        "metric": "40min ahorrados por bug"
       },
       {
-        "quote": "Poder levantar un escritorio limpio para cada test de QA y compartirlo con desarrollo es un salvavidas.",
-        "author": "Michael Chen",
-        "role": "Líder de QA, InnovateSoft"
+        "quote": "Nuestro equipo de soporte se ahogaba en tickets de 'cómo configuro X'. Ahora levantan una sesión Cyqle, graban el flujo una vez y envían a los clientes un link de repetición. El volumen de tickets cayó 34% en dos meses.",
+        "author": "Marcus Rivera",
+        "role": "Director de Customer Success, Plataforma B2B de Infraestructura",
+        "metric": "34% menos tickets"
       },
       {
-        "quote": "La persistencia es clave. Dejo mis procesos pesados corriendo en Cyqle y reviso desde el móvil más tarde.",
-        "author": "Alex Rodriguez",
-        "role": "CTO, FutureTech"
+        "quote": "Estoy construyendo agentes de IA que ejecutan diversos flujos de trabajo en la shell, y los escritorios sandbox de Cyqle son perfectos para probar sin arriesgar mi setup local. Levanto una sesión, dejo que el agente ejecute sus experimentos, y luego la elimino. Pasé de 3 crashes de agentes rompiendo mi máquina a cero.",
+        "author": "Jordan Martinez",
+        "role": "Desarrollador independiente de IA, Construyendo herramientas de automatización",
+        "metric": "Cero crashes locales"
       }
     ]
   },

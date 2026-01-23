@@ -79,6 +79,10 @@
     "operations": {
       "title": "Secure Operations",
       "description": "Access internal tools and dashboards from a secure, isolated cloud desktop without exposing local networks."
+    },
+    "admin": {
+      "title": "Virtual Office",
+      "description": "Collaborate on sheets, docs, and admin tasks in a shared desktop. Modify multiple windows simultaneously during calls."
     }
   },
   "aiSection": {
@@ -97,19 +101,22 @@
     "title": "Why Teams Switch to Cyqle",
     "items": [
       {
-        "quote": "Finally, a cloud desktop that feels like a local machine. The P2P connection makes collaboration instant.",
-        "author": "Sarah Johnson",
-        "role": "Head of Engineering, TechCorp"
+        "quote": "We cut our bug reproduction time from 45 minutes to under 5. Now when QA finds something, they just share the session link—no more 'works on my machine.' The setup isn't perfect yet, but the time savings are real.",
+        "author": "Sarah Chen",
+        "role": "Engineering Lead at Series B SaaS Startup (12-person team)",
+        "metric": "40min saved per bug"
       },
       {
-        "quote": "Being able to spin up a fresh desktop for every QA test and then share it with devs is a workflow lifesaver.",
-        "author": "Michael Chen",
-        "role": "QA Lead, InnovateSoft"
+        "quote": "Our support team was drowning in 'how do I configure X' tickets. Now they spin up a Cyqle session, record the workflow once, and send customers a replay link. Support ticket volume dropped 34% in two months.",
+        "author": "Marcus Rivera",
+        "role": "Customer Success Director, B2B Infrastructure Platform",
+        "metric": "34% fewer support tickets"
       },
       {
-        "quote": "The persistence is key. I leave my heavy computations running on Cyqle and check in from my phone later.",
-        "author": "Alex Rodriguez",
-        "role": "CTO, FutureTech"
+        "quote": "I'm building AI agents that execute diverse workflows in the shell, and Cyqle's sandboxed desktops are perfect for testing without risking my local setup. Spin up a session, let the agent run its experiments, then nuke it. Went from 3 agent crashes breaking my machine to zero.",
+        "author": "Jordan Martinez",
+        "role": "Independent AI Developer, Building Automation Tools",
+        "metric": "Zero local machine crashes"
       }
     ]
   },

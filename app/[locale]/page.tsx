@@ -16,6 +16,7 @@ import {
   Terminal,
   Copy,
   X as XIcon,
+  Briefcase,
 } from 'lucide-react';
 import ParallaxBackground from '@/components/parallax-background';
 import FeatureCard from '@/components/feature-card';
@@ -213,6 +214,16 @@ export default async function Home({ params: { locale } }: Props) {
                 </div>
                 <p className="text-gray-400">{useCasesT('operations.description')}</p>
               </div>
+
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <div className="bg-gray-500/20 p-2 rounded-lg mr-4">
+                    <Briefcase className="h-6 w-6 text-gray-300" />
+                  </div>
+                  <h3 className="text-2xl font-semibold">{useCasesT('admin.title')}</h3>
+                </div>
+                <p className="text-gray-400">{useCasesT('admin.description')}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -268,12 +279,19 @@ export default async function Home({ params: { locale } }: Props) {
             {testimonialsT.raw('items').map((testimonial: any, index: number) => (
               <div
                 key={index}
-                className="bg-gray-900/50 p-8 rounded-xl border border-gray-800 hover:border-[#FF7600]/50 transition-all duration-300"
+                className="bg-gray-900/50 p-8 rounded-xl border border-gray-800 hover:border-[#FF7600]/50 transition-all duration-300 relative"
               >
-                <p className="text-white dark:text-gray-300 mb-6 italic">"{testimonial.quote}"</p>
-                <div>
+                {testimonial.metric && (
+                  <div className="absolute top-4 right-4 bg-[#FF7600]/10 border border-[#FF7600]/30 rounded-lg px-3 py-1">
+                    <p className="text-[#FF7600] text-xs font-semibold">{testimonial.metric}</p>
+                  </div>
+                )}
+                <p className="text-white dark:text-gray-300 mb-6 italic leading-relaxed mt-12">
+                  "{testimonial.quote}"
+                </p>
+                <div className="border-t border-gray-700 pt-4">
                   <p className="font-semibold text-white">{testimonial.author}</p>
-                  <p className="text-gray-100 text-sm">{testimonial.role}</p>
+                  <p className="text-gray-400 text-sm mt-1">{testimonial.role}</p>
                 </div>
               </div>
             ))}
