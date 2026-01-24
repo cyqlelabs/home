@@ -11,10 +11,7 @@ import {
   PlugIcon as Pipeline,
   Bot,
   Lock,
-  MousePointer2,
-  Shield,
   Terminal,
-  Copy,
   X as XIcon,
   Briefcase,
 } from 'lucide-react';
@@ -114,49 +111,34 @@ export default async function Home({ params: { locale } }: Props) {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
-              icon={<Bot className="h-10 w-10 text-[#FF7600]" />}
-              title={featuresT('aiAutomation.title')}
-              description={featuresT('aiAutomation.description')}
+              icon={<Users className="h-10 w-10 text-[#FF7600]" />}
+              title={featuresT('multiplayerDesktop.title')}
+              description={featuresT('multiplayerDesktop.description')}
             />
             <FeatureCard
-              icon={<MousePointer2 className="h-10 w-10 text-gray-300" />}
-              title={featuresT('multiCursor.title')}
-              description={featuresT('multiCursor.description')}
+              icon={<Zap className="h-10 w-10 text-gray-300" />}
+              title={featuresT('ephemeralEnvironments.title')}
+              description={featuresT('ephemeralEnvironments.description')}
+            />
+            <FeatureCard
+              icon={<Terminal className="h-10 w-10 text-gray-400" />}
+              title={featuresT('unrestrictedAccess.title')}
+              description={featuresT('unrestrictedAccess.description')}
+            />
+            <FeatureCard
+              icon={<Bot className="h-10 w-10 text-[#FF7600]" />}
+              title={featuresT('workflowAutomation.title')}
+              description={featuresT('workflowAutomation.description')}
+            />
+            <FeatureCard
+              icon={<Lock className="h-10 w-10 text-gray-300" />}
+              title={featuresT('zeroKnowledgeSecurity.title')}
+              description={featuresT('zeroKnowledgeSecurity.description')}
             />
             <FeatureCard
               icon={<Cloud className="h-10 w-10 text-gray-400" />}
-              title={featuresT('cloudNative.title')}
-              description={featuresT('cloudNative.description')}
-            />
-            <FeatureCard
-              icon={<Users className="h-10 w-10 text-[#FF7600]" />}
-              title={featuresT('collaboration.title')}
-              description={featuresT('collaboration.description')}
-            />
-            <FeatureCard
-              icon={<Shield className="h-10 w-10 text-gray-300" />}
-              title={featuresT('rootAccess.title')}
-              description={featuresT('rootAccess.description')}
-            />
-            <FeatureCard
-              icon={<Lock className="h-10 w-10 text-gray-400" />}
-              title={featuresT('dataPrivacy.title')}
-              description={featuresT('dataPrivacy.description')}
-            />
-            <FeatureCard
-              icon={<Zap className="h-10 w-10 text-[#FF7600]" />}
-              title={featuresT('instantEnvironments.title')}
-              description={featuresT('instantEnvironments.description')}
-            />
-            <FeatureCard
-              icon={<Terminal className="h-10 w-10 text-gray-300" />}
-              title={featuresT('apiAccess.title')}
-              description={featuresT('apiAccess.description')}
-            />
-            <FeatureCard
-              icon={<Copy className="h-10 w-10 text-gray-400" />}
-              title={featuresT('snapshots.title')}
-              description={featuresT('snapshots.description')}
+              title={featuresT('collaborativeInfrastructure.title')}
+              description={featuresT('collaborativeInfrastructure.description')}
             />
           </div>
         </div>

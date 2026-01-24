@@ -22,42 +22,30 @@
     "moreInfo": "Ver más"
   },
   "features": {
-    "title": "Todo lo que necesitas, sin complicaciones",
-    "aiAutomation": {
-      "title": "IA que trabaja por vos",
-      "description": "Graba lo que haces en el navegador y deja que la IA lo repita. Automatiza tareas web sin código."
+    "title": "El Escritorio, Reinventado",
+    "multiplayerDesktop": {
+      "title": "Escritorio Multijugador Real",
+      "description": "Múltiples cursores, múltiples teclados, control en tiempo real. Cada miembro del equipo controla el escritorio al mismo tiempo con conexión P2P directa—se acabó el 'ven mi pantalla?'"
     },
-    "multiCursor": {
-      "title": "Todos escriben al mismo tiempo",
-      "description": "No más turnos. Cada persona con su cursor y teclado, trabajando en paralelo. Como Google Docs, pero para todo."
+    "ephemeralEnvironments": {
+      "title": "Entornos Instantáneos Efímeros",
+      "description": "Levantá escritorios configurados en segundos. Por defecto son efímeros (seguridad), pero los guardas si querés, o clonás desde snapshots. Empezar de cero sin reconstruir."
     },
-    "cloudNative": {
-      "title": "Usa y tira, o guarda para después",
-      "description": "Por defecto todo desaparece al cerrar. Pero si querés, guardalo y seguí mañana desde donde quedaste."
+    "unrestrictedAccess": {
+      "title": "Acceso y Control Sin Límites",
+      "description": "Acceso root completo para instalar lo que sea. API programática para automatizar. Es tu máquina—configurala, automatizala, controlala como necesites."
     },
-    "collaboration": {
-      "title": "Conexión directa P2P",
-      "description": "El escritorio se conecta directo a cada usuario. Sin intermediarios, sin lag. Colaboración en tiempo real."
+    "workflowAutomation": {
+      "title": "Automatización Integrada",
+      "description": "Graba workflows del navegador una vez, repite para siempre. Delega tareas web repetitivas a agentes de IA y enfócate en lo que importa."
     },
-    "rootAccess": {
-      "title": "Acceso total como admin",
-      "description": "Es tu máquina. Instalá lo que quieras: cualquier herramienta, librería o dependencia que necesites."
+    "zeroKnowledgeSecurity": {
+      "title": "Seguridad de Conocimiento Cero",
+      "description": "Tu filesystem está cifrado con claves únicas de sesión. Cuando cerrás una sesión efímera, los datos se borran criptográficamente—no los podríamos recuperar ni queriendo."
     },
-    "dataPrivacy": {
-      "title": "Cifrado que desaparece",
-      "description": "Cada sesión tiene su propia clave. Cuando cerrás, los datos se borran para siempre. Sin vuelta atrás."
-    },
-    "instantEnvironments": {
-      "title": "Entornos en segundos",
-      "description": "Levantá un escritorio limpio en segundos para demos, pruebas o desarrollo. Cuando termines, lo eliminás."
-    },
-    "apiAccess": {
-      "title": "API para automatizar todo",
-      "description": "Crea sesiones, ejecuta comandos y gestiona todo desde código. Integración total con tus herramientas."
-    },
-    "snapshots": {
-      "title": "Guardá y compartí entornos",
-      "description": "Hace un snapshot de tu setup completo. Compartilo con el equipo para que todos tengan el mismo ambiente."
+    "collaborativeInfrastructure": {
+      "title": "Infraestructura Colaborativa",
+      "description": "Streaming P2P directo para colaboración fluida. En la nube significa sin VPNs ni configuración local. Colabora desde donde estés como si estuvieras en la misma sala."
     }
   },
   "useCases": {

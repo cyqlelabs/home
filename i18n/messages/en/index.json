@@ -23,41 +23,29 @@
   },
   "features": {
     "title": "A Full Desktop, Reimagined",
-    "aiAutomation": {
-      "title": "Integrated Automation",
-      "description": "Your cloud desktop comes with built-in recording capabilities. Automate repetitive web tasks effortlessly."
+    "multiplayerDesktop": {
+      "title": "True Multiplayer Desktop",
+      "description": "Multiple cursors, multiple keyboards, real-time control. Every team member controls the desktop simultaneously through peer-to-peer streaming—no more 'can you see my screen?'"
     },
-    "multiCursor": {
-      "title": "True Multiplayer Control",
-      "description": "Work in parallel, not in turns. Every user gets their own cursor and keyboard input for simultaneous collaboration."
+    "ephemeralEnvironments": {
+      "title": "Instant Ephemeral Environments",
+      "description": "Spin up configured desktops in seconds. Default to ephemeral for security, persist when needed, or clone from snapshots. Fresh starts without the rebuild."
     },
-    "cloudNative": {
-      "title": "Flexible Persistence",
-      "description": "Ephemeral by default for fresh starts, or optionally persistent to pause and resume anywhere."
+    "unrestrictedAccess": {
+      "title": "Unrestricted Access & Control",
+      "description": "Full root access to install anything. Programmatic API for automation. It's your machine—configure it, script it, control it however you need."
     },
-    "collaboration": {
-      "title": "P2P Real-Time Sync",
-      "description": "Direct peer-to-peer streaming ensures fluid collaboration. Interact securely."
+    "workflowAutomation": {
+      "title": "Built-in Workflow Automation",
+      "description": "Record browser workflows once, replay them forever. Delegate repetitive web tasks to AI agents so you focus on what matters."
     },
-    "rootAccess": {
-      "title": "Full Admin Privileges",
-      "description": "It's your machine. Get full root access to install any tool, library, or dependency your workflow requires."
+    "zeroKnowledgeSecurity": {
+      "title": "Zero-Knowledge Security",
+      "description": "Your filesystem is encrypted with unique session keys. When you close an ephemeral session, the data is cryptographically erased—we couldn't recover it even if we wanted to."
     },
-    "dataPrivacy": {
-      "title": "Session-Scoped Encryption",
-      "description": "Your filesystem is encrypted on-the-fly with unique keys. When you close an ephemeral session, the data is gone forever."
-    },
-    "instantEnvironments": {
-      "title": "Instant Provisioning",
-      "description": "Spin up isolated, fully configured desktop environments for demos, testing, or development in seconds."
-    },
-    "apiAccess": {
-      "title": "API Access",
-      "description": "Programmatically spawn sessions, run commands, and manage your infrastructure via our robust API."
-    },
-    "snapshots": {
-      "title": "Snapshots & Templates",
-      "description": "Create reusable snapshots of your environment. Share templates to standardize development across your team."
+    "collaborativeInfrastructure": {
+      "title": "Collaborative Infrastructure",
+      "description": "Direct peer-to-peer streaming for fluid collaboration. Cloud-hosted means no VPNs or local setup. Collaborate from anywhere like you're in the same room."
     }
   },
   "useCases": {
