@@ -6,13 +6,16 @@ interface RotatingPhraseProps {
   phrases: string[];
   className?: string;
   interval?: number;
+  language?: string;
 }
 
 export default function RotatingPhrase({
   phrases,
   className = '',
   interval = 5000,
+  language,
 }: RotatingPhraseProps) {
+  const adjustedInterval = language === 'es' ? interval + 1000 : interval;
   const [displayText, setDisplayText] = useState(phrases[0]);
   const [isAnimating, setIsAnimating] = useState(false);
   const [charOpacities, setCharOpacities] = useState<number[]>(Array(phrases[0].length).fill(1));
@@ -108,7 +111,7 @@ export default function RotatingPhrase({
     const timer = setInterval(() => {
       currentIndexRef.current = (currentIndexRef.current + 1) % phrases.length;
       animateToPhrase(phrases[currentIndexRef.current]);
-    }, interval);
+    }, adjustedInterval);
 
     return () => {
       clearInterval(timer);
@@ -116,7 +119,7 @@ export default function RotatingPhrase({
         clearTimeout(animationRef.current);
       }
     };
-  }, [phrases, interval, animateToPhrase]);
+  }, [phrases, adjustedInterval, animateToPhrase]);
 
   return (
     <span
