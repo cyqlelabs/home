@@ -113,24 +113,6 @@ export default async function AboutPage({ params: { locale } }: Props) {
         </div>
       </AnimatedSection>
 
-      {/* Insight Section */}
-      <AnimatedSection className="relative z-10 py-20">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <Badge variant="outline" className="mb-6 border-[#FF7600] text-[#FF7600]">
-            {t('insight.badge')}
-          </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">{t('insight.title')}</h2>
-          <div className="space-y-4 mb-8">
-            {t.raw('insight.questions').map((question: string, i: number) => (
-              <p key={i} className="text-lg text-gray-300 leading-relaxed italic">
-                {question}
-              </p>
-            ))}
-          </div>
-          <p className="text-2xl text-[#FF7600] font-bold">{t('insight.answer')}</p>
-        </div>
-      </AnimatedSection>
-
       {/* Origin Story Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-gray-900/80 to-black/80">
         <div className="container mx-auto px-4 max-w-4xl">

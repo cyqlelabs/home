@@ -240,24 +240,13 @@
       "subtitle": "We built this because we were tired of saying \"Can you see my screen?\" and because \"it works on my machine\" shouldn't be a punchline."
     },
     "problem": {
-      "badge": "The Infrastructure Gap",
+      "badge": "The Problem",
       "title": "Work Moved Remote. Tools Didn't.",
-      "intro": "Remote collaboration became permanent infrastructure for millions of teams. But the tools we use were designed for a different model.",
+      "intro": "Remote collaboration became permanent infrastructure for millions of teams. But the tools we use were designed for a different era.",
       "scenario1": "Your team is distributed across time zones. Your code lives in the cloud. Your data lives in the cloud. But when you need to collaborate, you're still bound to whatever's installed on your local machine. Someone shares their screen, and everyone else watches. One person drives. Everyone else waits.",
       "scenario2": "A bug appears in production. To reproduce it, your teammate sends screenshots. You send back terminal commands via Slack. After twenty messages, you still can't see their environment. You can't just reach in and check. The collaboration layer doesn't extend to the actual work.",
       "scenario3": "You spin up a test environment on your laptop. Configure it. Use it for a demo. Close your laptop. The environment is gone. Tomorrow, you'll rebuild it from scratch. Every QA cycle, every customer onboarding, every debugging session—rebuilt from memory or docs that are probably out of date.",
-      "truth": "Remote work isn't temporary anymore. It's how teams operate. But our collaboration infrastructure still treats it as an edge case. We're running distributed teams on tools designed for the occasional remote worker."
-    },
-    "insight": {
-      "badge": "The Infrastructure Gap",
-      "title": "What If Collaboration Was Actually Distributed?",
-      "questions": [
-        "What if your team's compute infrastructure wasn't scattered across individual laptops, but existed as shared, persistent environments anyone could access?",
-        "What if multiple people could work on the same machine simultaneously—not watching, but actually working in parallel?",
-        "What if your development environment didn't vanish when you closed your laptop, but persisted like your email or your codebase?",
-        "What if reproducing a bug meant sending a link to the exact environment where it happened, not a 15-step guide to recreate it locally?"
-      ],
-      "answer": "That's why Cyqle exists."
+      "truth": "What if your team's compute wasn't scattered across laptops, but existed as shared environments anyone could access? What if multiple people could work on the same machine simultaneously—not watching, but working in parallel? What if reproducing a bug meant sending a link to the exact environment where it happened? That's why Cyqle exists."
     },
     "story": {
       "badge": "Origin Story",
