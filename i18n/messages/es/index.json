@@ -252,22 +252,22 @@
       "subtitle": "Hicimos esto porque nos cansamos de preguntar \"¿ven mi pantalla?\" y porque \"en mi máquina funciona\" no debería ser un chiste."
     },
     "problem": {
-      "badge": "El problema",
-      "title": "Ya viviste esta reunión",
-      "intro": "Alguien comparte pantalla...",
-      "scenario1": "Alguien comparte pantalla. \"¿Todos lo ven?\" La mitad está en otra cosa. La otra mitad solo mira. Nadie realmente comprometido porque ver a otro trabajar es fundamentalmente aburrido.",
-      "scenario2": "O peor: estás debuggeando con alguien por Slack. Te describen lo que ven. Vos mandas comandos. Veinte mensajes después, los dos frustrados y el bug sigue ahí.",
-      "scenario3": "O: estás armando un ambiente de demo. De nuevo. Por tercera vez esta semana. Porque el último se borró cuando cerraste la notebook.",
-      "truth": "Las herramientas que usamos para colaborar eran geniales en 2010. Pero ya es 2026, y seguimos haciendo fila para usar el cursor como si fuera el micrófono en el karaoke."
+      "badge": "La brecha de infraestructura",
+      "title": "El trabajo se volvió remoto. Las herramientas no.",
+      "intro": "La colaboración remota se convirtió en infraestructura permanente para millones de equipos. Pero las herramientas que usamos fueron diseñadas para un modelo diferente.",
+      "scenario1": "Tu equipo está distribuido en zonas horarias. Tu código está en la nube. Tus datos están en la nube. Pero cuando necesitás colaborar, seguís atado a lo que tenés instalado localmente. Alguien comparte pantalla, y todos los demás miran. Uno maneja. Todos esperan.",
+      "scenario2": "Aparece un bug en producción. Para reproducirlo, tu compañero manda capturas. Vos le devolvés comandos por Slack. Después de veinte mensajes, todavía no podés ver su entorno. No podés simplemente entrar y revisar. La capa de colaboración no llega al trabajo real.",
+      "scenario3": "Levantás un ambiente de prueba en tu notebook. Lo configurás. Lo usás para una demo. Cerrás la notebook. El ambiente desapareció. Mañana lo vas a reconstruir desde cero. Cada ciclo de QA, cada onboarding de cliente, cada sesión de debugging—reconstruido de memoria o de docs que probablemente estén desactualizados.",
+      "truth": "El trabajo remoto ya no es temporal. Es como operan los equipos. Pero nuestra infraestructura de colaboración todavía lo trata como un caso excepcional. Estamos corriendo equipos distribuidos con herramientas diseñadas para el trabajador remoto ocasional."
     },
     "insight": {
-      "badge": "El cambio",
-      "title": "¿Y si no tuvieras que hacer fila?",
+      "badge": "La brecha de infraestructura",
+      "title": "¿Y si la colaboración fuera realmente distribuida?",
       "questions": [
-        "¿Qué pasaría si en vez de compartir pantalla, compartieras tu computadora entera—y todos pudieran escribir al mismo tiempo?",
-        "¿Qué pasaría si tu entorno no desapareciera cuando cerrás la notebook?",
-        "¿Qué pasaría si reproducir un bug no necesitara 15 capturas y un video de Loom?",
-        "¿Qué pasaría si automatizar el navegador no necesitara código?"
+        "¿Qué pasaría si la infraestructura de tu equipo no estuviera dispersa en notebooks individuales, sino que existiera como entornos compartidos y persistentes a los que cualquiera puede acceder?",
+        "¿Qué pasaría si varias personas pudieran trabajar en la misma máquina simultáneamente—no mirando, sino realmente trabajando en paralelo?",
+        "¿Qué pasaría si tu entorno de desarrollo no desapareciera cuando cerrás la notebook, sino que persistiera como tu email o tu código?",
+        "¿Qué pasaría si reproducir un bug significara mandar un link al entorno exacto donde ocurrió, en vez de una guía de 15 pasos para recrearlo localmente?"
       ],
       "answer": "Por eso existe Cyqle."
     },

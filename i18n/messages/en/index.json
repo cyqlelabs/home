@@ -252,22 +252,22 @@
       "subtitle": "We built this because we were tired of saying \"Can you see my screen?\" and because \"it works on my machine\" shouldn't be a punchline."
     },
     "problem": {
-      "badge": "The Problem",
-      "title": "You've Been in This Meeting",
-      "intro": "Someone shares their screen...",
-      "scenario1": "Someone shares their screen. \"Can everyone see this?\" Half the team is multitasking. The other half is watching passively. Nobody's actually engaged because watching someone else work is fundamentally boring.",
-      "scenario2": "Or worse: You're debugging with a teammate over Slack. They describe what they're seeing. You paste terminal commands. Twenty messages later, you're both frustrated and the bug is still there.",
-      "scenario3": "Or: You're setting up a demo environment. Again. For the third time this week. Because the last one disappeared when you closed your laptop.",
-      "truth": "The tools we use for collaboration were revolutionary in 2010. But it's 2026, and we're still taking turns with a single cursor like it's a microphone at a karaoke bar."
+      "badge": "The Infrastructure Gap",
+      "title": "Work Moved Remote. Tools Didn't.",
+      "intro": "Remote collaboration became permanent infrastructure for millions of teams. But the tools we use were designed for a different model.",
+      "scenario1": "Your team is distributed across time zones. Your code lives in the cloud. Your data lives in the cloud. But when you need to collaborate, you're still bound to whatever's installed on your local machine. Someone shares their screen, and everyone else watches. One person drives. Everyone else waits.",
+      "scenario2": "A bug appears in production. To reproduce it, your teammate sends screenshots. You send back terminal commands via Slack. After twenty messages, you still can't see their environment. You can't just reach in and check. The collaboration layer doesn't extend to the actual work.",
+      "scenario3": "You spin up a test environment on your laptop. Configure it. Use it for a demo. Close your laptop. The environment is gone. Tomorrow, you'll rebuild it from scratch. Every QA cycle, every customer onboarding, every debugging session—rebuilt from memory or docs that are probably out of date.",
+      "truth": "Remote work isn't temporary anymore. It's how teams operate. But our collaboration infrastructure still treats it as an edge case. We're running distributed teams on tools designed for the occasional remote worker."
     },
     "insight": {
-      "badge": "The Shift",
-      "title": "What If You Didn't Have to Take Turns?",
+      "badge": "The Infrastructure Gap",
+      "title": "What If Collaboration Was Actually Distributed?",
       "questions": [
-        "What if instead of sharing your screen, you shared your entire computer—and everyone could type at the same time?",
-        "What if your environment didn't vanish when you closed your laptop?",
-        "What if reproducing a bug didn't require 15 screenshots and a Loom video?",
-        "What if browser automation didn't require writing code?"
+        "What if your team's compute infrastructure wasn't scattered across individual laptops, but existed as shared, persistent environments anyone could access?",
+        "What if multiple people could work on the same machine simultaneously—not watching, but actually working in parallel?",
+        "What if your development environment didn't vanish when you closed your laptop, but persisted like your email or your codebase?",
+        "What if reproducing a bug meant sending a link to the exact environment where it happened, not a 15-step guide to recreate it locally?"
       ],
       "answer": "That's why Cyqle exists."
     },
