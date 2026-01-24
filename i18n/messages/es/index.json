@@ -79,7 +79,7 @@
       "description": "Accede a herramientas internas desde un escritorio aislado. Sin exponer tu red local ni dejar rastros."
     },
     "admin": {
-      "title": "Trabajo administrativo",
+      "title": "Oficina virtual",
       "description": "Colabora en planillas, documentos y tareas en un mismo escritorio. Varios editando distintas ventanas al mismo tiempo."
     }
   },
