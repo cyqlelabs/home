@@ -94,7 +94,12 @@ export default async function Home({ params: { locale } }: Props) {
             <div className="flex flex-col sm:flex-row gap-3">
               <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
               <Button asChild size="sm" className="bg-black text-white hover:bg-gray-900 shadow-lg">
-                <TrackedLink href="mailto:demo@cyqle.in" trackingKey="bookDemo">
+                <TrackedLink
+                  href="mailto:demo@cyqle.in"
+                  trackingKey="bookDemo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {heroT('bookDemo')}
                 </TrackedLink>
               </Button>
@@ -301,14 +306,16 @@ export default async function Home({ params: { locale } }: Props) {
             >
               {ctaT('startTrial')}
             </TrackedButton>
-            <TrackedButton
-              size="lg"
-              className="bg-black text-white hover:bg-gray-900 shadow-lg"
-              trackingKey="ctaScheduleDemo"
-              href="mailto:demo@cyqle.in"
-            >
-              {ctaT('scheduleDemo')}
-            </TrackedButton>
+            <Button asChild size="lg" className="bg-black text-white hover:bg-gray-900 shadow-lg">
+              <TrackedLink
+                href="mailto:demo@cyqle.in"
+                trackingKey="ctaScheduleDemo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {ctaT('scheduleDemo')}
+              </TrackedLink>
+            </Button>
           </div>
           <div className="mt-10 flex items-center justify-center">
             <Lock className="h-5 w-5 dark:text-gray-400 text-gray-600 mr-2" />

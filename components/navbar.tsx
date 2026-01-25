@@ -63,30 +63,34 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link
+            <TrackedLink
               href={getLink('features')}
+              trackingKey="navbarFeatures"
               className="text-slate-300 hover:text-white transition-colors"
             >
               {t('navbar.features')}
-            </Link>
-            <Link
+            </TrackedLink>
+            <TrackedLink
               href={getLink('useCases')}
+              trackingKey="navbarUseCases"
               className="text-slate-300 hover:text-white transition-colors"
             >
               {t('navbar.useCases')}
-            </Link>
-            <Link
+            </TrackedLink>
+            <TrackedLink
               href={getLink('pricing')}
+              trackingKey="navbarPricing"
               className="text-slate-300 hover:text-white transition-colors"
             >
               {t('navbar.pricing')}
-            </Link>
-            <Link
+            </TrackedLink>
+            <TrackedLink
               href={`/${locale}/about`}
+              trackingKey="navbarAbout"
               className="text-slate-300 hover:text-white transition-colors"
             >
               {t('navbar.about')}
-            </Link>
+            </TrackedLink>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
@@ -129,34 +133,38 @@ export default function Navbar() {
         <div className="md:hidden bg-black/95 backdrop-blur-md">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col space-y-4">
-              <Link
+              <TrackedLink
                 href={getLink('features')}
+                trackingKey="navbarFeatures"
                 className="text-slate-300 hover:text-white transition-colors py-2"
                 onClick={closeMobileMenu}
               >
                 {t('navbar.features')}
-              </Link>
-              <Link
+              </TrackedLink>
+              <TrackedLink
                 href={getLink('useCases')}
+                trackingKey="navbarUseCases"
                 className="text-slate-300 hover:text-white transition-colors py-2"
                 onClick={closeMobileMenu}
               >
                 {t('navbar.useCases')}
-              </Link>
-              <Link
+              </TrackedLink>
+              <TrackedLink
                 href={getLink('pricing')}
+                trackingKey="navbarPricing"
                 className="text-slate-300 hover:text-white transition-colors py-2"
                 onClick={closeMobileMenu}
               >
                 {t('navbar.pricing')}
-              </Link>
-              <Link
+              </TrackedLink>
+              <TrackedLink
                 href={`/${locale}/about`}
+                trackingKey="navbarAbout"
                 className="text-slate-300 hover:text-white transition-colors py-2"
                 onClick={closeMobileMenu}
               >
                 {t('navbar.about')}
-              </Link>
+              </TrackedLink>
               <div className="pt-4 flex flex-col space-y-3">
                 <Button
                   asChild

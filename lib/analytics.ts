@@ -112,6 +112,121 @@ export const trackCTA = {
       event_callback: callback,
     });
   },
+
+  footerApiDocs: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Footer',
+      event_label: 'API Documentation',
+      button_location: 'footer_help_support',
+      button_text: 'API Documentation',
+      destination: 'https://api.cyqle.in/docs',
+      event_callback: callback,
+    });
+  },
+
+  footerContactSupport: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Footer',
+      event_label: 'Contact Support',
+      button_location: 'footer_help_support',
+      button_text: 'Contact Support',
+      destination: 'mailto:support@cyqle.in?subject=Support%20Request%20from%20Website',
+      event_callback: callback,
+    });
+  },
+
+  navbarFeatures: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Navigation',
+      event_label: 'Features - Navbar',
+      button_location: 'navbar',
+      button_text: 'Features',
+      destination: '#features',
+      event_callback: callback,
+    });
+  },
+
+  navbarUseCases: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Navigation',
+      event_label: 'Use Cases - Navbar',
+      button_location: 'navbar',
+      button_text: 'Use Cases',
+      destination: '#useCases',
+      event_callback: callback,
+    });
+  },
+
+  navbarPricing: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Navigation',
+      event_label: 'Pricing - Navbar',
+      button_location: 'navbar',
+      button_text: 'Pricing',
+      destination: '#pricing',
+      event_callback: callback,
+    });
+  },
+
+  navbarAbout: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Navigation',
+      event_label: 'About - Navbar',
+      button_location: 'navbar',
+      button_text: 'About',
+      event_callback: callback,
+    });
+  },
+
+  footerHome: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Footer',
+      event_label: 'Home - Logo',
+      button_location: 'footer',
+      button_text: 'Cyqle Logo',
+      event_callback: callback,
+    });
+  },
+
+  footerAbout: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Footer',
+      event_label: 'About Us',
+      button_location: 'footer_company',
+      button_text: 'About Us',
+      event_callback: callback,
+    });
+  },
+
+  footerPrivacy: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Footer',
+      event_label: 'Privacy Policy',
+      button_location: 'footer_company',
+      button_text: 'Privacy Policy',
+      event_callback: callback,
+    });
+  },
+
+  footerTerms: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Footer',
+      event_label: 'Terms of Service',
+      button_location: 'footer_company',
+      button_text: 'Terms of Service',
+      event_callback: callback,
+    });
+  },
+
+  footerCookies: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Footer',
+      event_label: 'Cookies',
+      button_location: 'footer_company',
+      button_text: 'Cookies',
+      event_callback: callback,
+    });
+  },
 };
 
 // Helper function for links that navigate away - ensures tracking completes before navigation
