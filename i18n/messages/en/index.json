@@ -229,6 +229,11 @@
       "privacy": "Privacy",
       "terms": "Terms"
     },
+    "helpSupport": {
+      "title": "Help & Support",
+      "apiDocs": "API Documentation",
+      "contact": "Contact Support"
+    },
     "copyright": "© {year} Cyqle. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
