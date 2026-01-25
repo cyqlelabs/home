@@ -230,8 +230,13 @@ export default async function Home({ params: { locale } }: Props) {
                   </li>
                 ))}
               </ul>
-              <Button className="mt-6 bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg">
-                {aiSectionT('exploreFeatures')}
+              <Button
+                asChild
+                className="mt-6 bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg"
+              >
+                <TrackedLink href={`/${locale}#features`} trackingKey="exploreFeatures">
+                  {aiSectionT('exploreFeatures')}
+                </TrackedLink>
               </Button>
             </div>
             <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
@@ -292,6 +297,7 @@ export default async function Home({ params: { locale } }: Props) {
               size="lg"
               className="bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg"
               trackingKey="ctaStartTrial"
+              href="https://app.cyqle.in"
             >
               {ctaT('startTrial')}
             </TrackedButton>
@@ -299,6 +305,7 @@ export default async function Home({ params: { locale } }: Props) {
               size="lg"
               className="bg-black text-white hover:bg-gray-900 shadow-lg"
               trackingKey="ctaScheduleDemo"
+              href="mailto:demo@cyqle.in"
             >
               {ctaT('scheduleDemo')}
             </TrackedButton>

@@ -101,6 +101,17 @@ export const trackCTA = {
       event_callback: callback,
     });
   },
+
+  exploreFeatures: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Navigation',
+      event_label: 'Explore Features - AI Section',
+      button_location: 'ai_section',
+      button_text: 'Explore Features',
+      destination: '#features',
+      event_callback: callback,
+    });
+  },
 };
 
 // Helper function for links that navigate away - ensures tracking completes before navigation

@@ -10,6 +10,7 @@ interface TrackedButtonProps {
   className?: string;
   size?: 'default' | 'sm' | 'lg' | 'icon';
   trackingKey: 'ctaStartTrial' | 'ctaScheduleDemo';
+  href?: string;
 }
 
 export default function TrackedButton({
@@ -18,11 +19,15 @@ export default function TrackedButton({
   className,
   size = 'default',
   trackingKey,
+  href,
 }: TrackedButtonProps) {
   const handleClick = () => {
     trackCTA[trackingKey]();
     if (onClick) {
       onClick();
+    }
+    if (href) {
+      window.location.href = href;
     }
   };
 

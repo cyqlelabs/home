@@ -99,10 +99,10 @@
         "metric": "34% fewer support tickets"
       },
       {
-        "quote": "I'm building AI agents that execute diverse workflows in the shell, and Cyqle's sandboxed desktops are perfect for testing without risking my local setup. Spin up a session, let the agent run its experiments, then nuke it. Went from 3 agent crashes breaking my machine to zero.",
+        "quote": "I'm building AI agents that execute diverse workflows in the shell, and Cyqle's sandboxed desktops are perfect for testing without risking my local setup. Spin up a session, let the agent run its experiments, then nuke it—zero risk to my main machine.",
         "author": "Jordan Martinez",
         "role": "Independent AI Developer, Building Automation Tools",
-        "metric": "Zero local machine crashes"
+        "metric": "Risk-free testing"
       }
     ]
   },
@@ -242,11 +242,12 @@
     "problem": {
       "badge": "The Problem",
       "title": "Work Moved Remote. Tools Didn't.",
-      "intro": "Remote collaboration became permanent infrastructure for millions of teams. But the tools we use were designed for a different era.",
-      "scenario1": "Your team is distributed across time zones. Your code lives in the cloud. Your data lives in the cloud. But when you need to collaborate, you're still bound to whatever's installed on your local machine. Someone shares their screen, and everyone else watches. One person drives. Everyone else waits.",
-      "scenario2": "A bug appears in production. To reproduce it, your teammate sends screenshots. You send back terminal commands via Slack. After twenty messages, you still can't see their environment. You can't just reach in and check. The collaboration layer doesn't extend to the actual work.",
-      "scenario3": "You spin up a test environment on your laptop. Configure it. Use it for a demo. Close your laptop. The environment is gone. Tomorrow, you'll rebuild it from scratch. Every QA cycle, every customer onboarding, every debugging session—rebuilt from memory or docs that are probably out of date.",
-      "truth": "What if your team's compute wasn't scattered across laptops, but existed as shared environments anyone could access? What if multiple people could work on the same machine simultaneously—not watching, but working in parallel? What if reproducing a bug meant sending a link to the exact environment where it happened? That's why Cyqle exists."
+      "intro": "Your code lives in the cloud. Your data lives in the cloud. But collaboration? Still stuck on local machines.",
+      "scenario1": "Someone shares their screen. Everyone else watches. One person drives. Everyone else waits. Twenty Slack messages to debug an environment you still can't access.",
+      "scenario2": "You spin up a test environment, configure it, use it for a demo. Close your laptop. It's gone. Tomorrow you'll rebuild it from memory.",
+      "scenario3": "Your team's compute is scattered across laptops when it should be shared infrastructure anyone can access instantly.",
+      "truth": "What if multiple people could work on the same machine simultaneously—not watching, but working in parallel? What if reproducing a bug meant sending a link to the exact environment?",
+      "solution": "That's why Cyqle exists."
     },
     "story": {
       "badge": "Origin Story",
