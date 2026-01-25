@@ -109,6 +109,7 @@ export default async function AboutPage({ params: { locale } }: Props) {
             <p className="text-lg text-gray-200 leading-relaxed font-medium mt-8">
               {t('problem.truth')}
             </p>
+            <p className="text-xl text-white font-bold mt-6">{t('problem.solution')}</p>
           </div>
         </div>
       </AnimatedSection>

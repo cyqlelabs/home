@@ -14,7 +14,8 @@ interface TrackedLinkProps {
     | 'ctaScheduleDemo'
     | 'aboutPageCTA'
     | 'powerOnButton'
-    | 'navbarTryForFree';
+    | 'navbarTryForFree'
+    | 'exploreFeatures';
 }
 
 export default function TrackedLink({

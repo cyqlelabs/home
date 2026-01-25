@@ -99,10 +99,10 @@
         "metric": "34% menos tickets"
       },
       {
-        "quote": "Estoy haciendo agentes de IA que corren cosas en la terminal. Los sandboxes de Cyqle son perfectos para probar sin arriesgar mi máquina local. Levanto una sesión, dejo que el agente haga sus experimentos, y después la borro. De 3 crashes por semana a cero.",
+        "quote": "Estoy haciendo agentes de IA que corren cosas en la terminal. Los sandboxes de Cyqle son perfectos para probar sin arriesgar mi máquina local. Levanto una sesión, dejo que el agente haga sus experimentos, y después la borro—cero riesgo para mi máquina.",
         "author": "Jordan Martínez",
         "role": "Dev independiente de IA",
-        "metric": "Cero crashes"
+        "metric": "Pruebas sin riesgo"
       }
     ]
   },
@@ -236,17 +236,18 @@
   },
   "aboutPage": {
     "hero": {
-      "title": "Colaborar sin hacer fila",
+      "title": "Colaboración en paralelo",
       "subtitle": "Hicimos esto porque nos cansamos de preguntar \"¿ven mi pantalla?\" y porque \"en mi máquina funciona\" no debería ser un chiste."
     },
     "problem": {
       "badge": "El Problema",
       "title": "El trabajo se volvió remoto. Las herramientas no.",
-      "intro": "La colaboración remota se convirtió en infraestructura permanente para millones de equipos. Pero las herramientas que usamos fueron diseñadas para otra era.",
-      "scenario1": "Tu equipo está distribuido en zonas horarias. Tu código está en la nube. Tus datos están en la nube. Pero cuando necesitás colaborar, seguís atado a lo que tenés instalado localmente. Alguien comparte pantalla, y todos los demás miran. Uno maneja. Todos esperan.",
-      "scenario2": "Aparece un bug en producción. Para reproducirlo, tu compañero manda capturas. Vos le devolvés comandos por Slack. Después de veinte mensajes, todavía no podés ver su entorno. No podés simplemente entrar y revisar. La capa de colaboración no llega al trabajo real.",
-      "scenario3": "Levantás un ambiente de prueba en tu notebook. Lo configurás. Lo usás para una demo. Cerrás la notebook. El ambiente desapareció. Mañana lo vas a reconstruir desde cero. Cada ciclo de QA, cada onboarding de cliente, cada sesión de debugging—reconstruido de memoria o de docs que probablemente estén desactualizados.",
-      "truth": "¿Qué pasaría si la infraestructura de tu equipo no estuviera dispersa en notebooks, sino que existiera como entornos compartidos que cualquiera puede acceder? ¿Y si varias personas pudieran trabajar en la misma máquina simultáneamente—no mirando, sino trabajando en paralelo? ¿Y si reproducir un bug fuera mandar un link al entorno exacto donde ocurrió? Por eso existe Cyqle."
+      "intro": "Tu código está en la nube. Tus datos están en la nube. ¿Pero colaborar? Sigue atado a máquinas locales.",
+      "scenario1": "Alguien comparte pantalla. Todos miran. Uno maneja. Todos esperan. Veinte mensajes por Slack para debuggear un entorno que todavía no podés ver.",
+      "scenario2": "Levantás un ambiente de prueba, lo configurás, lo usás para una demo. Cerrás la notebook. Desapareció. Mañana lo vas a reconstruir de memoria.",
+      "scenario3": "La infraestructura de tu equipo está dispersa en notebooks cuando debería ser infraestructura compartida que cualquiera accede al instante.",
+      "truth": "¿Y si varias personas pudieran trabajar en la misma máquina simultáneamente—no mirando, sino trabajando en paralelo? ¿Y si reproducir un bug fuera mandar un link al entorno exacto?",
+      "solution": "Por eso existe Cyqle."
     },
     "story": {
       "badge": "Cómo empezó",
