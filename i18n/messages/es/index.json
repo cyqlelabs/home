@@ -46,6 +46,18 @@
     "collaborativeInfrastructure": {
       "title": "Infraestructura Colaborativa",
       "description": "Streaming P2P directo para colaboración fluida. En la nube significa sin VPNs ni configuración local. Colabora desde donde estés como si estuvieras en la misma sala."
+    },
+    "videoCollaboration": {
+      "title": "Videollamadas Integradas",
+      "description": "Hacé una videollamada con los participantes de la sesión sin salir del escritorio. Ven caras y trabajan juntos al mismo tiempo—sin pestañas de Zoom, sin cambiar de contexto."
+    },
+    "instantFileSharing": {
+      "title": "Archivos al Instante",
+      "description": "Soltá archivos desde tu laptop—aparecen al instante en la carpeta home del escritorio remoto. Sin pasos de carga, sin esperas."
+    },
+    "mobileAccess": {
+      "title": "Acceso Móvil",
+      "description": "Acceso completo desde tu celular o tablet. Arreglá bugs desde el tren, revisá código en reuniones, chequeá logs durante incidentes—tu escritorio en el bolsillo."
     }
   },
   "useCases": {

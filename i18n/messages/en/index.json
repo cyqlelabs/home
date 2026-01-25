@@ -46,6 +46,18 @@
     "collaborativeInfrastructure": {
       "title": "Collaborative Infrastructure",
       "description": "Direct peer-to-peer streaming for fluid collaboration. Cloud-hosted means no VPNs or local setup. Collaborate from anywhere like you're in the same room."
+    },
+    "videoCollaboration": {
+      "title": "Built-in Video Calls",
+      "description": "Jump on a video call with session participants without leaving your workspace. See faces and work together simultaneously—no Zoom tabs, no context switching."
+    },
+    "instantFileSharing": {
+      "title": "Instant File Sharing",
+      "description": "Drop files from your laptop—they appear instantly in the remote desktop's home folder. No upload steps, no waiting."
+    },
+    "mobileAccess": {
+      "title": "Mobile Access",
+      "description": "Full access from your phone or tablet. Fix bugs on the train, review code during meetings, check logs during incidents—your desktop in your pocket."
     }
   },
   "useCases": {
