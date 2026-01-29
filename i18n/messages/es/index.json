@@ -11,119 +11,120 @@
     "tryForFree": "Probar gratis"
   },
   "hero": {
-    "title": "Tu Escritorio en la Nube",
-    "titlePhrase1": "Tu Escritorio en la Nube",
+    "title": "El Escritorio Cloud P2P",
+    "titlePhrase1": "Tu Escritorio Cloud",
     "titlePhrase2": "Tu Espacio de Trabajo Compartido",
-    "titlePhrase3": "Tu Computadora en Equipo",
-    "description": "Donde tu equipo trabaja junto, en\u00A0tiempo\u00A0real. Con\u00A0IA que automatiza lo\u00A0repetitivo.",
-    "getStarted": "Empezar gratis",
-    "bookDemo": "Ver demo",
-    "trialInfo": "Gratis para siempre. Sin tarjeta.",
-    "moreInfo": "Ver más"
+    "titlePhrase3": "La Computadora de tu Equipo",
+    "description": "Una computadora persistente en la nube para colaborar en tiempo real y automatizar flujos de trabajo.",
+    "getStarted": "Empezar",
+    "bookDemo": "Agendar Demo",
+    "trialInfo": "Tier gratis disponible. Sin tarjeta de crédito.",
+    "moreInfo": "Más Info"
   },
   "features": {
-    "title": "El Escritorio, Reinventado",
+    "title": "Un Escritorio Completo, Reinventado",
     "multiplayerDesktop": {
       "title": "Escritorio Multijugador Real",
-      "description": "Múltiples cursores, múltiples teclados, control en tiempo real. Cada miembro del equipo controla el escritorio al mismo tiempo con conexión P2P directa—se acabó el 'ven mi pantalla?'"
+      "description": "Múltiples cursores, múltiples teclados, control total. Todo el equipo usa la misma computadora a la vez vía streaming P2P—basta de preguntar '¿están viendo mi pantalla?'"
     },
     "ephemeralEnvironments": {
-      "title": "Entornos Instantáneos Efímeros",
-      "description": "Levantá escritorios configurados en segundos. Por defecto son efímeros (seguridad), pero los guardas si querés, o clonás desde snapshots. Empezar de cero sin reconstruir."
+      "title": "Entornos Efímeros al Instante",
+      "description": "Levantá escritorios configurados en segundos. Por defecto son efímeros por seguridad, pero podés persistirlos o clonarlos desde capturas. Empezá de cero sin reinstalar nada."
     },
     "unrestrictedAccess": {
-      "title": "Acceso y Control Sin Límites",
-      "description": "Acceso root completo para instalar lo que sea. API programática para automatizar. Es tu máquina—configurala, automatizala, controlala como necesites."
+      "title": "Control y Acceso Total",
+      "description": "Acceso root para instalar lo que quieras. API para automatizar todo. Es tu máquina: configurala, automatizala y controlala como necesites."
     },
     "workflowAutomation": {
-      "title": "Automatización Integrada",
-      "description": "Graba workflows del navegador una vez, repite para siempre. Delega tareas web repetitivas a agentes de IA y enfócate en lo que importa."
+      "title": "Automatización Nativa",
+      "description": "Grabá flujos de trabajo en el navegador una vez y replicalos siempre. Delegale las tareas repetitivas a agentes de IA y enfocate en lo importante."
     },
     "zeroKnowledgeSecurity": {
-      "title": "Seguridad de Conocimiento Cero",
-      "description": "Tu filesystem está cifrado con claves únicas de sesión. Cuando cerrás una sesión efímera, los datos se borran criptográficamente—no los podríamos recuperar ni queriendo."
+      "title": "Seguridad Zero-Knowledge",
+      "description": "Tu filesystem se encripta con claves de sesión únicas. Al cerrar una sesión efímera, la data se borra criptográficamente—es irrecuperable, incluso para nosotros."
     },
     "collaborativeInfrastructure": {
       "title": "Infraestructura Colaborativa",
-      "description": "Streaming P2P directo para colaboración fluida. En la nube significa sin VPNs ni configuración local. Colabora desde donde estés como si estuvieras en la misma sala."
+      "description": "Streaming P2P directo para colaboración fluida. Al ser en la nube, te olvidás de VPNs y configuraciones locales. Trabajá con tu equipo como si estuvieran al lado."
     },
     "videoCollaboration": {
       "title": "Videollamadas Integradas",
-      "description": "Hacé una videollamada con los participantes de la sesión sin salir del escritorio. Ven caras y trabajan juntos al mismo tiempo—sin pestañas de Zoom, sin cambiar de contexto."
+      "description": "Hacé videollamadas con tu equipo ahí mismo, sin salir del escritorio. Véanse las caras mientras trabajan—sin pestañas de Zoom ni cambios de contexto."
     },
     "instantFileSharing": {
-      "title": "Archivos al Instante",
-      "description": "Soltá archivos desde tu laptop—aparecen al instante en la carpeta home del escritorio remoto. Sin pasos de carga, sin esperas."
+      "title": "File Sharing Instantáneo",
+      "description": "Arrastrá archivos desde tu laptop y aparecen al instante en el home del escritorio remoto. Sin uploads lentos, sin esperas."
     },
     "mobileAccess": {
       "title": "Acceso Móvil",
-      "description": "Acceso completo desde tu celular o tablet. Arreglá bugs desde el tren, revisá código en reuniones, chequeá logs durante incidentes—tu escritorio en el bolsillo."
+      "description": "Entrá desde el celular o la tablet. Solucioná errores en el transporte, revisá código en reuniones o chequeá logs en un incidente—tu escritorio en el bolsillo."
     }
   },
   "useCases": {
-    "title": "Para qué te sirve",
+    "title": "Un Espacio de Trabajo para cada Necesidad",
     "development": {
-      "title": "Desarrollo en equipo",
-      "description": "Programa desde la nube. Hace pair programming de verdad, los dos escribiendo al mismo tiempo. El entorno siempre igual para todos."
+      "title": "Desarrollo Remoto",
+      "description": "Programá en un entorno en la nube persistente. Hacé programación en pareja en tiempo real manteniendo el entorno consistente para todos."
     },
     "qa": {
-      "title": "Testing y QA",
-      "description": "Reproduce bugs en un ambiente limpio. Automatiza tests del navegador sin código. Invita al dev a tu sesión y depuren juntos."
+      "title": "QA y Testing",
+      "description": "Reproducí errores en un entorno limpio y compartido. Automatizá tests de navegador y llamá a los devs a tu sesión para depurar al instante."
     },
     "customerSupport": {
-      "title": "Soporte que resuelve",
-      "description": "No expliques por chat, mostrá cómo se hace. Abrí una sesión compartida y guía a tu cliente en vivo. Automatiza onboardings complejos."
+      "title": "Soporte Colaborativo",
+      "description": "No le digas al usuario qué hacer—mostrale. Lanzá una sesión compartida para guiarlo o automatizar procesos de integración complejos en tiempo real."
     },
     "operations": {
-      "title": "Ops sin riesgos",
-      "description": "Accede a herramientas internas desde un escritorio aislado. Sin exponer tu red local ni dejar rastros."
+      "title": "Operaciones Seguras",
+      "description": "Accedé a herramientas internas y dashboards desde un escritorio aislado y seguro, sin exponer tu red local."
     },
     "admin": {
-      "title": "Oficina virtual",
-      "description": "Colabora en planillas, documentos y tareas en un mismo escritorio. Varios editando distintas ventanas al mismo tiempo."
+      "title": "Oficina Virtual",
+      "description": "Colaborá en sheets, docs y tareas administrativas en un mismo escritorio. Manejen múltiples ventanas a la vez durante las calls."
     }
   },
+
   "aiSection": {
-    "title": "IA que hace el trabajo pesado",
-    "description": "Es una computadora completa en la nube, pero además tiene IA integrada para que no pierdas tiempo en lo repetitivo.",
+    "title": "Automatizá tu Trabajo",
+    "description": "Cyqle no es solo una PC. Es una plataforma de automatización. Grabá flujos de trabajo, agendá tareas y dejá que los agentes hagan el trabajo pesado.",
     "items": [
-      "Graba lo que haces en el navegador y dejá que la IA lo repita",
-      "Delega tareas web aburridas a agentes automáticos",
-      "Programa workflows para que corran solos en segundo plano",
-      "Guarda automatizaciones y compartelas con el equipo",
-      "Se integra con las herramientas que ya usas"
+      "Grabá interacciones del navegador para replicarlas",
+      "Delegá tareas web repetitivas a agentes",
+      "Agendá flujos de trabajo para correr en segundo plano",
+      "Mantené una librería compartida de automatizaciones",
+      "Funciona con las herramientas que ya usás"
     ],
-    "exploreFeatures": "Ver qué hace"
+    "exploreFeatures": "Explorar funcionalidades"
   },
   "testimonials": {
-    "title": "Lo que dicen los equipos que ya lo usan",
+    "title": "Por qué los equipos eligen Cyqle",
     "items": [
       {
-        "quote": "Antes tardábamos 45 minutos en reproducir un bug. Ahora son menos de 5. QA manda el link de la sesión y listo—se acabó el 'en mi máquina funciona'. Todavía hay cosas por pulir, pero el tiempo que ahorramos es real.",
+        "quote": "Bajamos el tiempo de reproducción de errores de 45 minutos a menos de 5. Cuando QA encuentra algo, manda el link de la sesión y listo—se terminó el 'en mi máquina funciona'. El ahorro de tiempo es brutal.",
         "author": "Sarah Chen",
-        "role": "Líder de Ingeniería, Startup SaaS Serie B (12 personas)",
-        "metric": "40min menos por bug"
+        "role": "Engineering Lead en Startup SaaS Serie B",
+        "metric": "40min ahorrados por error"
       },
       {
-        "quote": "Soporte vivía ahogado en tickets del tipo 'cómo configuro X'. Ahora levantan una sesión, graban el proceso una vez y mandan el link. Los clientes lo ven y lo hacen solos. Bajamos los tickets 34% en dos meses.",
+        "quote": "Soporte estaba tapado de tickets tipo 'cómo configuro X'. Ahora levantan una sesión Cyqle, graban el workflow una vez y le mandan la repetición al cliente. Los tickets bajaron un 34% en dos meses.",
         "author": "Marcus Rivera",
-        "role": "Director de Customer Success, Plataforma B2B",
-        "metric": "34% menos tickets"
+        "role": "Customer Success Director, Plataforma de Infraestructura B2B",
+        "metric": "34% menos tickets de soporte"
       },
       {
-        "quote": "Estoy haciendo agentes de IA que corren cosas en la terminal. Los sandboxes de Cyqle son perfectos para probar sin arriesgar mi máquina local. Levanto una sesión, dejo que el agente haga sus experimentos, y después la borro—cero riesgo para mi máquina.",
-        "author": "Jordan Martínez",
-        "role": "Dev independiente de IA",
-        "metric": "Pruebas sin riesgo"
+        "quote": "Armo agentes de IA que ejecutan flujos de trabajo en la terminal, y los sandboxes de Cyqle son ideales para testear sin romper mi configuración local. Levanto sesión, el agente hace lo suyo y después la mato—cero riesgo.",
+        "author": "Jordan Martinez",
+        "role": "Dev de IA Independiente",
+        "metric": "Testing sin riesgos"
       }
     ]
   },
   "cta": {
-    "title": "Tu escritorio en la nube, para todo el equipo",
-    "description": "Colaboración P2P directa. Escritorio que persiste. Trabaja con tu equipo desde donde estés.",
-    "startTrial": "Empezar gratis",
-    "scheduleDemo": "Ver demo",
-    "trialInfo": "Gratis para siempre. Sin tarjeta."
+    "title": "La Computadora de tu Equipo en la Nube.",
+    "description": "Dejá de compartir pantalla. Empezá a colaborar en una computadora que existe de verdad en la nube.",
+    "startTrial": "Empezar Ahora",
+    "scheduleDemo": "Agendar Demo",
+    "trialInfo": "Sesiones gratis de 15 min. Sin tarjeta de crédito."
   },
   "pricing": {
     "title": "Precios simples, sin sorpresas",
