@@ -97,7 +97,7 @@
     "exploreFeatures": "Explorar funcionalidades"
   },
   "testimonials": {
-    "title": "Por qué los equipos eligen Cyqle",
+    "title": "La Vida Después del Localhost",
     "items": [
       {
         "quote": "Bajamos el tiempo de reproducción de errores de 45 minutos a menos de 5. Cuando QA encuentra algo, manda el link de la sesión y listo—se terminó el 'en mi máquina funciona'. El ahorro de tiempo es brutal.",
@@ -106,7 +106,7 @@
         "metric": "40min ahorrados por error"
       },
       {
-        "quote": "Soporte estaba tapado de tickets tipo 'cómo configuro X'. Ahora levantan una sesión Cyqle, graban el workflow una vez y le mandan la repetición al cliente. Los tickets bajaron un 34% en dos meses.",
+        "quote": "Soporte estaba tapado de tickets tipo 'cómo configuro X'. Ahora levantan una sesión Cyqle, graban el flujo una vez y le mandan un link al entorno vivo e interactivo. Los tickets bajaron un 34% en dos meses.",
         "author": "Marcus Rivera",
         "role": "Customer Success Director, Plataforma de Infraestructura B2B",
         "metric": "34% menos tickets de soporte"
