@@ -96,7 +96,7 @@
     "exploreFeatures": "Explore Features"
   },
   "testimonials": {
-    "title": "Why Teams Switch to Cyqle",
+    "title": "Life After Localhost",
     "items": [
       {
         "quote": "We cut our bug reproduction time from 45 minutes to under 5. Now when QA finds something, they just share the session link—no more 'works on my machine.' The setup isn't perfect yet, but the time savings are real.",
@@ -105,7 +105,7 @@
         "metric": "40min saved per bug"
       },
       {
-        "quote": "Our support team was drowning in 'how do I configure X' tickets. Now they spin up a Cyqle session, record the workflow once, and send customers a replay link. Support ticket volume dropped 34% in two months.",
+        "quote": "Our support team was drowning in 'how do I configure X' tickets. Now they spin up a Cyqle session, record the workflow once, and send customers a link to the live, interactive environment. Support ticket volume dropped 34% in two months.",
         "author": "Marcus Rivera",
         "role": "Customer Success Director, B2B Infrastructure Platform",
         "metric": "34% fewer support tickets"
