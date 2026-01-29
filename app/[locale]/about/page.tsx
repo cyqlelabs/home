@@ -90,7 +90,9 @@ export default async function AboutPage({ params: { locale } }: Props) {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
             {t('hero.title')}
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">{t('hero.subtitle')}</p>
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto whitespace-pre-line">
+            {t('hero.subtitle')}
+          </p>
         </div>
       </AnimatedSection>
 

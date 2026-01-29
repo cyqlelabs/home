@@ -253,27 +253,27 @@
   },
   "aboutPage": {
     "hero": {
-      "title": "True Multiplayer Work",
-      "subtitle": "We built this because we were tired of saying \"Can you see my screen?\" and because \"it works on my machine\" shouldn't be a punchline."
+      "title": "True Multiplayer Computing",
+      "subtitle": "Don't share your screen. Share the machine.\nEveryone drives, codes, and debugs in parallel."
     },
     "problem": {
-      "badge": "The Problem",
-      "title": "Work Moved Remote. Tools Didn't.",
-      "intro": "Your code lives in the cloud. Your data lives in the cloud. But collaboration? Still stuck on local machines.",
-      "scenario1": "Someone shares their screen. Everyone else watches. One person drives. Everyone else waits. Twenty Slack messages to debug an environment you still can't access.",
-      "scenario2": "You spin up a test environment, configure it, use it for a demo. Close your laptop. It's gone. Tomorrow you'll rebuild it from memory.",
-      "scenario3": "Your team's compute is scattered across laptops when it should be shared infrastructure anyone can access instantly.",
-      "truth": "What if multiple people could work on the same machine simultaneously—not watching, but working in parallel? What if reproducing a bug meant sending a link to the exact environment?",
-      "solution": "That's why Cyqle exists."
+      "badge": "The Friction",
+      "title": "Collaboration is Stuck in the 90s",
+      "intro": "Code lives in the cloud. Data lives in the cloud. But your actual work environment? It's still trapped on your local device.",
+      "scenario1": "Screen sharing is passive. One driver, many passengers. It's not collaboration; it's a presentation. You can't fix a bug you can't touch.",
+      "scenario2": "Local environments are fragile. You spend hours configuring a workspace that disappears when you close your laptop. Sharing it means explaining setup steps, not sending a link.",
+      "scenario3": "Compute is scattered. Your team has 10 powerful laptops but no shared infrastructure to swarm on a problem together.",
+      "truth": "We asked: What if the operating system itself was multiplayer? What if you could URL-share a full computer like a Google Doc?",
+      "solution": "Cyqle is the answer."
     },
     "story": {
-      "badge": "Origin Story",
-      "title": "How This Started",
-      "year2017": "Back in 2017, I was working at a startup that needed to automate interactions with third-party websites. We built an API that could spawn browsers and run scripts—login flows, data extraction, UI automation.",
-      "pivot": "The startup shut down. But I kept building because the core idea felt valuable.",
-      "year2025": "Fast forward to 2025. AI agents were everywhere. I thought: what if this browser automation platform had AI built in? Users could record their workflows and let AI handle the messy parts—adapting to website changes, dealing with errors, completing the task.",
-      "realization": "Then I realized: why limit this to browsers? Why not offer the full desktop? Make it collaborative. Add multi-cursor support so teams can work in parallel. Make it a sandbox where AI agents can actually do things.",
-      "present": "That's Cyqle today. A genuinely multiplayer cloud computer with AI automation baked in."
+      "badge": "Our Logic",
+      "title": "Why We Built It",
+      "year2017": "We started by building browser automation tools. Useful, but limited. We realized that automating a browser was only solving 10% of the problem.",
+      "pivot": "The real bottleneck was the Operating System.",
+      "year2025": "OSs are designed for one user. That's why screen sharing is so painful—it's a hack on top of a single-player architecture.",
+      "realization": "We decided to rebuild the desktop stack for p2p collaboration. No 'host' and 'guest'—just equal users working in parallel on the same machine.",
+      "present": "Cyqle is the result: A cloud computer that treats collaboration as a primitive, not a feature."
     },
     "solution": {
       "badge": "What It Actually Is",
@@ -290,41 +290,41 @@
       ]
     },
     "difference": {
-      "badge": "Technical Reality",
-      "title": "Why This Hasn't Existed Before",
-      "intro": "Building a multiplayer cloud desktop isn't just hard—it's a stack of hard problems nobody wanted to solve:",
+      "badge": "Under the Hood",
+      "title": "Hard Engineering, Invisible to You",
+      "intro": "We solved the problems that made real-time cloud desktops impossible for years:",
       "challenges": [
-        "True P2P streaming without central server bottlenecks",
-        "Instant provisioning without the overhead of traditional virtualization",
-        "Multi-cursor support at the system level (most platforms aren't designed for this)",
-        "Per-session isolation without nested container complexity",
-        "Encryption that actually destroys data when you close an ephemeral session"
+        "Zero-latency P2P streaming (no central server lag)",
+        "System-level multi-cursor input injection",
+        "Cryptographically guaranteed ephemeral storage",
+        "Instant provisioning (sub-5-second boot times)",
+        "Browser-based access with native performance"
       ],
-      "conclusion": "We spent years solving these so you don't have to think about them. You just get a computer that works, in the cloud, with your whole team on it at once."
+      "conclusion": "It's complex technology wrapping a simple promise: It just works."
     },
     "forWhom": {
-      "badge": "Is This For You?",
-      "title": "You'll Love Cyqle If:",
+      "badge": "Use Cases",
+      "title": "Build for Teams Who:",
       "items": [
-        "You're tired of describing bugs instead of just showing them",
-        "You need to onboard someone and \"let me just do it with you\" would be easier than explaining",
-        "You're running browser tests and writing test scripts feels like overkill",
-        "You want a clean, disposable demo environment that won't leak customer data",
-        "Screen sharing feels like working with one hand tied behind your back",
-        "\"Works on my machine\" has bitten you more than once",
-        "You've ever wanted to collaborate on the same terminal without complex session sharing",
-        "You're building AI agents and need a safe sandbox to deploy them"
+        "Debug together, not sequentially",
+        "Need instant, disposable reproduction environments",
+        "Want to onboard engineers by doing, not documenting",
+        "Run browser automation without maintaining infrastructure",
+        "Hate the lag and friction of screen sharing",
+        "Need a secure sandbox for AI agent testing",
+        "Require root access without compromising local security",
+        "Value flow state over setup time"
       ]
     },
     "vision": {
-      "badge": "Where We're Going",
-      "title": "The Future We're Building",
-      "intro": "We believe the future of work isn't about better video calls. It's about shared context. Ephemeral environments you spin up for a task and throw away. Automation that doesn't require engineering degrees.",
+      "badge": "The Shift",
+      "title": "Computing as a Service",
+      "intro": "The future isn't better video calls. It's shared context.",
       "future": [
-        "Teams collaborate on the same machine without friction or lag",
-        "AI agents work alongside humans, handling repetitive tasks while you focus on what matters",
-        "Your work environment is as portable as your email—access it from anywhere, exactly as you left it",
-        "Security doesn't mean locking people out—it means isolated environments that vanish when you're done"
+        "Ephemeral Environments: Spin up, solve the problem, destroy the evidence.",
+        "AI Co-workers: Agents that live in your desktop, not just a chat window.",
+        "Universal Access: Your powerful dev machine is a URL, accessible from any device.",
+        "Default Multiplayer: Collaboration is baked into the kernel of how we work."
       ]
     },
     "cta": {
