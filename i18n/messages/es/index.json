@@ -253,27 +253,27 @@
   },
   "aboutPage": {
     "hero": {
-      "title": "Colaboración en paralelo",
-      "subtitle": "Hicimos esto porque nos cansamos de preguntar \"¿ven mi pantalla?\" y porque \"en mi máquina funciona\" no debería ser un chiste."
+      "title": "Computación Multijugador Real",
+      "subtitle": "No compartas tu pantalla. Comparte la máquina.\nTodos manejan, programan y depuran en paralelo."
     },
     "problem": {
-      "badge": "El Problema",
-      "title": "El trabajo se volvió remoto. Las herramientas no.",
-      "intro": "Tu código está en la nube. Tus datos están en la nube. ¿Pero colaborar? Sigue atado a máquinas locales.",
-      "scenario1": "Alguien comparte pantalla. Todos miran. Uno maneja. Todos esperan. Veinte mensajes por Slack para debuggear un entorno que todavía no podés ver.",
-      "scenario2": "Levantás un ambiente de prueba, lo configurás, lo usás para una demo. Cerrás la notebook. Desapareció. Mañana lo vas a reconstruir de memoria.",
-      "scenario3": "La infraestructura de tu equipo está dispersa en notebooks cuando debería ser infraestructura compartida que cualquiera accede al instante.",
-      "truth": "¿Y si varias personas pudieran trabajar en la misma máquina simultáneamente—no mirando, sino trabajando en paralelo? ¿Y si reproducir un bug fuera mandar un link al entorno exacto?",
-      "solution": "Por eso existe Cyqle."
+      "badge": "La Fricción",
+      "title": "La Colaboración se Quedó en los 90",
+      "intro": "El código vive en la nube. Los datos viven en la nube. ¿Pero tu entorno de trabajo? Sigue atrapado en tu dispositivo local.",
+      "scenario1": "Compartir pantalla es pasivo. Un conductor, muchos pasajeros. No es colaboración; es una presentación. No puedes arreglar un bug que no puedes tocar.",
+      "scenario2": "Los entornos locales son frágiles. Pasas horas configurando un espacio de trabajo que desaparece al cerrar la laptop. Compartirlo significa explicar pasos, no enviar un link.",
+      "scenario3": "El cómputo está disperso. Tu equipo tiene 10 laptops potentes pero ninguna infraestructura compartida para atacar un problema juntos.",
+      "truth": "Nos preguntamos: ¿Qué pasaría si el sistema operativo fuera multijugador? ¿Y si pudieras compartir una computadora completa con un link, como un Google Doc?",
+      "solution": "Cyqle es la respuesta."
     },
     "story": {
-      "badge": "Cómo empezó",
-      "title": "De dónde salió esto",
-      "year2017": "En 2017, trabajaba en una startup que necesitaba automatizar sitios web. Hicimos una API que levantaba navegadores y ejecutaba scripts—login, scraping, automatización de UI.",
-      "pivot": "La startup cerró. Pero seguí porque la idea tenía sentido.",
-      "year2025": "Saltamos a 2025. Agentes de IA por todos lados. Se me ocurrió: ¿y si esto tuviera IA integrada? Grabas tu workflow y la IA maneja lo complicado—se adapta a cambios de sitios, maneja errores, completa la tarea.",
-      "realization": "Ahí caí: ¿por qué solo navegadores? ¿Por qué no el escritorio entero? Hacerlo colaborativo. Multi-cursor para que todos trabajen al mismo tiempo. Un sandbox donde los agentes de IA puedan hacer cosas de verdad.",
-      "present": "Eso es Cyqle hoy. Una computadora en la nube, realmente multijugador, con IA integrada."
+      "badge": "Nuestra Lógica",
+      "title": "¿Por Qué Construimos Esto?",
+      "year2017": "Empezamos construyendo herramientas de automatización de navegadores. Útiles, pero limitadas. Nos dimos cuenta de que automatizar un navegador solo resolvía el 10% del problema.",
+      "pivot": "El verdadero cuello de botella era el Sistema Operativo.",
+      "year2025": "Los sistemas operativos están diseñados para un solo usuario. Por eso compartir pantalla es tan doloroso—es un parche sobre una arquitectura para un solo jugador.",
+      "realization": "Decidimos reconstruir el stack de escritorio para colaboración P2P. Sin 'host' ni 'invitado'—solo usuarios iguales trabajando en paralelo en la misma máquina.",
+      "present": "Cyqle es el resultado: Una computadora en la nube que trata la colaboración como una primitiva, no como una funcionalidad extra."
     },
     "solution": {
       "badge": "Qué es realmente",
@@ -290,41 +290,41 @@
       ]
     },
     "difference": {
-      "badge": "Realidad técnica",
-      "title": "Por qué esto no existía antes",
-      "intro": "Hacer un escritorio multijugador en la nube no es solo difícil—son muchos problemas complicados que nadie quería resolver:",
+      "badge": "Bajo el Capó",
+      "title": "Ingeniería Compleja, Invisible para Ti",
+      "intro": "Resolvimos los problemas que hicieron imposibles los escritorios en la nube en tiempo real durante años:",
       "challenges": [
-        "Streaming P2P real sin que un servidor sea cuello de botella",
-        "Arranque instantáneo sin la pesadez de virtualización tradicional",
-        "Multi-cursor a nivel de sistema (la mayoría de plataformas no están diseñadas para esto)",
-        "Aislamiento por sesión sin la complejidad de contenedores anidados",
-        "Cifrado que realmente destruye los datos cuando cerrás una sesión efímera"
+        "Streaming P2P de latencia cero (sin lag de servidor central)",
+        "Inyección de input multi-cursor a nivel de sistema",
+        "Almacenamiento efímero garantizado criptográficamente",
+        "Aprovisionamiento instantáneo (arranque en menos de 5 segundos)",
+        "Acceso vía navegador con rendimiento nativo"
       ],
-      "conclusion": "Pasamos años resolviendo esto para que no tengas que pensarlo. Solo tenés una computadora que funciona, en la nube, con todo el equipo trabajando al mismo tiempo."
+      "conclusion": "Es tecnología compleja envolviendo una promesa simple: Simplemente funciona."
     },
     "forWhom": {
-      "badge": "¿Es para vos?",
-      "title": "Te va a servir si:",
+      "badge": "Casos de Uso",
+      "title": "Construido para Equipos que:",
       "items": [
-        "Estás cansado de describir errores en vez de mostrarlos directamente",
-        "Necesitas entrenar a alguien y \"hacelo conmigo\" es más fácil que explicar",
-        "Estás probando navegadores y escribir scripts de test parece demasiado",
-        "Querés un ambiente de demo limpio y descartable sin riesgo de filtrar datos",
-        "Compartir pantalla se siente como trabajar con una mano atada",
-        "\"En mi máquina funciona\" te pasó más de una vez",
-        "Alguna vez quisiste colaborar en la misma terminal sin configurar SSH compartido",
-        "Estás construyendo agentes de IA y necesitás un sandbox seguro para desplegarlos"
+        "Depuran juntos, no secuencialmente",
+        "Necesitan entornos de reproducción instantáneos y descartables",
+        "Quieren hacer onboarding haciendo, no documentando",
+        "Corren automatización de navegadores sin mantener infraestructura",
+        "Odian el lag y la fricción de compartir pantalla",
+        "Necesitan un sandbox seguro para probar agentes de IA",
+        "Requieren acceso root sin comprometer la seguridad local",
+        "Valoran el estado de flujo sobre el tiempo de configuración"
       ]
     },
     "vision": {
-      "badge": "Hacia dónde vamos",
-      "title": "El futuro que estamos construyendo",
-      "intro": "Creemos que el futuro del trabajo no es mejores videollamadas. Es contexto compartido. Entornos efímeros que creás para una tarea y descartás. Automatización que no necesita un título de ingeniería.",
+      "badge": "El Cambio",
+      "title": "Computación como Servicio",
+      "intro": "El futuro no son mejores videollamadas. Es contexto compartido.",
       "future": [
-        "Equipos colaborando en la misma máquina sin fricción ni lag",
-        "Agentes de IA trabajando junto a humanos, haciendo lo repetitivo mientras vos te enfocás en lo importante",
-        "Tu entorno de trabajo tan portable como tu email—accedés desde donde sea, justo como lo dejaste",
-        "Seguridad que no bloquea personas—solo entornos aislados que desaparecen cuando terminás"
+        "Entornos Efímeros: Levanta, resuelve el problema, destruye la evidencia.",
+        "Compañeros IA: Agentes que viven en tu escritorio, no solo en una ventana de chat.",
+        "Acceso Universal: Tu potente máquina de desarrollo es una URL, accesible desde cualquier dispositivo.",
+        "Multijugador por Defecto: La colaboración está integrada en el kernel de cómo trabajamos."
       ]
     },
     "cta": {
