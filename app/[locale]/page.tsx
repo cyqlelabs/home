@@ -8,11 +8,9 @@ import {
   Users,
   TestTube,
   Headset,
-  PlugIcon as Pipeline,
   Bot,
   Lock,
   Terminal,
-  X as XIcon,
   Briefcase,
   Video,
   Upload,
@@ -50,10 +48,9 @@ export default async function Home({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
   // Get translations
-  const t = await getTranslations();
   const heroT = await getTranslations('hero');
   const featuresT = await getTranslations('features');
-  const useCasesT = await getTranslations('useCases');
+  const tUseCases = await getTranslations('useCases');
   const aiSectionT = await getTranslations('aiSection');
   const testimonialsT = await getTranslations('testimonials');
   const ctaT = await getTranslations('cta');
@@ -74,23 +71,7 @@ export default async function Home({ params: { locale } }: Props) {
             </h1>
           </div>
           <p className="text-xl md:text-2xl mb-10 text-slate-200 font-semibold max-w-4xl mt-2 [text-wrap:balance]">
-            {(() => {
-              const desc = heroT('description').split('.').filter(Boolean);
-
-              return (
-                <>
-                  <span className="">
-                    {(desc.length === 1 && <>{desc[0]}</>) || (
-                      <>
-                        {desc[0]}
-                        <br />
-                        {desc[1]}
-                      </>
-                    )}
-                  </span>
-                </>
-              );
-            })()}
+            {heroT('description')}
           </p>
           <div className="flex flex-col items-center gap-10">
             <PowerOnButton />
@@ -170,7 +151,7 @@ export default async function Home({ params: { locale } }: Props) {
       {/* Use Cases Section */}
       <AnimatedSection className="relative z-10 py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">{useCasesT('title')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">{tUseCases('title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
               <ResponsiveVideo
@@ -185,9 +166,9 @@ export default async function Home({ params: { locale } }: Props) {
                   <div className="bg-gray-500/20 p-2 rounded-lg mr-4">
                     <Users className="h-6 w-6 text-gray-300" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{useCasesT('development.title')}</h3>
+                  <h3 className="text-2xl font-semibold">{tUseCases('development.title')}</h3>
                 </div>
-                <p className="text-gray-400">{useCasesT('development.description')}</p>
+                <p className="text-gray-400">{tUseCases('development.description')}</p>
               </div>
 
               <div className="space-y-3">
@@ -195,9 +176,9 @@ export default async function Home({ params: { locale } }: Props) {
                   <div className="bg-[#FF7600]/20 p-2 rounded-lg mr-4">
                     <TestTube className="h-6 w-6 text-[#FF7600]" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{useCasesT('qa.title')}</h3>
+                  <h3 className="text-2xl font-semibold">{tUseCases('qa.title')}</h3>
                 </div>
-                <p className="text-gray-400">{useCasesT('qa.description')}</p>
+                <p className="text-gray-400">{tUseCases('qa.description')}</p>
               </div>
 
               <div className="space-y-3">
@@ -205,9 +186,9 @@ export default async function Home({ params: { locale } }: Props) {
                   <div className="bg-gray-500/20 p-2 rounded-lg mr-4">
                     <Headset className="h-6 w-6 text-gray-400" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{useCasesT('customerSupport.title')}</h3>
+                  <h3 className="text-2xl font-semibold">{tUseCases('customerSupport.title')}</h3>
                 </div>
-                <p className="text-gray-400">{useCasesT('customerSupport.description')}</p>
+                <p className="text-gray-400">{tUseCases('customerSupport.description')}</p>
               </div>
 
               <div className="space-y-3">
@@ -215,9 +196,9 @@ export default async function Home({ params: { locale } }: Props) {
                   <div className="bg-[#FF7600]/20 p-2 rounded-lg mr-4">
                     <Zap className="h-6 w-6 text-[#FF7600]" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{useCasesT('operations.title')}</h3>
+                  <h3 className="text-2xl font-semibold">{tUseCases('operations.title')}</h3>
                 </div>
-                <p className="text-gray-400">{useCasesT('operations.description')}</p>
+                <p className="text-gray-400">{tUseCases('operations.description')}</p>
               </div>
 
               <div className="space-y-3">
@@ -225,9 +206,9 @@ export default async function Home({ params: { locale } }: Props) {
                   <div className="bg-gray-500/20 p-2 rounded-lg mr-4">
                     <Briefcase className="h-6 w-6 text-gray-300" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{useCasesT('admin.title')}</h3>
+                  <h3 className="text-2xl font-semibold">{tUseCases('admin.title')}</h3>
                 </div>
-                <p className="text-gray-400">{useCasesT('admin.description')}</p>
+                <p className="text-gray-400">{tUseCases('admin.description')}</p>
               </div>
             </div>
           </div>
@@ -297,7 +278,7 @@ export default async function Home({ params: { locale } }: Props) {
                   </div>
                 )}
                 <p className="text-white dark:text-gray-300 mb-6 italic leading-relaxed mt-12">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
                 <div className="border-t border-gray-700 pt-4">
                   <p className="font-semibold text-white">{testimonial.author}</p>
