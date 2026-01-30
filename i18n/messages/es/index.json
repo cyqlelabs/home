@@ -25,39 +25,27 @@
     "title": "Un Escritorio Completo, Reinventado",
     "multiplayerDesktop": {
       "title": "Escritorio Multijugador Real",
-      "description": "Múltiples cursores, múltiples teclados, control total. Todo el equipo usa la misma computadora a la vez vía streaming P2P—basta de preguntar '¿están viendo mi pantalla?'"
+      "description": "**Múltiples cursores, múltiples teclados**, control total. Todo el equipo maneja el escritorio a la vez vía **streaming P2P**. **Videollamadas integradas**, **archivos al instante**, sesiones compartidas—basta de preguntar '¿están viendo mi pantalla?'"
     },
     "ephemeralEnvironments": {
       "title": "Entornos Efímeros al Instante",
-      "description": "Levantá escritorios configurados en segundos. Por defecto son efímeros por seguridad, pero podés persistirlos o clonarlos desde capturas. Empezá de cero sin reinstalar nada."
+      "description": "Levantá escritorios configurados en segundos. Por defecto son **efímeros** por seguridad, pero podés persistirlos o clonarlos desde **capturas**. Empezá de cero sin reinstalar nada."
     },
     "unrestrictedAccess": {
       "title": "Control y Acceso Total",
-      "description": "Acceso root para instalar lo que quieras. API para automatizar todo. Es tu máquina: configurala, automatizala y controlala como necesites."
+      "description": "**Acceso root** para instalar lo que quieras. **API** para automatizar todo. Es tu máquina: configurala, automatizala y controlala como necesites."
     },
     "workflowAutomation": {
-      "title": "Automatización Nativa",
-      "description": "Grabá flujos de trabajo en el navegador una vez y replicalos siempre. Delegale las tareas repetitivas a agentes de IA y enfocate en lo importante."
+      "title": "Automatización con IA",
+      "description": "Grabá flujos de trabajo en el navegador una vez y replicalos siempre. Delegale las tareas repetitivas a **agentes de IA** y enfocate en lo importante."
     },
     "zeroKnowledgeSecurity": {
       "title": "Seguridad Zero-Knowledge",
-      "description": "Tu filesystem se encripta con claves de sesión únicas. Al cerrar una sesión efímera, la data se borra criptográficamente—es irrecuperable, incluso para nosotros."
-    },
-    "collaborativeInfrastructure": {
-      "title": "Infraestructura Colaborativa",
-      "description": "Streaming P2P directo para colaboración fluida. Al ser en la nube, te olvidás de VPNs y configuraciones locales. Trabajá con tu equipo como si estuvieran al lado."
-    },
-    "videoCollaboration": {
-      "title": "Videollamadas Integradas",
-      "description": "Hacé videollamadas con tu equipo ahí mismo, sin salir del escritorio. Véanse las caras mientras trabajan—sin pestañas de Zoom ni cambios de contexto."
-    },
-    "instantFileSharing": {
-      "title": "File Sharing Instantáneo",
-      "description": "Arrastrá archivos desde tu laptop y aparecen al instante en el home del escritorio remoto. Sin uploads lentos, sin esperas."
+      "description": "Tu filesystem se **encripta** con claves de sesión únicas. Al cerrar una sesión efímera, la data se **borra criptográficamente**—es irrecuperable, incluso para nosotros."
     },
     "mobileAccess": {
-      "title": "Acceso Móvil",
-      "description": "Entrá desde el celular o la tablet. Solucioná errores en el transporte, revisá código en reuniones o chequeá logs en un incidente—tu escritorio en el bolsillo."
+      "title": "Experiencia Móvil Nativa",
+      "description": "Acceso completo desde tu celular o tablet con **gestos táctiles nativos**—**redimensioná y movés ventanas con gestos, deslizá para navegar**. Solucioná errores en el transporte, revisá código en reuniones, chequeá logs en un incidente. Tu escritorio poderoso se adapta a tus dedos."
     }
   },
   "useCases": {
@@ -324,7 +312,7 @@
       "future": [
         "Entornos Efímeros: Levanta, resuelve el problema, destruye la evidencia.",
         "Compañeros IA: Agentes que viven en tu escritorio, no solo en una ventana de chat.",
-        "Acceso Universal: Tu potente máquina de desarrollo es una URL, accesible desde cualquier dispositivo.",
+        "Acceso Universal: Tu potente máquina de desarrollo es una URL—con gestos táctiles nativos en el celular.",
         "Multijugador por Defecto: La colaboración está integrada en el kernel de cómo trabajamos."
       ]
     },

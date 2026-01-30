@@ -25,39 +25,27 @@
     "title": "A Full Desktop, Reimagined",
     "multiplayerDesktop": {
       "title": "True Multiplayer Desktop",
-      "description": "Multiple cursors, multiple keyboards, real-time control. Every team member controls the desktop simultaneously through peer-to-peer streaming—no more 'can you see my screen?'"
+      "description": "**Multiple cursors, multiple keyboards**, real-time control. Every team member drives the desktop simultaneously through **P2P streaming**. **Built-in video calls**, **instant file drops**, and shared sessions—no more 'can you see my screen?'"
     },
     "ephemeralEnvironments": {
       "title": "Instant Ephemeral Environments",
-      "description": "Spin up configured desktops in seconds. Default to ephemeral for security, persist when needed, or clone from snapshots. Fresh starts without the rebuild."
+      "description": "Spin up configured desktops in seconds. Default to **ephemeral** for security, persist when needed, or clone from **snapshots**. Fresh starts without the rebuild."
     },
     "unrestrictedAccess": {
       "title": "Unrestricted Access & Control",
-      "description": "Full root access to install anything. Programmatic API for automation. It's your machine—configure it, script it, control it however you need."
+      "description": "**Full root access** to install anything. **Programmatic API** for automation. It's your machine—configure it, script it, control it however you need."
     },
     "workflowAutomation": {
-      "title": "Built-in Workflow Automation",
-      "description": "Record browser workflows once, replay them forever. Delegate repetitive web tasks to AI agents so you focus on what matters."
+      "title": "AI Workflow Automation",
+      "description": "Record browser workflows once, replay them forever. Delegate repetitive web tasks to **AI agents** so you focus on what matters."
     },
     "zeroKnowledgeSecurity": {
       "title": "Zero-Knowledge Security",
-      "description": "Your filesystem is encrypted with unique session keys. When you close an ephemeral session, the data is cryptographically erased—we couldn't recover it even if we wanted to."
-    },
-    "collaborativeInfrastructure": {
-      "title": "Collaborative Infrastructure",
-      "description": "Direct peer-to-peer streaming for fluid collaboration. Cloud-hosted means no VPNs or local setup. Collaborate from anywhere like you're in the same room."
-    },
-    "videoCollaboration": {
-      "title": "Built-in Video Calls",
-      "description": "Jump on a video call with session participants without leaving your workspace. See faces and work together simultaneously—no Zoom tabs, no context switching."
-    },
-    "instantFileSharing": {
-      "title": "Instant File Sharing",
-      "description": "Drop files from your laptop—they appear instantly in the remote desktop's home folder. No upload steps, no waiting."
+      "description": "Your filesystem is **encrypted** with unique session keys. When you close an ephemeral session, the data is **cryptographically erased**—we couldn't recover it even if we wanted to."
     },
     "mobileAccess": {
-      "title": "Mobile Access",
-      "description": "Full access from your phone or tablet. Fix bugs on the train, review code during meetings, check logs during incidents—your desktop in your pocket."
+      "title": "Native Mobile Experience",
+      "description": "Full desktop access from your phone or tablet with **native touch gestures**—**pinch to resize windows, drag to move them, swipe to navigate**. Fix bugs on the train, review code during meetings, check logs during incidents. Your powerful desktop adapts to your thumbs."
     }
   },
   "useCases": {
@@ -323,7 +311,7 @@
       "future": [
         "Ephemeral Environments: Spin up, solve the problem, destroy the evidence.",
         "AI Co-workers: Agents that live in your desktop, not just a chat window.",
-        "Universal Access: Your powerful dev machine is a URL, accessible from any device.",
+        "Universal Access: Your powerful dev machine is a URL—with native touch gestures on mobile.",
         "Default Multiplayer: Collaboration is baked into the kernel of how we work."
       ]
     },
