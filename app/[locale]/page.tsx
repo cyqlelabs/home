@@ -3,7 +3,6 @@ import { type Metadata } from 'next';
 import Image from 'next/image';
 import {
   ChevronRight,
-  Cloud,
   Zap,
   Users,
   TestTube,
@@ -12,8 +11,6 @@ import {
   Lock,
   Terminal,
   Briefcase,
-  Video,
-  Upload,
   Smartphone,
 } from 'lucide-react';
 import ParallaxBackground from '@/components/parallax-background';
@@ -123,21 +120,6 @@ export default async function Home({ params: { locale } }: Props) {
               icon={<Lock className="h-10 w-10 text-gray-300" />}
               title={featuresT('zeroKnowledgeSecurity.title')}
               description={featuresT('zeroKnowledgeSecurity.description')}
-            />
-            <FeatureCard
-              icon={<Cloud className="h-10 w-10 text-gray-400" />}
-              title={featuresT('collaborativeInfrastructure.title')}
-              description={featuresT('collaborativeInfrastructure.description')}
-            />
-            <FeatureCard
-              icon={<Video className="h-10 w-10 text-[#FF7600]" />}
-              title={featuresT('videoCollaboration.title')}
-              description={featuresT('videoCollaboration.description')}
-            />
-            <FeatureCard
-              icon={<Upload className="h-10 w-10 text-gray-300" />}
-              title={featuresT('instantFileSharing.title')}
-              description={featuresT('instantFileSharing.description')}
             />
             <FeatureCard
               icon={<Smartphone className="h-10 w-10 text-[#FF7600]" />}
