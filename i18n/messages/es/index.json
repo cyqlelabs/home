@@ -112,7 +112,7 @@
     "description": "Dejá de compartir pantalla. Empezá a colaborar en una computadora que existe de verdad en la nube.",
     "startTrial": "Empezar Ahora",
     "scheduleDemo": "Agendar Demo",
-    "trialInfo": "Sesiones gratis de 15 min. Sin tarjeta de crédito."
+    "trialInfo": "Sesiones gratis de 60 min. Sin tarjeta de crédito."
   },
   "pricing": {
     "title": "Precios simples, sin sorpresas",
@@ -131,7 +131,7 @@
         "unit": "",
         "description": "Para probar y ver si te sirve.",
         "features": {
-          "time": "Sesiones de 15 minutos",
+          "time": "Sesiones de 60 minutos",
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "Hasta 10mb/s",
           "priority": "Prioridad baja",
@@ -763,7 +763,7 @@
           "title": "Niveles de Suscripción",
           "free": {
             "name": "Nivel Gratuito:",
-            "description": "Proporciona acceso limitado con límites de sesión de 15 minutos, 1 vCPU, 1 GB RAM, sin persistencia y acceso a cola de baja prioridad. Destinado solo a fines de evaluación."
+            "description": "Proporciona acceso limitado con límites de sesión de 60 minutos, 1 vCPU, 1 GB RAM, sin persistencia y acceso a cola de baja prioridad. Destinado solo a fines de evaluación."
           },
           "paid": {
             "name": "Niveles de Pago (Lite, Pro, Power):",

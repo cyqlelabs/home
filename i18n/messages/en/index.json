@@ -111,7 +111,7 @@
     "description": "Stop screen sharing. Start collaborating on a computer that actually exists in the cloud.",
     "startTrial": "Get Started Now",
     "scheduleDemo": "Schedule a Demo",
-    "trialInfo": "15-minute free sessions. No credit card required."
+    "trialInfo": "60-minute free sessions. No credit card required."
   },
   "pricing": {
     "title": "Simple, Transparent Pricing",
@@ -130,7 +130,7 @@
         "unit": "",
         "description": "Perfect for a quick test drive.",
         "features": {
-          "time": "15 Minute Session Limit",
+          "time": "60 Minute Session Limit",
           "specs": "1 vCPU / 1 GB RAM",
           "bandwidth": "Up to 10mb/s bandwidth",
           "priority": "Low Priority Queue",
@@ -762,7 +762,7 @@
           "title": "Subscription Tiers",
           "free": {
             "name": "Free Tier:",
-            "description": "Provides limited access with 15-minute session limits, 1 vCPU, 1 GB RAM, no persistence, and low priority queue access. Intended for evaluation purposes only."
+            "description": "Provides limited access with 60-minute session limits, 1 vCPU, 1 GB RAM, no persistence, and low priority queue access. Intended for evaluation purposes only."
           },
           "paid": {
             "name": "Paid Tiers (Lite, Pro, Power Tiers):",
