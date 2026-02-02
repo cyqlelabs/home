@@ -252,7 +252,7 @@ export default async function Home({ params: { locale } }: Props) {
             {testimonialsT.raw('items').map((testimonial: any, index: number) => (
               <div
                 key={index}
-                className="bg-gray-900/50 p-8 rounded-xl border border-gray-800 hover:border-[#FF7600]/50 transition-all duration-300 relative"
+                className="bg-gray-900/50 backdrop-blur-xl p-8 rounded-xl border border-gray-800 hover:border-[#FF7600]/50 transition-all duration-300 relative"
               >
                 {testimonial.metric && (
                   <div className="absolute top-4 right-4 bg-[#FF7600]/10 border border-[#FF7600]/30 rounded-lg px-3 py-1">
