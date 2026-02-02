@@ -222,7 +222,7 @@ export default async function AboutPage({ params: { locale } }: Props) {
       <AnimatedSection className="relative z-10 py-20">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">{t('cta.title')}</h2>
-          <p className="text-xl text-gray-300 mb-8">{t('cta.description')}</p>
+          <p className="text-xl text-gray-300 mb-8 whitespace-pre-line">{t('cta.description')}</p>
           <TrackedLink
             href="https://app.cyqle.in"
             trackingKey="aboutPageCTA"

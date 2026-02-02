@@ -275,7 +275,7 @@ export default async function Home({ params: { locale } }: Props) {
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-r from-gray-900/30 to-gray-800">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{ctaT('title')}</h2>
-          <p className="text-xl dark:text-gray-300 text-white max-w-3xl mx-auto mb-10">
+          <p className="text-xl dark:text-gray-300 text-white max-w-3xl mx-auto mb-10 whitespace-pre-line">
             {ctaT('description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
