@@ -1,7 +1,7 @@
 'use client';
 
-import BackgroundSlideshow from './background-slideshow';
+import VideoBackground from './video-background';
 
 export default function HeroBackground() {
-  return <BackgroundSlideshow interval={8000} />;
+  return <VideoBackground />;
 }

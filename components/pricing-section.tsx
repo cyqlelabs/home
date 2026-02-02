@@ -145,7 +145,7 @@ export default function PricingSection() {
           return (
             <Card
               key={plan}
-              className={`bg-gray-900/50 border-gray-800 flex flex-col transition-all duration-300 ${
+              className={`bg-gray-900/50 backdrop-blur-xl border-gray-800 flex flex-col transition-all duration-300 ${
                 plan === 'lite'
                   ? 'border-[#FF7600] shadow-lg shadow-[#FF7600]/10 scale-105 z-10'
                   : 'hover:border-gray-700'
