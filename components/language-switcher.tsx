@@ -10,10 +10,8 @@ export default function LanguageSwitcher() {
   const pathname = usePathname();
 
   const switchLocale = (newLocale: string) => {
-    // Get current pathname relative to locale root
+    localStorage.setItem('preferred-locale', newLocale);
     const pathnameWithoutLocale = pathname.replace(`/${locale}`, '');
-
-    // Navigate to the same page with the new locale
     router.push(`/${newLocale}${pathnameWithoutLocale || '/'}`);
   };
 
