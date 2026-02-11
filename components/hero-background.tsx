@@ -1,10 +1,4 @@
-'use client';
-
-import dynamic from 'next/dynamic';
-
-const CursorGlobe = dynamic(async () => await import('./cursor-globe/cursor-globe'), {
-  ssr: false,
-});
+import CursorGlobe from './cursor-globe/cursor-globe';
 
 export default function HeroBackground() {
   return <CursorGlobe />;
