@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 
 import '../globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import { notFound } from 'next/navigation';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { ThemeProvider } from '@/components/theme-provider';
@@ -16,7 +16,13 @@ import {
   type SiteLocale,
 } from '@/lib/site-metadata';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = localFont({
+  src: [
+    { path: '../../public/fonts/inter-latin.woff2', weight: '100 900', style: 'normal' },
+    { path: '../../public/fonts/inter-latin-ext.woff2', weight: '100 900', style: 'normal' },
+  ],
+  display: 'swap',
+});
 
 type Props = {
   children: ReactNode;

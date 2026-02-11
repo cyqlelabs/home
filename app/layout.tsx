@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 
 import './globals.css';
 import { type Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import Script from 'next/script';
 import {
   formatDetection,
@@ -12,7 +12,13 @@ import {
   siteMetadata,
 } from '@/lib/site-metadata';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = localFont({
+  src: [
+    { path: '../public/fonts/inter-latin.woff2', weight: '100 900', style: 'normal' },
+    { path: '../public/fonts/inter-latin-ext.woff2', weight: '100 900', style: 'normal' },
+  ],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
