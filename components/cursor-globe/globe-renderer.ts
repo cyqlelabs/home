@@ -1,22 +1,20 @@
-import { Application, Container, Sprite, type RenderTexture } from 'pixi.js';
 import { type SpherePoint } from './types';
 import { fibonacciSphere, rotateY, rotateX, project } from './sphere-math';
-import { createCursorTexture } from './cursor-texture';
+import { createCursorImages, CURSOR_SIZE } from './cursor-texture';
 
-interface CursorGroup {
-  container: Container;
-  spriteR: Sprite;
-  spriteG: Sprite;
-  spriteB: Sprite;
+interface Cursor {
   basePoint: SpherePoint;
   highlightAmount: number;
+  neonAmount: number;
 }
 
 export class GlobeRenderer {
-  app: Application;
-  private readonly stage: Container;
-  private readonly cursors: CursorGroup[] = [];
-  private texture!: RenderTexture;
+  private readonly ctx: CanvasRenderingContext2D;
+  private readonly canvas: HTMLCanvasElement;
+  private readonly cursors: Cursor[] = [];
+  private images: HTMLCanvasElement[] = [];
+  private animId = 0;
+  private lastTime = 0;
   private rotationAngle = 0;
   private scrollMultiplier = 1;
   private mouseX = -9999;
@@ -27,145 +25,139 @@ export class GlobeRenderer {
   private readonly fov = 800;
   private readonly tiltX = (-15 * Math.PI) / 180;
   private destroyed = false;
-  private initialized = false;
+  private width = 0;
+  private height = 0;
+  private dpr = 1;
+  private neonTimer = 0;
+  private neonInterval = 80;
 
-  constructor(isMobile: boolean) {
-    this.app = new Application();
-    this.stage = new Container();
-    this.stage.sortableChildren = true;
+  constructor(canvas: HTMLCanvasElement, isMobile: boolean) {
+    this.canvas = canvas;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) throw new Error('Could not get 2d context');
+    this.ctx = ctx;
     this.isMobile = isMobile;
     this.cursorCount = isMobile ? 60 : 120;
   }
 
-  async init(canvas: HTMLCanvasElement) {
-    const width = canvas.clientWidth;
-    const height = canvas.clientHeight;
+  init() {
+    this.images = createCursorImages();
+    this.dpr = this.isMobile ? 1 : Math.min(window.devicePixelRatio, 2);
+    this.updateSize(this.canvas.clientWidth, this.canvas.clientHeight);
 
-    await this.app.init({
-      canvas,
-      width,
-      height,
-      preference: 'webgl',
-      backgroundAlpha: 0,
-      resolution: this.isMobile ? 1 : Math.min(window.devicePixelRatio, 2),
-      autoDensity: true,
-      antialias: !this.isMobile,
-      powerPreference: 'high-performance',
-    });
-
-    if (this.destroyed) {
-      this.app.destroy({ removeView: false });
-      return;
-    }
-
-    this.app.stage.addChild(this.stage);
-    this.texture = createCursorTexture(this.app);
-    this.radius = Math.min(width, height) * 0.35;
-    this.createCursors();
-    this.app.ticker.add(this.tick);
-    this.initialized = true;
-  }
-
-  private createCursors() {
     const points = fibonacciSphere(this.cursorCount);
-
     for (let i = 0; i < this.cursorCount; i++) {
-      const container = new Container();
-      container.sortableChildren = false;
-
-      const spriteR = new Sprite(this.texture);
-      spriteR.tint = 0xff0000;
-      spriteR.blendMode = 'add';
-      spriteR.anchor.set(0, 0);
-
-      const spriteG = new Sprite(this.texture);
-      spriteG.tint = 0x00ff00;
-      spriteG.blendMode = 'add';
-      spriteG.anchor.set(0, 0);
-
-      const spriteB = new Sprite(this.texture);
-      spriteB.tint = 0x00ffff;
-      spriteB.blendMode = 'add';
-      spriteB.anchor.set(0, 0);
-
-      container.addChild(spriteR, spriteG, spriteB);
-      this.stage.addChild(container);
-
-      this.cursors.push({
-        container,
-        spriteR,
-        spriteG,
-        spriteB,
-        basePoint: points[i],
-        highlightAmount: 0,
-      });
+      this.cursors.push({ basePoint: points[i], highlightAmount: 0, neonAmount: 0 });
     }
+
+    this.lastTime = performance.now();
+    this.animId = requestAnimationFrame(this.tick);
   }
 
-  private readonly tick = () => {
+  private updateSize(w: number, h: number) {
+    this.width = w;
+    this.height = h;
+    this.canvas.width = w * this.dpr;
+    this.canvas.height = h * this.dpr;
+    this.radius = Math.min(w, h) * (this.isMobile ? 0.48 : 0.35);
+  }
+
+  private readonly tick = (now: number) => {
     if (this.destroyed) return;
     if (this.scrollMultiplier < 0.01) {
-      this.stage.visible = false;
+      this.animId = requestAnimationFrame(this.tick);
       return;
     }
-    this.stage.visible = true;
+    const dt = Math.min((now - this.lastTime) / 16.667, 3);
+    this.lastTime = now;
 
-    const dt = this.app.ticker.deltaTime;
     this.rotationAngle += 0.004 * dt * this.scrollMultiplier;
 
-    const centerX = this.app.screen.width / 2;
-    const centerY = this.app.screen.height / 2;
+    // Neon trigger
+    this.neonTimer += dt;
+    if (this.neonTimer > this.neonInterval) {
+      this.neonTimer = 0;
+      this.neonInterval = 60 + Math.random() * 120;
+      const count = 2 + Math.floor(Math.random() * 4);
+      for (let j = 0; j < count; j++) {
+        const idx = Math.floor(Math.random() * this.cursors.length);
+        this.cursors[idx].neonAmount = 1;
+      }
+    }
+
+    const ctx = this.ctx;
+    ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+    ctx.clearRect(0, 0, this.width, this.height);
+    ctx.globalCompositeOperation = 'lighter';
+
+    const centerX = this.width / 2;
+    const centerY = this.height / 2;
+    const hoverRadius = this.isMobile ? 80 : 60;
 
     for (let i = 0; i < this.cursors.length; i++) {
       const cursor = this.cursors[i];
 
+      cursor.neonAmount *= Math.pow(0.96, dt);
+      if (cursor.neonAmount < 0.01) cursor.neonAmount = 0;
+
       let pt = rotateY(cursor.basePoint, this.rotationAngle);
       pt = rotateX(pt, this.tiltX);
-
       const projected = project(pt, this.radius, centerX, centerY, this.fov);
 
       const dx = projected.screenX - this.mouseX;
       const dy = projected.screenY - this.mouseY;
       const dist = Math.sqrt(dx * dx + dy * dy);
-      const hoverRadius = this.isMobile ? 80 : 60;
-      const isNear = dist < hoverRadius;
-
-      const targetHighlight = isNear ? 1 : 0;
+      const targetHighlight = dist < hoverRadius ? 1 : 0;
       cursor.highlightAmount += (targetHighlight - cursor.highlightAmount) * 0.1 * dt;
 
       const h = cursor.highlightAmount;
-      const baseScale = projected.scale * 0.8;
-      const scale = baseScale * (1 + h * 0.5);
-      const alpha = projected.alpha * this.scrollMultiplier;
+      const n = cursor.neonAmount;
+      const glow = Math.max(h, n);
 
-      cursor.container.position.set(projected.screenX, projected.screenY);
-      cursor.container.zIndex = Math.round(projected.depth * 1000);
+      const baseScale = projected.scale * 0.8;
+      const scale = baseScale * (1 + glow * 0.5);
+      const alpha = projected.alpha * this.scrollMultiplier;
+      const size = CURSOR_SIZE * scale;
 
       const distFromCenter = Math.sqrt(
-        Math.pow(projected.screenX - centerX, 2) + Math.pow(projected.screenY - centerY, 2),
+        (projected.screenX - centerX) ** 2 + (projected.screenY - centerY) ** 2,
       );
       const maxDist = this.radius * 1.2;
       const aberrationStrength = Math.min(distFromCenter / maxDist, 1);
-      const offset = aberrationStrength * 3 * scale;
+      const offset = (aberrationStrength * 3 + n * 5) * scale;
 
-      cursor.spriteR.position.set(-offset, -offset * 0.5);
-      cursor.spriteR.scale.set(scale);
-      cursor.spriteR.alpha = alpha;
+      // Red channel
+      let rAlpha = alpha;
+      // Green channel
+      let gAlpha = alpha;
+      // Cyan channel
+      let bAlpha = alpha;
 
-      cursor.spriteG.position.set(offset * 0.5, offset);
-      cursor.spriteG.scale.set(scale);
-      cursor.spriteG.alpha = alpha;
-
-      cursor.spriteB.position.set(offset * 0.3, -offset * 0.8);
-      cursor.spriteB.scale.set(scale);
-      cursor.spriteB.alpha = alpha;
-
-      if (h > 0.01) {
-        cursor.spriteG.alpha = alpha + h * 0.6;
-        cursor.spriteR.alpha = alpha * (1 - h * 0.3);
-        cursor.spriteB.alpha = alpha * (1 - h * 0.3);
+      if (n > 0.01) {
+        const neonAlpha = alpha + n * 1.2;
+        gAlpha = neonAlpha;
+        bAlpha = neonAlpha * 0.8;
+        rAlpha = alpha * (1 - n * 0.6);
+      } else if (h > 0.01) {
+        gAlpha = alpha + h * 0.6;
+        rAlpha = alpha * (1 - h * 0.3);
+        bAlpha = alpha * (1 - h * 0.3);
       }
+
+      const sx = projected.screenX;
+      const sy = projected.screenY;
+
+      ctx.globalAlpha = rAlpha;
+      ctx.drawImage(this.images[0], sx - offset, sy - offset * 0.5, size, size);
+
+      ctx.globalAlpha = gAlpha;
+      ctx.drawImage(this.images[1], sx + offset * 0.5, sy + offset, size, size);
+
+      ctx.globalAlpha = bAlpha;
+      ctx.drawImage(this.images[2], sx + offset * 0.3, sy - offset * 0.8, size, size);
     }
+
+    this.animId = requestAnimationFrame(this.tick);
   };
 
   updateScroll(scrollY: number) {
@@ -174,8 +166,7 @@ export class GlobeRenderer {
       this.scrollMultiplier = 1;
     } else {
       const progress = Math.min(scrollY / 2000, 1);
-      const exponential = Math.pow(progress, 1.5);
-      this.scrollMultiplier = Math.max(0, 1 - exponential);
+      this.scrollMultiplier = Math.max(0, 1 - Math.pow(progress, 1.5));
     }
   }
 
@@ -185,16 +176,12 @@ export class GlobeRenderer {
   }
 
   resize(width: number, height: number) {
-    if (this.destroyed || !this.initialized) return;
-    this.app.renderer.resize(width, height);
-    this.radius = Math.min(width, height) * 0.35;
+    if (this.destroyed) return;
+    this.updateSize(width, height);
   }
 
   destroy() {
     this.destroyed = true;
-    if (!this.initialized) return;
-    this.app.ticker.remove(this.tick);
-    this.texture?.destroy(true);
-    this.app.destroy({ removeView: false }, { children: true });
+    cancelAnimationFrame(this.animId);
   }
 }
