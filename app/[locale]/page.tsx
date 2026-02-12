@@ -134,64 +134,74 @@ export default async function Home({ params: { locale } }: Props) {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">{tUseCases('title')}</h2>
         </div>
-        <div className="mx-auto md:px-4 max-w-[1600px]">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_380px] gap-6 md:gap-0 items-center">
-            <div className="md:rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 lg:gap-12 items-center">
+            <div className="rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
               <ResponsiveVideo
                 desktopSrc="/Cyqle-multi-web.mp4"
                 mobileSrc="/Cyqle-multi-web.mp4"
                 className="w-full h-full"
               />
             </div>
-            <div className="space-y-4 px-4 md:px-0">
-              <div className="space-y-1">
+            <div className="space-y-6">
+              <div className="space-y-2">
                 <div className="flex items-center">
-                  <div className="bg-gray-500/20 p-1.5 rounded-lg mr-3">
+                  <div className="bg-gray-500/20 p-2 rounded-lg mr-3">
                     <Users className="h-5 w-5 text-gray-300" />
                   </div>
                   <h3 className="text-lg font-semibold">{tUseCases('development.title')}</h3>
                 </div>
-                <p className="text-gray-400">{tUseCases('development.description')}</p>
+                <p className="text-gray-400 text-base leading-relaxed">
+                  {tUseCases('development.description')}
+                </p>
               </div>
 
-              <div className="space-y-1">
+              <div className="space-y-2">
                 <div className="flex items-center">
-                  <div className="bg-[#FF7600]/20 p-1.5 rounded-lg mr-3">
+                  <div className="bg-[#FF7600]/20 p-2 rounded-lg mr-3">
                     <TestTube className="h-5 w-5 text-[#FF7600]" />
                   </div>
                   <h3 className="text-lg font-semibold">{tUseCases('qa.title')}</h3>
                 </div>
-                <p className="text-gray-400">{tUseCases('qa.description')}</p>
+                <p className="text-gray-400 text-base leading-relaxed">
+                  {tUseCases('qa.description')}
+                </p>
               </div>
 
-              <div className="space-y-1">
+              <div className="space-y-2">
                 <div className="flex items-center">
-                  <div className="bg-gray-500/20 p-1.5 rounded-lg mr-3">
+                  <div className="bg-gray-500/20 p-2 rounded-lg mr-3">
                     <Headset className="h-5 w-5 text-gray-400" />
                   </div>
                   <h3 className="text-lg font-semibold">{tUseCases('customerSupport.title')}</h3>
                 </div>
-                <p className="text-gray-400">{tUseCases('customerSupport.description')}</p>
+                <p className="text-gray-400 text-base leading-relaxed">
+                  {tUseCases('customerSupport.description')}
+                </p>
               </div>
 
-              <div className="space-y-1">
+              <div className="space-y-2">
                 <div className="flex items-center">
-                  <div className="bg-[#FF7600]/20 p-1.5 rounded-lg mr-3">
+                  <div className="bg-[#FF7600]/20 p-2 rounded-lg mr-3">
                     <Zap className="h-5 w-5 text-[#FF7600]" />
                   </div>
                   <h3 className="text-lg font-semibold">{tUseCases('operations.title')}</h3>
                 </div>
-                <p className="text-gray-400">{tUseCases('operations.description')}</p>
+                <p className="text-gray-400 text-base leading-relaxed">
+                  {tUseCases('operations.description')}
+                </p>
               </div>
 
-              <div className="space-y-1">
+              <div className="space-y-2">
                 <div className="flex items-center">
-                  <div className="bg-gray-500/20 p-1.5 rounded-lg mr-3">
+                  <div className="bg-gray-500/20 p-2 rounded-lg mr-3">
                     <Briefcase className="h-5 w-5 text-gray-300" />
                   </div>
                   <h3 className="text-lg font-semibold">{tUseCases('admin.title')}</h3>
                 </div>
-                <p className="text-gray-400">{tUseCases('admin.description')}</p>
+                <p className="text-gray-400 text-base leading-relaxed">
+                  {tUseCases('admin.description')}
+                </p>
               </div>
             </div>
           </div>
