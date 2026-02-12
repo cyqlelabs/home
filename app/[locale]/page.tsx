@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { type Metadata } from 'next';
-import Image from 'next/image';
 import {
   ChevronRight,
   Zap,
@@ -134,61 +133,63 @@ export default async function Home({ params: { locale } }: Props) {
       <AnimatedSection className="relative z-10 py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">{tUseCases('title')}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
+        </div>
+        <div className="mx-auto md:px-4 max-w-[1600px]">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_380px] gap-6 md:gap-0 items-center">
+            <div className="md:rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
               <ResponsiveVideo
-                desktopSrc="/demo1.mp4"
-                mobileSrc="/demo1.mp4"
+                desktopSrc="/Cyqle-multi-web.mp4"
+                mobileSrc="/Cyqle-multi-web.mp4"
                 className="w-full h-full"
               />
             </div>
-            <div className="space-y-8">
-              <div className="space-y-3">
+            <div className="space-y-4 px-4 md:px-0">
+              <div className="space-y-1">
                 <div className="flex items-center">
-                  <div className="bg-gray-500/20 p-2 rounded-lg mr-4">
-                    <Users className="h-6 w-6 text-gray-300" />
+                  <div className="bg-gray-500/20 p-1.5 rounded-lg mr-3">
+                    <Users className="h-5 w-5 text-gray-300" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{tUseCases('development.title')}</h3>
+                  <h3 className="text-lg font-semibold">{tUseCases('development.title')}</h3>
                 </div>
                 <p className="text-gray-400">{tUseCases('development.description')}</p>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-1">
                 <div className="flex items-center">
-                  <div className="bg-[#FF7600]/20 p-2 rounded-lg mr-4">
-                    <TestTube className="h-6 w-6 text-[#FF7600]" />
+                  <div className="bg-[#FF7600]/20 p-1.5 rounded-lg mr-3">
+                    <TestTube className="h-5 w-5 text-[#FF7600]" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{tUseCases('qa.title')}</h3>
+                  <h3 className="text-lg font-semibold">{tUseCases('qa.title')}</h3>
                 </div>
                 <p className="text-gray-400">{tUseCases('qa.description')}</p>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-1">
                 <div className="flex items-center">
-                  <div className="bg-gray-500/20 p-2 rounded-lg mr-4">
-                    <Headset className="h-6 w-6 text-gray-400" />
+                  <div className="bg-gray-500/20 p-1.5 rounded-lg mr-3">
+                    <Headset className="h-5 w-5 text-gray-400" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{tUseCases('customerSupport.title')}</h3>
+                  <h3 className="text-lg font-semibold">{tUseCases('customerSupport.title')}</h3>
                 </div>
                 <p className="text-gray-400">{tUseCases('customerSupport.description')}</p>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-1">
                 <div className="flex items-center">
-                  <div className="bg-[#FF7600]/20 p-2 rounded-lg mr-4">
-                    <Zap className="h-6 w-6 text-[#FF7600]" />
+                  <div className="bg-[#FF7600]/20 p-1.5 rounded-lg mr-3">
+                    <Zap className="h-5 w-5 text-[#FF7600]" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{tUseCases('operations.title')}</h3>
+                  <h3 className="text-lg font-semibold">{tUseCases('operations.title')}</h3>
                 </div>
                 <p className="text-gray-400">{tUseCases('operations.description')}</p>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-1">
                 <div className="flex items-center">
-                  <div className="bg-gray-500/20 p-2 rounded-lg mr-4">
-                    <Briefcase className="h-6 w-6 text-gray-300" />
+                  <div className="bg-gray-500/20 p-1.5 rounded-lg mr-3">
+                    <Briefcase className="h-5 w-5 text-gray-300" />
                   </div>
-                  <h3 className="text-2xl font-semibold">{tUseCases('admin.title')}</h3>
+                  <h3 className="text-lg font-semibold">{tUseCases('admin.title')}</h3>
                 </div>
                 <p className="text-gray-400">{tUseCases('admin.description')}</p>
               </div>
@@ -226,12 +227,10 @@ export default async function Home({ params: { locale } }: Props) {
               </Button>
             </div>
             <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
-              <Image
-                src="/placeholder.svg"
-                width={800}
-                height={600}
-                alt="AI automation interface"
-                className="w-full h-auto"
+              <ResponsiveVideo
+                desktopSrc="/demo1.mp4"
+                mobileSrc="/demo1.mp4"
+                className="w-full h-full"
               />
             </div>
           </div>
