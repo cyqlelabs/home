@@ -221,9 +221,7 @@ export default function PricingSection() {
               </CardContent>
               <CardFooter>
                 <Button
-                  onClick={() =>
-                    trackCTA.pricingPlan(plan, pricingMode, plan === 'pro' ? proTier : undefined)
-                  }
+                  asChild
                   className={`w-full ${
                     plan === 'pro'
                       ? 'bg-white text-black hover:bg-gray-200'
@@ -232,7 +230,14 @@ export default function PricingSection() {
                         : 'bg-transparent border border-gray-700 text-white hover:bg-gray-800'
                   }`}
                 >
-                  {t(`plans.${plan}.cta`)}
+                  <a
+                    href="https://app.cyqle.in/signup"
+                    onClick={() =>
+                      trackCTA.pricingPlan(plan, pricingMode, plan === 'pro' ? proTier : undefined)
+                    }
+                  >
+                    {t(`plans.${plan}.cta`)}
+                  </a>
                 </Button>
               </CardFooter>
             </Card>
