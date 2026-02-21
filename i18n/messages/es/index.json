@@ -260,7 +260,7 @@
       "title": "¿Por Qué Construimos Esto?",
       "year2017": "Empezamos construyendo herramientas de automatización de navegadores. Útiles, pero limitadas. Nos dimos cuenta de que automatizar un navegador solo resolvía el 10% del problema.",
       "pivot": "El verdadero cuello de botella era el Sistema Operativo.",
-      "year2025": "Los sistemas operativos están diseñados para un solo usuario. Por eso compartir pantalla es tan doloroso—es un parche sobre una arquitectura para un solo jugador.",
+      "year2025": "Los sistemas operativos, en esencia, están orientados a un único usuario final. Por eso compartir pantalla es tan doloroso—es un parche sobre una arquitectura para un solo jugador.",
       "realization": "Decidimos reconstruir el stack de escritorio para colaboración P2P. Sin 'host' ni 'invitado'—solo usuarios iguales trabajando en paralelo en la misma máquina.",
       "present": "Cyqle es el resultado: Una computadora en la nube que trata la colaboración como una primitiva, no como una funcionalidad extra."
     },

@@ -259,7 +259,7 @@
       "title": "Why We Built It",
       "year2017": "We started by building browser automation tools. Useful, but limited. We realized that automating a browser was only solving 10% of the problem.",
       "pivot": "The real bottleneck was the Operating System.",
-      "year2025": "OSs are designed for one user. That's why screen sharing is so painful—it's a hack on top of a single-player architecture.",
+      "year2025": "OSs, at their core, target a single end user. That's why screen sharing is so painful—it's a hack on top of a single-player architecture.",
       "realization": "We decided to rebuild the desktop stack for p2p collaboration. No 'host' and 'guest'—just equal users working in parallel on the same machine.",
       "present": "Cyqle is the result: A cloud computer that treats collaboration as a primitive, not a feature."
     },
