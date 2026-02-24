@@ -141,7 +141,7 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "$0.50",
+        "price": "$0.20",
         "unit": "/credit",
         "description": "Casual research and privacy.",
         "features": {
@@ -155,7 +155,7 @@
       },
       "pro": {
         "name": "Pro",
-        "price": "$3.00",
+        "price": "$0.40",
         "unit": "/credit",
         "description": "Built for serious work.",
         "features": {

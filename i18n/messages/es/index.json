@@ -142,7 +142,7 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "$0.50",
+        "price": "$0.20",
         "unit": "/crédito",
         "description": "Para uso casual con privacidad.",
         "features": {
@@ -156,7 +156,7 @@
       },
       "pro": {
         "name": "Pro",
-        "price": "$3.00",
+        "price": "$0.40",
         "unit": "/crédito",
         "description": "Para trabajo en serio.",
         "features": {
