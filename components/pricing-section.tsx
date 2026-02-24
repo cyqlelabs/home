@@ -13,31 +13,70 @@ import {
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Check, X as XIcon, Star } from 'lucide-react';
+import { Check, Star, Users, ArrowRight, CheckCircle2, Loader2 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from '@/components/ui/dialog';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 type Tier = 'basic' | 'standard' | 'turbo' | 'max';
 type PricingMode = 'monthly' | 'payAsYouGo';
-
-const TIERS: Record<
-  Tier,
-  { name: string; specs: string; monthlyMultiplier: number; payPerUseMultiplier: number }
-> = {
-  basic: { name: 'Basic', specs: '1 vCPU / 1 GB', monthlyMultiplier: 0, payPerUseMultiplier: 0 },
-  standard: {
-    name: 'Standard',
-    specs: '2 vCPU / 4 GB',
-    monthlyMultiplier: 1,
-    payPerUseMultiplier: 1,
-  },
-  turbo: { name: 'Turbo', specs: '4 vCPU / 8 GB', monthlyMultiplier: 2, payPerUseMultiplier: 3 },
-  max: { name: 'Max', specs: '8 vCPU / 16 GB', monthlyMultiplier: 4, payPerUseMultiplier: 6 },
-};
 
 export default function PricingSection() {
   const t = useTranslations('pricing');
   const [proTier, setProTier] = useState<Tier>('standard');
   const [pricingMode, setPricingMode] = useState<PricingMode>('monthly');
+  const [quoteOpen, setQuoteOpen] = useState(false);
+  const [quoteEmail, setQuoteEmail] = useState('');
+  const [quoteSeats, setQuoteSeats] = useState('');
+  const [quoteStatus, setQuoteStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+
+  const handleQuoteClose = (open: boolean) => {
+    setQuoteOpen(open);
+    if (!open) {
+      setTimeout(() => {
+        setQuoteEmail('');
+        setQuoteSeats('');
+        setQuoteStatus('idle');
+      }, 200);
+    }
+  };
+
+  const handleQuoteSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setQuoteStatus('sending');
+    trackCTA.customQuoteSubmit(quoteSeats);
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          subject: `Custom Quote Request - ${quoteSeats} seats`,
+          from_name: 'Cyqle Website',
+          email: quoteEmail,
+          seats: quoteSeats,
+          message: `Custom quote request:\n\nSeats needed: ${quoteSeats}\nContact email: ${quoteEmail}`,
+        }),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setQuoteStatus('sent');
+      } else {
+        setQuoteStatus('error');
+      }
+    } catch {
+      setQuoteStatus('error');
+    }
+  };
 
   const plans = ['free', 'lite', 'pro'] as const;
 
@@ -135,7 +174,7 @@ export default function PricingSection() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-10">
         {plans.map((plan) => {
           const price = getPrice(plan);
           const tier = getTierForPlan(plan);
@@ -242,6 +281,112 @@ export default function PricingSection() {
           );
         })}
       </div>
+
+      {/* Custom Quote CTA */}
+      <div className="max-w-6xl mx-auto mb-20 flex flex-col sm:flex-row items-center justify-between gap-6 rounded-lg border border-dashed border-gray-700 bg-gray-900/30 p-6 sm:p-8">
+        <div className="flex items-center gap-4">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FF7600]/10">
+            <Users className="h-6 w-6 text-[#FF7600]" />
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-white">{t('customQuote.heading')}</h3>
+            <p className="text-sm text-gray-400">{t('customQuote.description')}</p>
+          </div>
+        </div>
+        <Button
+          onClick={() => {
+            setQuoteOpen(true);
+            trackCTA.customQuoteOpen();
+          }}
+          className="bg-transparent border border-[#FF7600] text-[#FF7600] hover:bg-[#FF7600]/10 shrink-0"
+        >
+          {t('customQuote.cta')}
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </Button>
+      </div>
+
+      {/* Custom Quote Dialog */}
+      <Dialog open={quoteOpen} onOpenChange={handleQuoteClose}>
+        <DialogContent className="bg-gray-950 border-gray-800 sm:max-w-md">
+          {quoteStatus === 'sent' ? (
+            <div className="flex flex-col items-center gap-4 py-6 text-center">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-green-500/10">
+                <CheckCircle2 className="h-8 w-8 text-green-500" />
+              </div>
+              <DialogHeader className="items-center">
+                <DialogTitle className="text-white">{t('customQuote.successTitle')}</DialogTitle>
+                <DialogDescription>{t('customQuote.successDescription')}</DialogDescription>
+              </DialogHeader>
+              <Button
+                onClick={() => handleQuoteClose(false)}
+                className="mt-2 bg-white text-black hover:bg-gray-200"
+              >
+                {t('customQuote.close')}
+              </Button>
+            </div>
+          ) : (
+            <>
+              <DialogHeader>
+                <DialogTitle className="text-white">{t('customQuote.dialogTitle')}</DialogTitle>
+                <DialogDescription>{t('customQuote.dialogDescription')}</DialogDescription>
+              </DialogHeader>
+              <form
+                onSubmit={(e) => {
+                  void handleQuoteSubmit(e);
+                }}
+                className="space-y-4"
+              >
+                <div className="space-y-2">
+                  <Label htmlFor="seats" className="text-gray-300">
+                    {t('customQuote.seatsLabel')}
+                  </Label>
+                  <Input
+                    id="seats"
+                    type="number"
+                    min="1"
+                    required
+                    value={quoteSeats}
+                    onChange={(e) => setQuoteSeats(e.target.value)}
+                    placeholder={t('customQuote.seatsPlaceholder')}
+                    className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="quote-email" className="text-gray-300">
+                    {t('customQuote.emailLabel')}
+                  </Label>
+                  <Input
+                    id="quote-email"
+                    type="email"
+                    required
+                    value={quoteEmail}
+                    onChange={(e) => setQuoteEmail(e.target.value)}
+                    placeholder={t('customQuote.emailPlaceholder')}
+                    className="bg-gray-900 border-gray-700 text-white placeholder:text-gray-500"
+                  />
+                </div>
+                {quoteStatus === 'error' && (
+                  <p className="text-sm text-red-400">{t('customQuote.errorMessage')}</p>
+                )}
+                <Button
+                  type="submit"
+                  disabled={quoteStatus === 'sending'}
+                  className="w-full bg-[#FF7600] hover:bg-[#FF7600]/90 text-white"
+                >
+                  {quoteStatus === 'sending' ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      {t('customQuote.sending')}
+                    </>
+                  ) : (
+                    t('customQuote.submit')
+                  )}
+                </Button>
+              </form>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
