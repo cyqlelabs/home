@@ -147,7 +147,7 @@
         "description": "Para uso casual con privacidad.",
         "features": {
           "specs": "1 vCPU / 2 GB RAM",
-          "bandwidth": "50mb/s",
+          "bandwidth": "100mb/s",
           "priority": "Prioridad estándar",
           "persistence": "20 GB para guardar",
           "api": "Acceso a la API"
@@ -161,7 +161,7 @@
         "description": "Para trabajo en serio.",
         "features": {
           "specs": "2 vCPU / 4 GB RAM",
-          "bandwidth": "100mb/s",
+          "bandwidth": "150mb/s",
           "priority": "Prioridad alta",
           "persistence": "40 GB para guardar",
           "snapshots": "Snapshots ilimitados",
@@ -184,21 +184,21 @@
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
           "persistence": "40 GB",
-          "bandwidth": "100mb/s"
+          "bandwidth": "150mb/s"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
           "persistence": "60 GB",
-          "bandwidth": "150mb/s"
+          "bandwidth": "200mb/s"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
           "persistence": "120 GB",
-          "bandwidth": "200mb/s"
+          "bandwidth": "300mb/s"
         }
       }
     },

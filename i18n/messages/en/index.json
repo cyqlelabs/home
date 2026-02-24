@@ -146,7 +146,7 @@
         "description": "Casual research and privacy.",
         "features": {
           "specs": "1 vCPU / 2 GB RAM",
-          "bandwidth": "50mb/s bandwidth",
+          "bandwidth": "100mb/s bandwidth",
           "priority": "Standard Priority",
           "persistence": "20 GB persistence",
           "api": "API Access"
@@ -160,7 +160,7 @@
         "description": "Built for serious work.",
         "features": {
           "specs": "2 vCPU / 4 GB RAM",
-          "bandwidth": "100mb/s bandwidth",
+          "bandwidth": "150mb/s bandwidth",
           "priority": "High Priority Queue",
           "persistence": "40 GB persistence",
           "snapshots": "Unlimited Snapshots",
@@ -183,21 +183,21 @@
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
           "persistence": "40 GB persistence",
-          "bandwidth": "100mb/s bandwidth"
+          "bandwidth": "150mb/s bandwidth"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
           "persistence": "60 GB persistence",
-          "bandwidth": "150mb/s bandwidth"
+          "bandwidth": "200mb/s bandwidth"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
           "persistence": "120 GB persistence",
-          "bandwidth": "200mb/s bandwidth"
+          "bandwidth": "300mb/s bandwidth"
         }
       }
     },
