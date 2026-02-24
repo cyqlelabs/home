@@ -201,7 +201,24 @@
         }
       }
     },
-    "creditEqualsHours": "1 credit = 10 hours"
+    "creditEqualsHours": "1 credit = 10 hours",
+    "customQuote": {
+      "heading": "Need more seats?",
+      "description": "Get volume pricing tailored to your team size.",
+      "cta": "Request a Quote",
+      "dialogTitle": "Get a Custom Quote",
+      "dialogDescription": "Tell us about your team and we'll prepare a tailored pricing plan.",
+      "seatsLabel": "How many seats do you need?",
+      "seatsPlaceholder": "e.g. 10",
+      "emailLabel": "Your work email",
+      "emailPlaceholder": "you@company.com",
+      "submit": "Request Quote",
+      "sending": "Sending...",
+      "successTitle": "Quote Requested!",
+      "successDescription": "We'll get back to you very soon with a tailored pricing plan.",
+      "errorMessage": "Something went wrong. Please try again.",
+      "close": "Close"
+    }
   },
   "footer": {
     "description": "The P2P cloud desktop for multiplayer collaboration and AI automation.",

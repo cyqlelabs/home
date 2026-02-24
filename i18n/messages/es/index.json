@@ -202,7 +202,24 @@
         }
       }
     },
-    "creditEqualsHours": "1 crédito = 10 horas"
+    "creditEqualsHours": "1 crédito = 10 horas",
+    "customQuote": {
+      "heading": "¿Necesitás más puestos?",
+      "description": "Precios por volumen adaptados a tu equipo.",
+      "cta": "Pedir cotización",
+      "dialogTitle": "Cotización personalizada",
+      "dialogDescription": "Contanos sobre tu equipo y te armamos un plan a medida.",
+      "seatsLabel": "¿Cuántos puestos necesitás?",
+      "seatsPlaceholder": "ej. 10",
+      "emailLabel": "Tu email de trabajo",
+      "emailPlaceholder": "vos@empresa.com",
+      "submit": "Pedir cotización",
+      "sending": "Enviando...",
+      "successTitle": "¡Cotización solicitada!",
+      "successDescription": "Te respondemos muy pronto con un plan a medida.",
+      "errorMessage": "Algo salió mal. Intentá de nuevo.",
+      "close": "Cerrar"
+    }
   },
   "footer": {
     "description": "El escritorio cloud P2P para colaboración multijugador y automatización con IA.",

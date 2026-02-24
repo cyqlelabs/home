@@ -62,6 +62,24 @@ export const trackCTA = {
     });
   },
 
+  customQuoteOpen: () => {
+    trackEvent('click', {
+      event_category: 'Pricing',
+      event_label: 'Custom Quote - Open Dialog',
+      button_location: 'pricing_section',
+      button_text: 'Request a Quote',
+    });
+  },
+
+  customQuoteSubmit: (seats: string) => {
+    trackEvent('form_submit', {
+      event_category: 'Pricing',
+      event_label: `Custom Quote - ${seats} seats`,
+      button_location: 'pricing_section',
+      seats_requested: seats,
+    });
+  },
+
   ctaStartTrial: () => {
     trackEvent('click', {
       event_category: 'CTA',
