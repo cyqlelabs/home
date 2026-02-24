@@ -60,6 +60,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build app
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run build
+        env:
+          NEXT_PUBLIC_WEB3FORMS_KEY: ${{ secrets.NEXT_PUBLIC_WEB3FORMS_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
