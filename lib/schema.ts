@@ -55,7 +55,7 @@ export const softwareApplicationSchema: WithContext<SoftwareApplication> = {
     price: '0',
     priceCurrency: 'USD',
     availability: 'https://schema.org/InStock',
-    description: 'Free tier available with paid plans starting from $0.50 per credit',
+    description: 'Free tier available with paid plans starting from $0.20 per credit',
   },
   aggregateRating: {
     '@type': 'AggregateRating',

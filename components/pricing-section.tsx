@@ -45,24 +45,22 @@ export default function PricingSection() {
     if (plan === 'free') return '$0.00';
 
     if (plan === 'lite') {
-      // Lite: $9/month or $0.25/credit (10 hours)
-      return pricingMode === 'monthly' ? '$9' : '$0.25';
+      return pricingMode === 'monthly' ? '$6' : '$0.20';
     }
 
     // Pro - uses proTier - Direct pricing per tier
     if (pricingMode === 'monthly') {
       const monthlyPricing = {
-        standard: 17,
-        turbo: 34,
-        max: 67,
+        standard: 12,
+        turbo: 23,
+        max: 45,
       };
       return `$${monthlyPricing[proTier]}`;
     } else {
-      // Credits pricing: Standard=$0.50, Turbo=$1.00, Max=$2.00 per credit (10 hours each)
       const creditPricing = {
-        standard: 0.5,
-        turbo: 1.0,
-        max: 2.0,
+        standard: 0.4,
+        turbo: 0.77,
+        max: 1.51,
       };
       return `$${creditPricing[proTier].toFixed(2)}`;
     }
