@@ -11,7 +11,7 @@
     "tryForFree": "Try for Free"
   },
   "hero": {
-    "title": "Finally: A Cloud Desktop You Can Actually Share",
+    "title": "A Cloud Desktop You Can Actually Share",
     "titlePhrase1": "Your Cloud Desktop",
     "titlePhrase2": "Your Shared Workspace",
     "titlePhrase3": "Your Team Computer",
@@ -20,7 +20,6 @@
     "bookDemo": "Book a Demo",
     "trialInfo": "Free tier available. No credit card required.",
     "powerOnLabel": "Power On — It's Free",
-    "trustBar": "Used by dev teams, QA engineers, and AI researchers worldwide",
     "moreInfo": "More Info"
   },
   "features": {

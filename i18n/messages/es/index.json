@@ -11,7 +11,7 @@
     "tryForFree": "Probar gratis"
   },
   "hero": {
-    "title": "Finalmente: Un Escritorio Cloud que Podés Compartir de Verdad",
+    "title": "Un Escritorio Cloud que Podés Compartir de Verdad",
     "titlePhrase1": "Tu Escritorio Cloud",
     "titlePhrase2": "Tu Espacio de Trabajo Compartido",
     "titlePhrase3": "La Computadora de tu Equipo",
@@ -19,8 +19,7 @@
     "getStarted": "Empezar",
     "bookDemo": "Agendar Demo",
     "trialInfo": "Tier gratis disponible. Sin tarjeta de crédito.",
-    "powerOnLabel": "Encender — Es Gratis",
-    "trustBar": "Usado por equipos de desarrollo, QA e investigadores de IA en todo el mundo",
+    "powerOnLabel": "Empezar — Es Gratis",
     "moreInfo": "Más Info"
   },
   "features": {
