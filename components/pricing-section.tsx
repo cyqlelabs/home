@@ -136,7 +136,9 @@ export default function PricingSection() {
       `}</style>
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('title')}</h2>
-        <p className="text-xl text-gray-400 mb-8">{t('description')}</p>
+        <p className="text-xl text-gray-400 mb-8">
+          {pricingMode === 'monthly' ? t('descriptionMonthly') : t('descriptionPayAsYouGo')}
+        </p>
 
         {/* Pricing Mode Toggle */}
         <div className="flex justify-center mb-12">

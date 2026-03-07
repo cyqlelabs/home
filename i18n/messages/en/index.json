@@ -11,14 +11,16 @@
     "tryForFree": "Try for Free"
   },
   "hero": {
-    "title": "The P2P Cloud Desktop",
+    "title": "Finally: A Cloud Desktop You Can Actually Share",
     "titlePhrase1": "Your Cloud Desktop",
     "titlePhrase2": "Your Shared Workspace",
     "titlePhrase3": "Your Team Computer",
-    "description": "A persistent cloud computer for real‑time collaboration and workflow automation.",
+    "description": "Spin up a full cloud desktop in seconds. Invite your team. Everyone drives.",
     "getStarted": "Get Started",
     "bookDemo": "Book a Demo",
     "trialInfo": "Free tier available. No credit card required.",
+    "powerOnLabel": "Power On — It's Free",
+    "trustBar": "Used by dev teams, QA engineers, and AI researchers worldwide",
     "moreInfo": "More Info"
   },
   "features": {
@@ -81,7 +83,7 @@
       "Maintain a shared library of team automations",
       "Works with your existing tools"
     ],
-    "exploreFeatures": "Explore Features"
+    "exploreFeatures": "Try It Free"
   },
   "testimonials": {
     "title": "Life After Localhost",
@@ -107,15 +109,16 @@
     ]
   },
   "cta": {
-    "title": "Your Team's Computer in the Cloud.",
-    "description": "Stop screen sharing.\nStart collaborating on a computer that actually exists in the cloud.",
+    "title": "One Link. One Desktop. Whole Team Inside.",
+    "description": "One invite link. Everyone on your team is in the same desktop, with their own cursor, in under 10 seconds.",
     "startTrial": "Get Started Now",
     "scheduleDemo": "Schedule a Demo",
     "trialInfo": "60-minute free sessions. No credit card required."
   },
   "pricing": {
-    "title": "Simple, Transparent Pricing",
-    "description": "Choose the perfect plan for your workflow.",
+    "title": "Pricing That Scales With You",
+    "descriptionMonthly": "Start free. Monthly plans from $6/month per desktop.",
+    "descriptionPayAsYouGo": "Start free. Pay as you go from $0.20/credit — 10 hours of cloud desktop for less than a coffee.",
     "monthly": "/month",
     "credit": "/credit",
     "monthlyLabel": "Monthly",
@@ -143,7 +146,7 @@
         "name": "Lite",
         "price": "$0.20",
         "unit": "/credit",
-        "description": "Casual research and privacy.",
+        "description": "Perfect for solo dev work.",
         "features": {
           "specs": "1 vCPU / 2 GB RAM",
           "bandwidth": "100mb/s bandwidth",
@@ -201,7 +204,7 @@
         }
       }
     },
-    "creditEqualsHours": "1 credit = 10 hours",
+    "creditEqualsHours": "1 credit = 10 hrs of desktop time",
     "customQuote": {
       "heading": "Need more seats?",
       "description": "Get volume pricing tailored to your team size.",
@@ -218,6 +221,21 @@
       "successDescription": "We'll get back to you very soon with a tailored pricing plan.",
       "errorMessage": "Something went wrong. Please try again.",
       "close": "Close"
+    }
+  },
+  "howItWorks": {
+    "title": "Up and Running in Seconds",
+    "step1": {
+      "title": "Launch",
+      "description": "Click to start. Your full Linux desktop is live in your browser in seconds. No install, no config."
+    },
+    "step2": {
+      "title": "Invite",
+      "description": "Share one link. Your whole team joins instantly — everyone gets their own cursor and keyboard."
+    },
+    "step3": {
+      "title": "Work Together",
+      "description": "Type, click, and navigate simultaneously on the same desktop. Fix bugs together. Ship faster."
     }
   },
   "footer": {
