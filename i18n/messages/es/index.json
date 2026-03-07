@@ -11,14 +11,16 @@
     "tryForFree": "Probar gratis"
   },
   "hero": {
-    "title": "El Escritorio Cloud P2P",
+    "title": "Finalmente: Un Escritorio Cloud que Podés Compartir de Verdad",
     "titlePhrase1": "Tu Escritorio Cloud",
     "titlePhrase2": "Tu Espacio de Trabajo Compartido",
     "titlePhrase3": "La Computadora de tu Equipo",
-    "description": "Una computadora persistente en la nube para colaborar en tiempo real y automatizar flujos de trabajo.",
+    "description": "Levantá un escritorio cloud completo en segundos. Invitá a tu equipo. Todos conducen.",
     "getStarted": "Empezar",
     "bookDemo": "Agendar Demo",
     "trialInfo": "Tier gratis disponible. Sin tarjeta de crédito.",
+    "powerOnLabel": "Encender — Es Gratis",
+    "trustBar": "Usado por equipos de desarrollo, QA e investigadores de IA en todo el mundo",
     "moreInfo": "Más Info"
   },
   "features": {
@@ -82,7 +84,7 @@
       "Mantené una librería compartida de automatizaciones",
       "Funciona con las herramientas que ya usás"
     ],
-    "exploreFeatures": "Explorar funcionalidades"
+    "exploreFeatures": "Probalo gratis"
   },
   "testimonials": {
     "title": "La Vida Después del Localhost",
@@ -108,15 +110,16 @@
     ]
   },
   "cta": {
-    "title": "La Computadora de tu Equipo en la Nube.",
-    "description": "Dejá de compartir pantalla.\nEmpezá a colaborar en una computadora que existe de verdad en la nube.",
+    "title": "Un Link. Un Escritorio. Todo el Equipo Adentro.",
+    "description": "Un link de invitación. Todo tu equipo está en el mismo escritorio, con su propio cursor, en menos de 10 segundos.",
     "startTrial": "Empezar Ahora",
     "scheduleDemo": "Agendar Demo",
     "trialInfo": "Sesiones gratis de 60 min. Sin tarjeta de crédito."
   },
   "pricing": {
-    "title": "Precios simples, sin sorpresas",
-    "description": "Elegí el plan que te sirve.",
+    "title": "Precios que Crecen con Vos",
+    "descriptionMonthly": "Empezá gratis. Planes mensuales desde $6/mes por escritorio.",
+    "descriptionPayAsYouGo": "Empezá gratis. Pagá desde $0.20/crédito — 10 horas de escritorio cloud por menos que un café.",
     "monthly": "/mes",
     "credit": "/crédito",
     "monthlyLabel": "Mensual",
@@ -144,7 +147,7 @@
         "name": "Lite",
         "price": "$0.20",
         "unit": "/crédito",
-        "description": "Para uso casual con privacidad.",
+        "description": "Perfecto para trabajo de desarrollo en solitario.",
         "features": {
           "specs": "1 vCPU / 2 GB RAM",
           "bandwidth": "100mb/s",
@@ -202,7 +205,7 @@
         }
       }
     },
-    "creditEqualsHours": "1 crédito = 10 horas",
+    "creditEqualsHours": "1 crédito = 10 hs de escritorio",
     "customQuote": {
       "heading": "¿Necesitás más puestos?",
       "description": "Precios por volumen adaptados a tu equipo.",
@@ -219,6 +222,21 @@
       "successDescription": "Te respondemos muy pronto con un plan a medida.",
       "errorMessage": "Algo salió mal. Intentá de nuevo.",
       "close": "Cerrar"
+    }
+  },
+  "howItWorks": {
+    "title": "Listo en Segundos",
+    "step1": {
+      "title": "Lanzar",
+      "description": "Un clic y listo. Tu escritorio Linux completo está disponible en el navegador en segundos. Sin instalar nada."
+    },
+    "step2": {
+      "title": "Invitar",
+      "description": "Compartí un link. Todo tu equipo se une al instante — cada uno con su propio cursor y teclado."
+    },
+    "step3": {
+      "title": "Trabajar Juntos",
+      "description": "Escribí, hacé clic y navegá al mismo tiempo en el mismo escritorio. Resolvé bugs en equipo. Lanzá más rápido."
     }
   },
   "footer": {

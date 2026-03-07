@@ -20,7 +20,6 @@ import Footer from '@/components/footer';
 import MoreInfoButton from '@/components/more-info-button';
 import PowerOnButton from '@/components/power-on-button';
 import ResponsiveVideo from '@/components/responsive-video';
-import RotatingPhrase from '@/components/rotating-phrase';
 import HeroBackground from '@/components/hero-background';
 import PricingSection from '@/components/pricing-section';
 import TrackedLink from '@/components/tracked-link';
@@ -50,6 +49,7 @@ export default async function Home({ params: { locale } }: Props) {
   const aiSectionT = await getTranslations('aiSection');
   const testimonialsT = await getTranslations('testimonials');
   const ctaT = await getTranslations('cta');
+  const howItWorksT = await getTranslations('howItWorks');
 
   return (
     <div className="min-h-screen bg-transparent text-foreground overflow-hidden">
@@ -58,24 +58,25 @@ export default async function Home({ params: { locale } }: Props) {
       <AnimatedSection className="relative z-10 min-h-screen overflow-hidden flex items-center">
         <HeroBackground />
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center gap-6 text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
-          <div className="h-[8rem] sm:h-[6rem] md:h-[7rem] flex items-center justify-center w-full px-2">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#FF7600]">
-              <RotatingPhrase
-                phrases={[heroT('titlePhrase1'), heroT('titlePhrase2'), heroT('titlePhrase3')]}
-                className="text-[#FF7600]"
-              />
+          <div className="flex items-center justify-center w-full px-2">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#FF7600] [text-wrap:balance]">
+              {heroT('title')}
             </h1>
           </div>
           <p className="text-xl md:text-2xl mb-10 text-slate-200 font-semibold max-w-4xl mt-2 [text-wrap:balance]">
             {heroT('description')}
           </p>
-          <div className="flex flex-col items-center gap-10">
-            <PowerOnButton />
+          <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-3">
+              <PowerOnButton />
+              <p className="text-sm text-gray-400 font-medium">{heroT('powerOnLabel')}</p>
+            </div>
+            <p className="text-sm text-gray-500">{heroT('trialInfo')}</p>
             <div className="flex flex-col sm:flex-row gap-3">
               <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
               <Button asChild size="sm" className="bg-black text-white hover:bg-gray-900 shadow-lg">
                 <TrackedLink
-                  href="mailto:demo@cyqle.in"
+                  href="https://calendly.com/cyqle/demo"
                   trackingKey="bookDemo"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -83,6 +84,49 @@ export default async function Home({ params: { locale } }: Props) {
                   {heroT('bookDemo')}
                 </TrackedLink>
               </Button>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+      {/* Social Proof Bar */}
+      <div className="relative z-10 py-4 border-y border-gray-800/50 bg-black/40 backdrop-blur-sm">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-sm text-gray-500">{heroT('trustBar')}</p>
+        </div>
+      </div>
+      {/* How It Works */}
+      <AnimatedSection className="relative z-10 py-16 bg-gradient-to-b from-black/60 to-transparent">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-200">
+            {howItWorksT('title')}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-[#FF7600]/10 flex items-center justify-center">
+                <Zap className="h-6 w-6 text-[#FF7600]" />
+              </div>
+              <div>
+                <p className="font-semibold text-white mb-2">{howItWorksT('step1.title')}</p>
+                <p className="text-gray-400 text-sm">{howItWorksT('step1.description')}</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-[#FF7600]/10 flex items-center justify-center">
+                <Users className="h-6 w-6 text-[#FF7600]" />
+              </div>
+              <div>
+                <p className="font-semibold text-white mb-2">{howItWorksT('step2.title')}</p>
+                <p className="text-gray-400 text-sm">{howItWorksT('step2.description')}</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center text-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-[#FF7600]/10 flex items-center justify-center">
+                <Terminal className="h-6 w-6 text-[#FF7600]" />
+              </div>
+              <div>
+                <p className="font-semibold text-white mb-2">{howItWorksT('step3.title')}</p>
+                <p className="text-gray-400 text-sm">{howItWorksT('step3.description')}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -231,7 +275,7 @@ export default async function Home({ params: { locale } }: Props) {
                 asChild
                 className="mt-6 bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg"
               >
-                <TrackedLink href={`/${locale}#features`} trackingKey="exploreFeatures">
+                <TrackedLink href="https://app.cyqle.in" trackingKey="exploreFeatures">
                   {aiSectionT('exploreFeatures')}
                 </TrackedLink>
               </Button>
@@ -245,11 +289,6 @@ export default async function Home({ params: { locale } }: Props) {
             </div>
           </div>
         </div>
-      </AnimatedSection>
-      <div id="pricing" />
-      {/* Pricing Section */}
-      <AnimatedSection className="relative z-10 py-20">
-        <PricingSection />
       </AnimatedSection>
       {/* Testimonials */}
       <AnimatedSection className="relative z-10 py-20">
@@ -280,11 +319,16 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
         </div>
       </AnimatedSection>
+      <div id="pricing" />
+      {/* Pricing Section */}
+      <AnimatedSection className="relative z-10 py-20">
+        <PricingSection />
+      </AnimatedSection>
       {/* CTA Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-r from-gray-900/30 to-gray-800">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{ctaT('title')}</h2>
-          <p className="text-xl dark:text-gray-300 text-white max-w-3xl mx-auto mb-10 whitespace-pre-line">
+          <p className="text-xl dark:text-gray-300 text-white max-w-3xl mx-auto mb-10">
             {ctaT('description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -298,7 +342,7 @@ export default async function Home({ params: { locale } }: Props) {
             </TrackedButton>
             <Button asChild size="lg" className="bg-black text-white hover:bg-gray-900 shadow-lg">
               <TrackedLink
-                href="mailto:demo@cyqle.in"
+                href="https://calendly.com/cyqle/demo"
                 trackingKey="ctaScheduleDemo"
                 target="_blank"
                 rel="noopener noreferrer"
