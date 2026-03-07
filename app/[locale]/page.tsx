@@ -88,12 +88,6 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
         </div>
       </AnimatedSection>
-      {/* Social Proof Bar */}
-      <div className="relative z-10 py-4 border-y border-gray-800/50 bg-black/40 backdrop-blur-sm">
-        <div className="container mx-auto px-4">
-          <p className="text-center text-sm text-gray-500">{heroT('trustBar')}</p>
-        </div>
-      </div>
       {/* How It Works */}
       <AnimatedSection className="relative z-10 py-16 bg-gradient-to-b from-black/60 to-transparent">
         <div className="container mx-auto px-4">
@@ -106,8 +100,10 @@ export default async function Home({ params: { locale } }: Props) {
                 <Zap className="h-6 w-6 text-[#FF7600]" />
               </div>
               <div>
-                <p className="font-semibold text-white mb-2">{howItWorksT('step1.title')}</p>
-                <p className="text-gray-400 text-sm">{howItWorksT('step1.description')}</p>
+                <p className="font-semibold text-white mb-2 text-lg">
+                  {howItWorksT('step1.title')}
+                </p>
+                <p className="text-gray-400 text-base">{howItWorksT('step1.description')}</p>
               </div>
             </div>
             <div className="flex flex-col items-center text-center gap-4">
@@ -115,8 +111,10 @@ export default async function Home({ params: { locale } }: Props) {
                 <Users className="h-6 w-6 text-[#FF7600]" />
               </div>
               <div>
-                <p className="font-semibold text-white mb-2">{howItWorksT('step2.title')}</p>
-                <p className="text-gray-400 text-sm">{howItWorksT('step2.description')}</p>
+                <p className="font-semibold text-white mb-2 text-lg">
+                  {howItWorksT('step2.title')}
+                </p>
+                <p className="text-gray-400 text-base">{howItWorksT('step2.description')}</p>
               </div>
             </div>
             <div className="flex flex-col items-center text-center gap-4">
@@ -124,8 +122,10 @@ export default async function Home({ params: { locale } }: Props) {
                 <Terminal className="h-6 w-6 text-[#FF7600]" />
               </div>
               <div>
-                <p className="font-semibold text-white mb-2">{howItWorksT('step3.title')}</p>
-                <p className="text-gray-400 text-sm">{howItWorksT('step3.description')}</p>
+                <p className="font-semibold text-white mb-2 text-lg">
+                  {howItWorksT('step3.title')}
+                </p>
+                <p className="text-gray-400 text-base">{howItWorksT('step3.description')}</p>
               </div>
             </div>
           </div>
