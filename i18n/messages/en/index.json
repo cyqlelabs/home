@@ -137,7 +137,8 @@
           "bandwidth": "Up to 10mb/s bandwidth",
           "priority": "Low Priority Queue",
           "persistence": "No Persistence",
-          "idle": "5 Min Idle Timeout"
+          "idle": "5 Min Idle Timeout",
+          "snapshots": "Public Snapshots"
         },
         "cta": "Try for Free"
       },
@@ -151,6 +152,7 @@
           "bandwidth": "100mb/s bandwidth",
           "priority": "Standard Priority",
           "persistence": "20 GB persistence",
+          "snapshots": "Snapshot Creation",
           "api": "API Access"
         },
         "cta": "Get Started"
@@ -165,7 +167,7 @@
           "bandwidth": "150mb/s bandwidth",
           "priority": "High Priority Queue",
           "persistence": "40 GB persistence",
-          "snapshots": "Unlimited Snapshots",
+          "snapshots": "Snapshot Creation",
           "api": "API Access"
         },
         "cta": "Go Pro"
@@ -796,11 +798,11 @@
           "title": "Subscription Tiers",
           "free": {
             "name": "Free Tier:",
-            "description": "Provides limited access with 60-minute session limits, 1 vCPU, 1 GB RAM, no persistence, and low priority queue access. Intended for evaluation purposes only."
+            "description": "Provides limited access with 60-minute session limits, 1 vCPU, 1 GB RAM, no persistence, low priority queue access, and access to public snapshots. Snapshot creation is not available on this tier. Intended for evaluation purposes only."
           },
           "paid": {
             "name": "Paid Tiers (Lite, Pro, Power Tiers):",
-            "description": "Offer extended or unlimited session durations, increased computational resources, persistent storage with retention periods, high-priority queue access, API access, and unlimited snapshots (Pro and above). Credits are consumed based on active usage time."
+            "description": "Offer extended or unlimited session durations, increased computational resources, persistent storage with retention periods, high-priority queue access, API access, access to public snapshots, and snapshot creation (limits vary by tier). Credits are consumed based on active usage time."
           }
         },
         "billing": {
