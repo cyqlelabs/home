@@ -138,7 +138,8 @@
           "bandwidth": "Hasta 10mb/s",
           "priority": "Prioridad baja",
           "persistence": "No se guarda nada",
-          "idle": "Se apaga a los 5 min sin uso"
+          "idle": "Se apaga a los 5 min sin uso",
+          "snapshots": "Snapshots Públicos"
         },
         "cta": "Probar gratis"
       },
@@ -152,6 +153,7 @@
           "bandwidth": "100mb/s",
           "priority": "Prioridad estándar",
           "persistence": "20 GB para guardar",
+          "snapshots": "Creación de Snapshots",
           "api": "Acceso a la API"
         },
         "cta": "Empezar"
@@ -166,7 +168,7 @@
           "bandwidth": "150mb/s",
           "priority": "Prioridad alta",
           "persistence": "40 GB para guardar",
-          "snapshots": "Snapshots ilimitados",
+          "snapshots": "Creación de Snapshots",
           "api": "Acceso a la API"
         },
         "cta": "Ir a Pro"
@@ -797,11 +799,11 @@
           "title": "Niveles de Suscripción",
           "free": {
             "name": "Nivel Gratuito:",
-            "description": "Proporciona acceso limitado con límites de sesión de 60 minutos, 1 vCPU, 1 GB RAM, sin persistencia y acceso a cola de baja prioridad. Destinado solo a fines de evaluación."
+            "description": "Proporciona acceso limitado con límites de sesión de 60 minutos, 1 vCPU, 1 GB RAM, sin persistencia, acceso a cola de baja prioridad y acceso a snapshots públicos. La creación de snapshots no está disponible en este nivel. Destinado solo a fines de evaluación."
           },
           "paid": {
             "name": "Niveles de Pago (Lite, Pro, Power):",
-            "description": "Ofrecen duraciones de sesión extendidas o ilimitadas, recursos computacionales aumentados, almacenamiento persistente con períodos de retención, acceso a cola de alta prioridad, acceso API y snapshots ilimitados (Pro en adelante). Los créditos se consumen según el tiempo de uso activo."
+            "description": "Ofrecen duraciones de sesión extendidas o ilimitadas, recursos computacionales aumentados, almacenamiento persistente con períodos de retención, acceso a cola de alta prioridad, acceso API, acceso a snapshots públicos y creación de snapshots (los límites varían según el nivel). Los créditos se consumen según el tiempo de uso activo."
           }
         },
         "billing": {
