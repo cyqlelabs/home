@@ -84,29 +84,6 @@
     ],
     "exploreFeatures": "Try It Free"
   },
-  "testimonials": {
-    "title": "Life After Localhost",
-    "items": [
-      {
-        "quote": "We cut our bug reproduction time from 45 minutes to under 5. Now when QA finds something, they just share the session link—no more 'works on my machine.' The setup isn't perfect yet, but the time savings are real.",
-        "author": "Sarah Chen",
-        "role": "Engineering Lead at Series B SaaS Startup (12-person team)",
-        "metric": "40min saved per bug"
-      },
-      {
-        "quote": "Our support team was drowning in 'how do I configure X' tickets. Now they spin up a Cyqle session, record the workflow once, and send customers a link to the live, interactive environment. Support ticket volume dropped 34% in two months.",
-        "author": "Marcus Rivera",
-        "role": "Customer Success Director, B2B Infrastructure Platform",
-        "metric": "34% fewer support tickets"
-      },
-      {
-        "quote": "I'm building AI agents that execute diverse workflows in the shell, and Cyqle's sandboxed desktops are perfect for testing without risking my local setup. Spin up a session, let the agent run its experiments, then nuke it—zero risk to my main machine.",
-        "author": "Jordan Martinez",
-        "role": "Independent AI Developer, Building Automation Tools",
-        "metric": "Risk-free testing"
-      }
-    ]
-  },
   "cta": {
     "title": "One Link. One Desktop. Whole Team Inside.",
     "description": "One invite link. Everyone on your team is in the same desktop, with their own cursor, in under 10 seconds.",

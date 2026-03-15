@@ -47,7 +47,6 @@ export default async function Home({ params: { locale } }: Props) {
   const featuresT = await getTranslations('features');
   const tUseCases = await getTranslations('useCases');
   const aiSectionT = await getTranslations('aiSection');
-  const testimonialsT = await getTranslations('testimonials');
   const ctaT = await getTranslations('cta');
   const howItWorksT = await getTranslations('howItWorks');
 
@@ -287,35 +286,6 @@ export default async function Home({ params: { locale } }: Props) {
                 className="w-full h-full"
               />
             </div>
-          </div>
-        </div>
-      </AnimatedSection>
-      {/* Testimonials */}
-      <AnimatedSection className="relative z-10 py-20">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            {testimonialsT('title')}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonialsT.raw('items').map((testimonial: any, index: number) => (
-              <div
-                key={index}
-                className="bg-gray-900/50 backdrop-blur-xl p-8 rounded-xl border border-gray-800 hover:border-[#FF7600]/50 transition-all duration-300 relative"
-              >
-                {testimonial.metric && (
-                  <div className="absolute top-4 right-4 bg-[#FF7600]/10 border border-[#FF7600]/30 rounded-lg px-3 py-1">
-                    <p className="text-[#FF7600] text-xs font-semibold">{testimonial.metric}</p>
-                  </div>
-                )}
-                <p className="text-white dark:text-gray-300 mb-6 italic leading-relaxed mt-12">
-                  &quot;{testimonial.quote}&quot;
-                </p>
-                <div className="border-t border-gray-700 pt-4">
-                  <p className="font-semibold text-white">{testimonial.author}</p>
-                  <p className="text-gray-400 text-sm mt-1">{testimonial.role}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </AnimatedSection>
