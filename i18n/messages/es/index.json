@@ -85,29 +85,6 @@
     ],
     "exploreFeatures": "Probalo gratis"
   },
-  "testimonials": {
-    "title": "La Vida Después del Localhost",
-    "items": [
-      {
-        "quote": "Bajamos el tiempo de reproducción de errores de 45 minutos a menos de 5. Cuando QA encuentra algo, manda el link de la sesión y listo—se terminó el 'en mi máquina funciona'. El ahorro de tiempo es brutal.",
-        "author": "Sarah Chen",
-        "role": "Engineering Lead en Startup SaaS Serie B",
-        "metric": "40min ahorrados por error"
-      },
-      {
-        "quote": "Soporte estaba tapado de tickets tipo 'cómo configuro X'. Ahora levantan una sesión Cyqle, graban el flujo una vez y le mandan un link al entorno vivo e interactivo. Los tickets bajaron un 34% en dos meses.",
-        "author": "Marcus Rivera",
-        "role": "Customer Success Director, Plataforma de Infraestructura B2B",
-        "metric": "34% menos tickets de soporte"
-      },
-      {
-        "quote": "Armo agentes de IA que ejecutan flujos de trabajo en la terminal, y los sandboxes de Cyqle son ideales para testear sin romper mi configuración local. Levanto sesión, el agente hace lo suyo y después la mato—cero riesgo.",
-        "author": "Jordan Martinez",
-        "role": "Dev de IA Independiente",
-        "metric": "Testing sin riesgos"
-      }
-    ]
-  },
   "cta": {
     "title": "Un Link. Un Escritorio. Todo el Equipo Adentro.",
     "description": "Un link de invitación. Todo tu equipo está en el mismo escritorio, con su propio cursor, en menos de 10 segundos.",
