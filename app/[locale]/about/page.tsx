@@ -31,13 +31,13 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
 
   const title =
     locale === 'en'
-      ? 'About Cyqle: Multiplayer Cloud Desktop for Real-Time Collaboration'
-      : 'Acerca de Cyqle: Escritorio Cloud Multijugador para Colaboración en Tiempo Real';
+      ? 'About Cyqle: Multiplayer Cloud Desktop'
+      : 'Acerca de Cyqle: Escritorio Cloud Multijugador';
 
   const description =
     locale === 'en'
-      ? 'Built for teams tired of taking turns. Cyqle is a P2P cloud desktop where everyone types in parallel—multiple people, multiple keyboards, same machine. No more "can you see my screen?" Perfect for remote debugging, pair programming, and real-time collaboration.'
-      : 'Construido para equipos cansados de turnarse. Cyqle es un escritorio cloud P2P donde todos escriben en paralelo—múltiples personas, múltiples teclados, misma máquina. Se acabó el "¿ven mi pantalla?" Perfecto para depuración remota, programación en pareja y colaboración en tiempo real.';
+      ? 'Cyqle is a P2P cloud desktop where multiple people work on the same machine simultaneously. Each user gets their own cursor and keyboard. Spin up in seconds, collaborate in real time.'
+      : 'Cyqle es un escritorio cloud P2P donde varias personas trabajan en la misma máquina simultáneamente. Cada usuario tiene su propio cursor y teclado. Arranca en segundos, colaborá en tiempo real.';
 
   return {
     title,
