@@ -255,84 +255,82 @@
   },
   "aboutPage": {
     "hero": {
-      "title": "¿Quién dijo que la rueda no se puede reinventar?",
-      "subtitle": "La vieja no fue construida para la nube."
+      "title": "Un Escritorio Cloud Multijugador",
+      "subtitle": "Misma máquina. Múltiples teclados. Todos manejan."
     },
     "problem": {
-      "badge": "La Fricción",
-      "title": "La Colaboración se Quedó en los 90",
-      "intro": "El código vive en la nube. Los datos viven en la nube. ¿Pero tu entorno de trabajo? Sigue atrapado en tu dispositivo local.",
-      "scenario1": "Compartir pantalla es pasivo. Un conductor, muchos pasajeros. No es colaboración; es una presentación. No puedes arreglar un bug que no puedes tocar.",
-      "scenario2": "Los entornos locales son frágiles. Pasas horas configurando un espacio de trabajo que desaparece al cerrar la laptop. Compartirlo significa explicar pasos, no enviar un link.",
-      "scenario3": "El cómputo está disperso. Tu equipo tiene 10 laptops potentes pero ninguna infraestructura compartida para atacar un problema juntos.",
-      "truth": "Nos preguntamos: ¿Qué pasaría si el sistema operativo fuera multijugador? ¿Y si pudieras compartir una computadora completa con un link, como un Google Doc?",
-      "solution": "Cyqle es la respuesta."
+      "badge": "El Problema",
+      "title": "El Trabajo Remoto Sigue Siendo por Turnos",
+      "intro": "Compartir pantalla es un conductor y muchos espectadores. Eso no es colaborar.",
+      "scenario1": "No podés tocar el código en la pantalla compartida de otro. Solo mirás y describís qué tipear.",
+      "scenario2": "Los entornos locales se rompen, divergen, y no se comparten con un link.",
+      "scenario3": "Tu equipo tiene 10 laptops pero ninguna máquina compartida para trabajar juntos.",
+      "truth": "Los sistemas operativos fueron hechos para un usuario. Nosotros hicimos uno para muchos.",
+      "solution": "Eso es Cyqle."
     },
     "story": {
-      "badge": "Nuestra Lógica",
-      "title": "¿Por Qué Construimos Esto?",
-      "year2017": "Empezamos construyendo herramientas de automatización de navegadores. Útiles, pero limitadas. Nos dimos cuenta de que automatizar un navegador solo resolvía el 10% del problema.",
-      "pivot": "El verdadero cuello de botella era el Sistema Operativo.",
-      "year2025": "Los sistemas operativos, en esencia, están orientados a un único usuario final. Por eso compartir pantalla es tan doloroso—es un parche sobre una arquitectura para un solo jugador.",
-      "realization": "Decidimos reconstruir el stack de escritorio para colaboración P2P. Sin 'host' ni 'invitado'—solo usuarios iguales trabajando en paralelo en la misma máquina.",
-      "present": "Cyqle es el resultado: Una computadora en la nube que trata la colaboración como una primitiva, no como una funcionalidad extra."
+      "badge": "Contexto",
+      "title": "Cómo Llegamos Acá",
+      "year2017": "Empezamos en automatización de navegadores. Útil, pero solo resolvía parte del problema.",
+      "pivot": "El cuello de botella era el SO — hecho para un solo usuario.",
+      "year2025": "Compartir pantalla es un parche sobre arquitectura single-player. Por eso duele.",
+      "realization": "Así que reconstruimos el escritorio para P2P. Sin host ni invitado — solo usuarios iguales en la misma máquina.",
+      "present": "Cyqle es una computadora cloud donde la colaboración es una primitiva central."
     },
     "solution": {
-      "badge": "Qué es realmente",
-      "title": "Un escritorio Linux completo que no desaparece",
-      "paragraph1": "Cyqle es un entorno Linux real en la nube. Pero en lugar de que uno maneje y los demás miren, todos trabajan al mismo tiempo. Varias personas escribiendo en paralelo, cada una con su cursor y ventana.",
-      "paragraph2": "No es compartir pantalla. No es una VM a la que te conectas por SSH. Es una computadora realmente multijugador que arrancas en segundos, colaboras en vivo, después cerrás—o guardas y retomas desde donde sea.",
+      "badge": "Qué Es",
+      "title": "Un Escritorio Linux Completo, Compartido en Tiempo Real",
+      "paragraph1": "Cyqle es un entorno Linux real en la nube. Varias personas trabajan simultáneamente, cada una con su propio cursor y teclado.",
+      "paragraph2": "No es compartir pantalla. No es una VM por SSH. Es una computadora multijugador que arrancás en segundos, trabajás en equipo, y cerrás o persistís.",
       "realityCheck": "Se acabó:",
       "painPoints": [
-        "\"¿Ven mi pantalla?\" (ya están ahí)",
-        "Describir errores por chat (mejor invítalos)",
-        "\"En mi máquina funciona\" (usen la misma máquina)",
-        "Reconstruir ambientes de demo (hacé snapshots y reutilizalos)",
-        "Escribir scripts para tareas simples (grabalo y listo)"
+        "\"¿Ven mi pantalla?\" — ya están ahí",
+        "Describir bugs por chat — invitalos directo",
+        "\"En mi máquina funciona\" — usen la misma máquina",
+        "Reconstruir ambientes de demo — snapshot y reusar",
+        "Escribir scripts para tareas simples — grabar y repetir"
       ]
     },
     "difference": {
       "badge": "Bajo el Capó",
-      "title": "Ingeniería Compleja, Invisible para Ti",
-      "intro": "Resolvimos los problemas que hicieron imposibles los escritorios en la nube en tiempo real durante años:",
+      "title": "Lo Que Tuvimos Que Resolver",
+      "intro": "Los escritorios cloud en tiempo real requieren resolver problemas difíciles:",
       "challenges": [
-        "Streaming P2P de latencia cero (sin lag de servidor central)",
+        "Streaming P2P con latencia mínima (sin relay central)",
         "Inyección de input multi-cursor a nivel de sistema",
-        "Almacenamiento efímero garantizado criptográficamente",
-        "Aprovisionamiento instantáneo (arranque en menos de 5 segundos)",
-        "Acceso vía navegador con rendimiento nativo"
+        "Almacenamiento efímero criptográficamente borrable",
+        "Arranque en menos de 5 segundos",
+        "Acceso por navegador con rendimiento nativo"
       ],
-      "conclusion": "Es tecnología compleja envolviendo una promesa simple: Simplemente funciona."
+      "conclusion": "Infraestructura compleja detrás de una experiencia simple."
     },
     "forWhom": {
       "badge": "Casos de Uso",
       "title": "Construido para Equipos que:",
       "items": [
-        "Depuran juntos, no secuencialmente",
-        "Necesitan entornos de reproducción instantáneos y descartables",
-        "Quieren hacer onboarding haciendo, no documentando",
-        "Corren automatización de navegadores sin mantener infraestructura",
-        "Odian el lag y la fricción de compartir pantalla",
-        "Necesitan un sandbox seguro para probar agentes de IA",
-        "Requieren acceso root sin comprometer la seguridad local",
-        "Valoran el estado de flujo sobre el tiempo de configuración"
+        "Depuran juntos en vez de turnarse",
+        "Necesitan entornos de reproducción descartables",
+        "Hacen onboarding práctico, no con documentación",
+        "Corren automatización de navegadores sin infra propia",
+        "Necesitan un sandbox seguro para agentes de IA",
+        "Quieren acceso root sin arriesgar máquinas locales"
       ]
     },
     "vision": {
-      "badge": "El Cambio",
-      "title": "Computación como Servicio",
-      "intro": "El futuro no son mejores videollamadas. Es contexto compartido.",
+      "badge": "Lo Que Viene",
+      "title": "Hacia Dónde Vamos",
+      "intro": "Estamos construyendo hacia:",
       "future": [
-        "Entornos Efímeros: Levanta, resuelve el problema, destruye la evidencia.",
-        "Compañeros IA: Agentes que viven en tu escritorio, no solo en una ventana de chat.",
-        "Acceso Universal: Tu potente máquina de desarrollo es una URL—con gestos táctiles nativos en el celular.",
-        "Multijugador por Defecto: La colaboración está integrada en el kernel de cómo trabajamos."
+        "Entornos efímeros que levantás y descartás",
+        "Agentes de IA que operan dentro de tu escritorio, no solo en un chat",
+        "Acceso completo al escritorio desde cualquier dispositivo, incluyendo móvil con touch nativo",
+        "Multijugador como default, no como agregado"
       ]
     },
     "cta": {
-      "title": "Probalo vos mismo",
-      "description": "Hay un plan gratis. Sin tarjeta. Arrancá una sesión, invita a alguien del equipo y experimentá cómo se siente colaborar en tiempo real de verdad.",
-      "button": "Probar Cyqle gratis"
+      "title": "Probalo",
+      "description": "Plan gratis. Sin tarjeta. Arrancá una sesión e invitá a alguien.",
+      "button": "Probar Cyqle Gratis"
     }
   },
   "privacyPolicy": {
