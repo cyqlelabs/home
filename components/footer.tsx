@@ -82,7 +82,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <TrackedLink
-                  href="https://api.cyqle.in/docs"
+                  href={`/${locale}/api-docs`}
                   trackingKey="footerApiDocs"
                   className="text-gray-400 hover:text-white transition-colors"
                 >

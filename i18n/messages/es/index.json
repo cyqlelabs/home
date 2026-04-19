@@ -253,6 +253,86 @@
     "termsOfService": "Términos",
     "cookies": "Cookies"
   },
+  "apiDocsPage": {
+    "hero": {
+      "badge": "API REST",
+      "title": "Tu Agente, Adentro de una Computadora de Verdad.",
+      "description": "Basta de envolver SDKs. Levantá un escritorio Linux por HTTP y manejá sus ventanas, shell, navegador, archivos y píxeles como lo haría una persona — clickeá, tipeá, leé la pantalla, abrí un archivo, corré un comando.",
+      "agentNote": "La mayoría de los agentes llaman herramientas. Los agentes en Cyqle habitan una máquina. Un POST le da a tu agente manos, ojos y un hostname — un escritorio aislado que puede operar, pasarle a otro agente, snapshotear y tirar. Nada toca tu laptop.",
+      "footnote": "Cada endpoint de abajo está vivo. Disparalo desde el navegador, copiá el curl, mandá la integración a prod."
+    },
+    "capabilities": {
+      "heading": "Lo que la API les Permite Hacer a los Agentes",
+      "items": [
+        {
+          "title": "Booteá un Escritorio con un POST",
+          "description": "Un POST y tenés una sesión Linux fresca en segundos — efímera por defecto, persistente cuando vos digas."
+        },
+        {
+          "title": "Movés Ventanas como una Persona",
+          "description": "Listá, enfocá, redimensioná y cerrá cualquier ventana del escritorio. Tu agente no vive en una pestaña — se adueña de la pantalla entera."
+        },
+        {
+          "title": "Ejecutá Código Donde Importa",
+          "description": "Inyectá JavaScript en cualquier página, tirá comandos en la terminal, navegá URLs, toqueteá el DOM. El agente escribe, el OS ejecuta."
+        },
+        {
+          "title": "Ve lo que Ve el Agente",
+          "description": "Metele screenshots completos o por región directo a tu modelo de visión. Cerrás el loop de percepción sin servicios de captura de terceros."
+        },
+        {
+          "title": "Movés Archivos por HTTP",
+          "description": "Subí entradas, bajá salidas, intercambiá artefactos entre tu backend y la sesión — sin SFTP, sin rsync, sin túneles."
+        },
+        {
+          "title": "Un Snapshot, Miles de Clones",
+          "description": "Congelá un escritorio configurado y lanzá clones precalentados para correr agentes en paralelo. Los cold starts dejan de ser un problema."
+        },
+        {
+          "title": "Cableá Agentes Entre Sí",
+          "description": "Enlazá sesiones para que los agentes se pasen trabajo, compartan archivos o se miren operar. Armá pipelines multi-agente que realmente comparten contexto."
+        },
+        {
+          "title": "Cobrale a tus Usuarios, no Solo Nosotros",
+          "description": "Leé costos por token y estado de suscripción desde la API. Enchufá el uso de tus agentes a tu propio pricing sin reinventar el medidor."
+        }
+      ]
+    },
+    "iframe": {
+      "title": "API de Cyqle — OpenAPI / Swagger UI",
+      "ariaLabel": "Documentación de la API de Cyqle"
+    },
+    "a11y": {
+      "skipIframe": "Saltear la documentación de API embebida",
+      "iframeSectionHeading": "Referencia interactiva de la API",
+      "endOfIframe": "Fin de la documentación de API embebida.",
+      "openInNewTab": "Abrir la documentación de la API en una pestaña nueva",
+      "newTabSuffix": "(se abre en una pestaña nueva)",
+      "fallback": {
+        "text": "¿Tenés problemas con la documentación embebida de abajo?"
+      }
+    },
+    "meta": {
+      "baseUrl": "URL base",
+      "auth": "Auth",
+      "authValue": "Bearer token",
+      "spec": "Spec",
+      "specValue": "OpenAPI 3.0"
+    },
+    "handoff": {
+      "eyebrow": "Referencia",
+      "title": "La API Entera, en Vivo Abajo.",
+      "subtitle": "Autenticate, dispará cualquier endpoint y mirá cómo responde la sesión — todo desde esta página."
+    },
+    "backToTop": "Volver arriba",
+    "endCta": {
+      "eyebrow": "¿Listo para construir?",
+      "title": "Dale una computadora a tu agente.",
+      "description": "Conseguí una API key en menos de un minuto. La primera sesión corre por nuestra cuenta.",
+      "primary": "Empezar a construir",
+      "secondary": "Volver a capacidades"
+    }
+  },
   "aboutPage": {
     "hero": {
       "title": "Un Escritorio Cloud Multijugador",
