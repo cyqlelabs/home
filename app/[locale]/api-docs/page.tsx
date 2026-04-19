@@ -95,7 +95,7 @@ export default async function ApiDocsPage({ params: { locale } }: Props) {
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight [text-wrap:balance]">
               {t('hero.title')}
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-4xl [text-wrap:balance]">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-4xl [text-wrap:pretty]">
               {t('hero.description')}
             </p>
             <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-4xl mt-4">
