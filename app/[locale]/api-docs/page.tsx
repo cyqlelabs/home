@@ -26,7 +26,7 @@ type Props = {
 };
 
 const DOCS_URL = 'https://api.cyqle.in/docs/';
-const BASE_URL = 'https://api.cyqle.in';
+const BASE_URL = 'https://api.cyqle.in/v1';
 
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   unstable_setRequestLocale(locale);

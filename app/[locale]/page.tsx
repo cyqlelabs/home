@@ -308,10 +308,23 @@ export default async function Home({ params: { locale } }: Props) {
                 </div>
                 <pre className="p-5 md:p-6 text-[0.85rem] md:text-[0.9rem] font-mono leading-relaxed text-gray-200 overflow-x-auto">
                   <code>
-                    <span className="text-gray-500"># Spin up a Linux desktop over HTTP</span>
+                    <span className="text-gray-500"># Boot a cloud Linux desktop</span>
                     {'\n'}
-                    <span className="text-[#FF7600]">curl</span> -X POST
-                    https://api.cyqle.in/sessions \{'\n'}
+                    SID=$(<span className="text-[#FF7600]">curl</span> -sS -X POST
+                    https://api.cyqle.in/v1/sessions \{'\n'}
+                    {'  '}-H{' '}
+                    <span className="text-green-400">
+                      &quot;Authorization: Bearer $CYQLE_KEY&quot;
+                    </span>{' '}
+                    | <span className="text-[#FF7600]">jq</span> -r .data.id){'\n'}
+                    {'\n'}
+                    <span className="text-gray-500"># Run a shell command inside it</span>
+                    {'\n'}
+                    <span className="text-[#FF7600]">curl</span> -X POST{' '}
+                    <span className="text-green-400">
+                      &quot;https://api.cyqle.in/v1/sessions/$SID/exec&quot;
+                    </span>{' '}
+                    \{'\n'}
                     {'  '}-H{' '}
                     <span className="text-green-400">
                       &quot;Authorization: Bearer $CYQLE_KEY&quot;
@@ -324,7 +337,7 @@ export default async function Home({ params: { locale } }: Props) {
                     \{'\n'}
                     {'  '}-d{' '}
                     <span className="text-green-400">
-                      &apos;{'{'}&quot;image&quot;:&quot;ubuntu-desktop&quot;{'}'}&apos;
+                      &apos;{'{'}&quot;command&quot;:&quot;uname -a&quot;{'}'}&apos;
                     </span>
                   </code>
                 </pre>
