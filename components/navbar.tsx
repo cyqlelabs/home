@@ -85,6 +85,13 @@ export default function Navbar() {
               {t('navbar.pricing')}
             </TrackedLink>
             <TrackedLink
+              href={`/${locale}/api-docs`}
+              trackingKey="navbarApi"
+              className="text-slate-300 hover:text-white transition-colors"
+            >
+              {t('navbar.api')}
+            </TrackedLink>
+            <TrackedLink
               href={`/${locale}/about`}
               trackingKey="navbarAbout"
               className="text-slate-300 hover:text-white transition-colors"
@@ -156,6 +163,14 @@ export default function Navbar() {
                 onClick={closeMobileMenu}
               >
                 {t('navbar.pricing')}
+              </TrackedLink>
+              <TrackedLink
+                href={`/${locale}/api-docs`}
+                trackingKey="navbarApi"
+                className="text-slate-300 hover:text-white transition-colors py-2"
+                onClick={closeMobileMenu}
+              >
+                {t('navbar.api')}
               </TrackedLink>
               <TrackedLink
                 href={`/${locale}/about`}

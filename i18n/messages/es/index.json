@@ -7,6 +7,7 @@
     "features": "Qué hace",
     "useCases": "Para qué sirve",
     "pricing": "Precios",
+    "api": "API",
     "about": "Nosotros",
     "tryForFree": "Probar gratis"
   },
@@ -84,6 +85,19 @@
       "Funciona con las herramientas que ya usás"
     ],
     "exploreFeatures": "Probalo gratis"
+  },
+  "apiTeaser": {
+    "eyebrow": "API REST para agentes de IA",
+    "title": "Un POST. Una computadora real.",
+    "description": "Cada escritorio de Cyqle es un endpoint REST. Autenticate, booteá una sesión, manejala, snapshoteala, apagala. Todo por HTTP.",
+    "bullets": [
+      "Auth con bearer token. Spec OpenAPI 3.0 que mapea limpio a cualquier cliente.",
+      "Manejá ventanas, shell, navegador, archivos y screenshots como primitivas.",
+      "Snapshoteá escritorios configurados y cloná miles para agentes en paralelo."
+    ],
+    "codeLabel": "booteá una sesión",
+    "cta": "Ver los docs de la API",
+    "ctaSubtext": "Swagger UI en vivo, en el navegador."
   },
   "cta": {
     "title": "Un Link. Un Escritorio. Todo el Equipo Adentro.",
