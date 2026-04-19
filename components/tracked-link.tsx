@@ -3,6 +3,28 @@
 import { trackCTA, trackAndNavigate } from '@/lib/analytics';
 import { type ReactNode } from 'react';
 
+const UTM_PARAMS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+
+function appendUtmParams(href: string): string {
+  try {
+    const pageParams = new URLSearchParams(window.location.search);
+    const utms = new URLSearchParams();
+    let hasUtm = false;
+    for (const param of UTM_PARAMS) {
+      const value = pageParams.get(param);
+      if (value) {
+        utms.set(param, value);
+        hasUtm = true;
+      }
+    }
+    if (!hasUtm) return href;
+    const separator = href.includes('?') ? '&' : '?';
+    return `${href}${separator}${utms.toString()}`;
+  } catch {
+    return href;
+  }
+}
+
 interface TrackedLinkProps {
   href: string;
   onClick?: () => void;
@@ -41,7 +63,8 @@ export default function TrackedLink({
   trackingKey,
 }: TrackedLinkProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    trackAndNavigate(href, trackCTA[trackingKey], e);
+    const destination = appendUtmParams(href);
+    trackAndNavigate(destination, trackCTA[trackingKey], e);
     if (onClick) {
       onClick();
     }
