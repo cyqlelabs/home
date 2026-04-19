@@ -256,45 +256,45 @@
   "apiDocsPage": {
     "hero": {
       "badge": "API REST",
-      "title": "Tu Agente, Adentro de una Computadora de Verdad.",
-      "description": "Basta de envolver SDKs. Levantá un escritorio Linux por HTTP y manejá sus ventanas, shell, navegador, archivos y píxeles como lo haría una persona — clickeá, tipeá, leé la pantalla, abrí un archivo, corré un comando.",
-      "agentNote": "La mayoría de los agentes llaman herramientas. Los agentes en Cyqle habitan una máquina. Un POST le da a tu agente manos, ojos y un hostname — un escritorio aislado que puede operar, pasarle a otro agente, snapshotear y tirar. Nada toca tu laptop.",
-      "footnote": "Cada endpoint de abajo está vivo. Disparalo desde el navegador, copiá el curl, mandá la integración a prod."
+      "title": "Tu agente, adentro de una computadora de verdad.",
+      "description": "Basta de envolver SDKs. Levantá un escritorio Linux por HTTP y manejalo como lo haría una persona: clickeá, tipeá, abrí archivos, corré comandos.",
+      "agentNote": "La mayoría de los agentes llaman herramientas. Los agentes en Cyqle habitan una máquina. Un POST levanta un escritorio aislado que tu agente puede operar, pasar, snapshotear o tirar. Nada toca tu laptop.",
+      "footnote": "Cada endpoint de abajo está vivo. Probalo desde el navegador, copiá el curl."
     },
     "capabilities": {
-      "heading": "Lo que la API les Permite Hacer a los Agentes",
+      "heading": "Lo que pueden hacer los agentes",
       "items": [
         {
-          "title": "Booteá un Escritorio con un POST",
-          "description": "Un POST y tenés una sesión Linux fresca en segundos — efímera por defecto, persistente cuando vos digas."
+          "title": "Booteá un escritorio con un POST",
+          "description": "Un POST y tenés una sesión Linux fresca en segundos. Efímera por defecto, persistente cuando vos digas."
         },
         {
-          "title": "Movés Ventanas como una Persona",
-          "description": "Listá, enfocá, redimensioná y cerrá cualquier ventana del escritorio. Tu agente no vive en una pestaña — se adueña de la pantalla entera."
+          "title": "Movés ventanas como una persona",
+          "description": "Listá, enfocá, redimensioná y cerrá cualquier ventana del escritorio. Tu agente no vive en una pestaña. Se adueña de la pantalla entera."
         },
         {
-          "title": "Ejecutá Código Donde Importa",
-          "description": "Inyectá JavaScript en cualquier página, tirá comandos en la terminal, navegá URLs, toqueteá el DOM. El agente escribe, el OS ejecuta."
+          "title": "Ejecutá código donde importa",
+          "description": "Inyectá JavaScript en cualquier página, tirá comandos, navegá URLs, toqueteá el DOM. El agente escribe, el OS ejecuta."
         },
         {
-          "title": "Ve lo que Ve el Agente",
-          "description": "Metele screenshots completos o por región directo a tu modelo de visión. Cerrás el loop de percepción sin servicios de captura de terceros."
+          "title": "Ve lo que ve el agente",
+          "description": "Pasale screenshots completos o por región directo a tu modelo de visión. Sin servicios de captura de terceros."
         },
         {
-          "title": "Movés Archivos por HTTP",
-          "description": "Subí entradas, bajá salidas, intercambiá artefactos entre tu backend y la sesión — sin SFTP, sin rsync, sin túneles."
+          "title": "Movés archivos por HTTP",
+          "description": "Subí entradas y bajá salidas entre tu backend y la sesión. Sin SFTP, sin rsync, sin túneles."
         },
         {
-          "title": "Un Snapshot, Miles de Clones",
-          "description": "Congelá un escritorio configurado y lanzá clones precalentados para correr agentes en paralelo. Los cold starts dejan de ser un problema."
+          "title": "Un snapshot, miles de clones",
+          "description": "Congelá un escritorio configurado y lanzá clones precalentados para correr agentes en paralelo. Salteate el cold start."
         },
         {
-          "title": "Cableá Agentes Entre Sí",
-          "description": "Enlazá sesiones para que los agentes se pasen trabajo, compartan archivos o se miren operar. Armá pipelines multi-agente que realmente comparten contexto."
+          "title": "Cableá agentes entre sí",
+          "description": "Enlazá sesiones para que los agentes se pasen trabajo, compartan archivos o se miren operar. Pipelines multi-agente con contexto real compartido."
         },
         {
-          "title": "Cobrale a tus Usuarios, no Solo Nosotros",
-          "description": "Leé costos por token y estado de suscripción desde la API. Enchufá el uso de tus agentes a tu propio pricing sin reinventar el medidor."
+          "title": "Cobrale a tus usuarios, no solo nosotros",
+          "description": "Leé costos por token y estado de suscripción desde la API. Enchufá el uso a tu propio pricing sin armar un medidor."
         }
       ]
     },
@@ -321,8 +321,8 @@
     },
     "handoff": {
       "eyebrow": "Referencia",
-      "title": "La API Entera, en Vivo Abajo.",
-      "subtitle": "Autenticate, dispará cualquier endpoint y mirá cómo responde la sesión — todo desde esta página."
+      "title": "La API entera, en vivo abajo.",
+      "subtitle": "Autenticate, pegale a cualquier endpoint y mirá cómo responde la sesión. Todo desde esta página."
     },
     "backToTop": "Volver arriba",
     "endCta": {

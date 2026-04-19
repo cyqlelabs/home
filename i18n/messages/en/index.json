@@ -255,45 +255,45 @@
   "apiDocsPage": {
     "hero": {
       "badge": "REST API",
-      "title": "Your Agent, Inside a Real Computer.",
-      "description": "Stop wrapping SDKs. Boot a Linux desktop over HTTP and drive its windows, shell, browser, filesystem, and pixels the way a human would — click, type, read the screen, open a file, run a command.",
-      "agentNote": "Most agents call tools. Cyqle agents inhabit a machine. One POST gives your agent hands, eyes, and a hostname — a sandboxed desktop it can operate, hand off to another agent, snapshot, and throw away. Nothing touches your laptop.",
-      "footnote": "Every endpoint below is live. Hit it from the browser, copy the curl, ship the integration."
+      "title": "Your agent, inside a real computer.",
+      "description": "Stop wrapping SDKs. Boot a Linux desktop over HTTP and drive it the way a human would: click, type, open files, run commands.",
+      "agentNote": "Most agents call tools. Cyqle agents inhabit a machine. One POST spawns a sandboxed desktop your agent can drive, hand off, snapshot, or throw away. Nothing touches your laptop.",
+      "footnote": "Every endpoint below is live. Try it in the browser, copy the curl."
     },
     "capabilities": {
-      "heading": "What the API Lets Agents Do",
+      "heading": "What agents can do",
       "items": [
         {
-          "title": "Boot a Desktop in One Call",
-          "description": "POST once and get a fresh Linux session in seconds — ephemeral by default, persistent when you say so."
+          "title": "Boot a desktop in one call",
+          "description": "POST once, get a fresh Linux session in seconds. Ephemeral by default, persistent when you say so."
         },
         {
-          "title": "Move Windows Like a Human",
-          "description": "Enumerate, focus, resize, and close any window on the desktop. Your agent isn't stuck in a tab — it owns the whole screen."
+          "title": "Move windows like a human",
+          "description": "List, focus, resize, and close any window on the desktop. Your agent isn't stuck in a tab. It owns the whole screen."
         },
         {
-          "title": "Run Code Where It Matters",
-          "description": "Inject JavaScript into any page, shell out in the terminal, navigate URLs, poke the DOM. The agent writes, the OS executes."
+          "title": "Run code where it matters",
+          "description": "Inject JavaScript into any page, run shell commands, navigate URLs, poke the DOM. The agent writes, the OS executes."
         },
         {
-          "title": "See What the Agent Sees",
-          "description": "Pull full-screen or region screenshots straight into your vision model. Close the perception loop without a third-party capture service."
+          "title": "See what the agent sees",
+          "description": "Pull full-screen or region screenshots straight into your vision model. No third-party capture service required."
         },
         {
-          "title": "Move Files Over HTTP",
-          "description": "Upload inputs, stream outputs, exchange artifacts between your backend and the session — no SFTP, no rsync, no tunneling."
+          "title": "Move files over HTTP",
+          "description": "Upload inputs and stream outputs between your backend and the session. No SFTP, no rsync, no tunnels."
         },
         {
-          "title": "Snapshot Once, Clone Thousands",
-          "description": "Freeze a configured desktop and spawn pre-warmed clones for parallel agent runs. Cold starts become a non-problem."
+          "title": "Snapshot once, clone thousands",
+          "description": "Freeze a configured desktop and spawn pre-warmed clones for parallel agent runs. Skip the cold start."
         },
         {
-          "title": "Wire Agents Together",
-          "description": "Link sessions so agents can hand off work, share files, or watch each other operate. Build multi-agent pipelines that actually share context."
+          "title": "Wire agents together",
+          "description": "Link sessions so agents can hand off work, share files, or watch each other operate. Multi-agent pipelines with real shared context."
         },
         {
-          "title": "Bill Your Users, Not Just Ours",
-          "description": "Read token costs and subscription state from the API. Plug agent usage straight into your own pricing without rebuilding metering."
+          "title": "Bill your users, not just ours",
+          "description": "Read token costs and subscription state from the API. Plug agent usage into your own pricing without building a meter."
         }
       ]
     },
@@ -320,8 +320,8 @@
     },
     "handoff": {
       "eyebrow": "Reference",
-      "title": "The Whole API, Live Below.",
-      "subtitle": "Authenticate, fire any endpoint, watch the session respond — right from this page."
+      "title": "The whole API, live below.",
+      "subtitle": "Authenticate, fire any endpoint, watch the session respond. All from this page."
     },
     "backToTop": "Back to top",
     "endCta": {
