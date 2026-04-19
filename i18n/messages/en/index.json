@@ -7,6 +7,7 @@
     "features": "Features",
     "useCases": "Use Cases",
     "pricing": "Pricing",
+    "api": "API",
     "about": "About",
     "tryForFree": "Try for Free"
   },
@@ -83,6 +84,19 @@
       "Works with your existing tools"
     ],
     "exploreFeatures": "Try It Free"
+  },
+  "apiTeaser": {
+    "eyebrow": "REST API for AI agents",
+    "title": "One POST. A real computer.",
+    "description": "Every Cyqle desktop is a REST endpoint. Authenticate, boot a session, drive it, snapshot it, shut it down. All over HTTP.",
+    "bullets": [
+      "Bearer token auth. OpenAPI 3.0 spec that maps cleanly to any client.",
+      "Drive windows, shell, browser, files, and screenshots as primitives.",
+      "Snapshot configured desktops, clone thousands for parallel agent runs."
+    ],
+    "codeLabel": "boot a session",
+    "cta": "See the API docs",
+    "ctaSubtext": "Live Swagger UI, in your browser."
   },
   "cta": {
     "title": "One Link. One Desktop. Whole Team Inside.",

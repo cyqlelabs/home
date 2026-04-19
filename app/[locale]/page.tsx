@@ -11,6 +11,7 @@ import {
   Terminal,
   Briefcase,
   Smartphone,
+  ArrowUpRight,
 } from 'lucide-react';
 import ParallaxBackground from '@/components/parallax-background';
 import FeatureCard from '@/components/feature-card';
@@ -47,6 +48,7 @@ export default async function Home({ params: { locale } }: Props) {
   const featuresT = await getTranslations('features');
   const tUseCases = await getTranslations('useCases');
   const aiSectionT = await getTranslations('aiSection');
+  const apiTeaserT = await getTranslations('apiTeaser');
   const ctaT = await getTranslations('cta');
   const howItWorksT = await getTranslations('howItWorks');
 
@@ -285,6 +287,74 @@ export default async function Home({ params: { locale } }: Props) {
                 mobileSrc="/demo1.mp4"
                 className="w-full h-full"
               />
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+      <div id="api" />
+      {/* API Teaser — dev-facing proof point */}
+      <AnimatedSection className="relative z-10 py-24 bg-gradient-to-b from-black/60 via-gray-950/40 to-black/60">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <div className="rounded-xl border border-gray-800 bg-[#0a0a0c] shadow-2xl shadow-[#FF7600]/10 overflow-hidden">
+                <div className="flex items-center justify-between px-4 py-3 border-b border-gray-800 bg-gray-950/60">
+                  <div className="flex items-center gap-2">
+                    <span aria-hidden="true" className="h-3 w-3 rounded-full bg-red-500/70" />
+                    <span aria-hidden="true" className="h-3 w-3 rounded-full bg-yellow-500/70" />
+                    <span aria-hidden="true" className="h-3 w-3 rounded-full bg-green-500/70" />
+                  </div>
+                  <span className="text-xs font-mono text-gray-500">{apiTeaserT('codeLabel')}</span>
+                </div>
+                <pre className="p-5 md:p-6 text-[0.85rem] md:text-[0.9rem] font-mono leading-relaxed text-gray-200 overflow-x-auto">
+                  <code>
+                    <span className="text-gray-500"># Spin up a Linux desktop over HTTP</span>
+                    {'\n'}
+                    <span className="text-[#FF7600]">curl</span> -X POST
+                    https://api.cyqle.in/sessions \{'\n'}
+                    {'  '}-H{' '}
+                    <span className="text-green-400">
+                      &quot;Authorization: Bearer $CYQLE_KEY&quot;
+                    </span>{' '}
+                    \{'\n'}
+                    {'  '}-H{' '}
+                    <span className="text-green-400">
+                      &quot;Content-Type: application/json&quot;
+                    </span>{' '}
+                    \{'\n'}
+                    {'  '}-d{' '}
+                    <span className="text-green-400">
+                      &apos;{'{'}&quot;image&quot;:&quot;ubuntu-desktop&quot;{'}'}&apos;
+                    </span>
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2 space-y-6">
+              <p className="text-xs font-mono uppercase tracking-[0.2em] text-[#FF7600]">
+                {apiTeaserT('eyebrow')}
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-white [text-wrap:balance]">
+                {apiTeaserT('title')}
+              </h2>
+              <p className="text-lg text-gray-300 leading-relaxed">{apiTeaserT('description')}</p>
+              <ul className="space-y-3">
+                {(apiTeaserT.raw('bullets') as string[]).map((b, i) => (
+                  <li key={i} className="flex items-start gap-3 text-gray-300">
+                    <ChevronRight className="h-5 w-5 text-[#FF7600] flex-shrink-0 mt-0.5" />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-wrap items-center gap-4 pt-2">
+                <Button asChild className="bg-[#FF7600] text-white hover:bg-[#FF7600]/90">
+                  <TrackedLink href={`/${locale}/api-docs`} trackingKey="apiTeaserCta">
+                    {apiTeaserT('cta')}
+                    <ArrowUpRight className="h-4 w-4 ml-1" />
+                  </TrackedLink>
+                </Button>
+                <span className="text-sm text-gray-500">{apiTeaserT('ctaSubtext')}</span>
+              </div>
             </div>
           </div>
         </div>

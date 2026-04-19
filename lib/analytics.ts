@@ -196,6 +196,28 @@ export const trackCTA = {
     });
   },
 
+  navbarApi: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Navigation',
+      event_label: 'API - Navbar',
+      button_location: 'navbar',
+      button_text: 'API',
+      destination: '/api-docs',
+      event_callback: callback,
+    });
+  },
+
+  apiTeaserCta: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Landing',
+      event_label: 'API Teaser - See the API docs',
+      button_location: 'landing_api_teaser',
+      button_text: 'See the API docs',
+      destination: '/api-docs',
+      event_callback: callback,
+    });
+  },
+
   footerHome: (callback?: () => void) => {
     trackEvent('click', {
       event_category: 'Footer',
