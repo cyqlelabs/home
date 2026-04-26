@@ -4,7 +4,6 @@ import {
   ChevronRight,
   Zap,
   Users,
-  TestTube,
   Headset,
   Bot,
   Lock,
@@ -181,7 +180,7 @@ export default async function Home({ params: { locale } }: Props) {
         </div>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 lg:gap-12 items-center">
-            <div className="rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
+            <div className="video-feather">
               <ResponsiveVideo
                 desktopSrc="/Cyqle-multi-web.mp4"
                 mobileSrc="/Cyqle-multi-web.mp4"
@@ -192,24 +191,24 @@ export default async function Home({ params: { locale } }: Props) {
               <div className="space-y-2">
                 <div className="flex items-center">
                   <div className="bg-gray-500/20 p-2 rounded-lg mr-3">
-                    <Users className="h-5 w-5 text-gray-300" />
+                    <Terminal className="h-5 w-5 text-gray-300" />
                   </div>
-                  <h3 className="text-lg font-semibold">{tUseCases('development.title')}</h3>
+                  <h3 className="text-lg font-semibold">{tUseCases('engineering.title')}</h3>
                 </div>
                 <p className="text-gray-400 text-base leading-relaxed">
-                  {tUseCases('development.description')}
+                  {tUseCases('engineering.description')}
                 </p>
               </div>
 
               <div className="space-y-2">
                 <div className="flex items-center">
                   <div className="bg-[#FF7600]/20 p-2 rounded-lg mr-3">
-                    <TestTube className="h-5 w-5 text-[#FF7600]" />
+                    <Bot className="h-5 w-5 text-[#FF7600]" />
                   </div>
-                  <h3 className="text-lg font-semibold">{tUseCases('qa.title')}</h3>
+                  <h3 className="text-lg font-semibold">{tUseCases('aiAgents.title')}</h3>
                 </div>
                 <p className="text-gray-400 text-base leading-relaxed">
-                  {tUseCases('qa.description')}
+                  {tUseCases('aiAgents.description')}
                 </p>
               </div>
 
@@ -281,7 +280,7 @@ export default async function Home({ params: { locale } }: Props) {
                 </TrackedLink>
               </Button>
             </div>
-            <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl shadow-[#FF7600]/10">
+            <div className="order-1 md:order-2 video-feather">
               <ResponsiveVideo
                 desktopSrc="/demo1.mp4"
                 mobileSrc="/demo1.mp4"

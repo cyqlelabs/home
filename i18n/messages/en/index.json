@@ -52,13 +52,13 @@
   },
   "useCases": {
     "title": "Your Workspace for Every Workflow",
-    "development": {
-      "title": "Remote Development",
-      "description": "Code on a persistent cloud environment. Pair program in real-time and keep environments consistent."
+    "engineering": {
+      "title": "Build & Debug Together",
+      "description": "Pair program in a persistent cloud environment. Reproduce bugs in a shared sandbox and pull devs into your session to debug instantly."
     },
-    "qa": {
-      "title": "QA & Testing",
-      "description": "Reproduce bugs in a shared, clean environment. Automate repetitive browser regression tests and invite devs to your session to debug instantly."
+    "aiAgents": {
+      "title": "AI Agent Workspace",
+      "description": "Let your agents drive a real Linux desktop. Snapshot once, clone for parallel runs—and have a human jump into the same session whenever the agent needs help."
     },
     "customerSupport": {
       "title": "Collaborative Support",
