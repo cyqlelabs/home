@@ -18,6 +18,14 @@ export const trackEvent = (
   }
 };
 
+const X_CONVERSION_EVENT_ID = 'tw-ppfx0-r36h3';
+
+export const trackXConversion = (params: Record<string, any> = {}) => {
+  if (typeof window !== 'undefined') {
+    window.twq?.('event', X_CONVERSION_EVENT_ID, params);
+  }
+};
+
 // Predefined event tracking functions for common CTAs
 export const trackCTA = {
   powerOnButton: (callback?: () => void) => {
@@ -29,6 +37,7 @@ export const trackCTA = {
       destination: 'https://app.cyqle.in',
       event_callback: callback,
     });
+    trackXConversion({ conversion_source: 'power_on_button_hero' });
   },
 
   moreInfoButton: () => {
@@ -49,6 +58,7 @@ export const trackCTA = {
       destination: 'mailto:demo@cyqle.in',
       event_callback: callback,
     });
+    trackXConversion({ conversion_source: 'book_demo_hero' });
   },
 
   pricingPlan: (planName: string, pricingMode: string, tier?: string) => {
@@ -56,6 +66,12 @@ export const trackCTA = {
       event_category: 'Pricing',
       event_label: `${planName} - ${pricingMode}${tier ? ` - ${tier}` : ''}`,
       button_location: 'pricing_section',
+      plan_name: planName,
+      pricing_mode: pricingMode,
+      ...(tier && { tier }),
+    });
+    trackXConversion({
+      conversion_source: 'pricing_plan',
       plan_name: planName,
       pricing_mode: pricingMode,
       ...(tier && { tier }),
@@ -78,6 +94,7 @@ export const trackCTA = {
       button_location: 'pricing_section',
       seats_requested: seats,
     });
+    trackXConversion({ conversion_source: 'custom_quote_submit', seats_requested: seats });
   },
 
   ctaStartTrial: () => {
@@ -87,6 +104,7 @@ export const trackCTA = {
       button_location: 'bottom_cta_section',
       button_text: 'Get Started Now',
     });
+    trackXConversion({ conversion_source: 'cta_start_trial_bottom' });
   },
 
   ctaScheduleDemo: () => {
@@ -96,6 +114,7 @@ export const trackCTA = {
       button_location: 'bottom_cta_section',
       button_text: 'Schedule Demo',
     });
+    trackXConversion({ conversion_source: 'cta_schedule_demo_bottom' });
   },
 
   navbarTryForFree: (callback?: () => void) => {
@@ -107,6 +126,7 @@ export const trackCTA = {
       destination: 'https://app.cyqle.in',
       event_callback: callback,
     });
+    trackXConversion({ conversion_source: 'navbar_try_for_free' });
   },
 
   aboutPageCTA: (callback?: () => void) => {
@@ -118,6 +138,7 @@ export const trackCTA = {
       destination: 'https://app.cyqle.in',
       event_callback: callback,
     });
+    trackXConversion({ conversion_source: 'about_page_cta' });
   },
 
   exploreFeatures: (callback?: () => void) => {

@@ -7,4 +7,9 @@ interface Window {
     config?: Record<string, any>,
   ) => void;
   dataLayer: any[];
+  twq: (
+    command: 'config' | 'event' | 'track',
+    targetId: string,
+    params?: Record<string, any>,
+  ) => void;
 }

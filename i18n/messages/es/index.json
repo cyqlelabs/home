@@ -52,13 +52,13 @@
   },
   "useCases": {
     "title": "Un Espacio de Trabajo para cada Necesidad",
-    "development": {
-      "title": "Desarrollo Remoto",
-      "description": "Programá en un entorno en la nube persistente. Hacé programación en pareja en tiempo real manteniendo el entorno consistente para todos."
+    "engineering": {
+      "title": "Construir y Depurar Juntos",
+      "description": "Programá en pareja en un entorno en la nube persistente. Reproducí errores en un sandbox compartido y llamá a los devs a tu sesión para depurar al instante."
     },
-    "qa": {
-      "title": "QA y Testing",
-      "description": "Reproducí errores en un entorno limpio y compartido. Automatizá tests de navegador y llamá a los devs a tu sesión para depurar al instante."
+    "aiAgents": {
+      "title": "Espacio para Agentes de IA",
+      "description": "Dejá que tus agentes manejen un escritorio Linux real. Tomá una snapshot, cloná para correr agentes en paralelo—y que un humano se sume a la misma sesión cuando el agente necesite ayuda."
     },
     "customerSupport": {
       "title": "Soporte Colaborativo",
