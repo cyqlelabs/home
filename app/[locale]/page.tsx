@@ -365,7 +365,6 @@ export default async function Home({ params: { locale } }: Props) {
                     <ArrowUpRight className="h-4 w-4 ml-1" />
                   </TrackedLink>
                 </Button>
-                <span className="text-sm text-gray-500">{apiTeaserT('ctaSubtext')}</span>
               </div>
             </div>
           </div>

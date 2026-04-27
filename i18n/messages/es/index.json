@@ -96,8 +96,7 @@
       "Snapshoteá escritorios configurados y cloná miles para agentes en paralelo."
     ],
     "codeLabel": "booteá una sesión",
-    "cta": "Ver los docs de la API",
-    "ctaSubtext": "Swagger UI en vivo, en el navegador."
+    "cta": "Ver los docs de la API"
   },
   "cta": {
     "title": "Un Link. Un Escritorio. Todo el Equipo Adentro.",
@@ -129,7 +128,6 @@
           "bandwidth": "Hasta 10mb/s",
           "priority": "Prioridad baja",
           "persistence": "No se guarda nada",
-          "idle": "Se apaga a los 5 min sin uso",
           "snapshots": "Snapshots Públicos"
         },
         "cta": "Probar gratis"
@@ -140,12 +138,14 @@
         "unit": "/crédito",
         "description": "Perfecto para trabajo de desarrollo en solitario.",
         "features": {
+          "time": "Sesiones ilimitadas",
           "specs": "1 vCPU / 2 GB RAM",
           "bandwidth": "100mb/s",
           "priority": "Prioridad estándar",
           "persistence": "20 GB para guardar",
           "snapshots": "Creación de Snapshots",
-          "api": "Acceso a la API"
+          "api": "Acceso a la API",
+          "browserAgent": "Agente de navegador integrado"
         },
         "cta": "Empezar"
       },
@@ -155,12 +155,14 @@
         "unit": "/crédito",
         "description": "Para trabajo en serio.",
         "features": {
+          "time": "Sesiones ilimitadas",
           "specs": "2 vCPU / 4 GB RAM",
           "bandwidth": "150mb/s",
           "priority": "Prioridad alta",
           "persistence": "40 GB para guardar",
           "snapshots": "Creación de Snapshots",
-          "api": "Acceso a la API"
+          "api": "Acceso a la API",
+          "browserAgent": "Agente de navegador integrado"
         },
         "cta": "Ir a Pro"
       }
