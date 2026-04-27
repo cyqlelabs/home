@@ -95,8 +95,7 @@
       "Snapshot configured desktops, clone thousands for parallel agent runs."
     ],
     "codeLabel": "boot a session",
-    "cta": "See the API docs",
-    "ctaSubtext": "Live Swagger UI, in your browser."
+    "cta": "See the API docs"
   },
   "cta": {
     "title": "One Link. One Desktop. Whole Team Inside.",
@@ -128,7 +127,6 @@
           "bandwidth": "Up to 10mb/s bandwidth",
           "priority": "Low Priority Queue",
           "persistence": "No Persistence",
-          "idle": "5 Min Idle Timeout",
           "snapshots": "Public Snapshots"
         },
         "cta": "Try for Free"
@@ -139,12 +137,14 @@
         "unit": "/credit",
         "description": "Perfect for solo dev work.",
         "features": {
+          "time": "Unlimited Session Time",
           "specs": "1 vCPU / 2 GB RAM",
           "bandwidth": "100mb/s bandwidth",
           "priority": "Standard Priority",
           "persistence": "20 GB persistence",
           "snapshots": "Snapshot Creation",
-          "api": "API Access"
+          "api": "API Access",
+          "browserAgent": "In-house Browser Agent"
         },
         "cta": "Get Started"
       },
@@ -154,12 +154,14 @@
         "unit": "/credit",
         "description": "Built for serious work.",
         "features": {
+          "time": "Unlimited Session Time",
           "specs": "2 vCPU / 4 GB RAM",
           "bandwidth": "150mb/s bandwidth",
           "priority": "High Priority Queue",
           "persistence": "40 GB persistence",
           "snapshots": "Snapshot Creation",
-          "api": "API Access"
+          "api": "API Access",
+          "browserAgent": "In-house Browser Agent"
         },
         "cta": "Go Pro"
       }
