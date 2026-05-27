@@ -18,7 +18,6 @@
     "titlePhrase3": "Your Team Computer",
     "description": "Spin up a full cloud desktop in seconds. Invite your team. Everyone drives.",
     "getStarted": "Get Started",
-    "bookDemo": "Book a Demo",
     "trialInfo": "Free tier available. No credit card required.",
     "powerOnLabel": "Power On — It's Free",
     "moreInfo": "More Info"
@@ -101,7 +100,6 @@
     "title": "One Link. One Desktop. Whole Team Inside.",
     "description": "One invite link. Everyone on your team is in the same desktop, with their own cursor, in under 10 seconds.",
     "startTrial": "Get Started Now",
-    "scheduleDemo": "Schedule a Demo",
     "trialInfo": "60-minute free sessions. No credit card required."
   },
   "pricing": {

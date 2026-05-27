@@ -49,18 +49,6 @@ export const trackCTA = {
     });
   },
 
-  bookDemo: (callback?: () => void) => {
-    trackEvent('click', {
-      event_category: 'CTA',
-      event_label: 'Book Demo - Hero',
-      button_location: 'hero_section',
-      button_text: 'Book Demo',
-      destination: 'mailto:demo@cyqle.in',
-      event_callback: callback,
-    });
-    trackXConversion({ conversion_source: 'book_demo_hero' });
-  },
-
   pricingPlan: (planName: string, pricingMode: string, tier?: string) => {
     trackEvent('click', {
       event_category: 'Pricing',
@@ -105,16 +93,6 @@ export const trackCTA = {
       button_text: 'Get Started Now',
     });
     trackXConversion({ conversion_source: 'cta_start_trial_bottom' });
-  },
-
-  ctaScheduleDemo: () => {
-    trackEvent('click', {
-      event_category: 'CTA',
-      event_label: 'Schedule Demo - Bottom CTA',
-      button_location: 'bottom_cta_section',
-      button_text: 'Schedule Demo',
-    });
-    trackXConversion({ conversion_source: 'cta_schedule_demo_bottom' });
   },
 
   navbarTryForFree: (callback?: () => void) => {

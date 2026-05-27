@@ -33,9 +33,7 @@ interface TrackedLinkProps {
   target?: '_blank' | '_self' | '_parent' | '_top';
   rel?: string;
   trackingKey:
-    | 'bookDemo'
     | 'ctaStartTrial'
-    | 'ctaScheduleDemo'
     | 'aboutPageCTA'
     | 'powerOnButton'
     | 'navbarTryForFree'

@@ -18,7 +18,6 @@
     "titlePhrase3": "La Computadora de tu Equipo",
     "description": "Levantá un escritorio cloud completo en segundos. Invitá a tu equipo. Todos conducen.",
     "getStarted": "Empezar",
-    "bookDemo": "Agendar Demo",
     "trialInfo": "Tier gratis disponible. Sin tarjeta de crédito.",
     "powerOnLabel": "Empezar — Es Gratis",
     "moreInfo": "Más Info"
@@ -102,7 +101,6 @@
     "title": "Un Link. Un Escritorio. Todo el Equipo Adentro.",
     "description": "Un link de invitación. Todo tu equipo está en el mismo escritorio, con su propio cursor, en menos de 10 segundos.",
     "startTrial": "Empezar Ahora",
-    "scheduleDemo": "Agendar Demo",
     "trialInfo": "Sesiones gratis de 60 min. Sin tarjeta de crédito."
   },
   "pricing": {
