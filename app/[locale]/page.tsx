@@ -74,16 +74,6 @@ export default async function Home({ params: { locale } }: Props) {
             <p className="text-sm text-gray-500">{heroT('trialInfo')}</p>
             <div className="flex flex-col sm:flex-row gap-3">
               <MoreInfoButton>{heroT('moreInfo')}</MoreInfoButton>
-              <Button asChild size="sm" className="bg-black text-white hover:bg-gray-900 shadow-lg">
-                <TrackedLink
-                  href="https://calendly.com/cyqle/demo"
-                  trackingKey="bookDemo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {heroT('bookDemo')}
-                </TrackedLink>
-              </Button>
             </div>
           </div>
         </div>
@@ -391,16 +381,6 @@ export default async function Home({ params: { locale } }: Props) {
             >
               {ctaT('startTrial')}
             </TrackedButton>
-            <Button asChild size="lg" className="bg-black text-white hover:bg-gray-900 shadow-lg">
-              <TrackedLink
-                href="https://calendly.com/cyqle/demo"
-                trackingKey="ctaScheduleDemo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {ctaT('scheduleDemo')}
-              </TrackedLink>
-            </Button>
           </div>
           <div className="mt-10 flex items-center justify-center">
             <Lock className="h-5 w-5 dark:text-gray-400 text-gray-600 mr-2" />

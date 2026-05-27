@@ -9,7 +9,7 @@ interface TrackedButtonProps {
   children: ReactNode;
   className?: string;
   size?: 'default' | 'sm' | 'lg' | 'icon';
-  trackingKey: 'ctaStartTrial' | 'ctaScheduleDemo';
+  trackingKey: 'ctaStartTrial';
   href?: string;
 }
 
