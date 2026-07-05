@@ -4,19 +4,11 @@ export interface SpherePoint {
   z: number;
 }
 
-export interface ProjectedCursor {
-  screenX: number;
-  screenY: number;
-  scale: number;
-  alpha: number;
-  depth: number;
-}
+export type RegionStatus = 'live' | 'soon';
 
-export interface GlobeConfig {
-  cursorCount: number;
-  radius: number;
-  fov: number;
-  tiltX: number;
-  rotationSpeed: number;
-  resolution: number;
+export interface Region {
+  id: string;
+  lat: number;
+  lng: number;
+  status: RegionStatus;
 }

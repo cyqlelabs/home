@@ -16,7 +16,8 @@ export default function CursorGlobe() {
     container.appendChild(canvas);
 
     const isMobile = window.innerWidth < 768;
-    const renderer = new GlobeRenderer(canvas, isMobile);
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const renderer = new GlobeRenderer(canvas, isMobile, reducedMotion);
     renderer.init();
 
     const handleScroll = () => renderer.updateScroll(window.scrollY);
@@ -44,7 +45,7 @@ export default function CursorGlobe() {
 
   return (
     <div className="fixed inset-0 w-screen h-screen -z-20 overflow-hidden">
-      <div ref={containerRef} className="absolute inset-0 w-full h-full opacity-20" />
+      <div ref={containerRef} className="absolute inset-0 w-full h-full opacity-40" />
     </div>
   );
 }
