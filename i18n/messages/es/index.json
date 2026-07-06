@@ -30,7 +30,7 @@
     },
     "ephemeralEnvironments": {
       "title": "Entornos Efímeros al Instante",
-      "description": "Levantá escritorios configurados en segundos. Por defecto son **efímeros** por seguridad, pero podés persistirlos o clonarlos desde **capturas**. Empezá de cero sin reinstalar nada."
+      "description": "Levantá escritorios configurados en segundos. Por defecto son **efímeros**, pero podés persistirlos o clonarlos desde **capturas**. **Fijá** tu setup preferido para mantenerlo **pre-cargado** y arrancarlo sin espera, o **pausá** una sesión para congelarla en el acto y reanudarla justo donde la dejaste."
     },
     "unrestrictedAccess": {
       "title": "Control y Acceso Total",

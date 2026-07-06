@@ -30,7 +30,7 @@
     },
     "ephemeralEnvironments": {
       "title": "Instant Ephemeral Environments",
-      "description": "Spin up configured desktops in seconds. Default to **ephemeral** for security, persist when needed, or clone from **snapshots**. Fresh starts without the rebuild."
+      "description": "Spin up configured desktops in seconds. Default to **ephemeral**, persist when needed, or clone from **snapshots**. **Pin** your go-to setup to keep it **pre-warmed** for zero-cold-start access, or **pause** a session to freeze it in place and resume right where you left off."
     },
     "unrestrictedAccess": {
       "title": "Unrestricted Access & Control",
