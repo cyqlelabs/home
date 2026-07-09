@@ -185,7 +185,7 @@ export class GlobeRenderer {
     this.isMobile = isMobile;
     this.reducedMotion = reducedMotion;
     this.dotStride = isMobile ? 3 : 1;
-    this.maxUsers = isMobile ? 5 : 9;
+    this.maxUsers = isMobile ? 8 : 15;
     this.arcSegs = isMobile ? 20 : 30;
     this.arcScratch = new Float32Array((this.arcSegs + 1) * 4);
   }
@@ -381,13 +381,20 @@ export class GlobeRenderer {
   private updateSimulation(dtSec: number, velBoost: number) {
     this.spawnTimer -= dtSec * (1 + velBoost * 0.7);
     if (this.spawnTimer <= 0) {
-      this.spawnTimer = 1.1 + Math.random() * 1.6;
-      if (this.users.length < this.maxUsers) this.spawnUser(false, -1, null);
+      this.spawnTimer = 0.5 + Math.random() * 0.85;
+      if (this.users.length < this.maxUsers) {
+        this.spawnUser(false, -1, null);
+        // Keep the globe populated across regions: a second, spread-out session
+        // while there's still plenty of headroom, so activity fills in faster.
+        if (this.users.length < this.maxUsers - 3 && Math.random() < 0.6) {
+          this.spawnUser(false, -1, null);
+        }
+      }
     }
 
     this.sharedTimer -= dtSec;
     if (this.sharedTimer <= 0) {
-      this.sharedTimer = 9 + Math.random() * 8;
+      this.sharedTimer = 4.5 + Math.random() * 4.5;
       this.spawnSharedSession();
     }
 
@@ -401,8 +408,8 @@ export class GlobeRenderer {
     }
   }
 
-  private pickLandPoint(avoid: SpherePoint | null): SpherePoint {
-    for (let attempt = 0; attempt < 6; attempt++) {
+  private pickLandPoint(avoid: SpherePoint | null, spread = false): SpherePoint {
+    for (let attempt = 0; attempt < 8; attempt++) {
       const idx = Math.floor(Math.random() * LAND_DOT_COUNT) * 3;
       const p = {
         x: this.landXYZ[idx],
@@ -410,6 +417,7 @@ export class GlobeRenderer {
         z: this.landXYZ[idx + 2],
       };
       if (avoid && p.x * avoid.x + p.y * avoid.y + p.z * avoid.z > 0.5) continue;
+      if (spread && this.tooCloseToUsers(p)) continue;
       return p;
     }
     const idx = Math.floor(Math.random() * LAND_DOT_COUNT) * 3;
@@ -432,10 +440,19 @@ export class GlobeRenderer {
   }
 
   private spawnUser(shared: boolean, regionIdx: number, avoid: SpherePoint | null) {
-    const point = this.pickLandPoint(avoid);
+    const point = this.pickLandPoint(avoid, !shared);
     const region = regionIdx >= 0 ? regionIdx : this.nearestLiveRegion(point);
     if (region < 0) return;
     this.spawnUserAt(point, shared, region);
+  }
+
+  // Reject a candidate sitting within ~26° of an existing session so activity
+  // spreads over the globe instead of bunching up into a nasty cluster.
+  private tooCloseToUsers(p: SpherePoint): boolean {
+    for (const u of this.users) {
+      if (u.point.x * p.x + u.point.y * p.y + u.point.z * p.z > 0.9) return true;
+    }
+    return false;
   }
 
   private spawnSharedSession() {
