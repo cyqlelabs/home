@@ -8,6 +8,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/components/language-provider';
 import SchemaJsonLd from '@/components/schema-jsonld';
+import ScrollbarReveal from '@/components/scrollbar-reveal';
 import {
   formatDetection,
   localeTags,
@@ -108,6 +109,7 @@ export default async function RootLayout({ children, params: { locale } }: Props
     <html lang={locale} className="dark">
       <body className={inter.className}>
         <SchemaJsonLd />
+        <ScrollbarReveal />
         <ThemeProvider>
           <LanguageProvider messages={messages} locale={locale}>
             {children}

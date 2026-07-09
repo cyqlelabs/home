@@ -56,6 +56,53 @@
   }
 }
 
+/* Stylish auto-hiding scrollbar — invisible at rest, revealed while scrolling.
+   The `is-scrolling` class is toggled on <html> by <ScrollbarReveal />. */
+@media (pointer: fine) {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.4s ease;
+  }
+  html.is-scrolling {
+    scrollbar-color: hsl(var(--primary) / 0.55) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    background-clip: content-box;
+    border: 3px solid transparent;
+    border-radius: 9999px;
+    transition: background-color 0.4s ease;
+  }
+  html.is-scrolling ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary) / 0.55);
+  }
+  /* Grabbing the (invisible) thumb directly also reveals and brightens it. */
+  ::-webkit-scrollbar-thumb:hover,
+  ::-webkit-scrollbar-thumb:active,
+  html.is-scrolling ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--primary) / 0.9);
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  ::-webkit-scrollbar-thumb {
+    transition: none;
+  }
+}
+
 @keyframes blob {
   0% {
     transform: translate(0px, 0px) scale(1);
