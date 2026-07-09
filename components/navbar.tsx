@@ -37,9 +37,6 @@ export default function Navbar() {
 
   return (
     <header
-      // Compensate for the scrollbar width Radix removes when a modal overlay
-      // (e.g. the language menu) locks body scroll, so this fixed bar doesn't shift.
-      style={{ paddingRight: 'var(--removed-body-scroll-bar-size, 0px)' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-black/90 backdrop-blur-md py-3 shadow-2xl border-b border-white/5'
