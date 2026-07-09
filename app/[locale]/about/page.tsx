@@ -6,7 +6,7 @@ import ParallaxBackground from '@/components/parallax-background';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { type Metadata } from 'next';
-import { getSEOAlternates, type SiteLocale } from '@/lib/site-metadata';
+import { getSEOAlternates, localeTags, siteMetadata, type SiteLocale } from '@/lib/site-metadata';
 import TrackedLink from '@/components/tracked-link';
 import {
   Network,
@@ -29,15 +29,8 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
   const t = await getTranslations({ locale, namespace: 'aboutPage' });
   const alternates = getSEOAlternates(locale as SiteLocale, '/about');
 
-  const title =
-    locale === 'en'
-      ? 'About Cyqle: Multiplayer Cloud Desktop'
-      : 'Acerca de Cyqle: Escritorio Cloud Multijugador';
-
-  const description =
-    locale === 'en'
-      ? 'Cyqle is a P2P cloud desktop where multiple people work on the same machine simultaneously. Each user gets their own cursor and keyboard. Spin up in seconds, collaborate in real time.'
-      : 'Cyqle es un escritorio cloud P2P donde varias personas trabajan en la misma máquina simultáneamente. Cada usuario tiene su propio cursor y teclado. Arranca en segundos, colaborá en tiempo real.';
+  const title = t('metaTitle');
+  const description = t('metaDescription');
 
   return {
     title,
@@ -62,7 +55,7 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
       title,
       description,
       type: 'website',
-      locale: locale === 'en' ? 'en_US' : 'es_ES',
+      locale: localeTags[locale as SiteLocale].replace('-', '_'),
       url: `https://cyqle.in/${locale}/about`,
       siteName: 'Cyqle',
     },
@@ -239,5 +232,5 @@ export default async function AboutPage({ params: { locale } }: Props) {
 }
 
 export async function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'es' }];
+  return siteMetadata.locales.map((locale) => ({ locale }));
 }

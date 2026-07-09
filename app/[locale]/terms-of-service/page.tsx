@@ -6,7 +6,7 @@ import ParallaxBackground from '@/components/parallax-background';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { type Metadata } from 'next';
-import { getSEOAlternates, type SiteLocale } from '@/lib/site-metadata';
+import { getSEOAlternates, siteMetadata, type SiteLocale } from '@/lib/site-metadata';
 import { Scale, Shield, FileText, AlertCircle, Copyright, Ban, Users, Clock } from 'lucide-react';
 
 type Props = {
@@ -377,5 +377,5 @@ export default async function TermsOfServicePage({ params: { locale } }: Props) 
 }
 
 export async function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'es' }];
+  return siteMetadata.locales.map((locale) => ({ locale }));
 }

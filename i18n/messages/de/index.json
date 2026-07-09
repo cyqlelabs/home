@@ -1,0 +1,973 @@
+{
+  "metadata": {
+    "title": "Der P2P-Cloud-Desktop für Zusammenarbeit in Echtzeit",
+    "description": "Ein persistenter Cloud-Computer für Team-Zusammenarbeit in Echtzeit. Gemeinsam entwickeln, testen und automatisieren – mit KI-Workflows. Jetzt kostenlos testen."
+  },
+  "navbar": {
+    "features": "Features",
+    "useCases": "Anwendungsfälle",
+    "pricing": "Preise",
+    "api": "API",
+    "about": "Über uns",
+    "tryForFree": "Kostenlos testen",
+    "changeLanguage": "Sprache ändern"
+  },
+  "hero": {
+    "title": "Ein Cloud-Desktop, den du wirklich teilen kannst",
+    "titlePhrase1": "Dein Cloud-Desktop",
+    "titlePhrase2": "Dein gemeinsamer Arbeitsbereich",
+    "titlePhrase3": "Der Computer deines Teams",
+    "description": "Starte einen kompletten Cloud-Desktop in Sekunden. Lade dein Team ein. Alle steuern gleichzeitig.",
+    "getStarted": "Loslegen",
+    "trialInfo": "Kostenloser Tarif verfügbar. Keine Kreditkarte erforderlich.",
+    "powerOnLabel": "Einschalten — kostenlos",
+    "moreInfo": "Mehr Infos"
+  },
+  "features": {
+    "title": "Ein vollwertiger Desktop, neu gedacht",
+    "multiplayerDesktop": {
+      "title": "Echter Multiplayer-Desktop",
+      "description": "**Mehrere Cursor, mehrere Tastaturen**, Steuerung in Echtzeit. Das ganze Team bedient den Desktop gleichzeitig per **P2P-Streaming**. **Integrierte Videoanrufe**, **sofortige Dateiübertragung** und geteilte Sessions – Schluss mit „Siehst du meinen Bildschirm?“"
+    },
+    "ephemeralEnvironments": {
+      "title": "Ephemere Umgebungen in Sekunden",
+      "description": "Starte konfigurierte Desktops in Sekunden. Standardmäßig **ephemer**, bei Bedarf persistent oder aus **Snapshots** geklont. **Pinne** dein Lieblings-Setup, um es **vorgewärmt** ohne Kaltstart bereitzuhalten, oder **pausiere** eine Session, um sie einzufrieren und genau dort weiterzumachen, wo du aufgehört hast."
+    },
+    "unrestrictedAccess": {
+      "title": "Uneingeschränkter Zugriff & Kontrolle",
+      "description": "**Voller Root-Zugriff**, um alles zu installieren. **Programmierbare API** für Automatisierung. Es ist deine Maschine – konfiguriere sie, skripte sie, steuere sie, wie du willst."
+    },
+    "workflowAutomation": {
+      "title": "KI-Workflow-Automatisierung",
+      "description": "Zeichne Browser-Workflows einmal auf und spiele sie beliebig oft ab. Delegiere repetitive Web-Aufgaben an **KI-Agenten** und konzentriere dich auf das Wesentliche."
+    },
+    "zeroKnowledgeSecurity": {
+      "title": "Zero-Knowledge-Sicherheit",
+      "description": "Dein Dateisystem wird mit einzigartigen Session-Schlüsseln **verschlüsselt**. Wenn du eine ephemere Session schließt, werden die Daten **kryptografisch gelöscht** – wir könnten sie nicht wiederherstellen, selbst wenn wir wollten."
+    },
+    "mobileAccess": {
+      "title": "Natives Mobile-Erlebnis",
+      "description": "Voller Desktop-Zugriff vom Smartphone oder Tablet mit **nativen Touch-Gesten** – **Fenster per Pinch skalieren, per Drag verschieben, per Swipe navigieren**. Behebe Bugs im Zug, reviewe Code im Meeting, prüfe Logs während eines Incidents. Dein leistungsstarker Desktop passt sich deinen Daumen an."
+    }
+  },
+  "useCases": {
+    "title": "Dein Workspace für jeden Workflow",
+    "engineering": {
+      "title": "Gemeinsam bauen & debuggen",
+      "description": "Pair Programming in einer persistenten Cloud-Umgebung. Reproduziere Bugs in einer geteilten Sandbox und hole Devs direkt in deine Session, um sofort zu debuggen."
+    },
+    "aiAgents": {
+      "title": "Workspace für KI-Agenten",
+      "description": "Lass deine Agenten einen echten Linux-Desktop steuern. Einmal snapshotten, für parallele Läufe klonen – und ein Mensch springt in dieselbe Session, wann immer der Agent Hilfe braucht."
+    },
+    "customerSupport": {
+      "title": "Kollaborativer Support",
+      "description": "Sag Kunden nicht nur, was sie tun sollen – zeig es ihnen. Starte eine geteilte Session, um komplexe Web-Onboarding-Flows zu automatisieren oder Nutzer in Echtzeit durch Probleme zu begleiten."
+    },
+    "operations": {
+      "title": "Sicherer Betrieb",
+      "description": "Greife über einen sicheren, isolierten Cloud-Desktop auf interne Tools und Dashboards zu, ohne lokale Netzwerke offenzulegen."
+    },
+    "admin": {
+      "title": "Virtuelles Büro",
+      "description": "Arbeite gemeinsam an Tabellen, Dokumenten und Admin-Aufgaben in einem geteilten Desktop. Bearbeite mehrere Fenster gleichzeitig – direkt im Call."
+    }
+  },
+  "aiSection": {
+    "title": "Automatisiere deine Arbeit",
+    "description": "Cyqle ist nicht nur ein Desktop, sondern eine Automatisierungsplattform. Zeichne Workflows auf, plane Aufgaben und lass Agenten die Routinearbeit erledigen.",
+    "items": [
+      "Zeichne Browser-Interaktionen auf und spiele sie ab",
+      "Delegiere repetitive Web-Aufgaben an Agenten",
+      "Plane Workflows, die im Hintergrund laufen",
+      "Pflege eine gemeinsame Bibliothek von Team-Automatisierungen",
+      "Funktioniert mit deinen bestehenden Tools"
+    ],
+    "exploreFeatures": "Kostenlos ausprobieren"
+  },
+  "apiTeaser": {
+    "eyebrow": "REST API für KI-Agenten",
+    "title": "Ein POST. Ein echter Computer.",
+    "description": "Jeder Cyqle-Desktop ist ein REST-Endpoint. Authentifizieren, Session booten, steuern, snapshotten, herunterfahren. Alles über HTTP.",
+    "bullets": [
+      "Bearer-Token-Auth. OpenAPI-3.0-Spezifikation, die sauber auf jeden Client mappt.",
+      "Steuere Fenster, Shell, Browser, Dateien und Screenshots als Primitive.",
+      "Snapshotte konfigurierte Desktops, klone Tausende für parallele Agenten-Läufe."
+    ],
+    "codeLabel": "eine Session booten",
+    "cta": "Zur API-Dokumentation"
+  },
+  "cta": {
+    "title": "Ein Link. Ein Desktop. Das ganze Team drin.",
+    "description": "Ein Einladungslink. Dein ganzes Team ist im selben Desktop, mit eigenem Cursor, in unter 10 Sekunden.",
+    "startTrial": "Jetzt loslegen",
+    "trialInfo": "60 Minuten kostenlose Sessions. Keine Kreditkarte erforderlich."
+  },
+  "pricing": {
+    "title": "Preise, die mit dir wachsen",
+    "descriptionMonthly": "Starte kostenlos. Monatliche Pläne ab $6/Monat pro Desktop.",
+    "descriptionPayAsYouGo": "Starte kostenlos. Pay as you go ab $0.20/Credit — 10 Stunden Cloud-Desktop für weniger als einen Kaffee.",
+    "monthly": "/Monat",
+    "credit": "/Credit",
+    "monthlyLabel": "Monatlich",
+    "payAsYouGoLabel": "Pay as you go",
+    "popular": "Am beliebtesten",
+    "billingLegend": "Tägliche Abrechnung nach tatsächlicher Nutzung",
+    "perDesktop": "pro Desktop",
+    "plans": {
+      "free": {
+        "name": "Kostenlos",
+        "price": "$0.00",
+        "unit": "",
+        "description": "Perfekt zum schnellen Ausprobieren.",
+        "features": {
+          "time": "60 Minuten Session-Limit",
+          "specs": "1 vCPU / 1 GB RAM",
+          "bandwidth": "Bis zu 10mb/s Bandbreite",
+          "priority": "Warteschlange mit niedriger Priorität",
+          "persistence": "Keine Persistenz",
+          "snapshots": "Öffentliche Snapshots"
+        },
+        "cta": "Kostenlos testen"
+      },
+      "lite": {
+        "name": "Lite",
+        "price": "$0.20",
+        "unit": "/Credit",
+        "description": "Perfekt für Solo-Entwicklung.",
+        "features": {
+          "time": "Unbegrenzte Session-Zeit",
+          "specs": "1 vCPU / 2 GB RAM",
+          "bandwidth": "100mb/s Bandbreite",
+          "priority": "Standard-Priorität",
+          "persistence": "20 GB Persistenz",
+          "snapshots": "Snapshot-Erstellung",
+          "api": "API-Zugriff",
+          "browserAgent": "Hauseigener Browser-Agent"
+        },
+        "cta": "Loslegen"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$0.40",
+        "unit": "/Credit",
+        "description": "Gebaut für ernsthafte Arbeit.",
+        "features": {
+          "time": "Unbegrenzte Session-Zeit",
+          "specs": "2 vCPU / 4 GB RAM",
+          "bandwidth": "150mb/s Bandbreite",
+          "priority": "Warteschlange mit hoher Priorität",
+          "persistence": "40 GB Persistenz",
+          "snapshots": "Snapshot-Erstellung",
+          "api": "API-Zugriff",
+          "browserAgent": "Hauseigener Browser-Agent"
+        },
+        "cta": "Hol dir Pro"
+      }
+    },
+    "powerTiers": {
+      "title": "Power-Stufen",
+      "description": "Skaliere deine Ressourcen für anspruchsvolle Aufgaben.",
+      "table": {
+        "tier": "Stufe",
+        "specs": "Specs",
+        "multiplier": "Multiplikator"
+      },
+      "tiers": {
+        "standard": {
+          "name": "Standard",
+          "specs": "2 vCPU / 4GB RAM",
+          "multiplier": "1x",
+          "persistence": "40 GB Persistenz",
+          "bandwidth": "150mb/s Bandbreite"
+        },
+        "turbo": {
+          "name": "Turbo",
+          "specs": "4 vCPU / 8GB RAM",
+          "multiplier": "2x",
+          "persistence": "60 GB Persistenz",
+          "bandwidth": "200mb/s Bandbreite"
+        },
+        "max": {
+          "name": "Max",
+          "specs": "8 vCPU / 16GB RAM",
+          "multiplier": "4x",
+          "persistence": "120 GB Persistenz",
+          "bandwidth": "300mb/s Bandbreite"
+        }
+      }
+    },
+    "creditEqualsHours": "1 Credit = 10 Std. Desktop-Zeit",
+    "customQuote": {
+      "heading": "Du brauchst mehr Plätze?",
+      "description": "Erhalte Mengenpreise, zugeschnitten auf deine Teamgröße.",
+      "cta": "Angebot anfordern",
+      "dialogTitle": "Individuelles Angebot erhalten",
+      "dialogDescription": "Erzähl uns von deinem Team und wir erstellen dir ein maßgeschneidertes Preisangebot.",
+      "seatsLabel": "Wie viele Plätze brauchst du?",
+      "seatsPlaceholder": "z. B. 10",
+      "emailLabel": "Deine geschäftliche E-Mail",
+      "emailPlaceholder": "du@firma.de",
+      "submit": "Angebot anfordern",
+      "sending": "Wird gesendet...",
+      "successTitle": "Angebot angefordert!",
+      "successDescription": "Wir melden uns in Kürze mit einem maßgeschneiderten Preisangebot bei dir.",
+      "errorMessage": "Etwas ist schiefgelaufen. Bitte versuch es erneut.",
+      "close": "Schließen"
+    }
+  },
+  "howItWorks": {
+    "title": "In Sekunden startklar",
+    "step1": {
+      "title": "Starten",
+      "description": "Ein Klick genügt. Dein vollwertiger Linux-Desktop läuft in Sekunden im Browser. Keine Installation, keine Konfiguration."
+    },
+    "step2": {
+      "title": "Einladen",
+      "description": "Teile einen Link. Dein ganzes Team ist sofort dabei — alle bekommen einen eigenen Cursor und eine eigene Tastatur."
+    },
+    "step3": {
+      "title": "Zusammenarbeiten",
+      "description": "Tippt, klickt und navigiert gleichzeitig auf demselben Desktop. Behebt Bugs gemeinsam. Shippt schneller."
+    }
+  },
+  "footer": {
+    "description": "Der P2P-Cloud-Desktop für Multiplayer-Zusammenarbeit und KI-Automatisierung.",
+    "product": {
+      "title": "Produkt",
+      "features": "Features",
+      "useCases": "Anwendungsfälle",
+      "pricing": "Preise",
+      "integrations": "Integrationen",
+      "roadmap": "Roadmap"
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "documentation": "Dokumentation",
+      "blog": "Blog",
+      "community": "Community",
+      "support": "Support",
+      "api": "API"
+    },
+    "company": {
+      "title": "Unternehmen",
+      "about": "Über uns",
+      "careers": "Karriere",
+      "contact": "Kontakt",
+      "privacy": "Datenschutz",
+      "terms": "AGB"
+    },
+    "helpSupport": {
+      "title": "Hilfe & Support",
+      "apiDocs": "API-Dokumentation",
+      "contact": "Support kontaktieren"
+    },
+    "copyright": "© {year} Cyqle. Alle Rechte vorbehalten.",
+    "privacyPolicy": "Datenschutzerklärung",
+    "termsOfService": "Nutzungsbedingungen",
+    "cookies": "Cookies"
+  },
+  "apiDocsPage": {
+    "metaTitle": "Cyqle API — Ein programmierbarer Desktop für KI-Agenten",
+    "metaDescription": "Starte Linux-Desktops, steuere Browser- und Desktop-Fenster, führe Code aus, erstelle Screenshots und persistiere Zustände — die REST-Primitive, die KI-Agenten brauchen, um echte Software zu bedienen.",
+    "hero": {
+      "badge": "REST API",
+      "title": "Dein Agent, in einem echten Computer.",
+      "description": "Schluss mit SDK-Wrappern. Boote einen Linux-Desktop über HTTP und steuere ihn wie ein Mensch: klicken, tippen, Dateien öffnen, Befehle ausführen.",
+      "agentNote": "Die meisten Agenten rufen Tools auf. Cyqle-Agenten bewohnen eine Maschine. Ein POST erzeugt einen isolierten Desktop, den dein Agent steuern, übergeben, snapshotten oder wegwerfen kann. Nichts davon berührt deinen Laptop.",
+      "footnote": "Jeder Endpoint unten ist live. Probiere ihn im Browser aus, kopiere den curl."
+    },
+    "capabilities": {
+      "heading": "Was Agenten können",
+      "items": [
+        {
+          "title": "Einen Desktop mit einem Call booten",
+          "description": "Einmal POST, in Sekunden eine frische Linux-Session. Standardmäßig ephemer, persistent, wenn du es sagst."
+        },
+        {
+          "title": "Fenster bewegen wie ein Mensch",
+          "description": "Liste, fokussiere, skaliere und schließe jedes Fenster auf dem Desktop. Dein Agent steckt nicht in einem Tab fest. Ihm gehört der ganze Bildschirm."
+        },
+        {
+          "title": "Code ausführen, wo es zählt",
+          "description": "Injiziere JavaScript in jede Seite, führe Shell-Befehle aus, navigiere zu URLs, manipuliere das DOM. Der Agent schreibt, das OS führt aus."
+        },
+        {
+          "title": "Sehen, was der Agent sieht",
+          "description": "Hole Screenshots des ganzen Bildschirms oder einzelner Bereiche direkt in dein Vision-Modell. Kein externer Capture-Dienst nötig."
+        },
+        {
+          "title": "Dateien über HTTP bewegen",
+          "description": "Lade Inputs hoch und streame Outputs zwischen deinem Backend und der Session. Kein SFTP, kein rsync, keine Tunnel."
+        },
+        {
+          "title": "Einmal snapshotten, tausendfach klonen",
+          "description": "Friere einen konfigurierten Desktop ein und starte vorgewärmte Klone für parallele Agenten-Läufe. Spar dir den Kaltstart."
+        },
+        {
+          "title": "Agenten miteinander verdrahten",
+          "description": "Verknüpfe Sessions, damit Agenten Arbeit übergeben, Dateien teilen oder einander bei der Arbeit zusehen können. Multi-Agent-Pipelines mit echtem gemeinsamem Kontext."
+        },
+        {
+          "title": "Rechne mit deinen Nutzern ab, nicht nur mit uns",
+          "description": "Lies Token-Kosten und Abo-Status direkt aus der API. Integriere die Agenten-Nutzung in dein eigenes Pricing, ohne einen Zähler zu bauen."
+        }
+      ]
+    },
+    "iframe": {
+      "title": "Cyqle API — OpenAPI / Swagger UI",
+      "ariaLabel": "Cyqle API-Dokumentation"
+    },
+    "a11y": {
+      "skipIframe": "Eingebettete API-Dokumentation überspringen",
+      "iframeSectionHeading": "Interaktive API-Referenz",
+      "endOfIframe": "Ende der eingebetteten API-Dokumentation.",
+      "openInNewTab": "API-Dokumentation in einem neuen Tab öffnen",
+      "newTabSuffix": "(öffnet in einem neuen Tab)",
+      "fallback": {
+        "text": "Probleme mit der eingebetteten Dokumentation unten?"
+      }
+    },
+    "meta": {
+      "baseUrl": "Base URL",
+      "auth": "Auth",
+      "authValue": "Bearer-Token",
+      "spec": "Spec",
+      "specValue": "OpenAPI 3.0"
+    },
+    "handoff": {
+      "eyebrow": "Referenz",
+      "title": "Die ganze API, live hier unten.",
+      "subtitle": "Authentifiziere dich, feuere jeden Endpoint ab, sieh der Session bei der Antwort zu. Alles direkt auf dieser Seite."
+    },
+    "backToTop": "Nach oben",
+    "endCta": {
+      "eyebrow": "Bereit zu bauen?",
+      "title": "Gib deinem Agenten einen Computer.",
+      "description": "Hol dir in unter einer Minute einen API-Key. Deine erste Session geht auf uns.",
+      "primary": "Jetzt loslegen",
+      "secondary": "Zurück zu den Funktionen"
+    }
+  },
+  "aboutPage": {
+    "metaTitle": "Über Cyqle: Der Multiplayer-Cloud-Desktop",
+    "metaDescription": "Cyqle ist ein P2P-Cloud-Desktop, auf dem mehrere Personen gleichzeitig an derselben Maschine arbeiten. Jede mit eigenem Cursor und eigener Tastatur. In Sekunden gestartet, Zusammenarbeit in Echtzeit.",
+    "hero": {
+      "title": "Ein Multiplayer-Cloud-Desktop",
+      "subtitle": "Dieselbe Maschine. Mehrere Tastaturen. Alle steuern."
+    },
+    "problem": {
+      "badge": "Das Problem",
+      "title": "Remote-Arbeit heißt immer noch: abwechseln",
+      "intro": "Screen-Sharing bedeutet: einer steuert, viele schauen zu. Das ist keine Zusammenarbeit.",
+      "scenario1": "Du kannst den Code im Screen-Share von jemand anderem nicht anfassen. Du schaust nur zu und diktierst, was zu tippen ist.",
+      "scenario2": "Lokale Umgebungen gehen kaputt, driften auseinander und lassen sich nicht per Link teilen.",
+      "scenario3": "Dein Team hat 10 Laptops, aber keine gemeinsame Maschine, auf der ihr zusammenarbeiten könnt.",
+      "truth": "Betriebssysteme wurden für einen Nutzer gebaut. Wir haben eines für viele gebaut.",
+      "solution": "Das ist Cyqle."
+    },
+    "story": {
+      "badge": "Hintergrund",
+      "title": "Wie wir hierher gekommen sind",
+      "year2017": "Wir haben mit Browser-Automatisierung angefangen. Nützlich, aber sie löste nur einen Teil des Problems.",
+      "pivot": "Der Engpass war das OS selbst — gebaut für einen einzelnen Nutzer.",
+      "year2025": "Screen-Sharing ist ein Hack auf einer Single-Player-Architektur. Genau deshalb ist es so mühsam.",
+      "realization": "Also haben wir den Desktop für P2P neu gebaut. Kein Host, keine Gäste — nur gleichberechtigte Nutzer auf derselben Maschine.",
+      "present": "Cyqle ist ein Cloud-Computer, in dem Zusammenarbeit ein Kern-Primitiv ist."
+    },
+    "solution": {
+      "badge": "Was es ist",
+      "title": "Ein vollwertiger Linux-Desktop, in Echtzeit geteilt",
+      "paragraph1": "Cyqle ist eine echte Linux-Umgebung in der Cloud. Mehrere Personen arbeiten gleichzeitig, jede mit eigenem Cursor und eigener Tastatureingabe.",
+      "paragraph2": "Kein Screen-Sharing. Keine VM, in die du dich allein per SSH einloggst. Ein Multiplayer-Computer, den du in Sekunden startest, gemeinsam nutzt und dann schließt oder persistierst.",
+      "realityCheck": "Schluss mit:",
+      "painPoints": [
+        "„Siehst du meinen Bildschirm?“ — sie sind schon drin",
+        "Bugs im Chat beschreiben — lade sie einfach ein",
+        "„Bei mir funktioniert’s“ — nutzt dieselbe Maschine",
+        "Demo-Umgebungen neu aufsetzen — snapshotten und wiederverwenden",
+        "Skripte für simple Aufgaben schreiben — aufzeichnen und abspielen"
+      ]
+    },
+    "difference": {
+      "badge": "Unter der Haube",
+      "title": "Was wir lösen mussten",
+      "intro": "Cloud-Desktops in Echtzeit erfordern die Lösung harter Probleme:",
+      "challenges": [
+        "P2P-Streaming mit minimaler Latenz (ohne zentralen Relay)",
+        "Multi-Cursor-Eingabe-Injektion auf Systemebene",
+        "Kryptografisch löschbarer ephemerer Speicher",
+        "Boot-Zeiten unter 5 Sekunden",
+        "Browserbasierter Zugriff mit nativer Performance"
+      ],
+      "conclusion": "Komplexe Infrastruktur hinter einem einfachen Erlebnis."
+    },
+    "forWhom": {
+      "badge": "Anwendungsfälle",
+      "title": "Gebaut für Teams, die:",
+      "items": [
+        "gemeinsam debuggen, statt sich abzuwechseln",
+        "Wegwerf-Umgebungen zum Reproduzieren brauchen",
+        "Engineers hands-on onboarden, nicht mit Docs",
+        "Browser-Automatisierung ohne Infrastruktur-Overhead betreiben",
+        "eine sichere Sandbox für KI-Agenten brauchen",
+        "Root-Zugriff wollen, ohne lokale Maschinen zu riskieren"
+      ]
+    },
+    "vision": {
+      "badge": "Was kommt",
+      "title": "Wohin die Reise geht",
+      "intro": "Wir bauen an:",
+      "future": [
+        "Ephemeren Umgebungen, die du hochfährst und wieder wegwirfst",
+        "KI-Agenten, die in deinem Desktop agieren, nicht nur in einer Chat-Box",
+        "Vollem Desktop-Zugriff von jedem Gerät, auch mobil mit nativen Touch-Gesten",
+        "Multiplayer als Standard, nicht als Add-on"
+      ]
+    },
+    "cta": {
+      "title": "Probier es aus",
+      "description": "Kostenloser Tarif. Keine Kreditkarte. Starte eine Session und lade jemanden aus deinem Team ein.",
+      "button": "Cyqle kostenlos testen"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "effectiveDate": "14. Januar 2026",
+    "introduction": "Bei Cyqle verpflichten wir uns, Ihre Privatsphäre zu schützen und transparent darüber zu informieren, wie wir Ihre Daten erheben, verwenden und schützen. Diese Datenschutzerklärung entspricht den Datenschutzvorschriften von 2026, einschließlich DSGVO, CCPA und der EU-KI-Verordnung.",
+    "privacy3Banner": "Privacy 3.0-konform – Volle Transparenz & Nutzerkontrolle",
+    "quickOverview": {
+      "title": "Datenschutz auf einen Blick",
+      "ephemeral": {
+        "title": "Standardmäßig ephemer",
+        "description": "Sitzungsdaten werden beim Schließen sofort gelöscht, sofern Sie keine Persistenz aktivieren"
+      },
+      "aiTransparency": {
+        "title": "KI-Offenlegung",
+        "description": "Wir legen klar offen, wann KI-Systeme eingesetzt werden und wie sie funktionieren"
+      },
+      "p2p": {
+        "title": "P2P-Architektur",
+        "description": "Ihre Daten können über Peer-Knoten mit Standardvertragsklauseln übertragen werden"
+      },
+      "rights": {
+        "title": "Ihre Rechte",
+        "description": "Volle Auskunfts-, Lösch-, Übertragbarkeits- und Widerspruchsrechte nach DSGVO/CCPA"
+      }
+    },
+    "sections": {
+      "dataCollection": {
+        "title": "1. Datenerhebung & Rechtsgrundlage",
+        "badge": "Privacy 3.0-Transparenz",
+        "intro": "Wir unterscheiden zwei primäre Datenkategorien: Kontodaten (erforderlich für Abrechnung und Kontoverwaltung) und Sitzungsdaten (ephemere Daten, die in Ihrer virtuellen Desktop-Umgebung entstehen).",
+        "accountData": {
+          "title": "Kontodaten (persistent)",
+          "description": "Wir erheben und speichern die folgenden Informationen, um Ihr Konto zu verwalten und Abrechnungsdienste bereitzustellen:",
+          "item1": "E-Mail-Adresse (für Authentifizierung und Kommunikation)",
+          "item2": "Zahlungsinformationen (sicher über Stripe verarbeitet – wir speichern keine vollständigen Kreditkartennummern)",
+          "item3": "Kontoeinstellungen und gewählte Abonnementstufen",
+          "item4": "Abrechnungshistorie und Nutzungsprotokolle zu Rechnungszwecken",
+          "legalBasis": "Rechtsgrundlage: Vertragserfüllung – Diese Daten sind erforderlich, um unseren Vertrag mit Ihnen zur Bereitstellung des Cyqle-Dienstes zu erfüllen."
+        },
+        "sessionData": {
+          "title": "Sitzungsdaten (ephemer)",
+          "description": "Daten, die während Ihrer Nutzung virtueller Desktop-Sitzungen entstehen. Diese Kategorie ist aufgrund unserer abgeschotteten Umgebungsarchitektur von Natur aus ephemer:",
+          "item1": "Dateien, Dokumente und Code, die im isolierten Dateisystem Ihrer Sitzung erstellt werden",
+          "item2": "Installierte Softwarepakete und Änderungen an der Systemkonfiguration",
+          "item3": "Prozess-Metadaten (laufende Anwendungen, Ressourcenverbrauch)",
+          "item4": "Von Ihrer Sitzung ausgehende Netzwerkaktivität (ausschließlich zur Sicherheitsüberwachung)",
+          "legalBasis": "Rechtsgrundlage: Vertragserfüllung – Die Verarbeitung von Sitzungsdaten ist unerlässlich, um Ihnen eine isolierte, funktionsfähige virtuelle Desktop-Umgebung bereitzustellen.",
+          "ephemeralNote": "Wichtig: Sitzungsdaten in ephemeren Sitzungen werden mit einzigartigen, sitzungsspezifischen Schlüsseln verschlüsselt und bei Sitzungsende kryptografisch gelöscht. Diese Daten können nach der Löschung nicht wiederhergestellt werden.",
+          "noAccessNote": "Zentrale Datenschutzgarantie: Cyqle hat KEINEN Zugriff auf Inhalte Ihrer abgeschotteten Sitzung und greift nicht in diese ein. Wir können Ihre Dateien nicht lesen, nicht auf Ihre Daten zugreifen und Ihre Aktivitäten innerhalb der Sitzung nicht überwachen. Die einzigen Betriebsdaten, die wir gegebenenfalls erheben, sind anonymisierte Protokolle (Sitzungsdauer, Ressourcennutzung) – und nur, wenn Sie uns dies ausdrücklich erlauben (Fehlerberichte, Support-Anfragen)."
+        },
+        "technicalData": {
+          "title": "Technische & Diagnosedaten",
+          "description": "Wir erheben begrenzte technische Daten, um Stabilität und Sicherheit der Plattform zu gewährleisten:",
+          "item1": "IP-Adressen (nach 24 Stunden gehasht, zur Betrugsprävention)",
+          "item2": "Browsertyp und Betriebssystem (für Kompatibilitätsdiagnosen)",
+          "item3": "Zeitstempel für Sitzungsbeginn und -ende sowie Metriken zur Ressourcennutzung (für die Kapazitätsplanung)",
+          "legalBasis": "Rechtsgrundlage: Berechtigtes Interesse – Wir haben ein berechtigtes Interesse daran, die Plattformsicherheit zu gewährleisten, Betrug zu verhindern und die Serviceleistung zu optimieren."
+        }
+      },
+      "aiTransparency": {
+        "title": "2. KI-Transparenz (Einhaltung der EU-KI-Verordnung)",
+        "badge": "KI-Offenlegung",
+        "intro": "Cyqle enthält KI-gestützte Funktionen zur Steigerung Ihrer Produktivität. Nach der EU-KI-Verordnung von 2026 sind wir verpflichtet, klar offenzulegen, wenn Sie mit KI-Systemen interagieren oder von ihnen betroffen sind.",
+        "disclosure": {
+          "title": "Offenlegung des AI Operators",
+          "description": "Wenn Sie die Automatisierungsfunktionen von Cyqle nutzen (Browser-Aufzeichnung, Aufgabendelegation, Workflow-Planung), interagieren Sie möglicherweise mit unserem „AI Operator“ – einem KI-System, das repetitive Web-Aufgaben in Ihrem Auftrag ausführt."
+        },
+        "howItWorks": {
+          "title": "So funktioniert der AI Operator",
+          "description": "Der AI Operator nutzt folgende Logik, um Sie zu unterstützen:",
+          "item1": "Mustererkennung: Er analysiert aufgezeichnete Browser-Interaktionen, um umsetzbare Muster zu erkennen (Klicks, Formulareingaben, Navigationssequenzen)",
+          "item2": "Aufgabenausführung: Auf Basis Ihrer Anweisungen repliziert er diese Muster, um repetitive Aufgaben zu automatisieren",
+          "item3": "Kontextuelle Anpassung: Er nutzt Computer Vision und DOM-Analyse, um sich an kleinere UI-Änderungen in Webanwendungen anzupassen",
+          "item4": "Feedback-Schleife: Sie können automatisierte Aktionen vor der Ausführung prüfen, genehmigen oder anpassen"
+        },
+        "humanOversight": {
+          "title": "Menschliche Aufsicht & Grenzen",
+          "description": "Der AI Operator arbeitet unter Ihrer direkten Aufsicht. Er trifft keine autonomen Entscheidungen, die Ihr Konto, Ihre Abrechnung oder Ihre Zugriffsrechte betreffen. Alle kritischen Vorgänge erfordern eine ausdrückliche Bestätigung durch den Nutzer. Die KI greift ohne ausdrückliche Opt-in-Einwilligung nicht zu Trainingszwecken auf Ihre Sitzungsdaten zu und verarbeitet diese nicht."
+        }
+      },
+      "automatedDecisions": {
+        "title": "3. Automatisierte Entscheidungsfindung (ADMT)",
+        "badge": "Nutzerkontrolle",
+        "intro": "Cyqle setzt in begrenztem Umfang automatisierte Entscheidungssysteme ein, um Plattformsicherheit und faire Ressourcenverteilung zu gewährleisten. Nach den CCPA-Anforderungen von 2026 haben Sie das Recht, bestimmten automatisierten Verarbeitungen zu widersprechen.",
+        "systems": {
+          "title": "Eingesetzte automatisierte Systeme",
+          "fraud": {
+            "title": "Betrugserkennung:",
+            "description": "Unser System analysiert Muster bei der Kontoerstellung, Zahlungsverhalten und IP-Reputationswerte, um betrügerische Registrierungen zu erkennen und zu verhindern. Falsch-positive Ergebnisse werden innerhalb von 24 Stunden von menschlichen Mitarbeitern überprüft."
+          },
+          "allocation": {
+            "title": "Sitzungszuweisung:",
+            "description": "Ein automatischer Load Balancer weist Ihre Sitzung verfügbaren Infrastrukturknoten zu – basierend auf aktueller Kapazität, geografischer Nähe und der Priorität Ihrer Abonnementstufe."
+          },
+          "abuse": {
+            "title": "Missbrauchserkennung:",
+            "description": "Wir überwachen Muster im Ressourcenverbrauch (CPU, Arbeitsspeicher, Netzwerk), um Verstöße gegen unsere Richtlinie zur zulässigen Nutzung zu erkennen (z. B. Kryptowährungs-Mining, DDoS-Angriffe)."
+          }
+        },
+        "optOut": {
+          "title": "Ihr Recht auf Opt-out & menschliche Überprüfung",
+          "description": "Wenn ein automatisiertes System Ihr Konto markiert oder den Zugriff verweigert, haben Sie das Recht, eine menschliche Überprüfung zu verlangen und die Entscheidung anzufechten. Sie können außerdem bestimmten automatisierten Verarbeitungen widersprechen (mit Ausnahme kritischer Sicherheitsfunktionen).",
+          "contact": "Um dieses Recht auszuüben, kontaktieren Sie privacy@cyqle.in mit Ihrer Konto-E-Mail und der Betreffzeile: „ADMT Opt-Out Request“."
+        }
+      },
+      "internationalTransfers": {
+        "title": "4. Internationale Datenübermittlungen",
+        "badge": "Grenzüberschreitende Schutzmaßnahmen",
+        "intro": "Die Peer-to-Peer-Architektur (P2P) von Cyqle bedeutet, dass Sitzungsdaten während der Echtzeit-Zusammenarbeit über verschiedene geografische Knoten übertragen werden können. Wir ergreifen gezielte Maßnahmen, um die Einhaltung internationaler Datenübermittlungsvorschriften sicherzustellen.",
+        "p2pNature": {
+          "title": "P2P-Mesh-Netzwerk & Datenrouting",
+          "description": "Wenn Sie in Echtzeit mit anderen Nutzern zusammenarbeiten, werden Ihre Sitzungsdaten mittels libp2p direkt zwischen den Peers übertragen. Das bedeutet:",
+          "item1": "Daten können über zwischengeschaltete Relay-Knoten in verschiedenen Ländern geleitet werden",
+          "item2": "Der genaue Übertragungsweg der Daten hängt von der Netzwerktopologie und der Verfügbarkeit der Peers ab",
+          "item3": "Alle P2P-Verbindungen sind mit TLS 1.3 und WebRTC-Verschlüsselung Ende-zu-Ende-verschlüsselt"
+        },
+        "safeguards": {
+          "title": "Schutzmaßnahmen bei grenzüberschreitenden Übermittlungen",
+          "description": "Zum Schutz Ihrer Daten bei internationalen Übermittlungen setzen wir folgende Maßnahmen um:",
+          "item1": "Standardvertragsklauseln (SCCs): Alle Datenübermittlungen in Länder außerhalb des EWR unterliegen den von der EU genehmigten Standardvertragsklauseln (2021/914)",
+          "item2": "Verschlüsselung bei der Übertragung: Alle Daten werden während der Übertragung mit branchenüblichen Verschlüsselungsprotokollen verschlüsselt",
+          "item3": "Datenminimierung: Nur die minimal erforderlichen Sitzungsdaten werden über das P2P-Netzwerk übertragen (Bildschirm-Frames, Eingabeereignisse, Authentifizierungstoken)"
+        },
+        "accountability": {
+          "title": "Ihre Kontrolle über den Datenstandort",
+          "description": "Auch wenn wir den genauen geografischen Weg P2P-gerouteter Daten nicht garantieren können, können Sie steuern, wo Ihre persistenten Sitzungsdaten gespeichert werden, indem Sie in Ihren Kontoeinstellungen Ihre bevorzugte Rechenzentrumsregion wählen (verfügbar für Nutzer der Pro- und Power-Stufen)."
+        }
+      },
+      "retention": {
+        "title": "5. Datenspeicherung & Löschung",
+        "badge": "Ephemere Architektur",
+        "intro": "Eine der zentralen Datenschutzfunktionen von Cyqle ist die ephemere Natur unserer abgeschotteten Umgebungsarchitektur. So handhaben wir Datenspeicherung und Löschung im Detail:",
+        "ephemeral": {
+          "title": "Ephemere Sitzungen (Standardverhalten)",
+          "description": "Standardmäßig sind alle Sitzungen ephemer. Das bedeutet:",
+          "item1": "Sitzungsverschlüsselung: Das beschreibbare Dateisystem Ihrer Sitzung wird mit einem einzigartigen, zufällig generierten AES-256-Schlüssel verschlüsselt, der bei Sitzungsbeginn erstellt wird",
+          "item2": "Sofortige Löschung: Wenn Sie die Sitzung schließen, wird der Verschlüsselungsschlüssel sofort vernichtet, wodurch alle Sitzungsdaten kryptografisch unwiederbringlich werden",
+          "item3": "Keine Aufbewahrung: Nach Sitzungsende werden keine Sitzungsdateien, keine installierte Software und keine nutzergenerierten Inhalte aufbewahrt"
+        },
+        "persistent": {
+          "title": "Persistente Sitzungen (optional, nur kostenpflichtige Stufen)",
+          "description": "Wenn Sie Persistenz aktivieren (verfügbar in den Stufen Lite, Pro und Power), werden Ihre Sitzungsdaten wie folgt aufbewahrt:",
+          "item1": "Speicherdauer: Persistente Daten werden für die in Ihrer Abonnementstufe festgelegte Dauer aufbewahrt (z. B. 30 Tage bei Lite, 90 Tage bei Pro)",
+          "item2": "Verschlüsselte Speicherung: Persistente Daten werden in verschlüsseltem Blockspeicher mit einzigartigen, nutzerspezifischen Verschlüsselungsschlüsseln gespeichert, die über AWS KMS verwaltet werden",
+          "item3": "Manuelle Löschung: Sie können persistente Sitzungen jederzeit über Ihr Dashboard manuell löschen"
+        },
+        "accountData": {
+          "title": "Aufbewahrung von Kontodaten",
+          "description": "Kontodaten (E-Mail, Abrechnungsinformationen, Nutzungsprotokolle) werden aufbewahrt, solange Ihr Konto aktiv ist, sowie weitere 90 Tage nach der Kontoschließung, um gesetzlichen Aufbewahrungspflichten für Finanzunterlagen nachzukommen. Nach Ablauf dieser Frist werden alle personenbezogenen Kennungen dauerhaft gelöscht."
+        },
+        "deletion": {
+          "title": "Ihr Recht auf Löschung",
+          "description": "Sie können jederzeit die Löschung all Ihrer personenbezogenen Daten verlangen, indem Sie privacy@cyqle.in kontaktieren. Wir bearbeiten Ihren Löschantrag innerhalb von 30 Tagen, außer wenn eine Aufbewahrung gesetzlich vorgeschrieben ist (z. B. Steuerunterlagen, Betrugsprävention)."
+        }
+      },
+      "rights": {
+        "title": "6. Ihre Datenschutzrechte",
+        "badge": "Rechte nach DSGVO & CCPA",
+        "intro": "Nach der DSGVO (für Einwohner des EWR) und dem CCPA (für Einwohner Kaliforniens) haben Sie folgende Rechte in Bezug auf Ihre personenbezogenen Daten:",
+        "access": {
+          "title": "Recht auf Auskunft",
+          "description": "Sie können eine Kopie aller personenbezogenen Daten anfordern, die wir über Sie gespeichert haben"
+        },
+        "rectification": {
+          "title": "Recht auf Berichtigung",
+          "description": "Sie können unrichtige personenbezogene Daten aktualisieren oder korrigieren"
+        },
+        "erasure": {
+          "title": "Recht auf Löschung („Recht auf Vergessenwerden“)",
+          "description": "Sie können die Löschung Ihrer personenbezogenen Daten verlangen"
+        },
+        "portability": {
+          "title": "Recht auf Datenübertragbarkeit",
+          "description": "Sie können Ihre Daten in einem maschinenlesbaren Format anfordern"
+        },
+        "objection": {
+          "title": "Widerspruchsrecht",
+          "description": "Sie können bestimmten Verarbeitungsarten widersprechen (z. B. Marketing)"
+        },
+        "restriction": {
+          "title": "Recht auf Einschränkung der Verarbeitung",
+          "description": "Sie können verlangen, dass wir die Nutzung Ihrer Daten einschränken"
+        },
+        "exercise": "Um eines dieser Rechte auszuüben, senden Sie eine E-Mail an privacy@cyqle.in mit Ihrer Konto-E-Mail und geben Sie an, welches Recht Sie ausüben möchten. Wir antworten innerhalb von 30 Tagen."
+      },
+      "security": {
+        "title": "7. Sicherheitsmaßnahmen",
+        "badge": "Technische Schutzmaßnahmen",
+        "intro": "Wir setzen branchenführende Sicherheitsmaßnahmen ein, um Ihre Daten vor unbefugtem Zugriff, Offenlegung oder Zerstörung zu schützen:",
+        "measures": {
+          "title": "Sicherheitskontrollen",
+          "item1": "Verschlüsselung: Alle Daten werden bei der Übertragung (TLS 1.3) und im Ruhezustand (AES-256) verschlüsselt",
+          "item2": "Isolation: Jede Sitzung läuft in einer abgeschotteten Umgebung mit strikter Prozess- und Dateisystem-Isolation (siehe SESSION_ENVIRONMENT.md)",
+          "item3": "Zugriffskontrollen: Rollenbasierte Zugriffskontrollen (RBAC) beschränken den Mitarbeiterzugriff auf Produktionsdaten",
+          "item4": "Sicherheitsaudits: Wir führen jährlich Sicherheitsaudits und Penetrationstests durch unabhängige Dritte durch",
+          "item5": "Incident Response: Wir unterhalten ein rund um die Uhr verfügbares Incident-Response-Team für Sicherheitsvorfälle"
+        },
+        "breach": {
+          "title": "Benachrichtigung bei Datenschutzverletzungen",
+          "description": "Im unwahrscheinlichen Fall einer Datenschutzverletzung, die Ihre personenbezogenen Daten betrifft, benachrichtigen wir Sie innerhalb von 72 Stunden per E-Mail und informieren Sie über die Art der Verletzung, die betroffenen Datenkategorien und die Abhilfemaßnahmen."
+        }
+      },
+      "cookies": {
+        "title": "8. Cookies & Tracking-Technologien",
+        "badge": "Tracking-Offenlegung",
+        "intro": "Cyqle verwendet nur minimale Cookies und Tracking-Technologien. Wir setzen keine Werbe-Tracker von Drittanbietern ein und verkaufen Ihre Daten nicht an Datenhändler.",
+        "essential": {
+          "title": "Essenzielle Cookies (erforderlich)",
+          "description": "Sitzungs-Authentifizierungstoken (httpOnly, secure, sameSite=strict) – läuft nach 30 Tagen oder bei Abmeldung ab"
+        },
+        "analytics": {
+          "title": "Analyse-Cookies (optional)",
+          "description": "Wir verwenden datenschutzfreundliche Analysen (Plausible Analytics), die keine einzelnen Nutzer verfolgen und keine Cookies verwenden. Sie können über den Do-Not-Track-Header (DNT) Ihres Browsers widersprechen."
+        }
+      },
+      "changes": {
+        "title": "9. Änderungen dieser Datenschutzerklärung",
+        "description": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, um Änderungen unserer Praktiken oder rechtlicher Anforderungen abzubilden. Über wesentliche Änderungen informieren wir Sie mindestens 30 Tage vor deren Inkrafttreten per E-Mail. Ihre fortgesetzte Nutzung von Cyqle nach Inkrafttreten der aktualisierten Erklärung gilt als Zustimmung zu den Änderungen."
+      }
+    },
+    "contact": {
+      "title": "Fragen oder Anliegen zum Datenschutz?",
+      "description": "Wenn Sie Fragen zu dieser Datenschutzerklärung haben oder Ihre Datenschutzrechte ausüben möchten, kontaktieren Sie bitte unseren Datenschutzbeauftragten:",
+      "email": "privacy@cyqle.in"
+    }
+  },
+  "cookiesPolicy": {
+    "title": "Cookie-Richtlinie",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "effectiveDate": "14. Januar 2026",
+    "introduction": "Diese Cookie-Richtlinie erläutert, wie Cyqle Cookies und ähnliche Tracking-Technologien verwendet. Wir verpflichten uns zu Transparenz und geben Ihnen die volle Kontrolle über Ihre Datenschutzeinstellungen.",
+    "complianceBanner": "2026-konform – GPC-Signal-Unterstützung & gleichwertige Wahlmöglichkeiten",
+    "quickOverview": {
+      "title": "Cookies auf einen Blick",
+      "minimal": {
+        "title": "Minimales Tracking",
+        "description": "Wir verwenden nur essenzielle Cookies und datenschutzfreundliche Analysen"
+      },
+      "gpc": {
+        "title": "GPC-Signal-Unterstützung",
+        "description": "Wir respektieren automatisch Global-Privacy-Control-Signale Ihres Browsers"
+      },
+      "choice": {
+        "title": "Gleichwertige Wahl",
+        "description": "Die Schaltflächen zum Akzeptieren und Ablehnen sind visuell gleichrangig gestaltet"
+      },
+      "control": {
+        "title": "Volle Kontrolle",
+        "description": "Ändern Sie Ihre Präferenzen jederzeit über Ihren Browser oder unsere Einstellungen"
+      }
+    },
+    "sections": {
+      "whatAreCookies": {
+        "title": "1. Was sind Cookies?",
+        "badge": "Definition",
+        "intro": "Cookies sind kleine Textdateien, die Websites beim Besuch auf Ihrem Gerät speichern. Sie helfen Websites, Ihre Einstellungen zu merken, die Funktionalität zu verbessern und Analysen bereitzustellen.",
+        "description": "Cookies können „Sitzungs-Cookies“ sein (werden beim Schließen des Browsers gelöscht) oder „persistente Cookies“ (werden für einen festgelegten Zeitraum gespeichert). Sie können „Erstanbieter-Cookies“ sein (von der besuchten Website gesetzt) oder „Drittanbieter-Cookies“ (von externen Diensten gesetzt)."
+      },
+      "cookiesWeUse": {
+        "title": "2. Von uns verwendete Cookies",
+        "badge": "Vollständige Liste",
+        "intro": "Cyqle verwendet nur eine minimale Anzahl von Cookies. Auf dieser Marketing-Website (cyqle.in) verwenden wir essenzielle Cookies und optionale Analysen. Innerhalb der Plattform-Anwendung selbst verwenden wir AUSSCHLIESSLICH essenzielle Sitzungs-Cookies. Wir verwenden KEINE Werbe-Cookies und verkaufen Ihre Daten NICHT an Dritte.",
+        "duration": "Dauer",
+        "type": "Typ",
+        "essential": {
+          "title": "Essenzielle Cookies (erforderlich)",
+          "intro": "Diese Cookies sind für den Betrieb der Website zwingend erforderlich und können nicht deaktiviert werden, ohne Kernfunktionen zu beeinträchtigen:",
+          "session": {
+            "name": "cyqle_session",
+            "purpose": "Hält Ihre authentifizierte Sitzung aufrecht und merkt sich, dass Sie angemeldet sind",
+            "duration": "30 Tage oder bis zur Abmeldung",
+            "type": "Erstanbieter, httpOnly, secure"
+          },
+          "note": "Rechtsgrundlage: Diese Cookies sind nach der ePrivacy-Richtlinie von der Einwilligungspflicht ausgenommen, da sie für die Bereitstellung des Dienstes zwingend erforderlich sind."
+        },
+        "analytics": {
+          "title": "Analyse-Cookies (optional – nur Marketing-Website)",
+          "intro": "Mit Ihrer Einwilligung verwenden wir auf dieser Marketing-Website datenschutzfreundliche Analysen, um das Besucherverhalten zu verstehen und unsere Inhalte zu verbessern. Innerhalb der Cyqle-Plattform-Anwendung selbst werden KEINE Analysen eingesetzt:",
+          "plausible": {
+            "name": "Plausible Analytics (nur cyqle.in)",
+            "purpose": "Erfasst aggregierte Nutzungsstatistiken auf unserer Marketing-Website, ohne einzelne Nutzer zu identifizieren. Verwendet keine Cookies und verfolgt Nutzer nicht über Websites hinweg. Wird NICHT in der Plattform-Anwendung eingesetzt.",
+            "duration": "Keine Cookies gespeichert (verwendet Local Storage mit 24-Stunden-Ablauf)",
+            "type": "Erstanbieter, datenschutzorientiert"
+          },
+          "note": "Wichtig: Analysen sind nur auf cyqle.in (dieser Marketing-Website) aktiv. Wenn Sie die Cyqle-Plattform-Anwendung nutzen, kommen KEINE Analyse-Cookies und KEIN Tracking zum Einsatz. Sie können den Analysen der Marketing-Website jederzeit widersprechen."
+        },
+        "noTracking": {
+          "title": "Was wir NICHT verwenden",
+          "item1": "Keine Werbe-Cookies von Drittanbietern (Google Ads, Facebook Pixel usw.)",
+          "item2": "Kein Cross-Site-Tracking und keine Retargeting-Cookies",
+          "item3": "Keine Fingerprinting-Techniken zur Identifizierung von Nutzern",
+          "item4": "Kein Verkauf und keine Weitergabe von Daten an Datenhändler"
+        }
+      },
+      "gpcSupport": {
+        "title": "3. Unterstützung von Global Privacy Control (GPC)",
+        "badge": "Anforderung 2026",
+        "intro": "Cyqle unterstützt das Global-Privacy-Control-Signal (GPC) vollständig, wie es die Datenschutzvorschriften von 2026 verlangen.",
+        "whatIsGpc": {
+          "title": "Was ist GPC?",
+          "description": "Global Privacy Control (GPC) ist eine Browser-Einstellung, mit der Sie der Datenweitergabe und dem Datenverkauf auf allen von Ihnen besuchten Websites automatisch widersprechen können. Ist sie aktiviert, sendet Ihr Browser das Signal „GPC: 1“ in den HTTP-Headern."
+        },
+        "howItWorks": {
+          "title": "So respektiert Cyqle GPC-Signale",
+          "item1": "Erkennen wir ein GPC-Signal, behandeln wir es automatisch so, als hätten Sie in unserem Cookie-Banner auf „Alle ablehnen“ geklickt",
+          "item2": "Wir deaktivieren alle optionalen Cookies und das Analyse-Tracking",
+          "item3": "Ihre GPC-Präferenz wird bei jedem Seitenaufruf respektiert, ohne dass weitere Klicks nötig sind"
+        },
+        "enable": {
+          "title": "So aktivieren Sie GPC",
+          "description": "Sie können GPC in den folgenden Browsern aktivieren:",
+          "browser1": "Brave Browser: Einstellungen → Shields → Global Privacy Control",
+          "browser2": "Firefox: Installieren Sie die Global-Privacy-Control-Erweiterung",
+          "browser3": "Chrome/Edge: Installieren Sie die Global-Privacy-Control-Erweiterung"
+        }
+      },
+      "cookieBanner": {
+        "title": "4. Gestaltung des Cookie-Banners (Symmetrie der Wahl)",
+        "badge": "Gleichwertige Darstellung",
+        "intro": "Nach den Vorschriften von 2026 müssen Cookie-Einwilligungsbanner dem Akzeptieren und dem Ablehnen von Cookies gleichwertige Prominenz einräumen. Unser Banner erfüllt diese Anforderungen.",
+        "symmetry": {
+          "title": "Anforderung der Symmetrie der Wahl",
+          "description": "Wir bieten die Schaltflächen „Alle akzeptieren“ und „Alle ablehnen“ mit gleichwertiger visueller Prominenz an (gleiche Größe, Farbintensität und Positionierung). Keine Option ist vorausgewählt oder darauf ausgelegt, Ihre Wahl zu manipulieren.",
+          "exampleTitle": "Beispiel für ein Cookie-Banner:",
+          "exampleText": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Sie können optionale Cookies akzeptieren oder ablehnen.",
+          "acceptButton": "✓ Alle akzeptieren",
+          "rejectButton": "✗ Alle ablehnen",
+          "customizeButton": "Einstellungen anpassen"
+        },
+        "requirements": {
+          "title": "Erfüllte Design-Anforderungen",
+          "item1": "Gleiche Schaltflächengröße und visuelle Gewichtung für die Optionen Akzeptieren und Ablehnen",
+          "item2": "Keine Dark Patterns (z. B. Verstecken der Ablehnen-Schaltfläche, schuldinduzierende Sprache)",
+          "item3": "Klare Erläuterung, was jede Option bedeutet",
+          "item4": "Einfacher Zugang zur Anpassung granularer Präferenzen"
+        }
+      },
+      "managing": {
+        "title": "5. Verwaltung Ihrer Cookie-Einstellungen",
+        "badge": "Ihre Kontrolle",
+        "intro": "Sie haben die volle Kontrolle über Ihre Cookie-Einstellungen und können diese jederzeit ändern.",
+        "changeMind": {
+          "title": "Ändern Sie Ihre Meinung jederzeit",
+          "description": "Sie können Ihre Cookie-Einstellungen jederzeit über den Link „Cookie-Einstellungen“ in der Fußzeile unserer Website aktualisieren. Ihre neuen Einstellungen werden sofort wirksam."
+        },
+        "browserSettings": {
+          "title": "Cookie-Kontrollen auf Browser-Ebene",
+          "description": "Die meisten Browser ermöglichen die Verwaltung von Cookies über ihre Einstellungen:",
+          "chrome": "Einstellungen → Datenschutz und Sicherheit → Cookies und andere Websitedaten",
+          "firefox": "Einstellungen → Datenschutz & Sicherheit → Cookies und Website-Daten",
+          "safari": "Einstellungen → Datenschutz → Websitedaten verwalten",
+          "edge": "Einstellungen → Cookies und Websiteberechtigungen → Cookies verwalten und löschen",
+          "warning": "Achtung: Das Blockieren aller Cookies kann dazu führen, dass essenzielle Website-Funktionen nicht mehr ordnungsgemäß funktionieren."
+        },
+        "deleteCookies": {
+          "title": "Löschen vorhandener Cookies",
+          "description": "Sie können alle von Cyqle gespeicherten Cookies jederzeit über die Einstellungen Ihres Browsers löschen. Dadurch werden Sie abgemeldet und Ihre Einstellungen zurückgesetzt."
+        }
+      },
+      "thirdParty": {
+        "title": "6. Dienste von Drittanbietern",
+        "badge": "Transparenz",
+        "intro": "Wir nutzen auf unserer Marketing-Website nur eine minimale Anzahl vertrauenswürdiger Drittanbieterdienste. Die Plattform-Anwendung selbst verwendet keinerlei Analyse- oder Tracking-Dienste von Drittanbietern.",
+        "plausible": {
+          "title": "Plausible Analytics (nur Marketing-Website)",
+          "description": "Wir verwenden Plausible Analytics ausschließlich auf cyqle.in (dieser Marketing-Website) für datenschutzfreundliche Analysen. Plausible verwendet keine Cookies, verfolgt Nutzer nicht über Websites hinweg und ist vollständig DSGVO-konform. Dieser Dienst wird NICHT innerhalb der Plattform-Anwendung eingesetzt.",
+          "link": "Datenschutzerklärung von Plausible ansehen →"
+        }
+      },
+      "changes": {
+        "title": "7. Änderungen dieser Cookie-Richtlinie",
+        "description": "Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren, um Änderungen unserer Praktiken oder rechtlicher Anforderungen abzubilden. Über wesentliche Änderungen informieren wir Sie mindestens 30 Tage vor deren Inkrafttreten per E-Mail oder durch einen deutlichen Hinweis auf unserer Website."
+      }
+    },
+    "contact": {
+      "title": "Fragen zu Cookies?",
+      "description": "Wenn Sie Fragen zu unserer Verwendung von Cookies haben oder Ihre Datenschutzrechte ausüben möchten, kontaktieren Sie uns bitte:",
+      "email": "privacy@cyqle.in"
+    }
+  },
+  "termsOfService": {
+    "title": "Nutzungsbedingungen",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "effectiveDate": "14. Januar 2026",
+    "introduction": "Willkommen bei Cyqle. Diese Nutzungsbedingungen regeln Ihren Zugang zu unserer Cloud-Desktop-Plattform und deren Nutzung. Durch die Nutzung von Cyqle erklären Sie sich mit diesen Bedingungen einverstanden.",
+    "quickSummary": {
+      "title": "Kurzübersicht",
+      "license": {
+        "title": "Lizenzgewährung",
+        "description": "Nicht-exklusiver, widerruflicher Zugang zu isolierten virtuellen Umgebungen"
+      },
+      "slots": {
+        "title": "Slot-Modell",
+        "description": "Ein Slot entspricht einer aktiven Sitzung mit definierten Ressourcenlimits"
+      },
+      "liability": {
+        "title": "Beschränkte Haftung",
+        "description": "Unsere Haftung ist auf die in den letzten 12 Monaten gezahlten Beträge begrenzt"
+      },
+      "conduct": {
+        "title": "Zulässige Nutzung",
+        "description": "Keine illegalen Aktivitäten, kein Krypto-Mining, keine Umgehung von Sicherheitsmaßnahmen"
+      }
+    },
+    "sections": {
+      "license": {
+        "title": "1. Lizenz & Nutzungsumfang",
+        "badge": "Kommerzielle Bedingungen",
+        "intro": "Ihr Zugang zu Cyqle unterliegt den folgenden Lizenzbedingungen, die festlegen, wie Sie unsere Plattform nutzen dürfen.",
+        "grant": {
+          "title": "Lizenzgewährung",
+          "description": "Cyqle gewährt Ihnen eine beschränkte, nicht-exklusive, nicht übertragbare und widerrufliche Lizenz für den Zugang zu und die Nutzung von unseren Cloud-Desktop-Umgebungen („abgeschottete Umgebungen“) gemäß diesen Bedingungen. Diese Lizenz berechtigt Sie:",
+          "point1": "auf isolierte virtuelle Desktop-Sitzungen über unsere Plattform zuzugreifen",
+          "point2": "Software innerhalb der Ressourcenlimits Ihrer Abonnementstufe zu installieren und auszuführen",
+          "point3": "Daten innerhalb der zugewiesenen Persistenzlimits Ihres Tarifs zu speichern",
+          "point4": "unsere API zur programmatischen Verwaltung von Sitzungen zu nutzen (nur kostenpflichtige Stufen)"
+        },
+        "fairUse": {
+          "title": "Fair-Use-Richtlinie",
+          "description": "Um Plattformstabilität und eine faire Ressourcenverteilung für alle Nutzer zu gewährleisten, sind die folgenden Aktivitäten in Ihrer virtuellen Desktop-Umgebung strikt untersagt:",
+          "prohibited1": "Kryptowährungs-Mining oder Proof-of-Work-Rechenaufgaben",
+          "prohibited2": "Distributed-Denial-of-Service-Angriffe (DDoS) oder die Teilnahme an Botnetzen",
+          "prohibited3": "Übermäßiger Ressourcenverbrauch, der andere Nutzer beeinträchtigt (z. B. Fork-Bombs, Angriffe zur Speichererschöpfung)",
+          "prohibited4": "Betrieb von Diensten, die unaufgeforderte eingehende Verbindungen aus dem öffentlichen Internet annehmen, zu anderen Zwecken als legitimer Entwicklung, Tests oder autorisiertem Betrieb"
+        }
+      },
+      "subscription": {
+        "title": "2. Abonnement & Slot-Modell",
+        "badge": "Abrechnungsbedingungen",
+        "intro": "Cyqle arbeitet mit einem Credit-basierten Slot-Modell, bei dem jede aktive Sitzung einen Slot belegt. Zu verstehen, wie Slots funktionieren, ist wesentlich für die Verwaltung Ihres Kontos.",
+        "slotModel": {
+          "title": "So funktionieren Slots",
+          "description": "Unsere Plattformarchitektur basiert auf einem „Slot“-System:",
+          "point1": "Ein Slot = eine aktive Desktop-Sitzung, die zu einem gegebenen Zeitpunkt läuft",
+          "point2": "Jede Abonnementstufe umfasst eine bestimmte Anzahl gleichzeitiger Slots",
+          "point3": "Wenn Sie eine Sitzung schließen, wird der Slot für eine neue Sitzung frei"
+        },
+        "tiers": {
+          "title": "Abonnementstufen",
+          "free": {
+            "name": "Kostenlose Stufe:",
+            "description": "Bietet eingeschränkten Zugang mit 60-Minuten-Sitzungslimit, 1 vCPU, 1 GB RAM, ohne Persistenz, mit Warteschlangenzugang niedriger Priorität und Zugriff auf öffentliche Snapshots. Die Erstellung von Snapshots ist in dieser Stufe nicht verfügbar. Ausschließlich für Evaluierungszwecke gedacht."
+          },
+          "paid": {
+            "name": "Kostenpflichtige Stufen (Lite, Pro, Power-Stufen):",
+            "description": "Bieten verlängerte oder unbegrenzte Sitzungsdauern, erhöhte Rechenressourcen, persistenten Speicher mit Aufbewahrungsfristen, Warteschlangenzugang mit hoher Priorität, API-Zugriff, Zugriff auf öffentliche Snapshots sowie Snapshot-Erstellung (Limits variieren je nach Stufe). Credits werden basierend auf der aktiven Nutzungszeit verbraucht."
+          }
+        },
+        "billing": {
+          "title": "Abrechnungsmodelle",
+          "description": "Wir bieten zwei Abrechnungsoptionen für kostenpflichtige Abonnements an. Monatliches Abonnement: Sie zahlen einen festen Monatspreis mit enthaltenem Credit-Kontingent, das sich in jedem Abrechnungszeitraum erneuert. Nutzungsbasiert (Pay-as-you-go): Sie zahlen nur für die tatsächliche Nutzungszeit ohne wiederkehrende Gebühren – kaufen Sie Credits nach Bedarf; die Credits werden pro Minute Sitzungslaufzeit abgezogen. In beiden Modellen entspricht 1 Credit 10 Stunden (600 Minuten) Nutzung zum Stufentarif. Sie können Ihr Abonnement jederzeit über Ihr Konto-Dashboard upgraden, downgraden oder kündigen."
+        }
+      },
+      "acceptableUse": {
+        "title": "3. Richtlinie zur zulässigen Nutzung",
+        "badge": "Kritische Anforderungen",
+        "intro": "Sie verpflichten sich, Cyqle nur für rechtmäßige Zwecke und im Einklang mit diesen Bedingungen zu nutzen. Die folgenden Aktivitäten sind strikt untersagt:",
+        "prohibited": {
+          "title": "Untersagte Aktivitäten",
+          "item1": "Illegale Aktivitäten: Die Nutzung von Cyqle zur Ausübung, Förderung oder Erleichterung illegaler Aktivitäten nach anwendbarem lokalem, bundesstaatlichem, nationalem oder internationalem Recht",
+          "item2": "Umgehung von Sicherheitsmaßnahmen: Versuche, von Cyqle implementierte Sicherheitsmaßnahmen, Zugriffskontrollen oder Nutzungslimits zu umgehen, auszuhebeln oder zu deaktivieren",
+          "item3": "Unbefugter Zugriff: Versuche, sich unbefugten Zugriff auf Sitzungen oder Daten anderer Nutzer oder auf die zugrunde liegende Infrastruktur von Cyqle zu verschaffen",
+          "item4": "Schadsoftware: Hochladen, Verbreiten oder Ausführen von Malware, Viren, Ransomware oder jeglichem Code, der anderen schaden soll",
+          "item5": "Belästigung & Missbrauch: Nutzung der Plattform, um andere zu belästigen, zu bedrohen, zu verleumden oder zu missbrauchen",
+          "item6": "Scraping & Automatisierungsmissbrauch: Nutzung von Cyqle zum Scraping von Websites oder Diensten Dritter unter Verstoß gegen deren Nutzungsbedingungen oder ohne Genehmigung",
+          "item7": "Weiterverkauf von Diensten: Weiterverkauf, Unterlizenzierung oder anderweitige Kommerzialisierung des Zugangs zu Cyqle ohne unsere vorherige schriftliche Zustimmung",
+          "item8": "Ressourcenmissbrauch: Absichtliche Überlastung unserer Infrastruktur oder Versuche, die Dienstqualität für andere Nutzer zu beeinträchtigen"
+        },
+        "enforcement": {
+          "title": "Durchsetzung",
+          "description": "Wir behalten uns das Recht vor, mutmaßliche Verstöße gegen diese Richtlinie zur zulässigen Nutzung zu untersuchen. Bei Feststellung untersagter Aktivitäten können wir Ihr Konto ohne Vorankündigung und ohne Erstattung sofort sperren oder kündigen. Schwerwiegende Verstöße können den Strafverfolgungsbehörden gemeldet werden."
+        }
+      },
+      "liability": {
+        "title": "4. Haftungsbeschränkung",
+        "badge": "Rechtlicher Schutz",
+        "disclaimer": {
+          "title": "Gewährleistungsausschluss",
+          "warning": "Wichtiger Hinweis",
+          "description": "CYQLE WIRD „WIE BESEHEN“ UND „WIE VERFÜGBAR“ OHNE JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GEWÄHRLEISTUNG BEREITGESTELLT, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF STILLSCHWEIGENDE GEWÄHRLEISTUNGEN DER MARKTGÄNGIGKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND DER NICHTVERLETZUNG VON RECHTEN DRITTER. Cyqle gewährleistet nicht, dass der Dienst ununterbrochen, fehlerfrei oder sicher ist oder dass Mängel behoben werden. Sie erkennen an, dass Sie Cyqle auf eigenes Risiko nutzen."
+        },
+        "limitationAmount": {
+          "title": "Höhe der Haftungsbeschränkung",
+          "description": "SOWEIT NACH ANWENDBAREM RECHT MAXIMAL ZULÄSSIG, HAFTEN CYQLE, SEINE ORGANE, DIREKTOREN, MITARBEITER, VERTRETER ODER VERBUNDENEN UNTERNEHMEN IHNEN GEGENÜBER IN KEINEM FALL FÜR INDIREKTE, BEILÄUFIG ENTSTANDENE, BESONDERE, FOLGE- ODER STRAFSCHÄDEN, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF ENTGANGENE GEWINNE, VERLUSTE VON DATEN, NUTZUNG ODER GOODWILL ODER ANDERE IMMATERIELLE VERLUSTE, DIE AUS IHRER NUTZUNG VON CYQLE ENTSTEHEN ODER DAMIT ZUSAMMENHÄNGEN. Unsere Gesamthaftung für sämtliche Ansprüche aus oder im Zusammenhang mit diesen Bedingungen oder Ihrer Nutzung von Cyqle übersteigt nicht den Gesamtbetrag, den Sie in den zwölf (12) Monaten unmittelbar vor dem haftungsauslösenden Ereignis an Cyqle gezahlt haben. Für Nutzer der kostenlosen Stufe ist unsere Haftung auf 100 USD begrenzt."
+        },
+        "thirdParty": {
+          "title": "Code Dritter & Nutzerinhalte",
+          "description": "Sie sind allein verantwortlich für sämtlichen Code, Software, Skripte oder Inhalte, die Sie in Ihrer Cyqle-Umgebung ausführen, hochladen oder starten. Cyqle haftet nicht für Schäden, Verluste oder rechtliche Konsequenzen, die aus Code Dritter entstehen, einschließlich Open-Source-Bibliotheken, nutzergenerierter Skripte oder jeglicher Software, die Sie installieren. Sie stellen Cyqle von allen Ansprüchen frei, die aus Ihrer Nutzung von Software oder Inhalten Dritter innerhalb unserer Plattform entstehen."
+        }
+      },
+      "intellectualProperty": {
+        "title": "5. Rechte an geistigem Eigentum",
+        "badge": "Eigentum",
+        "intro": "Das Eigentum an geistigem Eigentum ist klar zwischen der Plattformtechnologie von Cyqle und Ihren nutzergenerierten Inhalten aufgeteilt.",
+        "cyqleOwnership": {
+          "title": "Eigentum von Cyqle",
+          "description": "Cyqle behält alle Rechte, Titel und Ansprüche an Folgendem:",
+          "item1": "der Cyqle-Plattform, einschließlich aller Software, APIs, Schnittstellen und Dokumentation",
+          "item2": "unserer proprietären libp2p-Implementierung und Peer-to-Peer-Orchestrierungstechnologie",
+          "item3": "allen Marken, Logos und Branding-Materialien im Zusammenhang mit Cyqle",
+          "item4": "allen von Cyqle vorgenommenen Verbesserungen, Erweiterungen oder Ableitungen der Plattform"
+        },
+        "userOwnership": {
+          "title": "Ihr Eigentum",
+          "description": "Sie behalten alle Rechte an geistigem Eigentum an den Inhalten, Daten, Code, Dateien und allen anderen Materialien, die Sie in Ihren Cyqle-Sitzungen erstellen, hochladen oder generieren. Cyqle beansprucht keinerlei Eigentumsrechte an Ihren nutzergenerierten Inhalten. Sie gewähren Cyqle eine beschränkte, nicht-exklusive Lizenz, Ihre Inhalte zu hosten, zu speichern und zu übertragen, soweit dies zur Bereitstellung des Dienstes für Sie erforderlich ist."
+        },
+        "dataRetention": {
+          "title": "Datenspeicherung & Löschung",
+          "description": "Standardmäßig sind alle Sitzungen ephemer – Daten werden bei Sitzungsende dauerhaft gelöscht und können nicht wiederhergestellt werden. Kostenpflichtige Stufen (Lite, Pro, Power) beinhalten die Option, Persistenz zu aktivieren. Wenn Sie eine Sitzung persistieren, werden Ihre Daten gemäß der Aufbewahrungsfrist und den Speicherlimits Ihrer Abonnementstufe in sicherem Speicher aufbewahrt. Sitzungen der kostenlosen Stufe sind stets ephemer und ohne Persistenzoption. Nach Ablauf der Aufbewahrungsfrist oder bei Kontokündigung werden alle persistenten Daten dauerhaft gelöscht. Cyqle haftet nicht für Datenverluste durch Löschung gemäß diesen Richtlinien."
+        }
+      },
+      "termination": {
+        "title": "6. Kündigung",
+        "badge": "Kontoschließung",
+        "intro": "Beide Parteien können diese Vereinbarung unter den folgenden Bedingungen beenden:",
+        "byUser": {
+          "title": "Kündigung durch Sie",
+          "description": "Sie können Ihr Konto jederzeit kündigen, indem Sie in Ihren Kontoeinstellungen die Option zur Kontoschließung wählen. Mit der Kündigung endet Ihr Zugang zu Cyqle sofort. Nicht genutzte Credits oder vorausbezahlte Abonnementgebühren werden nicht erstattet, außer soweit gesetzlich vorgeschrieben."
+        },
+        "byCyqle": {
+          "title": "Kündigung durch Cyqle",
+          "description": "Wir behalten uns das Recht vor, Ihr Konto sofort und ohne Vorankündigung zu sperren oder zu kündigen, wenn Sie gegen diese Bedingungen verstoßen, untersagte Aktivitäten gemäß unserer Richtlinie zur zulässigen Nutzung ausüben, fällige Gebühren nicht zahlen oder wenn wir feststellen, dass Ihre Nutzung des Dienstes ein Sicherheitsrisiko für unsere Plattform oder andere Nutzer darstellt. Wir können den Dienst außerdem mit einer Frist von 30 Tagen ganz einstellen oder beenden."
+        },
+        "effect": {
+          "title": "Folgen der Kündigung",
+          "description": "Mit der Kündigung Ihres Kontos werden alle in Ihren Sitzungen gespeicherten Daten gemäß unserer Datenspeicherungsrichtlinie gelöscht. Abschnitte dieser Bedingungen, die ihrer Natur nach die Kündigung überdauern sollten (einschließlich geistiges Eigentum, Haftungsbeschränkung und Freistellung), bleiben auch nach der Kündigung wirksam."
+        }
+      },
+      "changes": {
+        "title": "7. Änderungen dieser Bedingungen",
+        "description": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Über wesentliche Änderungen informieren wir Sie durch einen Hinweis auf unserer Website oder per E-Mail. Ihre fortgesetzte Nutzung von Cyqle nach solchen Änderungen gilt als Zustimmung zu den aktualisierten Bedingungen. Wenn Sie den geänderten Bedingungen nicht zustimmen, müssen Sie die Nutzung von Cyqle einstellen und können Ihr Konto kündigen."
+      }
+    },
+    "contact": {
+      "title": "Fragen oder Anliegen?",
+      "description": "Wenn Sie Fragen zu diesen Nutzungsbedingungen haben, kontaktieren Sie uns bitte:",
+      "email": "legal@cyqle.in"
+    }
+  }
+}

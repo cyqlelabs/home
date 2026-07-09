@@ -1,0 +1,973 @@
+{
+  "metadata": {
+    "title": "O Desktop na Nuvem P2P para Colaboração Instantânea",
+    "description": "Um computador na nuvem persistente para colaboração instantânea em equipe. Desenvolva, teste e automatize juntos com fluxos de trabalho com IA. Experimente grátis."
+  },
+  "navbar": {
+    "features": "Funcionalidades",
+    "useCases": "Casos de Uso",
+    "pricing": "Preços",
+    "api": "API",
+    "about": "Sobre",
+    "tryForFree": "Experimente Grátis",
+    "changeLanguage": "Alterar idioma"
+  },
+  "hero": {
+    "title": "Um Desktop na Nuvem que Você Pode Compartilhar de Verdade",
+    "titlePhrase1": "Seu Desktop na Nuvem",
+    "titlePhrase2": "Seu Espaço de Trabalho Compartilhado",
+    "titlePhrase3": "O Computador da Sua Equipe",
+    "description": "Crie um desktop na nuvem completo em segundos. Convide sua equipe. Todos no controle.",
+    "getStarted": "Começar",
+    "trialInfo": "Plano gratuito disponível. Não precisa de cartão de crédito.",
+    "powerOnLabel": "Ligar — É Grátis",
+    "moreInfo": "Mais Informações"
+  },
+  "features": {
+    "title": "Um Desktop Completo, Reinventado",
+    "multiplayerDesktop": {
+      "title": "Desktop Multiplayer de Verdade",
+      "description": "**Vários cursores, vários teclados**, controle em tempo real. Cada membro da equipe comanda o desktop simultaneamente via **streaming P2P**. **Videochamadas integradas**, **envio instantâneo de arquivos** e sessões compartilhadas — chega de 'está vendo minha tela?'"
+    },
+    "ephemeralEnvironments": {
+      "title": "Ambientes Efêmeros Instantâneos",
+      "description": "Crie desktops configurados em segundos. **Efêmeros** por padrão, persista quando precisar ou clone a partir de **snapshots**. **Fixe** sua configuração favorita para mantê-la **pré-aquecida** e acessá-la sem espera, ou **pause** uma sessão para congelá-la e retomar exatamente de onde parou."
+    },
+    "unrestrictedAccess": {
+      "title": "Acesso e Controle Sem Restrições",
+      "description": "**Acesso root completo** para instalar o que quiser. **API programática** para automação. A máquina é sua — configure, crie scripts e controle como precisar."
+    },
+    "workflowAutomation": {
+      "title": "Automação de Fluxos com IA",
+      "description": "Grave fluxos de trabalho no navegador uma vez e reproduza para sempre. Delegue tarefas web repetitivas a **agentes de IA** e foque no que importa."
+    },
+    "zeroKnowledgeSecurity": {
+      "title": "Segurança Zero-Knowledge",
+      "description": "Seu sistema de arquivos é **criptografado** com chaves de sessão únicas. Ao fechar uma sessão efêmera, os dados são **apagados criptograficamente** — não conseguiríamos recuperá-los nem se quiséssemos."
+    },
+    "mobileAccess": {
+      "title": "Experiência Mobile Nativa",
+      "description": "Acesso completo ao desktop pelo celular ou tablet com **gestos de toque nativos** — **pince para redimensionar janelas, arraste para movê-las, deslize para navegar**. Corrija bugs no trem, revise código durante reuniões, confira logs durante incidentes. Seu desktop poderoso se adapta aos seus dedos."
+    }
+  },
+  "useCases": {
+    "title": "Seu Espaço de Trabalho para Cada Fluxo",
+    "engineering": {
+      "title": "Construa e Depure Juntos",
+      "description": "Programe em par em um ambiente na nuvem persistente. Reproduza bugs em um sandbox compartilhado e traga os devs para a sua sessão para depurar na hora."
+    },
+    "aiAgents": {
+      "title": "Espaço para Agentes de IA",
+      "description": "Deixe seus agentes comandarem um desktop Linux de verdade. Crie um snapshot, clone para execuções paralelas — e um humano pode entrar na mesma sessão sempre que o agente precisar de ajuda."
+    },
+    "customerSupport": {
+      "title": "Suporte Colaborativo",
+      "description": "Não diga apenas o que o cliente deve fazer — mostre. Abra uma sessão compartilhada para automatizar fluxos de onboarding web complexos ou guiar usuários em tempo real."
+    },
+    "operations": {
+      "title": "Operações Seguras",
+      "description": "Acesse ferramentas internas e dashboards a partir de um desktop na nuvem seguro e isolado, sem expor redes locais."
+    },
+    "admin": {
+      "title": "Escritório Virtual",
+      "description": "Colabore em planilhas, documentos e tarefas administrativas em um desktop compartilhado. Edite várias janelas ao mesmo tempo durante as chamadas."
+    }
+  },
+  "aiSection": {
+    "title": "Automatize Seu Trabalho",
+    "description": "O Cyqle não é só um desktop. É uma plataforma de automação. Grave fluxos de trabalho, agende tarefas e deixe os agentes cuidarem do trabalho repetitivo.",
+    "items": [
+      "Grave interações no navegador para reproduzir depois",
+      "Delegue tarefas web repetitivas a agentes",
+      "Agende fluxos de trabalho para rodar em segundo plano",
+      "Mantenha uma biblioteca compartilhada de automações da equipe",
+      "Funciona com as ferramentas que você já usa"
+    ],
+    "exploreFeatures": "Experimente Grátis"
+  },
+  "apiTeaser": {
+    "eyebrow": "API REST para agentes de IA",
+    "title": "Um POST. Um computador de verdade.",
+    "description": "Cada desktop Cyqle é um endpoint REST. Autentique, inicie uma sessão, comande, crie um snapshot, encerre. Tudo via HTTP.",
+    "bullets": [
+      "Autenticação com Bearer token. Spec OpenAPI 3.0 que se adapta a qualquer cliente.",
+      "Comande janelas, shell, navegador, arquivos e screenshots como primitivas.",
+      "Crie snapshots de desktops configurados e clone milhares para execuções paralelas de agentes."
+    ],
+    "codeLabel": "inicie uma sessão",
+    "cta": "Ver a documentação da API"
+  },
+  "cta": {
+    "title": "Um Link. Um Desktop. A Equipe Inteira Dentro.",
+    "description": "Um link de convite. Todo o seu time no mesmo desktop, cada um com seu próprio cursor, em menos de 10 segundos.",
+    "startTrial": "Comece Agora",
+    "trialInfo": "Sessões gratuitas de 60 minutos. Não precisa de cartão de crédito."
+  },
+  "pricing": {
+    "title": "Preços que Crescem com Você",
+    "descriptionMonthly": "Comece grátis. Planos mensais a partir de $6/mês por desktop.",
+    "descriptionPayAsYouGo": "Comece grátis. Pague conforme o uso a partir de $0.20/crédito — 10 horas de desktop na nuvem por menos que um café.",
+    "monthly": "/mês",
+    "credit": "/crédito",
+    "monthlyLabel": "Mensal",
+    "payAsYouGoLabel": "Pague Conforme o Uso",
+    "popular": "Mais Popular",
+    "billingLegend": "Cobrança diária pelo uso real",
+    "perDesktop": "por desktop",
+    "plans": {
+      "free": {
+        "name": "Grátis",
+        "price": "$0.00",
+        "unit": "",
+        "description": "Perfeito para um test drive rápido.",
+        "features": {
+          "time": "Limite de 60 Minutos por Sessão",
+          "specs": "1 vCPU / 1 GB RAM",
+          "bandwidth": "Até 10mb/s de banda",
+          "priority": "Fila de Baixa Prioridade",
+          "persistence": "Sem Persistência",
+          "snapshots": "Snapshots Públicos"
+        },
+        "cta": "Experimente Grátis"
+      },
+      "lite": {
+        "name": "Lite",
+        "price": "$0.20",
+        "unit": "/crédito",
+        "description": "Perfeito para quem desenvolve sozinho.",
+        "features": {
+          "time": "Tempo de Sessão Ilimitado",
+          "specs": "1 vCPU / 2 GB RAM",
+          "bandwidth": "100mb/s de banda",
+          "priority": "Prioridade Padrão",
+          "persistence": "20 GB de persistência",
+          "snapshots": "Criação de Snapshots",
+          "api": "Acesso à API",
+          "browserAgent": "Agente de Navegador Próprio"
+        },
+        "cta": "Começar"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$0.40",
+        "unit": "/crédito",
+        "description": "Feito para trabalho sério.",
+        "features": {
+          "time": "Tempo de Sessão Ilimitado",
+          "specs": "2 vCPU / 4 GB RAM",
+          "bandwidth": "150mb/s de banda",
+          "priority": "Fila de Alta Prioridade",
+          "persistence": "40 GB de persistência",
+          "snapshots": "Criação de Snapshots",
+          "api": "Acesso à API",
+          "browserAgent": "Agente de Navegador Próprio"
+        },
+        "cta": "Seja Pro"
+      }
+    },
+    "powerTiers": {
+      "title": "Níveis de Potência",
+      "description": "Escale seus recursos para tarefas exigentes.",
+      "table": {
+        "tier": "Nível",
+        "specs": "Especificações",
+        "multiplier": "Multiplicador"
+      },
+      "tiers": {
+        "standard": {
+          "name": "Standard",
+          "specs": "2 vCPU / 4GB RAM",
+          "multiplier": "1x",
+          "persistence": "40 GB de persistência",
+          "bandwidth": "150mb/s de banda"
+        },
+        "turbo": {
+          "name": "Turbo",
+          "specs": "4 vCPU / 8GB RAM",
+          "multiplier": "2x",
+          "persistence": "60 GB de persistência",
+          "bandwidth": "200mb/s de banda"
+        },
+        "max": {
+          "name": "Max",
+          "specs": "8 vCPU / 16GB RAM",
+          "multiplier": "4x",
+          "persistence": "120 GB de persistência",
+          "bandwidth": "300mb/s de banda"
+        }
+      }
+    },
+    "creditEqualsHours": "1 crédito = 10 horas de desktop",
+    "customQuote": {
+      "heading": "Precisa de mais usuários?",
+      "description": "Receba preços por volume sob medida para o tamanho da sua equipe.",
+      "cta": "Solicitar Orçamento",
+      "dialogTitle": "Receba um Orçamento Personalizado",
+      "dialogDescription": "Conte um pouco sobre a sua equipe e prepararemos um plano de preços sob medida.",
+      "seatsLabel": "De quantos usuários você precisa?",
+      "seatsPlaceholder": "ex.: 10",
+      "emailLabel": "Seu e-mail corporativo",
+      "emailPlaceholder": "voce@empresa.com",
+      "submit": "Solicitar Orçamento",
+      "sending": "Enviando...",
+      "successTitle": "Orçamento Solicitado!",
+      "successDescription": "Entraremos em contato muito em breve com um plano de preços sob medida.",
+      "errorMessage": "Algo deu errado. Tente novamente.",
+      "close": "Fechar"
+    }
+  },
+  "howItWorks": {
+    "title": "No Ar em Segundos",
+    "step1": {
+      "title": "Inicie",
+      "description": "Clique para começar. Seu desktop Linux completo aparece no navegador em segundos. Sem instalação, sem configuração."
+    },
+    "step2": {
+      "title": "Convide",
+      "description": "Compartilhe um link. Toda a sua equipe entra na hora — cada um com seu próprio cursor e teclado."
+    },
+    "step3": {
+      "title": "Trabalhem Juntos",
+      "description": "Digitem, cliquem e naveguem ao mesmo tempo no mesmo desktop. Corrijam bugs juntos. Entreguem mais rápido."
+    }
+  },
+  "footer": {
+    "description": "O desktop na nuvem P2P para colaboração multiplayer e automação com IA.",
+    "product": {
+      "title": "Produto",
+      "features": "Funcionalidades",
+      "useCases": "Casos de Uso",
+      "pricing": "Preços",
+      "integrations": "Integrações",
+      "roadmap": "Roadmap"
+    },
+    "resources": {
+      "title": "Recursos",
+      "documentation": "Documentação",
+      "blog": "Blog",
+      "community": "Comunidade",
+      "support": "Suporte",
+      "api": "API"
+    },
+    "company": {
+      "title": "Empresa",
+      "about": "Sobre Nós",
+      "careers": "Carreiras",
+      "contact": "Contato",
+      "privacy": "Privacidade",
+      "terms": "Termos"
+    },
+    "helpSupport": {
+      "title": "Ajuda e Suporte",
+      "apiDocs": "Documentação da API",
+      "contact": "Falar com o Suporte"
+    },
+    "copyright": "© {year} Cyqle. Todos os direitos reservados.",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço",
+    "cookies": "Cookies"
+  },
+  "apiDocsPage": {
+    "metaTitle": "API Cyqle — Um Desktop Programável para Agentes de IA",
+    "metaDescription": "Crie desktops Linux, comande janelas de navegador e do desktop, execute código, capture screenshots e persista estado — as primitivas REST que agentes de IA precisam para operar software de verdade.",
+    "hero": {
+      "badge": "API REST",
+      "title": "Seu agente, dentro de um computador de verdade.",
+      "description": "Pare de encapsular SDKs. Inicie um desktop Linux via HTTP e comande-o como um humano faria: clique, digite, abra arquivos, execute comandos.",
+      "agentNote": "A maioria dos agentes chama ferramentas. Os agentes no Cyqle habitam uma máquina. Um POST cria um desktop em sandbox que seu agente pode comandar, transferir, capturar em snapshot ou descartar. Nada toca o seu laptop.",
+      "footnote": "Todos os endpoints abaixo estão no ar. Teste no navegador, copie o curl."
+    },
+    "capabilities": {
+      "heading": "O que os agentes podem fazer",
+      "items": [
+        {
+          "title": "Inicie um desktop com uma chamada",
+          "description": "Um POST e você tem uma sessão Linux nova em segundos. Efêmera por padrão, persistente quando você quiser."
+        },
+        {
+          "title": "Mova janelas como um humano",
+          "description": "Liste, foque, redimensione e feche qualquer janela do desktop. Seu agente não fica preso em uma aba. Ele é dono da tela inteira."
+        },
+        {
+          "title": "Execute código onde importa",
+          "description": "Injete JavaScript em qualquer página, rode comandos de shell, navegue por URLs, mexa no DOM. O agente escreve, o SO executa."
+        },
+        {
+          "title": "Veja o que o agente vê",
+          "description": "Capture screenshots de tela inteira ou de regiões direto para o seu modelo de visão. Sem depender de serviços de captura de terceiros."
+        },
+        {
+          "title": "Mova arquivos via HTTP",
+          "description": "Envie entradas e receba saídas entre o seu backend e a sessão. Sem SFTP, sem rsync, sem túneis."
+        },
+        {
+          "title": "Um snapshot, milhares de clones",
+          "description": "Congele um desktop configurado e crie clones pré-aquecidos para execuções paralelas de agentes. Pule o cold start."
+        },
+        {
+          "title": "Conecte agentes entre si",
+          "description": "Vincule sessões para que agentes transfiram trabalho, compartilhem arquivos ou observem uns aos outros operando. Pipelines multiagente com contexto compartilhado de verdade."
+        },
+        {
+          "title": "Cobre seus usuários, não só os nossos",
+          "description": "Leia custos de tokens e o estado da assinatura pela API. Integre o uso dos agentes ao seu próprio modelo de preços sem construir um medidor."
+        }
+      ]
+    },
+    "iframe": {
+      "title": "API Cyqle — OpenAPI / Swagger UI",
+      "ariaLabel": "Documentação da API Cyqle"
+    },
+    "a11y": {
+      "skipIframe": "Pular a documentação incorporada da API",
+      "iframeSectionHeading": "Referência interativa da API",
+      "endOfIframe": "Fim da documentação incorporada da API.",
+      "openInNewTab": "Abrir a documentação da API em uma nova aba",
+      "newTabSuffix": "(abre em uma nova aba)",
+      "fallback": {
+        "text": "Problemas com a documentação incorporada abaixo?"
+      }
+    },
+    "meta": {
+      "baseUrl": "URL Base",
+      "auth": "Autenticação",
+      "authValue": "Bearer token",
+      "spec": "Spec",
+      "specValue": "OpenAPI 3.0"
+    },
+    "handoff": {
+      "eyebrow": "Referência",
+      "title": "A API completa, ao vivo logo abaixo.",
+      "subtitle": "Autentique, dispare qualquer endpoint e veja a sessão responder. Tudo nesta página."
+    },
+    "backToTop": "Voltar ao topo",
+    "endCta": {
+      "eyebrow": "Pronto para construir?",
+      "title": "Dê um computador ao seu agente.",
+      "description": "Pegue uma chave de API em menos de um minuto. A primeira sessão é por nossa conta.",
+      "primary": "Comece a construir",
+      "secondary": "Voltar às capacidades"
+    }
+  },
+  "aboutPage": {
+    "metaTitle": "Sobre o Cyqle: Desktop na Nuvem Multiplayer",
+    "metaDescription": "O Cyqle é um desktop na nuvem P2P onde várias pessoas trabalham na mesma máquina ao mesmo tempo. Cada usuário tem seu próprio cursor e teclado. Crie em segundos, colabore em tempo real.",
+    "hero": {
+      "title": "Um Desktop na Nuvem Multiplayer",
+      "subtitle": "A mesma máquina. Vários teclados. Todos no controle."
+    },
+    "problem": {
+      "badge": "O Problema",
+      "title": "Trabalho Remoto Ainda Significa Esperar a Vez",
+      "intro": "Compartilhar tela é um no volante e muitos assistindo. Isso não é colaboração.",
+      "scenario1": "Você não consegue tocar no código na tela compartilhada de outra pessoa. Só assiste e dita o que digitar.",
+      "scenario2": "Ambientes locais quebram, divergem e não podem ser compartilhados com um link.",
+      "scenario3": "Sua equipe tem 10 laptops, mas nenhuma máquina compartilhada para trabalhar junta.",
+      "truth": "Sistemas operacionais foram feitos para um usuário. Nós construímos um para vários.",
+      "solution": "Isso é o Cyqle."
+    },
+    "story": {
+      "badge": "Contexto",
+      "title": "Como Chegamos Aqui",
+      "year2017": "Começamos com automação de navegador. Útil, mas resolvia só parte do problema.",
+      "pivot": "O gargalo era o próprio SO — feito para um único usuário.",
+      "year2025": "Compartilhamento de tela é uma gambiarra sobre uma arquitetura single-player. Por isso é tão sofrido.",
+      "realization": "Então reconstruímos o desktop para P2P. Sem anfitrião e convidado — só usuários iguais na mesma máquina.",
+      "present": "O Cyqle é um computador na nuvem onde colaboração é uma primitiva central."
+    },
+    "solution": {
+      "badge": "O Que É",
+      "title": "Um Desktop Linux Completo, Compartilhado em Tempo Real",
+      "paragraph1": "O Cyqle é um ambiente Linux de verdade na nuvem. Várias pessoas trabalham ao mesmo tempo, cada uma com seu próprio cursor e teclado.",
+      "paragraph2": "Não é compartilhamento de tela. Não é uma VM que você acessa sozinho por SSH. É um computador multiplayer que você cria em segundos, usa em equipe e depois fecha ou persiste.",
+      "realityCheck": "Chega de:",
+      "painPoints": [
+        "\"Está vendo minha tela?\" — todos já estão lá",
+        "Descrever bugs pelo chat — só convide a pessoa",
+        "\"Na minha máquina funciona\" — usem a mesma máquina",
+        "Reconstruir ambientes de demo — crie um snapshot e reutilize",
+        "Escrever scripts para tarefas simples — grave e reproduza"
+      ]
+    },
+    "difference": {
+      "badge": "Por Baixo do Capô",
+      "title": "O Que Tivemos de Resolver",
+      "intro": "Desktops na nuvem em tempo real exigem resolver problemas difíceis:",
+      "challenges": [
+        "Streaming P2P com latência mínima (sem relay central)",
+        "Injeção de entrada multi-cursor no nível do sistema",
+        "Armazenamento efêmero com apagamento criptográfico",
+        "Boot em menos de 5 segundos",
+        "Acesso pelo navegador com desempenho nativo"
+      ],
+      "conclusion": "Infraestrutura complexa por trás de uma experiência simples."
+    },
+    "forWhom": {
+      "badge": "Casos de Uso",
+      "title": "Feito para Equipes que:",
+      "items": [
+        "Depuram juntas em vez de esperar a vez",
+        "Precisam de ambientes descartáveis de reprodução",
+        "Fazem onboarding de engenheiros na prática, não com documentos",
+        "Rodam automação de navegador sem sobrecarga de infra",
+        "Precisam de um sandbox seguro para agentes de IA",
+        "Querem acesso root sem arriscar as máquinas locais"
+      ]
+    },
+    "vision": {
+      "badge": "Próximos Passos",
+      "title": "Para Onde Vamos",
+      "intro": "Estamos construindo rumo a:",
+      "future": [
+        "Ambientes efêmeros que você cria e descarta",
+        "Agentes de IA que operam dentro do seu desktop, não só em uma caixa de chat",
+        "Acesso completo ao desktop de qualquer dispositivo, inclusive mobile com toque nativo",
+        "Multiplayer como padrão, não como extra"
+      ]
+    },
+    "cta": {
+      "title": "Experimente",
+      "description": "Plano gratuito. Sem cartão de crédito. Crie uma sessão e convide um colega.",
+      "button": "Experimente o Cyqle Grátis"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última Atualização",
+    "effectiveDate": "14 de janeiro de 2026",
+    "introduction": "Na Cyqle, temos o compromisso de proteger a sua privacidade e de fornecer informações transparentes sobre como coletamos, usamos e protegemos os seus dados. Esta Política de Privacidade está em conformidade com as regulamentações de privacidade de 2026, incluindo o GDPR, a CCPA e o EU AI Act.",
+    "privacy3Banner": "Em Conformidade com Privacidade 3.0 — Transparência Total e Controle do Usuário",
+    "quickOverview": {
+      "title": "Privacidade em Resumo",
+      "ephemeral": {
+        "title": "Efêmero por Padrão",
+        "description": "Os dados da sessão são apagados instantaneamente quando você a fecha, a menos que você ative a persistência"
+      },
+      "aiTransparency": {
+        "title": "Divulgação de IA",
+        "description": "Divulgamos claramente quando sistemas de IA são usados e como funcionam"
+      },
+      "p2p": {
+        "title": "Arquitetura P2P",
+        "description": "Seus dados podem transitar por nós peer com Cláusulas Contratuais Padrão"
+      },
+      "rights": {
+        "title": "Seus Direitos",
+        "description": "Direitos plenos de acesso, exclusão, portabilidade e oposição sob o GDPR/CCPA"
+      }
+    },
+    "sections": {
+      "dataCollection": {
+        "title": "1. Coleta de Dados e Base Legal",
+        "badge": "Transparência Privacidade 3.0",
+        "intro": "Distinguimos duas categorias principais de dados: Dados de Conta (necessários para cobrança e gestão da conta) e Dados de Sessão (dados efêmeros gerados dentro do seu ambiente de desktop virtual).",
+        "accountData": {
+          "title": "Dados de Conta (Persistentes)",
+          "description": "Coletamos e armazenamos as seguintes informações para gerenciar sua conta e prestar serviços de cobrança:",
+          "item1": "Endereço de e-mail (para autenticação e comunicação)",
+          "item2": "Informações de pagamento (processadas com segurança via Stripe — não armazenamos números completos de cartão de crédito)",
+          "item3": "Preferências da conta e seleções de plano de assinatura",
+          "item4": "Histórico de cobrança e registros de uso para fins de faturamento",
+          "legalBasis": "Base Legal: Necessidade Contratual — Estes dados são necessários para cumprir nosso contrato com você e fornecer o serviço Cyqle."
+        },
+        "sessionData": {
+          "title": "Dados de Sessão (Efêmeros)",
+          "description": "Dados gerados durante o uso das sessões de desktop virtual. Esta categoria é inerentemente efêmera devido à nossa arquitetura de ambiente isolado:",
+          "item1": "Arquivos, documentos e código criados no sistema de arquivos isolado da sua sessão",
+          "item2": "Pacotes de software instalados e alterações na configuração do sistema",
+          "item3": "Metadados de processos (aplicações em execução, consumo de recursos)",
+          "item4": "Atividade de rede originada da sua sessão (apenas para monitoramento de segurança)",
+          "legalBasis": "Base Legal: Necessidade Contratual — O processamento dos dados de sessão é essencial para fornecer a você um ambiente de desktop virtual isolado e funcional.",
+          "ephemeralNote": "Importante: Os dados de sessões efêmeras são criptografados com chaves únicas por sessão e apagados criptograficamente no encerramento da sessão. Esses dados não podem ser recuperados após a exclusão.",
+          "noAccessNote": "Garantia Crítica de Privacidade: A Cyqle NÃO tem acesso nem interfere em nada dentro da sua sessão isolada. Não podemos ler seus arquivos, acessar seus dados nem monitorar suas atividades dentro da sessão. Os únicos dados operacionais que podemos coletar são registros anonimizados (duração da sessão, uso de recursos), e somente quando você expressamente nos permitir (relatórios de bugs, solicitações de suporte)."
+        },
+        "technicalData": {
+          "title": "Dados Técnicos e de Diagnóstico",
+          "description": "Coletamos dados técnicos limitados para manter a estabilidade e a segurança da plataforma:",
+          "item1": "Endereços IP (transformados em hash após 24 horas, para prevenção de fraudes)",
+          "item2": "Tipo de navegador e sistema operacional (para diagnósticos de compatibilidade)",
+          "item3": "Horários de início/término de sessão e métricas de uso de recursos (para planejamento de capacidade)",
+          "legalBasis": "Base Legal: Interesse Legítimo — Temos interesse legítimo em manter a segurança da plataforma, prevenir fraudes e otimizar o desempenho do serviço."
+        }
+      },
+      "aiTransparency": {
+        "title": "2. Transparência de IA (Conformidade com o EU AI Act)",
+        "badge": "Divulgação de IA",
+        "intro": "O Cyqle incorpora recursos baseados em IA para aumentar sua produtividade. Sob o EU AI Act de 2026, somos obrigados a divulgar claramente quando você interage com ou é afetado por sistemas de IA.",
+        "disclosure": {
+          "title": "Divulgação do Operador de IA",
+          "description": "Ao usar os recursos de automação do Cyqle (gravação de navegador, delegação de tarefas, agendamento de fluxos de trabalho), você pode interagir com nosso \"Operador de IA\" — um sistema de IA projetado para executar tarefas web repetitivas em seu nome."
+        },
+        "howItWorks": {
+          "title": "Como o Operador de IA Funciona",
+          "description": "O Operador de IA usa a seguinte lógica para auxiliar você:",
+          "item1": "Reconhecimento de Padrões: Analisa interações de navegador gravadas para identificar padrões acionáveis (cliques, preenchimentos de formulários, sequências de navegação)",
+          "item2": "Execução de Tarefas: Com base nas suas instruções, replica esses padrões para automatizar tarefas repetitivas",
+          "item3": "Adaptação Contextual: Usa visão computacional e análise do DOM para se adaptar a pequenas mudanças de interface em aplicações web",
+          "item4": "Ciclo de Feedback: Você pode revisar, aprovar ou modificar ações automatizadas antes de serem executadas"
+        },
+        "humanOversight": {
+          "title": "Supervisão Humana e Limitações",
+          "description": "O Operador de IA atua sob sua supervisão direta. Ele não toma decisões autônomas que afetem sua conta, cobrança ou direitos de acesso. Todas as operações críticas exigem confirmação explícita do usuário. A IA não acessa nem processa seus dados de sessão para fins de treinamento sem consentimento explícito (opt-in)."
+        }
+      },
+      "automatedDecisions": {
+        "title": "3. Tomada de Decisão Automatizada (ADMT)",
+        "badge": "Controle do Usuário",
+        "intro": "O Cyqle usa sistemas limitados de tomada de decisão automatizada para garantir a segurança da plataforma e a alocação justa de recursos. Sob os requisitos da CCPA de 2026, você tem o direito de recusar (opt-out) determinados processamentos automatizados.",
+        "systems": {
+          "title": "Sistemas Automatizados em Uso",
+          "fraud": {
+            "title": "Detecção de Fraude:",
+            "description": "Nosso sistema analisa padrões de criação de contas, comportamentos de pagamento e pontuações de reputação de IP para detectar e prevenir cadastros fraudulentos. Falsos positivos são revisados por operadores humanos em até 24 horas."
+          },
+          "allocation": {
+            "title": "Alocação de Sessões:",
+            "description": "Um balanceador de carga automatizado aloca sua sessão aos nós de infraestrutura disponíveis com base na capacidade atual, na proximidade geográfica e na prioridade do plano de assinatura."
+          },
+          "abuse": {
+            "title": "Detecção de Abuso:",
+            "description": "Monitoramos padrões de consumo de recursos (CPU, memória, rede) para detectar violações da nossa Política de Uso Aceitável (por exemplo, mineração de criptomoedas, ataques DDoS)."
+          }
+        },
+        "optOut": {
+          "title": "Seu Direito de Recusa e de Revisão Humana",
+          "description": "Se um sistema automatizado sinalizar sua conta ou negar acesso, você tem o direito de solicitar revisão humana e contestar a decisão. Você também pode recusar determinados processamentos automatizados (excluindo funções críticas de segurança).",
+          "contact": "Para exercer esse direito, entre em contato com privacy@cyqle.in informando o e-mail da sua conta e o assunto: \"Solicitação de Opt-Out de ADMT\"."
+        }
+      },
+      "internationalTransfers": {
+        "title": "4. Transferências Internacionais de Dados",
+        "badge": "Salvaguardas Transfronteiriças",
+        "intro": "A arquitetura peer-to-peer (P2P) do Cyqle significa que os dados de sessão podem transitar por diversos nós geográficos durante a colaboração em tempo real. Adotamos medidas específicas para garantir a conformidade com as regulamentações de transferência internacional de dados.",
+        "p2pNature": {
+          "title": "Rede Mesh P2P e Roteamento de Dados",
+          "description": "Quando você colabora com outros usuários em tempo real, os dados da sua sessão são transmitidos diretamente entre os peers usando libp2p. Isso significa que:",
+          "item1": "Os dados podem ser roteados por nós de retransmissão intermediários localizados em diferentes países",
+          "item2": "O caminho exato da transmissão dos dados depende da topologia da rede e da disponibilidade dos peers",
+          "item3": "Todas as conexões P2P são criptografadas de ponta a ponta usando TLS 1.3 e criptografia WebRTC"
+        },
+        "safeguards": {
+          "title": "Salvaguardas para Transferências Transfronteiriças",
+          "description": "Para proteger seus dados durante transferências internacionais, implementamos as seguintes salvaguardas:",
+          "item1": "Cláusulas Contratuais Padrão (SCCs): Todas as transferências de dados para países fora do EEE são regidas pelas Cláusulas Contratuais Padrão aprovadas pela UE (2021/914)",
+          "item2": "Criptografia em Trânsito: Todos os dados são criptografados durante a transmissão usando protocolos de criptografia padrão do setor",
+          "item3": "Minimização de Dados: Apenas o mínimo necessário de dados de sessão é transmitido pela rede P2P (quadros de tela, eventos de entrada, tokens de autenticação)"
+        },
+        "accountability": {
+          "title": "Seu Controle sobre a Localização dos Dados",
+          "description": "Embora não possamos garantir o caminho geográfico exato dos dados roteados via P2P, você pode controlar onde seus dados de sessão persistentes são armazenados selecionando sua região de data center preferida nas configurações da conta (disponível para usuários dos planos Pro e Power)."
+        }
+      },
+      "retention": {
+        "title": "5. Retenção e Exclusão de Dados",
+        "badge": "Arquitetura Efêmera",
+        "intro": "Um dos principais recursos de privacidade do Cyqle é a natureza efêmera da nossa arquitetura de ambiente isolado. Veja exatamente como tratamos a retenção e a exclusão de dados:",
+        "ephemeral": {
+          "title": "Sessões Efêmeras (Comportamento Padrão)",
+          "description": "Por padrão, todas as sessões são efêmeras. Isso significa que:",
+          "item1": "Criptografia da Sessão: O sistema de arquivos gravável da sua sessão é criptografado com uma chave AES-256 única, gerada aleatoriamente no início da sessão",
+          "item2": "Exclusão Instantânea: Quando você fecha a sessão, a chave de criptografia é destruída imediatamente, tornando todos os dados da sessão criptograficamente irrecuperáveis",
+          "item3": "Retenção Zero: Nenhum arquivo de sessão, software instalado ou conteúdo gerado pelo usuário é retido após o encerramento da sessão"
+        },
+        "persistent": {
+          "title": "Sessões Persistentes (Opcional, Apenas Planos Pagos)",
+          "description": "Se você ativar a persistência (disponível nos planos Lite, Pro e Power), os dados da sua sessão são retidos da seguinte forma:",
+          "item1": "Duração do Armazenamento: Os dados persistentes são retidos pelo período especificado no seu plano de assinatura (por exemplo, 30 dias no Lite, 90 dias no Pro)",
+          "item2": "Armazenamento Criptografado: Os dados persistentes são armazenados em block storage criptografado, com chaves de criptografia únicas por usuário gerenciadas via AWS KMS",
+          "item3": "Exclusão Manual: Você pode excluir manualmente sessões persistentes a qualquer momento pelo seu painel"
+        },
+        "accountData": {
+          "title": "Retenção de Dados de Conta",
+          "description": "Os dados de conta (e-mail, informações de cobrança, registros de uso) são retidos enquanto sua conta estiver ativa, acrescidos de 90 dias após o encerramento da conta, para cumprir requisitos de manutenção de registros financeiros. Após esse período, todos os identificadores pessoais são excluídos permanentemente."
+        },
+        "deletion": {
+          "title": "Seu Direito à Exclusão",
+          "description": "Você pode solicitar a exclusão de todos os seus dados pessoais a qualquer momento entrando em contato com privacy@cyqle.in. Concluiremos sua solicitação de exclusão em até 30 dias, exceto quando a retenção for exigida por lei (por exemplo, registros fiscais, prevenção de fraudes)."
+        }
+      },
+      "rights": {
+        "title": "6. Seus Direitos de Privacidade",
+        "badge": "Direitos GDPR e CCPA",
+        "intro": "Sob o GDPR (para residentes do EEE) e a CCPA (para residentes da Califórnia), você tem os seguintes direitos em relação aos seus dados pessoais:",
+        "access": {
+          "title": "Direito de Acesso",
+          "description": "Você pode solicitar uma cópia de todos os dados pessoais que mantemos sobre você"
+        },
+        "rectification": {
+          "title": "Direito de Retificação",
+          "description": "Você pode atualizar ou corrigir informações pessoais imprecisas"
+        },
+        "erasure": {
+          "title": "Direito ao Apagamento (\"Direito de Ser Esquecido\")",
+          "description": "Você pode solicitar a exclusão dos seus dados pessoais"
+        },
+        "portability": {
+          "title": "Direito à Portabilidade de Dados",
+          "description": "Você pode solicitar seus dados em um formato legível por máquina"
+        },
+        "objection": {
+          "title": "Direito de Oposição",
+          "description": "Você pode se opor a determinados tipos de processamento (por exemplo, marketing)"
+        },
+        "restriction": {
+          "title": "Direito à Limitação",
+          "description": "Você pode solicitar que limitemos a forma como usamos seus dados"
+        },
+        "exercise": "Para exercer qualquer um desses direitos, envie um e-mail para privacy@cyqle.in informando o e-mail da sua conta e especificando qual direito deseja exercer. Responderemos em até 30 dias."
+      },
+      "security": {
+        "title": "7. Medidas de Segurança",
+        "badge": "Salvaguardas Técnicas",
+        "intro": "Implementamos medidas de segurança líderes do setor para proteger seus dados contra acesso, divulgação ou destruição não autorizados:",
+        "measures": {
+          "title": "Controles de Segurança",
+          "item1": "Criptografia: Todos os dados são criptografados em trânsito (TLS 1.3) e em repouso (AES-256)",
+          "item2": "Isolamento: Cada sessão é executada em um ambiente isolado, com isolamento rigoroso de processos e de sistema de arquivos (consulte SESSION_ENVIRONMENT.md)",
+          "item3": "Controles de Acesso: Controles de acesso baseados em funções (RBAC) limitam o acesso de funcionários a dados de produção",
+          "item4": "Auditorias de Segurança: Realizamos auditorias de segurança anuais conduzidas por terceiros e testes de penetração",
+          "item5": "Resposta a Incidentes: Mantemos uma equipe de resposta a incidentes 24/7 para eventos de segurança"
+        },
+        "breach": {
+          "title": "Notificação de Violação de Dados",
+          "description": "No caso improvável de uma violação de dados que afete suas informações pessoais, notificaremos você em até 72 horas por e-mail, com detalhes sobre a natureza da violação, as categorias de dados afetadas e as medidas de correção."
+        }
+      },
+      "cookies": {
+        "title": "8. Cookies e Tecnologias de Rastreamento",
+        "badge": "Divulgação de Rastreamento",
+        "intro": "O Cyqle usa o mínimo de cookies e tecnologias de rastreamento. Não usamos rastreadores de publicidade de terceiros nem vendemos seus dados a corretores de dados.",
+        "essential": {
+          "title": "Cookies Essenciais (Obrigatórios)",
+          "description": "Token de autenticação de sessão (httpOnly, secure, sameSite=strict) — expira após 30 dias ou no logout"
+        },
+        "analytics": {
+          "title": "Cookies de Análise (Opcionais)",
+          "description": "Usamos uma solução de análise que respeita a privacidade (Plausible Analytics), que não rastreia usuários individuais nem usa cookies. Você pode recusar por meio do cabeçalho Do Not Track (DNT) do seu navegador."
+        }
+      },
+      "changes": {
+        "title": "9. Alterações nesta Política de Privacidade",
+        "description": "Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças em nossas práticas ou em requisitos legais. Notificaremos você sobre alterações relevantes por e-mail com pelo menos 30 dias de antecedência da sua entrada em vigor. Seu uso continuado do Cyqle após a entrada em vigor da política atualizada constitui aceitação das alterações."
+      }
+    },
+    "contact": {
+      "title": "Dúvidas ou Preocupações sobre Privacidade?",
+      "description": "Se você tiver dúvidas sobre esta Política de Privacidade ou desejar exercer seus direitos de privacidade, entre em contato com nosso Encarregado de Proteção de Dados:",
+      "email": "privacy@cyqle.in"
+    }
+  },
+  "cookiesPolicy": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última Atualização",
+    "effectiveDate": "14 de janeiro de 2026",
+    "introduction": "Esta Política de Cookies explica como o Cyqle usa cookies e tecnologias de rastreamento semelhantes. Temos o compromisso com a transparência e com dar a você controle total sobre suas preferências de privacidade.",
+    "complianceBanner": "Em Conformidade com 2026 — Suporte ao Sinal GPC e Design de Escolha Igualitária",
+    "quickOverview": {
+      "title": "Cookies em Resumo",
+      "minimal": {
+        "title": "Rastreamento Mínimo",
+        "description": "Usamos apenas cookies essenciais e análises que respeitam a privacidade"
+      },
+      "gpc": {
+        "title": "Suporte ao Sinal GPC",
+        "description": "Honramos automaticamente os sinais de Global Privacy Control do seu navegador"
+      },
+      "choice": {
+        "title": "Escolha Igualitária",
+        "description": "Os botões Aceitar e Rejeitar têm o mesmo destaque visual"
+      },
+      "control": {
+        "title": "Controle Total",
+        "description": "Altere suas preferências a qualquer momento pelo navegador ou pelas nossas configurações"
+      }
+    },
+    "sections": {
+      "whatAreCookies": {
+        "title": "1. O Que São Cookies?",
+        "badge": "Definição",
+        "intro": "Cookies são pequenos arquivos de texto que os sites armazenam no seu dispositivo quando você os visita. Eles ajudam os sites a lembrar suas preferências, melhorar a funcionalidade e fornecer análises.",
+        "description": "Os cookies podem ser \"cookies de sessão\" (excluídos quando você fecha o navegador) ou \"cookies persistentes\" (armazenados por um período definido). Podem ser \"primários\" (definidos pelo site que você está visitando) ou \"de terceiros\" (definidos por serviços externos)."
+      },
+      "cookiesWeUse": {
+        "title": "2. Cookies que Usamos",
+        "badge": "Lista Completa",
+        "intro": "O Cyqle usa um conjunto mínimo de cookies. Neste site de marketing (cyqle.in), usamos cookies essenciais e análises opcionais. Dentro da aplicação da plataforma em si, usamos APENAS cookies essenciais de sessão. NÃO usamos cookies de publicidade nem vendemos seus dados a terceiros.",
+        "duration": "Duração",
+        "type": "Tipo",
+        "essential": {
+          "title": "Cookies Essenciais (Obrigatórios)",
+          "intro": "Estes cookies são estritamente necessários para o funcionamento do site e não podem ser desativados sem comprometer funcionalidades essenciais:",
+          "session": {
+            "name": "cyqle_session",
+            "purpose": "Mantém sua sessão autenticada e lembra que você está conectado",
+            "duration": "30 dias ou até o logout",
+            "type": "Primário, httpOnly, secure"
+          },
+          "note": "Base Legal: Estes cookies estão isentos dos requisitos de consentimento sob a Diretiva ePrivacy, pois são estritamente necessários para a prestação do serviço."
+        },
+        "analytics": {
+          "title": "Cookies de Análise (Opcionais — Apenas no Site de Marketing)",
+          "intro": "Com o seu consentimento, usamos uma solução de análise que respeita a privacidade neste site de marketing, para entender o comportamento dos visitantes e melhorar nosso conteúdo. As análises NÃO são usadas dentro da aplicação da plataforma Cyqle:",
+          "plausible": {
+            "name": "Plausible Analytics (apenas cyqle.in)",
+            "purpose": "Registra estatísticas agregadas de uso do nosso site de marketing sem identificar usuários individuais. Não usa cookies nem rastreia entre sites. NÃO é usado na aplicação da plataforma.",
+            "duration": "Nenhum cookie armazenado (usa armazenamento local com expiração de 24 horas)",
+            "type": "Primário, focado em privacidade"
+          },
+          "note": "Importante: As análises só estão ativas em cyqle.in (este site de marketing). Quando você usa a aplicação da plataforma Cyqle, NENHUM cookie de análise ou rastreamento é usado. Você pode recusar as análises do site de marketing a qualquer momento."
+        },
+        "noTracking": {
+          "title": "O Que NÃO Usamos",
+          "item1": "Nenhum cookie de publicidade de terceiros (Google Ads, Facebook Pixel etc.)",
+          "item2": "Nenhum cookie de rastreamento entre sites ou de retargeting",
+          "item3": "Nenhuma técnica de fingerprinting para identificar usuários",
+          "item4": "Nenhuma venda ou compartilhamento de dados com corretores de dados"
+        }
+      },
+      "gpcSupport": {
+        "title": "3. Suporte ao Global Privacy Control (GPC)",
+        "badge": "Requisito de 2026",
+        "intro": "O Cyqle oferece suporte total ao sinal Global Privacy Control (GPC), conforme exigido pelas regulamentações de privacidade de 2026.",
+        "whatIsGpc": {
+          "title": "O que é GPC?",
+          "description": "O Global Privacy Control (GPC) é uma configuração do navegador que permite recusar automaticamente o compartilhamento e a venda de dados em todos os sites que você visita. Quando ativado, seu navegador envia um sinal \"GPC: 1\" nos cabeçalhos HTTP."
+        },
+        "howItWorks": {
+          "title": "Como o Cyqle Honra os Sinais GPC",
+          "item1": "Quando detectamos um sinal GPC, nós o tratamos automaticamente como se você tivesse clicado em \"Rejeitar Tudo\" no nosso banner de cookies",
+          "item2": "Desativamos todos os cookies opcionais e o rastreamento de análises",
+          "item3": "Sua preferência GPC é respeitada em cada carregamento de página, sem exigir cliques adicionais"
+        },
+        "enable": {
+          "title": "Como Ativar o GPC",
+          "description": "Você pode ativar o GPC nos seguintes navegadores:",
+          "browser1": "Brave Browser: Configurações → Shields → Global Privacy Control",
+          "browser2": "Firefox: Instale a extensão Global Privacy Control",
+          "browser3": "Chrome/Edge: Instale a extensão Global Privacy Control"
+        }
+      },
+      "cookieBanner": {
+        "title": "4. Design do Banner de Cookies (Simetria de Escolha)",
+        "badge": "Destaque Igualitário",
+        "intro": "Sob as regulamentações de 2026, os banners de consentimento de cookies devem dar o mesmo destaque tanto à aceitação quanto à rejeição de cookies. Nosso banner cumpre esses requisitos.",
+        "symmetry": {
+          "title": "Requisito de Simetria de Escolha",
+          "description": "Oferecemos os botões \"Aceitar Tudo\" e \"Rejeitar Tudo\" com o mesmo destaque visual (mesmo tamanho, intensidade de cor e posicionamento). Nenhuma das opções vem pré-selecionada ou projetada para manipular sua escolha.",
+          "exampleTitle": "Exemplo de Banner de Cookies:",
+          "exampleText": "Usamos cookies para melhorar sua experiência. Você pode escolher aceitar ou rejeitar os cookies opcionais.",
+          "acceptButton": "✓ Aceitar Tudo",
+          "rejectButton": "✗ Rejeitar Tudo",
+          "customizeButton": "Personalizar Preferências"
+        },
+        "requirements": {
+          "title": "Requisitos de Design Atendidos",
+          "item1": "Botões de Aceitar e Rejeitar com o mesmo tamanho e peso visual",
+          "item2": "Sem dark patterns (por exemplo, esconder o botão de rejeitar ou usar linguagem que induza culpa)",
+          "item3": "Explicação clara do que cada opção significa",
+          "item4": "Acesso fácil para personalizar preferências granulares"
+        }
+      },
+      "managing": {
+        "title": "5. Gerenciando suas Preferências de Cookies",
+        "badge": "Seu Controle",
+        "intro": "Você tem controle total sobre suas preferências de cookies e pode alterá-las a qualquer momento.",
+        "changeMind": {
+          "title": "Mude de Ideia Quando Quiser",
+          "description": "Você pode atualizar suas preferências de cookies a qualquer momento clicando no link \"Configurações de Cookies\" no rodapé do nosso site. Suas novas preferências entrarão em vigor imediatamente."
+        },
+        "browserSettings": {
+          "title": "Controles de Cookies no Navegador",
+          "description": "A maioria dos navegadores permite gerenciar cookies por meio das configurações:",
+          "chrome": "Configurações → Privacidade e segurança → Cookies e outros dados do site",
+          "firefox": "Configurações → Privacidade e Segurança → Cookies e Dados de Sites",
+          "safari": "Preferências → Privacidade → Gerenciar Dados de Sites",
+          "edge": "Configurações → Cookies e permissões de site → Gerenciar e excluir cookies",
+          "warning": "Aviso: Bloquear todos os cookies pode impedir o funcionamento adequado de funcionalidades essenciais do site."
+        },
+        "deleteCookies": {
+          "title": "Excluindo Cookies Existentes",
+          "description": "Você pode excluir todos os cookies armazenados pelo Cyqle a qualquer momento pelas configurações do seu navegador. Isso encerrará sua sessão e redefinirá suas preferências."
+        }
+      },
+      "thirdParty": {
+        "title": "6. Serviços de Terceiros",
+        "badge": "Transparência",
+        "intro": "Usamos um número mínimo de serviços de terceiros confiáveis em nosso site de marketing. A aplicação da plataforma em si não usa nenhum serviço de análise ou rastreamento de terceiros.",
+        "plausible": {
+          "title": "Plausible Analytics (Apenas no Site de Marketing)",
+          "description": "Usamos o Plausible Analytics exclusivamente em cyqle.in (este site de marketing) para análises que respeitam a privacidade. O Plausible não usa cookies, não rastreia usuários entre sites e está em total conformidade com o GDPR. Este serviço NÃO é usado dentro da aplicação da plataforma.",
+          "link": "Ver a Política de Privacidade do Plausible →"
+        }
+      },
+      "changes": {
+        "title": "7. Alterações nesta Política de Cookies",
+        "description": "Podemos atualizar esta Política de Cookies periodicamente para refletir mudanças em nossas práticas ou em requisitos legais. Notificaremos você sobre alterações relevantes por e-mail ou por meio de um aviso destacado em nosso site com pelo menos 30 dias de antecedência da sua entrada em vigor."
+      }
+    },
+    "contact": {
+      "title": "Dúvidas sobre Cookies?",
+      "description": "Se você tiver dúvidas sobre nosso uso de cookies ou desejar exercer seus direitos de privacidade, entre em contato conosco:",
+      "email": "privacy@cyqle.in"
+    }
+  },
+  "termsOfService": {
+    "title": "Termos de Serviço",
+    "lastUpdated": "Última Atualização",
+    "effectiveDate": "14 de janeiro de 2026",
+    "introduction": "Bem-vindo ao Cyqle. Estes Termos de Serviço regem o seu acesso e uso da nossa plataforma de ambientes de desktop na nuvem. Ao usar o Cyqle, você concorda em se vincular a estes termos.",
+    "quickSummary": {
+      "title": "Resumo Rápido",
+      "license": {
+        "title": "Concessão de Licença",
+        "description": "Acesso não exclusivo e revogável a ambientes virtuais isolados"
+      },
+      "slots": {
+        "title": "Modelo de Slots",
+        "description": "Um slot equivale a uma sessão ativa com limites de recursos definidos"
+      },
+      "liability": {
+        "title": "Responsabilidade Limitada",
+        "description": "Nossa responsabilidade é limitada aos valores pagos nos últimos 12 meses"
+      },
+      "conduct": {
+        "title": "Uso Aceitável",
+        "description": "Sem atividades ilegais, mineração de criptomoedas ou tentativas de burlar a segurança"
+      }
+    },
+    "sections": {
+      "license": {
+        "title": "1. Licença e Escopo de Uso",
+        "badge": "Termos Comerciais",
+        "intro": "Seu acesso ao Cyqle é regido pelos seguintes termos de licença, que definem como você pode usar nossa plataforma.",
+        "grant": {
+          "title": "Concessão de Licença",
+          "description": "A Cyqle concede a você uma licença limitada, não exclusiva, intransferível e revogável para acessar e usar nossos ambientes de desktop na nuvem (\"ambientes isolados\"), sujeita a estes Termos. Esta licença permite que você:",
+          "point1": "Acesse sessões de desktop virtual isoladas por meio da nossa plataforma",
+          "point2": "Instale e execute software dentro dos limites de recursos do seu plano de assinatura",
+          "point3": "Armazene dados dentro dos limites de persistência alocados ao seu plano",
+          "point4": "Use nossa API para gerenciar sessões de forma programática (apenas planos pagos)"
+        },
+        "fairUse": {
+          "title": "Política de Uso Justo",
+          "description": "Para garantir a estabilidade da plataforma e a alocação justa de recursos para todos os usuários, as seguintes atividades são estritamente proibidas dentro do seu ambiente de desktop virtual:",
+          "prohibited1": "Mineração de criptomoedas ou tarefas computacionais de proof-of-work",
+          "prohibited2": "Ataques de Negação de Serviço Distribuída (DDoS) ou participação em botnets",
+          "prohibited3": "Consumo excessivo de recursos que afete outros usuários (por exemplo, fork bombs, ataques de esgotamento de memória)",
+          "prohibited4": "Execução de serviços que aceitem conexões de entrada não solicitadas da internet pública para fins que não sejam desenvolvimento legítimo, testes ou operações autorizadas"
+        }
+      },
+      "subscription": {
+        "title": "2. Assinatura e Modelo de Slots",
+        "badge": "Termos de Cobrança",
+        "intro": "O Cyqle opera em um modelo de slots baseado em créditos, em que cada sessão ativa consome um slot. Entender como os slots funcionam é essencial para gerenciar sua conta.",
+        "slotModel": {
+          "title": "Como os Slots Funcionam",
+          "description": "A arquitetura da nossa plataforma é baseada em um sistema de \"slots\":",
+          "point1": "Um slot = uma sessão de desktop ativa em execução a qualquer dado momento",
+          "point2": "Cada plano de assinatura inclui um número específico de slots simultâneos",
+          "point3": "Quando você fecha uma sessão, o slot fica disponível para uma nova sessão"
+        },
+        "tiers": {
+          "title": "Planos de Assinatura",
+          "free": {
+            "name": "Plano Grátis:",
+            "description": "Oferece acesso limitado, com sessões de até 60 minutos, 1 vCPU, 1 GB de RAM, sem persistência, acesso à fila de baixa prioridade e acesso a snapshots públicos. A criação de snapshots não está disponível neste plano. Destinado apenas a fins de avaliação."
+          },
+          "paid": {
+            "name": "Planos Pagos (Lite, Pro e Níveis Power):",
+            "description": "Oferecem sessões com duração estendida ou ilimitada, mais recursos computacionais, armazenamento persistente com períodos de retenção, acesso à fila de alta prioridade, acesso à API, acesso a snapshots públicos e criação de snapshots (os limites variam por plano). Os créditos são consumidos com base no tempo de uso ativo."
+          }
+        },
+        "billing": {
+          "title": "Modelos de Cobrança",
+          "description": "Oferecemos duas opções de cobrança para assinaturas pagas. Assinatura Mensal: Pague um valor fixo mensal com uma alocação de créditos inclusa, renovada a cada período de cobrança. Medida (Pague conforme o uso): Pague apenas pelo tempo de uso real, sem cobranças recorrentes — compre créditos conforme necessário e os créditos são deduzidos por minuto de execução da sessão. Em ambos os modelos, 1 crédito equivale a 10 horas (600 minutos) de uso na taxa do plano. Você pode fazer upgrade, downgrade ou cancelar sua assinatura a qualquer momento pelo painel da sua conta."
+        }
+      },
+      "acceptableUse": {
+        "title": "3. Política de Uso Aceitável",
+        "badge": "Requisitos Críticos",
+        "intro": "Você concorda em usar o Cyqle apenas para fins lícitos e de acordo com estes Termos. As seguintes atividades são estritamente proibidas:",
+        "prohibited": {
+          "title": "Atividades Proibidas",
+          "item1": "Atividades Ilegais: Usar o Cyqle para praticar, promover ou facilitar qualquer atividade ilegal sob a legislação local, estadual, nacional ou internacional aplicável",
+          "item2": "Burla de Segurança: Tentar burlar, contornar ou desativar quaisquer medidas de segurança, controles de acesso ou limites de uso implementados pela Cyqle",
+          "item3": "Acesso Não Autorizado: Tentar obter acesso não autorizado a sessões ou dados de outros usuários, ou à infraestrutura subjacente da Cyqle",
+          "item4": "Software Malicioso: Enviar, distribuir ou executar malware, vírus, ransomware ou qualquer código destinado a prejudicar terceiros",
+          "item5": "Assédio e Abuso: Usar a plataforma para assediar, ameaçar, difamar ou abusar de terceiros",
+          "item6": "Abuso de Scraping e Automação: Usar o Cyqle para extrair dados (scraping) de sites ou serviços de terceiros em violação aos seus termos de serviço ou sem autorização",
+          "item7": "Revenda de Serviços: Revender, sublicenciar ou de outra forma comercializar o acesso ao Cyqle sem nosso consentimento prévio por escrito",
+          "item8": "Abuso de Recursos: Sobrecarregar deliberadamente nossa infraestrutura ou tentar degradar a qualidade do serviço para outros usuários"
+        },
+        "enforcement": {
+          "title": "Aplicação",
+          "description": "Reservamo-nos o direito de investigar quaisquer suspeitas de violação desta Política de Uso Aceitável. Ao detectarmos atividades proibidas, poderemos suspender ou encerrar sua conta imediatamente, sem aviso prévio e sem reembolso. Violações graves poderão ser reportadas às autoridades competentes."
+        }
+      },
+      "liability": {
+        "title": "4. Limitação de Responsabilidade",
+        "badge": "Proteção Legal",
+        "disclaimer": {
+          "title": "Isenção de Garantias",
+          "warning": "Aviso Importante",
+          "description": "O CYQLE É FORNECIDO \"NO ESTADO EM QUE SE ENCONTRA\" E \"CONFORME A DISPONIBILIDADE\", SEM GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS, INCLUINDO, MAS NÃO SE LIMITANDO A, GARANTIAS IMPLÍCITAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA E NÃO VIOLAÇÃO. A Cyqle não garante que o serviço será ininterrupto, livre de erros ou seguro, nem que defeitos serão corrigidos. Você reconhece que usa o Cyqle por sua própria conta e risco."
+        },
+        "limitationAmount": {
+          "title": "Valor da Limitação de Responsabilidade",
+          "description": "NA MÁXIMA EXTENSÃO PERMITIDA PELA LEI APLICÁVEL, EM NENHUMA HIPÓTESE A CYQLE, SEUS DIRETORES, ADMINISTRADORES, FUNCIONÁRIOS, AGENTES OU AFILIADAS SERÃO RESPONSÁVEIS PERANTE VOCÊ POR QUAISQUER DANOS INDIRETOS, INCIDENTAIS, ESPECIAIS, CONSEQUENCIAIS OU PUNITIVOS, INCLUINDO, MAS NÃO SE LIMITANDO A, PERDA DE LUCROS, DADOS, USO, FUNDO DE COMÉRCIO OU OUTRAS PERDAS INTANGÍVEIS, DECORRENTES DE OU RELACIONADOS AO SEU USO DO CYQLE. Nossa responsabilidade total perante você por quaisquer reivindicações decorrentes destes Termos ou do seu uso do Cyqle, ou a eles relacionadas, não excederá o valor total pago por você à Cyqle nos doze (12) meses imediatamente anteriores ao evento que der origem à responsabilidade. Para usuários do plano gratuito, nossa responsabilidade não excederá US$ 100."
+        },
+        "thirdParty": {
+          "title": "Código de Terceiros e Conteúdo do Usuário",
+          "description": "Você é o único responsável por qualquer código, software, script ou conteúdo que executar, enviar ou rodar dentro do seu ambiente Cyqle. A Cyqle não se responsabiliza por quaisquer danos, perdas ou consequências legais decorrentes de código de terceiros, incluindo bibliotecas de código aberto, scripts gerados por usuários ou qualquer software que você optar por instalar. Você indeniza e isenta a Cyqle de quaisquer reivindicações decorrentes do seu uso de software ou conteúdo de terceiros em nossa plataforma."
+        }
+      },
+      "intellectualProperty": {
+        "title": "5. Direitos de Propriedade Intelectual",
+        "badge": "Titularidade",
+        "intro": "A titularidade da propriedade intelectual é claramente dividida entre a tecnologia da plataforma da Cyqle e o conteúdo gerado por você.",
+        "cyqleOwnership": {
+          "title": "Titularidade da Cyqle",
+          "description": "A Cyqle retém todos os direitos, títulos e interesses sobre o seguinte:",
+          "item1": "A plataforma Cyqle, incluindo todo o software, APIs, interfaces e documentação",
+          "item2": "Nossa implementação proprietária de libp2p e tecnologia de orquestração peer-to-peer",
+          "item3": "Todas as marcas registradas, logotipos e materiais de marca associados à Cyqle",
+          "item4": "Quaisquer melhorias, aprimoramentos ou derivados da plataforma realizados pela Cyqle"
+        },
+        "userOwnership": {
+          "title": "Sua Titularidade",
+          "description": "Você retém todos os direitos de propriedade intelectual sobre o conteúdo, dados, código, arquivos e quaisquer outros materiais que criar, enviar ou gerar em suas sessões do Cyqle. A Cyqle não reivindica nenhum direito de titularidade sobre o conteúdo gerado por você. Você concede à Cyqle uma licença limitada e não exclusiva para hospedar, armazenar e transmitir seu conteúdo somente na medida necessária para fornecer o serviço a você."
+        },
+        "dataRetention": {
+          "title": "Retenção e Exclusão de Dados",
+          "description": "Por padrão, todas as sessões são efêmeras — os dados são excluídos permanentemente no encerramento da sessão e não podem ser recuperados. Os planos pagos (Lite, Pro, Power) incluem a opção de ativar a persistência. Quando você opta por persistir uma sessão, seus dados são retidos em armazenamento seguro de acordo com o período de retenção e os limites de armazenamento do seu plano de assinatura. As sessões do plano gratuito são sempre efêmeras, sem opção de persistência. Após o término do período de retenção, ou no encerramento da conta, todos os dados persistentes são excluídos permanentemente. A Cyqle não se responsabiliza por perda de dados decorrente de exclusões realizadas de acordo com estas políticas."
+        }
+      },
+      "termination": {
+        "title": "6. Rescisão",
+        "badge": "Encerramento de Conta",
+        "intro": "Qualquer das partes pode rescindir este contrato nas seguintes condições:",
+        "byUser": {
+          "title": "Rescisão por Você",
+          "description": "Você pode encerrar sua conta a qualquer momento acessando as configurações da conta e selecionando a opção de encerramento. Após o encerramento, seu acesso ao Cyqle cessará imediatamente. Quaisquer créditos não utilizados ou taxas de assinatura pré-pagas não são reembolsáveis, exceto quando exigido por lei."
+        },
+        "byCyqle": {
+          "title": "Rescisão pela Cyqle",
+          "description": "Reservamo-nos o direito de suspender ou encerrar sua conta imediatamente, sem aviso prévio, se você violar estes Termos, praticar atividades proibidas sob nossa Política de Uso Aceitável, deixar de pagar taxas devidas ou se determinarmos que seu uso do serviço representa um risco de segurança para nossa plataforma ou para outros usuários. Também podemos encerrar ou descontinuar o serviço integralmente mediante aviso prévio de 30 dias."
+        },
+        "effect": {
+          "title": "Efeitos da Rescisão",
+          "description": "Após o encerramento da sua conta, todos os dados armazenados em suas sessões serão excluídos de acordo com nossa política de retenção de dados. As seções destes Termos que, por sua natureza, devam subsistir à rescisão (incluindo Propriedade Intelectual, Limitação de Responsabilidade e Indenização) permanecerão em vigor após a rescisão."
+        }
+      },
+      "changes": {
+        "title": "7. Alterações nestes Termos",
+        "description": "Reservamo-nos o direito de modificar estes Termos a qualquer momento. Notificaremos você sobre alterações relevantes publicando um aviso em nosso site ou enviando um e-mail. Seu uso continuado do Cyqle após tais modificações constitui sua aceitação dos Termos atualizados. Se você não concordar com os Termos modificados, deverá parar de usar o Cyqle e poderá encerrar sua conta."
+      }
+    },
+    "contact": {
+      "title": "Dúvidas ou Preocupações?",
+      "description": "Se você tiver qualquer dúvida sobre estes Termos de Serviço, entre em contato conosco:",
+      "email": "legal@cyqle.in"
+    }
+  }
+}

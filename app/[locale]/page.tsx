@@ -25,7 +25,7 @@ import PricingSection from '@/components/pricing-section';
 import TrackedLink from '@/components/tracked-link';
 import TrackedButton from '@/components/tracked-button';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { getSEOAlternates, type SiteLocale } from '@/lib/site-metadata';
+import { getSEOAlternates, siteMetadata, type SiteLocale } from '@/lib/site-metadata';
 
 type Props = {
   params: { locale: string };
@@ -395,5 +395,5 @@ export default async function Home({ params: { locale } }: Props) {
 
 // Generate static params for each locale
 export async function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'es' }];
+  return siteMetadata.locales.map((locale) => ({ locale }));
 }

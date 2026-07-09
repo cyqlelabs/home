@@ -9,7 +9,8 @@
     "pricing": "Precios",
     "api": "API",
     "about": "Nosotros",
-    "tryForFree": "Probar gratis"
+    "tryForFree": "Probar gratis",
+    "changeLanguage": "Cambiar idioma"
   },
   "hero": {
     "title": "Un Escritorio Cloud que Podés Compartir de Verdad",
@@ -268,6 +269,8 @@
     "cookies": "Cookies"
   },
   "apiDocsPage": {
+    "metaTitle": "API de Cyqle — Un Escritorio Programable para Agentes de IA",
+    "metaDescription": "Crea escritorios Linux, controla ventanas del navegador y del sistema, ejecuta código, captura pantallas y persiste estado — las primitivas REST que tus agentes de IA necesitan para operar software real.",
     "hero": {
       "badge": "API REST",
       "title": "Tu agente, adentro de una computadora de verdad.",
@@ -348,6 +351,8 @@
     }
   },
   "aboutPage": {
+    "metaTitle": "Acerca de Cyqle: Escritorio Cloud Multijugador",
+    "metaDescription": "Cyqle es un escritorio cloud P2P donde varias personas trabajan en la misma máquina simultáneamente. Cada usuario tiene su propio cursor y teclado. Arranca en segundos, colaborá en tiempo real.",
     "hero": {
       "title": "Un Escritorio Cloud Multijugador",
       "subtitle": "Misma máquina. Múltiples teclados. Todos manejan."

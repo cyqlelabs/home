@@ -1,0 +1,973 @@
+{
+  "metadata": {
+    "title": "P2P 云桌面，让团队即时协作",
+    "description": "一台可持久保存的云端电脑，让团队即时协作。借助 AI 驱动的工作流一起构建、测试与自动化。立即免费试用。"
+  },
+  "navbar": {
+    "features": "功能特性",
+    "useCases": "使用场景",
+    "pricing": "价格",
+    "api": "API",
+    "about": "关于我们",
+    "tryForFree": "免费试用",
+    "changeLanguage": "切换语言"
+  },
+  "hero": {
+    "title": "一个真正可以共享的云桌面",
+    "titlePhrase1": "你的云桌面",
+    "titlePhrase2": "你的共享工作空间",
+    "titlePhrase3": "你团队的专属电脑",
+    "description": "几秒钟启动一个完整的云桌面。邀请团队加入。人人都能上手操作。",
+    "getStarted": "立即开始",
+    "trialInfo": "提供免费套餐，无需信用卡。",
+    "powerOnLabel": "立即开机——完全免费",
+    "moreInfo": "了解更多"
+  },
+  "features": {
+    "title": "完整桌面体验，焕然一新",
+    "multiplayerDesktop": {
+      "title": "真正的多人桌面",
+      "description": "**多光标、多键盘**，实时操控。每位成员都能通过 **P2P 串流**同时操作同一个桌面。**内置视频通话**、**即时文件传送**、共享会话——再也不用问“你能看到我的屏幕吗？”"
+    },
+    "ephemeralEnvironments": {
+      "title": "即开即用的临时环境",
+      "description": "几秒内启动配置好的桌面。默认**临时**存在，需要时可持久保存，也可从**快照**克隆。**固定**你的常用配置，让它保持**预热**状态、零冷启动；或**暂停**会话将其原地冻结，回来时从上次的进度无缝继续。"
+    },
+    "unrestrictedAccess": {
+      "title": "无限制的访问与控制",
+      "description": "**完整 root 权限**，想装什么装什么。**可编程 API**，自动化一切。这是你的机器——随心配置、随手写脚本、完全由你掌控。"
+    },
+    "workflowAutomation": {
+      "title": "AI 工作流自动化",
+      "description": "浏览器工作流只需录制一次，即可无限次回放。把重复的网页任务交给 **AI 智能体**，让你专注于真正重要的事。"
+    },
+    "zeroKnowledgeSecurity": {
+      "title": "零知识安全",
+      "description": "你的文件系统使用独立的会话密钥进行**加密**。关闭临时会话后，数据会被**以加密方式彻底销毁**——就算我们想恢复也无能为力。"
+    },
+    "mobileAccess": {
+      "title": "原生移动体验",
+      "description": "在手机或平板上完整访问你的桌面，支持**原生触控手势**——**捏合缩放窗口、拖动移动窗口、轻扫导航**。在通勤路上修 Bug、在会议中审代码、在故障时查日志。强大的桌面，为你的指尖而生。"
+    }
+  },
+  "useCases": {
+    "title": "每一种工作流，都有属于你的工作空间",
+    "engineering": {
+      "title": "一起构建，一起调试",
+      "description": "在持久化的云端环境中结对编程。在共享沙箱里复现 Bug，一键把开发者拉进你的会话，即刻开始调试。"
+    },
+    "aiAgents": {
+      "title": "AI 智能体工作空间",
+      "description": "让你的智能体驱动一个真实的 Linux 桌面。快照一次、克隆多份并行运行——当智能体需要帮助时，真人可以随时加入同一个会话。"
+    },
+    "customerSupport": {
+      "title": "协作式客户支持",
+      "description": "别只是告诉客户怎么做——直接演示给他们看。启动共享会话，自动化复杂的网页引导流程，或实时带领用户解决问题。"
+    },
+    "operations": {
+      "title": "安全运维",
+      "description": "通过安全、隔离的云桌面访问内部工具和仪表盘，无需暴露本地网络。"
+    },
+    "admin": {
+      "title": "虚拟办公室",
+      "description": "在共享桌面上协作处理表格、文档和行政事务。通话时多人同时操作多个窗口。"
+    }
+  },
+  "aiSection": {
+    "title": "让工作自动运转",
+    "description": "Cyqle 不只是一个桌面，更是一个自动化平台。录制工作流、定时执行任务，把琐事都交给智能体。",
+    "items": [
+      "录制浏览器操作，随时回放",
+      "把重复的网页任务委派给智能体",
+      "安排工作流在后台定时运行",
+      "维护团队共享的自动化库",
+      "与你现有的工具无缝配合"
+    ],
+    "exploreFeatures": "免费试用"
+  },
+  "apiTeaser": {
+    "eyebrow": "面向 AI 智能体的 REST API",
+    "title": "一个 POST，一台真实的电脑。",
+    "description": "每个 Cyqle 桌面都是一个 REST 端点。完成认证、启动会话、驱动操作、创建快照、关机下线，一切都通过 HTTP 完成。",
+    "bullets": [
+      "Bearer token 认证。OpenAPI 3.0 规范，可干净地映射到任何客户端。",
+      "把窗口、shell、浏览器、文件与截图当作原语直接驱动。",
+      "为配置好的桌面创建快照，克隆数千个实例，支撑智能体并行运行。"
+    ],
+    "codeLabel": "启动一个会话",
+    "cta": "查看 API 文档"
+  },
+  "cta": {
+    "title": "一个链接，一个桌面，整个团队同屏协作。",
+    "description": "一个邀请链接，10 秒内团队所有人进入同一个桌面，人手一个光标。",
+    "startTrial": "立即开始",
+    "trialInfo": "60 分钟免费会话，无需信用卡。"
+  },
+  "pricing": {
+    "title": "价格，随你的团队一起成长",
+    "descriptionMonthly": "免费起步。包月方案每桌面 $6/月起。",
+    "descriptionPayAsYouGo": "免费起步。按量付费低至 $0.20/积分——不到一杯咖啡的价格，畅享 10 小时云桌面。",
+    "monthly": "/月",
+    "credit": "/积分",
+    "monthlyLabel": "包月",
+    "payAsYouGoLabel": "按量付费",
+    "popular": "最受欢迎",
+    "billingLegend": "按实际用量每日计费",
+    "perDesktop": "每桌面",
+    "plans": {
+      "free": {
+        "name": "免费",
+        "price": "$0.00",
+        "unit": "",
+        "description": "适合快速上手体验。",
+        "features": {
+          "time": "单次会话上限 60 分钟",
+          "specs": "1 vCPU / 1 GB RAM",
+          "bandwidth": "带宽最高 10mb/s",
+          "priority": "低优先级队列",
+          "persistence": "不支持持久化",
+          "snapshots": "公共快照"
+        },
+        "cta": "免费试用"
+      },
+      "lite": {
+        "name": "Lite",
+        "price": "$0.20",
+        "unit": "/积分",
+        "description": "适合个人开发者。",
+        "features": {
+          "time": "会话时长不限",
+          "specs": "1 vCPU / 2 GB RAM",
+          "bandwidth": "100mb/s 带宽",
+          "priority": "标准优先级",
+          "persistence": "20 GB 持久化存储",
+          "snapshots": "支持创建快照",
+          "api": "API 访问权限",
+          "browserAgent": "自研浏览器智能体"
+        },
+        "cta": "立即开始"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$0.40",
+        "unit": "/积分",
+        "description": "为严肃工作而生。",
+        "features": {
+          "time": "会话时长不限",
+          "specs": "2 vCPU / 4 GB RAM",
+          "bandwidth": "150mb/s 带宽",
+          "priority": "高优先级队列",
+          "persistence": "40 GB 持久化存储",
+          "snapshots": "支持创建快照",
+          "api": "API 访问权限",
+          "browserAgent": "自研浏览器智能体"
+        },
+        "cta": "升级到 Pro"
+      }
+    },
+    "powerTiers": {
+      "title": "性能档位",
+      "description": "为高负载任务扩展你的资源。",
+      "table": {
+        "tier": "档位",
+        "specs": "配置",
+        "multiplier": "倍率"
+      },
+      "tiers": {
+        "standard": {
+          "name": "Standard",
+          "specs": "2 vCPU / 4GB RAM",
+          "multiplier": "1x",
+          "persistence": "40 GB 持久化存储",
+          "bandwidth": "150mb/s 带宽"
+        },
+        "turbo": {
+          "name": "Turbo",
+          "specs": "4 vCPU / 8GB RAM",
+          "multiplier": "2x",
+          "persistence": "60 GB 持久化存储",
+          "bandwidth": "200mb/s 带宽"
+        },
+        "max": {
+          "name": "Max",
+          "specs": "8 vCPU / 16GB RAM",
+          "multiplier": "4x",
+          "persistence": "120 GB 持久化存储",
+          "bandwidth": "300mb/s 带宽"
+        }
+      }
+    },
+    "creditEqualsHours": "1 积分 = 10 小时桌面使用时长",
+    "customQuote": {
+      "heading": "需要更多席位？",
+      "description": "获取为你的团队规模量身定制的批量价格。",
+      "cta": "申请报价",
+      "dialogTitle": "获取专属报价",
+      "dialogDescription": "告诉我们你的团队情况，我们会为你准备量身定制的价格方案。",
+      "seatsLabel": "你需要多少个席位？",
+      "seatsPlaceholder": "例如 10",
+      "emailLabel": "你的工作邮箱",
+      "emailPlaceholder": "you@company.com",
+      "submit": "提交申请",
+      "sending": "发送中…",
+      "successTitle": "报价申请已提交！",
+      "successDescription": "我们会尽快带着专属价格方案与你联系。",
+      "errorMessage": "出了点问题，请重试。",
+      "close": "关闭"
+    }
+  },
+  "howItWorks": {
+    "title": "几秒之内，启动就绪",
+    "step1": {
+      "title": "启动",
+      "description": "点击即启动。几秒钟后，完整的 Linux 桌面就在你的浏览器中运行。无需安装，无需配置。"
+    },
+    "step2": {
+      "title": "邀请",
+      "description": "分享一个链接，整个团队即刻加入——每个人都有自己的光标和键盘。"
+    },
+    "step3": {
+      "title": "协同工作",
+      "description": "在同一个桌面上同时输入、点击和浏览。一起修 Bug，更快交付。"
+    }
+  },
+  "footer": {
+    "description": "面向多人协作与 AI 自动化的 P2P 云桌面。",
+    "product": {
+      "title": "产品",
+      "features": "功能特性",
+      "useCases": "使用场景",
+      "pricing": "价格",
+      "integrations": "集成",
+      "roadmap": "路线图"
+    },
+    "resources": {
+      "title": "资源",
+      "documentation": "文档",
+      "blog": "博客",
+      "community": "社区",
+      "support": "支持",
+      "api": "API"
+    },
+    "company": {
+      "title": "公司",
+      "about": "关于我们",
+      "careers": "加入我们",
+      "contact": "联系我们",
+      "privacy": "隐私",
+      "terms": "条款"
+    },
+    "helpSupport": {
+      "title": "帮助与支持",
+      "apiDocs": "API 文档",
+      "contact": "联系支持"
+    },
+    "copyright": "© {year} Cyqle. 保留所有权利。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "cookies": "Cookie"
+  },
+  "apiDocsPage": {
+    "metaTitle": "Cyqle API——为 AI 智能体打造的可编程桌面",
+    "metaDescription": "秒级启动 Linux 桌面，驱动浏览器与桌面窗口，执行代码、截取屏幕、持久保存状态——为 AI 智能体操作真实软件提供所需的 REST 原语。",
+    "hero": {
+      "badge": "REST API",
+      "title": "让你的智能体，住进一台真实的电脑。",
+      "description": "别再层层包装 SDK 了。通过 HTTP 启动一个 Linux 桌面，像人一样操作它：点击、输入、打开文件、运行命令。",
+      "agentNote": "大多数智能体只是调用工具，Cyqle 的智能体则真正入驻一台机器。一个 POST 即可生成一个沙箱化桌面，你的智能体可以随意驱动、交接、快照或丢弃。整个过程完全不触及你的笔记本电脑。",
+      "footnote": "下方每个端点都实时可用。在浏览器里试一试，复制 curl 直接用。"
+    },
+    "capabilities": {
+      "heading": "智能体能做什么",
+      "items": [
+        {
+          "title": "一次调用，启动一个桌面",
+          "description": "只需一个 POST，几秒内获得全新的 Linux 会话。默认临时存在，需要时也可持久保存。"
+        },
+        {
+          "title": "像人一样操作窗口",
+          "description": "列出、聚焦、缩放、关闭桌面上的任意窗口。你的智能体不再被困在一个标签页里，而是掌控整块屏幕。"
+        },
+        {
+          "title": "在关键位置运行代码",
+          "description": "向任意页面注入 JavaScript、执行 shell 命令、跳转 URL、操作 DOM。智能体来写，操作系统来执行。"
+        },
+        {
+          "title": "看见智能体所见",
+          "description": "将全屏或区域截图直接送入你的视觉模型，无需任何第三方截屏服务。"
+        },
+        {
+          "title": "通过 HTTP 传输文件",
+          "description": "在你的后端与会话之间上传输入、流式获取输出。不用 SFTP，不用 rsync，不用隧道。"
+        },
+        {
+          "title": "快照一次，克隆千份",
+          "description": "冻结配置好的桌面，生成预热的克隆实例供智能体并行运行，彻底跳过冷启动。"
+        },
+        {
+          "title": "把智能体串联起来",
+          "description": "关联多个会话，让智能体之间交接工作、共享文件，或互相观察对方的操作。构建拥有真实共享上下文的多智能体流水线。"
+        },
+        {
+          "title": "向你的用户计费，而不只是向我们付费",
+          "description": "通过 API 读取 token 成本与订阅状态，把智能体用量接入你自己的定价体系，无需自建计量系统。"
+        }
+      ]
+    },
+    "iframe": {
+      "title": "Cyqle API — OpenAPI / Swagger UI",
+      "ariaLabel": "Cyqle API 文档"
+    },
+    "a11y": {
+      "skipIframe": "跳过内嵌的 API 文档",
+      "iframeSectionHeading": "交互式 API 参考",
+      "endOfIframe": "内嵌 API 文档到此结束。",
+      "openInNewTab": "在新标签页中打开 API 文档",
+      "newTabSuffix": "（在新标签页中打开）",
+      "fallback": {
+        "text": "下方的内嵌文档无法正常显示？"
+      }
+    },
+    "meta": {
+      "baseUrl": "基础 URL",
+      "auth": "认证",
+      "authValue": "Bearer token",
+      "spec": "规范",
+      "specValue": "OpenAPI 3.0"
+    },
+    "handoff": {
+      "eyebrow": "参考文档",
+      "title": "完整 API，就在下方实时运行。",
+      "subtitle": "完成认证、调用任意端点、实时查看会话响应——全部在本页完成。"
+    },
+    "backToTop": "返回顶部",
+    "endCta": {
+      "eyebrow": "准备好开始构建了吗？",
+      "title": "给你的智能体一台电脑。",
+      "description": "一分钟内拿到 API 密钥，首个会话由我们买单。",
+      "primary": "开始构建",
+      "secondary": "返回功能一览"
+    }
+  },
+  "aboutPage": {
+    "metaTitle": "关于 Cyqle：多人协作云桌面",
+    "metaDescription": "Cyqle 是一款 P2P 云桌面，多人可同时在同一台机器上工作，每位用户拥有自己的光标和键盘。数秒启动，实时协作。",
+    "hero": {
+      "title": "一个多人协作的云桌面",
+      "subtitle": "同一台机器，多副键盘，人人都能操作。"
+    },
+    "problem": {
+      "badge": "问题所在",
+      "title": "远程办公，仍然要轮流上场",
+      "intro": "屏幕共享是一个人操作、一群人围观。那不叫协作。",
+      "scenario1": "在别人的屏幕共享里，你碰不到代码，只能看着并口述该敲什么。",
+      "scenario2": "本地环境会坏、会漂移，还没办法用一个链接分享出去。",
+      "scenario3": "你的团队有 10 台笔记本电脑，却没有一台可以一起干活的共享机器。",
+      "truth": "操作系统生来只为一个人服务。我们造了一个为多人而生的。",
+      "solution": "这就是 Cyqle。"
+    },
+    "story": {
+      "badge": "背景故事",
+      "title": "我们如何走到今天",
+      "year2017": "我们从浏览器自动化起步。它很有用，但只解决了问题的一部分。",
+      "pivot": "真正的瓶颈是操作系统本身——它为单一用户而设计。",
+      "year2025": "屏幕共享只是架在单人架构之上的补丁，所以它才如此难用。",
+      "realization": "于是我们基于 P2P 重建了桌面。没有主持人与访客之分——只有在同一台机器上平等协作的用户。",
+      "present": "Cyqle 是一台把协作作为核心原语的云端电脑。"
+    },
+    "solution": {
+      "badge": "它是什么",
+      "title": "一个实时共享的完整 Linux 桌面",
+      "paragraph1": "Cyqle 是运行在云端的真实 Linux 环境。多人同时工作，每个人都有自己的光标和键盘输入。",
+      "paragraph2": "不是屏幕共享，也不是你独自 SSH 登录的虚拟机，而是一台几秒即可启动的多人电脑——一起工作，用完即关，或按需保留。",
+      "realityCheck": "从此告别：",
+      "painPoints": [
+        "“你能看到我的屏幕吗？”——大家本来就在同一个屏幕里",
+        "在聊天里描述 Bug——直接把人拉进来看",
+        "“在我机器上是好的”——那就用同一台机器",
+        "反复重建演示环境——快照一次，随取随用",
+        "为简单任务写脚本——录制一遍，随时回放"
+      ]
+    },
+    "difference": {
+      "badge": "技术揭秘",
+      "title": "我们必须攻克的难题",
+      "intro": "实时云桌面意味着要解决一系列硬核问题：",
+      "challenges": [
+        "低延迟 P2P 串流（无中心中继）",
+        "系统级多光标输入注入",
+        "可加密擦除的临时存储",
+        "5 秒以内的启动速度",
+        "媲美原生性能的浏览器访问体验"
+      ],
+      "conclusion": "复杂的基础设施，藏在简单的体验背后。"
+    },
+    "forWhom": {
+      "badge": "使用场景",
+      "title": "为这样的团队而生：",
+      "items": [
+        "一起调试，而不是轮流操作",
+        "需要用完即弃的问题复现环境",
+        "以实操而非文档的方式带新工程师上手",
+        "想跑浏览器自动化，又不想背基础设施包袱",
+        "需要为 AI 智能体提供安全沙箱",
+        "想要 root 权限，又不想拿本地机器冒险"
+      ]
+    },
+    "vision": {
+      "badge": "未来规划",
+      "title": "我们的方向",
+      "intro": "我们正在朝这些目标构建：",
+      "future": [
+        "随开随弃的临时环境",
+        "在你的桌面里工作的 AI 智能体，而不只是待在聊天框里",
+        "任意设备上的完整桌面体验，包括支持原生触控的移动端",
+        "多人协作是默认能力，而非附加功能"
+      ]
+    },
+    "cta": {
+      "title": "来试试",
+      "description": "免费套餐，无需信用卡。启动一个会话，邀请一位队友。",
+      "button": "免费试用 Cyqle"
+    }
+  },
+  "privacyPolicy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新",
+    "effectiveDate": "2026年1月14日",
+    "introduction": "在 Cyqle，我们致力于保护您的隐私，并就我们如何收集、使用和保护您的数据提供透明的信息。本隐私政策符合 2026 年各项隐私法规，包括 GDPR、CCPA 以及欧盟《人工智能法案》。",
+    "privacy3Banner": "符合 Privacy 3.0 标准——完全透明与用户自主控制",
+    "quickOverview": {
+      "title": "隐私速览",
+      "ephemeral": {
+        "title": "默认临时",
+        "description": "除非您启用持久化，会话数据将在您关闭会话时被立即清除"
+      },
+      "aiTransparency": {
+        "title": "AI 信息披露",
+        "description": "我们会明确披露 AI 系统的使用场景及其工作方式"
+      },
+      "p2p": {
+        "title": "P2P 架构",
+        "description": "您的数据可能经由对等节点传输，并受标准合同条款保护"
+      },
+      "rights": {
+        "title": "您的权利",
+        "description": "依据 GDPR/CCPA，您享有完整的访问、删除、可携带及反对权利"
+      }
+    },
+    "sections": {
+      "dataCollection": {
+        "title": "1. 数据收集与法律依据",
+        "badge": "Privacy 3.0 透明度",
+        "intro": "我们将数据分为两大主要类别：账户数据（为计费和账户管理所必需）与会话数据（在您的虚拟桌面环境中产生的临时数据）。",
+        "accountData": {
+          "title": "账户数据（持久保存）",
+          "description": "为管理您的账户并提供计费服务，我们收集并存储以下信息：",
+          "item1": "电子邮箱地址（用于身份验证和沟通联络）",
+          "item2": "支付信息（通过 Stripe 安全处理——我们不存储完整的信用卡号）",
+          "item3": "账户偏好设置及订阅档位选择",
+          "item4": "用于开具账单的计费历史与使用日志",
+          "legalBasis": "法律依据：履行合同所必需——该等数据为履行我们与您之间提供 Cyqle 服务的合同所必需。"
+        },
+        "sessionData": {
+          "title": "会话数据（临时）",
+          "description": "在您使用虚拟桌面会话期间产生的数据。由于我们采用隔离环境架构，此类数据本质上是临时的：",
+          "item1": "在会话的隔离文件系统中创建的文件、文档和代码",
+          "item2": "已安装的软件包及系统配置变更",
+          "item3": "进程元数据（运行中的应用程序、资源消耗情况）",
+          "item4": "源自您会话的网络活动（仅用于安全监控）",
+          "legalBasis": "法律依据：履行合同所必需——处理会话数据是为您提供隔离且功能完整的虚拟桌面环境所必需的。",
+          "ephemeralNote": "重要提示：临时会话中的会话数据使用每会话唯一的密钥加密，并在会话终止时以加密方式彻底擦除。该等数据在删除后无法恢复。",
+          "noAccessNote": "关键隐私保证：Cyqle 无法访问或干预您隔离会话内部的任何内容。我们无法读取您的文件、访问您的数据或监控您在会话中的活动。我们可能收集的唯一运营数据是匿名化日志（会话时长、资源使用情况），且仅在您明确许可的情况下（如提交错误报告、请求支持时）收集。"
+        },
+        "technicalData": {
+          "title": "技术与诊断数据",
+          "description": "我们收集有限的技术数据，以维护平台的稳定性与安全性：",
+          "item1": "IP 地址（24 小时后进行哈希处理，用于欺诈防范）",
+          "item2": "浏览器类型和操作系统（用于兼容性诊断）",
+          "item3": "会话起止时间戳及资源使用指标（用于容量规划）",
+          "legalBasis": "法律依据：正当利益——我们在维护平台安全、防范欺诈及优化服务性能方面具有正当利益。"
+        }
+      },
+      "aiTransparency": {
+        "title": "2. AI 透明度（符合欧盟《人工智能法案》）",
+        "badge": "AI 信息披露",
+        "intro": "Cyqle 集成了 AI 驱动的功能以提升您的工作效率。根据 2026 年欧盟《人工智能法案》，当您与 AI 系统交互或受其影响时，我们有义务进行明确披露。",
+        "disclosure": {
+          "title": "AI 操作员信息披露",
+          "description": "当您使用 Cyqle 的自动化功能（浏览器录制、任务委派、工作流调度）时，您可能会与我们的“AI 操作员”交互——这是一个旨在代表您执行重复性网页任务的 AI 系统。"
+        },
+        "howItWorks": {
+          "title": "AI 操作员的工作原理",
+          "description": "AI 操作员通过以下逻辑为您提供协助：",
+          "item1": "模式识别：分析录制的浏览器交互，识别可执行的操作模式（点击、表单填写、导航序列）",
+          "item2": "任务执行：根据您的指令，复现这些模式以自动化重复性任务",
+          "item3": "情境自适应：借助计算机视觉与 DOM 分析，适应 Web 应用中细微的界面变化",
+          "item4": "反馈闭环：自动化操作执行前，您可以审核、批准或修改"
+        },
+        "humanOversight": {
+          "title": "人工监督与限制",
+          "description": "AI 操作员在您的直接监督下运行。它不会做出影响您的账户、计费或访问权限的自主决策。所有关键操作均需用户明确确认。未经您明确选择同意，AI 不会访问或处理您的会话数据用于训练目的。"
+        }
+      },
+      "automatedDecisions": {
+        "title": "3. 自动化决策（ADMT）",
+        "badge": "用户控制",
+        "intro": "Cyqle 使用有限的自动化决策系统，以保障平台安全和资源的公平分配。根据 2026 年 CCPA 的要求，您有权选择退出某些自动化处理。",
+        "systems": {
+          "title": "在用的自动化系统",
+          "fraud": {
+            "title": "欺诈检测：",
+            "description": "我们的系统分析账户创建模式、支付行为和 IP 信誉评分，以检测并防范欺诈性注册。误报将在 24 小时内由人工审核。"
+          },
+          "allocation": {
+            "title": "会话分配：",
+            "description": "自动负载均衡器根据当前容量、地理邻近度和订阅档位优先级，将您的会话分配至可用的基础设施节点。"
+          },
+          "abuse": {
+            "title": "滥用检测：",
+            "description": "我们监控资源消耗模式（CPU、内存、网络），以发现违反《可接受使用政策》的行为（如加密货币挖矿、DDoS 攻击）。"
+          }
+        },
+        "optOut": {
+          "title": "您的退出权与人工复核权",
+          "description": "如果自动化系统标记了您的账户或拒绝了访问，您有权申请人工复核并对该决定提出异议。您也可以选择退出某些自动化处理（关键安全功能除外）。",
+          "contact": "如需行使该权利，请发送邮件至 privacy@cyqle.in，附上您的账户邮箱，并以“ADMT Opt-Out Request”为邮件主题。"
+        }
+      },
+      "internationalTransfers": {
+        "title": "4. 国际数据传输",
+        "badge": "跨境保障措施",
+        "intro": "Cyqle 的点对点（P2P）架构意味着，在实时协作过程中，会话数据可能经由不同地理位置的节点传输。我们采取专门措施，以确保符合国际数据传输法规。",
+        "p2pNature": {
+          "title": "P2P 网状网络与数据路由",
+          "description": "当您与其他用户进行实时协作时，您的会话数据通过 libp2p 在对等节点之间直接传输。这意味着：",
+          "item1": "数据可能经由位于不同国家的中间中继节点路由",
+          "item2": "数据传输的具体路径取决于网络拓扑和对等节点的可用性",
+          "item3": "所有 P2P 连接均通过 TLS 1.3 和 WebRTC 加密实现端到端加密"
+        },
+        "safeguards": {
+          "title": "跨境传输保障措施",
+          "description": "为在国际传输过程中保护您的数据，我们实施了以下保障措施：",
+          "item1": "标准合同条款（SCCs）：所有向欧洲经济区（EEA）以外国家的数据传输均受欧盟批准的标准合同条款（2021/914）约束",
+          "item2": "传输加密：所有数据在传输过程中均采用行业标准加密协议加密",
+          "item3": "数据最小化：仅将最低限度必要的会话数据（屏幕帧、输入事件、身份验证令牌）通过 P2P 网络传输"
+        },
+        "accountability": {
+          "title": "您对数据存储位置的控制",
+          "description": "尽管我们无法保证 P2P 路由数据的确切地理路径，但您可以在账户设置中选择首选的数据中心区域，从而控制持久会话数据的存储位置（适用于 Pro 及 Power 档位用户）。"
+        }
+      },
+      "retention": {
+        "title": "5. 数据保留与删除",
+        "badge": "临时架构",
+        "intro": "Cyqle 的核心隐私特性之一，是我们隔离环境架构的临时性。以下是我们处理数据保留与删除的具体方式：",
+        "ephemeral": {
+          "title": "临时会话（默认行为）",
+          "description": "默认情况下，所有会话均为临时会话。这意味着：",
+          "item1": "会话加密：您会话的可写文件系统使用会话启动时随机生成的唯一 AES-256 密钥加密",
+          "item2": "即时删除：当您关闭会话时，加密密钥会被立即销毁，使所有会话数据在密码学意义上不可恢复",
+          "item3": "零保留：会话终止后，不保留任何会话文件、已安装软件或用户生成的内容"
+        },
+        "persistent": {
+          "title": "持久会话（可选，仅限付费档位）",
+          "description": "如果您启用了持久化（适用于 Lite、Pro 和 Power 档位），您的会话数据将按以下方式保留：",
+          "item1": "存储期限：持久化数据按您订阅档位规定的期限保留（例如 Lite 为 30 天，Pro 为 90 天）",
+          "item2": "加密存储：持久化数据存储于加密块存储中，采用通过 AWS KMS 管理的用户专属加密密钥",
+          "item3": "手动删除：您可以随时通过控制台手动删除持久会话"
+        },
+        "accountData": {
+          "title": "账户数据保留",
+          "description": "账户数据（邮箱、计费信息、使用日志）在您的账户有效期内保留，并在账户注销后额外保留 90 天，以满足财务记录保存要求。该期限届满后，所有个人标识信息将被永久删除。"
+        },
+        "deletion": {
+          "title": "您的删除权",
+          "description": "您可以随时联系 privacy@cyqle.in，请求删除您的全部个人数据。我们将在 30 天内完成您的删除请求，法律要求保留的情形除外（如税务记录、欺诈防范）。"
+        }
+      },
+      "rights": {
+        "title": "6. 您的隐私权利",
+        "badge": "GDPR 与 CCPA 权利",
+        "intro": "根据 GDPR（适用于欧洲经济区居民）和 CCPA（适用于加利福尼亚州居民），您就个人数据享有以下权利：",
+        "access": {
+          "title": "访问权",
+          "description": "您可以要求获取我们所持有的关于您的全部个人数据的副本"
+        },
+        "rectification": {
+          "title": "更正权",
+          "description": "您可以更新或更正不准确的个人信息"
+        },
+        "erasure": {
+          "title": "删除权（“被遗忘权”）",
+          "description": "您可以要求删除您的个人数据"
+        },
+        "portability": {
+          "title": "数据可携权",
+          "description": "您可以要求以机器可读的格式获取您的数据"
+        },
+        "objection": {
+          "title": "反对权",
+          "description": "您可以反对某些类型的数据处理（如营销）"
+        },
+        "restriction": {
+          "title": "限制处理权",
+          "description": "您可以要求我们限制对您数据的使用方式"
+        },
+        "exercise": "如需行使上述任何权利，请发送邮件至 privacy@cyqle.in，附上您的账户邮箱并注明您希望行使的权利。我们将在 30 天内回复。"
+      },
+      "security": {
+        "title": "7. 安全措施",
+        "badge": "技术保障",
+        "intro": "我们采用业界领先的安全措施，保护您的数据免遭未经授权的访问、披露或破坏：",
+        "measures": {
+          "title": "安全控制",
+          "item1": "加密：所有数据在传输中（TLS 1.3）和静态存储时（AES-256）均已加密",
+          "item2": "隔离：每个会话运行在隔离环境中，实行严格的进程与文件系统隔离（参见 SESSION_ENVIRONMENT.md）",
+          "item3": "访问控制：基于角色的访问控制（RBAC）限制员工对生产数据的访问",
+          "item4": "安全审计：我们每年开展第三方安全审计与渗透测试",
+          "item5": "事件响应：我们设有 7×24 小时安全事件响应团队"
+        },
+        "breach": {
+          "title": "数据泄露通知",
+          "description": "如发生影响您个人信息的数据泄露事件（尽管可能性极低），我们将在 72 小时内通过电子邮件通知您，并提供泄露性质、受影响数据类别及补救措施的详细信息。"
+        }
+      },
+      "cookies": {
+        "title": "8. Cookie 与追踪技术",
+        "badge": "追踪信息披露",
+        "intro": "Cyqle 仅使用极少量的 Cookie 和追踪技术。我们不使用第三方广告追踪器，也不会将您的数据出售给数据经纪商。",
+        "essential": {
+          "title": "必要 Cookie（必需）",
+          "description": "会话身份验证令牌（httpOnly、secure、sameSite=strict）——30 天后或退出登录时失效"
+        },
+        "analytics": {
+          "title": "分析 Cookie（可选）",
+          "description": "我们使用尊重隐私的分析工具（Plausible Analytics），它不追踪个人用户，也不使用 Cookie。您可以通过浏览器的 Do Not Track（DNT）标头选择退出。"
+        }
+      },
+      "changes": {
+        "title": "9. 本隐私政策的变更",
+        "description": "我们可能不时更新本隐私政策，以反映我们的实践或法律要求的变化。对于重大变更，我们将在其生效前至少 30 天通过电子邮件通知您。更新后的政策生效后，您继续使用 Cyqle 即视为接受相关变更。"
+      }
+    },
+    "contact": {
+      "title": "对隐私有疑问或顾虑？",
+      "description": "如果您对本隐私政策有任何疑问，或希望行使您的隐私权利，请联系我们的数据保护官：",
+      "email": "privacy@cyqle.in"
+    }
+  },
+  "cookiesPolicy": {
+    "title": "Cookie 政策",
+    "lastUpdated": "最后更新",
+    "effectiveDate": "2026年1月14日",
+    "introduction": "本 Cookie 政策说明 Cyqle 如何使用 Cookie 及类似追踪技术。我们致力于保持透明，并让您对自己的隐私偏好拥有完全的控制权。",
+    "complianceBanner": "符合 2026 年要求——支持 GPC 信号与对等选择设计",
+    "quickOverview": {
+      "title": "Cookie 速览",
+      "minimal": {
+        "title": "最小化追踪",
+        "description": "我们仅使用必要 Cookie 和尊重隐私的分析工具"
+      },
+      "gpc": {
+        "title": "支持 GPC 信号",
+        "description": "我们自动遵从您浏览器发出的 Global Privacy Control 信号"
+      },
+      "choice": {
+        "title": "对等选择",
+        "description": "“接受”与“拒绝”按钮在视觉上具有同等显著性"
+      },
+      "control": {
+        "title": "完全控制",
+        "description": "您可以随时通过浏览器或我们的设置更改偏好"
+      }
+    },
+    "sections": {
+      "whatAreCookies": {
+        "title": "1. 什么是 Cookie？",
+        "badge": "定义",
+        "intro": "Cookie 是您访问网站时，网站存储在您设备上的小型文本文件。它们帮助网站记住您的偏好、改进功能并提供分析数据。",
+        "description": "Cookie 可分为“会话 Cookie”（关闭浏览器时删除）和“持久 Cookie”（保存一段设定的时间），也可分为“第一方 Cookie”（由您正在访问的网站设置）和“第三方 Cookie”（由外部服务设置）。"
+      },
+      "cookiesWeUse": {
+        "title": "2. 我们使用的 Cookie",
+        "badge": "完整清单",
+        "intro": "Cyqle 仅使用极少量的 Cookie。在本营销网站（cyqle.in）上，我们使用必要 Cookie 和可选的分析工具。在平台应用内部，我们仅使用必要的会话 Cookie。我们不使用广告 Cookie，也不会将您的数据出售给第三方。",
+        "duration": "有效期",
+        "type": "类型",
+        "essential": {
+          "title": "必要 Cookie（必需）",
+          "intro": "这些 Cookie 对网站运行必不可少，禁用它们将导致核心功能无法使用：",
+          "session": {
+            "name": "cyqle_session",
+            "purpose": "维持您的已认证会话，记住您的登录状态",
+            "duration": "30 天或直至退出登录",
+            "type": "第一方，httpOnly，secure"
+          },
+          "note": "法律依据：根据《电子隐私指令》，此类 Cookie 为提供服务所严格必需，因此免于同意要求。"
+        },
+        "analytics": {
+          "title": "分析 Cookie（可选——仅限营销网站）",
+          "intro": "在征得您同意的前提下，我们在本营销网站上使用尊重隐私的分析工具，以了解访客行为并改进内容。Cyqle 平台应用内部不使用任何分析工具：",
+          "plausible": {
+            "name": "Plausible Analytics（仅限 cyqle.in）",
+            "purpose": "在我们的营销网站上统计聚合使用数据，不识别个人用户，不使用 Cookie，也不进行跨网站追踪。平台应用内不使用该服务。",
+            "duration": "不存储 Cookie（使用 24 小时过期的本地存储）",
+            "type": "第一方，隐私优先"
+          },
+          "note": "重要提示：分析工具仅在 cyqle.in（本营销网站）上启用。当您使用 Cyqle 平台应用时，不会使用任何分析 Cookie 或追踪。您可以随时选择退出营销网站的分析。"
+        },
+        "noTracking": {
+          "title": "我们不使用的技术",
+          "item1": "不使用第三方广告 Cookie（Google Ads、Facebook Pixel 等）",
+          "item2": "不使用跨站追踪或再营销 Cookie",
+          "item3": "不使用指纹识别技术来识别用户",
+          "item4": "不向数据经纪商出售或共享数据"
+        }
+      },
+      "gpcSupport": {
+        "title": "3. Global Privacy Control（GPC）支持",
+        "badge": "2026 年合规要求",
+        "intro": "Cyqle 完全支持 Global Privacy Control（GPC）信号，符合 2026 年隐私法规的要求。",
+        "whatIsGpc": {
+          "title": "什么是 GPC？",
+          "description": "Global Privacy Control（GPC）是一项浏览器设置，可让您在访问的所有网站上自动选择退出数据共享和出售。启用后，您的浏览器会在 HTTP 标头中发送“GPC: 1”信号。"
+        },
+        "howItWorks": {
+          "title": "Cyqle 如何遵从 GPC 信号",
+          "item1": "检测到 GPC 信号时，我们会自动将其视为您在 Cookie 横幅上点击了“全部拒绝”",
+          "item2": "我们会禁用所有可选 Cookie 和分析追踪",
+          "item3": "您的 GPC 偏好在每次页面加载时都会被遵从，无需任何额外点击"
+        },
+        "enable": {
+          "title": "如何启用 GPC",
+          "description": "您可以在以下浏览器中启用 GPC：",
+          "browser1": "Brave 浏览器：设置 → Shields → Global Privacy Control",
+          "browser2": "Firefox：安装 Global Privacy Control 扩展",
+          "browser3": "Chrome/Edge：安装 Global Privacy Control 扩展"
+        }
+      },
+      "cookieBanner": {
+        "title": "4. Cookie 横幅设计（选择对称性）",
+        "badge": "同等显著性",
+        "intro": "根据 2026 年法规，Cookie 同意横幅必须让“接受”与“拒绝”选项具有同等显著性。我们的横幅符合这些要求。",
+        "symmetry": {
+          "title": "选择对称性要求",
+          "description": "我们提供的“全部接受”与“全部拒绝”按钮在视觉上具有同等显著性（相同的大小、颜色强度和位置）。任何选项都不会被预先选中，也不存在操纵您选择的设计。",
+          "exampleTitle": "Cookie 横幅示例：",
+          "exampleText": "我们使用 Cookie 来改善您的体验。您可以选择接受或拒绝可选 Cookie。",
+          "acceptButton": "✓ 全部接受",
+          "rejectButton": "✗ 全部拒绝",
+          "customizeButton": "自定义偏好"
+        },
+        "requirements": {
+          "title": "已满足的设计要求",
+          "item1": "“接受”与“拒绝”选项的按钮大小和视觉权重相同",
+          "item2": "无任何诱导性设计（例如隐藏拒绝按钮、使用令人内疚的措辞）",
+          "item3": "清楚解释每个选项的含义",
+          "item4": "可轻松进入细粒度偏好自定义"
+        }
+      },
+      "managing": {
+        "title": "5. 管理您的 Cookie 偏好",
+        "badge": "您的控制权",
+        "intro": "您对自己的 Cookie 偏好拥有完全控制权，并可随时更改。",
+        "changeMind": {
+          "title": "随时改变主意",
+          "description": "您可以随时点击我们网站页脚的“Cookie 设置”链接来更新您的 Cookie 偏好。新的偏好将立即生效。"
+        },
+        "browserSettings": {
+          "title": "浏览器级 Cookie 控制",
+          "description": "大多数浏览器允许您通过其设置管理 Cookie：",
+          "chrome": "设置 → 隐私和安全 → Cookie 及其他网站数据",
+          "firefox": "设置 → 隐私与安全 → Cookie 和网站数据",
+          "safari": "偏好设置 → 隐私 → 管理网站数据",
+          "edge": "设置 → Cookie 和网站权限 → 管理和删除 Cookie",
+          "warning": "警告：屏蔽所有 Cookie 可能导致网站的必要功能无法正常运行。"
+        },
+        "deleteCookies": {
+          "title": "删除已有 Cookie",
+          "description": "您可以随时通过浏览器设置删除 Cyqle 存储的所有 Cookie。此操作将使您退出登录并重置您的偏好。"
+        }
+      },
+      "thirdParty": {
+        "title": "6. 第三方服务",
+        "badge": "透明度",
+        "intro": "我们在营销网站上仅使用极少量可信赖的第三方服务。平台应用本身不使用任何第三方分析或追踪服务。",
+        "plausible": {
+          "title": "Plausible Analytics（仅限营销网站）",
+          "description": "我们仅在 cyqle.in（本营销网站）上使用 Plausible Analytics 进行尊重隐私的统计分析。Plausible 不使用 Cookie，不跨网站追踪用户，且完全符合 GDPR。平台应用内不使用该服务。",
+          "link": "查看 Plausible 的隐私政策 →"
+        }
+      },
+      "changes": {
+        "title": "7. 本 Cookie 政策的变更",
+        "description": "我们可能不时更新本 Cookie 政策，以反映我们的实践或法律要求的变化。对于重大变更，我们将在其生效前至少 30 天通过电子邮件或网站显著位置的通知告知您。"
+      }
+    },
+    "contact": {
+      "title": "对 Cookie 有疑问？",
+      "description": "如果您对我们使用 Cookie 的方式有疑问，或希望行使您的隐私权利，请联系我们：",
+      "email": "privacy@cyqle.in"
+    }
+  },
+  "termsOfService": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新",
+    "effectiveDate": "2026年1月14日",
+    "introduction": "欢迎使用 Cyqle。本服务条款规范您对我们云桌面环境平台的访问与使用。使用 Cyqle 即表示您同意受本条款约束。",
+    "quickSummary": {
+      "title": "要点速览",
+      "license": {
+        "title": "许可授予",
+        "description": "对隔离虚拟环境的非独占性、可撤销的访问权限"
+      },
+      "slots": {
+        "title": "槽位模式",
+        "description": "一个槽位对应一个具有既定资源限制的活跃会话"
+      },
+      "liability": {
+        "title": "有限责任",
+        "description": "我们的责任以您在过去 12 个月内支付的金额为限"
+      },
+      "conduct": {
+        "title": "可接受使用",
+        "description": "禁止违法活动、加密货币挖矿及绕过安全机制的行为"
+      }
+    },
+    "sections": {
+      "license": {
+        "title": "1. 许可与使用范围",
+        "badge": "商业条款",
+        "intro": "您对 Cyqle 的访问受以下许可条款约束，该等条款界定了您可以如何使用我们的平台。",
+        "grant": {
+          "title": "许可授予",
+          "description": "Cyqle 授予您一项有限的、非独占的、不可转让且可撤销的许可，允许您依据本条款访问和使用我们的云桌面环境（“隔离环境”）。该许可允许您：",
+          "point1": "通过我们的平台访问隔离的虚拟桌面会话",
+          "point2": "在您订阅档位的资源限制内安装和运行软件",
+          "point3": "在您套餐分配的持久化存储限额内存储数据",
+          "point4": "使用我们的 API 以编程方式管理会话（仅限付费档位）"
+        },
+        "fairUse": {
+          "title": "公平使用政策",
+          "description": "为确保平台稳定并为所有用户公平分配资源，严禁在您的虚拟桌面环境中从事以下活动：",
+          "prohibited1": "加密货币挖矿或工作量证明类计算任务",
+          "prohibited2": "分布式拒绝服务（DDoS）攻击或参与僵尸网络",
+          "prohibited3": "影响其他用户的过度资源消耗（例如 fork 炸弹、内存耗尽攻击）",
+          "prohibited4": "运行接受来自公共互联网的未经请求的入站连接的服务，正当的开发、测试或经授权的运营目的除外"
+        }
+      },
+      "subscription": {
+        "title": "2. 订阅与槽位模式",
+        "badge": "计费条款",
+        "intro": "Cyqle 采用基于积分的槽位模式，每个活跃会话占用一个槽位。理解槽位的运作方式，对管理您的账户至关重要。",
+        "slotModel": {
+          "title": "槽位如何运作",
+          "description": "我们的平台架构基于“槽位”系统：",
+          "point1": "一个槽位 = 任一时刻运行中的一个活跃桌面会话",
+          "point2": "每个订阅档位包含特定数量的并发槽位",
+          "point3": "当您关闭会话时，该槽位即可用于新的会话"
+        },
+        "tiers": {
+          "title": "订阅档位",
+          "free": {
+            "name": "免费档位：",
+            "description": "提供有限的访问权限：60 分钟会话时长限制、1 vCPU、1 GB RAM、无持久化、低优先级队列，并可访问公共快照。该档位不支持创建快照，仅供评估用途。"
+          },
+          "paid": {
+            "name": "付费档位（Lite、Pro 及 Power 档位）：",
+            "description": "提供更长或不限时的会话时长、更多计算资源、带保留期限的持久化存储、高优先级队列、API 访问权限、公共快照访问权限，以及快照创建功能（限额因档位而异）。积分按实际使用时长消耗。"
+          }
+        },
+        "billing": {
+          "title": "计费模式",
+          "description": "我们为付费订阅提供两种计费方式。包月订阅：支付固定月费，包含每个计费周期重置的积分额度。按量计费（按需付费）：仅为实际使用时长付费，无周期性费用——按需购买积分，积分按会话运行的每分钟扣除。两种模式下，1 积分均等于按档位费率计算的 10 小时（600 分钟）使用时长。您可以随时通过账户控制台升级、降级或取消订阅。"
+        }
+      },
+      "acceptableUse": {
+        "title": "3. 可接受使用政策",
+        "badge": "关键要求",
+        "intro": "您同意仅出于合法目的并依据本条款使用 Cyqle。严禁从事以下活动：",
+        "prohibited": {
+          "title": "禁止的活动",
+          "item1": "违法活动：利用 Cyqle 从事、宣扬或协助任何违反适用的地方、州、国家或国际法律的违法活动",
+          "item2": "绕过安全机制：试图绕过、规避或禁用 Cyqle 实施的任何安全措施、访问控制或使用限制",
+          "item3": "未经授权的访问：试图未经授权访问其他用户的会话、数据或 Cyqle 的底层基础设施",
+          "item4": "恶意软件：上传、分发或执行恶意软件、病毒、勒索软件或任何旨在伤害他人的代码",
+          "item5": "骚扰与侮辱：利用平台骚扰、威胁、诽谤或侮辱他人",
+          "item6": "爬取与自动化滥用：利用 Cyqle 在违反第三方网站或服务的服务条款或未经授权的情况下爬取其内容",
+          "item7": "转售服务：未经我们事先书面同意，转售、再许可或以其他方式将 Cyqle 的访问权限商业化",
+          "item8": "资源滥用：蓄意使我们的基础设施过载，或试图降低其他用户的服务质量"
+        },
+        "enforcement": {
+          "title": "执行",
+          "description": "我们保留调查任何涉嫌违反本可接受使用政策行为的权利。一经发现禁止活动，我们可立即暂停或终止您的账户，恕不另行通知且不予退款。严重违规行为可能被报告至执法机关。"
+        }
+      },
+      "liability": {
+        "title": "4. 责任限制",
+        "badge": "法律保护",
+        "disclaimer": {
+          "title": "免责声明",
+          "warning": "重要提示",
+          "description": "Cyqle 按“现状”和“现有”基础提供，不附带任何形式的明示或默示保证，包括但不限于对适销性、特定用途适用性及不侵权的默示保证。Cyqle 不保证服务不会中断、无错误、安全，亦不保证缺陷将被修复。您确认使用 Cyqle 的风险由您自行承担。"
+        },
+        "limitationAmount": {
+          "title": "责任限额",
+          "description": "在适用法律允许的最大范围内，Cyqle 及其高级职员、董事、员工、代理人或关联方在任何情况下均不就因您使用 Cyqle 引起或与之相关的任何间接性、附带性、特殊性、后果性或惩罚性损害向您承担责任，包括但不限于利润、数据、使用、商誉或其他无形损失。就因本条款或您使用 Cyqle 引起或与之相关的任何索赔，我们对您的全部责任不超过您在引发责任事件之前十二（12）个月内向 Cyqle 支付的总金额。对于免费档位用户，我们的责任不超过 100 美元。"
+        },
+        "thirdParty": {
+          "title": "第三方代码与用户内容",
+          "description": "对于您在 Cyqle 环境中运行、上传或执行的任何代码、软件、脚本或内容，您自行承担全部责任。对于因第三方代码（包括开源库、用户生成的脚本或您选择安装的任何软件）引起的任何损害、损失或法律后果，Cyqle 概不负责。对于因您在我们平台内使用第三方软件或内容而产生的任何索赔，您应赔偿 Cyqle 并使其免受损害。"
+        }
+      },
+      "intellectualProperty": {
+        "title": "5. 知识产权",
+        "badge": "权利归属",
+        "intro": "知识产权归属在 Cyqle 的平台技术与您的用户生成内容之间有明确划分。",
+        "cyqleOwnership": {
+          "title": "Cyqle 的权利",
+          "description": "Cyqle 保留对以下内容的全部权利、所有权和权益：",
+          "item1": "Cyqle 平台，包括全部软件、API、界面及文档",
+          "item2": "我们专有的 libp2p 实现及点对点编排技术",
+          "item3": "与 Cyqle 相关的全部商标、标识及品牌素材",
+          "item4": "由 Cyqle 对平台所做的任何改进、增强或衍生成果"
+        },
+        "userOwnership": {
+          "title": "您的权利",
+          "description": "您保留对您在 Cyqle 会话中创建、上传或生成的内容、数据、代码、文件及其他任何材料的全部知识产权。Cyqle 不对您的用户生成内容主张任何所有权。您授予 Cyqle 一项有限的、非独占的许可，仅限于为向您提供服务所必需而托管、存储和传输您的内容。"
+        },
+        "dataRetention": {
+          "title": "数据保留与删除",
+          "description": "默认情况下，所有会话均为临时会话——数据在会话终止时被永久删除且无法恢复。付费档位（Lite、Pro、Power）提供启用持久化的选项。当您选择持久化某个会话时，您的数据将按照您订阅档位的保留期限和存储限额保存在安全存储中。免费档位会话始终为临时会话，不提供持久化选项。保留期限届满或账户终止后，所有持久化数据将被永久删除。对于依据上述政策删除数据所造成的数据丢失，Cyqle 不承担责任。"
+        }
+      },
+      "termination": {
+        "title": "6. 终止",
+        "badge": "账户注销",
+        "intro": "任何一方均可在下列情形下终止本协议：",
+        "byUser": {
+          "title": "由您终止",
+          "description": "您可以随时通过访问账户设置并选择注销账户来终止您的账户。终止后，您对 Cyqle 的访问将立即停止。除法律另有规定外，任何未使用的积分或预付的订阅费用均不予退还。"
+        },
+        "byCyqle": {
+          "title": "由 Cyqle 终止",
+          "description": "如果您违反本条款、从事我们可接受使用政策所禁止的活动、未按期支付费用，或我们认定您对服务的使用对我们的平台或其他用户构成安全风险，我们保留立即暂停或终止您账户的权利，恕不事先通知。我们也可以在提前 30 天通知的情况下终止或完全停止服务。"
+        },
+        "effect": {
+          "title": "终止的效力",
+          "description": "您的账户终止后，会话中存储的所有数据将按照我们的数据保留政策予以删除。本条款中依其性质应在终止后继续有效的条款（包括知识产权、责任限制及赔偿条款）在终止后仍然有效。"
+        }
+      },
+      "changes": {
+        "title": "7. 本条款的变更",
+        "description": "我们保留随时修改本条款的权利。对于重大变更，我们将在网站上发布通知或向您发送电子邮件。在该等修改后您继续使用 Cyqle，即表示您接受更新后的条款。如果您不同意修改后的条款，您必须停止使用 Cyqle，并可以终止您的账户。"
+      }
+    },
+    "contact": {
+      "title": "有疑问或顾虑？",
+      "description": "如果您对本服务条款有任何疑问，请联系我们：",
+      "email": "legal@cyqle.in"
+    }
+  }
+}

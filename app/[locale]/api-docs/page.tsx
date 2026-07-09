@@ -6,7 +6,7 @@ import AnimatedSection from '@/components/animated-section';
 import ParallaxBackground from '@/components/parallax-background';
 import TrackedLink from '@/components/tracked-link';
 import { Badge } from '@/components/ui/badge';
-import { getSEOAlternates, type SiteLocale } from '@/lib/site-metadata';
+import { getSEOAlternates, localeTags, siteMetadata, type SiteLocale } from '@/lib/site-metadata';
 import {
   Bot,
   MonitorPlay,
@@ -30,17 +30,11 @@ const BASE_URL = 'https://api.cyqle.in/v1';
 
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   unstable_setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'apiDocsPage' });
   const alternates = getSEOAlternates(locale as SiteLocale, '/api-docs');
 
-  const title =
-    locale === 'en'
-      ? 'Cyqle API — A Programmable Desktop for AI Agents'
-      : 'API de Cyqle — Un Escritorio Programable para Agentes de IA';
-
-  const description =
-    locale === 'en'
-      ? 'Spin up Linux desktops, drive browser and desktop windows, execute code, capture screenshots, and persist state — the REST primitives AI agents need to operate real software.'
-      : 'Crea escritorios Linux, controla ventanas del navegador y del sistema, ejecuta código, captura pantallas y persiste estado — las primitivas REST que tus agentes de IA necesitan para operar software real.';
+  const title = t('metaTitle');
+  const description = t('metaDescription');
 
   return {
     title,
@@ -49,7 +43,7 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
       title,
       description,
       type: 'website',
-      locale: locale === 'en' ? 'en_US' : 'es_ES',
+      locale: localeTags[locale as SiteLocale].replace('-', '_'),
       url: `https://cyqle.in/${locale}/api-docs`,
       siteName: 'Cyqle',
     },
@@ -261,5 +255,5 @@ export default async function ApiDocsPage({ params: { locale } }: Props) {
 }
 
 export async function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'es' }];
+  return siteMetadata.locales.map((locale) => ({ locale }));
 }

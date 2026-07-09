@@ -6,7 +6,7 @@ import ParallaxBackground from '@/components/parallax-background';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { type Metadata } from 'next';
-import { getSEOAlternates, type SiteLocale } from '@/lib/site-metadata';
+import { getSEOAlternates, siteMetadata, type SiteLocale } from '@/lib/site-metadata';
 import {
   Shield,
   Lock,
@@ -584,5 +584,5 @@ export default async function PrivacyPolicyPage({ params: { locale } }: Props) {
 }
 
 export async function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'es' }];
+  return siteMetadata.locales.map((locale) => ({ locale }));
 }

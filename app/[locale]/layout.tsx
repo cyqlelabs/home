@@ -10,6 +10,7 @@ import { LanguageProvider } from '@/components/language-provider';
 import SchemaJsonLd from '@/components/schema-jsonld';
 import {
   formatDetection,
+  localeTags,
   robotsConfig,
   siteIcons,
   siteMetadata,
@@ -40,7 +41,7 @@ export async function generateMetadata({
   }
 
   const t = await getTranslations({ locale, namespace: 'metadata' });
-  const localeTag = locale === 'es' ? 'es_ES' : 'en_US';
+  const localeTag = localeTags[locale].replace('-', '_');
   const rootPath = `/${locale}/`;
 
   return {

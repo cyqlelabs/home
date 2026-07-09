@@ -1,5 +1,6 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import { siteMetadata } from './site-metadata';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -11,7 +12,7 @@ export function getLocaleFromURL(): string {
   const path = window.location.pathname;
   const parts = path.split('/').filter(Boolean);
 
-  if (parts.length > 0 && ['en', 'es'].includes(parts[0])) {
+  if (parts.length > 0 && (siteMetadata.locales as readonly string[]).includes(parts[0])) {
     return parts[0];
   }
 

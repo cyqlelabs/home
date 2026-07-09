@@ -2,7 +2,7 @@ export const siteMetadata = {
   name: 'Cyqle',
   siteUrl: 'https://cyqle.in',
   defaultLocale: 'en',
-  locales: ['en', 'es'] as const,
+  locales: ['en', 'es', 'fr', 'de', 'it', 'pt', 'ja', 'zh'] as const,
   title: 'Cyqle | The P2P Cloud Desktop for Instant Collaboration',
   description:
     'A persistent P2P cloud desktop for instant team collaboration. Build, test, and automate together with AI-powered workflows. Start free today.',
@@ -39,6 +39,17 @@ export const siteMetadata = {
 
 export type SiteLocale = (typeof siteMetadata.locales)[number];
 
+export const localeTags: Record<SiteLocale, string> = {
+  en: 'en-US',
+  es: 'es-ES',
+  fr: 'fr-FR',
+  de: 'de-DE',
+  it: 'it-IT',
+  pt: 'pt-BR',
+  ja: 'ja-JP',
+  zh: 'zh-CN',
+};
+
 export const siteIcons = {
   icon: [
     { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -72,8 +83,7 @@ export const formatDetection = {
 
 export const languageAlternates: Record<string, string> = {
   'x-default': '/en/',
-  'en-US': '/en/',
-  'es-ES': '/es/',
+  ...Object.fromEntries(siteMetadata.locales.map((l) => [localeTags[l], `/${l}/`])),
 };
 
 export const getCanonicalPath = (locale?: SiteLocale) => {
@@ -92,8 +102,7 @@ export const getSEOAlternates = (locale: SiteLocale, path: string = '') => {
   };
 
   siteMetadata.locales.forEach((l) => {
-    const langTag = l === 'en' ? 'en-US' : 'es-ES';
-    languages[langTag] = `/${l}${cleanPath}`;
+    languages[localeTags[l]] = `/${l}${cleanPath}`;
   });
 
   return {

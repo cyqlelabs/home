@@ -9,7 +9,8 @@
     "pricing": "Pricing",
     "api": "API",
     "about": "About",
-    "tryForFree": "Try for Free"
+    "tryForFree": "Try for Free",
+    "changeLanguage": "Change language"
   },
   "hero": {
     "title": "A Cloud Desktop You Can Actually Share",
@@ -267,6 +268,8 @@
     "cookies": "Cookies"
   },
   "apiDocsPage": {
+    "metaTitle": "Cyqle API — A Programmable Desktop for AI Agents",
+    "metaDescription": "Spin up Linux desktops, drive browser and desktop windows, execute code, capture screenshots, and persist state — the REST primitives AI agents need to operate real software.",
     "hero": {
       "badge": "REST API",
       "title": "Your agent, inside a real computer.",
@@ -347,6 +350,8 @@
     }
   },
   "aboutPage": {
+    "metaTitle": "About Cyqle: Multiplayer Cloud Desktop",
+    "metaDescription": "Cyqle is a P2P cloud desktop where multiple people work on the same machine simultaneously. Each user gets their own cursor and keyboard. Spin up in seconds, collaborate in real time.",
     "hero": {
       "title": "A Multiplayer Cloud Desktop",
       "subtitle": "Same machine. Multiple keyboards. Everyone drives."
