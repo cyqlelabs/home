@@ -2,7 +2,7 @@ export const siteMetadata = {
   name: 'Cyqle',
   siteUrl: 'https://cyqle.in',
   defaultLocale: 'en',
-  locales: ['en', 'es', 'fr', 'de', 'it', 'pt', 'ja', 'zh'] as const,
+  locales: ['en', 'es', 'fr', 'de', 'it', 'pt', 'ru', 'uk', 'ja', 'zh'] as const,
   title: 'Cyqle | The P2P Cloud Desktop for Instant Collaboration',
   description:
     'A persistent P2P cloud desktop for instant team collaboration. Build, test, and automate together with AI-powered workflows. Start free today.',
@@ -46,6 +46,8 @@ export const localeTags: Record<SiteLocale, string> = {
   de: 'de-DE',
   it: 'it-IT',
   pt: 'pt-BR',
+  ru: 'ru-RU',
+  uk: 'uk-UA',
   ja: 'ja-JP',
   zh: 'zh-CN',
 };

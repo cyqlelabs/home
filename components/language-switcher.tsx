@@ -20,6 +20,8 @@ const languages: Record<SiteLocale, { name: string; flag: string }> = {
   de: { name: 'Deutsch', flag: '🇩🇪' },
   it: { name: 'Italiano', flag: '🇮🇹' },
   pt: { name: 'Português', flag: '🇧🇷' },
+  ru: { name: 'Русский', flag: '🇷🇺' },
+  uk: { name: 'Українська', flag: '🇺🇦' },
   ja: { name: '日本語', flag: '🇯🇵' },
   zh: { name: '中文', flag: '🇨🇳' },
 };
