@@ -265,7 +265,7 @@ export default async function Home({ params: { locale } }: Props) {
                 asChild
                 className="mt-6 bg-gradient-to-r from-[#00356b] via-[#0a4d8f] to-[#00356b] text-white hover:from-[#012a52] hover:via-[#083c72] hover:to-[#012a52] shadow-lg"
               >
-                <TrackedLink href="https://app.cyqle.in" trackingKey="exploreFeatures">
+                <TrackedLink href={`/${locale}#features`} trackingKey="exploreFeatures">
                   {aiSectionT('exploreFeatures')}
                 </TrackedLink>
               </Button>
@@ -377,7 +377,7 @@ export default async function Home({ params: { locale } }: Props) {
               size="lg"
               className="bg-gradient-to-r from-[#00356b] via-[#0a4d8f] to-[#00356b] text-white hover:from-[#012a52] hover:via-[#083c72] hover:to-[#012a52] shadow-lg"
               trackingKey="ctaStartTrial"
-              href="https://app.cyqle.in"
+              href="https://app.cyqle.in/signup"
             >
               {ctaT('startTrial')}
             </TrackedButton>

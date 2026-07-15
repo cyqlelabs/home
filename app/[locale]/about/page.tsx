@@ -217,7 +217,7 @@ export default async function AboutPage({ params: { locale } }: Props) {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">{t('cta.title')}</h2>
           <p className="text-xl text-gray-300 mb-8 whitespace-pre-line">{t('cta.description')}</p>
           <TrackedLink
-            href="https://app.cyqle.in"
+            href="https://app.cyqle.in/signup"
             trackingKey="aboutPageCTA"
             className="inline-block bg-[#FF7600] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#FF7600]/90 transition-colors"
           >

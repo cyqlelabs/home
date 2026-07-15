@@ -232,7 +232,7 @@ export default async function ApiDocsPage({ params: { locale } }: Props) {
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <TrackedLink
-                  href="https://app.cyqle.in"
+                  href="https://app.cyqle.in/signup"
                   trackingKey="ctaStartTrial"
                   className="inline-flex items-center gap-2 bg-[#FF7600] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#FF7600]/90 transition-colors"
                 >

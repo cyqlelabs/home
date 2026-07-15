@@ -105,13 +105,20 @@ export default function Navbar() {
             {/* <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}> */}
             {/*   {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className={`h-5 w-5 ${isScrolled && "text-gray-300"}`} />} */}
             {/* </Button> */}
+            <TrackedLink
+              href="https://app.cyqle.in/login"
+              trackingKey="navbarLogIn"
+              className="text-sm text-slate-300 hover:text-white transition-colors"
+            >
+              {t('navbar.logIn')}
+            </TrackedLink>
             <Button
               asChild
               size="sm"
               variant="outline"
               className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-600"
             >
-              <TrackedLink href="https://app.cyqle.in" trackingKey="navbarTryForFree">
+              <TrackedLink href="https://app.cyqle.in/signup" trackingKey="navbarTryForFree">
                 {t('navbar.tryForFree')}
               </TrackedLink>
             </Button>
@@ -188,13 +195,21 @@ export default function Navbar() {
                   className="w-full justify-center border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-600"
                 >
                   <TrackedLink
-                    href="https://app.cyqle.in"
+                    href="https://app.cyqle.in/signup"
                     trackingKey="navbarTryForFree"
                     onClick={closeMobileMenu}
                   >
                     {t('navbar.tryForFree')}
                   </TrackedLink>
                 </Button>
+                <TrackedLink
+                  href="https://app.cyqle.in/login"
+                  trackingKey="navbarLogIn"
+                  onClick={closeMobileMenu}
+                  className="text-center text-slate-300 hover:text-white transition-colors py-2"
+                >
+                  {t('navbar.logIn')}
+                </TrackedLink>
               </div>
             </nav>
           </div>

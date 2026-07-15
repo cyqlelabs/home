@@ -34,7 +34,7 @@ export const trackCTA = {
       event_label: 'Power On Button - Hero',
       button_location: 'hero_section',
       button_text: 'Start Engine',
-      destination: 'https://app.cyqle.in',
+      destination: 'https://app.cyqle.in/signup',
       event_callback: callback,
     });
     trackXConversion({ conversion_source: 'power_on_button_hero' });
@@ -101,10 +101,21 @@ export const trackCTA = {
       event_label: 'Try for Free - Navbar',
       button_location: 'navbar',
       button_text: 'Try for Free',
-      destination: 'https://app.cyqle.in',
+      destination: 'https://app.cyqle.in/signup',
       event_callback: callback,
     });
     trackXConversion({ conversion_source: 'navbar_try_for_free' });
+  },
+
+  navbarLogIn: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Navigation',
+      event_label: 'Log In - Navbar',
+      button_location: 'navbar',
+      button_text: 'Log In',
+      destination: 'https://app.cyqle.in/login',
+      event_callback: callback,
+    });
   },
 
   aboutPageCTA: (callback?: () => void) => {
@@ -113,7 +124,7 @@ export const trackCTA = {
       event_label: 'Try Cyqle Free - About Page',
       button_location: 'about_page_cta',
       button_text: 'Try Cyqle Free',
-      destination: 'https://app.cyqle.in',
+      destination: 'https://app.cyqle.in/signup',
       event_callback: callback,
     });
     trackXConversion({ conversion_source: 'about_page_cta' });

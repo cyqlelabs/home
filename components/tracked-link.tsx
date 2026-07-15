@@ -37,6 +37,7 @@ interface TrackedLinkProps {
     | 'aboutPageCTA'
     | 'powerOnButton'
     | 'navbarTryForFree'
+    | 'navbarLogIn'
     | 'exploreFeatures'
     | 'footerApiDocs'
     | 'footerContactSupport'
