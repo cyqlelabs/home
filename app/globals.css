@@ -26,26 +26,26 @@
 }
 
 .dark {
-  /* Neutrals track the app's deep-navy canvas (Yale-blue family, ~210°),
-     replacing the shadcn default 240° violet-grey. Orange stays the primary. */
-  --background: 211 74% 10%;
+  /* Three-tier navy matching the app: dark ground -> dark container ->
+     lifted card. Orange stays the primary. (App: #07111c / #0c1521 / #182d3f) */
+  --background: 211 60% 7%;
   --foreground: 0 0% 98%;
-  --card: 210 52% 13%;
+  --card: 208 45% 17%;
   --card-foreground: 0 0% 98%;
-  --popover: 210 52% 13%;
+  --popover: 208 45% 17%;
   --popover-foreground: 0 0% 98%;
   --primary: 25 95% 53%;
   --primary-foreground: 210 20% 98%;
-  --secondary: 211 38% 17%;
+  --secondary: 213 46% 10%;
   --secondary-foreground: 0 0% 98%;
-  --muted: 211 30% 17%;
-  --muted-foreground: 210 22% 68%;
-  --accent: 211 38% 17%;
+  --muted: 212 38% 12%;
+  --muted-foreground: 210 16% 74%;
+  --accent: 212 46% 14%;
   --accent-foreground: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --border: 210 34% 20%;
-  --input: 210 34% 20%;
+  --border: 210 34% 18%;
+  --input: 210 34% 18%;
   --ring: 25 95% 53%;
 }
 
