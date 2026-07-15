@@ -263,7 +263,7 @@ export default async function Home({ params: { locale } }: Props) {
               </ul>
               <Button
                 asChild
-                className="mt-6 bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg"
+                className="mt-6 bg-gradient-to-r from-[#00356b] via-[#0a4d8f] to-[#00356b] text-white hover:from-[#012a52] hover:via-[#083c72] hover:to-[#012a52] shadow-lg"
               >
                 <TrackedLink href="https://app.cyqle.in" trackingKey="exploreFeatures">
                   {aiSectionT('exploreFeatures')}
@@ -286,7 +286,7 @@ export default async function Home({ params: { locale } }: Props) {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="rounded-xl border border-gray-800 bg-[#0a0a0c] shadow-2xl shadow-[#FF7600]/10 overflow-hidden">
+              <div className="rounded-xl border border-gray-800 bg-[#08182b] shadow-2xl shadow-[#FF7600]/10 overflow-hidden">
                 <div className="flex items-center justify-between px-4 py-3 border-b border-gray-800 bg-gray-950/60">
                   <div className="flex items-center gap-2">
                     <span aria-hidden="true" className="h-3 w-3 rounded-full bg-red-500/70" />
@@ -375,7 +375,7 @@ export default async function Home({ params: { locale } }: Props) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <TrackedButton
               size="lg"
-              className="bg-gradient-to-r from-[#005a73] via-[#007B9C] to-[#005a73] text-white hover:from-[#004a5f] hover:via-[#006380] hover:to-[#004a5f] shadow-lg"
+              className="bg-gradient-to-r from-[#00356b] via-[#0a4d8f] to-[#00356b] text-white hover:from-[#012a52] hover:via-[#083c72] hover:to-[#012a52] shadow-lg"
               trackingKey="ctaStartTrial"
               href="https://app.cyqle.in"
             >

@@ -193,13 +193,13 @@ export class GlobeRenderer {
   init() {
     this.cursorImages = createCursorImages();
     this.dotLand = createDotSprite('#94a8c4');
-    this.dotSpark = createDotSprite('#8ff1ff');
+    this.dotSpark = createDotSprite('#9ad8ff');
     this.dotWhite = createDotSprite('#ffffff');
     this.dotStar = createDotSprite('#cfe2ff');
-    this.glowTeal = createGlowSprite('#2ec5e6');
+    this.glowTeal = createGlowSprite('#3aa0e0');
     this.glowOrange = createGlowSprite('#ff7600');
     this.glowWhite = createGlowSprite('#eaf6ff');
-    this.nebulaTeal = createGlowSprite('#1d7f9c', 128);
+    this.nebulaTeal = createGlowSprite('#255f9e', 128);
     this.nebulaOrange = createGlowSprite('#b4560f', 128);
 
     const raw = decodeLandDots();
@@ -666,7 +666,7 @@ export class GlobeRenderer {
       if (dot < 0.88) continue;
       const alpha = ((dot - 0.88) / 0.12) * 0.45 * this.fade;
       ctx.globalAlpha = alpha;
-      ctx.strokeStyle = '#2ec5e6';
+      ctx.strokeStyle = '#3aa0e0';
       ctx.lineWidth = 1;
       ctx.beginPath();
       ctx.moveTo(region.screenX, region.screenY);
