@@ -56,21 +56,23 @@ export default function LanguageSwitcher() {
         align="end"
         className="min-w-[11rem] border-white/10 bg-black/95 backdrop-blur-md"
       >
-        {siteMetadata.locales.map((code) => (
-          <DropdownMenuItem
-            key={code}
-            onClick={() => switchLocale(code)}
-            className={`cursor-pointer gap-3 py-2 focus:bg-white/10 focus:text-white ${
-              code === locale ? 'text-white' : 'text-slate-300'
-            }`}
-          >
-            <span className="text-base leading-none" aria-hidden="true">
-              {languages[code].flag}
-            </span>
-            <span className="flex-1">{languages[code].name}</span>
-            {code === locale && <Check className="h-4 w-4 text-blue-400" aria-hidden="true" />}
-          </DropdownMenuItem>
-        ))}
+        {[...siteMetadata.locales]
+          .sort((a, b) => languages[a].name.localeCompare(languages[b].name))
+          .map((code) => (
+            <DropdownMenuItem
+              key={code}
+              onClick={() => switchLocale(code)}
+              className={`cursor-pointer gap-3 py-2 focus:bg-white/10 focus:text-white ${
+                code === locale ? 'text-white' : 'text-slate-300'
+              }`}
+            >
+              <span className="text-base leading-none" aria-hidden="true">
+                {languages[code].flag}
+              </span>
+              <span className="flex-1">{languages[code].name}</span>
+              {code === locale && <Check className="h-4 w-4 text-blue-400" aria-hidden="true" />}
+            </DropdownMenuItem>
+          ))}
       </DropdownMenuContent>
     </DropdownMenu>
   );
