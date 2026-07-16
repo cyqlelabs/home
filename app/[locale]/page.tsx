@@ -63,8 +63,10 @@ export default async function Home({ params: { locale } }: Props) {
               {heroT('title')}
             </h1>
           </div>
-          <p className="text-xl md:text-2xl mb-10 text-slate-200 font-semibold max-w-4xl mt-2 [text-wrap:balance]">
-            {heroT('description')}
+          <p className="flex flex-col items-center gap-1.5 text-xl md:text-2xl mb-10 text-slate-200 font-semibold mt-2">
+            <span>{heroT('descriptionLine1')}</span>
+            <span>{heroT('descriptionLine2')}</span>
+            <span>{heroT('descriptionLine3')}</span>
           </p>
           <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-3">
