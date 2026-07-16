@@ -18,7 +18,9 @@
     "titlePhrase1": "Tu Escritorio Cloud",
     "titlePhrase2": "Tu Espacio de Trabajo Compartido",
     "titlePhrase3": "La Computadora de tu Equipo",
-    "description": "Levantá un escritorio cloud completo en segundos. Invitá a tu equipo. Todos conducen.",
+    "descriptionLine1": "Levantalo en segundos.",
+    "descriptionLine2": "Invitá a tu equipo.",
+    "descriptionLine3": "Todos conducen.",
     "getStarted": "Empezar",
     "trialInfo": "Tier gratis disponible. Sin tarjeta de crédito.",
     "powerOnLabel": "Empezar — Es Gratis",
@@ -74,7 +76,6 @@
       "description": "Colaborá en sheets, docs y tareas administrativas en un mismo escritorio. Manejen múltiples ventanas a la vez durante las calls."
     }
   },
-
   "aiSection": {
     "title": "Automatizá tu Trabajo",
     "description": "Cyqle no es solo una PC. Es una plataforma de automatización. Grabá flujos de trabajo, agendá tareas y dejá que los agentes hagan el trabajo pesado.",
