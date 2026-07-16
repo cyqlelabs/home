@@ -364,9 +364,9 @@
     "problem": {
       "badge": "The Problem",
       "title": "Every collaboration tool is a workaround",
-      "intro": "“Can you see my screen?” is not collaboration. It's narration.",
-      "scenario1": "You've lived it. One person drives, four people describe what to click. Files get exported, mailed, re-imported. Control gets “requested”.",
-      "scenario2": "Developers get the worst of it: environments that drift until “works on my machine” becomes a shrug, bugs that only exist in CI, whole afternoons rebuilding a setup that worked last week.",
+      "intro": "\"Can you see my screen?\" is not collaboration. It's narration.",
+      "scenario1": "You've lived it. One person drives, four people describe what to click. Files get exported, mailed, re-imported. Control gets \"requested\".",
+      "scenario2": "Developers get the worst of it: environments that drift until \"works on my machine\" becomes a shrug, bugs that only exist in CI, whole afternoons rebuilding a setup that worked last week.",
       "scenario3": "And it's not just engineers. Support agents describe fixes they could just perform. Back-office teams pass one spreadsheet around a call like a talking stick.",
       "truth": "These look like different problems. They're one problem: every computer you've ever used was designed for a single user, and everything built on top inherits that assumption.",
       "solution": "So we broke the assumption."
