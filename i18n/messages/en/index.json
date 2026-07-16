@@ -415,7 +415,7 @@
         "Real input devices for every participant, injected at the operating-system level — not overlay cursors drawn on a video stream",
         "Peer-to-peer session streaming, so no central server sits in your data path",
         "Every session encrypted with its own key, destroyed on close — cryptographic erasure, not a delete button",
-        "Isolation enforced at the kernel level — it can't be bypassed from inside the session",
+        "Airtight isolation around every desktop, enforced beyond the session's reach",
         "Fully configured desktops booting in seconds from pre-warmed snapshots"
       ],
       "conclusion": "Years of infrastructure so the experience stays one click."

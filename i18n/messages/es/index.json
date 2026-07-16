@@ -415,7 +415,7 @@
         "Dispositivos de entrada reales para cada participante, inyectados a nivel del sistema operativo, no cursores superpuestos sobre un stream de video",
         "Streaming de sesiones peer-to-peer, sin ningún servidor central en el camino de tus datos",
         "Cada sesión cifrada con su propia clave, destruida al cerrar: borrado criptográfico, no un botón de eliminar",
-        "Aislamiento impuesto a nivel del kernel: imposible de eludir desde adentro de la sesión",
+        "Aislamiento hermético alrededor de cada escritorio, impuesto fuera del alcance de la sesión",
         "Escritorios totalmente configurados que arrancan en segundos desde snapshots precalentados"
       ],
       "conclusion": "Años de infraestructura para que la experiencia siga siendo un clic."
