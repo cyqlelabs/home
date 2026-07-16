@@ -38,7 +38,7 @@
     },
     "unrestrictedAccess": {
       "title": "Unrestricted Access & Control",
-      "description": "**Full root access** to install anything. **Programmatic API** for automation. It's your machine—configure it, script it, control it however you need."
+      "description": "**Full root access** to install anything. **Programmatic API** for automation—drop **pre-warmed desktops into CI/CD pipelines**, spun up in seconds and driven remotely. It's your machine—configure it, script it, control it however you need."
     },
     "workflowAutomation": {
       "title": "AI Workflow Automation",

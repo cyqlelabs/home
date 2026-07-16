@@ -38,7 +38,7 @@
     },
     "unrestrictedAccess": {
       "title": "Accesso e Controllo Senza Limiti",
-      "description": "**Accesso root completo** per installare qualsiasi cosa. **API programmatica** per l'automazione. È la tua macchina—configurala, automatizzala, controllala come vuoi."
+      "description": "**Accesso root completo** per installare qualsiasi cosa. **API programmatica** per l'automazione: inserisci **desktop pre-riscaldati nelle pipeline CI/CD**, avviati in pochi secondi e controllati da remoto. È la tua macchina—configurala, automatizzala, controllala come vuoi."
     },
     "workflowAutomation": {
       "title": "Automazione dei Flussi di Lavoro con AI",

@@ -38,7 +38,7 @@
     },
     "unrestrictedAccess": {
       "title": "Uneingeschränkter Zugriff & Kontrolle",
-      "description": "**Voller Root-Zugriff**, um alles zu installieren. **Programmierbare API** für Automatisierung. Es ist deine Maschine – konfiguriere sie, skripte sie, steuere sie, wie du willst."
+      "description": "**Voller Root-Zugriff**, um alles zu installieren. **Programmierbare API** für Automatisierung – klinke **vorgewärmte Desktops in CI/CD-Pipelines** ein, in Sekunden hochgefahren und aus der Ferne gesteuert. Es ist deine Maschine – konfiguriere sie, skripte sie, steuere sie, wie du willst."
     },
     "workflowAutomation": {
       "title": "KI-Workflow-Automatisierung",

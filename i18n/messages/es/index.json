@@ -38,7 +38,7 @@
     },
     "unrestrictedAccess": {
       "title": "Control y Acceso Total",
-      "description": "**Acceso root** para instalar lo que quieras. **API** para automatizar todo. Es tu máquina: configurala, automatizala y controlala como necesites."
+      "description": "**Acceso root** para instalar lo que quieras. **API** para automatizar todo: meté **escritorios pre-calentados en tus pipelines de CI/CD**, listos en segundos y controlados de forma remota. Es tu máquina: configurala, automatizala y controlala como necesites."
     },
     "workflowAutomation": {
       "title": "Automatización con IA",
