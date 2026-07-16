@@ -353,85 +353,102 @@
     }
   },
   "aboutPage": {
-    "metaTitle": "Über Cyqle: Der Multiplayer-Cloud-Desktop",
-    "metaDescription": "Cyqle ist ein P2P-Cloud-Desktop, auf dem mehrere Personen gleichzeitig an derselben Maschine arbeiten. Jede mit eigenem Cursor und eigener Tastatur. In Sekunden gestartet, Zusammenarbeit in Echtzeit.",
+    "metaTitle": "Über Cyqle: Warum wir den Desktop für viele Nutzer neu gebaut haben",
+    "metaDescription": "Cyqle ist ein Cloud-Desktop für viele gleichzeitige Nutzer — Menschen und KI-Agenten. Lies, warum wir mit der Annahme „ein Mensch pro Computer“ gebrochen haben und was dafür nötig war.",
     "hero": {
-      "title": "Ein Multiplayer-Cloud-Desktop",
-      "subtitle": "Dieselbe Maschine. Mehrere Tastaturen. Alle steuern."
+      "titleLine1": "Computer wurden für <s>eine Person</s> gebaut.",
+      "titleLine2": "Wir haben einen für <accent>viele</accent> gebaut.",
+      "subtitle": "Ein Cloud-Desktop, den viele Menschen — und KI-Agenten — gleichzeitig steuern können. Hier steht, warum wir ihn gebaut haben und was dafür nötig war.",
+      "agentTag": "Agent"
     },
     "problem": {
       "badge": "Das Problem",
-      "title": "Remote-Arbeit heißt immer noch: abwechseln",
-      "intro": "Screen-Sharing bedeutet: einer steuert, viele schauen zu. Das ist keine Zusammenarbeit.",
-      "scenario1": "Du kannst den Code im Screen-Share von jemand anderem nicht anfassen. Du schaust nur zu und diktierst, was zu tippen ist.",
-      "scenario2": "Lokale Umgebungen gehen kaputt, driften auseinander und lassen sich nicht per Link teilen.",
-      "scenario3": "Dein Team hat 10 Laptops, aber keine gemeinsame Maschine, auf der ihr zusammenarbeiten könnt.",
-      "truth": "Betriebssysteme wurden für einen Nutzer gebaut. Wir haben eines für viele gebaut.",
-      "solution": "Das ist Cyqle."
+      "title": "Jedes Kollaborationstool ist eine Notlösung",
+      "intro": "„Siehst du meinen Bildschirm?“ ist keine Zusammenarbeit. Das ist Erzählen.",
+      "scenario1": "Du kennst es. Eine Person steuert, vier beschreiben, wo geklickt werden soll. Dateien werden exportiert, gemailt, wieder importiert. Kontrolle wird „angefragt“.",
+      "scenario2": "Entwickler trifft es am härtesten: Umgebungen, die driften, bis „läuft auf meiner Maschine“ nur noch ein Schulterzucken ist, Bugs, die nur in der CI existieren, ganze Nachmittage, um ein Setup neu zu bauen, das letzte Woche noch lief.",
+      "scenario3": "Und es betrifft nicht nur Engineers. Support-Mitarbeiter beschreiben Lösungen, die sie einfach ausführen könnten. Backoffice-Teams reichen eine Tabelle im Call herum wie einen Staffelstab.",
+      "truth": "Das sieht nach verschiedenen Problemen aus. Es ist eines: Jeder Computer, den du je benutzt hast, wurde für einen einzigen Nutzer entworfen — und alles, was darauf aufbaut, erbt diese Annahme.",
+      "solution": "Also haben wir die Annahme gebrochen."
     },
     "story": {
-      "badge": "Hintergrund",
-      "title": "Wie wir hierher gekommen sind",
-      "year2017": "Wir haben mit Browser-Automatisierung angefangen. Nützlich, aber sie löste nur einen Teil des Problems.",
-      "pivot": "Der Engpass war das OS selbst — gebaut für einen einzelnen Nutzer.",
-      "year2025": "Screen-Sharing ist ein Hack auf einer Single-Player-Architektur. Genau deshalb ist es so mühsam.",
-      "realization": "Also haben wir den Desktop für P2P neu gebaut. Kein Host, keine Gäste — nur gleichberechtigte Nutzer auf derselben Maschine.",
-      "present": "Cyqle ist ein Cloud-Computer, in dem Zusammenarbeit ein Kern-Primitiv ist."
+      "badge": "Wie es dazu kam",
+      "title": "Gebaut von Leuten, die das Abwechseln satt hatten",
+      "yearLabel": "2020",
+      "paragraph1": "Wir sind Entwickler. Wir haben jede Version des Schmerzes auf dieser Seite erlebt: Pairing über Screenshare, driftende Umgebungen, CI-Fehler, die niemand reproduzieren konnte, Produktionsbetrieb über die Schulter von jemand anderem.",
+      "paragraph2": "2020 haben wir angefangen, die Maschine zu bauen, an der wir selbst arbeiten wollten: ein echter Linux-Desktop in der Cloud, auf dem jeder Teilnehmer ein vollwertiger Nutzer ist. Kein Host. Kein Gast. Kein Anfragen von Kontrolle. Jeder bringt seinen eigenen Cursor und seine eigene Tastatur an dieselbe Maschine.",
+      "paragraph3": "Dann passierte etwas, das wir nicht geplant hatten: Es kamen Leute, die noch nie ein Terminal geöffnet hatten. Support-Teams, die Dinge gemeinsam mit ihren Kunden reparieren, statt sie anzuleiten. Teams, die ihre Verwaltungsarbeit in einem geteilten Desktop erledigen. Abwechseln war, wie sich zeigte, das Problem von allen.",
+      "present": "Heute ist Cyqle ein Cloud-Computer, bei dem Zusammenarbeit kein nachträgliches Feature ist. Sie ist die Annahme, mit der wir gestartet sind."
     },
-    "solution": {
-      "badge": "Was es ist",
-      "title": "Ein vollwertiger Linux-Desktop, in Echtzeit geteilt",
-      "paragraph1": "Cyqle ist eine echte Linux-Umgebung in der Cloud. Mehrere Personen arbeiten gleichzeitig, jede mit eigenem Cursor und eigener Tastatureingabe.",
-      "paragraph2": "Kein Screen-Sharing. Keine VM, in die du dich allein per SSH einloggst. Ein Multiplayer-Computer, den du in Sekunden startest, gemeinsam nutzt und dann schließt oder persistierst.",
-      "realityCheck": "Schluss mit:",
-      "painPoints": [
-        "„Siehst du meinen Bildschirm?“ — sie sind schon drin",
-        "Bugs im Chat beschreiben — lade sie einfach ein",
-        "„Bei mir funktioniert’s“ — nutzt dieselbe Maschine",
-        "Demo-Umgebungen neu aufsetzen — snapshotten und wiederverwenden",
-        "Skripte für simple Aufgaben schreiben — aufzeichnen und abspielen"
-      ]
+    "humans": {
+      "badge": "Für Menschen",
+      "title": "Eine Maschine, in der dein ganzes Team leben kann",
+      "intro": "Ein vollständiger Linux-Desktop, in Sekunden live in deinem Browser. Teile einen Link und dein Team ist drin — jede Person mit eigenem Cursor und eigener Tastatur, alle gleichzeitig aktiv.",
+      "items": [
+        "Alle arbeiten gleichzeitig — keine Fahrer, keine Beifahrer",
+        "Standardmäßig flüchtig: schließen, und es ist nachweisbar weg",
+        "Erstelle einen Snapshot eines konfigurierten Desktops und nutze ihn immer wieder",
+        "Pausiere eine Session und die Abrechnung stoppt; mach genau dort weiter, wo du warst",
+        "Zeichne Sessions auf und spiele sie ab — für Reviews, Audits oder Schulungen",
+        "Nutze den vollen Desktop vom Handy, mit nativen Touch-Gesten"
+      ],
+      "note": "Zusammenarbeit gibt es in jedem Tarif, auch im kostenlosen. Sie ist nicht das Upsell. Sie ist der Punkt."
+    },
+    "agents": {
+      "badge": "Für KI-Agenten",
+      "title": "Es stellte sich heraus: Agenten brauchten dasselbe",
+      "paragraph1": "Ein Agent, der in einer Chatbox festsitzt, kann über Arbeit nur reden. Gib ihm einen Computer, und er kann sie erledigen: Apps öffnen, Befehle ausführen, browsen, Dateien verwalten.",
+      "paragraph2": "Auf Cyqle bekommt jeder Agent einen echten Desktop. Starte pro Lauf eine saubere Maschine. Einmal konfigurieren, Snapshot erstellen, für parallele Läufe klonen. Häng vorgewärmte Desktops in deine CI-Pipelines. Reiß alles ab, wenn der Job erledigt ist.",
+      "paragraph3": "Und weil der Desktop Multiplayer ist, ist der Agent einfach ein weiterer Nutzer an der Maschine. Du siehst seinen Cursor in Echtzeit. Bleibt er hängen, greifst du zu deinem eigenen Cursor und übernimmst — gleiche Session, ohne Zeremonie.",
+      "proof": "Teams betreiben unseren eingebauten Operator schon genau so — und bringen auch eigene Agenten mit.",
+      "demo": {
+        "agentLabel": "Agent",
+        "humanLabel": "du",
+        "takeover": "du hast übernommen · gleiche Session"
+      }
     },
     "difference": {
       "badge": "Unter der Haube",
-      "title": "Was wir lösen mussten",
-      "intro": "Cloud-Desktops in Echtzeit erfordern die Lösung harter Probleme:",
+      "title": "Was wir lösen mussten, damit es echt wird",
+      "intro": "Nichts davon gibt es von der Stange. Ein wirklich mehrbenutzerfähiger Desktop hieß, Probleme zu lösen, die die meisten Tools übertünchen:",
       "challenges": [
-        "P2P-Streaming mit minimaler Latenz (ohne zentralen Relay)",
-        "Multi-Cursor-Eingabe-Injektion auf Systemebene",
-        "Kryptografisch löschbarer ephemerer Speicher",
-        "Boot-Zeiten unter 5 Sekunden",
-        "Browserbasierter Zugriff mit nativer Performance"
+        "Echte Eingabegeräte für jeden Teilnehmer, injiziert auf Betriebssystem-Ebene — keine Overlay-Cursor auf einem Videostream",
+        "Peer-to-Peer-Streaming der Session, ohne zentralen Server im Datenpfad",
+        "Ein einzigartiger 256-Bit-Schlüssel pro Session, beim Schließen zerstört — kryptografische Löschung, kein Löschen-Button",
+        "Kernel-erzwungene Isolation um jeden Desktop, damit Sessions einander weder sehen noch berühren können",
+        "Vollständig konfigurierte Desktops, die in Sekunden aus vorgewärmten Snapshots booten"
       ],
-      "conclusion": "Komplexe Infrastruktur hinter einem einfachen Erlebnis."
+      "conclusion": "Jahre an Infrastruktur, damit die Erfahrung ein Klick bleibt."
     },
-    "forWhom": {
-      "badge": "Anwendungsfälle",
-      "title": "Gebaut für Teams, die:",
+    "principles": {
+      "badge": "Woran wir glauben",
+      "title": "Deine Session gehört dir. Nachweisbar.",
       "items": [
-        "gemeinsam debuggen, statt sich abzuwechseln",
-        "Wegwerf-Umgebungen zum Reproduzieren brauchen",
-        "Engineers hands-on onboarden, nicht mit Docs",
-        "Browser-Automatisierung ohne Infrastruktur-Overhead betreiben",
-        "eine sichere Sandbox für KI-Agenten brauchen",
-        "Root-Zugriff wollen, ohne lokale Maschinen zu riskieren"
-      ]
+        "Standardmäßig flüchtig. Wenn eine Session schließt, wird ihr Schlüssel zerstört und die Daten werden unwiederbringlich — für Angreifer und für uns.",
+        "Zero Knowledge, wörtlich gemeint: Wir können nicht in deine Session hineinsehen.",
+        "Persistenz ist deine Entscheidung, Ende-zu-Ende verschlüsselt. Nie ein Default, den wir still umlegen.",
+        "Auf der Maschine sind alle Nutzer gleich — Mensch oder Agent, kostenlos oder bezahlt."
+      ],
+      "erasure": {
+        "running": "verschlüsselt · läuft",
+        "destroyed": "Schlüssel zerstört · unwiederbringlich"
+      }
     },
     "vision": {
-      "badge": "Was kommt",
-      "title": "Wohin die Reise geht",
-      "intro": "Wir bauen an:",
+      "badge": "Wohin wir gehen",
+      "title": "Multiplayer sollte kein Feature sein",
+      "intro": "Jeder Desktop der letzten vierzig Jahre ging von einem Nutzer aus. Wir glauben, die nächsten gehen von vielen aus — Maschinen, die Menschen und Agenten so leicht teilen, herbeirufen und wegwerfen wie einen Browser-Tab. Daran bauen wir:",
       "future": [
-        "Ephemeren Umgebungen, die du hochfährst und wieder wegwirfst",
-        "KI-Agenten, die in deinem Desktop agieren, nicht nur in einer Chat-Box",
-        "Vollem Desktop-Zugriff von jedem Gerät, auch mobil mit nativen Touch-Gesten",
-        "Multiplayer als Standard, nicht als Add-on"
+        "Eine Session direkt aus deinem Editor oder aus einem Pull Request starten",
+        "Organisationsweite Richtlinien und Maschinenprofile, vom kleinen Runner bis zur GPU-Workstation",
+        "Sessions ohne Zugangsdaten, gebunden an deinen Identity Provider — nichts Langlebiges, das leaken kann",
+        "Desktops, die jeden einzelnen Server überleben, mit deinen Fenstern genau dort, wo du sie gelassen hast"
       ]
     },
     "cta": {
-      "title": "Probier es aus",
-      "description": "Kostenloser Tarif. Keine Kreditkarte. Starte eine Session und lade jemanden aus deinem Team ein.",
-      "button": "Cyqle kostenlos testen"
+      "title": "Sieh es dir selbst an",
+      "description": "Ein Desktop in Sekunden. Lade jemanden aus dem Team ein — oder schick einen Agenten.\nKostenloser Tarif. Keine Kreditkarte.",
+      "button": "Starte einen kostenlosen Desktop"
     }
   },
   "privacyPolicy": {

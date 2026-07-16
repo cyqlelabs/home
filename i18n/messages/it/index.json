@@ -353,85 +353,102 @@
     }
   },
   "aboutPage": {
-    "metaTitle": "Chi è Cyqle: il Desktop Cloud Multiplayer",
-    "metaDescription": "Cyqle è un desktop cloud P2P dove più persone lavorano sulla stessa macchina simultaneamente. Ogni utente ha il proprio cursore e la propria tastiera. Avvialo in secondi, collabora in tempo reale.",
+    "metaTitle": "Chi siamo: perché abbiamo ricostruito il desktop per molti utenti",
+    "metaDescription": "Cyqle è un desktop cloud pensato per molti utenti simultanei — persone e agenti IA. Scopri perché abbiamo rotto l'assunto di una persona per computer e cosa è servito per farlo.",
     "hero": {
-      "title": "Un Desktop Cloud Multiplayer",
-      "subtitle": "Stessa macchina. Più tastiere. Tutti hanno il controllo."
+      "titleLine1": "I computer sono nati per <s>una sola persona</s>.",
+      "titleLine2": "Noi ne abbiamo costruito uno per <accent>molte</accent>.",
+      "subtitle": "Un desktop cloud che molte persone — e agenti IA — possono guidare contemporaneamente. Ecco perché lo abbiamo costruito, e cosa è servito.",
+      "agentTag": "agente"
     },
     "problem": {
-      "badge": "Il Problema",
-      "title": "Lavorare da Remoto Significa Ancora Fare a Turno",
-      "intro": "La condivisione dello schermo è un guidatore e tanti spettatori. Quella non è collaborazione.",
-      "scenario1": "Non puoi toccare il codice sullo schermo condiviso di qualcun altro. Guardi e detti cosa digitare.",
-      "scenario2": "Gli ambienti locali si rompono, divergono e non si possono condividere con un link.",
-      "scenario3": "Il tuo team ha 10 laptop ma nessuna macchina condivisa su cui lavorare insieme.",
-      "truth": "I sistemi operativi sono nati per un solo utente. Noi ne abbiamo costruito uno per molti.",
-      "solution": "Questo è Cyqle."
+      "badge": "Il problema",
+      "title": "Ogni strumento di collaborazione è un ripiego",
+      "intro": "«Vedi il mio schermo?» non è collaborazione. È narrazione.",
+      "scenario1": "Lo hai vissuto anche tu. Una persona guida, quattro descrivono dove cliccare. I file vengono esportati, spediti via mail, reimportati. Il controllo si «richiede».",
+      "scenario2": "Gli sviluppatori hanno la peggio: ambienti che derivano finché «sulla mia macchina funziona» diventa un'alzata di spalle, bug che esistono solo in CI, interi pomeriggi a ricostruire un setup che la settimana scorsa funzionava.",
+      "scenario3": "E non riguarda solo gli ingegneri. Gli agenti di supporto descrivono soluzioni che potrebbero semplicemente applicare. I team amministrativi si passano un foglio di calcolo durante la call come un testimone.",
+      "truth": "Sembrano problemi diversi. Sono uno solo: ogni computer che hai usato è stato progettato per un singolo utente, e tutto ciò che ci è stato costruito sopra eredita quell'assunto.",
+      "solution": "Così abbiamo rotto l'assunto."
     },
     "story": {
-      "badge": "Le Origini",
-      "title": "Come Siamo Arrivati Qui",
-      "year2017": "Siamo partiti dall'automazione del browser. Utile, ma risolveva solo una parte del problema.",
-      "pivot": "Il collo di bottiglia era il sistema operativo stesso — progettato per un singolo utente.",
-      "year2025": "La condivisione dello schermo è un trucco costruito sopra un'architettura single-player. Ecco perché è così scomoda.",
-      "realization": "Così abbiamo ricostruito il desktop in P2P. Niente host e ospite — solo utenti alla pari sulla stessa macchina.",
-      "present": "Cyqle è un computer cloud dove la collaborazione è una primitiva di base."
+      "badge": "Come siamo arrivati qui",
+      "title": "Costruito da chi era stanco di fare a turno",
+      "yearLabel": "2020",
+      "paragraph1": "Siamo sviluppatori. Abbiamo vissuto ogni versione del dolore di questa pagina: pair programming in condivisione schermo, ambienti che derivano, errori di CI che nessuno riusciva a riprodurre, operazioni in produzione fatte da sopra la spalla di qualcuno.",
+      "paragraph2": "Nel 2020 abbiamo iniziato a costruire la macchina su cui volevamo lavorare: un vero desktop Linux nel cloud dove ogni partecipante è un utente di prima classe. Niente host. Niente ospite. Niente controllo da richiedere. Ognuno porta il proprio cursore e la propria tastiera sulla stessa macchina.",
+      "paragraph3": "Poi è successo qualcosa che non avevamo pianificato: è arrivata gente che non aveva mai aperto un terminale. Team di supporto che risolvono i problemi insieme ai clienti invece di dettarglieli. Team che fanno il lavoro amministrativo in un desktop condiviso. Fare a turno, a quanto pare, era un problema di tutti.",
+      "present": "Oggi Cyqle è un computer cloud dove la collaborazione non è una funzione aggiunta. È l'assunto da cui siamo partiti."
     },
-    "solution": {
-      "badge": "Cos'è",
-      "title": "Un Desktop Linux Completo, Condiviso in Tempo Reale",
-      "paragraph1": "Cyqle è un vero ambiente Linux nel cloud. Più persone lavorano simultaneamente, ognuna con il proprio cursore e il proprio input da tastiera.",
-      "paragraph2": "Non è condivisione dello schermo. Non è una VM in cui entri da solo via SSH. È un computer multiplayer che avvii in pochi secondi, su cui lavorate insieme, e che poi chiudi o rendi persistente.",
-      "realityCheck": "Mai più:",
-      "painPoints": [
-        "\"Vedi il mio schermo?\" — sono già lì dentro",
-        "Descrivere i bug in chat — invitali e basta",
-        "\"Sulla mia macchina funziona\" — usate la stessa macchina",
-        "Ricostruire gli ambienti demo — snapshot e riutilizzo",
-        "Scrivere script per attività semplici — registra e riproduci"
-      ]
+    "humans": {
+      "badge": "Per le persone",
+      "title": "Una macchina che tutto il tuo team può abitare",
+      "intro": "Un desktop Linux completo, vivo nel tuo browser in pochi secondi. Condividi un link e il tuo team è dentro — ogni persona con il proprio cursore e la propria tastiera, tutti in azione nello stesso momento.",
+      "items": [
+        "Tutti lavorano contemporaneamente — niente piloti né passeggeri",
+        "Effimero per impostazione predefinita: lo chiudi e sparisce, in modo dimostrabile",
+        "Fai lo snapshot di un desktop configurato e riusalo per sempre",
+        "Metti in pausa una sessione e la fatturazione si ferma; riprendi esattamente da dove eri",
+        "Registra le sessioni e riproducile per review, audit o formazione",
+        "Usa il desktop completo dal telefono, con gesti touch nativi"
+      ],
+      "note": "La collaborazione c'è in ogni piano, incluso quello gratuito. Non è l'upsell. È il punto."
+    },
+    "agents": {
+      "badge": "Per gli agenti IA",
+      "title": "A quanto pare, gli agenti avevano bisogno della stessa cosa",
+      "paragraph1": "Un agente chiuso in una chat può solo parlare del lavoro. Dagli un computer e il lavoro lo fa: apre applicazioni, esegue comandi, naviga, gestisce file.",
+      "paragraph2": "Su Cyqle ogni agente ha un desktop vero. Avvia una macchina pulita per ogni esecuzione. Configura una volta, fai lo snapshot e clonalo per esecuzioni parallele. Inserisci desktop preriscaldati nelle tue pipeline di CI. Butta giù tutto quando il lavoro è finito.",
+      "paragraph3": "E siccome il desktop è multiplayer, l'agente è solo un altro utente della macchina. Guardi il suo cursore muoversi in tempo reale. Se si blocca, prendi il tuo cursore e subentri — stessa sessione, senza cerimonie.",
+      "proof": "Ci sono già team che usano così il nostro Operator integrato — e che portano anche i propri agenti.",
+      "demo": {
+        "agentLabel": "agente",
+        "humanLabel": "tu",
+        "takeover": "hai preso il controllo · stessa sessione"
+      }
     },
     "difference": {
-      "badge": "Sotto il Cofano",
-      "title": "Cosa Abbiamo Dovuto Risolvere",
-      "intro": "I desktop cloud in tempo reale richiedono di risolvere problemi difficili:",
+      "badge": "Sotto il cofano",
+      "title": "Cosa abbiamo dovuto risolvere per renderlo reale",
+      "intro": "Niente di tutto questo esiste già pronto. Un desktop davvero multiutente ha significato risolvere problemi che la maggior parte degli strumenti nasconde:",
       "challenges": [
-        "Streaming P2P a latenza minima (senza relay centrale)",
-        "Iniezione di input multi-cursore a livello di sistema",
-        "Storage effimero cancellabile crittograficamente",
-        "Tempi di avvio sotto i 5 secondi",
-        "Accesso dal browser con prestazioni native"
+        "Veri dispositivi di input per ogni partecipante, iniettati a livello di sistema operativo — non cursori sovrapposti a uno stream video",
+        "Streaming delle sessioni peer-to-peer, senza alcun server centrale sul percorso dei tuoi dati",
+        "Una chiave di cifratura a 256 bit unica per sessione, distrutta alla chiusura — cancellazione crittografica, non un pulsante elimina",
+        "Isolamento imposto a livello di kernel attorno a ogni desktop, così le sessioni non possono né vedersi né toccarsi",
+        "Desktop completamente configurati che si avviano in pochi secondi da snapshot preriscaldati"
       ],
-      "conclusion": "Un'infrastruttura complessa dietro un'esperienza semplice."
+      "conclusion": "Anni di infrastruttura perché l'esperienza resti un clic."
     },
-    "forWhom": {
-      "badge": "Casi d'Uso",
-      "title": "Fatto per i Team che:",
+    "principles": {
+      "badge": "In cosa crediamo",
+      "title": "La tua sessione è tua. In modo dimostrabile.",
       "items": [
-        "Fanno debug insieme invece di fare a turno",
-        "Hanno bisogno di ambienti di riproduzione usa e getta",
-        "Formano i nuovi ingegneri sul campo, non con la documentazione",
-        "Eseguono automazioni browser senza il peso dell'infrastruttura",
-        "Cercano una sandbox sicura per agenti AI",
-        "Vogliono accesso root senza rischiare le macchine locali"
-      ]
+        "Effimero per impostazione predefinita. Quando una sessione si chiude, la sua chiave viene distrutta e i dati diventano irrecuperabili — per gli attaccanti e per noi.",
+        "Zero knowledge, in senso letterale: non possiamo vedere dentro la tua sessione.",
+        "La persistenza è una tua scelta, cifrata end-to-end. Mai un default che attiviamo in silenzio.",
+        "Sulla macchina tutti gli utenti sono uguali — umano o agente, piano gratuito o a pagamento."
+      ],
+      "erasure": {
+        "running": "cifrata · in esecuzione",
+        "destroyed": "chiave distrutta · irrecuperabile"
+      }
     },
     "vision": {
-      "badge": "Cosa Ci Aspetta",
-      "title": "Dove Stiamo Andando",
-      "intro": "Stiamo costruendo verso:",
+      "badge": "Dove stiamo andando",
+      "title": "Il multiplayer non dovrebbe essere una funzione",
+      "intro": "Tutti i desktop degli ultimi quarant'anni presupponevano un solo utente. Crediamo che i prossimi ne presuppongano molti — macchine che persone e agenti condividono, evocano e scartano con la facilità di una scheda del browser. Stiamo costruendo in quella direzione:",
       "future": [
-        "Ambienti effimeri da avviare e buttare via",
-        "Agenti AI che operano dentro il tuo desktop, non solo in una chat",
-        "Accesso completo al desktop da qualsiasi dispositivo, incluso il mobile con touch nativo",
-        "Il multiplayer come impostazione predefinita, non come extra"
+        "Avviare una sessione dal tuo editor o direttamente da una pull request",
+        "Policy a livello di organizzazione e profili macchina, dai runner minimi alle workstation con GPU",
+        "Sessioni senza credenziali, legate al tuo identity provider — niente di longevo che possa trapelare",
+        "Desktop che sopravvivono a qualsiasi server, con le tue finestre esattamente dove le avevi lasciate"
       ]
     },
     "cta": {
-      "title": "Provalo",
-      "description": "Piano gratuito. Nessuna carta di credito. Avvia una sessione e invita un collega.",
-      "button": "Prova Cyqle Gratis"
+      "title": "Guarda con i tuoi occhi",
+      "description": "Un desktop in pochi secondi. Invita un collega, o manda un agente.\nPiano gratuito. Nessuna carta di credito.",
+      "button": "Avvia un desktop gratis"
     }
   },
   "privacyPolicy": {

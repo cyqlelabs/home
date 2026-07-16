@@ -353,85 +353,102 @@
     }
   },
   "aboutPage": {
-    "metaTitle": "À propos de Cyqle : le Bureau Cloud Multijoueur",
-    "metaDescription": "Cyqle est un bureau cloud P2P où plusieurs personnes travaillent simultanément sur la même machine. Chaque utilisateur a son propre curseur et son clavier. Démarrez en quelques secondes, collaborez en temps réel.",
+    "metaTitle": "À propos de Cyqle : pourquoi nous avons reconstruit le bureau pour plusieurs utilisateurs",
+    "metaDescription": "Cyqle est un bureau cloud conçu pour de nombreux utilisateurs simultanés — des personnes et des agents IA. Découvrez pourquoi nous avons brisé le postulat d'une personne par ordinateur, et ce qu'il a fallu pour y arriver.",
     "hero": {
-      "title": "Un Bureau Cloud Multijoueur",
-      "subtitle": "Une même machine. Plusieurs claviers. Tout le monde a la main."
+      "titleLine1": "Les ordinateurs ont été conçus pour <s>une seule personne</s>.",
+      "titleLine2": "Nous en avons construit un pour <accent>plusieurs</accent>.",
+      "subtitle": "Un bureau cloud que plusieurs personnes — et des agents IA — peuvent piloter en même temps. Voici pourquoi nous l'avons construit, et ce qu'il a fallu résoudre.",
+      "agentTag": "agent"
     },
     "problem": {
-      "badge": "Le Problème",
-      "title": "Le Télétravail, c'est Encore Chacun son Tour",
-      "intro": "Le partage d'écran, c'est une personne qui pilote et beaucoup qui regardent. Ce n'est pas de la collaboration.",
-      "scenario1": "Vous ne pouvez pas toucher au code sur le partage d'écran d'un collègue. Vous regardez et dictez quoi taper.",
-      "scenario2": "Les environnements locaux cassent, divergent et ne se partagent pas d'un simple lien.",
-      "scenario3": "Votre équipe a 10 ordinateurs portables, mais aucune machine commune pour travailler ensemble.",
-      "truth": "Les systèmes d'exploitation ont été conçus pour un seul utilisateur. Nous en avons construit un pour plusieurs.",
-      "solution": "C'est ça, Cyqle."
+      "badge": "Le problème",
+      "title": "Chaque outil de collaboration est un pis-aller",
+      "intro": "« Vous voyez mon écran ? » n'est pas de la collaboration. C'est de la narration.",
+      "scenario1": "Vous l'avez vécu. Une personne pilote, quatre décrivent où cliquer. Les fichiers sont exportés, envoyés par e-mail, réimportés. Le contrôle se « demande ».",
+      "scenario2": "Les développeurs sont les plus mal lotis : des environnements qui dérivent jusqu'à ce que « ça marche sur ma machine » devienne un haussement d'épaules, des bugs qui n'existent que dans la CI, des après-midi entières à reconstruire une configuration qui marchait la semaine dernière.",
+      "scenario3": "Et il n'y a pas que les ingénieurs. Les agents de support décrivent des correctifs qu'ils pourraient simplement appliquer. Les équipes administratives se passent un tableur pendant l'appel comme un bâton de parole.",
+      "truth": "Ces problèmes semblent différents. C'est le même : chaque ordinateur que vous avez utilisé a été conçu pour un seul utilisateur, et tout ce qui est construit par-dessus hérite de ce postulat.",
+      "solution": "Alors nous avons brisé le postulat."
     },
     "story": {
-      "badge": "Contexte",
-      "title": "Comment Nous en Sommes Arrivés Là",
-      "year2017": "Nous avons commencé par l'automatisation de navigateur. Utile, mais cela ne résolvait qu'une partie du problème.",
-      "pivot": "Le goulot d'étranglement, c'était l'OS lui-même — conçu pour un seul utilisateur.",
-      "year2025": "Le partage d'écran est une rustine posée sur une architecture solo. Voilà pourquoi c'est si pénible.",
-      "realization": "Alors nous avons reconstruit le bureau pour le P2P. Ni hôte ni invité — juste des utilisateurs égaux sur la même machine.",
-      "present": "Cyqle est un ordinateur cloud où la collaboration est une primitive de base."
+      "badge": "Notre parcours",
+      "title": "Construit par des gens fatigués d'attendre leur tour",
+      "yearLabel": "2020",
+      "paragraph1": "Nous sommes développeurs. Nous avons vécu toutes les versions de la douleur décrite sur cette page : le pair programming par partage d'écran, la dérive des environnements, les échecs de CI que personne ne pouvait reproduire, les opérations en production menées par-dessus l'épaule de quelqu'un.",
+      "paragraph2": "En 2020, nous avons commencé à construire la machine sur laquelle nous voulions travailler : un vrai bureau Linux dans le cloud où chaque participant est un utilisateur à part entière. Pas d'hôte. Pas d'invité. Pas de contrôle à demander. Chacun apporte son propre curseur et son propre clavier sur la même machine.",
+      "paragraph3": "Puis il s'est passé quelque chose d'imprévu : des gens qui n'avaient jamais ouvert un terminal sont arrivés. Des équipes de support qui réparent avec leurs clients au lieu de leur dicter la marche à suivre. Des équipes qui font leur travail administratif dans un bureau partagé. Attendre son tour, en fin de compte, était le problème de tout le monde.",
+      "present": "Aujourd'hui, Cyqle est un ordinateur cloud où la collaboration n'est pas une fonctionnalité ajoutée. C'est le postulat de départ."
     },
-    "solution": {
-      "badge": "Ce Que C'est",
-      "title": "Un Bureau Linux Complet, Partagé en Temps Réel",
-      "paragraph1": "Cyqle est un véritable environnement Linux dans le cloud. Plusieurs personnes travaillent simultanément, chacune avec son propre curseur et sa propre saisie clavier.",
-      "paragraph2": "Pas du partage d'écran. Pas une VM où l'on se connecte seul en SSH. Un ordinateur multijoueur que vous lancez en quelques secondes, sur lequel vous travaillez ensemble, puis que vous fermez ou conservez.",
-      "realityCheck": "Fini :",
-      "painPoints": [
-        "« Vous voyez mon écran ? » — ils y sont déjà",
-        "Décrire les bugs par chat — invitez-les directement",
-        "« Ça marche sur ma machine » — utilisez la même machine",
-        "Reconstruire les environnements de démo — snapshottez et réutilisez",
-        "Écrire des scripts pour des tâches simples — enregistrez et rejouez"
-      ]
+    "humans": {
+      "badge": "Pour les personnes",
+      "title": "Une machine que toute votre équipe peut habiter",
+      "intro": "Un bureau Linux complet, vivant dans votre navigateur en quelques secondes. Partagez un lien et votre équipe est à l'intérieur — chacun avec son propre curseur et son clavier, tous en action en même temps.",
+      "items": [
+        "Tout le monde travaille simultanément — ni conducteur, ni passagers",
+        "Éphémère par défaut : fermez-le et il disparaît, de façon démontrable",
+        "Prenez un snapshot d'un bureau configuré et réutilisez-le pour toujours",
+        "Mettez une session en pause et la facturation s'arrête ; reprenez exactement où vous en étiez",
+        "Enregistrez des sessions et rejouez-les pour des revues, des audits ou de la formation",
+        "Utilisez le bureau complet depuis un téléphone, avec des gestes tactiles natifs"
+      ],
+      "note": "La collaboration est incluse dans toutes les offres, y compris la gratuite. Ce n'est pas l'argument d'upsell. C'est le cœur du produit."
+    },
+    "agents": {
+      "badge": "Pour les agents IA",
+      "title": "Il s'avère que les agents avaient besoin de la même chose",
+      "paragraph1": "Un agent enfermé dans une boîte de chat ne peut que parler du travail. Donnez-lui un ordinateur et il peut le faire : ouvrir des applications, lancer des commandes, naviguer, gérer des fichiers.",
+      "paragraph2": "Sur Cyqle, chaque agent dispose d'un vrai bureau. Démarrez une machine propre par exécution. Configurez une fois, prenez un snapshot et clonez-le pour des exécutions parallèles. Intégrez des bureaux préchauffés dans vos pipelines de CI. Détruisez tout quand le travail est terminé.",
+      "paragraph3": "Et comme le bureau est multijoueur, l'agent n'est qu'un utilisateur parmi d'autres sur la machine. Vous regardez son curseur bouger en temps réel. S'il bloque, vous prenez votre propre curseur et reprenez la main — même session, sans cérémonie.",
+      "proof": "Des équipes utilisent déjà notre Operator intégré de cette façon — et amènent aussi leurs propres agents.",
+      "demo": {
+        "agentLabel": "agent",
+        "humanLabel": "vous",
+        "takeover": "vous avez repris la main · même session"
+      }
     },
     "difference": {
-      "badge": "Sous le Capot",
-      "title": "Ce Que Nous Avons Dû Résoudre",
-      "intro": "Les bureaux cloud en temps réel exigent de résoudre des problèmes difficiles :",
+      "badge": "Sous le capot",
+      "title": "Ce qu'il a fallu résoudre pour y arriver",
+      "intro": "Rien de tout cela n'existe sur étagère. Un bureau véritablement multi-utilisateur a exigé de résoudre des problèmes que la plupart des outils maquillent :",
       "challenges": [
-        "Streaming P2P à latence minimale (sans relais central)",
-        "Injection d'entrées multi-curseurs au niveau système",
-        "Stockage éphémère effaçable cryptographiquement",
-        "Des temps de démarrage inférieurs à 5 secondes",
-        "Un accès depuis le navigateur aux performances natives"
+        "De vrais périphériques d'entrée pour chaque participant, injectés au niveau du système d'exploitation — pas des curseurs superposés à un flux vidéo",
+        "Un streaming de session en pair-à-pair, sans serveur central sur le chemin de vos données",
+        "Une clé de chiffrement de 256 bits unique par session, détruite à la fermeture — un effacement cryptographique, pas un bouton supprimer",
+        "Une isolation imposée au niveau du noyau autour de chaque bureau, pour que les sessions ne puissent ni se voir ni se toucher",
+        "Des bureaux entièrement configurés qui démarrent en quelques secondes depuis des snapshots préchauffés"
       ],
-      "conclusion": "Une infrastructure complexe derrière une expérience simple."
+      "conclusion": "Des années d'infrastructure pour que l'expérience tienne en un clic."
     },
-    "forWhom": {
-      "badge": "Cas d'Usage",
-      "title": "Conçu pour les Équipes qui :",
+    "principles": {
+      "badge": "Nos convictions",
+      "title": "Votre session vous appartient. De façon démontrable.",
       "items": [
-        "Déboguent ensemble au lieu de se relayer",
-        "Ont besoin d'environnements de reproduction jetables",
-        "Forment leurs ingénieurs par la pratique, pas par la doc",
-        "Exécutent de l'automatisation navigateur sans lourdeur d'infrastructure",
-        "Ont besoin d'un sandbox sécurisé pour leurs agents IA",
-        "Veulent un accès root sans risquer leurs machines locales"
-      ]
+        "Éphémère par défaut. Quand une session se ferme, sa clé est détruite et les données deviennent irrécupérables — pour les attaquants comme pour nous.",
+        "Zéro connaissance, au sens littéral : nous ne pouvons pas voir l'intérieur de votre session.",
+        "La persistance est votre choix, chiffrée de bout en bout. Jamais un réglage que nous activons en douce.",
+        "Tous les utilisateurs sont égaux sur la machine — humain ou agent, offre gratuite ou payante."
+      ],
+      "erasure": {
+        "running": "chiffrée · en cours",
+        "destroyed": "clé détruite · irrécupérable"
+      }
     },
     "vision": {
-      "badge": "La Suite",
-      "title": "Où Nous Allons",
-      "intro": "Nous construisons :",
+      "badge": "Notre cap",
+      "title": "Le multijoueur ne devrait pas être une fonctionnalité",
+      "intro": "Tous les bureaux des quarante dernières années ont supposé un utilisateur unique. Nous pensons que les prochains en supposent plusieurs — des machines que personnes et agents partagent, invoquent et jettent aussi facilement qu'un onglet de navigateur. Nous construisons dans cette direction :",
       "future": [
-        "Des environnements éphémères que vous lancez puis jetez",
-        "Des agents IA qui opèrent dans votre bureau, pas seulement dans une fenêtre de chat",
-        "Un accès complet au bureau depuis n'importe quel appareil, y compris mobile avec gestes tactiles natifs",
-        "Le multijoueur par défaut, pas en option"
+        "Démarrer une session depuis votre éditeur ou directement depuis une pull request",
+        "Des politiques d'organisation et des profils de machine, du petit runner à la station GPU",
+        "Des sessions sans identifiants, liées à votre fournisseur d'identité — rien de durable à faire fuiter",
+        "Des bureaux qui survivent à n'importe quel serveur, avec vos fenêtres exactement là où vous les aviez laissées"
       ]
     },
     "cta": {
-      "title": "Essayez-le",
-      "description": "Offre gratuite. Sans carte bancaire. Lancez une session et invitez un collègue.",
-      "button": "Essayer Cyqle Gratuitement"
+      "title": "Voyez par vous-même",
+      "description": "Un bureau en quelques secondes. Invitez un collègue, ou envoyez un agent.\nOffre gratuite. Sans carte bancaire.",
+      "button": "Lancez un bureau gratuit"
     }
   },
   "privacyPolicy": {

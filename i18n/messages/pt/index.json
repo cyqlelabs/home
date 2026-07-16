@@ -353,85 +353,102 @@
     }
   },
   "aboutPage": {
-    "metaTitle": "Sobre o Cyqle: Desktop na Nuvem Multiplayer",
-    "metaDescription": "O Cyqle é um desktop na nuvem P2P onde várias pessoas trabalham na mesma máquina ao mesmo tempo. Cada usuário tem seu próprio cursor e teclado. Crie em segundos, colabore em tempo real.",
+    "metaTitle": "Sobre a Cyqle: por que reconstruímos o desktop para muitos usuários",
+    "metaDescription": "A Cyqle é um desktop na nuvem feito para muitos usuários simultâneos — pessoas e agentes de IA. Veja por que quebramos o pressuposto de uma pessoa por computador e o que foi preciso para isso.",
     "hero": {
-      "title": "Um Desktop na Nuvem Multiplayer",
-      "subtitle": "A mesma máquina. Vários teclados. Todos no controle."
+      "titleLine1": "Os computadores foram feitos para <s>uma pessoa só</s>.",
+      "titleLine2": "Nós fizemos um para <accent>muitas</accent>.",
+      "subtitle": "Um desktop na nuvem que muitas pessoas — e agentes de IA — podem controlar ao mesmo tempo. Aqui está o porquê de o termos construído, e o que foi preciso.",
+      "agentTag": "agente"
     },
     "problem": {
-      "badge": "O Problema",
-      "title": "Trabalho Remoto Ainda Significa Esperar a Vez",
-      "intro": "Compartilhar tela é um no volante e muitos assistindo. Isso não é colaboração.",
-      "scenario1": "Você não consegue tocar no código na tela compartilhada de outra pessoa. Só assiste e dita o que digitar.",
-      "scenario2": "Ambientes locais quebram, divergem e não podem ser compartilhados com um link.",
-      "scenario3": "Sua equipe tem 10 laptops, mas nenhuma máquina compartilhada para trabalhar junta.",
-      "truth": "Sistemas operacionais foram feitos para um usuário. Nós construímos um para vários.",
-      "solution": "Isso é o Cyqle."
+      "badge": "O problema",
+      "title": "Toda ferramenta de colaboração é uma gambiarra",
+      "intro": "“Estão vendo minha tela?” não é colaboração. É narração.",
+      "scenario1": "Você já viveu isso. Uma pessoa dirige, quatro descrevem onde clicar. Arquivos são exportados, enviados por e-mail e importados de novo. O controle é “solicitado”.",
+      "scenario2": "Desenvolvedores levam a pior: ambientes que se desalinham até “na minha máquina funciona” virar um dar de ombros, bugs que só existem no CI, tardes inteiras reconstruindo um setup que funcionava na semana passada.",
+      "scenario3": "E não é só com engenheiros. Agentes de suporte descrevem correções que poderiam simplesmente fazer. Equipes administrativas passam uma planilha de mão em mão na chamada, como um bastão.",
+      "truth": "Parecem problemas diferentes. É um só: todo computador que você já usou foi projetado para um único usuário, e tudo que foi construído em cima herda esse pressuposto.",
+      "solution": "Então quebramos o pressuposto."
     },
     "story": {
-      "badge": "Contexto",
-      "title": "Como Chegamos Aqui",
-      "year2017": "Começamos com automação de navegador. Útil, mas resolvia só parte do problema.",
-      "pivot": "O gargalo era o próprio SO — feito para um único usuário.",
-      "year2025": "Compartilhamento de tela é uma gambiarra sobre uma arquitetura single-player. Por isso é tão sofrido.",
-      "realization": "Então reconstruímos o desktop para P2P. Sem anfitrião e convidado — só usuários iguais na mesma máquina.",
-      "present": "O Cyqle é um computador na nuvem onde colaboração é uma primitiva central."
+      "badge": "Como chegamos aqui",
+      "title": "Feito por gente cansada de esperar a vez",
+      "yearLabel": "2020",
+      "paragraph1": "Somos desenvolvedores. Vivemos todas as versões da dor desta página: parear por compartilhamento de tela, ambientes que se desalinham, falhas de CI que ninguém conseguia reproduzir, operações em produção feitas por cima do ombro de alguém.",
+      "paragraph2": "Em 2020 começamos a construir a máquina em que queríamos trabalhar: um desktop Linux de verdade na nuvem, onde cada participante é um usuário de primeira classe. Sem anfitrião. Sem convidado. Sem pedir o controle. Cada um traz o próprio cursor e o próprio teclado para a mesma máquina.",
+      "paragraph3": "Aí aconteceu algo que não planejamos: começou a aparecer gente que nunca tinha aberto um terminal. Equipes de suporte consertando as coisas com os clientes, em vez de narrar para eles. Equipes fazendo o trabalho administrativo em um desktop compartilhado. Esperar a vez, no fim das contas, era um problema de todo mundo.",
+      "present": "Hoje a Cyqle é um computador na nuvem em que colaboração não é um recurso que adicionamos. É o pressuposto de onde partimos."
     },
-    "solution": {
-      "badge": "O Que É",
-      "title": "Um Desktop Linux Completo, Compartilhado em Tempo Real",
-      "paragraph1": "O Cyqle é um ambiente Linux de verdade na nuvem. Várias pessoas trabalham ao mesmo tempo, cada uma com seu próprio cursor e teclado.",
-      "paragraph2": "Não é compartilhamento de tela. Não é uma VM que você acessa sozinho por SSH. É um computador multiplayer que você cria em segundos, usa em equipe e depois fecha ou persiste.",
-      "realityCheck": "Chega de:",
-      "painPoints": [
-        "\"Está vendo minha tela?\" — todos já estão lá",
-        "Descrever bugs pelo chat — só convide a pessoa",
-        "\"Na minha máquina funciona\" — usem a mesma máquina",
-        "Reconstruir ambientes de demo — crie um snapshot e reutilize",
-        "Escrever scripts para tarefas simples — grave e reproduza"
-      ]
+    "humans": {
+      "badge": "Para pessoas",
+      "title": "Uma máquina que o seu time inteiro pode habitar",
+      "intro": "Um desktop Linux completo, vivo no seu navegador em segundos. Compartilhe um link e o seu time está dentro — cada pessoa com o próprio cursor e teclado, todos agindo ao mesmo tempo.",
+      "items": [
+        "Todo mundo trabalha ao mesmo tempo — sem motoristas nem passageiros",
+        "Efêmero por padrão: feche e ele some, de forma comprovável",
+        "Tire um snapshot de um desktop configurado e reutilize para sempre",
+        "Pause uma sessão e a cobrança para; retome exatamente de onde parou",
+        "Grave sessões e reproduza depois, para revisões, auditorias ou treinamento",
+        "Use o desktop completo do celular, com gestos de toque nativos"
+      ],
+      "note": "A colaboração está em todos os planos, inclusive no gratuito. Não é o upsell. É o ponto."
+    },
+    "agents": {
+      "badge": "Para agentes de IA",
+      "title": "No fim, os agentes precisavam da mesma coisa",
+      "paragraph1": "Um agente preso numa caixa de chat só consegue falar sobre o trabalho. Dê a ele um computador e ele faz o trabalho: abre aplicativos, roda comandos, navega, gerencia arquivos.",
+      "paragraph2": "Na Cyqle, cada agente tem um desktop de verdade. Suba uma máquina limpa por execução. Configure uma vez, tire um snapshot e clone para execuções em paralelo. Coloque desktops pré-aquecidos nos seus pipelines de CI. Derrube tudo quando o trabalho terminar.",
+      "paragraph3": "E como o desktop é multiplayer, o agente é só mais um usuário na máquina. Você vê o cursor dele se mover em tempo real. Se ele travar, você pega o seu próprio cursor e assume — mesma sessão, sem cerimônia.",
+      "proof": "Já tem equipe rodando o nosso Operator integrado assim — e trazendo os próprios agentes também.",
+      "demo": {
+        "agentLabel": "agente",
+        "humanLabel": "você",
+        "takeover": "você assumiu · mesma sessão"
+      }
     },
     "difference": {
-      "badge": "Por Baixo do Capô",
-      "title": "O Que Tivemos de Resolver",
-      "intro": "Desktops na nuvem em tempo real exigem resolver problemas difíceis:",
+      "badge": "Por baixo do capô",
+      "title": "O que tivemos que resolver para tornar isso real",
+      "intro": "Nada disso existe pronto na prateleira. Um desktop realmente multiusuário exigiu resolver problemas que a maioria das ferramentas disfarça:",
       "challenges": [
-        "Streaming P2P com latência mínima (sem relay central)",
-        "Injeção de entrada multi-cursor no nível do sistema",
-        "Armazenamento efêmero com apagamento criptográfico",
-        "Boot em menos de 5 segundos",
-        "Acesso pelo navegador com desempenho nativo"
+        "Dispositivos de entrada reais para cada participante, injetados no nível do sistema operacional — não cursores sobrepostos num stream de vídeo",
+        "Streaming de sessão peer-to-peer, sem nenhum servidor central no caminho dos seus dados",
+        "Uma chave de criptografia de 256 bits única por sessão, destruída ao fechar — apagamento criptográfico, não um botão de excluir",
+        "Isolamento imposto no nível do kernel em volta de cada desktop, para que sessões não consigam se ver nem se tocar",
+        "Desktops totalmente configurados subindo em segundos a partir de snapshots pré-aquecidos"
       ],
-      "conclusion": "Infraestrutura complexa por trás de uma experiência simples."
+      "conclusion": "Anos de infraestrutura para que a experiência continue sendo um clique."
     },
-    "forWhom": {
-      "badge": "Casos de Uso",
-      "title": "Feito para Equipes que:",
+    "principles": {
+      "badge": "No que acreditamos",
+      "title": "A sessão é sua. De forma comprovável.",
       "items": [
-        "Depuram juntas em vez de esperar a vez",
-        "Precisam de ambientes descartáveis de reprodução",
-        "Fazem onboarding de engenheiros na prática, não com documentos",
-        "Rodam automação de navegador sem sobrecarga de infra",
-        "Precisam de um sandbox seguro para agentes de IA",
-        "Querem acesso root sem arriscar as máquinas locais"
-      ]
+        "Efêmero por padrão. Quando uma sessão fecha, a chave é destruída e os dados se tornam irrecuperáveis — para atacantes e para nós.",
+        "Conhecimento zero, no sentido literal: não conseguimos ver dentro da sua sessão.",
+        "Persistência é uma escolha sua, criptografada de ponta a ponta. Nunca um padrão que ligamos em silêncio.",
+        "Todos os usuários são iguais na máquina — humano ou agente, plano gratuito ou pago."
+      ],
+      "erasure": {
+        "running": "criptografada · em execução",
+        "destroyed": "chave destruída · irrecuperável"
+      }
     },
     "vision": {
-      "badge": "Próximos Passos",
-      "title": "Para Onde Vamos",
-      "intro": "Estamos construindo rumo a:",
+      "badge": "Para onde vamos",
+      "title": "Multiplayer não deveria ser um recurso",
+      "intro": "Todos os desktops dos últimos quarenta anos presumiram um único usuário. Achamos que os próximos presumem muitos — máquinas que pessoas e agentes compartilham, invocam e descartam com a facilidade de uma aba do navegador. Estamos construindo nessa direção:",
       "future": [
-        "Ambientes efêmeros que você cria e descarta",
-        "Agentes de IA que operam dentro do seu desktop, não só em uma caixa de chat",
-        "Acesso completo ao desktop de qualquer dispositivo, inclusive mobile com toque nativo",
-        "Multiplayer como padrão, não como extra"
+        "Iniciar uma sessão do seu editor ou direto de um pull request",
+        "Políticas de organização e perfis de máquina, de runners mínimos a estações com GPU",
+        "Sessões sem credenciais, ligadas ao seu provedor de identidade — nada de longa duração para vazar",
+        "Desktops que sobrevivem a qualquer servidor, com as suas janelas exatamente onde você as deixou"
       ]
     },
     "cta": {
-      "title": "Experimente",
-      "description": "Plano gratuito. Sem cartão de crédito. Crie uma sessão e convide um colega.",
-      "button": "Experimente o Cyqle Grátis"
+      "title": "Veja com os próprios olhos",
+      "description": "Um desktop em segundos. Convide um colega, ou mande um agente.\nPlano gratuito. Sem cartão de crédito.",
+      "button": "Suba um desktop grátis"
     }
   },
   "privacyPolicy": {
