@@ -414,8 +414,8 @@
       "challenges": [
         "Dispositivos de entrada reales para cada participante, inyectados a nivel del sistema operativo, no cursores superpuestos sobre un stream de video",
         "Streaming de sesiones peer-to-peer, sin ningún servidor central en el camino de tus datos",
-        "Una clave de cifrado de 256 bits única por sesión, destruida al cerrar: borrado criptográfico, no un botón de eliminar",
-        "Aislamiento impuesto a nivel del kernel alrededor de cada escritorio, para que las sesiones no puedan verse ni tocarse entre sí",
+        "Cada sesión cifrada con su propia clave, destruida al cerrar: borrado criptográfico, no un botón de eliminar",
+        "Aislamiento impuesto a nivel del kernel: imposible de eludir desde adentro de la sesión",
         "Escritorios totalmente configurados que arrancan en segundos desde snapshots precalentados"
       ],
       "conclusion": "Años de infraestructura para que la experiencia siga siendo un clic."

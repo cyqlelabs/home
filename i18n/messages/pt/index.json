@@ -414,8 +414,8 @@
       "challenges": [
         "Dispositivos de entrada reais para cada participante, injetados no nível do sistema operacional — não cursores sobrepostos num stream de vídeo",
         "Streaming de sessão peer-to-peer, sem nenhum servidor central no caminho dos seus dados",
-        "Uma chave de criptografia de 256 bits única por sessão, destruída ao fechar — apagamento criptográfico, não um botão de excluir",
-        "Isolamento imposto no nível do kernel em volta de cada desktop, para que sessões não consigam se ver nem se tocar",
+        "Cada sessão criptografada com a própria chave, destruída ao fechar — apagamento criptográfico, não um botão de excluir",
+        "Isolamento imposto no nível do kernel — impossível de contornar de dentro da sessão",
         "Desktops totalmente configurados subindo em segundos a partir de snapshots pré-aquecidos"
       ],
       "conclusion": "Anos de infraestrutura para que a experiência continue sendo um clique."

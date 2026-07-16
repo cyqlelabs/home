@@ -414,8 +414,8 @@
       "challenges": [
         "De vrais périphériques d'entrée pour chaque participant, injectés au niveau du système d'exploitation — pas des curseurs superposés à un flux vidéo",
         "Un streaming de session en pair-à-pair, sans serveur central sur le chemin de vos données",
-        "Une clé de chiffrement de 256 bits unique par session, détruite à la fermeture — un effacement cryptographique, pas un bouton supprimer",
-        "Une isolation imposée au niveau du noyau autour de chaque bureau, pour que les sessions ne puissent ni se voir ni se toucher",
+        "Chaque session chiffrée avec sa propre clé, détruite à la fermeture — un effacement cryptographique, pas un bouton supprimer",
+        "Une isolation imposée au niveau du noyau — impossible à contourner depuis l'intérieur de la session",
         "Des bureaux entièrement configurés qui démarrent en quelques secondes depuis des snapshots préchauffés"
       ],
       "conclusion": "Des années d'infrastructure pour que l'expérience tienne en un clic."

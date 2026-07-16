@@ -414,8 +414,8 @@
       "challenges": [
         "Echte Eingabegeräte für jeden Teilnehmer, injiziert auf Betriebssystem-Ebene — keine Overlay-Cursor auf einem Videostream",
         "Peer-to-Peer-Streaming der Session, ohne zentralen Server im Datenpfad",
-        "Ein einzigartiger 256-Bit-Schlüssel pro Session, beim Schließen zerstört — kryptografische Löschung, kein Löschen-Button",
-        "Kernel-erzwungene Isolation um jeden Desktop, damit Sessions einander weder sehen noch berühren können",
+        "Jede Session mit eigenem Schlüssel verschlüsselt, beim Schließen zerstört — kryptografische Löschung, kein Löschen-Button",
+        "Isolation erzwungen auf Kernel-Ebene — von innerhalb der Session nicht zu umgehen",
         "Vollständig konfigurierte Desktops, die in Sekunden aus vorgewärmten Snapshots booten"
       ],
       "conclusion": "Jahre an Infrastruktur, damit die Erfahrung ein Klick bleibt."

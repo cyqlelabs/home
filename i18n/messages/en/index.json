@@ -414,8 +414,8 @@
       "challenges": [
         "Real input devices for every participant, injected at the operating-system level — not overlay cursors drawn on a video stream",
         "Peer-to-peer session streaming, so no central server sits in your data path",
-        "A unique 256-bit encryption key per session, destroyed on close — cryptographic erasure, not a delete button",
-        "Kernel-enforced isolation around every desktop, so sessions can't see or touch each other",
+        "Every session encrypted with its own key, destroyed on close — cryptographic erasure, not a delete button",
+        "Isolation enforced at the kernel level — it can't be bypassed from inside the session",
         "Fully configured desktops booting in seconds from pre-warmed snapshots"
       ],
       "conclusion": "Years of infrastructure so the experience stays one click."
