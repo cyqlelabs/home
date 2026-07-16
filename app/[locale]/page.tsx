@@ -59,7 +59,7 @@ export default async function Home({ params: { locale } }: Props) {
         <HeroBackground />
         <div className="container bg-clip-text mx-auto px-4 pt-32 pb-20 flex flex-col items-center gap-6 text-center dark:bg-transparent bg-gray-100 bg-opacity-80">
           <div className="flex items-center justify-center w-full px-2">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#FF7600] [text-wrap:balance]">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#FF7600] [text-wrap:balance] [word-break:keep-all]">
               {heroT('title')}
             </h1>
           </div>
