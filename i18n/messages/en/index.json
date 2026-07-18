@@ -146,7 +146,7 @@
           "persistence": "20 GB persistence",
           "snapshots": "Snapshot Creation",
           "api": "API Access",
-          "browserAgent": "In-house Browser Agent"
+          "aiAgent": "Built-in AI Agent"
         },
         "cta": "Get Started"
       },
@@ -163,7 +163,7 @@
           "persistence": "40 GB persistence",
           "snapshots": "Snapshot Creation",
           "api": "API Access",
-          "browserAgent": "In-house Browser Agent"
+          "aiAgent": "Built-in AI Agent"
         },
         "cta": "Go Pro"
       }
@@ -318,7 +318,7 @@
       "paragraph1": "An agent trapped in a chat box can only talk about work. Give it a computer and it can do the work: open apps, run commands, browse, manage files.",
       "paragraph2": "On Cyqle, every agent gets a real desktop. Boot a clean machine per run. Configure once, snapshot, and clone it for parallel runs. Drop pre-warmed desktops into CI pipelines. Tear it all down when the job is done.",
       "paragraph3": "And because the desktop is multiplayer, the agent is just another user at the machine. You watch its cursor move in real time. If it stalls, you grab your own cursor and take over — same session, no ceremony.",
-      "proof": "Teams already run our built-in Operator this way — and bring their own agents, too.",
+      "proof": "Teams already run our built-in AI Agent this way — and bring their own agents, too.",
       "demo": {
         "agentLabel": "agent",
         "humanLabel": "you",

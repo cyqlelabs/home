@@ -156,6 +156,7 @@
 
 **Words to avoid:**
 - "Synergy", "platform" (overused), "AI-powered" without specifics, "revolutionary", "leverage", "VDI" in dev-facing copy (sounds enterprisey/heavy), "screen sharing" as a positive (we beat it)
+- "Operator" / "AI Operator" — reads as OpenAI's product; use "Built-in AI Agent"
 - Don't oversell as "the future of work" — keep it grounded in primitives
 
 **Glossary:**
@@ -167,7 +168,7 @@
 | Ephemeral session | Default mode; cryptographically erased on close |
 | Persistent session | Paid-tier option; data retained per tier limits |
 | Snapshot | Frozen configured desktop you can clone |
-| AI Operator | Cyqle's automation engine for recorded browser workflows |
+| Built-in AI Agent | Cyqle's automation engine for recorded browser workflows. Never call this "Operator" — that term is associated with OpenAI and is being retired from Cyqle copy. |
 | Jailed environment | Per-session isolated filesystem and process namespace |
 
 ## Brand Voice
@@ -217,6 +218,6 @@
 - Real customer logos and named testimonials
 - Actual current metrics (MRR, signups, activation %, viral coefficient)
 - Confirmed competitor pricing for comparison pages
-- Whether "AI Operator" branding is sticking or being deprecated
+- "AI Operator" is deprecated (resolved 2026-07-18) — replaced by "Built-in AI Agent" in pricing and landing copy. Still present in the EU AI Act disclosure block (`i18n/messages/*/index.json`, `legal.ai.*`) pending a decision on editing legal copy.
 - Confirmed launch phase (Internal / Alpha / Beta / Early Access / Full) — recent commits suggest API is just launching
 - Product Hunt / launch readiness state

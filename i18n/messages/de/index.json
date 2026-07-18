@@ -146,7 +146,7 @@
           "persistence": "20 GB Persistenz",
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
-          "browserAgent": "Hauseigener Browser-Agent"
+          "aiAgent": "Integrierter KI-Agent"
         },
         "cta": "Loslegen"
       },
@@ -163,7 +163,7 @@
           "persistence": "40 GB Persistenz",
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
-          "browserAgent": "Hauseigener Browser-Agent"
+          "aiAgent": "Integrierter KI-Agent"
         },
         "cta": "Hol dir Pro"
       }
@@ -318,7 +318,7 @@
       "paragraph1": "Ein Agent, der in einer Chatbox festsitzt, kann über Arbeit nur reden. Gib ihm einen Computer, und er kann sie erledigen: Apps öffnen, Befehle ausführen, browsen, Dateien verwalten.",
       "paragraph2": "Auf Cyqle bekommt jeder Agent einen echten Desktop. Starte pro Lauf eine saubere Maschine. Einmal konfigurieren, Snapshot erstellen, für parallele Läufe klonen. Häng vorgewärmte Desktops in deine CI-Pipelines. Reiß alles ab, wenn der Job erledigt ist.",
       "paragraph3": "Und weil der Desktop Multiplayer ist, ist der Agent einfach ein weiterer Nutzer an der Maschine. Du siehst seinen Cursor in Echtzeit. Bleibt er hängen, greifst du zu deinem eigenen Cursor und übernimmst — gleiche Session, ohne Zeremonie.",
-      "proof": "Teams betreiben unseren eingebauten Operator schon genau so — und bringen auch eigene Agenten mit.",
+      "proof": "Teams betreiben unseren eingebauten KI-Agenten schon genau so — und bringen auch eigene Agenten mit.",
       "demo": {
         "agentLabel": "Agent",
         "humanLabel": "du",

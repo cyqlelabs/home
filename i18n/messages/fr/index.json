@@ -146,7 +146,7 @@
           "persistence": "20 GB de persistance",
           "snapshots": "Création de snapshots",
           "api": "Accès API",
-          "browserAgent": "Agent navigateur intégré"
+          "aiAgent": "Agent IA intégré"
         },
         "cta": "Commencer"
       },
@@ -163,7 +163,7 @@
           "persistence": "40 GB de persistance",
           "snapshots": "Création de snapshots",
           "api": "Accès API",
-          "browserAgent": "Agent navigateur intégré"
+          "aiAgent": "Agent IA intégré"
         },
         "cta": "Passer en Pro"
       }
@@ -318,7 +318,7 @@
       "paragraph1": "Un agent enfermé dans une boîte de chat ne peut que parler du travail. Donnez-lui un ordinateur et il peut le faire : ouvrir des applications, lancer des commandes, naviguer, gérer des fichiers.",
       "paragraph2": "Sur Cyqle, chaque agent dispose d'un vrai bureau. Démarrez une machine propre par exécution. Configurez une fois, prenez un snapshot et clonez-le pour des exécutions parallèles. Intégrez des bureaux préchauffés dans vos pipelines de CI. Détruisez tout quand le travail est terminé.",
       "paragraph3": "Et comme le bureau est multijoueur, l'agent n'est qu'un utilisateur parmi d'autres sur la machine. Vous regardez son curseur bouger en temps réel. S'il bloque, vous prenez votre propre curseur et reprenez la main — même session, sans cérémonie.",
-      "proof": "Des équipes utilisent déjà notre Operator intégré de cette façon — et amènent aussi leurs propres agents.",
+      "proof": "Des équipes utilisent déjà notre Agent IA intégré de cette façon — et amènent aussi leurs propres agents.",
       "demo": {
         "agentLabel": "agent",
         "humanLabel": "vous",

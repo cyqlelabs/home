@@ -146,7 +146,7 @@
           "persistence": "20 GB di persistenza",
           "snapshots": "Creazione di snapshot",
           "api": "Accesso API",
-          "browserAgent": "Agente browser proprietario"
+          "aiAgent": "Agente IA integrato"
         },
         "cta": "Inizia Ora"
       },
@@ -163,7 +163,7 @@
           "persistence": "40 GB di persistenza",
           "snapshots": "Creazione di snapshot",
           "api": "Accesso API",
-          "browserAgent": "Agente browser proprietario"
+          "aiAgent": "Agente IA integrato"
         },
         "cta": "Passa a Pro"
       }
@@ -318,7 +318,7 @@
       "paragraph1": "Un agente chiuso in una chat può solo parlare del lavoro. Dagli un computer e il lavoro lo fa: apre applicazioni, esegue comandi, naviga, gestisce file.",
       "paragraph2": "Su Cyqle ogni agente ha un desktop vero. Avvia una macchina pulita per ogni esecuzione. Configura una volta, fai lo snapshot e clonalo per esecuzioni parallele. Inserisci desktop preriscaldati nelle tue pipeline di CI. Butta giù tutto quando il lavoro è finito.",
       "paragraph3": "E siccome il desktop è multiplayer, l'agente è solo un altro utente della macchina. Guardi il suo cursore muoversi in tempo reale. Se si blocca, prendi il tuo cursore e subentri — stessa sessione, senza cerimonie.",
-      "proof": "Ci sono già team che usano così il nostro Operator integrato — e che portano anche i propri agenti.",
+      "proof": "Ci sono già team che usano così il nostro Agente IA integrato — e che portano anche i propri agenti.",
       "demo": {
         "agentLabel": "agente",
         "humanLabel": "tu",
