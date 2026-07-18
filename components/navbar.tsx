@@ -85,8 +85,10 @@ export default function Navbar() {
               {t('navbar.pricing')}
             </TrackedLink>
             <TrackedLink
-              href={`/${locale}/api-docs`}
+              href="https://api.cyqle.in/docs/"
               trackingKey="navbarApi"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-slate-300 hover:text-white transition-colors"
             >
               {t('navbar.api')}
@@ -172,8 +174,10 @@ export default function Navbar() {
                 {t('navbar.pricing')}
               </TrackedLink>
               <TrackedLink
-                href={`/${locale}/api-docs`}
+                href="https://api.cyqle.in/docs/"
                 trackingKey="navbarApi"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-slate-300 hover:text-white transition-colors py-2"
                 onClick={closeMobileMenu}
               >

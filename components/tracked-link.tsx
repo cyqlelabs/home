@@ -65,7 +65,7 @@ export default function TrackedLink({
 }: TrackedLinkProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const destination = appendUtmParams(href);
-    trackAndNavigate(destination, trackCTA[trackingKey], e);
+    trackAndNavigate(destination, trackCTA[trackingKey], e, target);
     if (onClick) {
       onClick();
     }

@@ -147,7 +147,7 @@ export const trackCTA = {
       event_label: 'API Documentation',
       button_location: 'footer_help_support',
       button_text: 'API Documentation',
-      destination: 'https://api.cyqle.in/docs',
+      destination: 'https://api.cyqle.in/docs/',
       event_callback: callback,
     });
   },
@@ -212,7 +212,7 @@ export const trackCTA = {
       event_label: 'API - Navbar',
       button_location: 'navbar',
       button_text: 'API',
-      destination: '/api-docs',
+      destination: 'https://api.cyqle.in/docs/',
       event_callback: callback,
     });
   },
@@ -223,7 +223,7 @@ export const trackCTA = {
       event_label: 'API Teaser - See the API docs',
       button_location: 'landing_api_teaser',
       button_text: 'See the API docs',
-      destination: '/api-docs',
+      destination: 'https://api.cyqle.in/docs/',
       event_callback: callback,
     });
   },
@@ -284,6 +284,7 @@ export const trackAndNavigate = (
   href: string,
   trackingFn: (callback?: () => void) => void,
   e?: React.MouseEvent,
+  target?: string,
 ) => {
   if (e) {
     e.preventDefault();
@@ -293,7 +294,11 @@ export const trackAndNavigate = (
   const navigate = () => {
     if (!navigated) {
       navigated = true;
-      window.location.href = href;
+      if (target === '_blank') {
+        window.open(href, '_blank', 'noopener,noreferrer');
+      } else {
+        window.location.href = href;
+      }
     }
   };
 

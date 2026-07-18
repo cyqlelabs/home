@@ -352,7 +352,12 @@ export default async function Home({ params: { locale } }: Props) {
               </ul>
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <Button asChild className="bg-[#FF7600] text-white hover:bg-[#FF7600]/90">
-                  <TrackedLink href={`/${locale}/api-docs`} trackingKey="apiTeaserCta">
+                  <TrackedLink
+                    href="https://api.cyqle.in/docs/"
+                    trackingKey="apiTeaserCta"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {apiTeaserT('cta')}
                     <ArrowUpRight className="h-4 w-4 ml-1" />
                   </TrackedLink>
