@@ -81,12 +81,16 @@ export default async function AboutPage({ params: { locale } }: Props) {
         <div className="container relative mx-auto max-w-5xl px-4 text-center">
           <Reveal>
             <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl">
-              <span className="block text-gray-500">
+              <span className="block text-balance text-gray-500">
                 {t.rich('hero.titleLine1', {
-                  s: (chunks) => <s className="decoration-[#FF7600]/70 decoration-2">{chunks}</s>,
+                  s: (chunks) => (
+                    <s className="whitespace-nowrap decoration-[#FF7600]/70 decoration-2">
+                      {chunks}
+                    </s>
+                  ),
                 })}
               </span>
-              <span className="mt-2 block text-white">
+              <span className="mt-2 block text-balance text-white">
                 {t.rich('hero.titleLine2', {
                   accent: (chunks) => <span className="text-[#FF7600]">{chunks}</span>,
                 })}
