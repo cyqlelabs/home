@@ -252,12 +252,14 @@ export default async function Home({ params: { locale } }: Props) {
       {/* AI Automation Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-b from-gray-900/80 to-black/80">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-300 dark:text-foreground">
-                {aiSectionT('title')}
-              </h2>
-              <p className="text-gray-300 text-lg">{aiSectionT('description')}</p>
+          <div className="max-w-4xl mb-12 space-y-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-300 dark:text-foreground">
+              {aiSectionT('title')}
+            </h2>
+            <p className="text-gray-300 text-lg text-pretty">{aiSectionT('description')}</p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-10 lg:gap-12 items-stretch">
+            <div className="order-2 lg:order-1 space-y-6">
               <AiPaths
                 byoTitle={aiSectionT('byo.title')}
                 byoDescription={aiSectionT('byo.description')}
@@ -265,23 +267,23 @@ export default async function Home({ params: { locale } }: Props) {
                 inHouseDescription={aiSectionT('inHouse.description')}
                 inHouseItems={aiSectionT.raw('inHouse.items') as string[]}
               />
-              <Button
-                asChild
-                className="mt-6 bg-gradient-to-r from-[#00356b] via-[#0a4d8f] to-[#00356b] text-white hover:from-[#012a52] hover:via-[#083c72] hover:to-[#012a52] shadow-lg"
-              >
-                <TrackedLink href="https://app.cyqle.in/signup" trackingKey="aiSectionTryFree">
-                  {aiSectionT('cta')}
-                </TrackedLink>
-              </Button>
             </div>
-            <div className="order-1 md:order-2 video-feather">
+            <div className="order-1 lg:order-2 video-feather relative lg:h-full">
               <ResponsiveVideo
                 desktopSrc="/demo1.mp4"
                 mobileSrc="/demo1.mp4"
-                className="w-full h-full"
+                className="w-full h-full object-cover object-right-bottom lg:absolute lg:inset-0"
               />
             </div>
           </div>
+          <Button
+            asChild
+            className="mt-10 bg-gradient-to-r from-[#00356b] via-[#0a4d8f] to-[#00356b] text-white hover:from-[#012a52] hover:via-[#083c72] hover:to-[#012a52] shadow-lg"
+          >
+            <TrackedLink href="https://app.cyqle.in/signup" trackingKey="aiSectionTryFree">
+              {aiSectionT('cta')}
+            </TrackedLink>
+          </Button>
         </div>
       </AnimatedSection>
       <div id="api" />
