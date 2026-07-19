@@ -130,15 +130,16 @@ export const trackCTA = {
     trackXConversion({ conversion_source: 'about_page_cta' });
   },
 
-  exploreFeatures: (callback?: () => void) => {
+  aiSectionTryFree: (callback?: () => void) => {
     trackEvent('click', {
-      event_category: 'Navigation',
-      event_label: 'Explore Features - AI Section',
+      event_category: 'CTA',
+      event_label: 'Try It Free - AI Section',
       button_location: 'ai_section',
-      button_text: 'Explore Features',
-      destination: '#features',
+      button_text: 'Try It Free',
+      destination: 'https://app.cyqle.in/signup',
       event_callback: callback,
     });
+    trackXConversion({ conversion_source: 'ai_section_try_free' });
   },
 
   footerApiDocs: (callback?: () => void) => {

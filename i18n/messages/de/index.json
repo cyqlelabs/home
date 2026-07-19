@@ -78,15 +78,22 @@
   },
   "aiSection": {
     "title": "Automatisiere deine Arbeit",
-    "description": "Cyqle ist nicht nur ein Desktop, sondern eine Automatisierungsplattform. Zeichne Workflows auf, plane Aufgaben und lass Agenten die Routinearbeit erledigen.",
-    "items": [
-      "Zeichne Browser-Interaktionen auf und spiele sie ab",
-      "Delegiere repetitive Web-Aufgaben an Agenten",
-      "Plane Workflows, die im Hintergrund laufen",
-      "Pflege eine gemeinsame Bibliothek von Team-Automatisierungen",
-      "Funktioniert mit deinen bestehenden Tools"
-    ],
-    "exploreFeatures": "Kostenlos ausprobieren"
+    "description": "Cyqle ist nicht nur ein Desktop, sondern eine Automatisierungsplattform – und es gibt zwei Wege, sie für dich arbeiten zu lassen.",
+    "byo": {
+      "title": "Bring deine eigenen Agenten mit",
+      "description": "Jeder Desktop ist ein echter Computer unter deiner Kontrolle. Nutze deine eigenen Agenten, Architekturen und Tools – was auf einem Desktop läuft, läuft auch hier."
+    },
+    "inHouse": {
+      "title": "Oder nimm unseren: den Hauseigenen KI-Agenten",
+      "description": "Vom Cyqle-Team entwickelt, überwacht und getestet – und mit jedem Release effizienter.",
+      "items": [
+        "Zeichne Browser-Interaktionen auf und spiele sie ab",
+        "Delegiere repetitive Web-Aufgaben",
+        "Plane Workflows, die im Hintergrund laufen",
+        "Pflege eine gemeinsame Bibliothek von Team-Automatisierungen"
+      ]
+    },
+    "cta": "Kostenlos ausprobieren"
   },
   "apiTeaser": {
     "eyebrow": "REST API für KI-Agenten",

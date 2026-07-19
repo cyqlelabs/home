@@ -78,15 +78,22 @@
   },
   "aiSection": {
     "title": "Automatize seu trabalho",
-    "description": "O Cyqle não é só um desktop. É uma plataforma de automação. Grave fluxos de trabalho, agende tarefas e deixe os agentes cuidarem do trabalho repetitivo.",
-    "items": [
-      "Grave interações no navegador para reproduzir depois",
-      "Delegue tarefas web repetitivas a agentes",
-      "Agende fluxos de trabalho para rodar em segundo plano",
-      "Mantenha uma biblioteca compartilhada de automações da equipe",
-      "Funciona com as ferramentas que você já usa"
-    ],
-    "exploreFeatures": "Experimente grátis"
+    "description": "O Cyqle não é só um desktop. É uma plataforma de automação — e há duas formas de colocá-la para trabalhar.",
+    "byo": {
+      "title": "Traga seus próprios agentes",
+      "description": "Cada desktop é um computador de verdade sob o seu controle. Rode seus próprios agentes, arquiteturas e ferramentas: o que funciona em um desktop, funciona aqui."
+    },
+    "inHouse": {
+      "title": "Ou use o nosso: o Agente de IA próprio",
+      "description": "Desenvolvido, monitorado e testado pela equipe do Cyqle — mais eficiente a cada versão.",
+      "items": [
+        "Grave interações no navegador para reproduzir depois",
+        "Delegue tarefas web repetitivas",
+        "Agende fluxos de trabalho para rodar em segundo plano",
+        "Mantenha uma biblioteca compartilhada de automações da equipe"
+      ]
+    },
+    "cta": "Experimente grátis"
   },
   "apiTeaser": {
     "eyebrow": "API REST para agentes de IA",

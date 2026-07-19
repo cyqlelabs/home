@@ -38,7 +38,7 @@ interface TrackedLinkProps {
     | 'powerOnButton'
     | 'navbarTryForFree'
     | 'navbarLogIn'
-    | 'exploreFeatures'
+    | 'aiSectionTryFree'
     | 'footerApiDocs'
     | 'footerContactSupport'
     | 'navbarFeatures'

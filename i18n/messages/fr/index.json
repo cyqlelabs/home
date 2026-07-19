@@ -78,15 +78,22 @@
   },
   "aiSection": {
     "title": "Automatisez votre travail",
-    "description": "Cyqle n'est pas qu'un bureau. C'est une plateforme d'automatisation. Enregistrez des workflows, planifiez des tâches et laissez les agents s'occuper des corvées.",
-    "items": [
-      "Enregistrez les interactions navigateur pour les rejouer",
-      "Déléguez les tâches web répétitives à des agents",
-      "Planifiez des workflows qui s'exécutent en arrière-plan",
-      "Maintenez une bibliothèque partagée d'automatisations d'équipe",
-      "Compatible avec vos outils existants"
-    ],
-    "exploreFeatures": "Essayer gratuitement"
+    "description": "Cyqle n'est pas qu'un bureau. C'est une plateforme d'automatisation — et il y a deux façons de la mettre au travail.",
+    "byo": {
+      "title": "Amenez vos propres agents",
+      "description": "Chaque bureau est un véritable ordinateur sous votre contrôle. Exécutez vos propres agents, architectures et outils : ce qui tourne sur un bureau tourne ici."
+    },
+    "inHouse": {
+      "title": "Ou utilisez le nôtre : l'Agent IA interne",
+      "description": "Conçu, surveillé et testé par l'équipe Cyqle — plus efficace à chaque version.",
+      "items": [
+        "Enregistrez les interactions navigateur pour les rejouer",
+        "Déléguez les tâches web répétitives",
+        "Planifiez des workflows qui s'exécutent en arrière-plan",
+        "Maintenez une bibliothèque partagée d'automatisations d'équipe"
+      ]
+    },
+    "cta": "Essayer gratuitement"
   },
   "apiTeaser": {
     "eyebrow": "API REST pour agents IA",

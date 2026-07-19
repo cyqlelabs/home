@@ -23,6 +23,7 @@ import ResponsiveVideo from '@/components/responsive-video';
 import HeroBackground from '@/components/hero-background';
 import PricingSection from '@/components/pricing-section';
 import TrackedLink from '@/components/tracked-link';
+import AiPaths from '@/components/ai-paths';
 import TrackedButton from '@/components/tracked-button';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { getSEOAlternates, siteMetadata, type SiteLocale } from '@/lib/site-metadata';
@@ -257,22 +258,19 @@ export default async function Home({ params: { locale } }: Props) {
                 {aiSectionT('title')}
               </h2>
               <p className="text-gray-300 text-lg">{aiSectionT('description')}</p>
-              <ul className="space-y-4">
-                {aiSectionT.raw('items').map((item: string, index: number) => (
-                  <li key={index} className="flex items-start">
-                    <div className="bg-gradient-to-r from-orange-300 to-[#FF7600] rounded-full p-1 mr-3 mt-1">
-                      <ChevronRight className="h-4 w-4 text-black" />
-                    </div>
-                    <span className="text-gray-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <AiPaths
+                byoTitle={aiSectionT('byo.title')}
+                byoDescription={aiSectionT('byo.description')}
+                inHouseTitle={aiSectionT('inHouse.title')}
+                inHouseDescription={aiSectionT('inHouse.description')}
+                inHouseItems={aiSectionT.raw('inHouse.items') as string[]}
+              />
               <Button
                 asChild
                 className="mt-6 bg-gradient-to-r from-[#00356b] via-[#0a4d8f] to-[#00356b] text-white hover:from-[#012a52] hover:via-[#083c72] hover:to-[#012a52] shadow-lg"
               >
-                <TrackedLink href={`/${locale}#features`} trackingKey="exploreFeatures">
-                  {aiSectionT('exploreFeatures')}
+                <TrackedLink href="https://app.cyqle.in/signup" trackingKey="aiSectionTryFree">
+                  {aiSectionT('cta')}
                 </TrackedLink>
               </Button>
             </div>

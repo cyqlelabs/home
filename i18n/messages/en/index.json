@@ -78,15 +78,22 @@
   },
   "aiSection": {
     "title": "Automate Your Work",
-    "description": "Cyqle isn't just a desktop. It's an automation platform. Record workflows, schedule tasks, and let agents handle the busywork.",
-    "items": [
-      "Record browser interactions for replay",
-      "Delegate repetitive web tasks to agents",
-      "Schedule workflows to run in the background",
-      "Maintain a shared library of team automations",
-      "Works with your existing tools"
-    ],
-    "exploreFeatures": "Try It Free"
+    "description": "Cyqle isn't just a desktop. It's an automation platform — and there are two ways to put it to work.",
+    "byo": {
+      "title": "Bring your own agents",
+      "description": "Every desktop is a real computer under your control. Run your own agents, architectures, and tools — whatever works at a desktop works here."
+    },
+    "inHouse": {
+      "title": "Or use ours: the In-House AI Agent",
+      "description": "Built, monitored, and tested by the Cyqle team — tuned to be more efficient with every release.",
+      "items": [
+        "Record browser interactions for replay",
+        "Delegate repetitive web tasks",
+        "Schedule workflows to run in the background",
+        "Maintain a shared library of team automations"
+      ]
+    },
+    "cta": "Try It Free"
   },
   "apiTeaser": {
     "eyebrow": "REST API for AI agents",
