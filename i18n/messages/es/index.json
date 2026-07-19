@@ -147,7 +147,7 @@
           "snapshots": "Creación de snapshots",
           "api": "Acceso a la API",
           "aiAgent": "Agente de IA integrado",
-          "aiCredits": "9 créditos de uso de IA / mes"
+          "aiCredits": "9 créditos del Agente de IA integrado / mes"
         },
         "cta": "Empezar"
       },
@@ -165,7 +165,7 @@
           "snapshots": "Creación de snapshots",
           "api": "Acceso a la API",
           "aiAgent": "Agente de IA integrado",
-          "aiCredits": "18 créditos de uso de IA / mes"
+          "aiCredits": "18 créditos del Agente de IA integrado / mes"
         },
         "cta": "Ir a Pro"
       }
@@ -185,7 +185,7 @@
           "multiplier": "1x",
           "persistence": "40 GB",
           "bandwidth": "150mb/s",
-          "aiCredits": "18 créditos de uso de IA / mes"
+          "aiCredits": "18 créditos del Agente de IA integrado / mes"
         },
         "turbo": {
           "name": "Turbo",
@@ -193,7 +193,7 @@
           "multiplier": "2x",
           "persistence": "60 GB",
           "bandwidth": "200mb/s",
-          "aiCredits": "34.5 créditos de uso de IA / mes"
+          "aiCredits": "34.5 créditos del Agente de IA integrado / mes"
         },
         "max": {
           "name": "Max",
@@ -201,14 +201,14 @@
           "multiplier": "4x",
           "persistence": "120 GB",
           "bandwidth": "300mb/s",
-          "aiCredits": "67.5 créditos de uso de IA / mes"
+          "aiCredits": "67.5 créditos del Agente de IA integrado / mes"
         }
       }
     },
     "creditEqualsHours": "1 crédito = 10 hs de escritorio o $0.20 de uso de IA",
     "creditPacks": {
-      "title": "Packs de créditos para IA",
-      "description": "Una sola unidad para todo: un crédito son 10 horas de escritorio, y el trabajo de IA se mide en los mismos créditos — $0.20 de uso de IA, más o menos una tarea del agente, por crédito. Recargá cuando necesites más.",
+      "title": "Packs de créditos para el Agente de IA integrado",
+      "description": "Todos los planes de pago incluyen créditos para el Agente de IA integrado de Cyqle. Recargá acá cuando necesites más — y si usás tu propio agente, no consume créditos.",
       "bestValue": "Mejor valor",
       "packs": {
         "starter": {
@@ -230,7 +230,7 @@
           "tasks": "≈ 80 tareas del agente"
         }
       },
-      "note": "Todos los planes de pago incluyen créditos de IA — tanto mensuales como de pago por uso. Los packs son para recargar cuando necesitás más. Los créditos comprados no vencen mientras tu cuenta esté activa."
+      "note": "Los créditos comprados no vencen mientras tu cuenta esté activa."
     },
     "customQuote": {
       "heading": "¿Necesitás más puestos?",

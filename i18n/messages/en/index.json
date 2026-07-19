@@ -147,7 +147,7 @@
           "snapshots": "Snapshot Creation",
           "api": "API Access",
           "aiAgent": "Built-in AI Agent",
-          "aiCredits": "9 credits of AI usage / month"
+          "aiCredits": "9 Built-in AI Agent credits / month"
         },
         "cta": "Get Started"
       },
@@ -165,7 +165,7 @@
           "snapshots": "Snapshot Creation",
           "api": "API Access",
           "aiAgent": "Built-in AI Agent",
-          "aiCredits": "18 credits of AI usage / month"
+          "aiCredits": "18 Built-in AI Agent credits / month"
         },
         "cta": "Go Pro"
       }
@@ -185,7 +185,7 @@
           "multiplier": "1x",
           "persistence": "40 GB persistence",
           "bandwidth": "150mb/s bandwidth",
-          "aiCredits": "18 credits of AI usage / month"
+          "aiCredits": "18 Built-in AI Agent credits / month"
         },
         "turbo": {
           "name": "Turbo",
@@ -193,7 +193,7 @@
           "multiplier": "2x",
           "persistence": "60 GB persistence",
           "bandwidth": "200mb/s bandwidth",
-          "aiCredits": "34.5 credits of AI usage / month"
+          "aiCredits": "34.5 Built-in AI Agent credits / month"
         },
         "max": {
           "name": "Max",
@@ -201,14 +201,14 @@
           "multiplier": "4x",
           "persistence": "120 GB persistence",
           "bandwidth": "300mb/s bandwidth",
-          "aiCredits": "67.5 credits of AI usage / month"
+          "aiCredits": "67.5 Built-in AI Agent credits / month"
         }
       }
     },
     "creditEqualsHours": "1 credit = 10 hrs of desktop time or $0.20 of AI usage",
     "creditPacks": {
-      "title": "Credit packs for AI usage",
-      "description": "One unit everywhere: a credit buys 10 hours of desktop time, and AI work is measured in the same credits — $0.20 of AI usage, about one agent task, per credit. Top up whenever you need more.",
+      "title": "Credit packs for the Built-in AI Agent",
+      "description": "Every paid plan includes credits for Cyqle's own Built-in AI Agent. Top up here when you need more — and if you bring your own agent, it never uses credits.",
       "bestValue": "Best value",
       "packs": {
         "starter": {
@@ -230,7 +230,7 @@
           "tasks": "≈ 80 agent tasks"
         }
       },
-      "note": "Every paid plan includes AI credits — monthly or pay-as-you-go alike. Packs top you up when you need more. Purchased credits never expire while your account is active."
+      "note": "Purchased credits never expire while your account is active."
     },
     "customQuote": {
       "heading": "Need more seats?",

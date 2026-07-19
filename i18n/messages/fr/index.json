@@ -147,7 +147,7 @@
           "snapshots": "Création de snapshots",
           "api": "Accès API",
           "aiAgent": "Agent IA intégré",
-          "aiCredits": "9 crédits d'usage IA / mois"
+          "aiCredits": "9 crédits pour l'Agent IA intégré / mois"
         },
         "cta": "Commencer"
       },
@@ -165,7 +165,7 @@
           "snapshots": "Création de snapshots",
           "api": "Accès API",
           "aiAgent": "Agent IA intégré",
-          "aiCredits": "18 crédits d'usage IA / mois"
+          "aiCredits": "18 crédits pour l'Agent IA intégré / mois"
         },
         "cta": "Passer en Pro"
       }
@@ -185,7 +185,7 @@
           "multiplier": "1x",
           "persistence": "40 Go de persistance",
           "bandwidth": "150 Mb/s de bande passante",
-          "aiCredits": "18 crédits d'usage IA / mois"
+          "aiCredits": "18 crédits pour l'Agent IA intégré / mois"
         },
         "turbo": {
           "name": "Turbo",
@@ -193,7 +193,7 @@
           "multiplier": "2x",
           "persistence": "60 Go de persistance",
           "bandwidth": "200 Mb/s de bande passante",
-          "aiCredits": "34.5 crédits d'usage IA / mois"
+          "aiCredits": "34.5 crédits pour l'Agent IA intégré / mois"
         },
         "max": {
           "name": "Max",
@@ -201,14 +201,14 @@
           "multiplier": "4x",
           "persistence": "120 Go de persistance",
           "bandwidth": "300 Mb/s de bande passante",
-          "aiCredits": "67.5 crédits d'usage IA / mois"
+          "aiCredits": "67.5 crédits pour l'Agent IA intégré / mois"
         }
       }
     },
     "creditEqualsHours": "1 crédit = 10 h d'utilisation du bureau ou $0.20 d'usage IA",
     "creditPacks": {
-      "title": "Packs de crédits pour l'usage IA",
-      "description": "Une seule unité partout : un crédit vaut 10 heures de bureau, et le travail de l'IA se mesure dans les mêmes crédits — $0.20 d'usage IA, soit environ une tâche de l'agent, par crédit. Rechargez dès que vous en avez besoin.",
+      "title": "Packs de crédits pour l'Agent IA intégré",
+      "description": "Toutes les formules payantes incluent des crédits pour l'Agent IA intégré de Cyqle. Rechargez ici quand il vous en faut plus — et si vous utilisez votre propre agent, il ne consomme aucun crédit.",
       "bestValue": "Le plus avantageux",
       "packs": {
         "starter": {
@@ -230,7 +230,7 @@
           "tasks": "≈ 80 tâches de l'agent"
         }
       },
-      "note": "Toutes les formules payantes incluent des crédits IA — au mois comme en paiement à l'usage. Les packs servent à recharger quand il vous en faut plus. Les crédits achetés n'expirent jamais tant que votre compte est actif."
+      "note": "Les crédits achetés n'expirent jamais tant que votre compte est actif."
     },
     "customQuote": {
       "heading": "Besoin de plus de postes ?",

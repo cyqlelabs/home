@@ -147,7 +147,7 @@
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
           "aiAgent": "Integrierter KI-Agent",
-          "aiCredits": "9 Credits KI-Nutzung / Monat"
+          "aiCredits": "9 Credits für den Integrierten KI-Agenten / Monat"
         },
         "cta": "Loslegen"
       },
@@ -165,7 +165,7 @@
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
           "aiAgent": "Integrierter KI-Agent",
-          "aiCredits": "18 Credits KI-Nutzung / Monat"
+          "aiCredits": "18 Credits für den Integrierten KI-Agenten / Monat"
         },
         "cta": "Hol dir Pro"
       }
@@ -185,7 +185,7 @@
           "multiplier": "1x",
           "persistence": "40 GB Persistenz",
           "bandwidth": "150mb/s Bandbreite",
-          "aiCredits": "18 Credits KI-Nutzung / Monat"
+          "aiCredits": "18 Credits für den Integrierten KI-Agenten / Monat"
         },
         "turbo": {
           "name": "Turbo",
@@ -193,7 +193,7 @@
           "multiplier": "2x",
           "persistence": "60 GB Persistenz",
           "bandwidth": "200mb/s Bandbreite",
-          "aiCredits": "34.5 Credits KI-Nutzung / Monat"
+          "aiCredits": "34.5 Credits für den Integrierten KI-Agenten / Monat"
         },
         "max": {
           "name": "Max",
@@ -201,14 +201,14 @@
           "multiplier": "4x",
           "persistence": "120 GB Persistenz",
           "bandwidth": "300mb/s Bandbreite",
-          "aiCredits": "67.5 Credits KI-Nutzung / Monat"
+          "aiCredits": "67.5 Credits für den Integrierten KI-Agenten / Monat"
         }
       }
     },
     "creditEqualsHours": "1 Credit = 10 Std. Desktop-Zeit oder $0.20 KI-Nutzung",
     "creditPacks": {
-      "title": "Credit-Packs für KI-Nutzung",
-      "description": "Eine Einheit für alles: Ein Credit steht für 10 Stunden Desktop-Zeit, und KI-Arbeit wird in denselben Credits gemessen — $0.20 KI-Nutzung, ungefähr eine Agent-Aufgabe, pro Credit. Lade auf, wann immer du mehr brauchst.",
+      "title": "Credit-Packs für den Integrierten KI-Agenten",
+      "description": "Jeder Bezahltarif enthält Credits für Cyqles eigenen Integrierten KI-Agenten. Lade hier auf, wenn du mehr brauchst — und wenn du deinen eigenen Agenten nutzt, verbraucht er keine Credits.",
       "bestValue": "Bestes Preis-Leistungs-Verhältnis",
       "packs": {
         "starter": {
@@ -230,7 +230,7 @@
           "tasks": "≈ 80 Agent-Aufgaben"
         }
       },
-      "note": "Jeder Bezahltarif enthält KI-Credits — egal ob monatlich oder Pay as you go. Packs füllen dein Guthaben auf, wenn du mehr brauchst. Gekaufte Credits verfallen nie, solange dein Konto aktiv ist."
+      "note": "Gekaufte Credits verfallen nie, solange dein Konto aktiv ist."
     },
     "customQuote": {
       "heading": "Du brauchst mehr Plätze?",

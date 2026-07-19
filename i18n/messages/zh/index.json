@@ -147,7 +147,7 @@
           "snapshots": "支持创建快照",
           "api": "API 访问权限",
           "aiAgent": "内置 AI 智能体",
-          "aiCredits": "每月 9 积分 AI 用量"
+          "aiCredits": "每月 9 积分，用于内置 AI 智能体"
         },
         "cta": "立即开始"
       },
@@ -165,7 +165,7 @@
           "snapshots": "支持创建快照",
           "api": "API 访问权限",
           "aiAgent": "内置 AI 智能体",
-          "aiCredits": "每月 18 积分 AI 用量"
+          "aiCredits": "每月 18 积分，用于内置 AI 智能体"
         },
         "cta": "升级到 Pro"
       }
@@ -185,7 +185,7 @@
           "multiplier": "1x",
           "persistence": "40 GB 持久化存储",
           "bandwidth": "150mb/s 带宽",
-          "aiCredits": "每月 18 积分 AI 用量"
+          "aiCredits": "每月 18 积分，用于内置 AI 智能体"
         },
         "turbo": {
           "name": "Turbo",
@@ -193,7 +193,7 @@
           "multiplier": "2x",
           "persistence": "60 GB 持久化存储",
           "bandwidth": "200mb/s 带宽",
-          "aiCredits": "每月 34.5 积分 AI 用量"
+          "aiCredits": "每月 34.5 积分，用于内置 AI 智能体"
         },
         "max": {
           "name": "Max",
@@ -201,14 +201,14 @@
           "multiplier": "4x",
           "persistence": "120 GB 持久化存储",
           "bandwidth": "300mb/s 带宽",
-          "aiCredits": "每月 67.5 积分 AI 用量"
+          "aiCredits": "每月 67.5 积分，用于内置 AI 智能体"
         }
       }
     },
     "creditEqualsHours": "1 积分 = 10 小时桌面使用时长，或 $0.20 的 AI 用量",
     "creditPacks": {
-      "title": "AI 用量积分包",
-      "description": "一个单位，全平台通用：1 积分可兑换 10 小时桌面时长，AI 工作也用同样的积分计量——每积分相当于 $0.20 的 AI 用量，约等于一次智能体任务。需要更多时随时充值。",
+      "title": "内置 AI 智能体专用积分包",
+      "description": "每个付费方案都内含 Cyqle 内置 AI 智能体的积分。不够用时在这里充值——如果你使用自己的智能体，则不消耗积分。",
       "bestValue": "最划算",
       "packs": {
         "starter": {
@@ -230,7 +230,7 @@
           "tasks": "≈ 80 次智能体任务"
         }
       },
-      "note": "每个付费方案都内含 AI 积分——包月和按量付费皆是如此。需要更多时，用积分包充值即可。只要账户保持活跃，已购积分永不过期。"
+      "note": "只要账户保持活跃，已购积分永不过期。"
     },
     "customQuote": {
       "heading": "需要更多席位？",
