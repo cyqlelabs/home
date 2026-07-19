@@ -76,7 +76,7 @@ export default async function AboutPage({ params: { locale } }: Props) {
       <Navbar />
 
       {/* 1 · The Belief */}
-      <section className="relative z-10 pb-28 pt-32 md:pb-36">
+      <section className="relative z-10 pb-44 pt-32 md:pb-36">
         <CursorCrowd agentLabel={t('hero.agentTag')} />
         <div className="container relative mx-auto max-w-5xl px-4 text-center">
           <Reveal>

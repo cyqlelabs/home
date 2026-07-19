@@ -10,9 +10,10 @@ type Actor = {
   top: string;
   from: { x: number; y: number };
   delay: number;
-  // Mobile actors need their own spot: the hero is narrow there, so the desktop
-  // position would push the name tag past the right edge and onto the copy.
-  mobile?: { left: string; top: string };
+  // The hero is narrow on mobile, so the desktop spots would push name tags past
+  // the right edge and onto the copy. There the crowd gathers in the padding
+  // below the text, anchored to the bottom so longer translations can't reach it.
+  mobile: { left: string; bottom: string };
   agent?: boolean;
 };
 
@@ -28,7 +29,7 @@ export default function CursorCrowd({ agentLabel }: { agentLabel: string }) {
       top: '28%',
       from: { x: -340, y: -140 },
       delay: 0.9,
-      mobile: { left: '8%', top: '78%' },
+      mobile: { left: '6%', bottom: '96px' },
     },
     {
       color: '#2DD4BF',
@@ -37,8 +38,17 @@ export default function CursorCrowd({ agentLabel }: { agentLabel: string }) {
       top: '24%',
       from: { x: 320, y: -180 },
       delay: 1.15,
+      mobile: { left: '40%', bottom: '112px' },
     },
-    { color: '#4ADE80', tag: 'mia', left: '7%', top: '74%', from: { x: -380, y: 220 }, delay: 1.3 },
+    {
+      color: '#4ADE80',
+      tag: 'mia',
+      left: '7%',
+      top: '74%',
+      from: { x: -380, y: 220 },
+      delay: 1.3,
+      mobile: { left: '71%', bottom: '92px' },
+    },
     {
       color: '#A78BFA',
       tag: 'sam',
@@ -46,7 +56,7 @@ export default function CursorCrowd({ agentLabel }: { agentLabel: string }) {
       top: '70%',
       from: { x: 360, y: 240 },
       delay: 1.05,
-      mobile: { left: '68%', top: '86%' },
+      mobile: { left: '18%', bottom: '26px' },
     },
     {
       color: '#FF7600',
@@ -56,6 +66,7 @@ export default function CursorCrowd({ agentLabel }: { agentLabel: string }) {
       from: { x: 280, y: 340 },
       delay: 1.5,
       agent: true,
+      mobile: { left: '50%', bottom: '18px' },
     },
   ];
 
@@ -64,15 +75,11 @@ export default function CursorCrowd({ agentLabel }: { agentLabel: string }) {
       {actors.map((actor, i) => (
         <motion.div
           key={actor.tag + i}
-          className={
-            actor.mobile
-              ? 'absolute left-[var(--cursor-x)] top-[var(--cursor-y)] md:left-[var(--cursor-x-md)] md:top-[var(--cursor-y-md)]'
-              : 'absolute hidden md:left-[var(--cursor-x-md)] md:top-[var(--cursor-y-md)] md:block'
-          }
+          className="absolute bottom-[var(--cursor-b)] left-[var(--cursor-x)] md:bottom-auto md:left-[var(--cursor-x-md)] md:top-[var(--cursor-y-md)]"
           style={
             {
-              '--cursor-x': actor.mobile?.left,
-              '--cursor-y': actor.mobile?.top,
+              '--cursor-x': actor.mobile.left,
+              '--cursor-b': actor.mobile.bottom,
               '--cursor-x-md': actor.left,
               '--cursor-y-md': actor.top,
             } as React.CSSProperties
