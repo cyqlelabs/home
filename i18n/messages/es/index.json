@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "Precios que escalan con vos",
-    "descriptionMonthly": "Empezá gratis. Planes mensuales desde $6/mes por escritorio.",
-    "descriptionPayAsYouGo": "Empezá gratis. Pagá desde $0.20/crédito — 10 horas de escritorio cloud por menos que un café.",
+    "descriptionMonthly": "Empezá gratis. Planes mensuales desde $6/mes por escritorio — con créditos de IA incluidos.",
+    "descriptionPayAsYouGo": "Empezá gratis. Pagá desde $0.20/crédito — 10 horas de escritorio cloud por menos que un café. Con créditos de IA incluidos.",
     "monthly": "/mes",
     "credit": "/crédito",
     "monthlyLabel": "Mensual",
@@ -146,7 +146,8 @@
           "persistence": "20 GB para guardar",
           "snapshots": "Creación de snapshots",
           "api": "Acceso a la API",
-          "aiAgent": "Agente de IA integrado"
+          "aiAgent": "Agente de IA integrado",
+          "aiCredits": "9 créditos de uso de IA / mes"
         },
         "cta": "Empezar"
       },
@@ -163,7 +164,8 @@
           "persistence": "40 GB para guardar",
           "snapshots": "Creación de snapshots",
           "api": "Acceso a la API",
-          "aiAgent": "Agente de IA integrado"
+          "aiAgent": "Agente de IA integrado",
+          "aiCredits": "18 créditos de uso de IA / mes"
         },
         "cta": "Ir a Pro"
       }
@@ -182,25 +184,54 @@
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
           "persistence": "40 GB",
-          "bandwidth": "150mb/s"
+          "bandwidth": "150mb/s",
+          "aiCredits": "18 créditos de uso de IA / mes"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
           "persistence": "60 GB",
-          "bandwidth": "200mb/s"
+          "bandwidth": "200mb/s",
+          "aiCredits": "34.5 créditos de uso de IA / mes"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
           "persistence": "120 GB",
-          "bandwidth": "300mb/s"
+          "bandwidth": "300mb/s",
+          "aiCredits": "67.5 créditos de uso de IA / mes"
         }
       }
     },
-    "creditEqualsHours": "1 crédito = 10 hs de escritorio",
+    "creditEqualsHours": "1 crédito = 10 hs de escritorio o $0.20 de uso de IA",
+    "creditPacks": {
+      "title": "Packs de créditos para IA",
+      "description": "Una sola unidad para todo: un crédito son 10 horas de escritorio, y el trabajo de IA se mide en los mismos créditos — $0.20 de uso de IA, más o menos una tarea del agente, por crédito. Recargá cuando necesites más.",
+      "bestValue": "Mejor valor",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "$5",
+          "credits": "10 créditos",
+          "tasks": "≈ 8 tareas del agente"
+        },
+        "plus": {
+          "name": "Plus",
+          "price": "$15",
+          "credits": "35 créditos",
+          "tasks": "≈ 28 tareas del agente"
+        },
+        "power": {
+          "name": "Power",
+          "price": "$40",
+          "credits": "100 créditos",
+          "tasks": "≈ 80 tareas del agente"
+        }
+      },
+      "note": "Todos los planes de pago incluyen créditos de IA — tanto mensuales como de pago por uso. Los packs son para recargar cuando necesitás más. Los créditos comprados no vencen mientras tu cuenta esté activa."
+    },
     "customQuote": {
       "heading": "¿Necesitás más puestos?",
       "description": "Precios por volumen adaptados a tu equipo.",
@@ -403,7 +434,7 @@
           "title": "Datos de cuenta (persistentes)",
           "description": "Recopilamos y almacenamos la siguiente información para gestionar su cuenta y proporcionar servicios de facturación:",
           "item1": "Dirección de correo electrónico (para autenticación y comunicación)",
-          "item2": "Información de pago (procesada de forma segura a través de Stripe - no almacenamos números de tarjeta de crédito completos)",
+          "item2": "Información de pago (procesada de forma segura por nuestro proveedor de pagos, que actúa como merchant of record - no almacenamos números de tarjeta de crédito completos)",
           "item3": "Preferencias de cuenta y selecciones de nivel de suscripción",
           "item4": "Historial de facturación y registros de uso para fines de facturación",
           "legalBasis": "Base Legal: Necesidad Contractual - Estos datos son necesarios para cumplir nuestro contrato con usted de proporcionar el servicio Cyqle."
@@ -447,6 +478,10 @@
         "humanOversight": {
           "title": "Supervisión humana y limitaciones",
           "description": "El Operador de IA opera bajo su supervisión directa. No toma decisiones autónomas que afecten su cuenta, facturación o derechos de acceso. Todas las operaciones críticas requieren confirmación explícita del usuario. La IA no accede ni procesa los datos de su sesión para fines de entrenamiento sin consentimiento explícito de opt-in."
+        },
+        "llmProviders": {
+          "title": "Proveedores externos de modelos de IA y medición de uso",
+          "description": "Las funciones de IA funcionan con proveedores externos de grandes modelos de lenguaje. Cuando ejecuta una tarea de IA, su instrucción y el contexto mínimo necesario para completarla (como el contenido relevante de la página o una captura de pantalla de su sesión) se transmiten a dicho proveedor para su procesamiento bajo sus propios términos de tratamiento de datos; configuramos a los proveedores para que no usen sus entradas para entrenar modelos siempre que ese control esté disponible. Para medir el uso de IA en créditos, registramos únicamente metadatos de uso - modelo, cantidad de tokens y costo - no el contenido de sus instrucciones. Las compras de créditos y los eventos de medición de uso son procesados por nuestro proveedor de pagos, que actúa como merchant of record."
         }
       },
       "automatedDecisions": {
@@ -480,7 +515,7 @@
         "intro": "La arquitectura peer-to-peer (P2P) de Cyqle significa que los datos de sesión pueden transitar a través de varios nodos geográficos durante la colaboración en tiempo real. Tomamos medidas específicas para garantizar el cumplimiento con las regulaciones de transferencia internacional de datos.",
         "p2pNature": {
           "title": "Red mesh P2P y enrutamiento de datos",
-          "description": "Cuando colabora con otros usuarios en tiempo real, los datos de su sesión se transmiten directamente entre pares usando libp2p. Esto significa:",
+          "description": "Cuando colabora con otros usuarios en tiempo real, los datos de su sesión se transmiten directamente entre pares usando nuestro protocolo peer-to-peer. Esto significa:",
           "item1": "Los datos pueden ser enrutados a través de nodos de retransmisión intermedios ubicados en diferentes países",
           "item2": "La ruta exacta de transmisión de datos depende de la topología de red y disponibilidad de pares",
           "item3": "Todas las conexiones P2P están cifradas de extremo a extremo usando cifrado TLS 1.3 y WebRTC"
@@ -798,7 +833,7 @@
       "subscription": {
         "title": "2. Suscripción y modelo de slots",
         "badge": "Términos de facturación",
-        "intro": "Cyqle opera con un modelo de slots basado en créditos donde cada sesión activa consume un slot. Comprender cómo funcionan los slots es esencial para administrar su cuenta.",
+        "intro": "Cyqle opera con un modelo de slots basado en créditos donde cada sesión activa consume un slot, y el uso — tanto el tiempo de escritorio como el uso de IA — se mide en una única unidad: el crédito Cyqle. Comprender cómo funcionan los slots y los créditos es esencial para administrar su cuenta.",
         "slotModel": {
           "title": "Cómo funcionan los slots",
           "description": "La arquitectura de nuestra plataforma se basa en un sistema de \"slots\":",
@@ -814,12 +849,21 @@
           },
           "paid": {
             "name": "Niveles de Pago (Lite, Pro, Power):",
-            "description": "Ofrecen duraciones de sesión extendidas o ilimitadas, recursos computacionales aumentados, almacenamiento persistente con períodos de retención, acceso a cola de alta prioridad, acceso API, acceso a snapshots públicos y creación de snapshots (los límites varían según el nivel). Los créditos se consumen según el tiempo de uso activo."
+            "description": "Ofrecen duraciones de sesión extendidas o ilimitadas, recursos computacionales aumentados, almacenamiento persistente con períodos de retención, acceso a cola de alta prioridad, acceso API, acceso a snapshots públicos y creación de snapshots (los límites varían según el nivel). Los créditos se consumen según el tiempo de uso activo. Los niveles de pago incluyen además una asignación de créditos para uso de IA específica de cada nivel, en cualquier modelo de facturación."
           }
         },
         "billing": {
           "title": "Modelos de facturación",
-          "description": "Ofrecemos dos opciones de facturación para suscripciones de pago. Suscripción Mensual: Pague un precio mensual fijo con asignación de créditos incluida que se reinicia cada período de facturación. Medido (Pago por uso): Pague solo por el tiempo de uso real sin cargos recurrentes - compre créditos según sea necesario y los créditos se deducen por minuto de tiempo de sesión. Para ambos modelos, 1 crédito equivale a 10 horas (600 minutos) de uso a la tarifa del nivel. Puede actualizar, degradar o cancelar su suscripción en cualquier momento a través del panel de su cuenta."
+          "description": "Ofrecemos dos opciones de facturación para suscripciones de pago. Suscripción Mensual: Pague un precio mensual fijo con una asignación de créditos incluida que se reinicia cada período de facturación. Medido (Pago por uso): Pague solo por el tiempo de uso real sin cargos recurrentes - compre créditos según sea necesario y los créditos se deducen por minuto de tiempo de sesión. Ambos modelos de facturación incluyen la asignación de créditos para uso de IA de su nivel. En todo Cyqle, 1 crédito equivale a 10 horas (600 minutos) de uso de escritorio a la tarifa del nivel, y el uso de IA se mide en los mismos créditos a razón de USD $0.20 de uso de IA por crédito. Puede actualizar, degradar o cancelar su suscripción en cualquier momento a través del panel de su cuenta."
+        },
+        "aiUsage": {
+          "title": "Uso de IA y Packs de Créditos",
+          "description": "Las funciones de IA de Cyqle (incluido el Operador de IA integrado) consumen créditos. Los siguientes términos rigen cómo se asigna, mide y compra el uso de IA:",
+          "point1": "El uso de IA se descuenta primero de la asignación de créditos de IA incluida en su plan y luego de los packs de créditos comprados. Los créditos de IA incluidos están sujetos a límites de uso diarios y semanales publicados en nuestra página de precios y visibles en su cuenta, se reponen automáticamente y no se acumulan.",
+          "point2": "En las suscripciones mensuales, el uso de IA que exceda sus créditos incluidos se descuenta de los créditos comprados o se mide y factura a la tarifa de crédito vigente. En los slots medidos (pago por uso), el uso de IA que exceda los créditos incluidos se paga con packs de créditos comprados; cuando no quedan créditos, las siguientes ejecuciones de IA se rechazan - nunca se le factura a posteriori.",
+          "point3": "Los packs de créditos (Starter, Plus, Power) son compras únicas procesadas por nuestro proveedor de pagos - no son cargos recurrentes. Los créditos comprados no caducan mientras su cuenta permanezca al día.",
+          "point4": "Los créditos no tienen valor en efectivo, no son transferibles entre cuentas y no son reembolsables salvo que la ley aplicable lo exija. Las cantidades y tarifas de créditos publicadas pueden cambiar de forma prospectiva; los cambios nunca reducen los créditos que usted ya haya comprado.",
+          "point5": "El nivel Gratis no incluye uso de IA. Las funciones de IA requieren un plan de pago o créditos comprados, y todo uso de IA está sujeto a la Política de Uso Aceptable a continuación."
         }
       },
       "acceptableUse": {
@@ -867,7 +911,7 @@
           "title": "Propiedad de Cyqle",
           "description": "Cyqle retiene todos los derechos, títulos e intereses en y para lo siguiente:",
           "item1": "La plataforma Cyqle, incluido todo el software, APIs, interfaces y documentación",
-          "item2": "Nuestra implementación propietaria de libp2p y tecnología de orquestación peer-to-peer",
+          "item2": "Nuestra implementación peer-to-peer propietaria y tecnología de orquestación",
           "item3": "Todas las marcas comerciales, logotipos y materiales de marca asociados con Cyqle",
           "item4": "Cualquier mejora, actualización o derivados de la plataforma realizados por Cyqle"
         },

@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "Des tarifs qui s'adaptent à vous",
-    "descriptionMonthly": "Commencez gratuitement. Formules mensuelles à partir de 6 $/mois par bureau.",
-    "descriptionPayAsYouGo": "Commencez gratuitement. Payez à l'usage dès 0,20 $/crédit — 10 heures de bureau cloud pour moins cher qu'un café.",
+    "descriptionMonthly": "Commencez gratuitement. Formules mensuelles à partir de 6 $/mois par bureau — crédits IA inclus.",
+    "descriptionPayAsYouGo": "Commencez gratuitement. Payez à l'usage dès 0,20 $/crédit — 10 heures de bureau cloud pour moins cher qu'un café. Crédits IA inclus.",
     "monthly": "/mois",
     "credit": "/crédit",
     "monthlyLabel": "Mensuel",
@@ -146,7 +146,8 @@
           "persistence": "20 Go de persistance",
           "snapshots": "Création de snapshots",
           "api": "Accès API",
-          "aiAgent": "Agent IA intégré"
+          "aiAgent": "Agent IA intégré",
+          "aiCredits": "9 crédits d'usage IA / mois"
         },
         "cta": "Commencer"
       },
@@ -163,7 +164,8 @@
           "persistence": "40 Go de persistance",
           "snapshots": "Création de snapshots",
           "api": "Accès API",
-          "aiAgent": "Agent IA intégré"
+          "aiAgent": "Agent IA intégré",
+          "aiCredits": "18 crédits d'usage IA / mois"
         },
         "cta": "Passer en Pro"
       }
@@ -182,25 +184,54 @@
           "specs": "2 vCPU / 4 Go de RAM",
           "multiplier": "1x",
           "persistence": "40 Go de persistance",
-          "bandwidth": "150 Mb/s de bande passante"
+          "bandwidth": "150 Mb/s de bande passante",
+          "aiCredits": "18 crédits d'usage IA / mois"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8 Go de RAM",
           "multiplier": "2x",
           "persistence": "60 Go de persistance",
-          "bandwidth": "200 Mb/s de bande passante"
+          "bandwidth": "200 Mb/s de bande passante",
+          "aiCredits": "34.5 crédits d'usage IA / mois"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16 Go de RAM",
           "multiplier": "4x",
           "persistence": "120 Go de persistance",
-          "bandwidth": "300 Mb/s de bande passante"
+          "bandwidth": "300 Mb/s de bande passante",
+          "aiCredits": "67.5 crédits d'usage IA / mois"
         }
       }
     },
-    "creditEqualsHours": "1 crédit = 10 h d'utilisation du bureau",
+    "creditEqualsHours": "1 crédit = 10 h d'utilisation du bureau ou $0.20 d'usage IA",
+    "creditPacks": {
+      "title": "Packs de crédits pour l'usage IA",
+      "description": "Une seule unité partout : un crédit vaut 10 heures de bureau, et le travail de l'IA se mesure dans les mêmes crédits — $0.20 d'usage IA, soit environ une tâche de l'agent, par crédit. Rechargez dès que vous en avez besoin.",
+      "bestValue": "Le plus avantageux",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "$5",
+          "credits": "10 crédits",
+          "tasks": "≈ 8 tâches de l'agent"
+        },
+        "plus": {
+          "name": "Plus",
+          "price": "$15",
+          "credits": "35 crédits",
+          "tasks": "≈ 28 tâches de l'agent"
+        },
+        "power": {
+          "name": "Power",
+          "price": "$40",
+          "credits": "100 crédits",
+          "tasks": "≈ 80 tâches de l'agent"
+        }
+      },
+      "note": "Toutes les formules payantes incluent des crédits IA — au mois comme en paiement à l'usage. Les packs servent à recharger quand il vous en faut plus. Les crédits achetés n'expirent jamais tant que votre compte est actif."
+    },
     "customQuote": {
       "heading": "Besoin de plus de postes ?",
       "description": "Bénéficiez d'une tarification en volume adaptée à la taille de votre équipe.",
@@ -403,7 +434,7 @@
           "title": "Données de compte (persistantes)",
           "description": "Nous collectons et conservons les informations suivantes pour gérer votre compte et assurer les services de facturation :",
           "item1": "Adresse e-mail (pour l'authentification et la communication)",
-          "item2": "Informations de paiement (traitées de manière sécurisée via Stripe - nous ne conservons pas les numéros complets de carte bancaire)",
+          "item2": "Informations de paiement (traitées de manière sécurisée par notre prestataire de paiement, agissant en qualité de merchant of record - nous ne conservons pas les numéros complets de carte bancaire)",
           "item3": "Préférences de compte et choix de formule d'abonnement",
           "item4": "Historique de facturation et journaux d'utilisation à des fins de facturation",
           "legalBasis": "Base légale : nécessité contractuelle - Ces données sont indispensables à l'exécution de notre contrat avec vous pour la fourniture du service Cyqle."
@@ -447,6 +478,10 @@
         "humanOversight": {
           "title": "Supervision humaine et limites",
           "description": "L'AI Operator fonctionne sous votre supervision directe. Il ne prend aucune décision autonome affectant votre compte, votre facturation ou vos droits d'accès. Toutes les opérations critiques requièrent une confirmation explicite de l'utilisateur. L'IA n'accède pas à vos données de session et ne les traite pas à des fins d'entraînement sans votre consentement explicite (opt-in)."
+        },
+        "llmProviders": {
+          "title": "Fournisseurs tiers de modèles d'IA et mesure de l'usage",
+          "description": "Les fonctionnalités d'IA reposent sur des fournisseurs tiers de grands modèles de langage. Lorsque vous lancez une tâche d'IA, votre instruction et le contexte minimal nécessaire à son exécution (comme le contenu pertinent de la page ou une capture d'écran de votre session) sont transmis à un tel fournisseur pour traitement selon ses propres conditions de traitement des données ; nous configurons les fournisseurs afin qu'ils n'utilisent pas vos entrées pour l'entraînement de modèles chaque fois que ce contrôle est proposé. Pour mesurer l'usage de l'IA en crédits, nous n'enregistrons que des métadonnées d'utilisation - modèle, nombre de tokens et coût - et non le contenu de vos instructions. Les achats de crédits et les événements de mesure d'usage sont traités par notre prestataire de paiement, agissant en qualité de merchant of record."
         }
       },
       "automatedDecisions": {
@@ -480,7 +515,7 @@
         "intro": "L'architecture pair-à-pair (P2P) de Cyqle implique que les données de session peuvent transiter par différents nœuds géographiques lors de la collaboration en temps réel. Nous prenons des mesures spécifiques pour garantir la conformité aux réglementations relatives aux transferts internationaux de données.",
         "p2pNature": {
           "title": "Réseau maillé P2P et acheminement des données",
-          "description": "Lorsque vous collaborez avec d'autres utilisateurs en temps réel, vos données de session sont transmises directement entre pairs via libp2p. Cela signifie que :",
+          "description": "Lorsque vous collaborez avec d'autres utilisateurs en temps réel, vos données de session sont transmises directement entre pairs via notre protocole pair-à-pair. Cela signifie que :",
           "item1": "Les données peuvent être acheminées via des nœuds relais intermédiaires situés dans différents pays",
           "item2": "Le chemin exact de la transmission des données dépend de la topologie du réseau et de la disponibilité des pairs",
           "item3": "Toutes les connexions P2P sont chiffrées de bout en bout via TLS 1.3 et le chiffrement WebRTC"
@@ -798,7 +833,7 @@
       "subscription": {
         "title": "2. Abonnement et modèle de slots",
         "badge": "Conditions de facturation",
-        "intro": "Cyqle fonctionne selon un modèle de slots basé sur des crédits, dans lequel chaque session active consomme un slot. Comprendre le fonctionnement des slots est essentiel à la gestion de votre compte.",
+        "intro": "Cyqle fonctionne selon un modèle de slots basé sur des crédits, dans lequel chaque session active consomme un slot et l'utilisation — temps de bureau comme usage de l'IA — se mesure dans une unité unique : le crédit Cyqle. Comprendre le fonctionnement des slots et des crédits est essentiel à la gestion de votre compte.",
         "slotModel": {
           "title": "Fonctionnement des slots",
           "description": "L'architecture de notre plateforme repose sur un système de « slots » :",
@@ -814,12 +849,21 @@
           },
           "paid": {
             "name": "Formules payantes (Lite, Pro, niveaux Power) :",
-            "description": "Offrent des durées de session étendues ou illimitées, des ressources de calcul accrues, un stockage persistant avec des durées de conservation, un accès en file d'attente haute priorité, l'accès à l'API, l'accès aux snapshots publics et la création de snapshots (limites variables selon la formule). Les crédits sont consommés en fonction du temps d'utilisation actif."
+            "description": "Offrent des durées de session étendues ou illimitées, des ressources de calcul accrues, un stockage persistant avec des durées de conservation, un accès en file d'attente haute priorité, l'accès à l'API, l'accès aux snapshots publics et la création de snapshots (limites variables selon la formule). Les crédits sont consommés en fonction du temps d'utilisation actif. Les formules payantes incluent en outre une allocation de crédits pour l'usage de l'IA propre à chaque formule, quel que soit le modèle de facturation."
           }
         },
         "billing": {
           "title": "Modèles de facturation",
-          "description": "Nous proposons deux options de facturation pour les abonnements payants. Abonnement mensuel : payez un prix mensuel fixe incluant une allocation de crédits réinitialisée à chaque période de facturation. À l'usage (pay-as-you-go) : ne payez que le temps d'utilisation réel, sans frais récurrents - achetez des crédits selon vos besoins, décomptés par minute d'exécution de session. Dans les deux modèles, 1 crédit équivaut à 10 heures (600 minutes) d'utilisation au tarif de la formule. Vous pouvez à tout moment passer à une formule supérieure ou inférieure, ou résilier votre abonnement, depuis le tableau de bord de votre compte."
+          "description": "Nous proposons deux options de facturation pour les abonnements payants. Abonnement mensuel : payez un prix mensuel fixe incluant une allocation de crédits réinitialisée à chaque période de facturation. À l'usage (pay-as-you-go) : ne payez que le temps d'utilisation réel, sans frais récurrents - achetez des crédits selon vos besoins, décomptés par minute d'exécution de session. Les deux modèles de facturation incluent l'allocation de crédits pour l'usage de l'IA propre à votre formule. Sur l'ensemble de Cyqle, 1 crédit équivaut à 10 heures (600 minutes) d'utilisation du bureau au tarif de la formule, et l'usage de l'IA se mesure dans les mêmes crédits à raison de USD $0.20 d'usage de l'IA par crédit. Vous pouvez à tout moment passer à une formule supérieure ou inférieure, ou résilier votre abonnement, depuis le tableau de bord de votre compte."
+        },
+        "aiUsage": {
+          "title": "Usage de l'IA et packs de crédits",
+          "description": "Les fonctionnalités d'IA de Cyqle (y compris l'AI Operator intégré) consomment des crédits. Les conditions suivantes régissent la manière dont l'usage de l'IA est alloué, mesuré et acheté :",
+          "point1": "L'usage de l'IA est imputé d'abord sur l'allocation de crédits IA incluse dans votre formule, puis sur les packs de crédits achetés. Les crédits IA inclus sont soumis à des plafonds d'utilisation quotidiens et hebdomadaires publiés sur notre page de tarifs et affichés dans votre compte, se reconstituent automatiquement et ne sont pas reportables.",
+          "point2": "Dans les abonnements mensuels, l'usage de l'IA au-delà de vos crédits inclus est prélevé sur les crédits achetés, ou mesuré et facturé au tarif de crédit en vigueur. Sur les slots à l'usage (pay-as-you-go), l'usage de l'IA au-delà des crédits inclus est payé avec des packs de crédits achetés ; lorsqu'il ne reste plus de crédits, les exécutions d'IA suivantes sont refusées - vous n'êtes jamais facturé a posteriori.",
+          "point3": "Les packs de crédits (Starter, Plus, Power) sont des achats ponctuels traités par notre prestataire de paiement - il ne s'agit pas de frais récurrents. Les crédits achetés n'expirent pas tant que votre compte reste en règle.",
+          "point4": "Les crédits n'ont aucune valeur monétaire, ne sont pas transférables entre comptes et ne sont pas remboursables, sauf lorsque la loi applicable l'exige. Les montants et tarifs de crédits publiés peuvent évoluer pour l'avenir ; ces changements ne réduisent jamais les crédits que vous avez déjà achetés.",
+          "point5": "La formule gratuite n'inclut pas l'usage de l'IA. Les fonctionnalités d'IA nécessitent une formule payante ou des crédits achetés, et tout usage de l'IA est soumis à la Politique d'utilisation acceptable ci-dessous."
         }
       },
       "acceptableUse": {
@@ -867,7 +911,7 @@
           "title": "Propriété de Cyqle",
           "description": "Cyqle conserve l'intégralité des droits, titres et intérêts relatifs aux éléments suivants :",
           "item1": "La plateforme Cyqle, y compris l'ensemble des logiciels, API, interfaces et documentations",
-          "item2": "Notre implémentation propriétaire de libp2p et notre technologie d'orchestration pair-à-pair",
+          "item2": "Notre implémentation pair-à-pair propriétaire et notre technologie d'orchestration",
           "item3": "L'ensemble des marques, logos et éléments de marque associés à Cyqle",
           "item4": "Toute amélioration, évolution ou œuvre dérivée de la plateforme réalisée par Cyqle"
         },

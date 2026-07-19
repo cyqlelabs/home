@@ -284,6 +284,39 @@ export default function PricingSection() {
         })}
       </div>
 
+      {/* AI Credit Packs */}
+      <div className="max-w-6xl mx-auto mb-10 rounded-lg border border-gray-800 bg-gray-900/30 p-6 sm:p-8">
+        <div className="text-center mb-6">
+          <h3 className="text-xl font-semibold text-white mb-2">{t('creditPacks.title')}</h3>
+          <p className="text-sm text-gray-400 max-w-2xl mx-auto">{t('creditPacks.description')}</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          {(['starter', 'plus', 'power'] as const).map((pack) => (
+            <div
+              key={pack}
+              className={`relative rounded-lg border p-4 text-center ${
+                pack === 'plus' ? 'border-[#FF7600] bg-[#FF7600]/5' : 'border-gray-800 bg-black/30'
+              }`}
+            >
+              {pack === 'plus' && (
+                <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#FF7600] text-white hover:bg-[#FF7600]/90">
+                  {t('creditPacks.bestValue')}
+                </Badge>
+              )}
+              <p className="text-sm text-gray-400 mb-1">{t(`creditPacks.packs.${pack}.name`)}</p>
+              <p className="text-2xl font-bold text-white">
+                {t(`creditPacks.packs.${pack}.price`)}
+              </p>
+              <p className="text-sm text-[#FF7600] font-semibold">
+                {t(`creditPacks.packs.${pack}.credits`)}
+              </p>
+              <p className="text-xs text-gray-500">{t(`creditPacks.packs.${pack}.tasks`)}</p>
+            </div>
+          ))}
+        </div>
+        <p className="text-xs text-gray-500 text-center">{t('creditPacks.note')}</p>
+      </div>
+
       {/* Custom Quote CTA */}
       <div className="max-w-6xl mx-auto mb-20 flex flex-col sm:flex-row items-center justify-between gap-6 rounded-lg border border-dashed border-gray-700 bg-gray-900/30 p-6 sm:p-8">
         <div className="flex items-center gap-4">
@@ -422,6 +455,10 @@ function FeatureList({ plan, t, selectedTier }: { plan: string; t: any; selected
 
         if (feature === 'bandwidth' && plan === 'pro') {
           content = t(`powerTiers.tiers.${selectedTier}.bandwidth`);
+        }
+
+        if (feature === 'aiCredits' && plan === 'pro') {
+          content = t(`powerTiers.tiers.${selectedTier}.aiCredits`);
         }
 
         return (

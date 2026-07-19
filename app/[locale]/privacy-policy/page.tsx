@@ -249,6 +249,12 @@ export default async function PrivacyPolicyPage({ params: { locale } }: Props) {
                     {t('sections.aiTransparency.humanOversight.description')}
                   </p>
                 </div>
+                <div className="bg-black/40 p-6 rounded-lg border border-gray-700">
+                  <h3 className="font-semibold text-white mb-3">
+                    {t('sections.aiTransparency.llmProviders.title')}
+                  </h3>
+                  <p className="text-sm">{t('sections.aiTransparency.llmProviders.description')}</p>
+                </div>
               </div>
             </div>
 

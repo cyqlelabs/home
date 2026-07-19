@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "Ein Preismodell, das mit dir skaliert",
-    "descriptionMonthly": "Starte kostenlos. Monatstarife ab 6 $/Monat pro Desktop.",
-    "descriptionPayAsYouGo": "Starte kostenlos. Pay as you go ab 0,20 $/Credit — 10 Stunden Cloud-Desktop für weniger als einen Kaffee.",
+    "descriptionMonthly": "Starte kostenlos. Monatstarife ab 6 $/Monat pro Desktop — KI-Credits inklusive.",
+    "descriptionPayAsYouGo": "Starte kostenlos. Pay as you go ab 0,20 $/Credit — 10 Stunden Cloud-Desktop für weniger als einen Kaffee. KI-Credits inklusive.",
     "monthly": "/Monat",
     "credit": "/Credit",
     "monthlyLabel": "Monatlich",
@@ -146,7 +146,8 @@
           "persistence": "20 GB Persistenz",
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
-          "aiAgent": "Integrierter KI-Agent"
+          "aiAgent": "Integrierter KI-Agent",
+          "aiCredits": "9 Credits KI-Nutzung / Monat"
         },
         "cta": "Loslegen"
       },
@@ -163,7 +164,8 @@
           "persistence": "40 GB Persistenz",
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
-          "aiAgent": "Integrierter KI-Agent"
+          "aiAgent": "Integrierter KI-Agent",
+          "aiCredits": "18 Credits KI-Nutzung / Monat"
         },
         "cta": "Hol dir Pro"
       }
@@ -182,25 +184,54 @@
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
           "persistence": "40 GB Persistenz",
-          "bandwidth": "150mb/s Bandbreite"
+          "bandwidth": "150mb/s Bandbreite",
+          "aiCredits": "18 Credits KI-Nutzung / Monat"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
           "persistence": "60 GB Persistenz",
-          "bandwidth": "200mb/s Bandbreite"
+          "bandwidth": "200mb/s Bandbreite",
+          "aiCredits": "34.5 Credits KI-Nutzung / Monat"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
           "persistence": "120 GB Persistenz",
-          "bandwidth": "300mb/s Bandbreite"
+          "bandwidth": "300mb/s Bandbreite",
+          "aiCredits": "67.5 Credits KI-Nutzung / Monat"
         }
       }
     },
-    "creditEqualsHours": "1 Credit = 10 Std. Desktop-Zeit",
+    "creditEqualsHours": "1 Credit = 10 Std. Desktop-Zeit oder $0.20 KI-Nutzung",
+    "creditPacks": {
+      "title": "Credit-Packs für KI-Nutzung",
+      "description": "Eine Einheit für alles: Ein Credit steht für 10 Stunden Desktop-Zeit, und KI-Arbeit wird in denselben Credits gemessen — $0.20 KI-Nutzung, ungefähr eine Agent-Aufgabe, pro Credit. Lade auf, wann immer du mehr brauchst.",
+      "bestValue": "Bestes Preis-Leistungs-Verhältnis",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "$5",
+          "credits": "10 Credits",
+          "tasks": "≈ 8 Agent-Aufgaben"
+        },
+        "plus": {
+          "name": "Plus",
+          "price": "$15",
+          "credits": "35 Credits",
+          "tasks": "≈ 28 Agent-Aufgaben"
+        },
+        "power": {
+          "name": "Power",
+          "price": "$40",
+          "credits": "100 Credits",
+          "tasks": "≈ 80 Agent-Aufgaben"
+        }
+      },
+      "note": "Jeder Bezahltarif enthält KI-Credits — egal ob monatlich oder Pay as you go. Packs füllen dein Guthaben auf, wenn du mehr brauchst. Gekaufte Credits verfallen nie, solange dein Konto aktiv ist."
+    },
     "customQuote": {
       "heading": "Du brauchst mehr Plätze?",
       "description": "Erhalte Mengenpreise, zugeschnitten auf deine Teamgröße.",
@@ -403,7 +434,7 @@
           "title": "Kontodaten (persistent)",
           "description": "Wir erheben und speichern die folgenden Informationen, um Ihr Konto zu verwalten und Abrechnungsdienste bereitzustellen:",
           "item1": "E-Mail-Adresse (für Authentifizierung und Kommunikation)",
-          "item2": "Zahlungsinformationen (sicher über Stripe verarbeitet – wir speichern keine vollständigen Kreditkartennummern)",
+          "item2": "Zahlungsinformationen (sicher durch unseren Zahlungsdienstleister verarbeitet, der als Merchant of Record auftritt – wir speichern keine vollständigen Kreditkartennummern)",
           "item3": "Kontoeinstellungen und gewählte Abonnementstufen",
           "item4": "Abrechnungshistorie und Nutzungsprotokolle zu Rechnungszwecken",
           "legalBasis": "Rechtsgrundlage: Vertragserfüllung – Diese Daten sind erforderlich, um unseren Vertrag mit Ihnen zur Bereitstellung des Cyqle-Dienstes zu erfüllen."
@@ -447,6 +478,10 @@
         "humanOversight": {
           "title": "Menschliche Aufsicht & Grenzen",
           "description": "Der AI Operator arbeitet unter Ihrer direkten Aufsicht. Er trifft keine autonomen Entscheidungen, die Ihr Konto, Ihre Abrechnung oder Ihre Zugriffsrechte betreffen. Alle kritischen Vorgänge erfordern eine ausdrückliche Bestätigung durch den Nutzer. Die KI greift ohne ausdrückliche Opt-in-Einwilligung nicht zu Trainingszwecken auf Ihre Sitzungsdaten zu und verarbeitet diese nicht."
+        },
+        "llmProviders": {
+          "title": "Externe Anbieter von KI-Modellen & Nutzungsmessung",
+          "description": "Die KI-Funktionen werden von externen Anbietern großer Sprachmodelle betrieben. Wenn Sie eine KI-Aufgabe ausführen, werden Ihre Anweisung und der zu ihrer Ausführung minimal erforderliche Kontext (etwa relevante Seiteninhalte oder ein Screenshot Ihrer Sitzung) an einen solchen Anbieter übermittelt und dort gemäß dessen Datenverarbeitungsbedingungen verarbeitet; wir konfigurieren die Anbieter so, dass Ihre Eingaben nicht für das Training von Modellen verwendet werden, wo immer diese Kontrolle angeboten wird. Zur Messung der KI-Nutzung in Credits erfassen wir ausschließlich Nutzungsmetadaten – Modell, Token-Anzahl und Kosten –, nicht den Inhalt Ihrer Anweisungen. Credit-Käufe und Ereignisse der Nutzungsmessung werden von unserem Zahlungsdienstleister verarbeitet, der als Merchant of Record auftritt."
         }
       },
       "automatedDecisions": {
@@ -480,7 +515,7 @@
         "intro": "Die Peer-to-Peer-Architektur (P2P) von Cyqle bedeutet, dass Sitzungsdaten während der Echtzeit-Zusammenarbeit über verschiedene geografische Knoten übertragen werden können. Wir ergreifen gezielte Maßnahmen, um die Einhaltung internationaler Datenübermittlungsvorschriften sicherzustellen.",
         "p2pNature": {
           "title": "P2P-Mesh-Netzwerk & Datenrouting",
-          "description": "Wenn Sie in Echtzeit mit anderen Nutzern zusammenarbeiten, werden Ihre Sitzungsdaten mittels libp2p direkt zwischen den Peers übertragen. Das bedeutet:",
+          "description": "Wenn Sie in Echtzeit mit anderen Nutzern zusammenarbeiten, werden Ihre Sitzungsdaten mittels unseres Peer-to-Peer-Protokolls direkt zwischen den Peers übertragen. Das bedeutet:",
           "item1": "Daten können über zwischengeschaltete Relay-Knoten in verschiedenen Ländern geleitet werden",
           "item2": "Der genaue Übertragungsweg der Daten hängt von der Netzwerktopologie und der Verfügbarkeit der Peers ab",
           "item3": "Alle P2P-Verbindungen sind mit TLS 1.3 und WebRTC-Verschlüsselung Ende-zu-Ende-verschlüsselt"
@@ -798,7 +833,7 @@
       "subscription": {
         "title": "2. Abonnement & Slot-Modell",
         "badge": "Abrechnungsbedingungen",
-        "intro": "Cyqle arbeitet mit einem Credit-basierten Slot-Modell, bei dem jede aktive Sitzung einen Slot belegt. Zu verstehen, wie Slots funktionieren, ist wesentlich für die Verwaltung Ihres Kontos.",
+        "intro": "Cyqle arbeitet mit einem Credit-basierten Slot-Modell, bei dem jede aktive Sitzung einen Slot belegt und die Nutzung – Desktop-Zeit ebenso wie KI-Nutzung – in einer einzigen Einheit gemessen wird: dem Cyqle-Credit. Zu verstehen, wie Slots und Credits funktionieren, ist wesentlich für die Verwaltung Ihres Kontos.",
         "slotModel": {
           "title": "So funktionieren Slots",
           "description": "Unsere Plattformarchitektur basiert auf einem „Slot“-System:",
@@ -814,12 +849,21 @@
           },
           "paid": {
             "name": "Kostenpflichtige Stufen (Lite, Pro, Power):",
-            "description": "Bieten verlängerte oder unbegrenzte Sitzungsdauern, erhöhte Rechenressourcen, persistenten Speicher mit Aufbewahrungsfristen, Warteschlangenzugang mit hoher Priorität, API-Zugriff, Zugriff auf öffentliche Snapshots sowie Snapshot-Erstellung (Limits variieren je nach Stufe). Credits werden basierend auf der aktiven Nutzungszeit verbraucht."
+            "description": "Bieten verlängerte oder unbegrenzte Sitzungsdauern, erhöhte Rechenressourcen, persistenten Speicher mit Aufbewahrungsfristen, Warteschlangenzugang mit hoher Priorität, API-Zugriff, Zugriff auf öffentliche Snapshots sowie Snapshot-Erstellung (Limits variieren je nach Stufe). Credits werden basierend auf der aktiven Nutzungszeit verbraucht. Kostenpflichtige Stufen enthalten zusätzlich ein stufenspezifisches Kontingent an Credits für KI-Nutzung, unabhängig vom Abrechnungsmodell."
           }
         },
         "billing": {
           "title": "Abrechnungsmodelle",
-          "description": "Wir bieten zwei Abrechnungsoptionen für kostenpflichtige Abonnements an. Monatliches Abonnement: Sie zahlen einen festen Monatspreis mit enthaltenem Credit-Kontingent, das sich in jedem Abrechnungszeitraum erneuert. Nutzungsbasiert (Pay-as-you-go): Sie zahlen nur für die tatsächliche Nutzungszeit ohne wiederkehrende Gebühren – kaufen Sie Credits nach Bedarf; die Credits werden pro Minute Sitzungslaufzeit abgezogen. In beiden Modellen entspricht 1 Credit 10 Stunden (600 Minuten) Nutzung zum Stufentarif. Sie können Ihr Abonnement jederzeit über Ihr Konto-Dashboard upgraden, downgraden oder kündigen."
+          "description": "Wir bieten zwei Abrechnungsoptionen für kostenpflichtige Abonnements an. Monatliches Abonnement: Sie zahlen einen festen Monatspreis mit enthaltenem Credit-Kontingent, das sich in jedem Abrechnungszeitraum erneuert. Nutzungsbasiert (Pay-as-you-go): Sie zahlen nur für die tatsächliche Nutzungszeit ohne wiederkehrende Gebühren – kaufen Sie Credits nach Bedarf; die Credits werden pro Minute Sitzungslaufzeit abgezogen. Beide Abrechnungsmodelle enthalten das für Ihre Stufe vorgesehene Kontingent an Credits für KI-Nutzung. Überall bei Cyqle entspricht 1 Credit 10 Stunden (600 Minuten) Desktop-Nutzung zum Stufentarif, und KI-Nutzung wird in denselben Credits gemessen – zu USD $0.20 an KI-Nutzung pro Credit. Sie können Ihr Abonnement jederzeit über Ihr Konto-Dashboard upgraden, downgraden oder kündigen."
+        },
+        "aiUsage": {
+          "title": "KI-Nutzung & Credit-Packs",
+          "description": "Die KI-Funktionen von Cyqle (einschließlich des integrierten AI Operators) verbrauchen Credits. Die folgenden Bedingungen regeln, wie KI-Nutzung zugeteilt, gemessen und erworben wird:",
+          "point1": "KI-Nutzung wird zuerst auf das in Ihrem Tarif enthaltene KI-Credit-Kontingent angerechnet, danach auf gekaufte Credit-Packs. Enthaltene KI-Credits unterliegen täglichen und wöchentlichen Nutzungsobergrenzen, die auf unserer Preisseite veröffentlicht und in Ihrem Konto angezeigt werden, füllen sich automatisch wieder auf und werden nicht übertragen.",
+          "point2": "Bei monatlichen Abonnements wird KI-Nutzung über Ihre enthaltenen Credits hinaus aus gekauften Credits gedeckt oder gemessen und zum jeweils geltenden Credit-Tarif abgerechnet. Bei nutzungsbasierten (Pay-as-you-go) Slots wird KI-Nutzung über die enthaltenen Credits hinaus aus gekauften Credit-Packs bezahlt; sind keine Credits mehr vorhanden, werden weitere KI-Ausführungen abgelehnt – Ihnen wird niemals nachträglich etwas in Rechnung gestellt.",
+          "point3": "Credit-Packs (Starter, Plus, Power) sind Einmalkäufe, die von unserem Zahlungsdienstleister verarbeitet werden – es handelt sich nicht um wiederkehrende Gebühren. Gekaufte Credits verfallen nicht, solange Ihr Konto in gutem Stand bleibt.",
+          "point4": "Credits haben keinen Barwert, sind nicht zwischen Konten übertragbar und werden nicht erstattet, außer soweit geltendes Recht dies verlangt. Veröffentlichte Credit-Mengen und -Tarife können sich mit Wirkung für die Zukunft ändern; Änderungen verringern niemals Credits, die Sie bereits erworben haben.",
+          "point5": "Die kostenlose Stufe umfasst keine KI-Nutzung. KI-Funktionen erfordern einen kostenpflichtigen Tarif oder gekaufte Credits, und jede KI-Nutzung unterliegt der nachstehenden Richtlinie zur zulässigen Nutzung."
         }
       },
       "acceptableUse": {
@@ -867,7 +911,7 @@
           "title": "Eigentum von Cyqle",
           "description": "Cyqle behält alle Rechte, Titel und Ansprüche an Folgendem:",
           "item1": "der Cyqle-Plattform, einschließlich aller Software, APIs, Schnittstellen und Dokumentation",
-          "item2": "unserer proprietären libp2p-Implementierung und Peer-to-Peer-Orchestrierungstechnologie",
+          "item2": "unserer proprietären Peer-to-Peer-Implementierung und Orchestrierungstechnologie",
           "item3": "allen Marken, Logos und Branding-Materialien im Zusammenhang mit Cyqle",
           "item4": "allen von Cyqle vorgenommenen Verbesserungen, Erweiterungen oder Ableitungen der Plattform"
         },

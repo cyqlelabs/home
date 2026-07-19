@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "Prezzi che si adattano alla tua crescita",
-    "descriptionMonthly": "Inizia gratis. Piani mensili da $6/mese per desktop.",
-    "descriptionPayAsYouGo": "Inizia gratis. Paghi a consumo da $0.20/credito — 10 ore di desktop cloud per meno di un caffè.",
+    "descriptionMonthly": "Inizia gratis. Piani mensili da $6/mese per desktop — crediti AI inclusi.",
+    "descriptionPayAsYouGo": "Inizia gratis. Paghi a consumo da $0.20/credito — 10 ore di desktop cloud per meno di un caffè. Crediti AI inclusi.",
     "monthly": "/mese",
     "credit": "/credito",
     "monthlyLabel": "Mensile",
@@ -146,7 +146,8 @@
           "persistence": "20 GB di persistenza",
           "snapshots": "Creazione di snapshot",
           "api": "Accesso API",
-          "aiAgent": "Agente AI integrato"
+          "aiAgent": "Agente AI integrato",
+          "aiCredits": "9 crediti di utilizzo AI / mese"
         },
         "cta": "Inizia ora"
       },
@@ -163,7 +164,8 @@
           "persistence": "40 GB di persistenza",
           "snapshots": "Creazione di snapshot",
           "api": "Accesso API",
-          "aiAgent": "Agente AI integrato"
+          "aiAgent": "Agente AI integrato",
+          "aiCredits": "18 crediti di utilizzo AI / mese"
         },
         "cta": "Passa a Pro"
       }
@@ -182,25 +184,54 @@
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
           "persistence": "40 GB di persistenza",
-          "bandwidth": "150mb/s di banda"
+          "bandwidth": "150mb/s di banda",
+          "aiCredits": "18 crediti di utilizzo AI / mese"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
           "persistence": "60 GB di persistenza",
-          "bandwidth": "200mb/s di banda"
+          "bandwidth": "200mb/s di banda",
+          "aiCredits": "34.5 crediti di utilizzo AI / mese"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
           "persistence": "120 GB di persistenza",
-          "bandwidth": "300mb/s di banda"
+          "bandwidth": "300mb/s di banda",
+          "aiCredits": "67.5 crediti di utilizzo AI / mese"
         }
       }
     },
-    "creditEqualsHours": "1 credito = 10 ore di desktop",
+    "creditEqualsHours": "1 credito = 10 ore di desktop o $0.20 di utilizzo AI",
+    "creditPacks": {
+      "title": "Pacchetti di crediti per l'AI",
+      "description": "Un'unica unità per tutto: un credito vale 10 ore di desktop, e il lavoro dell'AI si misura negli stessi crediti — $0.20 di utilizzo AI, circa un'attività dell'agente, per credito. Ricarica quando ti serve di più.",
+      "bestValue": "Miglior valore",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "$5",
+          "credits": "10 crediti",
+          "tasks": "≈ 8 attività dell'agente"
+        },
+        "plus": {
+          "name": "Plus",
+          "price": "$15",
+          "credits": "35 crediti",
+          "tasks": "≈ 28 attività dell'agente"
+        },
+        "power": {
+          "name": "Power",
+          "price": "$40",
+          "credits": "100 crediti",
+          "tasks": "≈ 80 attività dell'agente"
+        }
+      },
+      "note": "Tutti i piani a pagamento includono crediti AI — sia mensili che a consumo. I pacchetti servono per ricaricare quando te ne servono di più. I crediti acquistati non scadono mai finché il tuo account è attivo."
+    },
     "customQuote": {
       "heading": "Ti servono più postazioni?",
       "description": "Ottieni prezzi su misura per le dimensioni del tuo team.",
@@ -403,7 +434,7 @@
           "title": "Dati dell'account (persistenti)",
           "description": "Raccogliamo e conserviamo le seguenti informazioni per gestire l'account e fornire i servizi di fatturazione:",
           "item1": "Indirizzo email (per autenticazione e comunicazioni)",
-          "item2": "Informazioni di pagamento (elaborate in modo sicuro tramite Stripe - non conserviamo i numeri completi delle carte di credito)",
+          "item2": "Informazioni di pagamento (elaborate in modo sicuro dal nostro fornitore di servizi di pagamento, che agisce come merchant of record - non conserviamo i numeri completi delle carte di credito)",
           "item3": "Preferenze dell'account e selezione del piano di abbonamento",
           "item4": "Cronologia di fatturazione e log di utilizzo a fini di fatturazione",
           "legalBasis": "Base Giuridica: Necessità Contrattuale - Questi dati sono necessari per adempiere al contratto stipulato con l'utente per la fornitura del servizio Cyqle."
@@ -447,6 +478,10 @@
         "humanOversight": {
           "title": "Supervisione umana e limitazioni",
           "description": "L'AI Operator opera sotto la diretta supervisione dell'utente. Non prende decisioni autonome che incidano su account, fatturazione o diritti di accesso. Tutte le operazioni critiche richiedono la conferma esplicita dell'utente. L'AI non accede ai dati di sessione né li tratta a fini di addestramento senza il consenso esplicito (opt-in) dell'utente."
+        },
+        "llmProviders": {
+          "title": "Fornitori terzi di modelli di AI e misurazione dell'utilizzo",
+          "description": "Le funzionalità AI si basano su fornitori terzi di grandi modelli linguistici. Quando l'utente esegue un'attività AI, la sua istruzione e il contesto minimo necessario per completarla (come il contenuto rilevante della pagina o uno screenshot della sessione) vengono trasmessi a tale fornitore per l'elaborazione secondo i suoi termini di trattamento dei dati; configuriamo i fornitori affinché non utilizzino gli input dell'utente per l'addestramento dei modelli ovunque tale controllo sia disponibile. Per misurare l'utilizzo dell'AI in crediti, registriamo esclusivamente metadati di utilizzo - modello, conteggio dei token e costo - non il contenuto delle istruzioni. Gli acquisti di crediti e gli eventi di misurazione dell'utilizzo sono elaborati dal nostro fornitore di servizi di pagamento, che agisce come merchant of record."
         }
       },
       "automatedDecisions": {
@@ -480,7 +515,7 @@
         "intro": "L'architettura peer-to-peer (P2P) di Cyqle implica che i dati di sessione possano transitare attraverso diversi nodi geografici durante la collaborazione in tempo reale. Adottiamo misure specifiche per garantire la conformità alle normative sui trasferimenti internazionali di dati.",
         "p2pNature": {
           "title": "Rete mesh P2P e instradamento dei dati",
-          "description": "Quando l'utente collabora con altri utenti in tempo reale, i dati di sessione vengono trasmessi direttamente tra peer utilizzando libp2p. Ciò significa che:",
+          "description": "Quando l'utente collabora con altri utenti in tempo reale, i dati di sessione vengono trasmessi direttamente tra peer utilizzando il nostro protocollo peer-to-peer. Ciò significa che:",
           "item1": "I dati possono essere instradati attraverso nodi relay intermedi situati in paesi diversi",
           "item2": "Il percorso esatto della trasmissione dei dati dipende dalla topologia di rete e dalla disponibilità dei peer",
           "item3": "Tutte le connessioni P2P sono crittografate end-to-end tramite TLS 1.3 e crittografia WebRTC"
@@ -798,7 +833,7 @@
       "subscription": {
         "title": "2. Abbonamento e modello a slot",
         "badge": "Condizioni di fatturazione",
-        "intro": "Cyqle opera secondo un modello a slot basato su crediti, in cui ogni sessione attiva consuma uno slot. Comprendere il funzionamento degli slot è essenziale per gestire il proprio account.",
+        "intro": "Cyqle opera secondo un modello a slot basato su crediti, in cui ogni sessione attiva consuma uno slot e l'utilizzo — sia il tempo di desktop sia l'utilizzo dell'AI — si misura in un'unica unità: il credito Cyqle. Comprendere il funzionamento degli slot e dei crediti è essenziale per gestire il proprio account.",
         "slotModel": {
           "title": "Come funzionano gli slot",
           "description": "L'architettura della nostra piattaforma si basa su un sistema di \"slot\":",
@@ -814,12 +849,21 @@
           },
           "paid": {
             "name": "Piani a pagamento (Lite, Pro, livelli Power):",
-            "description": "Offrono durate di sessione estese o illimitate, maggiori risorse computazionali, archiviazione persistente con periodi di conservazione, accesso in coda ad alta priorità, accesso API, accesso agli snapshot pubblici e creazione di snapshot (con limiti variabili in base al piano). I crediti vengono consumati in base al tempo di utilizzo effettivo."
+            "description": "Offrono durate di sessione estese o illimitate, maggiori risorse computazionali, archiviazione persistente con periodi di conservazione, accesso in coda ad alta priorità, accesso API, accesso agli snapshot pubblici e creazione di snapshot (con limiti variabili in base al piano). I crediti vengono consumati in base al tempo di utilizzo effettivo. I piani a pagamento includono inoltre una dotazione di crediti per l'utilizzo dell'AI specifica per ciascun piano, con qualsiasi modello di fatturazione."
           }
         },
         "billing": {
           "title": "Modelli di fatturazione",
-          "description": "Offriamo due opzioni di fatturazione per gli abbonamenti a pagamento. Abbonamento Mensile: si paga un canone mensile fisso con una dotazione di crediti inclusa che si rinnova a ogni ciclo di fatturazione. A Consumo (misurato): si paga solo il tempo di utilizzo effettivo, senza costi ricorrenti - i crediti si acquistano secondo necessità e vengono scalati per ogni minuto di esecuzione della sessione. Per entrambi i modelli, 1 credito equivale a 10 ore (600 minuti) di utilizzo alla tariffa del piano. È possibile passare a un piano superiore o inferiore, oppure annullare l'abbonamento, in qualsiasi momento dalla dashboard del proprio account."
+          "description": "Offriamo due opzioni di fatturazione per gli abbonamenti a pagamento. Abbonamento Mensile: si paga un canone mensile fisso con una dotazione di crediti inclusa che si rinnova a ogni ciclo di fatturazione. A Consumo (misurato): si paga solo il tempo di utilizzo effettivo, senza costi ricorrenti - i crediti si acquistano secondo necessità e vengono scalati per ogni minuto di esecuzione della sessione. Entrambi i modelli di fatturazione includono la dotazione di crediti per l'utilizzo dell'AI prevista dal proprio piano. In tutto Cyqle, 1 credito equivale a 10 ore (600 minuti) di utilizzo del desktop alla tariffa del piano, e l'utilizzo dell'AI si misura negli stessi crediti a USD $0.20 di utilizzo AI per credito. È possibile passare a un piano superiore o inferiore, oppure annullare l'abbonamento, in qualsiasi momento dalla dashboard del proprio account."
+        },
+        "aiUsage": {
+          "title": "Utilizzo dell'AI e pacchetti di crediti",
+          "description": "Le funzionalità AI di Cyqle (incluso l'AI Operator integrato) consumano crediti. I seguenti termini disciplinano come l'utilizzo dell'AI viene assegnato, misurato e acquistato:",
+          "point1": "L'utilizzo dell'AI attinge prima alla dotazione di crediti AI inclusa nel proprio piano e poi ai pacchetti di crediti acquistati. I crediti AI inclusi sono soggetti a limiti di utilizzo giornalieri e settimanali pubblicati nella nostra pagina dei prezzi e visibili nel proprio account, si rigenerano automaticamente e non si accumulano.",
+          "point2": "Negli abbonamenti mensili, l'utilizzo dell'AI che eccede i crediti inclusi viene scalato dai crediti acquistati oppure misurato e fatturato alla tariffa di credito vigente. Negli slot a consumo (pay-as-you-go), l'utilizzo dell'AI che eccede i crediti inclusi si paga con i pacchetti di crediti acquistati; quando i crediti si esauriscono, le successive esecuzioni AI vengono rifiutate - non viene mai addebitato nulla a posteriori.",
+          "point3": "I pacchetti di crediti (Starter, Plus, Power) sono acquisti una tantum elaborati dal nostro fornitore di servizi di pagamento - non sono addebiti ricorrenti. I crediti acquistati non scadono finché l'account rimane in regola.",
+          "point4": "I crediti non hanno valore in denaro, non sono trasferibili tra account e non sono rimborsabili, salvo ove richiesto dalla legge applicabile. Le quantità e le tariffe dei crediti pubblicate possono variare in modo prospettico; le modifiche non riducono mai i crediti già acquistati.",
+          "point5": "Il Piano gratuito non include l'utilizzo dell'AI. Le funzionalità AI richiedono un piano a pagamento o crediti acquistati, e ogni utilizzo dell'AI è soggetto alla Politica di uso accettabile riportata di seguito."
         }
       },
       "acceptableUse": {
@@ -867,7 +911,7 @@
           "title": "Titolarità di Cyqle",
           "description": "Cyqle conserva ogni diritto, titolo e interesse relativo a quanto segue:",
           "item1": "La piattaforma Cyqle, inclusi tutti i software, le API, le interfacce e la documentazione",
-          "item2": "La nostra implementazione proprietaria di libp2p e la tecnologia di orchestrazione peer-to-peer",
+          "item2": "La nostra implementazione peer-to-peer proprietaria e la tecnologia di orchestrazione",
           "item3": "Tutti i marchi, i loghi e i materiali di branding associati a Cyqle",
           "item4": "Qualsiasi miglioramento, potenziamento o opera derivata della piattaforma realizzati da Cyqle"
         },

@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "Pricing That Scales With You",
-    "descriptionMonthly": "Start free. Monthly plans from $6/month per desktop.",
-    "descriptionPayAsYouGo": "Start free. Pay as you go from $0.20/credit — 10 hours of cloud desktop for less than a coffee.",
+    "descriptionMonthly": "Start free. Monthly plans from $6/month per desktop — AI credits included.",
+    "descriptionPayAsYouGo": "Start free. Pay as you go from $0.20/credit — 10 hours of cloud desktop for less than a coffee. AI credits included.",
     "monthly": "/month",
     "credit": "/credit",
     "monthlyLabel": "Monthly",
@@ -146,7 +146,8 @@
           "persistence": "20 GB persistence",
           "snapshots": "Snapshot Creation",
           "api": "API Access",
-          "aiAgent": "Built-in AI Agent"
+          "aiAgent": "Built-in AI Agent",
+          "aiCredits": "9 credits of AI usage / month"
         },
         "cta": "Get Started"
       },
@@ -163,7 +164,8 @@
           "persistence": "40 GB persistence",
           "snapshots": "Snapshot Creation",
           "api": "API Access",
-          "aiAgent": "Built-in AI Agent"
+          "aiAgent": "Built-in AI Agent",
+          "aiCredits": "18 credits of AI usage / month"
         },
         "cta": "Go Pro"
       }
@@ -182,25 +184,54 @@
           "specs": "2 vCPU / 4GB RAM",
           "multiplier": "1x",
           "persistence": "40 GB persistence",
-          "bandwidth": "150mb/s bandwidth"
+          "bandwidth": "150mb/s bandwidth",
+          "aiCredits": "18 credits of AI usage / month"
         },
         "turbo": {
           "name": "Turbo",
           "specs": "4 vCPU / 8GB RAM",
           "multiplier": "2x",
           "persistence": "60 GB persistence",
-          "bandwidth": "200mb/s bandwidth"
+          "bandwidth": "200mb/s bandwidth",
+          "aiCredits": "34.5 credits of AI usage / month"
         },
         "max": {
           "name": "Max",
           "specs": "8 vCPU / 16GB RAM",
           "multiplier": "4x",
           "persistence": "120 GB persistence",
-          "bandwidth": "300mb/s bandwidth"
+          "bandwidth": "300mb/s bandwidth",
+          "aiCredits": "67.5 credits of AI usage / month"
         }
       }
     },
-    "creditEqualsHours": "1 credit = 10 hrs of desktop time",
+    "creditEqualsHours": "1 credit = 10 hrs of desktop time or $0.20 of AI usage",
+    "creditPacks": {
+      "title": "Credit packs for AI usage",
+      "description": "One unit everywhere: a credit buys 10 hours of desktop time, and AI work is measured in the same credits — $0.20 of AI usage, about one agent task, per credit. Top up whenever you need more.",
+      "bestValue": "Best value",
+      "packs": {
+        "starter": {
+          "name": "Starter",
+          "price": "$5",
+          "credits": "10 credits",
+          "tasks": "≈ 8 agent tasks"
+        },
+        "plus": {
+          "name": "Plus",
+          "price": "$15",
+          "credits": "35 credits",
+          "tasks": "≈ 28 agent tasks"
+        },
+        "power": {
+          "name": "Power",
+          "price": "$40",
+          "credits": "100 credits",
+          "tasks": "≈ 80 agent tasks"
+        }
+      },
+      "note": "Every paid plan includes AI credits — monthly or pay-as-you-go alike. Packs top you up when you need more. Purchased credits never expire while your account is active."
+    },
     "customQuote": {
       "heading": "Need more seats?",
       "description": "Get volume pricing tailored to your team size.",
@@ -403,7 +434,7 @@
           "title": "Account Data (Persistent)",
           "description": "We collect and store the following information to manage your account and provide billing services:",
           "item1": "Email address (for authentication and communication)",
-          "item2": "Payment information (processed securely via Stripe - we do not store full credit card numbers)",
+          "item2": "Payment information (processed securely by our payment provider, acting as merchant of record - we do not store full credit card numbers)",
           "item3": "Account preferences and subscription tier selections",
           "item4": "Billing history and usage logs for invoicing purposes",
           "legalBasis": "Legal Basis: Contractual Necessity - This data is required to fulfill our contract with you to provide the Cyqle service."
@@ -447,6 +478,10 @@
         "humanOversight": {
           "title": "Human Oversight & Limitations",
           "description": "The AI Operator operates under your direct supervision. It does not make autonomous decisions that affect your account, billing, or access rights. All critical operations require explicit user confirmation. The AI does not access or process your session data for training purposes without explicit opt-in consent."
+        },
+        "llmProviders": {
+          "title": "Third-Party AI Model Providers & Usage Metering",
+          "description": "AI features are powered by third-party large language model providers. When you run an AI task, your instruction and the minimum context needed to complete it (such as relevant page content or a screenshot of your session) are transmitted to such a provider for processing under its data-processing terms; we configure providers not to use your inputs for model training wherever that control is offered. To meter AI usage in credits, we record usage metadata only - model, token counts, and cost - not the content of your instructions. Credit purchases and usage metering events are processed by our payment provider, acting as merchant of record."
         }
       },
       "automatedDecisions": {
@@ -480,7 +515,7 @@
         "intro": "Cyqle's peer-to-peer (P2P) architecture means that session data may transit through various geographic nodes during real-time collaboration. We take specific measures to ensure compliance with international data transfer regulations.",
         "p2pNature": {
           "title": "P2P Mesh Network & Data Routing",
-          "description": "When you collaborate with other users in real-time, your session data is transmitted directly between peers using libp2p. This means:",
+          "description": "When you collaborate with other users in real-time, your session data is transmitted directly between peers using our peer-to-peer protocol. This means:",
           "item1": "Data may be routed through intermediate relay nodes located in different countries",
           "item2": "The exact path of data transmission depends on network topology and peer availability",
           "item3": "All P2P connections are end-to-end encrypted using TLS 1.3 and WebRTC encryption"
@@ -798,7 +833,7 @@
       "subscription": {
         "title": "2. Subscription & Slot Model",
         "badge": "Billing Terms",
-        "intro": "Cyqle operates on a credit-based slot model where each active session consumes one slot. Understanding how slots work is essential to managing your account.",
+        "intro": "Cyqle operates on a credit-based slot model where each active session consumes one slot, and usage — desktop time and AI usage alike — is measured in a single unit: the Cyqle credit. Understanding how slots and credits work is essential to managing your account.",
         "slotModel": {
           "title": "How Slots Work",
           "description": "Our platform architecture is based on a \"slot\" system:",
@@ -814,12 +849,21 @@
           },
           "paid": {
             "name": "Paid Tiers (Lite, Pro, Power Tiers):",
-            "description": "Offer extended or unlimited session durations, increased computational resources, persistent storage with retention periods, high-priority queue access, API access, access to public snapshots, and snapshot creation (limits vary by tier). Credits are consumed based on active usage time."
+            "description": "Offer extended or unlimited session durations, increased computational resources, persistent storage with retention periods, high-priority queue access, API access, access to public snapshots, and snapshot creation (limits vary by tier). Credits are consumed based on active usage time. Paid tiers additionally include a tier-specific allocation of credits for AI usage, on any billing model."
           }
         },
         "billing": {
           "title": "Billing Models",
-          "description": "We offer two billing options for paid subscriptions. Monthly Subscription: Pay a fixed monthly price with included credit allocation that resets each billing period. Metered (Pay-as-you-go): Pay only for actual usage time with no recurring charges - buy credits as needed and credits are deducted per minute of session runtime. For both models, 1 credit equals 10 hours (600 minutes) of usage at the tier rate. You may upgrade, downgrade, or cancel your subscription at any time through your account dashboard."
+          "description": "We offer two billing options for paid subscriptions. Monthly Subscription: Pay a fixed monthly price with an included credit allocation that resets each billing period. Metered (Pay-as-you-go): Pay only for actual usage time with no recurring charges - buy credits as needed and credits are deducted per minute of session runtime. Both billing models include your tier's allocation of credits for AI usage. Across Cyqle, 1 credit equals 10 hours (600 minutes) of desktop usage at the tier rate, and AI usage is measured in the same credits at USD $0.20 of AI usage per credit. You may upgrade, downgrade, or cancel your subscription at any time through your account dashboard."
+        },
+        "aiUsage": {
+          "title": "AI Usage & Credit Packs",
+          "description": "Cyqle's AI features (including the built-in AI Operator) consume credits. The following terms govern how AI usage is allocated, metered, and purchased:",
+          "point1": "AI usage draws first on the AI credit allocation included with your plan, then on purchased credit packs. Included AI credits are subject to daily and weekly usage caps published on our pricing page and shown in your account, replenish automatically, and do not roll over.",
+          "point2": "On monthly subscriptions, AI usage beyond your included credits is drawn from purchased credits or metered and billed at the prevailing credit rate. On metered (pay-as-you-go) slots, AI usage beyond the included credits is paid from purchased credit packs; when no credits remain, further AI runs are declined - you are never billed after the fact.",
+          "point3": "Credit packs (Starter, Plus, Power) are one-time purchases processed by our payment provider - they are not recurring charges. Purchased credits do not expire while your account remains in good standing.",
+          "point4": "Credits have no cash value, are not transferable between accounts, and are non-refundable except as required by applicable law. Published credit amounts and rates may change prospectively; changes never reduce credits you have already purchased.",
+          "point5": "The Free tier does not include AI usage. AI features require a paid plan or purchased credits, and all AI usage is subject to the Acceptable Use Policy below."
         }
       },
       "acceptableUse": {
@@ -867,7 +911,7 @@
           "title": "Cyqle's Ownership",
           "description": "Cyqle retains all right, title, and interest in and to the following:",
           "item1": "The Cyqle platform, including all software, APIs, interfaces, and documentation",
-          "item2": "Our proprietary libp2p implementation and peer-to-peer orchestration technology",
+          "item2": "Our proprietary peer-to-peer implementation and orchestration technology",
           "item3": "All trademarks, logos, and branding materials associated with Cyqle",
           "item4": "Any improvements, enhancements, or derivatives of the platform made by Cyqle"
         },

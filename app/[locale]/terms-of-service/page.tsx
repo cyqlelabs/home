@@ -185,6 +185,19 @@ export default async function TermsOfServicePage({ params: { locale } }: Props) 
                   </h3>
                   <p className="text-sm">{t('sections.subscription.billing.description')}</p>
                 </div>
+                <div className="bg-black/40 p-6 rounded-lg border border-gray-700">
+                  <h3 className="font-semibold text-white mb-3">
+                    {t('sections.subscription.aiUsage.title')}
+                  </h3>
+                  <p className="mb-4 text-sm">{t('sections.subscription.aiUsage.description')}</p>
+                  <ul className="space-y-2 list-disc list-inside text-sm">
+                    <li>{t('sections.subscription.aiUsage.point1')}</li>
+                    <li>{t('sections.subscription.aiUsage.point2')}</li>
+                    <li>{t('sections.subscription.aiUsage.point3')}</li>
+                    <li>{t('sections.subscription.aiUsage.point4')}</li>
+                    <li>{t('sections.subscription.aiUsage.point5')}</li>
+                  </ul>
+                </div>
               </div>
             </div>
 
