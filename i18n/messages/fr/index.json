@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Le Bureau Cloud P2P pour Collaborer Instantanément",
+    "title": "Le bureau cloud P2P pour collaborer instantanément",
     "description": "Un ordinateur cloud persistant pour collaborer en équipe instantanément. Développez, testez et automatisez ensemble grâce à l'IA. Essayez gratuitement."
   },
   "navbar": {
@@ -14,34 +14,34 @@
     "changeLanguage": "Changer de langue"
   },
   "hero": {
-    "title": "Un Bureau Cloud que Vous Pouvez Vraiment Partager",
-    "titlePhrase1": "Votre Bureau Cloud",
-    "titlePhrase2": "Votre Espace de Travail Partagé",
-    "titlePhrase3": "L'Ordinateur de Votre Équipe",
+    "title": "Un bureau cloud que vous pouvez vraiment partager",
+    "titlePhrase1": "Votre bureau cloud",
+    "titlePhrase2": "Votre espace de travail partagé",
+    "titlePhrase3": "L'ordinateur de votre équipe",
     "descriptionLine1": "Prêt en quelques secondes.",
     "descriptionLine2": "Invitez votre équipe.",
     "descriptionLine3": "Tout le monde a la main.",
     "getStarted": "Commencer",
-    "trialInfo": "Offre gratuite disponible. Sans carte bancaire.",
-    "powerOnLabel": "Allumer — C'est Gratuit",
+    "trialInfo": "Formule gratuite disponible. Sans carte bancaire.",
+    "powerOnLabel": "Allumer — c'est gratuit",
     "moreInfo": "En savoir plus"
   },
   "features": {
-    "title": "Un Bureau Complet, Réinventé",
+    "title": "Un bureau complet, réinventé",
     "multiplayerDesktop": {
-      "title": "Un Vrai Bureau Multijoueur",
+      "title": "Un vrai bureau multi-utilisateur",
       "description": "**Plusieurs curseurs, plusieurs claviers**, contrôle en temps réel. Chaque membre de l'équipe pilote le bureau simultanément grâce au **streaming P2P**. **Appels vidéo intégrés**, **partage de fichiers instantané** et sessions partagées — fini les « vous voyez mon écran ? »"
     },
     "ephemeralEnvironments": {
-      "title": "Environnements Éphémères Instantanés",
+      "title": "Environnements éphémères instantanés",
       "description": "Lancez des bureaux préconfigurés en quelques secondes. **Éphémères** par défaut, persistants quand vous en avez besoin, ou clonés depuis des **snapshots**. **Épinglez** votre configuration favorite pour la garder **préchauffée** et démarrer sans aucune attente, ou **mettez en pause** une session pour la figer et reprendre exactement là où vous en étiez."
     },
     "unrestrictedAccess": {
-      "title": "Accès et Contrôle Sans Restriction",
-      "description": "**Accès root complet** pour installer ce que vous voulez. **API programmable** pour tout automatiser — glissez des **bureaux préchauffés dans vos pipelines CI/CD**, démarrés en quelques secondes et pilotés à distance. C'est votre machine : configurez-la, scriptez-la, contrôlez-la comme bon vous semble."
+      "title": "Accès et contrôle sans restriction",
+      "description": "**Accès root complet** pour installer ce que vous voulez. **API programmable** pour tout automatiser — intégrez des **bureaux préchauffés dans vos pipelines CI/CD**, démarrés en quelques secondes et pilotés à distance. C'est votre machine : configurez-la, scriptez-la, contrôlez-la comme bon vous semble."
     },
     "workflowAutomation": {
-      "title": "Automatisation des Workflows par l'IA",
+      "title": "Automatisation des workflows par l'IA",
       "description": "Enregistrez vos workflows navigateur une fois, rejouez-les à l'infini. Déléguez les tâches web répétitives à des **agents IA** pour vous concentrer sur l'essentiel."
     },
     "zeroKnowledgeSecurity": {
@@ -49,35 +49,35 @@
       "description": "Votre système de fichiers est **chiffré** avec des clés de session uniques. Quand vous fermez une session éphémère, les données sont **effacées cryptographiquement** — nous ne pourrions pas les récupérer, même si nous le voulions."
     },
     "mobileAccess": {
-      "title": "Expérience Mobile Native",
+      "title": "Expérience mobile native",
       "description": "Accédez à votre bureau complet depuis votre téléphone ou votre tablette avec des **gestes tactiles natifs** — **pincez pour redimensionner les fenêtres, glissez pour les déplacer, balayez pour naviguer**. Corrigez des bugs dans le train, relisez du code en réunion, consultez les logs pendant un incident. Votre bureau surpuissant s'adapte à vos pouces."
     }
   },
   "useCases": {
-    "title": "Votre Espace de Travail pour Chaque Workflow",
+    "title": "Votre espace de travail pour chaque workflow",
     "engineering": {
-      "title": "Développez et Déboguez Ensemble",
+      "title": "Développez et déboguez ensemble",
       "description": "Programmez en binôme dans un environnement cloud persistant. Reproduisez les bugs dans un sandbox partagé et invitez les devs dans votre session pour déboguer instantanément."
     },
     "aiAgents": {
-      "title": "Espace de Travail pour Agents IA",
+      "title": "Espace de travail pour agents IA",
       "description": "Laissez vos agents piloter un vrai bureau Linux. Créez un snapshot une fois, clonez-le pour des exécutions parallèles — et laissez un humain rejoindre la même session dès que l'agent a besoin d'aide."
     },
     "customerSupport": {
-      "title": "Support Collaboratif",
+      "title": "Support collaboratif",
       "description": "Ne vous contentez pas d'expliquer à vos clients quoi faire — montrez-leur. Lancez une session partagée pour automatiser des parcours d'onboarding web complexes ou guider vos utilisateurs en temps réel."
     },
     "operations": {
-      "title": "Opérations Sécurisées",
+      "title": "Opérations sécurisées",
       "description": "Accédez à vos outils internes et tableaux de bord depuis un bureau cloud isolé et sécurisé, sans exposer vos réseaux locaux."
     },
     "admin": {
-      "title": "Bureau Virtuel",
+      "title": "Espace de travail virtuel",
       "description": "Collaborez sur des tableurs, des documents et des tâches administratives dans un bureau partagé. Modifiez plusieurs fenêtres simultanément pendant vos appels."
     }
   },
   "aiSection": {
-    "title": "Automatisez Votre Travail",
+    "title": "Automatisez votre travail",
     "description": "Cyqle n'est pas qu'un bureau. C'est une plateforme d'automatisation. Enregistrez des workflows, planifiez des tâches et laissez les agents s'occuper des corvées.",
     "items": [
       "Enregistrez les interactions navigateur pour les rejouer",
@@ -86,7 +86,7 @@
       "Maintenez une bibliothèque partagée d'automatisations d'équipe",
       "Compatible avec vos outils existants"
     ],
-    "exploreFeatures": "Essayer Gratuitement"
+    "exploreFeatures": "Essayer gratuitement"
   },
   "apiTeaser": {
     "eyebrow": "API REST pour agents IA",
@@ -101,49 +101,49 @@
     "cta": "Voir la doc API"
   },
   "cta": {
-    "title": "Un Lien. Un Bureau. Toute l'Équipe Dedans.",
+    "title": "Un lien. Un bureau. Toute l'équipe dedans.",
     "description": "Un seul lien d'invitation. Toute votre équipe se retrouve sur le même bureau, chacun avec son propre curseur, en moins de 10 secondes.",
-    "startTrial": "Commencer Maintenant",
+    "startTrial": "Commencer maintenant",
     "trialInfo": "Sessions gratuites de 60 minutes. Sans carte bancaire."
   },
   "pricing": {
-    "title": "Des Tarifs qui Évoluent avec Vous",
-    "descriptionMonthly": "Commencez gratuitement. Plans mensuels à partir de $6/mois par bureau.",
-    "descriptionPayAsYouGo": "Commencez gratuitement. Payez à l'usage dès $0.20/crédit — 10 heures de bureau cloud pour moins cher qu'un café.",
+    "title": "Des tarifs qui s'adaptent à vous",
+    "descriptionMonthly": "Commencez gratuitement. Formules mensuelles à partir de 6 $/mois par bureau.",
+    "descriptionPayAsYouGo": "Commencez gratuitement. Payez à l'usage dès 0,20 $/crédit — 10 heures de bureau cloud pour moins cher qu'un café.",
     "monthly": "/mois",
     "credit": "/crédit",
     "monthlyLabel": "Mensuel",
     "payAsYouGoLabel": "Paiement à l'usage",
-    "popular": "Le Plus Populaire",
+    "popular": "Le plus populaire",
     "billingLegend": "Facturation quotidienne selon l'usage réel",
     "perDesktop": "par bureau",
     "plans": {
       "free": {
         "name": "Gratuit",
-        "price": "$0.00",
+        "price": "0,00 $",
         "unit": "",
         "description": "Parfait pour un essai rapide.",
         "features": {
           "time": "Sessions limitées à 60 minutes",
-          "specs": "1 vCPU / 1 GB RAM",
-          "bandwidth": "Jusqu'à 10mb/s de bande passante",
+          "specs": "1 vCPU / 1 Go de RAM",
+          "bandwidth": "Jusqu'à 10 Mb/s de bande passante",
           "priority": "File d'attente basse priorité",
           "persistence": "Sans persistance",
           "snapshots": "Snapshots publics"
         },
-        "cta": "Essayer Gratuitement"
+        "cta": "Essayer gratuitement"
       },
       "lite": {
         "name": "Lite",
-        "price": "$0.20",
+        "price": "0,20 $",
         "unit": "/crédit",
         "description": "Parfait pour le dev en solo.",
         "features": {
           "time": "Durée de session illimitée",
-          "specs": "1 vCPU / 2 GB RAM",
-          "bandwidth": "100mb/s de bande passante",
+          "specs": "1 vCPU / 2 Go de RAM",
+          "bandwidth": "100 Mb/s de bande passante",
           "priority": "Priorité standard",
-          "persistence": "20 GB de persistance",
+          "persistence": "20 Go de persistance",
           "snapshots": "Création de snapshots",
           "api": "Accès API",
           "aiAgent": "Agent IA intégré"
@@ -152,15 +152,15 @@
       },
       "pro": {
         "name": "Pro",
-        "price": "$0.40",
+        "price": "0,40 $",
         "unit": "/crédit",
         "description": "Conçu pour le travail sérieux.",
         "features": {
           "time": "Durée de session illimitée",
-          "specs": "2 vCPU / 4 GB RAM",
-          "bandwidth": "150mb/s de bande passante",
+          "specs": "2 vCPU / 4 Go de RAM",
+          "bandwidth": "150 Mb/s de bande passante",
           "priority": "File d'attente haute priorité",
-          "persistence": "40 GB de persistance",
+          "persistence": "40 Go de persistance",
           "snapshots": "Création de snapshots",
           "api": "Accès API",
           "aiAgent": "Agent IA intégré"
@@ -169,7 +169,7 @@
       }
     },
     "powerTiers": {
-      "title": "Niveaux de Puissance",
+      "title": "Niveaux de puissance",
       "description": "Adaptez vos ressources aux tâches les plus exigeantes.",
       "table": {
         "tier": "Niveau",
@@ -179,24 +179,24 @@
       "tiers": {
         "standard": {
           "name": "Standard",
-          "specs": "2 vCPU / 4GB RAM",
+          "specs": "2 vCPU / 4 Go de RAM",
           "multiplier": "1x",
-          "persistence": "40 GB de persistance",
-          "bandwidth": "150mb/s de bande passante"
+          "persistence": "40 Go de persistance",
+          "bandwidth": "150 Mb/s de bande passante"
         },
         "turbo": {
           "name": "Turbo",
-          "specs": "4 vCPU / 8GB RAM",
+          "specs": "4 vCPU / 8 Go de RAM",
           "multiplier": "2x",
-          "persistence": "60 GB de persistance",
-          "bandwidth": "200mb/s de bande passante"
+          "persistence": "60 Go de persistance",
+          "bandwidth": "200 Mb/s de bande passante"
         },
         "max": {
           "name": "Max",
-          "specs": "8 vCPU / 16GB RAM",
+          "specs": "8 vCPU / 16 Go de RAM",
           "multiplier": "4x",
-          "persistence": "120 GB de persistance",
-          "bandwidth": "300mb/s de bande passante"
+          "persistence": "120 Go de persistance",
+          "bandwidth": "300 Mb/s de bande passante"
         }
       }
     },
@@ -204,23 +204,23 @@
     "customQuote": {
       "heading": "Besoin de plus de postes ?",
       "description": "Bénéficiez d'une tarification en volume adaptée à la taille de votre équipe.",
-      "cta": "Demander un Devis",
-      "dialogTitle": "Obtenir un Devis Personnalisé",
+      "cta": "Demander un devis",
+      "dialogTitle": "Obtenir un devis personnalisé",
       "dialogDescription": "Parlez-nous de votre équipe et nous préparerons une offre tarifaire sur mesure.",
       "seatsLabel": "De combien de postes avez-vous besoin ?",
       "seatsPlaceholder": "ex. 10",
       "emailLabel": "Votre e-mail professionnel",
       "emailPlaceholder": "vous@entreprise.com",
-      "submit": "Demander un Devis",
+      "submit": "Demander un devis",
       "sending": "Envoi en cours...",
-      "successTitle": "Devis Demandé !",
+      "successTitle": "Devis demandé !",
       "successDescription": "Nous reviendrons vers vous très rapidement avec une offre tarifaire sur mesure.",
       "errorMessage": "Une erreur est survenue. Veuillez réessayer.",
       "close": "Fermer"
     }
   },
   "howItWorks": {
-    "title": "Opérationnel en Quelques Secondes",
+    "title": "Opérationnel en quelques secondes",
     "step1": {
       "title": "Lancez",
       "description": "Un clic pour démarrer. Votre bureau Linux complet est en ligne dans votre navigateur en quelques secondes. Aucune installation, aucune configuration."
@@ -230,12 +230,12 @@
       "description": "Partagez un seul lien. Toute votre équipe rejoint instantanément — chacun avec son propre curseur et son propre clavier."
     },
     "step3": {
-      "title": "Travaillez Ensemble",
+      "title": "Travaillez ensemble",
       "description": "Tapez, cliquez et naviguez simultanément sur le même bureau. Corrigez les bugs ensemble. Livrez plus vite."
     }
   },
   "footer": {
-    "description": "Le bureau cloud P2P pour la collaboration multijoueur et l'automatisation par IA.",
+    "description": "Le bureau cloud P2P pour la collaboration multi-utilisateur et l'automatisation par IA.",
     "product": {
       "title": "Produit",
       "features": "Fonctionnalités",
@@ -261,9 +261,9 @@
       "terms": "Conditions"
     },
     "helpSupport": {
-      "title": "Aide et Support",
+      "title": "Aide et support",
       "apiDocs": "Documentation API",
-      "contact": "Contacter le Support"
+      "contact": "Contacter le support"
     },
     "copyright": "© {year} Cyqle. Tous droits réservés.",
     "privacyPolicy": "Politique de confidentialité",
@@ -301,23 +301,23 @@
     "humans": {
       "badge": "Pour les personnes",
       "title": "Une machine que toute votre équipe peut habiter",
-      "intro": "Un bureau Linux complet, vivant dans votre navigateur en quelques secondes. Partagez un lien et votre équipe est à l'intérieur — chacun avec son propre curseur et son clavier, tous en action en même temps.",
+      "intro": "Un bureau Linux complet, en ligne dans votre navigateur en quelques secondes. Partagez un lien et votre équipe est à l'intérieur — chacun avec son propre curseur et son clavier, tous en action en même temps.",
       "items": [
         "Tout le monde travaille simultanément — ni conducteur, ni passagers",
-        "Éphémère par défaut : fermez-le et il disparaît, de façon démontrable",
+        "Éphémère par défaut : fermez-le et il disparaît — preuve à l'appui",
         "Prenez un snapshot d'un bureau configuré et réutilisez-le pour toujours",
         "Mettez une session en pause et la facturation s'arrête ; reprenez exactement où vous en étiez",
         "Enregistrez des sessions et rejouez-les pour des revues, des audits ou de la formation",
         "Utilisez le bureau complet depuis un téléphone, avec des gestes tactiles natifs"
       ],
-      "note": "La collaboration est incluse dans toutes les offres, y compris la gratuite. Ce n'est pas l'argument d'upsell. C'est le cœur du produit."
+      "note": "La collaboration est incluse dans toutes les formules, y compris la gratuite. Ce n'est pas une option premium. C'est le principe même."
     },
     "agents": {
       "badge": "Pour les agents IA",
       "title": "Il s'avère que les agents avaient besoin de la même chose",
-      "paragraph1": "Un agent enfermé dans une boîte de chat ne peut que parler du travail. Donnez-lui un ordinateur et il peut le faire : ouvrir des applications, lancer des commandes, naviguer, gérer des fichiers.",
+      "paragraph1": "Un agent coincé dans une fenêtre de chat ne peut que parler du travail. Donnez-lui un ordinateur et il peut le faire : ouvrir des applications, lancer des commandes, naviguer, gérer des fichiers.",
       "paragraph2": "Sur Cyqle, chaque agent dispose d'un vrai bureau. Démarrez une machine propre par exécution. Configurez une fois, prenez un snapshot et clonez-le pour des exécutions parallèles. Intégrez des bureaux préchauffés dans vos pipelines de CI. Détruisez tout quand le travail est terminé.",
-      "paragraph3": "Et comme le bureau est multijoueur, l'agent n'est qu'un utilisateur parmi d'autres sur la machine. Vous regardez son curseur bouger en temps réel. S'il bloque, vous prenez votre propre curseur et reprenez la main — même session, sans cérémonie.",
+      "paragraph3": "Et comme le bureau est multi-utilisateur, l'agent n'est qu'un utilisateur parmi d'autres sur la machine. Vous regardez son curseur bouger en temps réel. S'il bloque, vous prenez votre propre curseur et reprenez la main — même session, sans cérémonie.",
       "proof": "Des équipes utilisent déjà notre Agent IA intégré de cette façon — et amènent aussi leurs propres agents.",
       "demo": {
         "agentLabel": "agent",
@@ -340,12 +340,12 @@
     },
     "principles": {
       "badge": "Nos convictions",
-      "title": "Votre session vous appartient. De façon démontrable.",
+      "title": "Votre session vous appartient. Preuve à l'appui.",
       "items": [
         "Éphémère par défaut. Quand une session se ferme, sa clé est détruite et les données deviennent irrécupérables — pour les attaquants comme pour nous.",
-        "Zéro connaissance, au sens littéral : nous ne pouvons pas voir l'intérieur de votre session.",
+        "Zero-knowledge, au sens littéral : nous ne pouvons pas voir l'intérieur de votre session.",
         "La persistance est votre choix, chiffrée de bout en bout. Jamais un réglage que nous activons en douce.",
-        "Tous les utilisateurs sont égaux sur la machine — humain ou agent, offre gratuite ou payante."
+        "Tous les utilisateurs sont égaux sur la machine — humain ou agent, formule gratuite ou payante."
       ],
       "erasure": {
         "running": "chiffrée · en cours",
@@ -354,8 +354,8 @@
     },
     "vision": {
       "badge": "Notre cap",
-      "title": "Le multijoueur ne devrait pas être une fonctionnalité",
-      "intro": "Tous les bureaux des quarante dernières années ont supposé un utilisateur unique. Nous pensons que les prochains en supposent plusieurs — des machines que personnes et agents partagent, invoquent et jettent aussi facilement qu'un onglet de navigateur. Nous construisons dans cette direction :",
+      "title": "Travailler à plusieurs ne devrait pas être une fonctionnalité",
+      "intro": "Tous les bureaux des quarante dernières années ont supposé un utilisateur unique. Nous pensons que les prochains en supposent plusieurs — des machines que les humains comme les agents partagent, invoquent et jettent aussi facilement qu'un onglet de navigateur. Nous construisons dans cette direction :",
       "future": [
         "Démarrer une session depuis votre éditeur ou directement depuis une pull request",
         "Des politiques d'organisation et des profils de machine, du petit runner à la station GPU",
@@ -365,7 +365,7 @@
     },
     "cta": {
       "title": "Voyez par vous-même",
-      "description": "Un bureau en quelques secondes. Invitez un collègue, ou envoyez un agent.\nOffre gratuite. Sans carte bancaire.",
+      "description": "Un bureau en quelques secondes. Invitez un collègue, ou envoyez un agent.\nFormule gratuite. Sans carte bancaire.",
       "button": "Lancez un bureau gratuit"
     }
   },
@@ -469,8 +469,8 @@
           }
         },
         "optOut": {
-          "title": "Votre droit d'opposition et à une révision humaine",
-          "description": "Si un système automatisé signale votre compte ou vous refuse l'accès, vous avez le droit de demander une révision humaine et de contester la décision. Vous pouvez également vous opposer à certains traitements automatisés (à l'exception des fonctions de sécurité critiques).",
+          "title": "Votre droit d'opposition et votre droit à l'intervention humaine",
+          "description": "Si un système automatisé signale votre compte ou vous refuse l'accès, vous avez le droit de demander l'intervention d'un être humain et de contester la décision. Vous pouvez également vous opposer à certains traitements automatisés (à l'exception des fonctions de sécurité critiques).",
           "contact": "Pour exercer ce droit, contactez privacy@cyqle.in en indiquant l'adresse e-mail de votre compte et l'objet : « ADMT Opt-Out Request »."
         }
       },
@@ -609,7 +609,7 @@
       },
       "gpc": {
         "title": "Prise en charge du signal GPC",
-        "description": "Nous honorons automatiquement les signaux Global Privacy Control envoyés par votre navigateur"
+        "description": "Nous respectons automatiquement les signaux Global Privacy Control envoyés par votre navigateur"
       },
       "choice": {
         "title": "Choix équitable",
@@ -672,7 +672,7 @@
           "description": "Le Global Privacy Control (GPC) est un paramètre de navigateur qui vous permet de refuser automatiquement le partage et la vente de vos données sur tous les sites que vous visitez. Lorsqu'il est activé, votre navigateur envoie un signal « GPC: 1 » dans les en-têtes HTTP."
         },
         "howItWorks": {
-          "title": "Comment Cyqle honore les signaux GPC",
+          "title": "Comment Cyqle respecte les signaux GPC",
           "item1": "Lorsque nous détectons un signal GPC, nous le traitons automatiquement comme si vous aviez cliqué sur « Tout refuser » dans notre bannière de cookies",
           "item2": "Nous désactivons tous les cookies optionnels et le suivi analytique",
           "item3": "Votre préférence GPC est respectée à chaque chargement de page, sans clic supplémentaire"
@@ -810,7 +810,7 @@
           "title": "Formules d'abonnement",
           "free": {
             "name": "Formule gratuite :",
-            "description": "Offre un accès limité avec des sessions de 60 minutes maximum, 1 vCPU, 1 GB de RAM, sans persistance, un accès en file d'attente basse priorité et l'accès aux snapshots publics. La création de snapshots n'est pas disponible avec cette formule. Destinée uniquement à des fins d'évaluation."
+            "description": "Offre un accès limité avec des sessions de 60 minutes maximum, 1 vCPU, 1 Go de RAM, sans persistance, un accès en file d'attente basse priorité et l'accès aux snapshots publics. La création de snapshots n'est pas disponible avec cette formule. Destinée uniquement à des fins d'évaluation."
           },
           "paid": {
             "name": "Formules payantes (Lite, Pro, niveaux Power) :",

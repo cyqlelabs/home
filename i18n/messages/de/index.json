@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Der P2P-Cloud-Desktop für Zusammenarbeit in Echtzeit",
-    "description": "Ein persistenter Cloud-Computer für Team-Zusammenarbeit in Echtzeit. Gemeinsam entwickeln, testen und automatisieren – mit KI-Workflows. Jetzt kostenlos testen."
+    "title": "Der P2P-Cloud-Desktop für sofortige Zusammenarbeit",
+    "description": "Ein persistenter Cloud-Computer für sofortige Team-Zusammenarbeit. Gemeinsam entwickeln, testen und automatisieren – mit KI-Workflows. Jetzt kostenlos testen."
   },
   "navbar": {
     "features": "Features",
@@ -38,7 +38,7 @@
     },
     "unrestrictedAccess": {
       "title": "Uneingeschränkter Zugriff & Kontrolle",
-      "description": "**Voller Root-Zugriff**, um alles zu installieren. **Programmierbare API** für Automatisierung – klinke **vorgewärmte Desktops in CI/CD-Pipelines** ein, in Sekunden hochgefahren und aus der Ferne gesteuert. Es ist deine Maschine – konfiguriere sie, skripte sie, steuere sie, wie du willst."
+      "description": "**Voller Root-Zugriff**, um alles zu installieren. **Vollständige API** für Automatisierung – klinke **vorgewärmte Desktops in CI/CD-Pipelines** ein, in Sekunden hochgefahren und aus der Ferne gesteuert. Es ist deine Maschine – konfiguriere sie, skripte sie, steuere sie, wie du willst."
     },
     "workflowAutomation": {
       "title": "KI-Workflow-Automatisierung",
@@ -107,9 +107,9 @@
     "trialInfo": "60 Minuten kostenlose Sessions. Keine Kreditkarte erforderlich."
   },
   "pricing": {
-    "title": "Preise, die mit dir wachsen",
-    "descriptionMonthly": "Starte kostenlos. Monatliche Pläne ab $6/Monat pro Desktop.",
-    "descriptionPayAsYouGo": "Starte kostenlos. Pay as you go ab $0.20/Credit — 10 Stunden Cloud-Desktop für weniger als einen Kaffee.",
+    "title": "Ein Preismodell, das mit dir skaliert",
+    "descriptionMonthly": "Starte kostenlos. Monatstarife ab 6 $/Monat pro Desktop.",
+    "descriptionPayAsYouGo": "Starte kostenlos. Pay as you go ab 0,20 $/Credit — 10 Stunden Cloud-Desktop für weniger als einen Kaffee.",
     "monthly": "/Monat",
     "credit": "/Credit",
     "monthlyLabel": "Monatlich",
@@ -120,7 +120,7 @@
     "plans": {
       "free": {
         "name": "Kostenlos",
-        "price": "$0.00",
+        "price": "0,00 $",
         "unit": "",
         "description": "Perfekt zum schnellen Ausprobieren.",
         "features": {
@@ -135,7 +135,7 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "$0.20",
+        "price": "0,20 $",
         "unit": "/Credit",
         "description": "Perfekt für Solo-Entwicklung.",
         "features": {
@@ -152,7 +152,7 @@
       },
       "pro": {
         "name": "Pro",
-        "price": "$0.40",
+        "price": "0,40 $",
         "unit": "/Credit",
         "description": "Gebaut für ernsthafte Arbeit.",
         "features": {
@@ -231,7 +231,7 @@
     },
     "step3": {
       "title": "Zusammenarbeiten",
-      "description": "Tippt, klickt und navigiert gleichzeitig auf demselben Desktop. Behebt Bugs gemeinsam. Shippt schneller."
+      "description": "Gleichzeitig tippen, klicken und navigieren — auf demselben Desktop. Bugs gemeinsam beheben. Schneller shippen."
     }
   },
   "footer": {
@@ -258,7 +258,7 @@
       "careers": "Karriere",
       "contact": "Kontakt",
       "privacy": "Datenschutz",
-      "terms": "AGB"
+      "terms": "Nutzungsbedingungen"
     },
     "helpSupport": {
       "title": "Hilfe & Support",
@@ -282,8 +282,8 @@
     "problem": {
       "badge": "Das Problem",
       "title": "Jedes Kollaborationstool ist eine Notlösung",
-      "intro": "„Siehst du meinen Bildschirm?“ ist keine Zusammenarbeit. Das ist Erzählen.",
-      "scenario1": "Du kennst es. Eine Person steuert, vier beschreiben, wo geklickt werden soll. Dateien werden exportiert, gemailt, wieder importiert. Kontrolle wird „angefragt“.",
+      "intro": "„Siehst du meinen Bildschirm?“ ist keine Zusammenarbeit. Das ist Kommentieren.",
+      "scenario1": "Du kennst es. Eine Person steuert, vier beschreiben, wo geklickt werden soll. Dateien werden exportiert, gemailt, wieder importiert. Die Steuerung wird „angefordert“.",
       "scenario2": "Entwickler trifft es am härtesten: Umgebungen, die driften, bis „läuft auf meiner Maschine“ nur noch ein Schulterzucken ist, Bugs, die nur in der CI existieren, ganze Nachmittage, um ein Setup neu zu bauen, das letzte Woche noch lief.",
       "scenario3": "Und es betrifft nicht nur Engineers. Support-Mitarbeiter beschreiben Lösungen, die sie einfach ausführen könnten. Backoffice-Teams reichen eine Tabelle im Call herum wie einen Staffelstab.",
       "truth": "Das sieht nach verschiedenen Problemen aus. Es ist eines: Jeder Computer, den du je benutzt hast, wurde für einen einzigen Nutzer entworfen — und alles, was darauf aufbaut, erbt diese Annahme.",
@@ -294,7 +294,7 @@
       "title": "Gebaut von Leuten, die das Abwechseln satt hatten",
       "yearLabel": "2020",
       "paragraph1": "Wir sind Entwickler. Wir haben jede Version des Schmerzes auf dieser Seite erlebt: Pairing über Screenshare, driftende Umgebungen, CI-Fehler, die niemand reproduzieren konnte, Produktionsbetrieb über die Schulter von jemand anderem.",
-      "paragraph2": "2020 haben wir angefangen, die Maschine zu bauen, an der wir selbst arbeiten wollten: ein echter Linux-Desktop in der Cloud, auf dem jeder Teilnehmer ein vollwertiger Nutzer ist. Kein Host. Kein Gast. Kein Anfragen von Kontrolle. Jeder bringt seinen eigenen Cursor und seine eigene Tastatur an dieselbe Maschine.",
+      "paragraph2": "2020 haben wir angefangen, die Maschine zu bauen, an der wir selbst arbeiten wollten: ein echter Linux-Desktop in der Cloud, auf dem jeder Teilnehmer ein vollwertiger Nutzer ist. Kein Host. Kein Gast. Kein „Steuerung anfordern“. Jeder bringt seinen eigenen Cursor und seine eigene Tastatur an dieselbe Maschine.",
       "paragraph3": "Dann passierte etwas, das wir nicht geplant hatten: Es kamen Leute, die noch nie ein Terminal geöffnet hatten. Support-Teams, die Dinge gemeinsam mit ihren Kunden reparieren, statt sie anzuleiten. Teams, die ihre Verwaltungsarbeit in einem geteilten Desktop erledigen. Abwechseln war, wie sich zeigte, das Problem von allen.",
       "present": "Heute ist Cyqle ein Cloud-Computer, bei dem Zusammenarbeit kein nachträgliches Feature ist. Sie ist die Annahme, mit der wir gestartet sind."
     },
@@ -303,21 +303,21 @@
       "title": "Eine Maschine, in der dein ganzes Team leben kann",
       "intro": "Ein vollständiger Linux-Desktop, in Sekunden live in deinem Browser. Teile einen Link und dein Team ist drin — jede Person mit eigenem Cursor und eigener Tastatur, alle gleichzeitig aktiv.",
       "items": [
-        "Alle arbeiten gleichzeitig — keine Fahrer, keine Beifahrer",
-        "Standardmäßig flüchtig: schließen, und es ist nachweisbar weg",
+        "Alle arbeiten gleichzeitig — alle steuern, niemand schaut nur zu",
+        "Standardmäßig ephemer: schließen, und es ist nachweisbar weg",
         "Erstelle einen Snapshot eines konfigurierten Desktops und nutze ihn immer wieder",
         "Pausiere eine Session und die Abrechnung stoppt; mach genau dort weiter, wo du warst",
         "Zeichne Sessions auf und spiele sie ab — für Reviews, Audits oder Schulungen",
         "Nutze den vollen Desktop vom Handy, mit nativen Touch-Gesten"
       ],
-      "note": "Zusammenarbeit gibt es in jedem Tarif, auch im kostenlosen. Sie ist nicht das Upsell. Sie ist der Punkt."
+      "note": "Zusammenarbeit gibt es in jedem Tarif, auch im kostenlosen. Sie ist kein Upsell — sie ist der ganze Sinn der Sache."
     },
     "agents": {
       "badge": "Für KI-Agenten",
       "title": "Es stellte sich heraus: Agenten brauchten dasselbe",
       "paragraph1": "Ein Agent, der in einer Chatbox festsitzt, kann über Arbeit nur reden. Gib ihm einen Computer, und er kann sie erledigen: Apps öffnen, Befehle ausführen, browsen, Dateien verwalten.",
       "paragraph2": "Auf Cyqle bekommt jeder Agent einen echten Desktop. Starte pro Lauf eine saubere Maschine. Einmal konfigurieren, Snapshot erstellen, für parallele Läufe klonen. Häng vorgewärmte Desktops in deine CI-Pipelines. Reiß alles ab, wenn der Job erledigt ist.",
-      "paragraph3": "Und weil der Desktop Multiplayer ist, ist der Agent einfach ein weiterer Nutzer an der Maschine. Du siehst seinen Cursor in Echtzeit. Bleibt er hängen, greifst du zu deinem eigenen Cursor und übernimmst — gleiche Session, ohne Zeremonie.",
+      "paragraph3": "Und weil der Desktop Multiplayer ist, ist der Agent einfach ein weiterer Nutzer an der Maschine. Du siehst seinen Cursor in Echtzeit. Bleibt er hängen, greifst du zu deinem eigenen Cursor und übernimmst — gleiche Session, ohne Umstände.",
       "proof": "Teams betreiben unseren eingebauten KI-Agenten schon genau so — und bringen auch eigene Agenten mit.",
       "demo": {
         "agentLabel": "Agent",
@@ -327,13 +327,13 @@
     },
     "difference": {
       "badge": "Unter der Haube",
-      "title": "Was wir lösen mussten, damit es echt wird",
+      "title": "Was wir lösen mussten, damit das Realität wird",
       "intro": "Nichts davon gibt es von der Stange. Ein wirklich mehrbenutzerfähiger Desktop hieß, Probleme zu lösen, die die meisten Tools übertünchen:",
       "challenges": [
         "Echte Eingabegeräte für jeden Teilnehmer, injiziert auf Betriebssystem-Ebene — keine Overlay-Cursor auf einem Videostream",
         "Peer-to-Peer-Streaming der Session, ohne zentralen Server im Datenpfad",
         "Jede Session mit eigenem Schlüssel verschlüsselt, beim Schließen zerstört — kryptografische Löschung, kein Löschen-Button",
-        "Luftdichte Isolation um jeden Desktop, erzwungen außerhalb der Reichweite der Session",
+        "Lückenlose Isolation um jeden Desktop, durchgesetzt außerhalb der Reichweite der Session",
         "Vollständig konfigurierte Desktops, die in Sekunden aus vorgewärmten Snapshots booten"
       ],
       "conclusion": "Jahre an Infrastruktur, damit die Erfahrung ein Klick bleibt."
@@ -342,7 +342,7 @@
       "badge": "Woran wir glauben",
       "title": "Deine Session gehört dir. Nachweisbar.",
       "items": [
-        "Standardmäßig flüchtig. Wenn eine Session schließt, wird ihr Schlüssel zerstört und die Daten werden unwiederbringlich — für Angreifer und für uns.",
+        "Standardmäßig ephemer. Wenn eine Session schließt, wird ihr Schlüssel zerstört und die Daten werden unwiederbringlich — für Angreifer und für uns.",
         "Zero Knowledge, wörtlich gemeint: Wir können nicht in deine Session hineinsehen.",
         "Persistenz ist deine Entscheidung, Ende-zu-Ende verschlüsselt. Nie ein Default, den wir still umlegen.",
         "Auf der Maschine sind alle Nutzer gleich — Mensch oder Agent, kostenlos oder bezahlt."
@@ -813,7 +813,7 @@
             "description": "Bietet eingeschränkten Zugang mit 60-Minuten-Sitzungslimit, 1 vCPU, 1 GB RAM, ohne Persistenz, mit Warteschlangenzugang niedriger Priorität und Zugriff auf öffentliche Snapshots. Die Erstellung von Snapshots ist in dieser Stufe nicht verfügbar. Ausschließlich für Evaluierungszwecke gedacht."
           },
           "paid": {
-            "name": "Kostenpflichtige Stufen (Lite, Pro, Power-Stufen):",
+            "name": "Kostenpflichtige Stufen (Lite, Pro, Power):",
             "description": "Bieten verlängerte oder unbegrenzte Sitzungsdauern, erhöhte Rechenressourcen, persistenten Speicher mit Aufbewahrungsfristen, Warteschlangenzugang mit hoher Priorität, API-Zugriff, Zugriff auf öffentliche Snapshots sowie Snapshot-Erstellung (Limits variieren je nach Stufe). Credits werden basierend auf der aktiven Nutzungszeit verbraucht."
           }
         },
