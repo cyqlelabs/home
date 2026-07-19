@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "Pricing That Scales With You",
-    "descriptionMonthly": "Start free. Monthly plans from $6/month per desktop — AI credits included.",
-    "descriptionPayAsYouGo": "Start free. Pay as you go from $0.20/credit — 10 hours of cloud desktop for less than a coffee. AI credits included.",
+    "descriptionMonthly": "Start free. Monthly plans from ${from}/month per desktop — AI credits included.",
+    "descriptionPayAsYouGo": "Start free. Pay as you go from ${from}/credit — {hours} hours of cloud desktop for less than a coffee. AI credits included.",
     "monthly": "/month",
     "credit": "/credit",
     "monthlyLabel": "Monthly",
@@ -120,13 +120,11 @@
     "plans": {
       "free": {
         "name": "Free",
-        "price": "$0.00",
-        "unit": "",
         "description": "Perfect for a quick test drive.",
         "features": {
-          "time": "60 Minute Session Limit",
-          "specs": "1 vCPU / 1 GB RAM",
-          "bandwidth": "Up to 10mb/s bandwidth",
+          "time": "{minutes} Minute Session Limit",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "Up to {mbps}mb/s bandwidth",
           "priority": "Low Priority Queue",
           "persistence": "No Persistence",
           "snapshots": "Public Snapshots"
@@ -135,37 +133,33 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "$0.20",
-        "unit": "/credit",
         "description": "Perfect for solo dev work.",
         "features": {
           "time": "Unlimited Session Time",
-          "specs": "1 vCPU / 2 GB RAM",
-          "bandwidth": "100mb/s bandwidth",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "{mbps}mb/s bandwidth",
           "priority": "Standard Priority",
-          "persistence": "20 GB persistence",
+          "persistence": "{gb} GB persistence",
           "snapshots": "Snapshot Creation",
           "api": "API Access",
-          "aiAgent": "Built-in AI Agent",
-          "aiCredits": "9 Built-in AI Agent credits / month"
+          "aiAgent": "In-House AI Agent",
+          "aiCredits": "{credits} credits / month"
         },
         "cta": "Get Started"
       },
       "pro": {
         "name": "Pro",
-        "price": "$0.40",
-        "unit": "/credit",
         "description": "Built for serious work.",
         "features": {
           "time": "Unlimited Session Time",
-          "specs": "2 vCPU / 4 GB RAM",
-          "bandwidth": "150mb/s bandwidth",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "{mbps}mb/s bandwidth",
           "priority": "High Priority Queue",
-          "persistence": "40 GB persistence",
+          "persistence": "{gb} GB persistence",
           "snapshots": "Snapshot Creation",
           "api": "API Access",
-          "aiAgent": "Built-in AI Agent",
-          "aiCredits": "18 Built-in AI Agent credits / month"
+          "aiAgent": "In-House AI Agent",
+          "aiCredits": "{credits} credits / month"
         },
         "cta": "Go Pro"
       }
@@ -180,56 +174,36 @@
       },
       "tiers": {
         "standard": {
-          "name": "Standard",
-          "specs": "2 vCPU / 4GB RAM",
-          "multiplier": "1x",
-          "persistence": "40 GB persistence",
-          "bandwidth": "150mb/s bandwidth",
-          "aiCredits": "18 Built-in AI Agent credits / month"
+          "name": "Standard"
         },
         "turbo": {
-          "name": "Turbo",
-          "specs": "4 vCPU / 8GB RAM",
-          "multiplier": "2x",
-          "persistence": "60 GB persistence",
-          "bandwidth": "200mb/s bandwidth",
-          "aiCredits": "34.5 Built-in AI Agent credits / month"
+          "name": "Turbo"
         },
         "max": {
-          "name": "Max",
-          "specs": "8 vCPU / 16GB RAM",
-          "multiplier": "4x",
-          "persistence": "120 GB persistence",
-          "bandwidth": "300mb/s bandwidth",
-          "aiCredits": "67.5 Built-in AI Agent credits / month"
+          "name": "Max"
         }
       }
     },
-    "creditEqualsHours": "1 credit = 10 hrs of desktop time or $0.20 of AI usage",
+    "creditEqualsHours": "1 credit = {hours} hrs of desktop time",
+    "aiCreditsTooltip": "Monthly credits for the In-House AI Agent. Top up anytime with credit packs.",
     "creditPacks": {
-      "title": "Credit packs for the Built-in AI Agent",
-      "description": "Every paid plan includes credits for Cyqle's own Built-in AI Agent. Top up here when you need more — and if you bring your own agent, it never uses credits.",
+      "title": "Credit packs for the In-House AI Agent",
+      "description": "Every paid plan includes credits for Cyqle's own In-House AI Agent. Top up when you need more.",
       "bestValue": "Best value",
       "packs": {
         "starter": {
-          "name": "Starter",
-          "price": "$5",
-          "credits": "10 credits",
-          "tasks": "≈ 8 agent tasks"
+          "name": "Starter"
         },
         "plus": {
-          "name": "Plus",
-          "price": "$15",
-          "credits": "35 credits",
-          "tasks": "≈ 28 agent tasks"
+          "name": "Plus"
         },
         "power": {
-          "name": "Power",
-          "price": "$40",
-          "credits": "100 credits",
-          "tasks": "≈ 80 agent tasks"
+          "name": "Power"
         }
       },
+      "packPrice": "${price}",
+      "packCredits": "{credits} credits",
+      "packTasks": "≈ {tasks} agent tasks",
       "note": "Purchased credits never expire while your account is active."
     },
     "customQuote": {
@@ -349,7 +323,7 @@
       "paragraph1": "An agent trapped in a chat box can only talk about work. Give it a computer and it can do the work: open apps, run commands, browse, manage files.",
       "paragraph2": "On Cyqle, every agent gets a real desktop. Boot a clean machine per run. Configure once, snapshot, and clone it for parallel runs. Drop pre-warmed desktops into CI pipelines. Tear it all down when the job is done.",
       "paragraph3": "And because the desktop is multiplayer, the agent is just another user at the machine. You watch its cursor move in real time. If it stalls, you grab your own cursor and take over — same session, no ceremony.",
-      "proof": "Teams already run our built-in AI Agent this way — and bring their own agents, too.",
+      "proof": "Teams already run our In-House AI Agent this way — and bring their own agents, too.",
       "demo": {
         "agentLabel": "agent",
         "humanLabel": "you",
@@ -464,12 +438,12 @@
         "badge": "AI Disclosure",
         "intro": "Cyqle incorporates AI-powered features to enhance your productivity. Under the 2026 EU AI Act, we are required to provide clear disclosure when you interact with or are affected by AI systems.",
         "disclosure": {
-          "title": "AI Operator Disclosure",
-          "description": "When you use Cyqle's automation features (browser recording, task delegation, workflow scheduling), you may interact with our \"AI Operator\" - an AI system designed to execute repetitive web tasks on your behalf."
+          "title": "In-House AI Agent Disclosure",
+          "description": "When you use Cyqle's automation features (browser recording, task delegation, workflow scheduling), you may interact with our \"In-House AI Agent\" - an AI system designed to execute repetitive web tasks on your behalf."
         },
         "howItWorks": {
-          "title": "How the AI Operator Works",
-          "description": "The AI Operator uses the following logic to assist you:",
+          "title": "How the In-House AI Agent Works",
+          "description": "The In-House AI Agent uses the following logic to assist you:",
           "item1": "Pattern Recognition: It analyzes recorded browser interactions to identify actionable patterns (clicks, form fills, navigation sequences)",
           "item2": "Task Execution: Based on your instructions, it replicates these patterns to automate repetitive tasks",
           "item3": "Contextual Adaptation: It uses computer vision and DOM analysis to adapt to minor UI changes in web applications",
@@ -477,7 +451,7 @@
         },
         "humanOversight": {
           "title": "Human Oversight & Limitations",
-          "description": "The AI Operator operates under your direct supervision. It does not make autonomous decisions that affect your account, billing, or access rights. All critical operations require explicit user confirmation. The AI does not access or process your session data for training purposes without explicit opt-in consent."
+          "description": "The In-House AI Agent operates under your direct supervision. It does not make autonomous decisions that affect your account, billing, or access rights. All critical operations require explicit user confirmation. The AI does not access or process your session data for training purposes without explicit opt-in consent."
         },
         "llmProviders": {
           "title": "Third-Party AI Model Providers & Usage Metering",
@@ -858,8 +832,8 @@
         },
         "aiUsage": {
           "title": "AI Usage & Credit Packs",
-          "description": "Cyqle's AI features (including the built-in AI Operator) consume credits. The following terms govern how AI usage is allocated, metered, and purchased:",
-          "point1": "AI usage draws first on the AI credit allocation included with your plan, then on purchased credit packs. Included AI credits are subject to daily and weekly usage caps published on our pricing page and shown in your account, replenish automatically, and do not roll over.",
+          "description": "Cyqle's AI features (including the In-House AI Agent) consume credits. The following terms govern how AI usage is allocated, metered, and purchased:",
+          "point1": "AI usage draws first on the AI credit allocation included with your plan, then on purchased credit packs. Included AI credits replenish automatically and do not roll over.",
           "point2": "On monthly subscriptions, AI usage beyond your included credits is drawn from purchased credits or metered and billed at the prevailing credit rate. On metered (pay-as-you-go) slots, AI usage beyond the included credits is paid from purchased credit packs; when no credits remain, further AI runs are declined - you are never billed after the fact.",
           "point3": "Credit packs (Starter, Plus, Power) are one-time purchases processed by our payment provider - they are not recurring charges. Purchased credits do not expire while your account remains in good standing.",
           "point4": "Credits have no cash value, are not transferable between accounts, and are non-refundable except as required by applicable law. Published credit amounts and rates may change prospectively; changes never reduce credits you have already purchased.",

@@ -26,6 +26,7 @@ import TrackedLink from '@/components/tracked-link';
 import TrackedButton from '@/components/tracked-button';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { getSEOAlternates, siteMetadata, type SiteLocale } from '@/lib/site-metadata';
+import { getPricing } from '@/lib/pricing';
 
 type Props = {
   params: { locale: string };
@@ -50,6 +51,9 @@ export default async function Home({ params: { locale } }: Props) {
   const apiTeaserT = await getTranslations('apiTeaser');
   const ctaT = await getTranslations('cta');
   const howItWorksT = await getTranslations('howItWorks');
+
+  // All pricing figures come from the platform's monetization config.
+  const pricing = await getPricing();
 
   return (
     <div className="min-h-screen bg-transparent text-foreground overflow-hidden">
@@ -370,7 +374,7 @@ export default async function Home({ params: { locale } }: Props) {
       <div id="pricing" />
       {/* Pricing Section */}
       <AnimatedSection className="relative z-10 py-20">
-        <PricingSection />
+        <PricingSection pricing={pricing} />
       </AnimatedSection>
       {/* CTA Section */}
       <AnimatedSection className="relative z-10 py-20 bg-gradient-to-r from-gray-900/30 to-gray-800">

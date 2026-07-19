@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "Prezzi che si adattano alla tua crescita",
-    "descriptionMonthly": "Inizia gratis. Piani mensili da $6/mese per desktop — crediti AI inclusi.",
-    "descriptionPayAsYouGo": "Inizia gratis. Paghi a consumo da $0.20/credito — 10 ore di desktop cloud per meno di un caffè. Crediti AI inclusi.",
+    "descriptionMonthly": "Inizia gratis. Piani mensili da ${from}/mese per desktop — crediti AI inclusi.",
+    "descriptionPayAsYouGo": "Inizia gratis. Paghi a consumo da ${from}/credito — {hours} ore di desktop cloud per meno di un caffè. Crediti AI inclusi.",
     "monthly": "/mese",
     "credit": "/credito",
     "monthlyLabel": "Mensile",
@@ -120,13 +120,11 @@
     "plans": {
       "free": {
         "name": "Gratuito",
-        "price": "$0.00",
-        "unit": "",
         "description": "Perfetto per un primo giro di prova.",
         "features": {
-          "time": "Limite di sessione di 60 minuti",
-          "specs": "1 vCPU / 1 GB RAM",
-          "bandwidth": "Fino a 10mb/s di banda",
+          "time": "Limite di sessione di {minutes} minuti",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "Fino a {mbps}mb/s di banda",
           "priority": "Coda a bassa priorità",
           "persistence": "Nessuna persistenza",
           "snapshots": "Snapshot pubblici"
@@ -135,37 +133,33 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "$0.20",
-        "unit": "/credito",
         "description": "Perfetto per chi sviluppa in solitaria.",
         "features": {
           "time": "Tempo di sessione illimitato",
-          "specs": "1 vCPU / 2 GB RAM",
-          "bandwidth": "100mb/s di banda",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "{mbps}mb/s di banda",
           "priority": "Priorità standard",
-          "persistence": "20 GB di persistenza",
+          "persistence": "{gb} GB di persistenza",
           "snapshots": "Creazione di snapshot",
           "api": "Accesso API",
-          "aiAgent": "Agente AI integrato",
-          "aiCredits": "9 crediti per l'Agente AI integrato / mese"
+          "aiAgent": "Agente IA interno",
+          "aiCredits": "{credits} crediti / mese"
         },
         "cta": "Inizia ora"
       },
       "pro": {
         "name": "Pro",
-        "price": "$0.40",
-        "unit": "/credito",
         "description": "Pensato per il lavoro serio.",
         "features": {
           "time": "Tempo di sessione illimitato",
-          "specs": "2 vCPU / 4 GB RAM",
-          "bandwidth": "150mb/s di banda",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "{mbps}mb/s di banda",
           "priority": "Coda ad alta priorità",
-          "persistence": "40 GB di persistenza",
+          "persistence": "{gb} GB di persistenza",
           "snapshots": "Creazione di snapshot",
           "api": "Accesso API",
-          "aiAgent": "Agente AI integrato",
-          "aiCredits": "18 crediti per l'Agente AI integrato / mese"
+          "aiAgent": "Agente IA interno",
+          "aiCredits": "{credits} crediti / mese"
         },
         "cta": "Passa a Pro"
       }
@@ -180,56 +174,36 @@
       },
       "tiers": {
         "standard": {
-          "name": "Standard",
-          "specs": "2 vCPU / 4GB RAM",
-          "multiplier": "1x",
-          "persistence": "40 GB di persistenza",
-          "bandwidth": "150mb/s di banda",
-          "aiCredits": "18 crediti per l'Agente AI integrato / mese"
+          "name": "Standard"
         },
         "turbo": {
-          "name": "Turbo",
-          "specs": "4 vCPU / 8GB RAM",
-          "multiplier": "2x",
-          "persistence": "60 GB di persistenza",
-          "bandwidth": "200mb/s di banda",
-          "aiCredits": "34.5 crediti per l'Agente AI integrato / mese"
+          "name": "Turbo"
         },
         "max": {
-          "name": "Max",
-          "specs": "8 vCPU / 16GB RAM",
-          "multiplier": "4x",
-          "persistence": "120 GB di persistenza",
-          "bandwidth": "300mb/s di banda",
-          "aiCredits": "67.5 crediti per l'Agente AI integrato / mese"
+          "name": "Max"
         }
       }
     },
-    "creditEqualsHours": "1 credito = 10 ore di desktop o $0.20 di utilizzo AI",
+    "creditEqualsHours": "1 credito = {hours} ore di desktop",
+    "aiCreditsTooltip": "Crediti mensili per l'Agente IA interno. Ricarica quando vuoi con i pacchetti di crediti.",
     "creditPacks": {
-      "title": "Pacchetti di crediti per l'Agente AI integrato",
-      "description": "Tutti i piani a pagamento includono crediti per l'Agente AI integrato di Cyqle. Ricarica qui quando te ne servono di più — e se usi un tuo agente, non consuma crediti.",
+      "title": "Pacchetti di crediti per l'Agente IA interno",
+      "description": "Tutti i piani a pagamento includono crediti per l'Agente IA interno di Cyqle. Ricarica quando te ne servono di più.",
       "bestValue": "Miglior valore",
       "packs": {
         "starter": {
-          "name": "Starter",
-          "price": "$5",
-          "credits": "10 crediti",
-          "tasks": "≈ 8 attività dell'agente"
+          "name": "Starter"
         },
         "plus": {
-          "name": "Plus",
-          "price": "$15",
-          "credits": "35 crediti",
-          "tasks": "≈ 28 attività dell'agente"
+          "name": "Plus"
         },
         "power": {
-          "name": "Power",
-          "price": "$40",
-          "credits": "100 crediti",
-          "tasks": "≈ 80 attività dell'agente"
+          "name": "Power"
         }
       },
+      "packPrice": "${price}",
+      "packCredits": "{credits} crediti",
+      "packTasks": "≈ {tasks} attività dell'agente",
       "note": "I crediti acquistati non scadono mai finché il tuo account è attivo."
     },
     "customQuote": {
@@ -349,7 +323,7 @@
       "paragraph1": "Un agente chiuso in una chat può solo parlare del lavoro. Dagli un computer e il lavoro lo fa: apre applicazioni, esegue comandi, naviga, gestisce file.",
       "paragraph2": "Su Cyqle ogni agente ha un desktop vero. Avvia una macchina pulita per ogni esecuzione. Configura una volta, fai lo snapshot e clonalo per esecuzioni parallele. Inserisci desktop preriscaldati nelle tue pipeline di CI. Smantella tutto quando il lavoro è finito.",
       "paragraph3": "E siccome il desktop è multiplayer, l'agente è solo un altro utente della macchina. Guardi il suo cursore muoversi in tempo reale. Se si blocca, prendi il tuo cursore e subentri — stessa sessione, senza cerimonie.",
-      "proof": "Ci sono già team che usano così il nostro Agente AI integrato — e che portano anche i propri agenti.",
+      "proof": "Ci sono già team che usano così il nostro Agente IA interno — e che portano anche i propri agenti.",
       "demo": {
         "agentLabel": "agente",
         "humanLabel": "tu",
@@ -464,12 +438,12 @@
         "badge": "Informativa sull'AI",
         "intro": "Cyqle integra funzionalità basate su AI per migliorare la produttività. Ai sensi dell'EU AI Act del 2026, siamo tenuti a fornire un'informativa chiara quando l'utente interagisce con sistemi di AI o ne è interessato.",
         "disclosure": {
-          "title": "Informativa sull'AI Operator",
-          "description": "Quando l'utente utilizza le funzionalità di automazione di Cyqle (registrazione del browser, delega di attività, pianificazione di flussi di lavoro), può interagire con il nostro \"AI Operator\" - un sistema di AI progettato per eseguire attività web ripetitive per conto dell'utente."
+          "title": "Informativa sull'Agente IA interno",
+          "description": "Quando l'utente utilizza le funzionalità di automazione di Cyqle (registrazione del browser, delega di attività, pianificazione di flussi di lavoro), può interagire con il nostro \"Agente IA interno\" - un sistema di AI progettato per eseguire attività web ripetitive per conto dell'utente."
         },
         "howItWorks": {
-          "title": "Come funziona l'AI Operator",
-          "description": "L'AI Operator utilizza la seguente logica per assistere l'utente:",
+          "title": "Come funziona l'Agente IA interno",
+          "description": "L'Agente IA interno utilizza la seguente logica per assistere l'utente:",
           "item1": "Riconoscimento di Pattern: analizza le interazioni registrate nel browser per identificare pattern azionabili (clic, compilazione di moduli, sequenze di navigazione)",
           "item2": "Esecuzione delle Attività: sulla base delle istruzioni dell'utente, replica questi pattern per automatizzare attività ripetitive",
           "item3": "Adattamento Contestuale: utilizza visione artificiale e analisi del DOM per adattarsi a piccole modifiche dell'interfaccia nelle applicazioni web",
@@ -477,7 +451,7 @@
         },
         "humanOversight": {
           "title": "Supervisione umana e limitazioni",
-          "description": "L'AI Operator opera sotto la diretta supervisione dell'utente. Non prende decisioni autonome che incidano su account, fatturazione o diritti di accesso. Tutte le operazioni critiche richiedono la conferma esplicita dell'utente. L'AI non accede ai dati di sessione né li tratta a fini di addestramento senza il consenso esplicito (opt-in) dell'utente."
+          "description": "L'Agente IA interno opera sotto la diretta supervisione dell'utente. Non prende decisioni autonome che incidano su account, fatturazione o diritti di accesso. Tutte le operazioni critiche richiedono la conferma esplicita dell'utente. L'AI non accede ai dati di sessione né li tratta a fini di addestramento senza il consenso esplicito (opt-in) dell'utente."
         },
         "llmProviders": {
           "title": "Fornitori terzi di modelli di AI e misurazione dell'utilizzo",
@@ -858,8 +832,8 @@
         },
         "aiUsage": {
           "title": "Utilizzo dell'AI e pacchetti di crediti",
-          "description": "Le funzionalità AI di Cyqle (incluso l'AI Operator integrato) consumano crediti. I seguenti termini disciplinano come l'utilizzo dell'AI viene assegnato, misurato e acquistato:",
-          "point1": "L'utilizzo dell'AI attinge prima alla dotazione di crediti AI inclusa nel proprio piano e poi ai pacchetti di crediti acquistati. I crediti AI inclusi sono soggetti a limiti di utilizzo giornalieri e settimanali pubblicati nella nostra pagina dei prezzi e visibili nel proprio account, si rigenerano automaticamente e non si accumulano.",
+          "description": "Le funzionalità AI di Cyqle (incluso l'Agente IA interno) consumano crediti. I seguenti termini disciplinano come l'utilizzo dell'AI viene assegnato, misurato e acquistato:",
+          "point1": "L'utilizzo dell'AI attinge prima alla dotazione di crediti AI inclusa nel proprio piano e poi ai pacchetti di crediti acquistati. I crediti AI inclusi si rigenerano automaticamente e non si accumulano.",
           "point2": "Negli abbonamenti mensili, l'utilizzo dell'AI che eccede i crediti inclusi viene scalato dai crediti acquistati oppure misurato e fatturato alla tariffa di credito vigente. Negli slot a consumo (pay-as-you-go), l'utilizzo dell'AI che eccede i crediti inclusi si paga con i pacchetti di crediti acquistati; quando i crediti si esauriscono, le successive esecuzioni AI vengono rifiutate - non viene mai addebitato nulla a posteriori.",
           "point3": "I pacchetti di crediti (Starter, Plus, Power) sono acquisti una tantum elaborati dal nostro fornitore di servizi di pagamento - non sono addebiti ricorrenti. I crediti acquistati non scadono finché l'account rimane in regola.",
           "point4": "I crediti non hanno valore in denaro, non sono trasferibili tra account e non sono rimborsabili, salvo ove richiesto dalla legge applicabile. Le quantità e le tariffe dei crediti pubblicate possono variare in modo prospettico; le modifiche non riducono mai i crediti già acquistati.",

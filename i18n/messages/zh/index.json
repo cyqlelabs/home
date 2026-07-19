@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "随团队规模灵活伸缩的定价",
-    "descriptionMonthly": "免费起步。包月方案每桌面 $6/月起——内含 AI 积分。",
-    "descriptionPayAsYouGo": "免费起步。按量付费低至 $0.20/积分——不到一杯咖啡的价格，畅享 10 小时云桌面。内含 AI 积分。",
+    "descriptionMonthly": "免费起步。包月方案每桌面 ${from}/月起——内含 AI 积分。",
+    "descriptionPayAsYouGo": "免费起步。按量付费低至 ${from}/积分——不到一杯咖啡的价格，畅享 {hours} 小时云桌面。内含 AI 积分。",
     "monthly": "/月",
     "credit": "/积分",
     "monthlyLabel": "包月",
@@ -120,13 +120,11 @@
     "plans": {
       "free": {
         "name": "免费",
-        "price": "$0.00",
-        "unit": "",
         "description": "适合快速上手体验。",
         "features": {
-          "time": "单次会话上限 60 分钟",
-          "specs": "1 vCPU / 1 GB RAM",
-          "bandwidth": "带宽最高 10mb/s",
+          "time": "单次会话上限 {minutes} 分钟",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "带宽最高 {mbps}mb/s",
           "priority": "低优先级队列",
           "persistence": "不支持持久化",
           "snapshots": "公共快照"
@@ -135,37 +133,33 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "$0.20",
-        "unit": "/积分",
         "description": "适合个人开发者。",
         "features": {
           "time": "会话时长不限",
-          "specs": "1 vCPU / 2 GB RAM",
-          "bandwidth": "100mb/s 带宽",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "{mbps}mb/s 带宽",
           "priority": "标准优先级",
-          "persistence": "20 GB 持久化存储",
+          "persistence": "{gb} GB 持久化存储",
           "snapshots": "支持创建快照",
           "api": "API 访问权限",
-          "aiAgent": "内置 AI 智能体",
-          "aiCredits": "每月 9 积分，用于内置 AI 智能体"
+          "aiAgent": "自研 AI 智能体",
+          "aiCredits": "{credits} 积分 / 月"
         },
         "cta": "立即开始"
       },
       "pro": {
         "name": "Pro",
-        "price": "$0.40",
-        "unit": "/积分",
         "description": "为硬核工作而生。",
         "features": {
           "time": "会话时长不限",
-          "specs": "2 vCPU / 4 GB RAM",
-          "bandwidth": "150mb/s 带宽",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "{mbps}mb/s 带宽",
           "priority": "高优先级队列",
-          "persistence": "40 GB 持久化存储",
+          "persistence": "{gb} GB 持久化存储",
           "snapshots": "支持创建快照",
           "api": "API 访问权限",
-          "aiAgent": "内置 AI 智能体",
-          "aiCredits": "每月 18 积分，用于内置 AI 智能体"
+          "aiAgent": "自研 AI 智能体",
+          "aiCredits": "{credits} 积分 / 月"
         },
         "cta": "升级到 Pro"
       }
@@ -180,56 +174,36 @@
       },
       "tiers": {
         "standard": {
-          "name": "Standard",
-          "specs": "2 vCPU / 4GB RAM",
-          "multiplier": "1x",
-          "persistence": "40 GB 持久化存储",
-          "bandwidth": "150mb/s 带宽",
-          "aiCredits": "每月 18 积分，用于内置 AI 智能体"
+          "name": "Standard"
         },
         "turbo": {
-          "name": "Turbo",
-          "specs": "4 vCPU / 8GB RAM",
-          "multiplier": "2x",
-          "persistence": "60 GB 持久化存储",
-          "bandwidth": "200mb/s 带宽",
-          "aiCredits": "每月 34.5 积分，用于内置 AI 智能体"
+          "name": "Turbo"
         },
         "max": {
-          "name": "Max",
-          "specs": "8 vCPU / 16GB RAM",
-          "multiplier": "4x",
-          "persistence": "120 GB 持久化存储",
-          "bandwidth": "300mb/s 带宽",
-          "aiCredits": "每月 67.5 积分，用于内置 AI 智能体"
+          "name": "Max"
         }
       }
     },
-    "creditEqualsHours": "1 积分 = 10 小时桌面使用时长，或 $0.20 的 AI 用量",
+    "creditEqualsHours": "1 积分 = {hours} 小时桌面使用时长",
+    "aiCreditsTooltip": "自研 AI 智能体的每月积分。可随时通过积分包充值。",
     "creditPacks": {
-      "title": "内置 AI 智能体专用积分包",
-      "description": "每个付费方案都内含 Cyqle 内置 AI 智能体的积分。不够用时在这里充值——如果你使用自己的智能体，则不消耗积分。",
+      "title": "自研 AI 智能体专用积分包",
+      "description": "每个付费方案都内含 Cyqle 自研 AI 智能体的积分。不够用时充值。",
       "bestValue": "最划算",
       "packs": {
         "starter": {
-          "name": "Starter",
-          "price": "$5",
-          "credits": "10 积分",
-          "tasks": "≈ 8 次智能体任务"
+          "name": "Starter"
         },
         "plus": {
-          "name": "Plus",
-          "price": "$15",
-          "credits": "35 积分",
-          "tasks": "≈ 28 次智能体任务"
+          "name": "Plus"
         },
         "power": {
-          "name": "Power",
-          "price": "$40",
-          "credits": "100 积分",
-          "tasks": "≈ 80 次智能体任务"
+          "name": "Power"
         }
       },
+      "packPrice": "${price}",
+      "packCredits": "{credits} 积分",
+      "packTasks": "≈ {tasks} 次智能体任务",
       "note": "只要账户保持活跃，已购积分永不过期。"
     },
     "customQuote": {
@@ -349,7 +323,7 @@
       "paragraph1": "被困在聊天框里的智能体只能谈论工作。给它一台计算机，它就能完成工作：打开应用、执行命令、浏览网页、管理文件。",
       "paragraph2": "在 Cyqle，每个智能体都拥有一个真正的桌面。每次运行启动一台干净的机器；配置一次、创建快照，然后克隆出并行运行的副本；把预热好的桌面接入 CI 流水线；任务完成后全部销毁。",
       "paragraph3": "而且由于桌面是多人的，智能体只是机器上的又一位用户。你可以实时看着它的光标移动；它卡住时，你拿起自己的光标直接接管——同一个会话，不用打招呼，也不用走任何流程。",
-      "proof": "已经有团队这样使用我们内置的 AI 智能体——也带来了他们自己的智能体。",
+      "proof": "已经有团队这样使用我们的自研 AI 智能体——也带来了他们自己的智能体。",
       "demo": {
         "agentLabel": "智能体",
         "humanLabel": "你",
@@ -464,12 +438,12 @@
         "badge": "AI 信息披露",
         "intro": "Cyqle 集成了 AI 驱动的功能以提升您的工作效率。根据 2026 年欧盟《人工智能法案》，当您与 AI 系统交互或受其影响时，我们有义务进行明确披露。",
         "disclosure": {
-          "title": "AI 操作员信息披露",
-          "description": "当您使用 Cyqle 的自动化功能（浏览器录制、任务委派、工作流调度）时，您可能会与我们的“AI 操作员”交互——这是一个旨在代表您执行重复性网页任务的 AI 系统。"
+          "title": "自研 AI 智能体信息披露",
+          "description": "当您使用 Cyqle 的自动化功能（浏览器录制、任务委派、工作流调度）时，您可能会与我们的“自研 AI 智能体”交互——这是一个旨在代表您执行重复性网页任务的 AI 系统。"
         },
         "howItWorks": {
-          "title": "AI 操作员的工作原理",
-          "description": "AI 操作员通过以下逻辑为您提供协助：",
+          "title": "自研 AI 智能体的工作原理",
+          "description": "自研 AI 智能体通过以下逻辑为您提供协助：",
           "item1": "模式识别：分析录制的浏览器交互，识别可执行的操作模式（点击、表单填写、导航序列）",
           "item2": "任务执行：根据您的指令，复现这些模式以自动化重复性任务",
           "item3": "情境自适应：借助计算机视觉与 DOM 分析，适应 Web 应用中细微的界面变化",
@@ -477,7 +451,7 @@
         },
         "humanOversight": {
           "title": "人工监督与限制",
-          "description": "AI 操作员在您的直接监督下运行。它不会做出影响您的账户、计费或访问权限的自主决策。所有关键操作均需用户明确确认。未经您明确选择同意，AI 不会访问或处理您的会话数据用于训练目的。"
+          "description": "自研 AI 智能体在您的直接监督下运行。它不会做出影响您的账户、计费或访问权限的自主决策。所有关键操作均需用户明确确认。未经您明确选择同意，AI 不会访问或处理您的会话数据用于训练目的。"
         },
         "llmProviders": {
           "title": "第三方 AI 模型提供商与用量计量",
@@ -858,8 +832,8 @@
         },
         "aiUsage": {
           "title": "AI 用量与积分包",
-          "description": "Cyqle 的 AI 功能（包括内置 AI 操作员）会消耗积分。AI 用量的分配、计量与购买受以下条款约束：",
-          "point1": "AI 用量首先从您方案所含的 AI 积分额度中扣除，其次从已购积分包中扣除。方案所含的 AI 积分受我们定价页面公布并在您账户中显示的每日及每周用量上限约束，会自动补充，且不结转至下一周期。",
+          "description": "Cyqle 的 AI 功能（包括自研 AI 智能体）会消耗积分。AI 用量的分配、计量与购买受以下条款约束：",
+          "point1": "AI 用量首先从您方案所含的 AI 积分额度中扣除，其次从已购积分包中扣除。方案所含的 AI 积分会自动补充，且不结转至下一周期。",
           "point2": "在包月订阅中，超出所含积分的 AI 用量将从已购积分中扣除，或按现行积分费率计量并计费。在按量计费（按需付费）槽位上，超出所含积分的 AI 用量以已购积分包支付；积分用尽后，后续 AI 任务将被拒绝——绝不会事后向您收费。",
           "point3": "积分包（Starter、Plus、Power）为一次性购买，由我们的支付服务商处理，并非周期性扣费。只要您的账户保持良好状态，已购积分不会过期。",
           "point4": "积分不具有现金价值，不可在账户之间转让，除适用法律要求外不予退款。已公布的积分数量与费率可能面向未来调整；任何调整均不会减少您已购买的积分。",

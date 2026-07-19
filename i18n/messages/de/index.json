@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "Ein Preismodell, das mit dir skaliert",
-    "descriptionMonthly": "Starte kostenlos. Monatstarife ab 6 $/Monat pro Desktop — KI-Credits inklusive.",
-    "descriptionPayAsYouGo": "Starte kostenlos. Pay as you go ab 0,20 $/Credit — 10 Stunden Cloud-Desktop für weniger als einen Kaffee. KI-Credits inklusive.",
+    "descriptionMonthly": "Starte kostenlos. Monatstarife ab {from} $/Monat pro Desktop — KI-Credits inklusive.",
+    "descriptionPayAsYouGo": "Starte kostenlos. Pay as you go ab {from} $/Credit — {hours} Stunden Cloud-Desktop für weniger als einen Kaffee. KI-Credits inklusive.",
     "monthly": "/Monat",
     "credit": "/Credit",
     "monthlyLabel": "Monatlich",
@@ -120,13 +120,11 @@
     "plans": {
       "free": {
         "name": "Kostenlos",
-        "price": "0,00 $",
-        "unit": "",
         "description": "Perfekt zum schnellen Ausprobieren.",
         "features": {
-          "time": "60 Minuten Session-Limit",
-          "specs": "1 vCPU / 1 GB RAM",
-          "bandwidth": "Bis zu 10mb/s Bandbreite",
+          "time": "{minutes} Minuten Session-Limit",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "Bis zu {mbps}mb/s Bandbreite",
           "priority": "Warteschlange mit niedriger Priorität",
           "persistence": "Keine Persistenz",
           "snapshots": "Öffentliche Snapshots"
@@ -135,37 +133,33 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "0,20 $",
-        "unit": "/Credit",
         "description": "Perfekt für Solo-Entwicklung.",
         "features": {
           "time": "Unbegrenzte Session-Zeit",
-          "specs": "1 vCPU / 2 GB RAM",
-          "bandwidth": "100mb/s Bandbreite",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "{mbps}mb/s Bandbreite",
           "priority": "Standard-Priorität",
-          "persistence": "20 GB Persistenz",
+          "persistence": "{gb} GB Persistenz",
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
-          "aiAgent": "Integrierter KI-Agent",
-          "aiCredits": "9 Credits für den Integrierten KI-Agenten / Monat"
+          "aiAgent": "Hauseigener KI-Agent",
+          "aiCredits": "{credits} Credits / Monat"
         },
         "cta": "Loslegen"
       },
       "pro": {
         "name": "Pro",
-        "price": "0,40 $",
-        "unit": "/Credit",
         "description": "Gebaut für ernsthafte Arbeit.",
         "features": {
           "time": "Unbegrenzte Session-Zeit",
-          "specs": "2 vCPU / 4 GB RAM",
-          "bandwidth": "150mb/s Bandbreite",
+          "specs": "{vcpu} vCPU / {ram} GB RAM",
+          "bandwidth": "{mbps}mb/s Bandbreite",
           "priority": "Warteschlange mit hoher Priorität",
-          "persistence": "40 GB Persistenz",
+          "persistence": "{gb} GB Persistenz",
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
-          "aiAgent": "Integrierter KI-Agent",
-          "aiCredits": "18 Credits für den Integrierten KI-Agenten / Monat"
+          "aiAgent": "Hauseigener KI-Agent",
+          "aiCredits": "{credits} Credits / Monat"
         },
         "cta": "Hol dir Pro"
       }
@@ -180,56 +174,36 @@
       },
       "tiers": {
         "standard": {
-          "name": "Standard",
-          "specs": "2 vCPU / 4GB RAM",
-          "multiplier": "1x",
-          "persistence": "40 GB Persistenz",
-          "bandwidth": "150mb/s Bandbreite",
-          "aiCredits": "18 Credits für den Integrierten KI-Agenten / Monat"
+          "name": "Standard"
         },
         "turbo": {
-          "name": "Turbo",
-          "specs": "4 vCPU / 8GB RAM",
-          "multiplier": "2x",
-          "persistence": "60 GB Persistenz",
-          "bandwidth": "200mb/s Bandbreite",
-          "aiCredits": "34.5 Credits für den Integrierten KI-Agenten / Monat"
+          "name": "Turbo"
         },
         "max": {
-          "name": "Max",
-          "specs": "8 vCPU / 16GB RAM",
-          "multiplier": "4x",
-          "persistence": "120 GB Persistenz",
-          "bandwidth": "300mb/s Bandbreite",
-          "aiCredits": "67.5 Credits für den Integrierten KI-Agenten / Monat"
+          "name": "Max"
         }
       }
     },
-    "creditEqualsHours": "1 Credit = 10 Std. Desktop-Zeit oder $0.20 KI-Nutzung",
+    "creditEqualsHours": "1 Credit = {hours} Std. Desktop-Zeit",
+    "aiCreditsTooltip": "Monatliche Credits für den Hauseigenen KI-Agenten. Jederzeit mit Credit-Packs aufladen.",
     "creditPacks": {
-      "title": "Credit-Packs für den Integrierten KI-Agenten",
-      "description": "Jeder Bezahltarif enthält Credits für Cyqles eigenen Integrierten KI-Agenten. Lade hier auf, wenn du mehr brauchst — und wenn du deinen eigenen Agenten nutzt, verbraucht er keine Credits.",
+      "title": "Credit-Packs für den Hauseigenen KI-Agenten",
+      "description": "Jeder Bezahltarif enthält Credits für Cyqles Hauseigenen KI-Agenten. Lade auf, wenn du mehr brauchst.",
       "bestValue": "Bestes Preis-Leistungs-Verhältnis",
       "packs": {
         "starter": {
-          "name": "Starter",
-          "price": "$5",
-          "credits": "10 Credits",
-          "tasks": "≈ 8 Agent-Aufgaben"
+          "name": "Starter"
         },
         "plus": {
-          "name": "Plus",
-          "price": "$15",
-          "credits": "35 Credits",
-          "tasks": "≈ 28 Agent-Aufgaben"
+          "name": "Plus"
         },
         "power": {
-          "name": "Power",
-          "price": "$40",
-          "credits": "100 Credits",
-          "tasks": "≈ 80 Agent-Aufgaben"
+          "name": "Power"
         }
       },
+      "packPrice": "${price}",
+      "packCredits": "{credits} Credits",
+      "packTasks": "≈ {tasks} Agent-Aufgaben",
       "note": "Gekaufte Credits verfallen nie, solange dein Konto aktiv ist."
     },
     "customQuote": {
@@ -349,7 +323,7 @@
       "paragraph1": "Ein Agent, der in einer Chatbox festsitzt, kann über Arbeit nur reden. Gib ihm einen Computer, und er kann sie erledigen: Apps öffnen, Befehle ausführen, browsen, Dateien verwalten.",
       "paragraph2": "Auf Cyqle bekommt jeder Agent einen echten Desktop. Starte pro Lauf eine saubere Maschine. Einmal konfigurieren, Snapshot erstellen, für parallele Läufe klonen. Häng vorgewärmte Desktops in deine CI-Pipelines. Reiß alles ab, wenn der Job erledigt ist.",
       "paragraph3": "Und weil der Desktop Multiplayer ist, ist der Agent einfach ein weiterer Nutzer an der Maschine. Du siehst seinen Cursor in Echtzeit. Bleibt er hängen, greifst du zu deinem eigenen Cursor und übernimmst — gleiche Session, ohne Umstände.",
-      "proof": "Teams betreiben unseren eingebauten KI-Agenten schon genau so — und bringen auch eigene Agenten mit.",
+      "proof": "Teams betreiben unseren Hauseigenen KI-Agenten schon genau so — und bringen auch eigene Agenten mit.",
       "demo": {
         "agentLabel": "Agent",
         "humanLabel": "du",
@@ -464,12 +438,12 @@
         "badge": "KI-Offenlegung",
         "intro": "Cyqle enthält KI-gestützte Funktionen zur Steigerung Ihrer Produktivität. Nach der EU-KI-Verordnung von 2026 sind wir verpflichtet, klar offenzulegen, wenn Sie mit KI-Systemen interagieren oder von ihnen betroffen sind.",
         "disclosure": {
-          "title": "Offenlegung des AI Operators",
-          "description": "Wenn Sie die Automatisierungsfunktionen von Cyqle nutzen (Browser-Aufzeichnung, Aufgabendelegation, Workflow-Planung), interagieren Sie möglicherweise mit unserem „AI Operator“ – einem KI-System, das repetitive Web-Aufgaben in Ihrem Auftrag ausführt."
+          "title": "Offenlegung des Hauseigenen KI-Agenten",
+          "description": "Wenn Sie die Automatisierungsfunktionen von Cyqle nutzen (Browser-Aufzeichnung, Aufgabendelegation, Workflow-Planung), interagieren Sie möglicherweise mit unserem „Hauseigenen KI-Agenten“ – einem KI-System, das repetitive Web-Aufgaben in Ihrem Auftrag ausführt."
         },
         "howItWorks": {
-          "title": "So funktioniert der AI Operator",
-          "description": "Der AI Operator nutzt folgende Logik, um Sie zu unterstützen:",
+          "title": "So funktioniert der Hauseigene KI-Agent",
+          "description": "Der Hauseigene KI-Agent nutzt folgende Logik, um Sie zu unterstützen:",
           "item1": "Mustererkennung: Er analysiert aufgezeichnete Browser-Interaktionen, um umsetzbare Muster zu erkennen (Klicks, Formulareingaben, Navigationssequenzen)",
           "item2": "Aufgabenausführung: Auf Basis Ihrer Anweisungen repliziert er diese Muster, um repetitive Aufgaben zu automatisieren",
           "item3": "Kontextuelle Anpassung: Er nutzt Computer Vision und DOM-Analyse, um sich an kleinere UI-Änderungen in Webanwendungen anzupassen",
@@ -477,7 +451,7 @@
         },
         "humanOversight": {
           "title": "Menschliche Aufsicht & Grenzen",
-          "description": "Der AI Operator arbeitet unter Ihrer direkten Aufsicht. Er trifft keine autonomen Entscheidungen, die Ihr Konto, Ihre Abrechnung oder Ihre Zugriffsrechte betreffen. Alle kritischen Vorgänge erfordern eine ausdrückliche Bestätigung durch den Nutzer. Die KI greift ohne ausdrückliche Opt-in-Einwilligung nicht zu Trainingszwecken auf Ihre Sitzungsdaten zu und verarbeitet diese nicht."
+          "description": "Der Hauseigene KI-Agent arbeitet unter Ihrer direkten Aufsicht. Er trifft keine autonomen Entscheidungen, die Ihr Konto, Ihre Abrechnung oder Ihre Zugriffsrechte betreffen. Alle kritischen Vorgänge erfordern eine ausdrückliche Bestätigung durch den Nutzer. Die KI greift ohne ausdrückliche Opt-in-Einwilligung nicht zu Trainingszwecken auf Ihre Sitzungsdaten zu und verarbeitet diese nicht."
         },
         "llmProviders": {
           "title": "Externe Anbieter von KI-Modellen & Nutzungsmessung",
@@ -858,8 +832,8 @@
         },
         "aiUsage": {
           "title": "KI-Nutzung & Credit-Packs",
-          "description": "Die KI-Funktionen von Cyqle (einschließlich des integrierten AI Operators) verbrauchen Credits. Die folgenden Bedingungen regeln, wie KI-Nutzung zugeteilt, gemessen und erworben wird:",
-          "point1": "KI-Nutzung wird zuerst auf das in Ihrem Tarif enthaltene KI-Credit-Kontingent angerechnet, danach auf gekaufte Credit-Packs. Enthaltene KI-Credits unterliegen täglichen und wöchentlichen Nutzungsobergrenzen, die auf unserer Preisseite veröffentlicht und in Ihrem Konto angezeigt werden, füllen sich automatisch wieder auf und werden nicht übertragen.",
+          "description": "Die KI-Funktionen von Cyqle (einschließlich des Hauseigenen KI-Agenten) verbrauchen Credits. Die folgenden Bedingungen regeln, wie KI-Nutzung zugeteilt, gemessen und erworben wird:",
+          "point1": "KI-Nutzung wird zuerst auf das in Ihrem Tarif enthaltene KI-Credit-Kontingent angerechnet, danach auf gekaufte Credit-Packs. Enthaltene KI-Credits füllen sich automatisch wieder auf und werden nicht übertragen.",
           "point2": "Bei monatlichen Abonnements wird KI-Nutzung über Ihre enthaltenen Credits hinaus aus gekauften Credits gedeckt oder gemessen und zum jeweils geltenden Credit-Tarif abgerechnet. Bei nutzungsbasierten (Pay-as-you-go) Slots wird KI-Nutzung über die enthaltenen Credits hinaus aus gekauften Credit-Packs bezahlt; sind keine Credits mehr vorhanden, werden weitere KI-Ausführungen abgelehnt – Ihnen wird niemals nachträglich etwas in Rechnung gestellt.",
           "point3": "Credit-Packs (Starter, Plus, Power) sind Einmalkäufe, die von unserem Zahlungsdienstleister verarbeitet werden – es handelt sich nicht um wiederkehrende Gebühren. Gekaufte Credits verfallen nicht, solange Ihr Konto in gutem Stand bleibt.",
           "point4": "Credits haben keinen Barwert, sind nicht zwischen Konten übertragbar und werden nicht erstattet, außer soweit geltendes Recht dies verlangt. Veröffentlichte Credit-Mengen und -Tarife können sich mit Wirkung für die Zukunft ändern; Änderungen verringern niemals Credits, die Sie bereits erworben haben.",

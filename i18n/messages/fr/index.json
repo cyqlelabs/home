@@ -108,8 +108,8 @@
   },
   "pricing": {
     "title": "Des tarifs qui s'adaptent à vous",
-    "descriptionMonthly": "Commencez gratuitement. Formules mensuelles à partir de 6 $/mois par bureau — crédits IA inclus.",
-    "descriptionPayAsYouGo": "Commencez gratuitement. Payez à l'usage dès 0,20 $/crédit — 10 heures de bureau cloud pour moins cher qu'un café. Crédits IA inclus.",
+    "descriptionMonthly": "Commencez gratuitement. Formules mensuelles à partir de {from} $/mois par bureau — crédits IA inclus.",
+    "descriptionPayAsYouGo": "Commencez gratuitement. Payez à l'usage dès {from} $/crédit — {hours} heures de bureau cloud pour moins cher qu'un café. Crédits IA inclus.",
     "monthly": "/mois",
     "credit": "/crédit",
     "monthlyLabel": "Mensuel",
@@ -120,13 +120,11 @@
     "plans": {
       "free": {
         "name": "Gratuit",
-        "price": "0,00 $",
-        "unit": "",
         "description": "Parfait pour un essai rapide.",
         "features": {
-          "time": "Sessions limitées à 60 minutes",
-          "specs": "1 vCPU / 1 Go de RAM",
-          "bandwidth": "Jusqu'à 10 Mb/s de bande passante",
+          "time": "Sessions limitées à {minutes} minutes",
+          "specs": "{vcpu} vCPU / {ram} Go de RAM",
+          "bandwidth": "Jusqu'à {mbps} Mb/s de bande passante",
           "priority": "File d'attente basse priorité",
           "persistence": "Sans persistance",
           "snapshots": "Snapshots publics"
@@ -135,37 +133,33 @@
       },
       "lite": {
         "name": "Lite",
-        "price": "0,20 $",
-        "unit": "/crédit",
         "description": "Parfait pour le dev en solo.",
         "features": {
           "time": "Durée de session illimitée",
-          "specs": "1 vCPU / 2 Go de RAM",
-          "bandwidth": "100 Mb/s de bande passante",
+          "specs": "{vcpu} vCPU / {ram} Go de RAM",
+          "bandwidth": "{mbps} Mb/s de bande passante",
           "priority": "Priorité standard",
-          "persistence": "20 Go de persistance",
+          "persistence": "{gb} Go de persistance",
           "snapshots": "Création de snapshots",
           "api": "Accès API",
-          "aiAgent": "Agent IA intégré",
-          "aiCredits": "9 crédits pour l'Agent IA intégré / mois"
+          "aiAgent": "Agent IA interne",
+          "aiCredits": "{credits} crédits / mois"
         },
         "cta": "Commencer"
       },
       "pro": {
         "name": "Pro",
-        "price": "0,40 $",
-        "unit": "/crédit",
         "description": "Conçu pour le travail sérieux.",
         "features": {
           "time": "Durée de session illimitée",
-          "specs": "2 vCPU / 4 Go de RAM",
-          "bandwidth": "150 Mb/s de bande passante",
+          "specs": "{vcpu} vCPU / {ram} Go de RAM",
+          "bandwidth": "{mbps} Mb/s de bande passante",
           "priority": "File d'attente haute priorité",
-          "persistence": "40 Go de persistance",
+          "persistence": "{gb} Go de persistance",
           "snapshots": "Création de snapshots",
           "api": "Accès API",
-          "aiAgent": "Agent IA intégré",
-          "aiCredits": "18 crédits pour l'Agent IA intégré / mois"
+          "aiAgent": "Agent IA interne",
+          "aiCredits": "{credits} crédits / mois"
         },
         "cta": "Passer en Pro"
       }
@@ -180,56 +174,36 @@
       },
       "tiers": {
         "standard": {
-          "name": "Standard",
-          "specs": "2 vCPU / 4 Go de RAM",
-          "multiplier": "1x",
-          "persistence": "40 Go de persistance",
-          "bandwidth": "150 Mb/s de bande passante",
-          "aiCredits": "18 crédits pour l'Agent IA intégré / mois"
+          "name": "Standard"
         },
         "turbo": {
-          "name": "Turbo",
-          "specs": "4 vCPU / 8 Go de RAM",
-          "multiplier": "2x",
-          "persistence": "60 Go de persistance",
-          "bandwidth": "200 Mb/s de bande passante",
-          "aiCredits": "34.5 crédits pour l'Agent IA intégré / mois"
+          "name": "Turbo"
         },
         "max": {
-          "name": "Max",
-          "specs": "8 vCPU / 16 Go de RAM",
-          "multiplier": "4x",
-          "persistence": "120 Go de persistance",
-          "bandwidth": "300 Mb/s de bande passante",
-          "aiCredits": "67.5 crédits pour l'Agent IA intégré / mois"
+          "name": "Max"
         }
       }
     },
-    "creditEqualsHours": "1 crédit = 10 h d'utilisation du bureau ou $0.20 d'usage IA",
+    "creditEqualsHours": "1 crédit = {hours} h d'utilisation du bureau",
+    "aiCreditsTooltip": "Crédits mensuels pour l'Agent IA interne. Rechargez à tout moment avec des packs de crédits.",
     "creditPacks": {
-      "title": "Packs de crédits pour l'Agent IA intégré",
-      "description": "Toutes les formules payantes incluent des crédits pour l'Agent IA intégré de Cyqle. Rechargez ici quand il vous en faut plus — et si vous utilisez votre propre agent, il ne consomme aucun crédit.",
+      "title": "Packs de crédits pour l'Agent IA interne",
+      "description": "Toutes les formules payantes incluent des crédits pour l'Agent IA interne de Cyqle. Rechargez quand il vous en faut plus.",
       "bestValue": "Le plus avantageux",
       "packs": {
         "starter": {
-          "name": "Starter",
-          "price": "$5",
-          "credits": "10 crédits",
-          "tasks": "≈ 8 tâches de l'agent"
+          "name": "Starter"
         },
         "plus": {
-          "name": "Plus",
-          "price": "$15",
-          "credits": "35 crédits",
-          "tasks": "≈ 28 tâches de l'agent"
+          "name": "Plus"
         },
         "power": {
-          "name": "Power",
-          "price": "$40",
-          "credits": "100 crédits",
-          "tasks": "≈ 80 tâches de l'agent"
+          "name": "Power"
         }
       },
+      "packPrice": "${price}",
+      "packCredits": "{credits} crédits",
+      "packTasks": "≈ {tasks} tâches de l'agent",
       "note": "Les crédits achetés n'expirent jamais tant que votre compte est actif."
     },
     "customQuote": {
@@ -349,7 +323,7 @@
       "paragraph1": "Un agent coincé dans une fenêtre de chat ne peut que parler du travail. Donnez-lui un ordinateur et il peut le faire : ouvrir des applications, lancer des commandes, naviguer, gérer des fichiers.",
       "paragraph2": "Sur Cyqle, chaque agent dispose d'un vrai bureau. Démarrez une machine propre par exécution. Configurez une fois, prenez un snapshot et clonez-le pour des exécutions parallèles. Intégrez des bureaux préchauffés dans vos pipelines de CI. Détruisez tout quand le travail est terminé.",
       "paragraph3": "Et comme le bureau est multi-utilisateur, l'agent n'est qu'un utilisateur parmi d'autres sur la machine. Vous regardez son curseur bouger en temps réel. S'il bloque, vous prenez votre propre curseur et reprenez la main — même session, sans cérémonie.",
-      "proof": "Des équipes utilisent déjà notre Agent IA intégré de cette façon — et amènent aussi leurs propres agents.",
+      "proof": "Des équipes utilisent déjà notre Agent IA interne de cette façon — et amènent aussi leurs propres agents.",
       "demo": {
         "agentLabel": "agent",
         "humanLabel": "vous",
@@ -464,12 +438,12 @@
         "badge": "Information sur l'IA",
         "intro": "Cyqle intègre des fonctionnalités reposant sur l'IA pour améliorer votre productivité. En vertu du règlement européen sur l'IA de 2026 (EU AI Act), nous sommes tenus de vous informer clairement lorsque vous interagissez avec des systèmes d'IA ou en subissez les effets.",
         "disclosure": {
-          "title": "Information relative à l'AI Operator",
-          "description": "Lorsque vous utilisez les fonctionnalités d'automatisation de Cyqle (enregistrement de navigateur, délégation de tâches, planification de workflows), vous pouvez interagir avec notre « AI Operator » - un système d'IA conçu pour exécuter des tâches web répétitives en votre nom."
+          "title": "Information relative à l'Agent IA interne",
+          "description": "Lorsque vous utilisez les fonctionnalités d'automatisation de Cyqle (enregistrement de navigateur, délégation de tâches, planification de workflows), vous pouvez interagir avec notre « Agent IA interne » - un système d'IA conçu pour exécuter des tâches web répétitives en votre nom."
         },
         "howItWorks": {
-          "title": "Fonctionnement de l'AI Operator",
-          "description": "L'AI Operator s'appuie sur la logique suivante pour vous assister :",
+          "title": "Fonctionnement de l'Agent IA interne",
+          "description": "L'Agent IA interne s'appuie sur la logique suivante pour vous assister :",
           "item1": "Reconnaissance de motifs : il analyse les interactions de navigateur enregistrées pour identifier des schémas exploitables (clics, remplissage de formulaires, séquences de navigation)",
           "item2": "Exécution de tâches : sur la base de vos instructions, il reproduit ces schémas pour automatiser les tâches répétitives",
           "item3": "Adaptation contextuelle : il utilise la vision par ordinateur et l'analyse du DOM pour s'adapter aux modifications mineures d'interface des applications web",
@@ -477,7 +451,7 @@
         },
         "humanOversight": {
           "title": "Supervision humaine et limites",
-          "description": "L'AI Operator fonctionne sous votre supervision directe. Il ne prend aucune décision autonome affectant votre compte, votre facturation ou vos droits d'accès. Toutes les opérations critiques requièrent une confirmation explicite de l'utilisateur. L'IA n'accède pas à vos données de session et ne les traite pas à des fins d'entraînement sans votre consentement explicite (opt-in)."
+          "description": "L'Agent IA interne fonctionne sous votre supervision directe. Il ne prend aucune décision autonome affectant votre compte, votre facturation ou vos droits d'accès. Toutes les opérations critiques requièrent une confirmation explicite de l'utilisateur. L'IA n'accède pas à vos données de session et ne les traite pas à des fins d'entraînement sans votre consentement explicite (opt-in)."
         },
         "llmProviders": {
           "title": "Fournisseurs tiers de modèles d'IA et mesure de l'usage",
@@ -858,8 +832,8 @@
         },
         "aiUsage": {
           "title": "Usage de l'IA et packs de crédits",
-          "description": "Les fonctionnalités d'IA de Cyqle (y compris l'AI Operator intégré) consomment des crédits. Les conditions suivantes régissent la manière dont l'usage de l'IA est alloué, mesuré et acheté :",
-          "point1": "L'usage de l'IA est imputé d'abord sur l'allocation de crédits IA incluse dans votre formule, puis sur les packs de crédits achetés. Les crédits IA inclus sont soumis à des plafonds d'utilisation quotidiens et hebdomadaires publiés sur notre page de tarifs et affichés dans votre compte, se reconstituent automatiquement et ne sont pas reportables.",
+          "description": "Les fonctionnalités d'IA de Cyqle (y compris l'Agent IA interne) consomment des crédits. Les conditions suivantes régissent la manière dont l'usage de l'IA est alloué, mesuré et acheté :",
+          "point1": "L'usage de l'IA est imputé d'abord sur l'allocation de crédits IA incluse dans votre formule, puis sur les packs de crédits achetés. Les crédits IA inclus se reconstituent automatiquement et ne sont pas reportables.",
           "point2": "Dans les abonnements mensuels, l'usage de l'IA au-delà de vos crédits inclus est prélevé sur les crédits achetés, ou mesuré et facturé au tarif de crédit en vigueur. Sur les slots à l'usage (pay-as-you-go), l'usage de l'IA au-delà des crédits inclus est payé avec des packs de crédits achetés ; lorsqu'il ne reste plus de crédits, les exécutions d'IA suivantes sont refusées - vous n'êtes jamais facturé a posteriori.",
           "point3": "Les packs de crédits (Starter, Plus, Power) sont des achats ponctuels traités par notre prestataire de paiement - il ne s'agit pas de frais récurrents. Les crédits achetés n'expirent pas tant que votre compte reste en règle.",
           "point4": "Les crédits n'ont aucune valeur monétaire, ne sont pas transférables entre comptes et ne sont pas remboursables, sauf lorsque la loi applicable l'exige. Les montants et tarifs de crédits publiés peuvent évoluer pour l'avenir ; ces changements ne réduisent jamais les crédits que vous avez déjà achetés.",

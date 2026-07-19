@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { trackCTA } from '@/lib/analytics';
 import {
@@ -24,13 +24,19 @@ import {
 } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import type { PlanData, PricingData } from '@/lib/pricing';
 
-type Tier = 'basic' | 'standard' | 'turbo' | 'max';
+type ProTier = 'standard' | 'turbo' | 'max';
+type PlanId = 'free' | 'lite' | 'pro';
 type PricingMode = 'monthly' | 'payAsYouGo';
 
-export default function PricingSection() {
+// Credits can be fractional (e.g. 34.5); keep the dot-decimal the rest of the
+// pricing UI uses rather than a locale-formatted number.
+const fmtCredits = (n: number) => String(n);
+
+export default function PricingSection({ pricing }: { pricing: PricingData }) {
   const t = useTranslations('pricing');
-  const [proTier, setProTier] = useState<Tier>('standard');
+  const [proTier, setProTier] = useState<ProTier>('standard');
   const [pricingMode, setPricingMode] = useState<PricingMode>('monthly');
   const [quoteOpen, setQuoteOpen] = useState(false);
   const [quoteEmail, setQuoteEmail] = useState('');
@@ -78,36 +84,16 @@ export default function PricingSection() {
     }
   };
 
-  const plans = ['free', 'lite', 'pro'] as const;
+  const plans: PlanId[] = ['free', 'lite', 'pro'];
 
-  const getPrice = (plan: string) => {
+  // The effective figures for a card: "pro" resolves to the selected power tier.
+  const planDataFor = (plan: PlanId): PlanData =>
+    plan === 'pro' ? pricing.plans[proTier] : pricing.plans[plan];
+
+  const getPrice = (plan: PlanId) => {
+    const pd = planDataFor(plan);
     if (plan === 'free') return '$0.00';
-
-    if (plan === 'lite') {
-      return pricingMode === 'monthly' ? '$6' : '$0.20';
-    }
-
-    // Pro - uses proTier - Direct pricing per tier
-    if (pricingMode === 'monthly') {
-      const monthlyPricing = {
-        standard: 12,
-        turbo: 23,
-        max: 45,
-      };
-      return `$${monthlyPricing[proTier]}`;
-    } else {
-      const creditPricing = {
-        standard: 0.4,
-        turbo: 0.77,
-        max: 1.51,
-      };
-      return `$${creditPricing[proTier].toFixed(2)}`;
-    }
-  };
-
-  const getTierForPlan = (plan: string): Tier => {
-    if (plan === 'free' || plan === 'lite') return 'basic';
-    return proTier;
+    return pricingMode === 'monthly' ? `$${pd.monthly}` : `$${pd.creditPrice.toFixed(2)}`;
   };
 
   return (
@@ -137,7 +123,12 @@ export default function PricingSection() {
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('title')}</h2>
         <p className="text-xl text-gray-400 mb-8">
-          {pricingMode === 'monthly' ? t('descriptionMonthly') : t('descriptionPayAsYouGo')}
+          {pricingMode === 'monthly'
+            ? t('descriptionMonthly', { from: pricing.plans.lite.monthly })
+            : t('descriptionPayAsYouGo', {
+                from: pricing.plans.lite.creditPrice.toFixed(2),
+                hours: pricing.creditHours,
+              })}
         </p>
 
         {/* Pricing Mode Toggle */}
@@ -179,7 +170,6 @@ export default function PricingSection() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-10">
         {plans.map((plan) => {
           const price = getPrice(plan);
-          const tier = getTierForPlan(plan);
 
           return (
             <Card
@@ -209,11 +199,11 @@ export default function PricingSection() {
                   <div className="mb-4">
                     <Tabs
                       value={proTier}
-                      onValueChange={(v) => setProTier(v as Tier)}
+                      onValueChange={(v) => setProTier(v as ProTier)}
                       className="w-full"
                     >
                       <TabsList className="grid w-full grid-cols-3 bg-gray-900 border border-gray-800 h-8">
-                        {(['standard', 'turbo', 'max'] as Tier[]).map((tierKey) => (
+                        {(['standard', 'turbo', 'max'] as ProTier[]).map((tierKey) => (
                           <TabsTrigger
                             key={tierKey}
                             value={tierKey}
@@ -242,7 +232,7 @@ export default function PricingSection() {
                               animation: 'pulse-green 2s ease-in-out infinite',
                             }}
                           >
-                            {t('creditEqualsHours')}
+                            {t('creditEqualsHours', { hours: pricing.creditHours })}
                           </span>
                           <span className="text-xs text-gray-500">{t('billingLegend')}</span>
                         </div>
@@ -256,7 +246,7 @@ export default function PricingSection() {
                   )}
                 </div>
 
-                <FeatureList plan={plan} t={t} selectedTier={tier} />
+                <FeatureList plan={plan} t={t} planData={planDataFor(plan)} />
               </CardContent>
               <CardFooter>
                 <Button
@@ -291,26 +281,30 @@ export default function PricingSection() {
           <p className="text-sm text-gray-400 max-w-2xl mx-auto">{t('creditPacks.description')}</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-          {(['starter', 'plus', 'power'] as const).map((pack) => (
+          {pricing.creditPacks.map((pack) => (
             <div
-              key={pack}
+              key={pack.id}
               className={`relative rounded-lg border p-4 text-center ${
-                pack === 'plus' ? 'border-[#FF7600] bg-[#FF7600]/5' : 'border-gray-800 bg-black/30'
+                pack.highlight ? 'border-[#FF7600] bg-[#FF7600]/5' : 'border-gray-800 bg-black/30'
               }`}
             >
-              {pack === 'plus' && (
+              {pack.highlight && (
                 <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#FF7600] text-white hover:bg-[#FF7600]/90">
                   {t('creditPacks.bestValue')}
                 </Badge>
               )}
-              <p className="text-sm text-gray-400 mb-1">{t(`creditPacks.packs.${pack}.name`)}</p>
+              <p className="text-sm text-gray-400 mb-1">{t(`creditPacks.packs.${pack.id}.name`)}</p>
               <p className="text-2xl font-bold text-white">
-                {t(`creditPacks.packs.${pack}.price`)}
+                {t('creditPacks.packPrice', { price: pack.priceUSD })}
               </p>
               <p className="text-sm text-[#FF7600] font-semibold">
-                {t(`creditPacks.packs.${pack}.credits`)}
+                {t('creditPacks.packCredits', { credits: pack.userCredits })}
               </p>
-              <p className="text-xs text-gray-500">{t(`creditPacks.packs.${pack}.tasks`)}</p>
+              {pack.approxTasks != null && (
+                <p className="text-xs text-gray-500">
+                  {t('creditPacks.packTasks', { tasks: pack.approxTasks })}
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -426,50 +420,120 @@ export default function PricingSection() {
   );
 }
 
-function FeatureList({ plan, t, selectedTier }: { plan: string; t: any; selectedTier: Tier }) {
-  let features = {};
+function FeatureList({
+  plan,
+  t,
+  planData,
+}: {
+  plan: PlanId;
+  t: ReturnType<typeof useTranslations>;
+  planData: PlanData;
+}) {
+  let features: Record<string, unknown> = {};
   try {
-    features = t.raw(`plans.${plan}.features`);
+    features = t.raw(`plans.${plan}.features`) as Record<string, unknown>;
   } catch (e) {
     return null;
   }
 
+  // Numbers come from the platform config (planData); the per-plan key list and
+  // wording come from i18n. Every row receives the full bag — templates use what
+  // they need, static strings ignore the rest.
+  const bag = {
+    minutes: planData.sessionMinutes,
+    vcpu: planData.vcpu,
+    ram: planData.ramGB,
+    mbps: planData.bandwidthMbps,
+    gb: planData.storageGB,
+    credits: fmtCredits(planData.aiCreditsPerMonth),
+  };
+
+  const checkClass = `h-4 w-4 shrink-0 ${plan === 'lite' ? 'text-[#FF7600]' : 'text-gray-400'}`;
+  const hasCredits = 'aiCredits' in features;
+
   return (
     <ul className="space-y-3">
       {Object.keys(features).map((feature) => {
-        // Skip the subscription feature as it's no longer needed
-        if (feature === 'subscription') {
-          return null;
-        }
+        // The monthly credit allowance is shown as a badge on the agent row so
+        // it's unambiguous the credits belong to the In-House AI Agent; the
+        // standalone credits line is dropped.
+        if (feature === 'aiCredits') return null;
 
-        let content = t(`plans.${plan}.features.${feature}`);
+        const content = t(`plans.${plan}.features.${feature}`, bag);
 
-        // Dynamic overrides for Pro plan
-        if (feature === 'specs' && plan === 'pro') {
-          content = t(`powerTiers.tiers.${selectedTier}.specs`);
-        }
-
-        if (feature === 'persistence' && plan === 'pro') {
-          content = t(`powerTiers.tiers.${selectedTier}.persistence`);
-        }
-
-        if (feature === 'bandwidth' && plan === 'pro') {
-          content = t(`powerTiers.tiers.${selectedTier}.bandwidth`);
-        }
-
-        if (feature === 'aiCredits' && plan === 'pro') {
-          content = t(`powerTiers.tiers.${selectedTier}.aiCredits`);
+        if (feature === 'aiAgent' && hasCredits) {
+          return (
+            <li key={feature} className="flex items-center gap-2 text-gray-300">
+              <Check className={checkClass} />
+              <span>{content}</span>
+              <CreditBadge
+                label={t(`plans.${plan}.features.aiCredits`, bag)}
+                tip={t('aiCreditsTooltip')}
+              />
+            </li>
+          );
         }
 
         return (
           <li key={feature} className="flex items-center gap-3 text-gray-300">
-            <Check
-              className={`h-4 w-4 shrink-0 ${plan === 'lite' ? 'text-[#FF7600]' : 'text-gray-400'}`}
-            />
+            <Check className={checkClass} />
             <span>{content}</span>
           </li>
         );
       })}
     </ul>
+  );
+}
+
+// Credit allowance shown as a badge on the agent row. Opens the explainer on
+// hover, keyboard focus, and click/tap (click also toggles for touch, where
+// hover doesn't exist); closes on outside click or Escape.
+function CreditBadge({ label, tip }: { label: string; tip: string }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onPointerDown = (e: PointerEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [open]);
+
+  return (
+    <span
+      ref={ref}
+      className="relative ml-auto inline-flex"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        onFocus={() => setOpen(true)}
+        onBlur={() => setOpen(false)}
+        className="inline-flex cursor-pointer items-center rounded-full border border-[#FF7600]/40 bg-[#FF7600]/10 px-2 py-0.5 text-xs font-semibold text-[#FF7600] transition-colors hover:bg-[#FF7600]/20 focus:outline-none focus-visible:ring-1 focus-visible:ring-[#FF7600]"
+      >
+        {label}
+      </button>
+      {open && (
+        <span
+          role="tooltip"
+          className="absolute bottom-full right-0 z-50 mb-2 w-56 rounded-md border border-gray-700 bg-gray-950 px-3 py-2 text-left text-xs font-normal leading-relaxed text-gray-200 shadow-lg"
+        >
+          {tip}
+          <span className="absolute right-4 top-full h-2 w-2 -translate-y-1/2 rotate-45 border-b border-r border-gray-700 bg-gray-950" />
+        </span>
+      )}
+    </span>
   );
 }
