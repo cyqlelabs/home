@@ -10,7 +10,9 @@ type Actor = {
   top: string;
   from: { x: number; y: number };
   delay: number;
-  mobile?: boolean;
+  // Mobile actors need their own spot: the hero is narrow there, so the desktop
+  // position would push the name tag past the right edge and onto the copy.
+  mobile?: { left: string; top: string };
   agent?: boolean;
 };
 
@@ -26,7 +28,7 @@ export default function CursorCrowd({ agentLabel }: { agentLabel: string }) {
       top: '28%',
       from: { x: -340, y: -140 },
       delay: 0.9,
-      mobile: true,
+      mobile: { left: '8%', top: '78%' },
     },
     {
       color: '#2DD4BF',
@@ -44,7 +46,7 @@ export default function CursorCrowd({ agentLabel }: { agentLabel: string }) {
       top: '70%',
       from: { x: 360, y: 240 },
       delay: 1.05,
-      mobile: true,
+      mobile: { left: '68%', top: '86%' },
     },
     {
       color: '#FF7600',
@@ -62,8 +64,19 @@ export default function CursorCrowd({ agentLabel }: { agentLabel: string }) {
       {actors.map((actor, i) => (
         <motion.div
           key={actor.tag + i}
-          className={actor.mobile ? 'absolute' : 'absolute hidden md:block'}
-          style={{ left: actor.left, top: actor.top }}
+          className={
+            actor.mobile
+              ? 'absolute left-[var(--cursor-x)] top-[var(--cursor-y)] md:left-[var(--cursor-x-md)] md:top-[var(--cursor-y-md)]'
+              : 'absolute hidden md:left-[var(--cursor-x-md)] md:top-[var(--cursor-y-md)] md:block'
+          }
+          style={
+            {
+              '--cursor-x': actor.mobile?.left,
+              '--cursor-y': actor.mobile?.top,
+              '--cursor-x-md': actor.left,
+              '--cursor-y-md': actor.top,
+            } as React.CSSProperties
+          }
           initial={reduce ? { opacity: 0 } : { opacity: 0, x: actor.from.x, y: actor.from.y }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{
