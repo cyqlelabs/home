@@ -79,7 +79,7 @@ export default async function AboutPage({ params: { locale } }: Props) {
       <section className="relative z-10 pb-44 pt-32 md:pb-36">
         <CursorCrowd agentLabel={t('hero.agentTag')} />
         <div className="container relative mx-auto max-w-5xl px-4 text-center">
-          <Reveal>
+          <div className="reveal-on-load">
             <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl">
               <span className="block text-balance text-gray-500">
                 {t.rich('hero.titleLine1', {
@@ -96,12 +96,12 @@ export default async function AboutPage({ params: { locale } }: Props) {
                 })}
               </span>
             </h1>
-          </Reveal>
-          <Reveal delay={0.3}>
+          </div>
+          <div className="reveal-on-load [animation-delay:0.3s]">
             <p className="mx-auto mt-6 max-w-3xl text-lg text-gray-300 md:text-xl">
               {t('hero.subtitle')}
             </p>
-          </Reveal>
+          </div>
         </div>
       </section>
 

@@ -142,3 +142,33 @@
     linear-gradient(to bottom, transparent 0%, #000 3%, #000 97%, transparent 100%);
   mask-composite: intersect;
 }
+
+/* Above-the-fold reveal. Runs on paint instead of waiting for hydration, so the
+   hero never sits blurred while the page JS loads. */
+@keyframes reveal-on-load {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+
+.reveal-on-load {
+  animation: reveal-on-load 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes reveal-on-load {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

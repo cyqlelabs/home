@@ -101,7 +101,7 @@ export default async function FactorPage({ params: { locale } }: Props) {
           }}
         />
         <div className="container relative z-10 mx-auto px-4 pb-20 pt-32 text-center">
-          <Reveal>
+          <div className="reveal-on-load">
             <div className="mb-6 flex items-center justify-center gap-4">
               <FactorMark size={72} className="drop-shadow-[0_0_24px_rgba(14,165,233,0.45)]" />
               <div className="text-left">
@@ -111,23 +111,23 @@ export default async function FactorPage({ params: { locale } }: Props) {
                 <p className="text-sm font-semibold text-[#FF7600]">{t('hero.endorsement')}</p>
               </div>
             </div>
-          </Reveal>
-          <Reveal delay={0.1}>
+          </div>
+          <div className="reveal-on-load [animation-delay:0.1s]">
             <p className="mx-auto mb-5 inline-block rounded-full border border-sky-500/30 bg-sky-500/10 px-4 py-1.5 text-sm font-medium text-sky-300">
               {t('hero.eyebrow')}
             </p>
-          </Reveal>
-          <Reveal delay={0.18}>
+          </div>
+          <div className="reveal-on-load [animation-delay:0.18s]">
             <h1 className="mx-auto max-w-4xl text-balance text-4xl font-bold leading-tight text-white md:text-6xl">
               {t('hero.title')}
             </h1>
-          </Reveal>
-          <Reveal delay={0.28}>
+          </div>
+          <div className="reveal-on-load [animation-delay:0.28s]">
             <p className="mx-auto mt-6 max-w-2xl text-balance text-lg text-gray-300 md:text-xl">
               {t('hero.subtitle')}
             </p>
-          </Reveal>
-          <Reveal delay={0.38}>
+          </div>
+          <div className="reveal-on-load [animation-delay:0.38s]">
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button
                 asChild
@@ -149,10 +149,10 @@ export default async function FactorPage({ params: { locale } }: Props) {
                 </TrackedLink>
               </Button>
             </div>
-          </Reveal>
-          <Reveal delay={0.5}>
+          </div>
+          <div className="reveal-on-load [animation-delay:0.5s]">
             <p className="mt-8 text-sm text-gray-500">{t('hero.creditsNote')}</p>
-          </Reveal>
+          </div>
         </div>
       </section>
 
