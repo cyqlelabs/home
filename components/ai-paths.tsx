@@ -70,9 +70,9 @@ export default function AiPaths({
         whileHover={hover}
         className="rounded-xl border border-sky-500/40 bg-gray-900/40 p-5 md:p-6 shadow-lg shadow-sky-500/10 transition-colors duration-300 hover:border-sky-400/70"
       >
-        <div className="flex items-center gap-3">
+        <div className="flex items-start gap-3">
           <FactorMark size={36} className="flex-shrink-0" />
-          <h3 className="text-xl font-semibold text-gray-100">{inHouseTitle}</h3>
+          <h3 className="mt-1 text-xl font-semibold text-gray-100">{inHouseTitle}</h3>
         </div>
         <p className="mt-2 text-gray-300">{inHouseDescription}</p>
         <motion.ul

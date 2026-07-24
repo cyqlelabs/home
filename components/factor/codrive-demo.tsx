@@ -122,10 +122,12 @@ function Field({
   active: boolean;
 }) {
   return (
-    <div>
-      <p className="mb-1 text-[0.6rem] uppercase tracking-wider text-gray-500">{label}</p>
+    <div className="min-w-0">
+      <p className="mb-1 truncate text-[0.5rem] uppercase tracking-wider text-gray-500 sm:text-[0.6rem]">
+        {label}
+      </p>
       <div
-        className={`flex h-7 items-center rounded-md border px-2 text-xs transition-colors duration-300 ${
+        className={`flex h-6 items-center rounded-md border px-1.5 text-[0.6rem] transition-colors duration-300 sm:h-7 sm:px-2 sm:text-xs ${
           active ? 'border-sky-400/70 bg-sky-500/5' : 'border-gray-700/80 bg-gray-900/60'
         }`}
       >
@@ -135,7 +137,7 @@ function Field({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.35 }}
-              className="text-gray-200"
+              className="truncate text-gray-200"
             >
               {value}
             </motion.span>
@@ -145,7 +147,7 @@ function Field({
           <motion.span
             animate={{ opacity: [1, 0, 1] }}
             transition={{ duration: 0.9, repeat: Infinity }}
-            className="ml-0.5 inline-block h-3.5 w-[1.5px] bg-sky-300"
+            className="ml-0.5 inline-block h-3 w-[1.5px] shrink-0 bg-sky-300 sm:h-3.5"
             aria-hidden="true"
           />
         )}
@@ -220,14 +222,20 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
 
         {/* files panel */}
         <div className="absolute left-[4%] top-[18%] w-[26%] rounded-lg border border-gray-800 bg-gray-950/70 backdrop-blur-sm">
-          <div className="border-b border-gray-800 px-3 py-1.5 text-[0.65rem] font-medium text-gray-400">
+          <div className="truncate border-b border-gray-800 px-2 py-1 text-[0.55rem] font-medium text-gray-400 sm:px-3 sm:py-1.5 sm:text-[0.65rem]">
             {labels.filesTitle}
           </div>
-          <ul className="space-y-1 p-2">
+          <ul className="space-y-1 p-1.5 sm:p-2">
             {['invoices_q3.csv', 'vendor_list.ods', 'receipts/'].map((file) => (
-              <li key={file} className="flex items-center gap-1.5 text-[0.65rem] text-gray-400">
-                <FileText className="h-3 w-3 text-gray-600" aria-hidden="true" />
-                {file}
+              <li
+                key={file}
+                className="flex items-center gap-1 text-[0.55rem] text-gray-400 sm:gap-1.5 sm:text-[0.65rem]"
+              >
+                <FileText
+                  className="h-2.5 w-2.5 shrink-0 text-gray-600 sm:h-3 sm:w-3"
+                  aria-hidden="true"
+                />
+                <span className="truncate">{file}</span>
               </li>
             ))}
           </ul>
@@ -235,13 +243,24 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
 
         {/* portal window */}
         <div className="absolute left-[34%] top-[10%] w-[58%] rounded-lg border border-gray-700/80 bg-gray-950/80 backdrop-blur-sm">
-          <div className="flex items-center gap-1.5 border-b border-gray-800 px-3 py-2">
-            <span className="h-2 w-2 rounded-full bg-red-500/70" aria-hidden="true" />
-            <span className="h-2 w-2 rounded-full bg-yellow-500/70" aria-hidden="true" />
-            <span className="h-2 w-2 rounded-full bg-green-500/70" aria-hidden="true" />
-            <span className="ml-2 truncate text-[0.65rem] text-gray-500">{labels.portalTitle}</span>
+          <div className="flex items-center gap-1 border-b border-gray-800 px-2 py-1.5 sm:gap-1.5 sm:px-3 sm:py-2">
+            <span
+              className="h-1.5 w-1.5 shrink-0 rounded-full bg-red-500/70 sm:h-2 sm:w-2"
+              aria-hidden="true"
+            />
+            <span
+              className="h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-500/70 sm:h-2 sm:w-2"
+              aria-hidden="true"
+            />
+            <span
+              className="h-1.5 w-1.5 shrink-0 rounded-full bg-green-500/70 sm:h-2 sm:w-2"
+              aria-hidden="true"
+            />
+            <span className="ml-1 truncate text-[0.55rem] text-gray-500 sm:ml-2 sm:text-[0.65rem]">
+              {labels.portalTitle}
+            </span>
           </div>
-          <div className="grid grid-cols-2 gap-2.5 p-3 md:gap-4 md:p-5">
+          <div className="grid grid-cols-2 gap-2 p-2 sm:gap-2.5 sm:p-3 md:gap-4 md:p-5">
             <Field
               label={labels.fieldVendor}
               value="Acme Logistics GmbH"
@@ -260,13 +279,13 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
               filled={phaseAtLeast(phase, 'fill3')}
               active={phase === 'fill3'}
             />
-            <div>
-              <p className="mb-1 flex items-center gap-1 text-[0.6rem] uppercase tracking-wider text-gray-500">
-                <Lock className="h-2.5 w-2.5" aria-hidden="true" />
-                {labels.fieldCode}
+            <div className="min-w-0">
+              <p className="mb-1 flex items-center gap-1 text-[0.5rem] uppercase tracking-wider text-gray-500 sm:text-[0.6rem]">
+                <Lock className="h-2 w-2 shrink-0 sm:h-2.5 sm:w-2.5" aria-hidden="true" />
+                <span className="truncate">{labels.fieldCode}</span>
               </p>
               <div
-                className={`flex h-7 items-center rounded-md border px-2 text-xs transition-colors duration-300 ${
+                className={`flex h-6 items-center rounded-md border px-1.5 text-[0.6rem] transition-colors duration-300 sm:h-7 sm:px-2 sm:text-xs ${
                   phase === 'ask'
                     ? 'border-[#FF7600]/70 bg-[#FF7600]/5'
                     : phase === 'code'
@@ -275,33 +294,36 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
                 }`}
               >
                 {phaseAtLeast(phase, 'code') && (
-                  <span className="tracking-[0.3em] text-gray-200">••••••</span>
+                  <span className="truncate tracking-[0.3em] text-gray-200">••••••</span>
                 )}
                 {phase === 'code' && (
                   <motion.span
                     animate={{ opacity: [1, 0, 1] }}
                     transition={{ duration: 0.9, repeat: Infinity }}
-                    className="ml-0.5 inline-block h-3.5 w-[1.5px] bg-[#FF9A47]"
+                    className="ml-0.5 inline-block h-3 w-[1.5px] shrink-0 bg-[#FF9A47] sm:h-3.5"
                     aria-hidden="true"
                   />
                 )}
               </div>
             </div>
-            <div className="col-span-2 flex items-center justify-between pt-1">
+            <div className="col-span-2 flex items-center justify-between gap-2 pt-1">
               <AnimatePresence>
                 {phaseAtLeast(phase, 'done') && (
                   <motion.span
                     initial={{ opacity: 0, x: -8 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className="inline-flex items-center gap-1.5 text-[0.7rem] text-emerald-400"
+                    className="inline-flex min-w-0 items-center gap-1 text-[0.6rem] text-emerald-400 sm:gap-1.5 sm:text-[0.7rem]"
                   >
-                    <CheckCircle2 className="h-3.5 w-3.5" aria-hidden="true" />
-                    {labels.success}
+                    <CheckCircle2
+                      className="h-3 w-3 shrink-0 sm:h-3.5 sm:w-3.5"
+                      aria-hidden="true"
+                    />
+                    <span className="truncate">{labels.success}</span>
                   </motion.span>
                 )}
               </AnimatePresence>
               <span
-                className={`rounded-md px-3 py-1 text-[0.7rem] font-medium transition-colors duration-300 ${
+                className={`ml-auto shrink-0 rounded-md px-2 py-1 text-[0.6rem] font-medium transition-colors duration-300 sm:px-3 sm:text-[0.7rem] ${
                   phase === 'submit' || phase === 'done'
                     ? 'bg-sky-500 text-white'
                     : 'bg-gray-800 text-gray-400'
@@ -333,7 +355,7 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
-              className="absolute bottom-[6%] left-[4%] rounded-full border border-gray-700 bg-gray-950/80 px-3 py-1 text-[0.65rem] text-gray-300"
+              className="absolute bottom-[6%] left-[4%] max-w-[92%] truncate rounded-full border border-gray-700 bg-gray-950/80 px-2 py-1 text-[0.55rem] text-gray-300 sm:px-3 sm:text-[0.65rem]"
             >
               ⏺ {labels.replay}
             </motion.div>
@@ -349,9 +371,9 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
         >
           <CursorIcon
             color="#38bdf8"
-            className="h-5 w-4 drop-shadow-[0_0_6px_rgba(56,189,248,0.6)]"
+            className="h-4 w-3 drop-shadow-[0_0_6px_rgba(56,189,248,0.6)] sm:h-5 sm:w-4"
           />
-          <span className="ml-3 mt-0.5 inline-block rounded bg-sky-600 px-1.5 py-0.5 text-[0.6rem] font-semibold text-white">
+          <span className="ml-2 mt-0.5 inline-block whitespace-nowrap rounded bg-sky-600 px-1 py-px text-[0.45rem] font-semibold text-white sm:ml-3 sm:px-1.5 sm:py-0.5 sm:text-[0.6rem]">
             {labels.agent}
           </span>
         </motion.div>
@@ -365,9 +387,9 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
         >
           <CursorIcon
             color="#FF7600"
-            className="h-5 w-4 drop-shadow-[0_0_6px_rgba(255,118,0,0.6)]"
+            className="h-4 w-3 drop-shadow-[0_0_6px_rgba(255,118,0,0.6)] sm:h-5 sm:w-4"
           />
-          <span className="ml-3 mt-0.5 inline-block rounded bg-[#c25a00] px-1.5 py-0.5 text-[0.6rem] font-semibold text-white">
+          <span className="ml-2 mt-0.5 inline-block whitespace-nowrap rounded bg-[#c25a00] px-1 py-px text-[0.45rem] font-semibold text-white sm:ml-3 sm:px-1.5 sm:py-0.5 sm:text-[0.6rem]">
             {labels.human}
           </span>
         </motion.div>
