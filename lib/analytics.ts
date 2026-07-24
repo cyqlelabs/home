@@ -207,6 +207,59 @@ export const trackCTA = {
     });
   },
 
+  navbarFactor: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Navigation',
+      event_label: 'Factor - Navbar',
+      button_location: 'navbar',
+      button_text: 'Factor',
+      event_callback: callback,
+    });
+  },
+
+  aiSectionMeetFactor: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Landing',
+      event_label: 'AI Section - Meet Factor',
+      button_location: 'landing_ai_section',
+      button_text: 'Meet Factor',
+      event_callback: callback,
+    });
+  },
+
+  factorHeroSignup: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Factor',
+      event_label: 'Factor Hero - Power On a Desktop',
+      button_location: 'factor_hero',
+      button_text: 'Power On a Desktop',
+      destination: 'https://app.cyqle.in/signup',
+      event_callback: callback,
+    });
+  },
+
+  factorHeroDemo: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Factor',
+      event_label: 'Factor Hero - See it co-drive',
+      button_location: 'factor_hero',
+      button_text: 'See it co-drive',
+      destination: '#codrive',
+      event_callback: callback,
+    });
+  },
+
+  factorFinalCta: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Factor',
+      event_label: 'Factor Final CTA - Power On a Desktop',
+      button_location: 'factor_final_cta',
+      button_text: 'Power On a Desktop',
+      destination: 'https://app.cyqle.in/signup',
+      event_callback: callback,
+    });
+  },
+
   navbarApi: (callback?: () => void) => {
     trackEvent('click', {
       event_category: 'Navigation',

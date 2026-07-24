@@ -1,7 +1,9 @@
 'use client';
 
 import { motion, useReducedMotion, type Variants } from 'framer-motion';
-import { ChevronRight } from 'lucide-react';
+import { ArrowRight, ChevronRight } from 'lucide-react';
+import FactorMark from '@/components/factor/factor-mark';
+import TrackedLink from '@/components/tracked-link';
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 const VIEWPORT = { once: true, margin: '0px 0px -80px 0px' } as const;
@@ -12,6 +14,8 @@ interface AiPathsProps {
   inHouseTitle: string;
   inHouseDescription: string;
   inHouseItems: string[];
+  inHouseHref: string;
+  inHouseLinkLabel: string;
 }
 
 export default function AiPaths({
@@ -20,6 +24,8 @@ export default function AiPaths({
   inHouseTitle,
   inHouseDescription,
   inHouseItems,
+  inHouseHref,
+  inHouseLinkLabel,
 }: AiPathsProps) {
   const reduce = useReducedMotion();
 
@@ -62,9 +68,12 @@ export default function AiPaths({
         whileInView="show"
         viewport={VIEWPORT}
         whileHover={hover}
-        className="rounded-xl border border-[#FF7600]/40 bg-gray-900/40 p-5 md:p-6 shadow-lg shadow-[#FF7600]/10 transition-colors duration-300 hover:border-[#FF7600]/70"
+        className="rounded-xl border border-sky-500/40 bg-gray-900/40 p-5 md:p-6 shadow-lg shadow-sky-500/10 transition-colors duration-300 hover:border-sky-400/70"
       >
-        <h3 className="text-xl font-semibold text-gray-100">{inHouseTitle}</h3>
+        <div className="flex items-center gap-3">
+          <FactorMark size={36} className="flex-shrink-0" />
+          <h3 className="text-xl font-semibold text-gray-100">{inHouseTitle}</h3>
+        </div>
         <p className="mt-2 text-gray-300">{inHouseDescription}</p>
         <motion.ul
           variants={{
@@ -77,13 +86,21 @@ export default function AiPaths({
         >
           {inHouseItems.map((item, index) => (
             <motion.li key={index} variants={itemVariants} className="flex items-start">
-              <div className="bg-gradient-to-r from-orange-300 to-[#FF7600] rounded-full p-1 mr-3 mt-1">
+              <div className="mr-3 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-sky-300 to-sky-600">
                 <ChevronRight className="h-4 w-4 text-black" />
               </div>
-              <span className="text-gray-300">{item}</span>
+              <span className="leading-6 text-gray-300">{item}</span>
             </motion.li>
           ))}
         </motion.ul>
+        <TrackedLink
+          href={inHouseHref}
+          trackingKey="aiSectionMeetFactor"
+          className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-sky-400 transition-colors hover:text-sky-300"
+        >
+          {inHouseLinkLabel}
+          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+        </TrackedLink>
       </motion.div>
     </>
   );

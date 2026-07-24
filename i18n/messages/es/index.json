@@ -6,6 +6,7 @@
   "navbar": {
     "features": "Qué hace",
     "useCases": "Para qué sirve",
+    "factor": "Factor",
     "pricing": "Precios",
     "api": "API",
     "about": "Nosotros",
@@ -61,7 +62,7 @@
     },
     "aiAgents": {
       "title": "Espacio para agentes de IA",
-      "description": "Dejá que tus agentes manejen un escritorio Linux real. Tomá un snapshot, cloná para correr agentes en paralelo—y que un humano se sume a la misma sesión cuando el agente necesite ayuda."
+      "description": "Dejá que tus agentes manejen un escritorio Linux real — o delegá en Factor, el agente que ya viene integrado. Tomá un snapshot, cloná para correr en paralelo—y que un humano se sume a la misma sesión cuando el agente necesite ayuda."
     },
     "customerSupport": {
       "title": "Soporte colaborativo",
@@ -77,21 +78,22 @@
     }
   },
   "aiSection": {
-    "title": "Automatizá tu trabajo",
-    "description": "Cyqle no es solo un escritorio. Es una plataforma de automatización, y hay dos formas de ponerla a trabajar.",
+    "title": "Conocé a Factor",
+    "description": "Cyqle no es solo un escritorio. Es una plataforma de automatización — con un agente de IA residente, y lugar para los tuyos.",
     "byo": {
       "title": "Traé tus propios agentes",
       "description": "Cada escritorio es una computadora de verdad bajo tu control. Corré tus propios agentes, arquitecturas y herramientas: lo que funciona en un escritorio, funciona acá."
     },
     "inHouse": {
-      "title": "O usá el nuestro: el Agente de IA propio",
-      "description": "Desarrollado, monitoreado y probado por el equipo de Cyqle, y más eficiente con cada versión.",
+      "title": "Factor — el agente en el cursor de al lado",
+      "description": "El agente de IA de Cyqle maneja a tu lado: trabaja con su propio cursor en tu escritorio. Ves cada clic en vivo, intervenís cuando quieras y le devolvés el control con la misma facilidad.",
       "items": [
-        "Grabá tus interacciones para replicarlas",
-        "Delegá tareas repetitivas",
-        "Agendá flujos de trabajo para correr en segundo plano",
-        "Mantené una biblioteca compartida de automatizaciones"
-      ]
+        "Dale una tarea y miralo trabajar, clic a clic",
+        "Alcance total del escritorio: aplicaciones, archivos, terminal, navegador",
+        "Interrumpí, corregí, retomá — el clic final es tuyo",
+        "Créditos de IA prepagos — las ejecuciones se detienen, nunca hay facturas sorpresa"
+      ],
+      "learnMore": "Conocé a Factor"
     },
     "cta": "Probalo gratis"
   },
@@ -149,7 +151,7 @@
           "persistence": "{gb} GB para guardar",
           "snapshots": "Creación de snapshots",
           "api": "Acceso a la API",
-          "aiAgent": "Agente de IA propio",
+          "aiAgent": "Agente de IA Factor",
           "aiCredits": "{credits} créditos / mes"
         },
         "cta": "Empezar"
@@ -165,7 +167,7 @@
           "persistence": "{gb} GB para guardar",
           "snapshots": "Creación de snapshots",
           "api": "Acceso a la API",
-          "aiAgent": "Agente de IA propio",
+          "aiAgent": "Agente de IA Factor",
           "aiCredits": "{credits} créditos / mes"
         },
         "cta": "Ir a Pro"
@@ -192,10 +194,10 @@
       }
     },
     "creditEqualsHours": "1 crédito = {hours} hs de escritorio",
-    "aiCreditsTooltip": "Créditos mensuales para el Agente de IA propio. Recargá cuando quieras con packs de créditos.",
+    "aiCreditsTooltip": "Créditos mensuales para Factor, el agente de IA de Cyqle. Recargá cuando quieras con packs de créditos.",
     "creditPacks": {
-      "title": "Packs de créditos para el Agente de IA propio",
-      "description": "Todos los planes de pago incluyen créditos para el Agente de IA propio de Cyqle. Recargá cuando necesites más.",
+      "title": "Packs de créditos para Factor",
+      "description": "Todos los planes de pago incluyen créditos de IA para Factor, el agente de IA integrado de Cyqle. Recargá cuando necesites más.",
       "bestValue": "Mejor valor",
       "packs": {
         "starter": {
@@ -244,6 +246,116 @@
     "step3": {
       "title": "Trabajar juntos",
       "description": "Escribí, hacé clic y navegá al mismo tiempo en el mismo escritorio. Resolvé bugs en equipo. Shippeá más rápido."
+    }
+  },
+  "factorPage": {
+    "metaTitle": "Factor — El agente de IA que maneja con vos | Cyqle",
+    "metaDescription": "Factor es el agente de IA de cada escritorio cloud de Cyqle: su propio cursor al lado del tuyo, control total del escritorio y el navegador, toma de control en vivo, ejecuciones reproducibles. Créditos prepagos, sin costo por puesto.",
+    "hero": {
+      "eyebrow": "Incluido en todos los escritorios de pago de Cyqle",
+      "title": "El agente en el cursor de al lado.",
+      "subtitle": "Factor es el agente de IA integrado en cada escritorio cloud de Cyqle. Trabaja con su propio cursor, al lado del tuyo — en aplicaciones, archivos, terminal y navegador. Miralo trabajar. Tomá el volante.",
+      "ctaPrimary": "Encendé un escritorio",
+      "ctaSecondary": "Miralo manejar con vos",
+      "endorsement": "by Cyqle",
+      "creditsNote": "Funciona con créditos de IA prepagos. Cuando se acaban, las ejecuciones se detienen — nunca se te factura después."
+    },
+    "demo": {
+      "title": "Miralo trabajar. Tomá el volante.",
+      "caption": "Un patrón que vemos todos los días: Factor trabaja, llega a un login que no le corresponde y pregunta. Intervenís con tu propio cursor y después le devolvés el control. Mismo escritorio, sin ceremonia.",
+      "labels": {
+        "agent": "Factor",
+        "human": "vos",
+        "task": "Cargar las facturas del trimestre en el portal de proveedores",
+        "portalTitle": "vendor-portal.example.com",
+        "filesTitle": "Archivos",
+        "fieldVendor": "Proveedor",
+        "fieldInvoice": "N.º de factura",
+        "fieldAmount": "Importe",
+        "fieldCode": "Código 2FA",
+        "submit": "Enviar",
+        "success": "Factura enviada",
+        "statusWorking": "Factor está trabajando",
+        "statusAsk": "Factor te necesita — código 2FA",
+        "statusHuman": "Manejás vos",
+        "statusHandback": "Control devuelto a Factor",
+        "statusDone": "Listo — ejecución grabada",
+        "replay": "Ejecución grabada · reproducila cuando quieras"
+      }
+    },
+    "pillars": {
+      "title": "Delegá el trabajo. Nunca lo pierdas de vista.",
+      "items": [
+        {
+          "title": "Trabaja donde podés verlo",
+          "description": "Factor tiene su propio cursor y teclado en tu escritorio en vivo. Cada clic pasa frente a tus ojos — interrumpí, corregí o tomá el control en cualquier momento, sin ceremonia."
+        },
+        {
+          "title": "Una computadora entera, no una pestaña del navegador",
+          "description": "Un escritorio Linux real: Factor abre aplicaciones, administra ventanas, mueve archivos, ejecuta comandos y maneja el navegador. Si tu equipo lo hace en un escritorio, Factor también puede hacerlo ahí."
+        },
+        {
+          "title": "Sesiones que persisten y dejan constancia",
+          "description": "Pausá y retomá a mitad de una tarea. Sacá un snapshot de un escritorio configurado y clonalo. Grabá una ejecución y reproducila para revisiones y auditorías. Los trabajos largos sobreviven; cada ejecución rinde cuentas."
+        },
+        {
+          "title": "Prepago y predecible",
+          "description": "Todos los planes de pago de Cyqle incluyen créditos de IA para Factor. Recargá con packs de compra única. Cuando los créditos se acaban, las ejecuciones se rechazan — nunca se factura después."
+        }
+      ]
+    },
+    "segments": {
+      "title": "Dónde ponen los equipos a Factor a trabajar",
+      "items": [
+        {
+          "title": "QA y testing",
+          "description": "Recorré flujos de regresión en un navegador y un escritorio reales. Mirá los fallos en vivo, tomá el control para hacer triage y reproducí la ejecución para el ticket."
+        },
+        {
+          "title": "Operaciones de back-office",
+          "description": "Formularios, portales y carga de datos bajo supervisión real. Factor pregunta cuando necesita un login o una decisión de criterio — el clic final siempre es tuyo."
+        },
+        {
+          "title": "Aplicaciones legacy",
+          "description": "¿No hay API? Factor trabaja en la pantalla, igual que tu equipo. Automatizá las herramientas que nadie logró integrar."
+        }
+      ]
+    },
+    "oversight": {
+      "title": "Supervisión humana por diseño",
+      "description": "Factor está hecho para la delegación supervisada: visibilidad en vivo de cada acción, toma de control en cualquier momento y registros de sesión reproducibles — el patrón de trabajo detrás de los requisitos modernos de supervisión humana, incluida la Ley de IA de la UE. Vos seguís siendo la autoridad en tu máquina.",
+      "byoNote": "Cyqle también es un sandbox para tus propios agentes — traelos cuando quieras y combinalos con Factor."
+    },
+    "faq": {
+      "title": "Preguntas, respondidas",
+      "items": [
+        {
+          "q": "¿Qué pasa cuando Factor se traba?",
+          "a": "Pregunta. Cuando necesita un login, un código o una decisión de criterio, se detiene y te pregunta. También podés agarrar tu propio cursor y tomar el control en cualquier momento, y después devolvérselo."
+        },
+        {
+          "q": "¿Qué puede controlar Factor exactamente?",
+          "a": "Todo el escritorio de su sesión de Cyqle: aplicaciones, ventanas, archivos, comandos de terminal y el navegador. Nunca sale de tu sesión aislada."
+        },
+        {
+          "q": "¿Cuánto cuesta?",
+          "a": "Factor viene incluido en todos los planes de pago de Cyqle con una asignación mensual de créditos de IA. ¿Necesitás más? Los packs de créditos de compra única te recargan. Sin créditos, las ejecuciones se rechazan, no se facturan."
+        },
+        {
+          "q": "¿Mi sesión es privada?",
+          "a": "Las sesiones están aisladas y cifradas con claves por sesión. Cuando Factor ejecuta una tarea, solo se procesan tu instrucción y el contexto mínimo de pantalla necesario para completarla — y tu sesión queda sellada para todos los demás."
+        },
+        {
+          "q": "¿Puedo usar mis propios agentes en su lugar?",
+          "a": "Sí. Cada escritorio de Cyqle es una computadora real — traé tus propios agentes y herramientas cuando prefieras, y combinalos con Factor."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Poné un segundo cursor a trabajar",
+      "description": "Un escritorio en segundos. Factor en todos los planes de pago.\nPlan gratis para mirar — sin tarjeta de crédito.",
+      "button": "Encendé un escritorio",
+      "trialInfo": "Plan gratis disponible. Sin tarjeta de crédito."
     }
   },
   "footer": {
@@ -330,7 +442,7 @@
       "paragraph1": "Un agente encerrado en un chat solo puede hablar del trabajo. Dale una computadora y puede hacerlo: abrir aplicaciones, ejecutar comandos, navegar, administrar archivos.",
       "paragraph2": "En Cyqle, cada agente tiene un escritorio real. Arrancá una máquina limpia por ejecución. Configurá una vez, sacá un snapshot y clonalo para corridas en paralelo. Meté escritorios precalentados en tus pipelines de CI. Tiralo todo abajo cuando el trabajo termina.",
       "paragraph3": "Y como el escritorio es multijugador, el agente es un usuario más en la máquina. Ves su cursor moverse en tiempo real. Si se traba, agarrás tu propio cursor y tomás el control: misma sesión, sin ceremonia.",
-      "proof": "Hay equipos que ya usan así nuestro Agente de IA propio, y que traen sus propios agentes también.",
+      "proof": "Hay equipos que ya usan así a Factor, nuestro agente propio, y que traen sus propios agentes también.",
       "demo": {
         "agentLabel": "agente",
         "humanLabel": "vos",
@@ -446,7 +558,7 @@
         "intro": "Cyqle incorpora funciones impulsadas por IA para mejorar su productividad. Bajo la Ley de IA de la UE de 2026, estamos obligados a proporcionar una divulgación clara cuando interactúa o se ve afectado por sistemas de IA.",
         "disclosure": {
           "title": "Divulgación del Agente de IA propio",
-          "description": "Cuando usa las funciones de automatización de Cyqle (grabación de navegador, delegación de tareas, programación de flujos de trabajo), puede interactuar con nuestro \"Agente de IA propio\" - un sistema de IA diseñado para ejecutar tareas web repetitivas en su nombre."
+          "description": "Cuando usa las funciones de automatización de Cyqle (grabación de navegador, delegación de tareas, programación de flujos de trabajo), puede interactuar con \"Factor\", nuestro Agente de IA propio - un sistema de IA diseñado para ejecutar tareas en su escritorio y navegador en su nombre."
         },
         "howItWorks": {
           "title": "Cómo funciona el Agente de IA propio",
@@ -839,7 +951,7 @@
         },
         "aiUsage": {
           "title": "Uso de IA y Packs de Créditos",
-          "description": "Las funciones de IA de Cyqle (incluido el Agente de IA propio) consumen créditos. Los siguientes términos rigen cómo se asigna, mide y compra el uso de IA:",
+          "description": "Las funciones de IA de Cyqle (incluido Factor, el Agente de IA propio) consumen créditos. Los siguientes términos rigen cómo se asigna, mide y compra el uso de IA:",
           "point1": "El uso de IA se descuenta primero de la asignación de créditos de IA incluida en su plan y luego de los packs de créditos comprados. Los créditos de IA incluidos se reponen automáticamente y no se acumulan.",
           "point2": "En las suscripciones mensuales, el uso de IA que exceda sus créditos incluidos se descuenta de los créditos comprados o se mide y factura a la tarifa de crédito vigente. En los slots medidos (pago por uso), el uso de IA que exceda los créditos incluidos se paga con packs de créditos comprados; cuando no quedan créditos, las siguientes ejecuciones de IA se rechazan - nunca se le factura a posteriori.",
           "point3": "Los packs de créditos (Starter, Plus, Power) son compras únicas procesadas por nuestro proveedor de pagos - no son cargos recurrentes. Los créditos comprados no caducan mientras su cuenta permanezca al día.",

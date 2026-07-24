@@ -6,6 +6,7 @@
   "navbar": {
     "features": "Features",
     "useCases": "Anwendungsfälle",
+    "factor": "Factor",
     "pricing": "Preise",
     "api": "API",
     "about": "Über uns",
@@ -61,7 +62,7 @@
     },
     "aiAgents": {
       "title": "Workspace für KI-Agenten",
-      "description": "Lass deine Agenten einen echten Linux-Desktop steuern. Einmal snapshotten, für parallele Läufe klonen – und ein Mensch springt in dieselbe Session, wann immer der Agent Hilfe braucht."
+      "description": "Lass deine Agenten einen echten Linux-Desktop steuern – oder delegiere an Factor, den eingebauten Agenten. Einmal snapshotten, für parallele Läufe klonen – und ein Mensch springt in dieselbe Session, wann immer der Agent Hilfe braucht."
     },
     "customerSupport": {
       "title": "Kollaborativer Support",
@@ -77,21 +78,22 @@
     }
   },
   "aiSection": {
-    "title": "Automatisiere deine Arbeit",
-    "description": "Cyqle ist nicht nur ein Desktop, sondern eine Automatisierungsplattform – und es gibt zwei Wege, sie für dich arbeiten zu lassen.",
+    "title": "Lern Factor kennen",
+    "description": "Cyqle ist nicht nur ein Desktop, sondern eine Automatisierungsplattform – mit einem hauseigenen KI-Agenten und Platz für deine eigenen.",
     "byo": {
       "title": "Bring deine eigenen Agenten mit",
       "description": "Jeder Desktop ist ein echter Computer unter deiner Kontrolle. Nutze deine eigenen Agenten, Architekturen und Tools – was auf einem Desktop läuft, läuft auch hier."
     },
     "inHouse": {
-      "title": "Oder nimm unseren: den Hauseigenen KI-Agenten",
-      "description": "Vom Cyqle-Team entwickelt, überwacht und getestet – und mit jedem Release effizienter.",
+      "title": "Factor — der Agent am Cursor nebenan",
+      "description": "Cyqles mitsteuernder KI-Agent arbeitet mit eigenem Cursor auf deinem Desktop. Du siehst jeden Klick live, greifst jederzeit ein und gibst die Steuerung genauso leicht wieder ab.",
       "items": [
-        "Zeichne Interaktionen auf und spiele sie ab",
-        "Delegiere repetitive Aufgaben",
-        "Plane Workflows, die im Hintergrund laufen",
-        "Pflege eine gemeinsame Bibliothek von Team-Automatisierungen"
-      ]
+        "Gib ihm eine Aufgabe und sieh ihm bei der Arbeit zu – Klick für Klick",
+        "Voller Desktop-Zugriff: Apps, Dateien, Terminal, Browser",
+        "Unterbrechen, korrigieren, weiterlaufen lassen – der letzte Klick bleibt bei dir",
+        "Vorausbezahlte KI-Credits – Läufe stoppen, nie eine überraschende Rechnung"
+      ],
+      "learnMore": "Lern Factor kennen"
     },
     "cta": "Kostenlos ausprobieren"
   },
@@ -149,7 +151,7 @@
           "persistence": "{gb} GB Persistenz",
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
-          "aiAgent": "Hauseigener KI-Agent",
+          "aiAgent": "Factor KI-Agent",
           "aiCredits": "{credits} Credits / Monat"
         },
         "cta": "Loslegen"
@@ -165,7 +167,7 @@
           "persistence": "{gb} GB Persistenz",
           "snapshots": "Snapshot-Erstellung",
           "api": "API-Zugriff",
-          "aiAgent": "Hauseigener KI-Agent",
+          "aiAgent": "Factor KI-Agent",
           "aiCredits": "{credits} Credits / Monat"
         },
         "cta": "Hol dir Pro"
@@ -192,10 +194,10 @@
       }
     },
     "creditEqualsHours": "1 Credit = {hours} Std. Desktop-Zeit",
-    "aiCreditsTooltip": "Monatliche Credits für den Hauseigenen KI-Agenten. Jederzeit mit Credit-Packs aufladen.",
+    "aiCreditsTooltip": "Monatliche Credits für Factor, den KI-Agenten von Cyqle. Jederzeit mit Credit-Packs aufladen.",
     "creditPacks": {
-      "title": "Credit-Packs für den Hauseigenen KI-Agenten",
-      "description": "Jeder Bezahltarif enthält Credits für Cyqles Hauseigenen KI-Agenten. Lade auf, wenn du mehr brauchst.",
+      "title": "Credit-Packs für Factor",
+      "description": "Jeder Bezahltarif enthält KI-Credits für Factor, den eingebauten KI-Agenten von Cyqle. Lade auf, wenn du mehr brauchst.",
       "bestValue": "Bestes Preis-Leistungs-Verhältnis",
       "packs": {
         "starter": {
@@ -244,6 +246,116 @@
     "step3": {
       "title": "Zusammenarbeiten",
       "description": "Gleichzeitig tippen, klicken und navigieren — auf demselben Desktop. Bugs gemeinsam beheben. Schneller shippen."
+    }
+  },
+  "factorPage": {
+    "metaTitle": "Factor — Der mitsteuernde KI-Agent | Cyqle",
+    "metaDescription": "Factor ist der KI-Agent in jedem Cyqle-Cloud-Desktop: ein eigener Cursor neben deinem, volle Desktop- und Browser-Steuerung, Übernahme in Echtzeit, wiederabspielbare Läufe. Vorausbezahlte Credits, keine Gebühren pro Platz.",
+    "hero": {
+      "eyebrow": "In jedem bezahlten Cyqle-Desktop enthalten",
+      "title": "Der Agent am Cursor nebenan.",
+      "subtitle": "Factor ist der KI-Agent, der in jedem Cyqle-Cloud-Desktop steckt. Er arbeitet mit eigenem Cursor, direkt neben deinem – in Apps, Dateien, Terminal und Browser. Sieh ihm bei der Arbeit zu. Übernimm das Steuer.",
+      "ctaPrimary": "Desktop einschalten",
+      "ctaSecondary": "Sieh ihn mitsteuern",
+      "endorsement": "by Cyqle",
+      "creditsNote": "Läuft auf vorausbezahlten KI-Credits. Sind sie aufgebraucht, stoppen die Läufe – dir wird nie nachträglich etwas berechnet."
+    },
+    "demo": {
+      "title": "Sieh ihm bei der Arbeit zu. Übernimm das Steuer.",
+      "caption": "Ein Muster, das wir jeden Tag sehen: Factor arbeitet, stößt auf einen Login, der ihm nicht gehören sollte, und fragt nach. Du greifst mit deinem eigenen Cursor ein und gibst dann wieder ab. Gleicher Desktop, ohne Umstände.",
+      "labels": {
+        "agent": "Factor",
+        "human": "du",
+        "task": "Trag die Rechnungen dieses Quartals ins Lieferantenportal ein",
+        "portalTitle": "vendor-portal.example.com",
+        "filesTitle": "Dateien",
+        "fieldVendor": "Lieferant",
+        "fieldInvoice": "Rechnungsnr.",
+        "fieldAmount": "Betrag",
+        "fieldCode": "2FA-Code",
+        "submit": "Absenden",
+        "success": "Rechnung übermittelt",
+        "statusWorking": "Factor arbeitet",
+        "statusAsk": "Factor braucht dich – 2FA-Code",
+        "statusHuman": "Du steuerst",
+        "statusHandback": "Zurück an Factor übergeben",
+        "statusDone": "Fertig – Lauf aufgezeichnet",
+        "replay": "Lauf aufgezeichnet · jederzeit abspielbar"
+      }
+    },
+    "pillars": {
+      "title": "Delegiere die Arbeit. Verlier sie nie aus den Augen.",
+      "items": [
+        {
+          "title": "Er arbeitet, wo du ihn siehst",
+          "description": "Factor hat einen eigenen Cursor und eine eigene Tastatur auf deinem laufenden Desktop. Jeder Klick passiert vor deinen Augen – unterbrich, korrigiere oder übernimm jederzeit, ohne Umstände."
+        },
+        {
+          "title": "Ein ganzer Computer, kein Browser-Tab",
+          "description": "Ein echter Linux-Desktop: Factor öffnet Apps, verwaltet Fenster, verschiebt Dateien, führt Befehle aus und steuert den Browser. Was dein Team an einem Desktop erledigt, kann Factor dort auch."
+        },
+        {
+          "title": "Sessions, die bleiben und beweisen",
+          "description": "Pausiere mitten in der Aufgabe und mach später weiter. Snapshotte einen konfigurierten Desktop und klone ihn. Zeichne einen Lauf auf und spiele ihn für Reviews und Audits ab. Lange Jobs überleben; jeder Lauf ist nachvollziehbar."
+        },
+        {
+          "title": "Vorausbezahlt und planbar",
+          "description": "Jeder Cyqle-Bezahltarif enthält KI-Credits für Factor. Lade mit Einmal-Packs auf. Sind die Credits aufgebraucht, werden Läufe abgelehnt – nie nachträglich berechnet."
+        }
+      ]
+    },
+    "segments": {
+      "title": "Wo Teams Factor arbeiten lassen",
+      "items": [
+        {
+          "title": "QA & Testing",
+          "description": "Klicke Regressions-Flows in einem echten Browser und Desktop durch. Sieh Fehlschläge live, übernimm zur Triage und spiele den Lauf fürs Ticket ab."
+        },
+        {
+          "title": "Backoffice-Abläufe",
+          "description": "Formulare, Portale und Dateneingabe unter echter Aufsicht. Factor fragt nach, wenn er einen Login oder eine Einschätzung braucht – der letzte Klick liegt immer bei dir."
+        },
+        {
+          "title": "Legacy-Anwendungen",
+          "description": "Keine API? Factor arbeitet am Bildschirm, genau wie dein Team. Automatisiere die Tools, die nie jemand integrieren konnte."
+        }
+      ]
+    },
+    "oversight": {
+      "title": "Menschliche Aufsicht, von Grund auf",
+      "description": "Factor ist für beaufsichtigtes Delegieren gebaut: jede Aktion live sichtbar, Übernahme jederzeit möglich, Session-Aufzeichnungen zum Abspielen – das Arbeitsmuster hinter modernen Anforderungen an menschliche Aufsicht, einschließlich der EU-KI-Verordnung. Du bleibst die Autorität auf deiner Maschine.",
+      "byoNote": "Cyqle ist auch eine Sandbox für deine eigenen Agenten – bring sie jederzeit mit und kombiniere sie mit Factor."
+    },
+    "faq": {
+      "title": "Fragen, beantwortet",
+      "items": [
+        {
+          "q": "Was passiert, wenn Factor nicht weiterkommt?",
+          "a": "Er fragt nach. Wenn er einen Login, einen Code oder eine Einschätzung braucht, hält er an und fragt dich. Du kannst auch jederzeit zu deinem eigenen Cursor greifen, übernehmen und die Steuerung danach wieder abgeben."
+        },
+        {
+          "q": "Was kann Factor eigentlich steuern?",
+          "a": "Den gesamten Desktop seiner Cyqle-Session: Anwendungen, Fenster, Dateien, Terminal-Befehle und den Browser. Er greift nie über deine isolierte Session hinaus."
+        },
+        {
+          "q": "Was kostet das?",
+          "a": "Factor ist in jedem Cyqle-Bezahltarif enthalten, mit einem monatlichen Kontingent an KI-Credits. Du brauchst mehr? Einmalige Credit-Packs füllen auf. Sind die Credits aufgebraucht, werden Läufe abgelehnt – nicht berechnet."
+        },
+        {
+          "q": "Bleibt meine Session privat?",
+          "a": "Sessions sind isoliert und mit sitzungsspezifischen Schlüsseln verschlüsselt. Wenn Factor eine Aufgabe ausführt, werden nur deine Anweisung und der minimal nötige Bildschirmkontext verarbeitet – und deine Session bleibt für alle anderen versiegelt."
+        },
+        {
+          "q": "Kann ich stattdessen meine eigenen Agenten nutzen?",
+          "a": "Ja. Jeder Cyqle-Desktop ist ein echter Computer – bring deine eigenen Agenten und Tools mit, wann immer du willst, und kombiniere sie mit Factor."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Lass einen zweiten Cursor für dich arbeiten",
+      "description": "Ein Desktop in Sekunden. Factor in jedem Bezahltarif.\nKostenloser Tarif zum Umschauen – keine Kreditkarte.",
+      "button": "Desktop einschalten",
+      "trialInfo": "Kostenloser Tarif verfügbar. Keine Kreditkarte erforderlich."
     }
   },
   "footer": {
@@ -330,7 +442,7 @@
       "paragraph1": "Ein Agent, der in einer Chatbox festsitzt, kann über Arbeit nur reden. Gib ihm einen Computer, und er kann sie erledigen: Apps öffnen, Befehle ausführen, browsen, Dateien verwalten.",
       "paragraph2": "Auf Cyqle bekommt jeder Agent einen echten Desktop. Starte pro Lauf eine saubere Maschine. Einmal konfigurieren, Snapshot erstellen, für parallele Läufe klonen. Häng vorgewärmte Desktops in deine CI-Pipelines. Reiß alles ab, wenn der Job erledigt ist.",
       "paragraph3": "Und weil der Desktop Multiplayer ist, ist der Agent einfach ein weiterer Nutzer an der Maschine. Du siehst seinen Cursor in Echtzeit. Bleibt er hängen, greifst du zu deinem eigenen Cursor und übernimmst — gleiche Session, ohne Umstände.",
-      "proof": "Teams betreiben unseren Hauseigenen KI-Agenten schon genau so — und bringen auch eigene Agenten mit.",
+      "proof": "Teams betreiben Factor, unseren hauseigenen Agenten, schon genau so — und bringen auch eigene Agenten mit.",
       "demo": {
         "agentLabel": "Agent",
         "humanLabel": "du",
@@ -446,7 +558,7 @@
         "intro": "Cyqle enthält KI-gestützte Funktionen zur Steigerung Ihrer Produktivität. Nach der EU-KI-Verordnung von 2026 sind wir verpflichtet, klar offenzulegen, wenn Sie mit KI-Systemen interagieren oder von ihnen betroffen sind.",
         "disclosure": {
           "title": "Offenlegung des Hauseigenen KI-Agenten",
-          "description": "Wenn Sie die Automatisierungsfunktionen von Cyqle nutzen (Browser-Aufzeichnung, Aufgabendelegation, Workflow-Planung), interagieren Sie möglicherweise mit unserem „Hauseigenen KI-Agenten“ – einem KI-System, das repetitive Web-Aufgaben in Ihrem Auftrag ausführt."
+          "description": "Wenn Sie die Automatisierungsfunktionen von Cyqle nutzen (Browser-Aufzeichnung, Aufgabendelegation, Workflow-Planung), interagieren Sie möglicherweise mit „Factor“, unserem Hauseigenen KI-Agenten – einem KI-System, das Aufgaben auf Ihrem Desktop und in Ihrem Browser in Ihrem Auftrag ausführt."
         },
         "howItWorks": {
           "title": "So funktioniert der Hauseigene KI-Agent",
@@ -839,7 +951,7 @@
         },
         "aiUsage": {
           "title": "KI-Nutzung & Credit-Packs",
-          "description": "Die KI-Funktionen von Cyqle (einschließlich des Hauseigenen KI-Agenten) verbrauchen Credits. Die folgenden Bedingungen regeln, wie KI-Nutzung zugeteilt, gemessen und erworben wird:",
+          "description": "Die KI-Funktionen von Cyqle (einschließlich Factor, des Hauseigenen KI-Agenten) verbrauchen Credits. Die folgenden Bedingungen regeln, wie KI-Nutzung zugeteilt, gemessen und erworben wird:",
           "point1": "KI-Nutzung wird zuerst auf das in Ihrem Tarif enthaltene KI-Credit-Kontingent angerechnet, danach auf gekaufte Credit-Packs. Enthaltene KI-Credits füllen sich automatisch wieder auf und werden nicht übertragen.",
           "point2": "Bei monatlichen Abonnements wird KI-Nutzung über Ihre enthaltenen Credits hinaus aus gekauften Credits gedeckt oder gemessen und zum jeweils geltenden Credit-Tarif abgerechnet. Bei nutzungsbasierten (Pay-as-you-go) Slots wird KI-Nutzung über die enthaltenen Credits hinaus aus gekauften Credit-Packs bezahlt; sind keine Credits mehr vorhanden, werden weitere KI-Ausführungen abgelehnt – Ihnen wird niemals nachträglich etwas in Rechnung gestellt.",
           "point3": "Credit-Packs (Starter, Plus, Power) sind Einmalkäufe, die von unserem Zahlungsdienstleister verarbeitet werden – es handelt sich nicht um wiederkehrende Gebühren. Gekaufte Credits verfallen nicht, solange Ihr Konto in gutem Stand bleibt.",

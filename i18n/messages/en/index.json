@@ -6,6 +6,7 @@
   "navbar": {
     "features": "Features",
     "useCases": "Use Cases",
+    "factor": "Factor",
     "pricing": "Pricing",
     "api": "API",
     "about": "About",
@@ -61,7 +62,7 @@
     },
     "aiAgents": {
       "title": "AI Agent Workspace",
-      "description": "Let your agents drive a real Linux desktop. Snapshot once, clone for parallel runs—and have a human jump into the same session whenever the agent needs help."
+      "description": "Let your agents drive a real Linux desktop — or delegate to Factor, the agent built in. Snapshot once, clone for parallel runs—and have a human jump into the same session whenever the agent needs help."
     },
     "customerSupport": {
       "title": "Collaborative Support",
@@ -77,21 +78,22 @@
     }
   },
   "aiSection": {
-    "title": "Automate Your Work",
-    "description": "Cyqle isn't just a desktop. It's an automation platform — and there are two ways to put it to work.",
+    "title": "Meet Factor",
+    "description": "Cyqle isn't just a desktop. It's an automation platform — with a resident AI agent, and room for your own.",
     "byo": {
       "title": "Bring your own agents",
       "description": "Every desktop is a real computer under your control. Run your own agents, architectures, and tools — whatever works at a desktop works here."
     },
     "inHouse": {
-      "title": "Or use ours: the In-House AI Agent",
-      "description": "Built, monitored, and tested by the Cyqle team — tuned to be more efficient with every release.",
+      "title": "Factor — the agent at the next cursor",
+      "description": "Cyqle's co-driving AI agent works at its own cursor on your desktop. You watch every click live, step in anytime, and hand control back just as easily.",
       "items": [
-        "Record your interactions for replay",
-        "Delegate repetitive tasks",
-        "Schedule workflows to run in the background",
-        "Maintain a shared library of team automations"
-      ]
+        "Give it a task and watch it work, click by click",
+        "Full desktop reach: apps, files, terminal, browser",
+        "Interrupt, correct, resume — you keep the final click",
+        "Prepaid AI credits — runs stop, they never surprise-bill"
+      ],
+      "learnMore": "Meet Factor"
     },
     "cta": "Try It Free"
   },
@@ -149,7 +151,7 @@
           "persistence": "{gb} GB persistence",
           "snapshots": "Snapshot Creation",
           "api": "API Access",
-          "aiAgent": "In-House AI Agent",
+          "aiAgent": "Factor AI Agent",
           "aiCredits": "{credits} credits / month"
         },
         "cta": "Get Started"
@@ -165,7 +167,7 @@
           "persistence": "{gb} GB persistence",
           "snapshots": "Snapshot Creation",
           "api": "API Access",
-          "aiAgent": "In-House AI Agent",
+          "aiAgent": "Factor AI Agent",
           "aiCredits": "{credits} credits / month"
         },
         "cta": "Go Pro"
@@ -192,10 +194,10 @@
       }
     },
     "creditEqualsHours": "1 credit = {hours} hrs of desktop time",
-    "aiCreditsTooltip": "Monthly credits for the In-House AI Agent. Top up anytime with credit packs.",
+    "aiCreditsTooltip": "Monthly credits for Factor, Cyqle's AI agent. Top up anytime with credit packs.",
     "creditPacks": {
-      "title": "Credit packs for the In-House AI Agent",
-      "description": "Every paid plan includes credits for Cyqle's own In-House AI Agent. Top up when you need more.",
+      "title": "Credit packs for Factor",
+      "description": "Every paid plan includes AI credits for Factor, Cyqle's built-in AI agent. Top up when you need more.",
       "bestValue": "Best value",
       "packs": {
         "starter": {
@@ -244,6 +246,116 @@
     "step3": {
       "title": "Work Together",
       "description": "Type, click, and navigate simultaneously on the same desktop. Fix bugs together. Ship faster."
+    }
+  },
+  "factorPage": {
+    "metaTitle": "Factor — The Co-Driving AI Agent | Cyqle",
+    "metaDescription": "Factor is the AI agent in every Cyqle cloud desktop: its own cursor beside yours, full desktop and browser control, live takeover, replayable runs. Prepaid credits, no seat fees.",
+    "hero": {
+      "eyebrow": "Included in every paid Cyqle desktop",
+      "title": "The agent at the next cursor.",
+      "subtitle": "Factor is the AI agent built into every Cyqle cloud desktop. It works at its own cursor, beside yours — across apps, files, terminal, and browser. Watch it work. Take the wheel.",
+      "ctaPrimary": "Power On a Desktop",
+      "ctaSecondary": "See it co-drive",
+      "endorsement": "by Cyqle",
+      "creditsNote": "Runs on prepaid AI credits. When they run out, runs stop — you're never billed after the fact."
+    },
+    "demo": {
+      "title": "Watch it work. Take the wheel.",
+      "caption": "A pattern we see every day: Factor works, hits a login it shouldn't own, and asks. You step in with your own cursor, then hand back. Same desktop, no ceremony.",
+      "labels": {
+        "agent": "Factor",
+        "human": "you",
+        "task": "Enter this quarter's invoices into the vendor portal",
+        "portalTitle": "vendor-portal.example.com",
+        "filesTitle": "Files",
+        "fieldVendor": "Vendor",
+        "fieldInvoice": "Invoice no.",
+        "fieldAmount": "Amount",
+        "fieldCode": "2FA code",
+        "submit": "Submit",
+        "success": "Invoice submitted",
+        "statusWorking": "Factor is working",
+        "statusAsk": "Factor needs you — 2FA code",
+        "statusHuman": "You're driving",
+        "statusHandback": "Handed back to Factor",
+        "statusDone": "Done — run recorded",
+        "replay": "Run recorded · replay anytime"
+      }
+    },
+    "pillars": {
+      "title": "Delegate the work. Never lose sight of it.",
+      "items": [
+        {
+          "title": "It works where you can see it",
+          "description": "Factor has its own cursor and keyboard on your live desktop. Every click happens in front of you — interrupt, correct, or take over at any moment, with no ceremony."
+        },
+        {
+          "title": "A whole computer, not a browser tab",
+          "description": "A real Linux desktop: Factor opens apps, manages windows, moves files, runs commands, and drives the browser. If your team does it at a desktop, Factor can do it there too."
+        },
+        {
+          "title": "Sessions that persist and prove",
+          "description": "Pause and resume mid-task. Snapshot a configured desktop and clone it. Record a run and replay it for reviews and audits. Long jobs survive; every run is accountable."
+        },
+        {
+          "title": "Prepaid and predictable",
+          "description": "Every paid Cyqle plan includes AI credits for Factor. Top up with one-time packs. When credits run out, runs are declined — never billed after the fact."
+        }
+      ]
+    },
+    "segments": {
+      "title": "Where teams put Factor to work",
+      "items": [
+        {
+          "title": "QA & testing",
+          "description": "Click through regression flows on a real browser and desktop. Watch failures live, take over to triage, and replay the run for the ticket."
+        },
+        {
+          "title": "Back-office operations",
+          "description": "Forms, portals, and data entry under real supervision. Factor asks when it needs a login or a judgment call — you always have the final click."
+        },
+        {
+          "title": "Legacy applications",
+          "description": "No API? Factor works at the screen, the way your team does. Automate the tools nobody managed to integrate."
+        }
+      ]
+    },
+    "oversight": {
+      "title": "Human oversight by design",
+      "description": "Factor is built for supervised delegation: live visibility of every action, takeover at any moment, and replayable session records — the working pattern behind modern human-oversight requirements, including the EU AI Act. You stay the authority on your machine.",
+      "byoNote": "Cyqle is also a sandbox for your own agents — bring them anytime and mix them with Factor."
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "q": "What happens when Factor gets stuck?",
+          "a": "It asks. When it needs a login, a code, or a judgment call, it pauses and asks you. You can also grab your own cursor and take over at any point, then hand control back."
+        },
+        {
+          "q": "What can Factor actually control?",
+          "a": "The whole desktop of its Cyqle session: applications, windows, files, terminal commands, and the browser. It never reaches outside your isolated session."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "Factor is included in every paid Cyqle plan with a monthly allowance of AI credits. Need more? One-time credit packs top you up. Out of credits means runs are declined, not billed."
+        },
+        {
+          "q": "Is my session private?",
+          "a": "Sessions are isolated and encrypted with per-session keys. When Factor runs a task, only your instruction and the minimum screen context needed to complete it are processed — and your session stays sealed off from everyone else."
+        },
+        {
+          "q": "Can I use my own agents instead?",
+          "a": "Yes. Every Cyqle desktop is a real computer — bring your own agents and tools whenever you prefer, and mix them with Factor."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Put a second cursor to work",
+      "description": "A desktop in seconds. Factor in every paid plan.\nFree tier to look around — no credit card.",
+      "button": "Power On a Desktop",
+      "trialInfo": "Free tier available. No credit card required."
     }
   },
   "footer": {
@@ -330,7 +442,7 @@
       "paragraph1": "An agent trapped in a chat box can only talk about work. Give it a computer and it can do the work: open apps, run commands, browse, manage files.",
       "paragraph2": "On Cyqle, every agent gets a real desktop. Boot a clean machine per run. Configure once, snapshot, and clone it for parallel runs. Drop pre-warmed desktops into CI pipelines. Tear it all down when the job is done.",
       "paragraph3": "And because the desktop is multiplayer, the agent is just another user at the machine. You watch its cursor move in real time. If it stalls, you grab your own cursor and take over — same session, no ceremony.",
-      "proof": "Teams already run our In-House AI Agent this way — and bring their own agents, too.",
+      "proof": "Teams already run Factor, our in-house agent, this way — and bring their own agents, too.",
       "demo": {
         "agentLabel": "agent",
         "humanLabel": "you",
@@ -446,7 +558,7 @@
         "intro": "Cyqle incorporates AI-powered features to enhance your productivity. Under the 2026 EU AI Act, we are required to provide clear disclosure when you interact with or are affected by AI systems.",
         "disclosure": {
           "title": "In-House AI Agent Disclosure",
-          "description": "When you use Cyqle's automation features (browser recording, task delegation, workflow scheduling), you may interact with our \"In-House AI Agent\" - an AI system designed to execute repetitive web tasks on your behalf."
+          "description": "When you use Cyqle's automation features (browser recording, task delegation, workflow scheduling), you may interact with \"Factor\", our In-House AI Agent - an AI system designed to execute tasks on your desktop and browser on your behalf."
         },
         "howItWorks": {
           "title": "How the In-House AI Agent Works",
@@ -839,7 +951,7 @@
         },
         "aiUsage": {
           "title": "AI Usage & Credit Packs",
-          "description": "Cyqle's AI features (including the In-House AI Agent) consume credits. The following terms govern how AI usage is allocated, metered, and purchased:",
+          "description": "Cyqle's AI features (including Factor, the In-House AI Agent) consume credits. The following terms govern how AI usage is allocated, metered, and purchased:",
           "point1": "AI usage draws first on the AI credit allocation included with your plan, then on purchased credit packs. Included AI credits replenish automatically and do not roll over.",
           "point2": "On monthly subscriptions, AI usage beyond your included credits is drawn from purchased credits or metered and billed at the prevailing credit rate. On metered (pay-as-you-go) slots, AI usage beyond the included credits is paid from purchased credit packs; when no credits remain, further AI runs are declined - you are never billed after the fact.",
           "point3": "Credit packs (Starter, Plus, Power) are one-time purchases processed by our payment provider - they are not recurring charges. Purchased credits do not expire while your account remains in good standing.",

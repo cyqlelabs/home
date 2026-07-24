@@ -78,6 +78,13 @@ export default function Navbar() {
               {t('navbar.useCases')}
             </TrackedLink>
             <TrackedLink
+              href={`/${locale}/factor`}
+              trackingKey="navbarFactor"
+              className="text-sky-400 hover:text-sky-300 transition-colors"
+            >
+              {t('navbar.factor')}
+            </TrackedLink>
+            <TrackedLink
               href={getLink('pricing')}
               trackingKey="navbarPricing"
               className="text-slate-300 hover:text-white transition-colors"
@@ -164,6 +171,14 @@ export default function Navbar() {
                 onClick={closeMobileMenu}
               >
                 {t('navbar.useCases')}
+              </TrackedLink>
+              <TrackedLink
+                href={`/${locale}/factor`}
+                trackingKey="navbarFactor"
+                className="text-sky-400 hover:text-sky-300 transition-colors py-2"
+                onClick={closeMobileMenu}
+              >
+                {t('navbar.factor')}
               </TrackedLink>
               <TrackedLink
                 href={getLink('pricing')}

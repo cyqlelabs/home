@@ -266,6 +266,8 @@ export default async function Home({ params: { locale } }: Props) {
                 inHouseTitle={aiSectionT('inHouse.title')}
                 inHouseDescription={aiSectionT('inHouse.description')}
                 inHouseItems={aiSectionT.raw('inHouse.items') as string[]}
+                inHouseHref={`/${locale}/factor`}
+                inHouseLinkLabel={aiSectionT('inHouse.learnMore')}
               />
             </div>
             <div className="order-1 lg:order-2 video-feather relative lg:h-full">
