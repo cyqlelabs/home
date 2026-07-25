@@ -3,7 +3,7 @@
 // The signature Factor scene, replayed as UI: Factor fills a portal at its own
 // cursor, hits a 2FA wall and asks — the human steps in with their cursor,
 // types the code, hands back, and Factor finishes. The run ends recorded.
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type Ref } from 'react';
 import { AnimatePresence, motion, useInView, useReducedMotion } from 'framer-motion';
 import { CheckCircle2, CircleDot, FileText, Lock } from 'lucide-react';
 import CursorIcon from '@/components/about/cursor-icon';
@@ -37,10 +37,12 @@ const DURATION: Partial<Record<Phase, number>> = {
   done: 4200,
 };
 
-// Waypoints track the portal window's field grid: row 1 values ≈ 20%, row 2
-// ≈ 32%, Submit ≈ 39% of container height at the sm aspect. Close enough is
-// the goal — the cursor should read as "on that field" at a glance.
-const AGENT_POS: Record<Phase, { left: string; top: string }> = {
+type Pos = { left: number | string; top: number | string };
+
+// Pre-measurement fallback only, tuned for the sm 2/1 aspect. Once mounted,
+// cursor waypoints are measured off the real field rects (see the
+// ResizeObserver effect below) so they track every breakpoint.
+const AGENT_POS: Record<Phase, Pos> = {
   idle: { left: '110%', top: '-12%' },
   enter: { left: '44%', top: '27%' },
   fill1: { left: '44%', top: '27%' },
@@ -54,7 +56,7 @@ const AGENT_POS: Record<Phase, { left: string; top: string }> = {
   done: { left: '39%', top: '53%' },
 };
 
-const HUMAN_POS: Record<Phase, { left: string; top: string }> = {
+const HUMAN_POS: Record<Phase, Pos> = {
   idle: { left: '-12%', top: '108%' },
   enter: { left: '-12%', top: '108%' },
   fill1: { left: '-12%', top: '108%' },
@@ -115,11 +117,13 @@ function Field({
   value,
   filled,
   active,
+  boxRef,
 }: {
   label: string;
   value: string;
   filled: boolean;
   active: boolean;
+  boxRef?: Ref<HTMLDivElement>;
 }) {
   return (
     <div className="min-w-0">
@@ -127,6 +131,7 @@ function Field({
         {label}
       </p>
       <div
+        ref={boxRef}
         className={`flex h-6 items-center rounded-md border px-1.5 text-[0.6rem] transition-colors duration-300 sm:h-7 sm:px-2 sm:text-xs ${
           active ? 'border-sky-400/70 bg-sky-500/5' : 'border-gray-700/80 bg-gray-900/60'
         }`}
@@ -158,9 +163,72 @@ function Field({
 
 export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
   const rootRef = useRef<HTMLDivElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const vendorRef = useRef<HTMLDivElement>(null);
+  const invoiceRef = useRef<HTMLDivElement>(null);
+  const amountRef = useRef<HTMLDivElement>(null);
+  const codeRef = useRef<HTMLDivElement>(null);
+  const submitRef = useRef<HTMLSpanElement>(null);
   const inView = useInView(rootRef, { amount: 0.35 });
   const reduce = useReducedMotion();
   const [phase, setPhase] = useState<Phase>('idle');
+  const [measured, setMeasured] = useState<{
+    agent: Record<Phase, Pos>;
+    human: Record<Phase, Pos>;
+  } | null>(null);
+
+  useEffect(() => {
+    const stage = stageRef.current;
+    if (!stage) return;
+    const measure = () => {
+      const s = stage.getBoundingClientRect();
+      const vendor = vendorRef.current;
+      const invoice = invoiceRef.current;
+      const amount = amountRef.current;
+      const code = codeRef.current;
+      const submit = submitRef.current;
+      if (!s.width || !vendor || !invoice || !amount || !code || !submit) return;
+      // Cursor tip lands inside the target box, dx/dy in fractions of it.
+      const on = (el: HTMLElement, dx: number, dy: number) => {
+        const b = el.getBoundingClientRect();
+        return { left: b.left - s.left + b.width * dx, top: b.top - s.top + b.height * dy };
+      };
+      const park = (x: number, y: number) => ({ left: s.width * x, top: s.height * y });
+      const offstage = { agentIdle: park(1.1, -0.12), humanIdle: park(-0.12, 1.08) };
+      setMeasured({
+        agent: {
+          idle: offstage.agentIdle,
+          enter: on(vendor, 0.3, 0.55),
+          fill1: on(vendor, 0.3, 0.55),
+          fill2: on(invoice, 0.3, 0.55),
+          fill3: on(amount, 0.3, 0.55),
+          ask: on(code, 0.25, 0.35),
+          human: park(0.16, 0.66),
+          code: park(0.16, 0.66),
+          handback: on(amount, 0.55, 1.6),
+          submit: on(submit, 0.35, 0.55),
+          done: on(submit, 0.35, 0.55),
+        },
+        human: {
+          idle: offstage.humanIdle,
+          enter: offstage.humanIdle,
+          fill1: offstage.humanIdle,
+          fill2: offstage.humanIdle,
+          fill3: offstage.humanIdle,
+          ask: offstage.humanIdle,
+          human: on(code, 0.5, 0.7),
+          code: on(code, 0.5, 0.55),
+          handback: on(code, 0.2, 1.9),
+          submit: park(0.64, 0.68),
+          done: park(0.64, 0.68),
+        },
+      });
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(stage);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (reduce) {
@@ -210,7 +278,10 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
         <AnimatePresence mode="wait">{status}</AnimatePresence>
       </div>
 
-      <div className="relative aspect-[16/11] select-none overflow-hidden rounded-xl border border-gray-800 bg-[#08182b] shadow-2xl shadow-sky-900/20 sm:aspect-[2/1]">
+      <div
+        ref={stageRef}
+        className="relative aspect-[16/11] select-none overflow-hidden rounded-xl border border-gray-800 bg-[#08182b] shadow-2xl shadow-sky-900/20 sm:aspect-[2/1]"
+      >
         {/* desktop wallpaper glow */}
         <div
           className="absolute inset-0"
@@ -266,18 +337,21 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
               value="Acme Logistics GmbH"
               filled={phaseAtLeast(phase, 'fill1')}
               active={phase === 'fill1'}
+              boxRef={vendorRef}
             />
             <Field
               label={labels.fieldInvoice}
               value="INV-2026-0713"
               filled={phaseAtLeast(phase, 'fill2')}
               active={phase === 'fill2'}
+              boxRef={invoiceRef}
             />
             <Field
               label={labels.fieldAmount}
               value="€ 4,820.00"
               filled={phaseAtLeast(phase, 'fill3')}
               active={phase === 'fill3'}
+              boxRef={amountRef}
             />
             <div className="min-w-0">
               <p className="mb-1 flex items-center gap-1 text-[0.5rem] uppercase tracking-wider text-gray-500 sm:text-[0.6rem]">
@@ -285,6 +359,7 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
                 <span className="truncate">{labels.fieldCode}</span>
               </p>
               <div
+                ref={codeRef}
                 className={`flex h-6 items-center rounded-md border px-1.5 text-[0.6rem] transition-colors duration-300 sm:h-7 sm:px-2 sm:text-xs ${
                   phase === 'ask'
                     ? 'border-[#FF7600]/70 bg-[#FF7600]/5'
@@ -323,6 +398,7 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
                 )}
               </AnimatePresence>
               <span
+                ref={submitRef}
                 className={`ml-auto shrink-0 rounded-md px-2 py-1 text-[0.6rem] font-medium transition-colors duration-300 sm:px-3 sm:text-[0.7rem] ${
                   phase === 'submit' || phase === 'done'
                     ? 'bg-sky-500 text-white'
@@ -366,7 +442,7 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
         <motion.div
           className="absolute z-10"
           initial={false}
-          animate={AGENT_POS[phase]}
+          animate={measured?.agent[phase] ?? AGENT_POS[phase]}
           transition={cursorSpring}
         >
           <CursorIcon
@@ -382,7 +458,7 @@ export default function CodriveDemo({ labels }: { labels: CodriveLabels }) {
         <motion.div
           className="absolute z-10"
           initial={false}
-          animate={HUMAN_POS[phase]}
+          animate={measured?.human[phase] ?? HUMAN_POS[phase]}
           transition={cursorSpring}
         >
           <CursorIcon
