@@ -21,7 +21,7 @@
     "titlePhrase3": "La computadora de tu equipo",
     "descriptionLine1": "Levantalo en segundos.",
     "descriptionLine2": "Invitá a tu equipo.",
-    "descriptionLine3": "Todos manejan.",
+    "descriptionLine3": "Todos tienen el control.",
     "getStarted": "Empezar",
     "trialInfo": "Plan gratis disponible. Sin tarjeta de crédito.",
     "powerOnLabel": "Empezar — es gratis",
@@ -31,7 +31,7 @@
     "title": "Un escritorio completo, reinventado",
     "multiplayerDesktop": {
       "title": "Escritorio multijugador real",
-      "description": "**Múltiples cursores, múltiples teclados**, control en tiempo real. Todo el equipo maneja el escritorio a la vez vía **streaming P2P**. **Videollamadas integradas**, **archivos al instante**, sesiones compartidas—basta de preguntar '¿están viendo mi pantalla?'"
+      "description": "**Múltiples cursores, múltiples teclados**, control en tiempo real. Todo el equipo controla el escritorio a la vez vía **streaming P2P**. **Videollamadas integradas**, **archivos al instante**, sesiones compartidas—basta de preguntar '¿están viendo mi pantalla?'"
     },
     "ephemeralEnvironments": {
       "title": "Entornos efímeros al instante",
@@ -62,7 +62,7 @@
     },
     "aiAgents": {
       "title": "Espacio para agentes de IA",
-      "description": "Dejá que tus agentes manejen un escritorio Linux real — o delegá en Factor, el agente que ya viene integrado. Tomá un snapshot, cloná para correr en paralelo—y que un humano se sume a la misma sesión cuando el agente necesite ayuda."
+      "description": "Dejá que tus agentes controlen un escritorio Linux real — o delegá en Factor, el agente que ya viene integrado. Tomá un snapshot, cloná para correr en paralelo—y que un humano se sume a la misma sesión cuando el agente necesite ayuda."
     },
     "customerSupport": {
       "title": "Soporte colaborativo",
@@ -74,7 +74,7 @@
     },
     "admin": {
       "title": "Oficina virtual",
-      "description": "Colaborá en sheets, docs y tareas administrativas en un mismo escritorio. Manejá múltiples ventanas a la vez durante las calls."
+      "description": "Colaborá en sheets, docs y tareas administrativas en un mismo escritorio. Modificá múltiples ventanas a la vez durante las calls."
     }
   },
   "aiSection": {
@@ -86,7 +86,7 @@
     },
     "inHouse": {
       "title": "Factor — el agente con cursor propio",
-      "description": "El agente de IA de Cyqle maneja a tu lado, en tu propio escritorio. Ves cada clic en vivo, intervenís cuando quieras y le devolvés el control con la misma facilidad.",
+      "description": "El agente de IA de Cyqle trabaja a tu lado, en tu propio escritorio. Ves cada clic en vivo, intervenís cuando quieras y le devolvés el control con la misma facilidad.",
       "items": [
         "Dale una tarea y miralo trabajar, clic a clic",
         "Alcance total del escritorio: aplicaciones, archivos, terminal, navegador",
@@ -100,10 +100,10 @@
   "apiTeaser": {
     "eyebrow": "API REST para agentes de IA",
     "title": "Un POST. Una computadora real.",
-    "description": "Cada escritorio de Cyqle es un endpoint REST. Autenticate, booteá una sesión, manejala, snapshoteala, apagala. Todo por HTTP.",
+    "description": "Cada escritorio de Cyqle es un endpoint REST. Autenticate, booteá una sesión, controlala, snapshoteala, apagala. Todo por HTTP.",
     "bullets": [
       "Auth con bearer token. Spec OpenAPI 3.0 que mapea limpio a cualquier cliente.",
-      "Manejá ventanas, shell, navegador, archivos y screenshots como primitivas.",
+      "Controlá ventanas, shell, navegador, archivos y screenshots como primitivas.",
       "Snapshoteá escritorios configurados y cloná miles para agentes en paralelo."
     ],
     "codeLabel": "booteá una sesión",
@@ -249,19 +249,19 @@
     }
   },
   "factorPage": {
-    "metaTitle": "Factor — El agente de IA que maneja con vos | Cyqle",
+    "metaTitle": "Factor — El agente de IA que trabaja con vos | Cyqle",
     "metaDescription": "Factor es el agente de IA de cada escritorio cloud de Cyqle: su propio cursor al lado del tuyo, control total del escritorio y el navegador, toma de control en vivo, ejecuciones reproducibles. Créditos prepagos, sin costo por puesto.",
     "hero": {
       "eyebrow": "Incluido en todos los escritorios de pago de Cyqle",
       "title": "El agente con cursor propio.",
-      "subtitle": "Factor es el agente de IA de cada escritorio cloud de Cyqle. Trabaja a tu lado en aplicaciones, archivos, terminal y navegador. Miralo trabajar. Tomá el volante.",
+      "subtitle": "Factor es el agente de IA de cada escritorio cloud de Cyqle. Trabaja a tu lado en aplicaciones, archivos, terminal y navegador. Miralo trabajar. Tomá el control.",
       "ctaPrimary": "Encendé un escritorio",
-      "ctaSecondary": "Miralo manejar con vos",
+      "ctaSecondary": "Miralo en acción",
       "endorsement": "by Cyqle",
       "creditsNote": "Funciona con créditos de IA prepagos. Cuando se acaban, las ejecuciones se detienen — nunca se te factura después."
     },
     "demo": {
-      "title": "Miralo trabajar. Tomá el volante.",
+      "title": "Miralo trabajar. Tomá el control.",
       "caption": "Un patrón que vemos todos los días: Factor trabaja, llega a un login que no le corresponde y pregunta. Intervenís con tu propio cursor y después le devolvés el control. Mismo escritorio, sin ceremonia.",
       "labels": {
         "agent": "Factor",
@@ -277,7 +277,7 @@
         "success": "Factura enviada",
         "statusWorking": "Factor está trabajando",
         "statusAsk": "Factor te necesita — código 2FA",
-        "statusHuman": "Manejás vos",
+        "statusHuman": "Controlás vos",
         "statusHandback": "Control devuelto a Factor",
         "statusDone": "Listo — ejecución grabada",
         "replay": "Ejecución grabada · reproducila cuando quieras"
@@ -292,7 +292,7 @@
         },
         {
           "title": "Una computadora entera, no una pestaña del navegador",
-          "description": "Un escritorio Linux real: Factor abre aplicaciones, administra ventanas, mueve archivos, ejecuta comandos y maneja el navegador. Si tu equipo lo hace en un escritorio, Factor también puede hacerlo ahí."
+          "description": "Un escritorio Linux real: Factor abre aplicaciones, administra ventanas, mueve archivos, ejecuta comandos y controla el navegador. Si tu equipo lo hace en un escritorio, Factor también puede hacerlo ahí."
         },
         {
           "title": "Sesiones que persisten y dejan constancia",
@@ -400,14 +400,14 @@
     "hero": {
       "titleLine1": "Las computadoras se hicieron para <s>una sola persona</s>.",
       "titleLine2": "Nosotros hicimos una para <accent>muchas</accent>.",
-      "subtitle": "Un escritorio en la nube que muchas personas —y agentes de IA— pueden manejar a la vez. Esta es la razón por la que lo construimos, y lo que hizo falta.",
+      "subtitle": "Un escritorio en la nube que muchas personas —y agentes de IA— pueden controlar a la vez. Esta es la razón por la que lo construimos, y lo que hizo falta.",
       "agentTag": "agente"
     },
     "problem": {
       "badge": "El problema",
       "title": "Toda herramienta de colaboración es un parche",
       "intro": "«¿Ven mi pantalla?» no es colaboración. Es narración.",
-      "scenario1": "Lo viviste mil veces. Una persona maneja y cuatro describen dónde hacer clic. Los archivos se exportan, se mandan por mail y se vuelven a importar. El control se «solicita».",
+      "scenario1": "Lo viviste mil veces. Una persona tiene el control y cuatro describen dónde hacer clic. Los archivos se exportan, se mandan por mail y se vuelven a importar. El control se «solicita».",
       "scenario2": "Los desarrolladores se llevan la peor parte: entornos que se desvían hasta que «en mi máquina funciona» se vuelve un encogimiento de hombros, bugs que solo existen en CI, tardes enteras reconstruyendo un setup que la semana pasada funcionaba.",
       "scenario3": "Y no es solo cosa de ingenieros. Los agentes de soporte describen arreglos que podrían simplemente hacer. Los equipos administrativos se pasan una planilla en una llamada como si fuera un bastón de mando.",
       "truth": "Parecen problemas distintos. Son uno solo: cada computadora que usaste en tu vida fue diseñada para un único usuario, y todo lo construido encima hereda ese supuesto.",
@@ -427,7 +427,7 @@
       "title": "Una máquina que todo tu equipo puede habitar",
       "intro": "Un escritorio Linux completo, vivo en tu navegador en segundos. Compartí un enlace y tu equipo está adentro: cada persona con su propio cursor y teclado, todos actuando a la vez.",
       "items": [
-        "Todos trabajan en simultáneo: sin conductores ni pasajeros",
+        "Todos trabajan en simultáneo: sin turnos ni espectadores",
         "Efímero por defecto: lo cerrás y desaparece, de forma demostrable",
         "Sacá un snapshot de un escritorio configurado y reutilizalo para siempre",
         "Pausá una sesión y la facturación se detiene; retomá exactamente donde quedaste",
