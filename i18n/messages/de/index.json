@@ -85,8 +85,8 @@
       "description": "Jeder Desktop ist ein echter Computer unter deiner Kontrolle. Nutze deine eigenen Agenten, Architekturen und Tools – was auf einem Desktop läuft, läuft auch hier."
     },
     "inHouse": {
-      "title": "Factor — der Agent am Cursor nebenan",
-      "description": "Cyqles mitsteuernder KI-Agent arbeitet mit eigenem Cursor auf deinem Desktop. Du siehst jeden Klick live, greifst jederzeit ein und gibst die Steuerung genauso leicht wieder ab.",
+      "title": "Factor — der Agent mit eigenem Cursor",
+      "description": "Cyqles mitsteuernder KI-Agent arbeitet direkt neben dir auf deinem Desktop. Du siehst jeden Klick live, greifst jederzeit ein und gibst die Steuerung genauso leicht wieder ab.",
       "items": [
         "Gib ihm eine Aufgabe und sieh ihm bei der Arbeit zu – Klick für Klick",
         "Voller Desktop-Zugriff: Apps, Dateien, Terminal, Browser",
@@ -253,8 +253,8 @@
     "metaDescription": "Factor ist der KI-Agent in jedem Cyqle-Cloud-Desktop: ein eigener Cursor neben deinem, volle Desktop- und Browser-Steuerung, Übernahme in Echtzeit, wiederabspielbare Läufe. Vorausbezahlte Credits, keine Gebühren pro Platz.",
     "hero": {
       "eyebrow": "In jedem bezahlten Cyqle-Desktop enthalten",
-      "title": "Der Agent am Cursor nebenan.",
-      "subtitle": "Factor ist der KI-Agent, der in jedem Cyqle-Cloud-Desktop steckt. Er arbeitet mit eigenem Cursor, direkt neben deinem – in Apps, Dateien, Terminal und Browser. Sieh ihm bei der Arbeit zu. Übernimm das Steuer.",
+      "title": "Der Agent mit eigenem Cursor.",
+      "subtitle": "Factor ist der KI-Agent, der in jedem Cyqle-Cloud-Desktop steckt. Er arbeitet direkt neben dir – sein Cursor neben deinem – in Apps, Dateien, Terminal und Browser. Sieh ihm bei der Arbeit zu. Übernimm das Steuer.",
       "ctaPrimary": "Desktop einschalten",
       "ctaSecondary": "Sieh ihn mitsteuern",
       "endorsement": "by Cyqle",

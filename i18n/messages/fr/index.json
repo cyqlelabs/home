@@ -85,8 +85,8 @@
       "description": "Chaque bureau est un véritable ordinateur sous votre contrôle. Exécutez vos propres agents, architectures et outils : ce qui tourne sur un bureau tourne ici."
     },
     "inHouse": {
-      "title": "Factor — l'agent au curseur d'à côté",
-      "description": "L'agent IA copilote de Cyqle travaille avec son propre curseur sur votre bureau. Vous suivez chaque clic en direct, intervenez à tout moment et lui rendez la main tout aussi facilement.",
+      "title": "Factor — l'agent avec son propre curseur",
+      "description": "L'agent IA copilote de Cyqle travaille à vos côtés, sur votre bureau. Vous suivez chaque clic en direct, intervenez à tout moment et lui rendez la main tout aussi facilement.",
       "items": [
         "Confiez-lui une tâche et regardez-le travailler, clic par clic",
         "Tout le bureau à sa portée : applications, fichiers, terminal, navigateur",
@@ -253,8 +253,8 @@
     "metaDescription": "Factor est l'agent IA de chaque bureau cloud Cyqle : son propre curseur à côté du vôtre, le contrôle complet du bureau et du navigateur, une reprise en main en direct, des exécutions rejouables. Crédits prépayés, sans frais par poste.",
     "hero": {
       "eyebrow": "Inclus dans chaque bureau Cyqle payant",
-      "title": "L'agent au curseur d'à côté.",
-      "subtitle": "Factor est l'agent IA intégré à chaque bureau cloud Cyqle. Il travaille avec son propre curseur, à côté du vôtre — dans les applications, les fichiers, le terminal et le navigateur. Regardez-le travailler. Prenez le volant.",
+      "title": "L'agent avec son propre curseur.",
+      "subtitle": "Factor est l'agent IA intégré à chaque bureau cloud Cyqle. Il travaille à vos côtés, son curseur près du vôtre — dans les applications, les fichiers, le terminal et le navigateur. Regardez-le travailler. Prenez le volant.",
       "ctaPrimary": "Allumer un bureau",
       "ctaSecondary": "Voyez-le copiloter",
       "endorsement": "by Cyqle",
