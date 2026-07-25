@@ -85,8 +85,8 @@
       "description": "Every desktop is a real computer under your control. Run your own agents, architectures, and tools — whatever works at a desktop works here."
     },
     "inHouse": {
-      "title": "Factor — the agent at the next cursor",
-      "description": "Cyqle's co-driving AI agent works at its own cursor on your desktop. You watch every click live, step in anytime, and hand control back just as easily.",
+      "title": "Factor — the agent with its own cursor",
+      "description": "Cyqle's co-driving AI agent works right beside you, on your desktop. You watch every click live, step in anytime, and hand control back just as easily.",
       "items": [
         "Give it a task and watch it work, click by click",
         "Full desktop reach: apps, files, terminal, browser",
@@ -253,8 +253,8 @@
     "metaDescription": "Factor is the AI agent in every Cyqle cloud desktop: its own cursor beside yours, full desktop and browser control, live takeover, replayable runs. Prepaid credits, no seat fees.",
     "hero": {
       "eyebrow": "Included in every paid Cyqle desktop",
-      "title": "The agent at the next cursor.",
-      "subtitle": "Factor is the AI agent built into every Cyqle cloud desktop. It works at its own cursor, beside yours — across apps, files, terminal, and browser. Watch it work. Take the wheel.",
+      "title": "The agent with its own cursor.",
+      "subtitle": "Factor is the AI agent built into every Cyqle cloud desktop. It works beside you — its cursor next to yours — across apps, files, terminal, and browser. Watch it work. Take the wheel.",
       "ctaPrimary": "Power On a Desktop",
       "ctaSecondary": "See it co-drive",
       "endorsement": "by Cyqle",

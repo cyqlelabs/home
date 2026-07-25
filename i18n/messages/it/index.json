@@ -85,8 +85,8 @@
       "description": "Ogni desktop è un vero computer sotto il tuo controllo. Esegui i tuoi agenti, le tue architetture e i tuoi strumenti: quello che funziona su un desktop funziona anche qui."
     },
     "inHouse": {
-      "title": "Factor — l'agente al cursore accanto al tuo",
-      "description": "L'agente AI di Cyqle guida al tuo fianco, con il proprio cursore sul tuo desktop. Guardi ogni clic in diretta, intervieni quando vuoi e gli restituisci il controllo con la stessa facilità.",
+      "title": "Factor — l'agente con il proprio cursore",
+      "description": "L'agente AI di Cyqle guida al tuo fianco, sul tuo desktop. Guardi ogni clic in diretta, intervieni quando vuoi e gli restituisci il controllo con la stessa facilità.",
       "items": [
         "Affidagli un compito e guardalo lavorare, clic dopo clic",
         "Tutto il desktop a portata: app, file, terminale, browser",
@@ -253,8 +253,8 @@
     "metaDescription": "Factor è l'agente AI di ogni desktop cloud Cyqle: un cursore tutto suo accanto al tuo, pieno controllo di desktop e browser, subentro in tempo reale, esecuzioni riproducibili. Crediti prepagati, nessun costo per postazione.",
     "hero": {
       "eyebrow": "Incluso in ogni desktop Cyqle a pagamento",
-      "title": "L'agente al cursore accanto al tuo.",
-      "subtitle": "Factor è l'agente AI integrato in ogni desktop cloud Cyqle. Lavora con il proprio cursore, accanto al tuo — tra app, file, terminale e browser. Guardalo lavorare. Prendi il volante.",
+      "title": "L'agente con il proprio cursore.",
+      "subtitle": "Factor è l'agente AI integrato in ogni desktop cloud Cyqle. Lavora al tuo fianco, con il suo cursore accanto al tuo — tra app, file, terminale e browser. Guardalo lavorare. Prendi il volante.",
       "ctaPrimary": "Accendi un desktop",
       "ctaSecondary": "Guardalo guidare con te",
       "endorsement": "by Cyqle",

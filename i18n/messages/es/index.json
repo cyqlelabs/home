@@ -85,8 +85,8 @@
       "description": "Cada escritorio es una computadora de verdad bajo tu control. Corré tus propios agentes, arquitecturas y herramientas: lo que funciona en un escritorio, funciona acá."
     },
     "inHouse": {
-      "title": "Factor — el agente en el cursor de al lado",
-      "description": "El agente de IA de Cyqle maneja a tu lado: trabaja con su propio cursor en tu escritorio. Ves cada clic en vivo, intervenís cuando quieras y le devolvés el control con la misma facilidad.",
+      "title": "Factor — el agente con cursor propio",
+      "description": "El agente de IA de Cyqle maneja a tu lado, en tu propio escritorio. Ves cada clic en vivo, intervenís cuando quieras y le devolvés el control con la misma facilidad.",
       "items": [
         "Dale una tarea y miralo trabajar, clic a clic",
         "Alcance total del escritorio: aplicaciones, archivos, terminal, navegador",
@@ -253,8 +253,8 @@
     "metaDescription": "Factor es el agente de IA de cada escritorio cloud de Cyqle: su propio cursor al lado del tuyo, control total del escritorio y el navegador, toma de control en vivo, ejecuciones reproducibles. Créditos prepagos, sin costo por puesto.",
     "hero": {
       "eyebrow": "Incluido en todos los escritorios de pago de Cyqle",
-      "title": "El agente en el cursor de al lado.",
-      "subtitle": "Factor es el agente de IA integrado en cada escritorio cloud de Cyqle. Trabaja con su propio cursor, al lado del tuyo — en aplicaciones, archivos, terminal y navegador. Miralo trabajar. Tomá el volante.",
+      "title": "El agente con cursor propio.",
+      "subtitle": "Factor es el agente de IA integrado en cada escritorio cloud de Cyqle. Trabaja a tu lado, con su cursor junto al tuyo — en aplicaciones, archivos, terminal y navegador. Miralo trabajar. Tomá el volante.",
       "ctaPrimary": "Encendé un escritorio",
       "ctaSecondary": "Miralo manejar con vos",
       "endorsement": "by Cyqle",
