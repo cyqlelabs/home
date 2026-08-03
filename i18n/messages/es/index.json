@@ -452,14 +452,39 @@
     "difference": {
       "badge": "Bajo el capó",
       "title": "Lo que tuvimos que resolver para hacerlo realidad",
-      "intro": "Nada de esto existe listo para usar. Un escritorio realmente multiusuario implicó resolver problemas que la mayoría de las herramientas tapa:",
+      "intro": "Nada de esto existe listo para usar. En cada capa había un atajo disponible, y tomarlo habría roto la promesa.",
+      "columns": {
+        "shortcut": "El atajo habitual",
+        "built": "Lo que construimos"
+      },
       "challenges": [
-        "Dispositivos de entrada reales para cada participante, inyectados a nivel del sistema operativo, no cursores superpuestos sobre un stream de video",
-        "Streaming de sesiones peer-to-peer, sin ningún servidor central en el camino de tus datos",
-        "Cada sesión cifrada con su propia clave, destruida al cerrar: borrado criptográfico, no un botón de eliminar",
-        "Aislamiento hermético alrededor de cada escritorio, impuesto fuera del alcance de la sesión",
-        "Escritorios totalmente configurados que arrancan en segundos desde snapshots precalentados"
+        {
+          "layer": "Entrada",
+          "shortcut": "Cursores superpuestos sobre un stream de video",
+          "built": "Dispositivos de entrada reales para cada participante, inyectados a nivel del sistema operativo"
+        },
+        {
+          "layer": "Transporte",
+          "shortcut": "Un servidor de relevo en medio de cada sesión",
+          "built": "Streaming de sesiones peer-to-peer, sin ningún servidor en el camino de tus datos"
+        },
+        {
+          "layer": "Borrado",
+          "shortcut": "Un botón de eliminar y una promesa",
+          "built": "Cada sesión cifrada con su propia clave, destruida al cerrar: borrado criptográfico"
+        },
+        {
+          "layer": "Aislamiento",
+          "shortcut": "Un aislamiento que la propia sesión se impone",
+          "built": "Aislamiento hermético alrededor de cada escritorio, impuesto fuera del alcance de la sesión"
+        },
+        {
+          "layer": "Arranque",
+          "shortcut": "Una máquina en frío y un script de configuración que hay que esperar",
+          "built": "Escritorios totalmente configurados que arrancan en segundos desde snapshots precalentados"
+        }
       ],
+      "total": "Total",
       "conclusion": "Años de infraestructura para que la experiencia siga siendo un clic."
     },
     "principles": {

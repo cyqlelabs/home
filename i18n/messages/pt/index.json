@@ -452,14 +452,39 @@
     "difference": {
       "badge": "Por baixo do capô",
       "title": "O que tivemos que resolver para tornar isso real",
-      "intro": "Nada disso existe pronto na prateleira. Um desktop realmente multiusuário exigiu resolver problemas que a maioria das ferramentas disfarça:",
+      "intro": "Nada disso existe pronto na prateleira. Em cada camada havia um atalho disponível — e pegá-lo teria quebrado a promessa.",
+      "columns": {
+        "shortcut": "O atalho de sempre",
+        "built": "O que construímos"
+      },
       "challenges": [
-        "Dispositivos de entrada reais para cada participante, injetados no nível do sistema operacional — não cursores sobrepostos num stream de vídeo",
-        "Streaming de sessão peer-to-peer, sem nenhum servidor central no caminho dos seus dados",
-        "Cada sessão criptografada com a própria chave, destruída ao fechar — apagamento criptográfico, não um botão de excluir",
-        "Isolamento hermético em volta de cada desktop, imposto fora do alcance da sessão",
-        "Desktops totalmente configurados subindo em segundos a partir de snapshots pré-aquecidos"
+        {
+          "layer": "Entrada",
+          "shortcut": "Cursores sobrepostos num stream de vídeo",
+          "built": "Dispositivos de entrada reais para cada participante, injetados no nível do sistema operacional"
+        },
+        {
+          "layer": "Transporte",
+          "shortcut": "Um servidor de relay no meio de cada sessão",
+          "built": "Streaming de sessão peer-to-peer — nenhum servidor no caminho dos seus dados"
+        },
+        {
+          "layer": "Apagamento",
+          "shortcut": "Um botão de excluir e uma promessa",
+          "built": "Cada sessão criptografada com a própria chave, destruída ao fechar — apagamento criptográfico"
+        },
+        {
+          "layer": "Isolamento",
+          "shortcut": "Um isolamento que a própria sessão se impõe",
+          "built": "Isolamento hermético em volta de cada desktop, imposto fora do alcance da sessão"
+        },
+        {
+          "layer": "Boot",
+          "shortcut": "Uma máquina fria e um script de setup para esperar",
+          "built": "Desktops totalmente configurados subindo em segundos a partir de snapshots pré-aquecidos"
+        }
       ],
+      "total": "Total",
       "conclusion": "Anos de infraestrutura para que a experiência continue sendo um clique."
     },
     "principles": {

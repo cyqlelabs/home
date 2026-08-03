@@ -452,14 +452,39 @@
     "difference": {
       "badge": "Sous le capot",
       "title": "Ce qu'il a fallu résoudre pour y arriver",
-      "intro": "Rien de tout cela n'existe sur étagère. Un bureau véritablement multi-utilisateur a exigé de résoudre des problèmes que la plupart des outils maquillent :",
+      "intro": "Rien de tout cela n'existe sur étagère. À chaque couche, un raccourci était possible — et le prendre aurait trahi la promesse.",
+      "columns": {
+        "shortcut": "Le raccourci habituel",
+        "built": "Ce que nous avons construit"
+      },
       "challenges": [
-        "De vrais périphériques d'entrée pour chaque participant, injectés au niveau du système d'exploitation — pas des curseurs superposés à un flux vidéo",
-        "Un streaming de session en pair-à-pair, sans serveur central sur le chemin de vos données",
-        "Chaque session chiffrée avec sa propre clé, détruite à la fermeture — un effacement cryptographique, pas un bouton supprimer",
-        "Une isolation hermétique autour de chaque bureau, imposée hors de portée de la session",
-        "Des bureaux entièrement configurés qui démarrent en quelques secondes depuis des snapshots préchauffés"
+        {
+          "layer": "Entrée",
+          "shortcut": "Des curseurs superposés à un flux vidéo",
+          "built": "De vrais périphériques d'entrée pour chaque participant, injectés au niveau du système d'exploitation"
+        },
+        {
+          "layer": "Transport",
+          "shortcut": "Un serveur relais au milieu de chaque session",
+          "built": "Un streaming de session en pair-à-pair — aucun serveur sur le chemin de vos données"
+        },
+        {
+          "layer": "Effacement",
+          "shortcut": "Un bouton supprimer et une promesse",
+          "built": "Chaque session chiffrée avec sa propre clé, détruite à la fermeture — un effacement cryptographique"
+        },
+        {
+          "layer": "Isolation",
+          "shortcut": "Une isolation que la session s'impose à elle-même",
+          "built": "Une isolation hermétique autour de chaque bureau, imposée hors de portée de la session"
+        },
+        {
+          "layer": "Démarrage",
+          "shortcut": "Une machine froide et un script d'installation qu'on attend",
+          "built": "Des bureaux entièrement configurés qui démarrent en quelques secondes depuis des snapshots préchauffés"
+        }
       ],
+      "total": "Total",
       "conclusion": "Des années d'infrastructure pour que l'expérience tienne en un clic."
     },
     "principles": {

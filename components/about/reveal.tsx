@@ -52,34 +52,15 @@ export function Stagger({
   );
 }
 
-export function StaggerItem({
-  children,
-  className,
-  depth = false,
-}: {
-  children: ReactNode;
-  className?: string;
-  depth?: boolean;
-}) {
+export function StaggerItem({ children, className }: { children: ReactNode; className?: string }) {
   const reduce = useReducedMotion();
 
   const variants: Variants = reduce
     ? { hidden: { opacity: 0 }, show: { opacity: 1 } }
-    : depth
-      ? {
-          hidden: { opacity: 0, y: 24, rotateX: 14, transformPerspective: 600 },
-          show: {
-            opacity: 1,
-            y: 0,
-            rotateX: 0,
-            transformPerspective: 600,
-            transition: { duration: 0.6, ease: EASE },
-          },
-        }
-      : {
-          hidden: { opacity: 0, x: -18 },
-          show: { opacity: 1, x: 0, transition: { duration: 0.5, ease: EASE } },
-        };
+    : {
+        hidden: { opacity: 0, x: -18 },
+        show: { opacity: 1, x: 0, transition: { duration: 0.5, ease: EASE } },
+      };
 
   return (
     <motion.div className={className} variants={variants}>

@@ -452,14 +452,39 @@
     "difference": {
       "badge": "Under the Hood",
       "title": "What we had to solve to make it real",
-      "intro": "None of this exists off the shelf. A truly multi-user desktop meant solving problems most tools paint over:",
+      "intro": "None of this exists off the shelf. At every layer there was a shortcut available — and taking it would have broken the promise.",
+      "columns": {
+        "shortcut": "The usual shortcut",
+        "built": "What we built"
+      },
       "challenges": [
-        "Real input devices for every participant, injected at the operating-system level — not overlay cursors drawn on a video stream",
-        "Peer-to-peer session streaming, so no central server sits in your data path",
-        "Every session encrypted with its own key, destroyed on close — cryptographic erasure, not a delete button",
-        "Airtight isolation around every desktop, enforced beyond the session's reach",
-        "Fully configured desktops booting in seconds from pre-warmed snapshots"
+        {
+          "layer": "Input",
+          "shortcut": "Overlay cursors painted on a video stream",
+          "built": "Real input devices for every participant, injected at the operating-system level"
+        },
+        {
+          "layer": "Transport",
+          "shortcut": "A relay server in the middle of every session",
+          "built": "Peer-to-peer session streaming — no server in your data path"
+        },
+        {
+          "layer": "Erasure",
+          "shortcut": "A delete button and a promise",
+          "built": "Every session encrypted with its own key, destroyed on close — cryptographic erasure"
+        },
+        {
+          "layer": "Isolation",
+          "shortcut": "Isolation the session enforces on itself",
+          "built": "Airtight isolation around every desktop, enforced beyond the session's reach"
+        },
+        {
+          "layer": "Boot",
+          "shortcut": "A cold machine and a setup script to wait on",
+          "built": "Fully configured desktops booting in seconds from pre-warmed snapshots"
+        }
       ],
+      "total": "Total",
       "conclusion": "Years of infrastructure so the experience stays one click."
     },
     "principles": {

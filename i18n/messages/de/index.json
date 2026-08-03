@@ -452,14 +452,39 @@
     "difference": {
       "badge": "Unter der Haube",
       "title": "Was wir lösen mussten, damit das Realität wird",
-      "intro": "Nichts davon gibt es von der Stange. Ein wirklich mehrbenutzerfähiger Desktop hieß, Probleme zu lösen, die die meisten Tools übertünchen:",
+      "intro": "Nichts davon gibt es von der Stange. Auf jeder Ebene gab es eine Abkürzung — und sie zu nehmen hätte das Versprechen gebrochen.",
+      "columns": {
+        "shortcut": "Die übliche Abkürzung",
+        "built": "Was wir gebaut haben"
+      },
       "challenges": [
-        "Echte Eingabegeräte für jeden Teilnehmer, injiziert auf Betriebssystem-Ebene — keine Overlay-Cursor auf einem Videostream",
-        "Peer-to-Peer-Streaming der Session, ohne zentralen Server im Datenpfad",
-        "Jede Session mit eigenem Schlüssel verschlüsselt, beim Schließen zerstört — kryptografische Löschung, kein Löschen-Button",
-        "Lückenlose Isolation um jeden Desktop, durchgesetzt außerhalb der Reichweite der Session",
-        "Vollständig konfigurierte Desktops, die in Sekunden aus vorgewärmten Snapshots booten"
+        {
+          "layer": "Eingabe",
+          "shortcut": "Overlay-Cursor, auf einen Videostream gemalt",
+          "built": "Echte Eingabegeräte für jeden Teilnehmer, injiziert auf Betriebssystem-Ebene"
+        },
+        {
+          "layer": "Transport",
+          "shortcut": "Ein Relay-Server mitten in jeder Session",
+          "built": "Peer-to-Peer-Streaming der Session — kein Server im Datenpfad"
+        },
+        {
+          "layer": "Löschung",
+          "shortcut": "Ein Löschen-Button und ein Versprechen",
+          "built": "Jede Session mit eigenem Schlüssel verschlüsselt, beim Schließen zerstört — kryptografische Löschung"
+        },
+        {
+          "layer": "Isolation",
+          "shortcut": "Isolation, die die Session sich selbst auferlegt",
+          "built": "Lückenlose Isolation um jeden Desktop, durchgesetzt außerhalb der Reichweite der Session"
+        },
+        {
+          "layer": "Start",
+          "shortcut": "Eine kalte Maschine und ein Setup-Skript, auf das man wartet",
+          "built": "Vollständig konfigurierte Desktops, die in Sekunden aus vorgewärmten Snapshots booten"
+        }
       ],
+      "total": "Summe",
       "conclusion": "Jahre an Infrastruktur, damit die Erfahrung ein Klick bleibt."
     },
     "principles": {

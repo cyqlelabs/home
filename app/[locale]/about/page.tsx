@@ -20,6 +20,10 @@ type Props = {
 
 const CURSOR_COLORS = ['#FF5F56', '#2DD4BF', '#4ADE80', '#A78BFA', '#FF7600', '#38BDF8'];
 
+const LEDGER_COLUMNS = 'md:grid-cols-[9rem_minmax(0,1fr)_minmax(0,1fr)]';
+
+type Challenge = { layer: string; shortcut: string; built: string };
+
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   unstable_setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'aboutPage' });
@@ -247,25 +251,52 @@ export default async function AboutPage({ params: { locale } }: Props) {
             <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">
               {t('difference.title')}
             </h2>
-            <p className="mb-10 text-lg text-gray-300">{t('difference.intro')}</p>
+            <p className="mb-12 max-w-2xl text-lg text-gray-300">{t('difference.intro')}</p>
           </Reveal>
-          <Stagger className="space-y-3" stagger={0.12}>
-            {t.raw('difference.challenges').map((challenge: string, i: number) => (
-              <StaggerItem key={i} depth>
+          <Reveal delay={0.05}>
+            <div
+              aria-hidden
+              className={`hidden gap-x-6 pb-3 ${LEDGER_COLUMNS} font-mono text-xs uppercase tracking-[0.16em] text-gray-400 md:grid`}
+            >
+              <span />
+              <span>{t('difference.columns.shortcut')}</span>
+              <span className="text-[#FF7600]">{t('difference.columns.built')}</span>
+            </div>
+          </Reveal>
+          <Stagger className="border-b border-white/10" stagger={0.1}>
+            {t.raw('difference.challenges').map((row: Challenge, i: number) => (
+              <StaggerItem key={i}>
                 <div
-                  className="border-l-2 py-2 pl-4"
-                  style={{
-                    marginLeft: i * 12,
-                    borderColor: `rgba(255,118,0,${0.9 - i * 0.15})`,
-                  }}
+                  className={`group grid grid-cols-1 gap-x-6 gap-y-1.5 border-t border-white/10 py-5 transition-colors hover:border-[#FF7600]/40 md:items-baseline ${LEDGER_COLUMNS}`}
                 >
-                  <span className="text-gray-300">{challenge}</span>
+                  <span className="font-mono text-xs uppercase tracking-[0.16em] text-gray-400 transition-colors group-hover:text-[#FF7600]">
+                    {row.layer}
+                  </span>
+                  <p className="text-[15px] leading-relaxed text-gray-400">
+                    <span className="sr-only">{t('difference.columns.shortcut')}: </span>
+                    <s className="line-through decoration-[#FF7600]/60 decoration-1">
+                      {row.shortcut}
+                    </s>
+                  </p>
+                  <p className="text-[15px] font-medium leading-relaxed text-gray-100">
+                    <span className="sr-only">{t('difference.columns.built')}: </span>
+                    {row.built}
+                  </p>
                 </div>
               </StaggerItem>
             ))}
           </Stagger>
           <Reveal delay={0.1}>
-            <p className="mt-10 text-lg font-medium text-gray-200">{t('difference.conclusion')}</p>
+            <div
+              className={`mt-6 grid grid-cols-1 gap-x-6 gap-y-1.5 md:items-baseline ${LEDGER_COLUMNS}`}
+            >
+              <span className="font-mono text-xs uppercase tracking-[0.16em] text-[#FF7600]">
+                {t('difference.total')}
+              </span>
+              <p className="text-lg font-medium text-white md:col-span-2">
+                {t('difference.conclusion')}
+              </p>
+            </div>
           </Reveal>
         </div>
       </section>
