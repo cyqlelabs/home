@@ -137,7 +137,7 @@ export class GlobeRenderer {
   private height = 0;
   private dpr = 1;
   private radius = 0;
-  private readonly fov = 800;
+  private fov = 0;
 
   private rotationAngle = 30 * DEG;
   private readonly tiltBase = -18 * DEG;
@@ -263,6 +263,9 @@ export class GlobeRenderer {
     this.canvas.width = w * this.dpr;
     this.canvas.height = h * this.dpr;
     this.radius = Math.min(w, h) * (this.isMobile ? 0.46 : 0.36);
+    // Focal length must scale with the radius: a fixed value puts the camera
+    // inside the sphere on large viewports, blowing the projection up.
+    this.fov = this.radius * (this.isMobile ? 4.5 : 2.25);
   }
 
   private readonly tick = (now: number) => {
