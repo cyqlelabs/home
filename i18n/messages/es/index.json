@@ -82,7 +82,8 @@
     "description": "Cyqle no es solo un escritorio. Es una plataforma de automatización — con un agente de IA residente, y lugar para los tuyos.",
     "byo": {
       "title": "Traé tus propios agentes",
-      "description": "Cada escritorio es una computadora de verdad bajo tu control. Corré tus propios agentes, arquitecturas y herramientas: lo que funciona en un escritorio, funciona acá."
+      "description": "Cada escritorio es una computadora de verdad bajo tu control. Corré tus propios agentes, arquitecturas y herramientas: lo que funciona en un escritorio, funciona acá.",
+      "learnMore": "Conocé el sandbox para agentes"
     },
     "inHouse": {
       "title": "Factor — el agente con cursor propio",
@@ -249,7 +250,7 @@
     }
   },
   "factorPage": {
-    "metaTitle": "Factor — El agente de IA que trabaja con vos | Cyqle",
+    "metaTitle": "Factor — El agente de IA que trabaja con vos",
     "metaDescription": "Factor es el agente de IA de cada escritorio cloud de Cyqle: su propio cursor al lado del tuyo, control total del escritorio y el navegador, toma de control en vivo, ejecuciones reproducibles. Créditos prepagos, sin costo por puesto.",
     "hero": {
       "eyebrow": "Incluido en cada escritorio de pago",
@@ -356,6 +357,234 @@
       "description": "Un escritorio en segundos. Factor en todos los planes de pago.\nPlan gratis para mirar — sin tarjeta de crédito.",
       "button": "Encendé un escritorio",
       "trialInfo": "Plan gratis disponible. Sin tarjeta de crédito."
+    }
+  },
+  "agentsPage": {
+    "metaTitle": "Un sandbox para tus agentes de IA: escritorios aislados en la nube",
+    "metaDescription": "Dale a cada agente de IA su propio escritorio Linux aislado en la nube, con navegador real, acceso root, snapshots y una API REST. Mirá cada clic y tomá el control cuando se traba. Nivel gratis disponible.",
+    "hero": {
+      "eyebrow": "Para desarrolladores que usan agentes de IA",
+      "title": "Un <box>sandbox</box> para tus agentes de IA",
+      "subtitle": "Dale a cada agente su propio escritorio Linux aislado en la nube, con un navegador de verdad, acceso root y una API. Mirá cómo trabaja y tomá el control cuando se traba.",
+      "ctaPrimary": "Probá un escritorio gratis",
+      "ctaSecondary": "Ver la API",
+      "note": "Nivel gratis: sesiones de {minutes} minutos, sin tarjeta de crédito."
+    },
+    "demo": {
+      "summary": "Animación: un agente de IA inicia sesión en el portal de un proveedor dentro de un escritorio aislado de Cyqle y se detiene ante un código de verificación. Una persona escribe el código con su propio cursor y le devuelve el control. El agente exporta un archivo y después el mismo snapshot arranca tres ejecuciones en paralelo.",
+      "labels": {
+        "agent": "tu agente",
+        "human": "vos",
+        "task": "Exportar los pedidos del mes pasado desde el portal del proveedor",
+        "boundary": "escritorio aislado",
+        "network": "red propia",
+        "disk": "disco cifrado",
+        "browserUrl": "portal.proveedor.example",
+        "signIn": "Iniciar sesión",
+        "fieldEmail": "Email",
+        "fieldPassword": "Contraseña",
+        "fieldCode": "Código de verificación",
+        "export": "Exportar pedidos",
+        "ordersTitle": "Pedidos de septiembre",
+        "terminalTitle": "log del agente",
+        "logReady": "escritorio listo desde snap-7f3a",
+        "logOpen": "abrir portal.proveedor.example",
+        "logSignIn": "iniciar sesión como ops@acme.example",
+        "logWait": "falta el código 2FA, esperando a una persona",
+        "logResumed": "retomado",
+        "logExport": "exportar pedidos: septiembre",
+        "logSaved": "guardado exports/orders-sep.csv",
+        "statusBoot": "Arrancando desde tu snapshot",
+        "statusWorking": "Tu agente está trabajando",
+        "statusAsk": "En pausa: necesita un código 2FA",
+        "statusHuman": "Controlás vos",
+        "statusHandback": "Control devuelto a tu agente",
+        "statusDone": "Listo, archivo guardado",
+        "statusClone": "El mismo snapshot, tres ejecuciones a la vez",
+        "run": "ejecución"
+      }
+    },
+    "compare": {
+      "title": "¿Dónde debería correr tu agente?",
+      "intro": "Un agente que hace clic y escribe necesita una computadora entera. La pregunta es de quién.",
+      "columns": {
+        "laptop": "Tu notebook",
+        "headless": "Servicio de navegador headless",
+        "cyqle": "Escritorio de Cyqle"
+      },
+      "rows": [
+        {
+          "label": "A qué puede llegar",
+          "laptop": "Tus archivos, tus cuentas abiertas, tu red",
+          "headless": "Un navegador y nada más",
+          "cyqle": "Un escritorio propio, con solo lo que vos pongas ahí"
+        },
+        {
+          "label": "Cuando se traba",
+          "laptop": "Dejás lo que estás haciendo para destrabarlo",
+          "headless": "Leer logs, adivinar, volver a correrlo",
+          "cyqle": "Abrís el mismo escritorio y tomás el control"
+        },
+        {
+          "label": "Punto de partida",
+          "laptop": "Lo que haya hoy en tu máquina",
+          "headless": "Limpio, pero solo navegador",
+          "cyqle": "Un snapshot que configurás una vez, idéntico en cada ejecución"
+        },
+        {
+          "label": "Diez ejecuciones a la vez",
+          "laptop": "Una máquina, una ejecución",
+          "headless": "Sí",
+          "cyqle": "Sí, un clon por ejecución"
+        },
+        {
+          "label": "Cuando una ejecución sale mal",
+          "laptop": "Salió mal en tu máquina",
+          "headless": "Queda contenida",
+          "cyqle": "Queda contenida. La cerrás y arrancás una copia limpia"
+        }
+      ]
+    },
+    "features": {
+      "title": "Lo que cada escritorio le da a tu agente",
+      "items": [
+        {
+          "label": "aislamiento",
+          "title": "Su propia red y su propio disco",
+          "description": "Cada escritorio tiene su propia red y su propio almacenamiento, cifrado con claves creadas para esa sesión. Nada de tu notebook viaja con él, salvo lo que vos mandes."
+        },
+        {
+          "label": "escritorio completo",
+          "title": "Root en un escritorio Linux de verdad",
+          "description": "Navegador, terminal y acceso root completo. Instalá tu agente y las apps que tenga que manejar. Si corre en Linux, corre acá."
+        },
+        {
+          "label": "snapshots",
+          "title": "El mismo punto de partida, siempre",
+          "description": "Configurá un escritorio una vez, como lo necesita tu agente, y sacale un snapshot. Cada ejecución arranca una copia limpia, así una ejecución fallida nunca contamina la siguiente."
+        },
+        {
+          "label": "ejecuciones en paralelo",
+          "title": "Un snapshot, muchas ejecuciones",
+          "description": "Arrancá un clon por tarea desde tu código. Cada clon es un escritorio separado, así que las ejecuciones nunca comparten estado."
+        },
+        {
+          "label": "pausa y reanudación",
+          "title": "Frená a mitad de camino y seguí después",
+          "description": "Pausar congela el escritorio exactamente donde está. Al reanudarlo vuelven las mismas ventanas, a mitad de la tarea."
+        },
+        {
+          "label": "humano en el circuito",
+          "title": "Una persona puede intervenir",
+          "description": "Tu agente maneja con su propio cursor. Abrí el mismo escritorio en tu navegador para mirarlo trabajar, o agarrá tu propio cursor y tomá el control."
+        }
+      ]
+    },
+    "api": {
+      "eyebrow": "API REST",
+      "title": "Manejá el escritorio por HTTP",
+      "description": "Cada escritorio es un endpoint de la API. Tu agente lee la pantalla, mueve su propio cursor, escribe y ejecuta comandos de shell. Tu código decide cuándo clonar un escritorio y cuándo pausarlo o cerrarlo.",
+      "codeLabel": "agent-run.sh",
+      "comments": {
+        "boot": "Arrancá una copia limpia de tu snapshot",
+        "act": "Hacé clic con el cursor propio de tu agente",
+        "pause": "Congelalo a mitad de camino y retomalo después"
+      },
+      "endpointsTitle": "Las llamadas que más usa tu agente",
+      "endpoints": {
+        "boot": "Arrancar un escritorio, desde un snapshot si querés",
+        "capture": "Capturar cualquier región de la pantalla",
+        "mouse": "Mover, hacer clic, arrastrar, scrollear",
+        "keyboard": "Escribir texto o apretar combinaciones de teclas",
+        "exec": "Ejecutar un comando de shell y leer la salida",
+        "snapshot": "Sacarle un snapshot a un escritorio configurado",
+        "pause": "Congelarlo; PUT …/resume lo retoma",
+        "close": "Cerrar el escritorio"
+      },
+      "cta": "Leer la documentación de la API"
+    },
+    "steps": {
+      "title": "Cómo funciona una ejecución",
+      "items": [
+        {
+          "title": "Configuralo una vez",
+          "description": "Abrí un escritorio, instalá tu agente y sus herramientas, e iniciá sesión donde lo necesite. Después sacale un snapshot."
+        },
+        {
+          "title": "Correlo desde tu código",
+          "description": "Arrancá una copia del snapshot para cada tarea. Tu agente trabaja por la API, con su propio cursor."
+        },
+        {
+          "title": "Intervení cuando te lo pida",
+          "description": "Cuando tu agente necesita a una persona, por un código 2FA o una decisión, abrí el escritorio y hacé ese paso vos. Después devolvele el control."
+        }
+      ]
+    },
+    "factor": {
+      "eyebrow": "Incluido en cada escritorio de pago",
+      "title": "¿Preferís no armar el agente vos?",
+      "description": "Factor, el agente de IA de Cyqle que trabaja a tu lado, funciona en los mismos escritorios. Describí la tarea con tus palabras y miralo trabajar con su propio cursor.",
+      "link": "Conocé a Factor"
+    },
+    "pricing": {
+      "title": "Empezá gratis. Pagá por escritorio.",
+      "free": {
+        "name": "Gratis",
+        "price": "${price}",
+        "per": "sin tarjeta de crédito",
+        "time": "Sesiones de {minutes} minutos",
+        "specs": "{vcpu} vCPU · {ram} GB de RAM",
+        "api": "Acceso a la API",
+        "fresh": "Arranca limpio en cada sesión",
+        "snapshots": "Sin snapshots",
+        "factor": "Sin Factor",
+        "cta": "Probá un escritorio gratis"
+      },
+      "paid": {
+        "name": "Planes de pago",
+        "price": "desde ${from}",
+        "per": "por escritorio / mes",
+        "time": "Sin límite de tiempo por sesión",
+        "storage": "Almacenamiento persistente y snapshots",
+        "specs": "Hasta {vcpu} vCPU · {ram} GB de RAM",
+        "factor": "Factor, con créditos de IA mensuales",
+        "cta": "Comparar planes"
+      }
+    },
+    "faq": {
+      "title": "Lo que preguntan los desarrolladores",
+      "items": [
+        {
+          "q": "¿Qué tan aislado está un escritorio?",
+          "a": "Cada escritorio corre en su propio entorno aislado, con su propia red y su propio almacenamiento, cifrado con claves creadas para esa sesión. Tu agente llega a internet y a lo que instales ahí, no a tu notebook ni a los archivos de tus otros escritorios."
+        },
+        {
+          "q": "¿Puedo usar mi propio framework de agentes?",
+          "a": "Sí. Funciona todo lo que corre en Linux: tu propio código, frameworks de agentes open source, scripts de automatización del navegador. Instalalo dentro del escritorio con acceso root, o dejá tu agente afuera y manejá el escritorio por la API."
+        },
+        {
+          "q": "¿Qué pasa con los archivos cuando termina una ejecución?",
+          "a": "En el nivel gratis, cada sesión arranca limpia y no se guarda nada. Los planes de pago conservan el almacenamiento del escritorio entre sesiones, y los snapshots guardan un escritorio que podés arrancar una y otra vez."
+        },
+        {
+          "q": "¿Una persona puede tomar el control a mitad de una ejecución?",
+          "a": "Sí. Abrí el escritorio en tu navegador y tenés tu propio cursor y teclado al lado de los de tu agente. Hacé ese paso y dejá que el agente siga. Tus compañeros también pueden sumarse al mismo escritorio."
+        },
+        {
+          "q": "¿Cómo corro agentes en paralelo?",
+          "a": "Sacale un snapshot a un escritorio configurado y arrancá un clon por tarea desde la API. Cada clon es su propio escritorio, y podés correr a la vez tantos como escritorios tengas en tu cuenta."
+        },
+        {
+          "q": "¿Cuánto cuesta?",
+          "a": "El nivel gratis te da sesiones cortas con acceso a la API, sin costo. Los planes de pago se cobran por escritorio y suman almacenamiento persistente, snapshots, sesiones sin límite de tiempo y Factor. Los planes están más arriba."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Dale a tu agente su propia computadora",
+      "description": "Arrancá un escritorio e instalá tu agente. El nivel gratis no pide tarjeta de crédito.",
+      "button": "Probá un escritorio gratis",
+      "note": "Planes de pago desde ${from} al mes por escritorio."
     }
   },
   "footer": {

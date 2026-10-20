@@ -2,7 +2,15 @@ import { type MetadataRoute } from 'next';
 import { siteMetadata } from '@/lib/site-metadata';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ['', '/about', '/factor', '/cookies', '/privacy-policy', '/terms-of-service'];
+  const routes = [
+    '',
+    '/about',
+    '/factor',
+    '/agents',
+    '/cookies',
+    '/privacy-policy',
+    '/terms-of-service',
+  ];
 
   const sitemap: MetadataRoute.Sitemap = [];
 

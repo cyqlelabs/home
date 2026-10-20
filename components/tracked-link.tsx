@@ -6,6 +6,8 @@ import { type ReactNode } from 'react';
 const UTM_PARAMS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
 
 function appendUtmParams(href: string): string {
+  // An in-page anchor keeps the current URL, UTMs included.
+  if (href.startsWith('#')) return href;
   try {
     const pageParams = new URLSearchParams(window.location.search);
     const utms = new URLSearchParams();
@@ -18,8 +20,10 @@ function appendUtmParams(href: string): string {
       }
     }
     if (!hasUtm) return href;
-    const separator = href.includes('?') ? '&' : '?';
-    return `${href}${separator}${utms.toString()}`;
+    // The query must precede the fragment, or the anchor stops matching an element id.
+    const [path, fragment] = href.split('#', 2);
+    const separator = path.includes('?') ? '&' : '?';
+    return `${path}${separator}${utms.toString()}${fragment === undefined ? '' : `#${fragment}`}`;
   } catch {
     return href;
   }
@@ -51,6 +55,14 @@ interface TrackedLinkProps {
     | 'factorHeroSignup'
     | 'factorHeroDemo'
     | 'factorFinalCta'
+    | 'aiSectionAgents'
+    | 'agentsHeroSignup'
+    | 'agentsHeroApi'
+    | 'agentsApiDocs'
+    | 'agentsMeetFactor'
+    | 'agentsPricingSignup'
+    | 'agentsComparePlans'
+    | 'agentsFinalCta'
     | 'apiTeaserCta'
     | 'footerHome'
     | 'footerAbout'

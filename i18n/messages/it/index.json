@@ -82,7 +82,8 @@
     "description": "Cyqle non è solo un desktop. È una piattaforma di automazione — con un agente AI residente, e spazio per i tuoi.",
     "byo": {
       "title": "Porta i tuoi agenti",
-      "description": "Ogni desktop è un vero computer sotto il tuo controllo. Esegui i tuoi agenti, le tue architetture e i tuoi strumenti: quello che funziona su un desktop funziona anche qui."
+      "description": "Ogni desktop è un vero computer sotto il tuo controllo. Esegui i tuoi agenti, le tue architetture e i tuoi strumenti: quello che funziona su un desktop funziona anche qui.",
+      "learnMore": "Scopri la sandbox per agenti"
     },
     "inHouse": {
       "title": "Factor — l'agente con il proprio cursore",
@@ -249,7 +250,7 @@
     }
   },
   "factorPage": {
-    "metaTitle": "Factor — L'agente AI che guida con te | Cyqle",
+    "metaTitle": "Factor — L'agente AI che guida con te",
     "metaDescription": "Factor è l'agente AI di ogni desktop cloud Cyqle: un cursore tutto suo accanto al tuo, pieno controllo di desktop e browser, subentro in tempo reale, esecuzioni riproducibili. Crediti prepagati, nessun costo per postazione.",
     "hero": {
       "eyebrow": "Incluso in ogni desktop Cyqle a pagamento",
@@ -356,6 +357,234 @@
       "description": "Un desktop in pochi secondi. Factor in ogni piano a pagamento.\nPiano gratuito per dare un'occhiata — senza carta di credito.",
       "button": "Accendi un desktop",
       "trialInfo": "Piano gratuito disponibile. Nessuna carta di credito richiesta."
+    }
+  },
+  "agentsPage": {
+    "metaTitle": "Una sandbox per i tuoi agenti AI: desktop cloud isolati",
+    "metaDescription": "Dai a ogni agente AI il suo desktop Linux isolato nel cloud, con un vero browser, accesso root, snapshot e una API REST. Guarda ogni clic e prendi il controllo quando si blocca. Piano gratuito disponibile.",
+    "hero": {
+      "eyebrow": "Per chi sviluppa con agenti AI",
+      "title": "Una <box>sandbox</box> per i tuoi agenti AI",
+      "subtitle": "Dai a ogni agente il suo desktop Linux isolato nel cloud, con un vero browser, accesso root e una API. Guardalo lavorare e prendi il controllo quando si blocca.",
+      "ctaPrimary": "Avvia un desktop gratis",
+      "ctaSecondary": "Vedi l'API",
+      "note": "Piano gratuito: sessioni da {minutes} minuti, senza carta di credito."
+    },
+    "demo": {
+      "summary": "Animazione: un agente AI accede al portale di un fornitore dentro un desktop Cyqle isolato e si ferma davanti a un codice di verifica. Una persona digita il codice con il proprio cursore e gli restituisce il controllo. L'agente esporta un file, poi lo stesso snapshot avvia tre esecuzioni in parallelo.",
+      "labels": {
+        "agent": "il tuo agente",
+        "human": "tu",
+        "task": "Esportare gli ordini del mese scorso dal portale del fornitore",
+        "boundary": "desktop isolato",
+        "network": "rete propria",
+        "disk": "disco cifrato",
+        "browserUrl": "portal.supplier.example",
+        "signIn": "Accedi",
+        "fieldEmail": "Email",
+        "fieldPassword": "Password",
+        "fieldCode": "Codice di verifica",
+        "export": "Esporta",
+        "ordersTitle": "Ordini di settembre",
+        "terminalTitle": "log dell'agente",
+        "logReady": "desktop pronto da snap-7f3a",
+        "logOpen": "apri portal.supplier.example",
+        "logSignIn": "accesso come ops@acme.example",
+        "logWait": "serve un codice 2FA, in attesa di una persona",
+        "logResumed": "ripreso",
+        "logExport": "esporta ordini: settembre",
+        "logSaved": "salvato exports/orders-sep.csv",
+        "statusBoot": "Avvio dal tuo snapshot",
+        "statusWorking": "Il tuo agente sta lavorando",
+        "statusAsk": "In pausa: serve un codice 2FA",
+        "statusHuman": "Stai guidando tu",
+        "statusHandback": "Di nuovo al tuo agente",
+        "statusDone": "Fatto, file salvato",
+        "statusClone": "Stesso snapshot, tre esecuzioni insieme",
+        "run": "esecuzione"
+      }
+    },
+    "compare": {
+      "title": "Dove dovrebbe girare il tuo agente?",
+      "intro": "Un agente che clicca e scrive ha bisogno di un computer intero. Resta da capire di chi.",
+      "columns": {
+        "laptop": "Il tuo portatile",
+        "headless": "Servizio di browser headless",
+        "cyqle": "Desktop Cyqle"
+      },
+      "rows": [
+        {
+          "label": "Cosa può raggiungere",
+          "laptop": "I tuoi file, i tuoi account connessi, la tua rete",
+          "headless": "Un browser, e nient'altro",
+          "cyqle": "Un desktop tutto suo, con solo quello che ci metti tu"
+        },
+        {
+          "label": "Quando si blocca",
+          "laptop": "Molli tutto per sbloccarlo",
+          "headless": "Leggi i log, tiri a indovinare, lo rilanci",
+          "cyqle": "Apri lo stesso desktop e prendi il controllo"
+        },
+        {
+          "label": "Punto di partenza",
+          "laptop": "Quello che c'è oggi sulla tua macchina",
+          "headless": "Pulito, ma solo browser",
+          "cyqle": "Uno snapshot preparato una volta, identico a ogni esecuzione"
+        },
+        {
+          "label": "Dieci esecuzioni insieme",
+          "laptop": "Una macchina, un'esecuzione",
+          "headless": "Sì",
+          "cyqle": "Sì, un clone per esecuzione"
+        },
+        {
+          "label": "Quando un'esecuzione va storta",
+          "laptop": "È andata storta sulla tua macchina",
+          "headless": "Resta isolata",
+          "cyqle": "Resta isolata. Chiudila e avvia una copia pulita"
+        }
+      ]
+    },
+    "features": {
+      "title": "Cosa dà ogni desktop al tuo agente",
+      "items": [
+        {
+          "label": "isolamento",
+          "title": "Rete e disco tutti suoi",
+          "description": "Ogni desktop ha la sua rete e il suo spazio di archiviazione, cifrato con chiavi create per quella sessione. Dal tuo portatile non arriva nulla, a meno che non sia tu a mandarlo."
+        },
+        {
+          "label": "desktop completo",
+          "title": "Root su un vero desktop Linux",
+          "description": "Browser, terminale e accesso root completo. Installa il tuo agente e le app che deve usare. Se gira su Linux, gira qui."
+        },
+        {
+          "label": "snapshot",
+          "title": "Lo stesso punto di partenza, sempre",
+          "description": "Prepara un desktop una volta, come serve al tuo agente, e fanne uno snapshot. Ogni esecuzione avvia una copia pulita, così un'esecuzione andata male non contamina mai la successiva."
+        },
+        {
+          "label": "esecuzioni parallele",
+          "title": "Uno snapshot, tante esecuzioni",
+          "description": "Avvia un clone per ogni attività dal tuo codice. Ogni clone è un desktop separato, quindi le esecuzioni non condividono mai lo stato."
+        },
+        {
+          "label": "pausa e ripresa",
+          "title": "Fermati a metà, riprendi dopo",
+          "description": "La pausa congela un desktop esattamente dov'è. Alla ripresa tornano le stesse finestre, a metà del lavoro."
+        },
+        {
+          "label": "persona nel ciclo",
+          "title": "Una persona può intervenire",
+          "description": "Il tuo agente guida con il suo cursore. Apri lo stesso desktop nel browser per guardarlo lavorare, oppure prendi il tuo cursore e il controllo."
+        }
+      ]
+    },
+    "api": {
+      "eyebrow": "API REST",
+      "title": "Guida il desktop via HTTP",
+      "description": "Ogni desktop è un endpoint dell'API. Il tuo agente legge lo schermo, muove il suo cursore, scrive ed esegue comandi shell. Il tuo codice decide quando clonare un desktop e quando metterlo in pausa o chiuderlo.",
+      "codeLabel": "agent-run.sh",
+      "comments": {
+        "boot": "Avvia una copia pulita del tuo snapshot",
+        "act": "Clicca con il cursore del tuo agente",
+        "pause": "Congelalo a metà, riprendi dopo"
+      },
+      "endpointsTitle": "Le chiamate che il tuo agente usa di più",
+      "endpoints": {
+        "boot": "Avvia un desktop, anche da uno snapshot",
+        "capture": "Cattura qualsiasi area dello schermo",
+        "mouse": "Muovi, clicca, trascina, scorri",
+        "keyboard": "Scrivi testo o premi combinazioni di tasti",
+        "exec": "Esegui un comando shell e leggi l'output",
+        "snapshot": "Crea lo snapshot di un desktop configurato",
+        "pause": "Congelalo; PUT …/resume lo riprende",
+        "close": "Chiudi il desktop"
+      },
+      "cta": "Leggi la documentazione dell'API"
+    },
+    "steps": {
+      "title": "Come funziona un'esecuzione",
+      "items": [
+        {
+          "title": "Preparalo una volta",
+          "description": "Apri un desktop, installa il tuo agente e i suoi strumenti, e accedi a ciò che gli serve. Poi crea uno snapshot."
+        },
+        {
+          "title": "Avvialo dal codice",
+          "description": "Avvia una copia dello snapshot per ogni attività. Il tuo agente lavora tramite l'API, con il suo cursore."
+        },
+        {
+          "title": "Intervieni quando lo chiede",
+          "description": "Quando il tuo agente ha bisogno di una persona, per un codice 2FA o una decisione, apri il desktop e fai tu quel passaggio. Poi restituiscigli il controllo."
+        }
+      ]
+    },
+    "factor": {
+      "eyebrow": "Incluso in ogni desktop a pagamento",
+      "title": "Preferisci non costruirti l'agente?",
+      "description": "Factor, l'agente AI di Cyqle che guida con te, lavora negli stessi desktop. Descrivi l'attività con parole tue e guardalo lavorare con il suo cursore.",
+      "link": "Scopri Factor"
+    },
+    "pricing": {
+      "title": "Inizia gratis. Paga per desktop.",
+      "free": {
+        "name": "Gratuito",
+        "price": "${price}",
+        "per": "senza carta di credito",
+        "time": "Sessioni da {minutes} minuti",
+        "specs": "{vcpu} vCPU · {ram} GB di RAM",
+        "api": "Accesso all'API",
+        "fresh": "Riparte pulito a ogni sessione",
+        "snapshots": "Niente snapshot",
+        "factor": "Factor non incluso",
+        "cta": "Avvia un desktop gratis"
+      },
+      "paid": {
+        "name": "Piani a pagamento",
+        "price": "da ${from}",
+        "per": "per desktop / mese",
+        "time": "Nessun limite di durata delle sessioni",
+        "storage": "Archiviazione persistente e snapshot",
+        "specs": "Fino a {vcpu} vCPU · {ram} GB di RAM",
+        "factor": "Factor, con crediti AI mensili",
+        "cta": "Confronta i piani"
+      }
+    },
+    "faq": {
+      "title": "Le domande di chi sviluppa",
+      "items": [
+        {
+          "q": "Quanto è isolato un desktop?",
+          "a": "Ogni desktop gira nel suo ambiente isolato, con la sua rete e il suo spazio di archiviazione, cifrato con chiavi create per quella sessione. Il tuo agente raggiunge internet e ciò che installi lì, non il tuo portatile né i file dei tuoi altri desktop."
+        },
+        {
+          "q": "Posso usare il mio framework di agenti?",
+          "a": "Sì. Funziona tutto ciò che gira su Linux: il tuo codice, framework di agenti open source, script di automazione del browser. Installalo nel desktop con accesso root, oppure tieni l'agente all'esterno e guida il desktop tramite l'API."
+        },
+        {
+          "q": "Cosa succede ai file quando finisce un'esecuzione?",
+          "a": "Nel piano gratuito ogni sessione riparte pulita e non si conserva nulla. I piani a pagamento mantengono l'archiviazione del desktop tra una sessione e l'altra, e gli snapshot salvano un desktop che puoi avviare quante volte vuoi."
+        },
+        {
+          "q": "Una persona può prendere il controllo a metà esecuzione?",
+          "a": "Sì. Apri il desktop nel browser e hai il tuo cursore e la tua tastiera accanto a quelli del tuo agente. Fai il passaggio, poi lascia che l'agente continui. Anche i colleghi possono entrare nello stesso desktop."
+        },
+        {
+          "q": "Come eseguo agenti in parallelo?",
+          "a": "Crea lo snapshot di un desktop configurato, poi avvia un clone per attività tramite l'API. Ogni clone è un desktop a sé, e puoi eseguirne insieme quanti sono i desktop del tuo account."
+        },
+        {
+          "q": "Quanto costa?",
+          "a": "Il piano gratuito offre sessioni brevi con accesso all'API, senza costi. I piani a pagamento si pagano per desktop e aggiungono archiviazione persistente, snapshot, sessioni senza limiti di durata e Factor. I piani sono descritti più sopra."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Dai al tuo agente un computer tutto suo",
+      "description": "Avvia un desktop e installa il tuo agente. Il piano gratuito non chiede la carta di credito.",
+      "button": "Avvia un desktop gratis",
+      "note": "Piani a pagamento da ${from}/mese per desktop."
     }
   },
   "footer": {

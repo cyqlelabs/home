@@ -260,6 +260,91 @@ export const trackCTA = {
     });
   },
 
+  aiSectionAgents: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Landing',
+      event_label: 'AI Section - Agent sandbox',
+      button_location: 'landing_ai_section',
+      button_text: 'Agent sandbox',
+      event_callback: callback,
+    });
+  },
+
+  agentsHeroSignup: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Agents',
+      event_label: 'Agents Hero - Start a free desktop',
+      button_location: 'agents_hero',
+      button_text: 'Start a free desktop',
+      destination: 'https://app.cyqle.in/signup',
+      event_callback: callback,
+    });
+  },
+
+  agentsHeroApi: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Agents',
+      event_label: 'Agents Hero - See the API',
+      button_location: 'agents_hero',
+      button_text: 'See the API',
+      destination: '#api',
+      event_callback: callback,
+    });
+  },
+
+  agentsApiDocs: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Agents',
+      event_label: 'Agents API - Read the API docs',
+      button_location: 'agents_api',
+      button_text: 'Read the API docs',
+      destination: 'https://api.cyqle.in/docs/',
+      event_callback: callback,
+    });
+  },
+
+  agentsMeetFactor: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Agents',
+      event_label: 'Agents Factor band - Meet Factor',
+      button_location: 'agents_factor',
+      button_text: 'Meet Factor',
+      event_callback: callback,
+    });
+  },
+
+  agentsPricingSignup: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Agents',
+      event_label: 'Agents Pricing - Start a free desktop',
+      button_location: 'agents_pricing',
+      button_text: 'Start a free desktop',
+      destination: 'https://app.cyqle.in/signup',
+      event_callback: callback,
+    });
+  },
+
+  agentsComparePlans: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Agents',
+      event_label: 'Agents Pricing - Compare plans',
+      button_location: 'agents_pricing',
+      button_text: 'Compare plans',
+      event_callback: callback,
+    });
+  },
+
+  agentsFinalCta: (callback?: () => void) => {
+    trackEvent('click', {
+      event_category: 'Agents',
+      event_label: 'Agents Final CTA - Start a free desktop',
+      button_location: 'agents_final_cta',
+      button_text: 'Start a free desktop',
+      destination: 'https://app.cyqle.in/signup',
+      event_callback: callback,
+    });
+  },
+
   navbarApi: (callback?: () => void) => {
     trackEvent('click', {
       event_category: 'Navigation',

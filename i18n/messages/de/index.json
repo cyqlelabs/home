@@ -82,7 +82,8 @@
     "description": "Cyqle ist nicht nur ein Desktop, sondern eine Automatisierungsplattform – mit einem hauseigenen KI-Agenten und Platz für deine eigenen.",
     "byo": {
       "title": "Bring deine eigenen Agenten mit",
-      "description": "Jeder Desktop ist ein echter Computer unter deiner Kontrolle. Nutze deine eigenen Agenten, Architekturen und Tools – was auf einem Desktop läuft, läuft auch hier."
+      "description": "Jeder Desktop ist ein echter Computer unter deiner Kontrolle. Nutze deine eigenen Agenten, Architekturen und Tools – was auf einem Desktop läuft, läuft auch hier.",
+      "learnMore": "Zur Sandbox für Agenten"
     },
     "inHouse": {
       "title": "Factor — der Agent mit eigenem Cursor",
@@ -249,7 +250,7 @@
     }
   },
   "factorPage": {
-    "metaTitle": "Factor — Der mitsteuernde KI-Agent | Cyqle",
+    "metaTitle": "Factor — Der mitsteuernde KI-Agent",
     "metaDescription": "Factor ist der KI-Agent in jedem Cyqle-Cloud-Desktop: ein eigener Cursor neben deinem, volle Desktop- und Browser-Steuerung, Übernahme in Echtzeit, wiederabspielbare Läufe. Vorausbezahlte Credits, keine Gebühren pro Platz.",
     "hero": {
       "eyebrow": "In jedem bezahlten Desktop enthalten",
@@ -356,6 +357,234 @@
       "description": "Ein Desktop in Sekunden. Factor in jedem Bezahltarif.\nKostenloser Tarif zum Umschauen – keine Kreditkarte.",
       "button": "Desktop einschalten",
       "trialInfo": "Kostenloser Tarif verfügbar. Keine Kreditkarte erforderlich."
+    }
+  },
+  "agentsPage": {
+    "metaTitle": "Eine Sandbox für deine KI-Agenten: isolierte Cloud-Desktops",
+    "metaDescription": "Gib jedem KI-Agenten seinen eigenen isolierten Linux-Desktop in der Cloud, mit echtem Browser, Root-Zugriff, Snapshots und einer REST-API. Sieh jeden Klick und übernimm, wenn er hängen bleibt. Kostenloser Tarif verfügbar.",
+    "hero": {
+      "eyebrow": "Für Entwickler, die KI-Agenten betreiben",
+      "title": "Eine <box>Sandbox</box> für deine KI-Agenten",
+      "subtitle": "Gib jedem Agenten seinen eigenen isolierten Linux-Desktop in der Cloud, mit echtem Browser, Root-Zugriff und einer API. Sieh ihm bei der Arbeit zu und übernimm, wenn er hängen bleibt.",
+      "ctaPrimary": "Kostenlosen Desktop starten",
+      "ctaSecondary": "Zur API",
+      "note": "Kostenloser Tarif: {minutes}-Minuten-Sessions, keine Kreditkarte."
+    },
+    "demo": {
+      "summary": "Animation: Ein KI-Agent meldet sich in einem isolierten Cyqle-Desktop bei einem Lieferantenportal an und stoppt an einem Bestätigungscode. Eine Person gibt den Code mit ihrem eigenen Cursor ein und gibt die Kontrolle zurück. Der Agent exportiert eine Datei, danach startet derselbe Snapshot drei parallele Läufe.",
+      "labels": {
+        "agent": "dein Agent",
+        "human": "du",
+        "task": "Bestellungen des letzten Monats aus dem Lieferantenportal exportieren",
+        "boundary": "isolierter Desktop",
+        "network": "eigenes Netz",
+        "disk": "verschlüsselte Platte",
+        "browserUrl": "portal.supplier.example",
+        "signIn": "Anmelden",
+        "fieldEmail": "E-Mail",
+        "fieldPassword": "Passwort",
+        "fieldCode": "Bestätigungscode",
+        "export": "Exportieren",
+        "ordersTitle": "Bestellungen im September",
+        "terminalTitle": "Agenten-Log",
+        "logReady": "Desktop bereit aus snap-7f3a",
+        "logOpen": "öffne portal.supplier.example",
+        "logSignIn": "Anmeldung als ops@acme.example",
+        "logWait": "2FA-Code nötig, warte auf eine Person",
+        "logResumed": "fortgesetzt",
+        "logExport": "Bestellungen exportieren: September",
+        "logSaved": "gespeichert exports/orders-sep.csv",
+        "statusBoot": "Start aus deinem Snapshot",
+        "statusWorking": "Dein Agent arbeitet",
+        "statusAsk": "Pausiert: braucht einen 2FA-Code",
+        "statusHuman": "Du steuerst",
+        "statusHandback": "Zurück an deinen Agenten",
+        "statusDone": "Fertig, Datei gespeichert",
+        "statusClone": "Ein Snapshot, drei Läufe gleichzeitig",
+        "run": "Lauf"
+      }
+    },
+    "compare": {
+      "title": "Wo soll dein Agent laufen?",
+      "intro": "Ein Agent, der klickt und tippt, braucht einen ganzen Computer. Die Frage ist nur: wessen?",
+      "columns": {
+        "laptop": "Dein Laptop",
+        "headless": "Headless-Browser-Dienst",
+        "cyqle": "Cyqle-Desktop"
+      },
+      "rows": [
+        {
+          "label": "Worauf er zugreifen kann",
+          "laptop": "Deine Dateien, deine angemeldeten Konten, dein Netzwerk",
+          "headless": "Einen Browser, sonst nichts",
+          "cyqle": "Einen eigenen Desktop, mit nur dem, was du dort ablegst"
+        },
+        {
+          "label": "Wenn er hängen bleibt",
+          "laptop": "Du lässt alles stehen und entwirrst es",
+          "headless": "Logs lesen, raten, neu starten",
+          "cyqle": "Du öffnest denselben Desktop und übernimmst"
+        },
+        {
+          "label": "Ausgangszustand",
+          "laptop": "Was heute eben auf deinem Rechner liegt",
+          "headless": "Sauber, aber nur ein Browser",
+          "cyqle": "Ein Snapshot, einmal eingerichtet, bei jedem Lauf identisch"
+        },
+        {
+          "label": "Zehn Läufe gleichzeitig",
+          "laptop": "Ein Rechner, ein Lauf",
+          "headless": "Ja",
+          "cyqle": "Ja, ein Klon pro Lauf"
+        },
+        {
+          "label": "Wenn ein Lauf schiefgeht",
+          "laptop": "Es ist auf deinem Rechner passiert",
+          "headless": "Es bleibt eingegrenzt",
+          "cyqle": "Es bleibt eingegrenzt. Schließen und eine saubere Kopie starten"
+        }
+      ]
+    },
+    "features": {
+      "title": "Was jeder Desktop deinem Agenten mitgibt",
+      "items": [
+        {
+          "label": "Isolation",
+          "title": "Eigenes Netzwerk, eigene Platte",
+          "description": "Jeder Desktop hat sein eigenes Netzwerk und eigenen Speicher, verschlüsselt mit Schlüsseln, die für diese Session erzeugt wurden. Von deinem Laptop kommt nichts mit, außer du schickst es."
+        },
+        {
+          "label": "voller Desktop",
+          "title": "Root auf einem echten Linux-Desktop",
+          "description": "Browser, Terminal und voller Root-Zugriff. Installiere deinen Agenten und die Apps, die er bedienen muss. Was unter Linux läuft, läuft hier."
+        },
+        {
+          "label": "Snapshots",
+          "title": "Bei jedem Lauf derselbe Start",
+          "description": "Richte einen Desktop einmal so ein, wie dein Agent ihn braucht, und mach einen Snapshot. Jeder Lauf startet eine saubere Kopie, so färbt ein fehlgeschlagener Lauf nie auf den nächsten ab."
+        },
+        {
+          "label": "parallele Läufe",
+          "title": "Ein Snapshot, viele Läufe",
+          "description": "Starte aus deinem Code einen Klon pro Aufgabe. Jeder Klon ist ein eigener Desktop, Läufe teilen also nie ihren Zustand."
+        },
+        {
+          "label": "Pause & Fortsetzen",
+          "title": "Mitten im Lauf anhalten, später weitermachen",
+          "description": "Pause friert einen Desktop genau dort ein, wo er gerade ist. Beim Fortsetzen sind dieselben Fenster wieder da, mitten in der Aufgabe."
+        },
+        {
+          "label": "Mensch im Ablauf",
+          "title": "Eine Person kann eingreifen",
+          "description": "Dein Agent steuert mit seinem eigenen Cursor. Öffne denselben Desktop im Browser, um ihm zuzusehen, oder nimm deinen eigenen Cursor und übernimm."
+        }
+      ]
+    },
+    "api": {
+      "eyebrow": "REST-API",
+      "title": "Steuere den Desktop per HTTP",
+      "description": "Jeder Desktop ist ein API-Endpoint. Dein Agent liest den Bildschirm, bewegt seinen eigenen Cursor, tippt und führt Shell-Befehle aus. Dein Code entscheidet, wann ein Desktop geklont, pausiert oder geschlossen wird.",
+      "codeLabel": "agent-run.sh",
+      "comments": {
+        "boot": "Eine saubere Kopie deines Snapshots starten",
+        "act": "Mit dem eigenen Cursor deines Agenten klicken",
+        "pause": "Mitten im Lauf einfrieren, später fortsetzen"
+      },
+      "endpointsTitle": "Die Aufrufe, die dein Agent am häufigsten nutzt",
+      "endpoints": {
+        "boot": "Einen Desktop starten, auf Wunsch aus einem Snapshot",
+        "capture": "Einen beliebigen Bildschirmbereich erfassen",
+        "mouse": "Bewegen, klicken, ziehen, scrollen",
+        "keyboard": "Text tippen oder Tastenkombinationen drücken",
+        "exec": "Einen Shell-Befehl ausführen und die Ausgabe lesen",
+        "snapshot": "Einen eingerichteten Desktop als Snapshot sichern",
+        "pause": "Einfrieren; PUT …/resume setzt ihn fort",
+        "close": "Den Desktop schließen"
+      },
+      "cta": "API-Dokumentation lesen"
+    },
+    "steps": {
+      "title": "So läuft ein Lauf ab",
+      "items": [
+        {
+          "title": "Einmal einrichten",
+          "description": "Öffne einen Desktop, installiere deinen Agenten und seine Tools und melde dich dort an, wo er es braucht. Dann mach einen Snapshot."
+        },
+        {
+          "title": "Aus dem Code starten",
+          "description": "Starte für jede Aufgabe eine Kopie des Snapshots. Dein Agent arbeitet über die API, mit seinem eigenen Cursor."
+        },
+        {
+          "title": "Eingreifen, wenn er fragt",
+          "description": "Braucht dein Agent eine Person, etwa für einen 2FA-Code oder eine Entscheidung, öffne den Desktop und erledige diesen Schritt selbst. Dann gib die Kontrolle zurück."
+        }
+      ]
+    },
+    "factor": {
+      "eyebrow": "In jedem bezahlten Desktop enthalten",
+      "title": "Lieber keinen eigenen Agenten bauen?",
+      "description": "Factor, der mitsteuernde KI-Agent von Cyqle, arbeitet in denselben Desktops. Beschreibe die Aufgabe in deinen Worten und sieh ihm an seinem eigenen Cursor bei der Arbeit zu.",
+      "link": "Factor kennenlernen"
+    },
+    "pricing": {
+      "title": "Kostenlos starten. Pro Desktop zahlen.",
+      "free": {
+        "name": "Kostenlos",
+        "price": "${price}",
+        "per": "keine Kreditkarte",
+        "time": "{minutes}-Minuten-Sessions",
+        "specs": "{vcpu} vCPU · {ram} GB RAM",
+        "api": "API-Zugriff",
+        "fresh": "Startet jede Session frisch",
+        "snapshots": "Keine Snapshots",
+        "factor": "Ohne Factor",
+        "cta": "Kostenlosen Desktop starten"
+      },
+      "paid": {
+        "name": "Bezahlte Tarife",
+        "price": "ab ${from}",
+        "per": "pro Desktop / Monat",
+        "time": "Kein Zeitlimit pro Session",
+        "storage": "Dauerhafter Speicher und Snapshots",
+        "specs": "Bis zu {vcpu} vCPU · {ram} GB RAM",
+        "factor": "Factor, mit monatlichen KI-Credits",
+        "cta": "Tarife vergleichen"
+      }
+    },
+    "faq": {
+      "title": "Was Entwickler fragen",
+      "items": [
+        {
+          "q": "Wie isoliert ist ein Desktop?",
+          "a": "Jeder Desktop läuft in seiner eigenen isolierten Umgebung, mit eigenem Netzwerk und eigenem Speicher, verschlüsselt mit Schlüsseln, die für diese Session erzeugt wurden. Dein Agent erreicht das Internet und alles, was du dort installierst, aber weder deinen Laptop noch die Dateien deiner anderen Desktops."
+        },
+        {
+          "q": "Kann ich mein eigenes Agenten-Framework nutzen?",
+          "a": "Ja. Alles, was unter Linux läuft, funktioniert: dein eigener Code, Open-Source-Agenten-Frameworks, Skripte zur Browser-Automatisierung. Installiere es mit Root-Zugriff im Desktop, oder lass deinen Agenten außerhalb laufen und steuere den Desktop über die API."
+        },
+        {
+          "q": "Was passiert mit Dateien, wenn ein Lauf endet?",
+          "a": "Im kostenlosen Tarif startet jede Session frisch, und nichts wird behalten. Bezahlte Tarife behalten den Speicher eines Desktops zwischen Sessions, und Snapshots sichern einen Desktop, den du immer wieder starten kannst."
+        },
+        {
+          "q": "Kann eine Person mitten im Lauf übernehmen?",
+          "a": "Ja. Öffne den Desktop im Browser, und du hast deinen eigenen Cursor und deine eigene Tastatur neben denen deines Agenten. Erledige den Schritt und lass den Agenten weitermachen. Auch Teammitglieder können demselben Desktop beitreten."
+        },
+        {
+          "q": "Wie lasse ich Agenten parallel laufen?",
+          "a": "Mach einen Snapshot von einem eingerichteten Desktop und starte über die API einen Klon pro Aufgabe. Jeder Klon ist ein eigener Desktop, und du kannst so viele gleichzeitig laufen lassen, wie du Desktops in deinem Konto hast."
+        },
+        {
+          "q": "Was kostet das?",
+          "a": "Der kostenlose Tarif bietet kurze Sessions mit API-Zugriff, ohne Kosten. Bezahlte Tarife werden pro Desktop abgerechnet und bringen dauerhaften Speicher, Snapshots, Sessions ohne Zeitlimit und Factor mit. Die Tarife stehen weiter oben."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Gib deinem Agenten einen eigenen Computer",
+      "description": "Starte einen Desktop und installiere deinen Agenten. Der kostenlose Tarif braucht keine Kreditkarte.",
+      "button": "Kostenlosen Desktop starten",
+      "note": "Bezahlte Tarife ab ${from}/Monat pro Desktop."
     }
   },
   "footer": {

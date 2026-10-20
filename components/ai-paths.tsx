@@ -11,6 +11,8 @@ const VIEWPORT = { once: true, margin: '0px 0px -80px 0px' } as const;
 interface AiPathsProps {
   byoTitle: string;
   byoDescription: string;
+  byoHref: string;
+  byoLinkLabel: string;
   inHouseTitle: string;
   inHouseDescription: string;
   inHouseItems: string[];
@@ -21,6 +23,8 @@ interface AiPathsProps {
 export default function AiPaths({
   byoTitle,
   byoDescription,
+  byoHref,
+  byoLinkLabel,
   inHouseTitle,
   inHouseDescription,
   inHouseItems,
@@ -61,6 +65,14 @@ export default function AiPaths({
       >
         <h3 className="text-xl font-semibold text-gray-100">{byoTitle}</h3>
         <p className="mt-2 text-gray-300">{byoDescription}</p>
+        <TrackedLink
+          href={byoHref}
+          trackingKey="aiSectionAgents"
+          className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-teal-300 transition-colors hover:text-teal-200"
+        >
+          {byoLinkLabel}
+          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+        </TrackedLink>
       </motion.div>
       <motion.div
         variants={cardVariants(0.12)}

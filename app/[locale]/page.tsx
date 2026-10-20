@@ -263,6 +263,8 @@ export default async function Home({ params: { locale } }: Props) {
               <AiPaths
                 byoTitle={aiSectionT('byo.title')}
                 byoDescription={aiSectionT('byo.description')}
+                byoHref={`/${locale}/agents`}
+                byoLinkLabel={aiSectionT('byo.learnMore')}
                 inHouseTitle={aiSectionT('inHouse.title')}
                 inHouseDescription={aiSectionT('inHouse.description')}
                 inHouseItems={aiSectionT.raw('inHouse.items') as string[]}

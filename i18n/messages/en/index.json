@@ -82,7 +82,8 @@
     "description": "Cyqle isn't just a desktop. It's an automation platform — with a resident AI agent, and room for your own.",
     "byo": {
       "title": "Bring your own agents",
-      "description": "Every desktop is a real computer under your control. Run your own agents, architectures, and tools — whatever works at a desktop works here."
+      "description": "Every desktop is a real computer under your control. Run your own agents, architectures, and tools — whatever works at a desktop works here.",
+      "learnMore": "See the agent sandbox"
     },
     "inHouse": {
       "title": "Factor — the agent with its own cursor",
@@ -249,7 +250,7 @@
     }
   },
   "factorPage": {
-    "metaTitle": "Factor — The Co-Driving AI Agent | Cyqle",
+    "metaTitle": "Factor — The Co-Driving AI Agent",
     "metaDescription": "Factor is the AI agent in every Cyqle cloud desktop: its own cursor beside yours, full desktop and browser control, live takeover, replayable runs. Prepaid credits, no seat fees.",
     "hero": {
       "eyebrow": "Included in every paid Cyqle desktop",
@@ -356,6 +357,234 @@
       "description": "A desktop in seconds. Factor in every paid plan.\nFree tier to look around — no credit card.",
       "button": "Power On a Desktop",
       "trialInfo": "Free tier available. No credit card required."
+    }
+  },
+  "agentsPage": {
+    "metaTitle": "A Sandbox for Your AI Agents: Isolated Cloud Desktops",
+    "metaDescription": "Give each AI agent its own isolated Linux desktop in the cloud, with a real browser, root access, snapshots, and a REST API. Watch every click and take over when it gets stuck. Free tier available.",
+    "hero": {
+      "eyebrow": "For developers running AI agents",
+      "title": "A <box>sandbox</box> for your AI agents",
+      "subtitle": "Give every agent its own isolated Linux desktop in the cloud, with a real browser, root access, and an API. Watch it work, and take the controls when it gets stuck.",
+      "ctaPrimary": "Start a free desktop",
+      "ctaSecondary": "See the API",
+      "note": "Free tier: {minutes}-minute sessions, no credit card."
+    },
+    "demo": {
+      "summary": "Animation: an AI agent signs in to a supplier portal inside an isolated Cyqle desktop and stops at a verification code. A person types the code with their own cursor and hands back. The agent exports a file, and the same snapshot then boots three runs in parallel.",
+      "labels": {
+        "agent": "your agent",
+        "human": "you",
+        "task": "Export last month's orders from the supplier portal",
+        "boundary": "isolated desktop",
+        "network": "own network",
+        "disk": "encrypted disk",
+        "browserUrl": "portal.supplier.example",
+        "signIn": "Sign in",
+        "fieldEmail": "Email",
+        "fieldPassword": "Password",
+        "fieldCode": "Verification code",
+        "export": "Export orders",
+        "ordersTitle": "Orders, September",
+        "terminalTitle": "agent log",
+        "logReady": "desktop ready from snap-7f3a",
+        "logOpen": "open portal.supplier.example",
+        "logSignIn": "sign in as ops@acme.example",
+        "logWait": "2FA code needed, waiting for a person",
+        "logResumed": "resumed",
+        "logExport": "export orders: September",
+        "logSaved": "saved exports/orders-sep.csv",
+        "statusBoot": "Booting from your snapshot",
+        "statusWorking": "Your agent is working",
+        "statusAsk": "Paused: needs a 2FA code",
+        "statusHuman": "You're driving",
+        "statusHandback": "Back to your agent",
+        "statusDone": "Done, file saved",
+        "statusClone": "Same snapshot, three runs at once",
+        "run": "run"
+      }
+    },
+    "compare": {
+      "title": "Where should your agent run?",
+      "intro": "An agent that clicks and types needs a whole computer. The question is whose.",
+      "columns": {
+        "laptop": "Your laptop",
+        "headless": "Headless browser service",
+        "cyqle": "Cyqle desktop"
+      },
+      "rows": [
+        {
+          "label": "What it can reach",
+          "laptop": "Your files, your signed-in accounts, your network",
+          "headless": "A browser, and nothing else",
+          "cyqle": "A desktop of its own, holding only what you put there"
+        },
+        {
+          "label": "When it gets stuck",
+          "laptop": "You drop what you're doing to untangle it",
+          "headless": "Read the logs, guess, run it again",
+          "cyqle": "You open the same desktop and take the controls"
+        },
+        {
+          "label": "Starting point",
+          "laptop": "Whatever is on your machine today",
+          "headless": "Clean, but browser-only",
+          "cyqle": "A snapshot you set up once, identical every run"
+        },
+        {
+          "label": "Ten runs at once",
+          "laptop": "One machine, one run",
+          "headless": "Yes",
+          "cyqle": "Yes, one clone per run"
+        },
+        {
+          "label": "When a run goes wrong",
+          "laptop": "It went wrong on your machine",
+          "headless": "Contained",
+          "cyqle": "Contained. Close it and boot a fresh copy"
+        }
+      ]
+    },
+    "features": {
+      "title": "What every desktop gives your agent",
+      "items": [
+        {
+          "label": "isolation",
+          "title": "Its own network and its own disk",
+          "description": "Each desktop gets its own network and its own storage, encrypted with keys made for that session. Nothing from your laptop comes along unless you send it."
+        },
+        {
+          "label": "full desktop",
+          "title": "Root on a real Linux desktop",
+          "description": "A browser, a terminal, and full root access. Install your agent and the apps it needs to drive. If it runs on Linux, it runs here."
+        },
+        {
+          "label": "snapshots",
+          "title": "The same start, every run",
+          "description": "Set a desktop up once, the way your agent needs it, and snapshot it. Every run boots a fresh copy, so one bad run never leaks into the next."
+        },
+        {
+          "label": "parallel runs",
+          "title": "One snapshot, many runs",
+          "description": "Boot a clone for each task from your code. Every clone is a separate desktop, so runs never share state."
+        },
+        {
+          "label": "pause & resume",
+          "title": "Stop mid-run, pick up later",
+          "description": "Pause freezes a desktop exactly where it is. Resume brings back the same windows, mid-task."
+        },
+        {
+          "label": "human in the loop",
+          "title": "A person can step in",
+          "description": "Your agent drives with its own cursor. Open the same desktop in your browser to watch it work, or grab your own cursor and take over."
+        }
+      ]
+    },
+    "api": {
+      "eyebrow": "REST API",
+      "title": "Drive the desktop over HTTP",
+      "description": "Every desktop is an API endpoint. Your agent reads the screen, moves its own cursor, types, and runs shell commands. Your code decides when to clone a desktop and when to pause or close it.",
+      "codeLabel": "agent-run.sh",
+      "comments": {
+        "boot": "Boot a fresh copy of your snapshot",
+        "act": "Click with your agent's own cursor",
+        "pause": "Freeze it mid-run, resume later"
+      },
+      "endpointsTitle": "The calls your agent uses most",
+      "endpoints": {
+        "boot": "Boot a desktop, from a snapshot if you like",
+        "capture": "Capture any region of the screen",
+        "mouse": "Move, click, drag, scroll",
+        "keyboard": "Type text or press key combinations",
+        "exec": "Run a shell command and read the output",
+        "snapshot": "Snapshot a configured desktop",
+        "pause": "Freeze it; PUT …/resume picks it back up",
+        "close": "Close the desktop"
+      },
+      "cta": "Read the API docs"
+    },
+    "steps": {
+      "title": "How a run works",
+      "items": [
+        {
+          "title": "Set it up once",
+          "description": "Open a desktop, install your agent and its tools, and sign in to what it needs. Then take a snapshot."
+        },
+        {
+          "title": "Run it from code",
+          "description": "Boot a copy of the snapshot for each task. Your agent works through the API, with its own cursor."
+        },
+        {
+          "title": "Step in when it asks",
+          "description": "When your agent needs a person, for a 2FA code or a judgment call, open the desktop and do that step yourself. Then hand it back."
+        }
+      ]
+    },
+    "factor": {
+      "eyebrow": "Included in every paid desktop",
+      "title": "Rather not build the agent yourself?",
+      "description": "Factor, Cyqle's co-driving AI agent, works in the same desktops. Describe the task in plain words and watch it work at its own cursor.",
+      "link": "Meet Factor"
+    },
+    "pricing": {
+      "title": "Start free. Pay per desktop.",
+      "free": {
+        "name": "Free",
+        "price": "${price}",
+        "per": "no credit card",
+        "time": "{minutes}-minute sessions",
+        "specs": "{vcpu} vCPU · {ram} GB RAM",
+        "api": "API access",
+        "fresh": "Starts clean every session",
+        "snapshots": "No snapshots",
+        "factor": "Factor not included",
+        "cta": "Start a free desktop"
+      },
+      "paid": {
+        "name": "Paid plans",
+        "price": "from ${from}",
+        "per": "per desktop / month",
+        "time": "No session time limit",
+        "storage": "Persistent storage and snapshots",
+        "specs": "Up to {vcpu} vCPU · {ram} GB RAM",
+        "factor": "Factor, with monthly AI credits",
+        "cta": "Compare plans"
+      }
+    },
+    "faq": {
+      "title": "Questions developers ask",
+      "items": [
+        {
+          "q": "How isolated is a desktop?",
+          "a": "Each desktop runs in its own isolated environment, with its own network and its own storage, encrypted with keys created for that session. Your agent can reach the internet and whatever you install there, not your laptop or the files on your other desktops."
+        },
+        {
+          "q": "Can I bring my own agent framework?",
+          "a": "Yes. Anything that runs on Linux works: your own code, open-source agent frameworks, browser automation scripts. Install it inside the desktop with root access, or keep your agent outside and drive the desktop through the API."
+        },
+        {
+          "q": "What happens to files when a run ends?",
+          "a": "On the free tier, every session starts clean and nothing is kept. Paid plans keep a desktop's storage between sessions, and snapshots save a desktop you can boot again and again."
+        },
+        {
+          "q": "Can a person take over in the middle of a run?",
+          "a": "Yes. Open the desktop in your browser and you get your own cursor and keyboard next to your agent's. Do the step, then let the agent carry on. Teammates can join the same desktop too."
+        },
+        {
+          "q": "How do I run agents in parallel?",
+          "a": "Snapshot a configured desktop, then boot one clone per task through the API. Each clone is its own desktop, and you can run as many at once as you have desktops on your account."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "The free tier gives you short sessions with API access, at no cost. Paid plans are billed per desktop and add persistent storage, snapshots, unlimited session time, and Factor. The plans are listed above."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Give your agent its own computer",
+      "description": "Boot a desktop and install your agent. The free tier needs no credit card.",
+      "button": "Start a free desktop",
+      "note": "Paid plans from ${from}/month per desktop."
     }
   },
   "footer": {

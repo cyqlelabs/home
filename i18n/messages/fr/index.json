@@ -82,7 +82,8 @@
     "description": "Cyqle n'est pas qu'un bureau. C'est une plateforme d'automatisation — avec un agent IA résident, et de la place pour les vôtres.",
     "byo": {
       "title": "Amenez vos propres agents",
-      "description": "Chaque bureau est un véritable ordinateur sous votre contrôle. Exécutez vos propres agents, architectures et outils : ce qui tourne sur un bureau tourne ici."
+      "description": "Chaque bureau est un véritable ordinateur sous votre contrôle. Exécutez vos propres agents, architectures et outils : ce qui tourne sur un bureau tourne ici.",
+      "learnMore": "Découvrir le sandbox pour agents"
     },
     "inHouse": {
       "title": "Factor — l'agent avec son propre curseur",
@@ -249,7 +250,7 @@
     }
   },
   "factorPage": {
-    "metaTitle": "Factor — L'agent IA copilote | Cyqle",
+    "metaTitle": "Factor — L'agent IA copilote",
     "metaDescription": "Factor est l'agent IA de chaque bureau cloud Cyqle : son propre curseur à côté du vôtre, le contrôle complet du bureau et du navigateur, une reprise en main en direct, des exécutions rejouables. Crédits prépayés, sans frais par poste.",
     "hero": {
       "eyebrow": "Inclus dans chaque bureau Cyqle payant",
@@ -356,6 +357,234 @@
       "description": "Un bureau en quelques secondes. Factor dans chaque formule payante.\nUne formule gratuite pour découvrir — sans carte bancaire.",
       "button": "Allumer un bureau",
       "trialInfo": "Formule gratuite disponible. Sans carte bancaire."
+    }
+  },
+  "agentsPage": {
+    "metaTitle": "Un sandbox pour vos agents IA : des bureaux cloud isolés",
+    "metaDescription": "Donnez à chaque agent IA son propre bureau Linux isolé dans le cloud, avec un vrai navigateur, l'accès root, des snapshots et une API REST. Suivez chaque clic et reprenez la main quand il bloque. Formule gratuite disponible.",
+    "hero": {
+      "eyebrow": "Pour les développeurs qui font tourner des agents IA",
+      "title": "Un <box>sandbox</box> pour vos agents IA",
+      "subtitle": "Donnez à chaque agent son propre bureau Linux isolé dans le cloud, avec un vrai navigateur, l'accès root et une API. Regardez-le travailler et reprenez la main quand il bloque.",
+      "ctaPrimary": "Lancer un bureau gratuit",
+      "ctaSecondary": "Voir l'API",
+      "note": "Formule gratuite : sessions de {minutes} minutes, sans carte bancaire."
+    },
+    "demo": {
+      "summary": "Animation : un agent IA se connecte au portail d'un fournisseur dans un bureau Cyqle isolé et s'arrête devant un code de vérification. Une personne saisit le code avec son propre curseur et lui rend la main. L'agent exporte un fichier, puis le même snapshot lance trois exécutions en parallèle.",
+      "labels": {
+        "agent": "votre agent",
+        "human": "vous",
+        "task": "Exporter les commandes du mois dernier depuis le portail fournisseur",
+        "boundary": "bureau isolé",
+        "network": "réseau dédié",
+        "disk": "disque chiffré",
+        "browserUrl": "portal.supplier.example",
+        "signIn": "Connexion",
+        "fieldEmail": "E-mail",
+        "fieldPassword": "Mot de passe",
+        "fieldCode": "Code de vérification",
+        "export": "Exporter",
+        "ordersTitle": "Commandes de septembre",
+        "terminalTitle": "journal de l'agent",
+        "logReady": "bureau prêt depuis snap-7f3a",
+        "logOpen": "ouvrir portal.supplier.example",
+        "logSignIn": "connexion en tant que ops@acme.example",
+        "logWait": "code 2FA requis, en attente d'une personne",
+        "logResumed": "reprise",
+        "logExport": "exporter les commandes : septembre",
+        "logSaved": "enregistré exports/orders-sep.csv",
+        "statusBoot": "Démarrage depuis votre snapshot",
+        "statusWorking": "Votre agent travaille",
+        "statusAsk": "En pause : il faut un code 2FA",
+        "statusHuman": "Vous avez la main",
+        "statusHandback": "Main rendue à votre agent",
+        "statusDone": "Terminé, fichier enregistré",
+        "statusClone": "Même snapshot, trois exécutions à la fois",
+        "run": "exécution"
+      }
+    },
+    "compare": {
+      "title": "Où faire tourner votre agent ?",
+      "intro": "Un agent qui clique et tape a besoin d'un ordinateur entier. Reste à savoir lequel.",
+      "columns": {
+        "laptop": "Votre portable",
+        "headless": "Service de navigateur headless",
+        "cyqle": "Bureau Cyqle"
+      },
+      "rows": [
+        {
+          "label": "Ce qu'il peut atteindre",
+          "laptop": "Vos fichiers, vos comptes connectés, votre réseau",
+          "headless": "Un navigateur, et rien d'autre",
+          "cyqle": "Un bureau à lui, avec seulement ce que vous y mettez"
+        },
+        {
+          "label": "Quand il bloque",
+          "laptop": "Vous lâchez tout pour le débloquer",
+          "headless": "Lire les logs, deviner, relancer",
+          "cyqle": "Vous ouvrez le même bureau et prenez la main"
+        },
+        {
+          "label": "Point de départ",
+          "laptop": "Ce qui traîne sur votre machine aujourd'hui",
+          "headless": "Propre, mais uniquement un navigateur",
+          "cyqle": "Un snapshot préparé une fois, identique à chaque exécution"
+        },
+        {
+          "label": "Dix exécutions à la fois",
+          "laptop": "Une machine, une exécution",
+          "headless": "Oui",
+          "cyqle": "Oui, un clone par exécution"
+        },
+        {
+          "label": "Quand une exécution tourne mal",
+          "laptop": "Ça s'est passé sur votre machine",
+          "headless": "C'est contenu",
+          "cyqle": "C'est contenu. Fermez-le et lancez une copie propre"
+        }
+      ]
+    },
+    "features": {
+      "title": "Ce que chaque bureau apporte à votre agent",
+      "items": [
+        {
+          "label": "isolation",
+          "title": "Son propre réseau et son propre disque",
+          "description": "Chaque bureau a son propre réseau et son propre stockage, chiffré avec des clés créées pour cette session. Rien de votre portable ne le suit, sauf ce que vous envoyez."
+        },
+        {
+          "label": "bureau complet",
+          "title": "Root sur un vrai bureau Linux",
+          "description": "Un navigateur, un terminal et l'accès root complet. Installez votre agent et les applications qu'il doit piloter. Si ça tourne sous Linux, ça tourne ici."
+        },
+        {
+          "label": "snapshots",
+          "title": "Le même départ, à chaque exécution",
+          "description": "Préparez un bureau une fois, comme votre agent en a besoin, puis prenez-en un snapshot. Chaque exécution démarre une copie propre : une exécution ratée ne contamine jamais la suivante."
+        },
+        {
+          "label": "exécutions parallèles",
+          "title": "Un snapshot, de nombreuses exécutions",
+          "description": "Lancez un clone par tâche depuis votre code. Chaque clone est un bureau distinct : les exécutions ne partagent jamais leur état."
+        },
+        {
+          "label": "pause et reprise",
+          "title": "Arrêtez en cours de route, reprenez plus tard",
+          "description": "La pause fige un bureau exactement là où il en est. À la reprise, les mêmes fenêtres reviennent, en pleine tâche."
+        },
+        {
+          "label": "humain dans la boucle",
+          "title": "Une personne peut intervenir",
+          "description": "Votre agent pilote avec son propre curseur. Ouvrez le même bureau dans votre navigateur pour le regarder travailler, ou prenez votre propre curseur et reprenez la main."
+        }
+      ]
+    },
+    "api": {
+      "eyebrow": "API REST",
+      "title": "Pilotez le bureau en HTTP",
+      "description": "Chaque bureau est un endpoint d'API. Votre agent lit l'écran, déplace son propre curseur, tape du texte et exécute des commandes shell. Votre code décide quand cloner un bureau, et quand le mettre en pause ou le fermer.",
+      "codeLabel": "agent-run.sh",
+      "comments": {
+        "boot": "Démarrer une copie propre de votre snapshot",
+        "act": "Cliquer avec le curseur de votre agent",
+        "pause": "Le figer en cours de route, reprendre plus tard"
+      },
+      "endpointsTitle": "Les appels que votre agent utilise le plus",
+      "endpoints": {
+        "boot": "Démarrer un bureau, depuis un snapshot si vous voulez",
+        "capture": "Capturer n'importe quelle zone de l'écran",
+        "mouse": "Déplacer, cliquer, glisser, faire défiler",
+        "keyboard": "Taper du texte ou des combinaisons de touches",
+        "exec": "Exécuter une commande shell et lire la sortie",
+        "snapshot": "Prendre un snapshot d'un bureau configuré",
+        "pause": "Le figer ; PUT …/resume le relance",
+        "close": "Fermer le bureau"
+      },
+      "cta": "Lire la documentation de l'API"
+    },
+    "steps": {
+      "title": "Comment se déroule une exécution",
+      "items": [
+        {
+          "title": "Préparez-le une fois",
+          "description": "Ouvrez un bureau, installez votre agent et ses outils, et connectez-vous à ce dont il a besoin. Puis prenez un snapshot."
+        },
+        {
+          "title": "Lancez-le depuis votre code",
+          "description": "Démarrez une copie du snapshot pour chaque tâche. Votre agent travaille via l'API, avec son propre curseur."
+        },
+        {
+          "title": "Intervenez quand il le demande",
+          "description": "Quand votre agent a besoin d'une personne, pour un code 2FA ou une décision, ouvrez le bureau et faites cette étape vous-même. Puis rendez-lui la main."
+        }
+      ]
+    },
+    "factor": {
+      "eyebrow": "Inclus dans chaque bureau payant",
+      "title": "Vous préférez ne pas construire l'agent ?",
+      "description": "Factor, l'agent IA copilote de Cyqle, travaille dans les mêmes bureaux. Décrivez la tâche avec vos mots et regardez-le travailler avec son propre curseur.",
+      "link": "Découvrir Factor"
+    },
+    "pricing": {
+      "title": "Commencez gratuitement. Payez par bureau.",
+      "free": {
+        "name": "Gratuit",
+        "price": "${price}",
+        "per": "sans carte bancaire",
+        "time": "Sessions de {minutes} minutes",
+        "specs": "{vcpu} vCPU · {ram} Go de RAM",
+        "api": "Accès à l'API",
+        "fresh": "Repart à zéro à chaque session",
+        "snapshots": "Pas de snapshots",
+        "factor": "Factor non inclus",
+        "cta": "Lancer un bureau gratuit"
+      },
+      "paid": {
+        "name": "Formules payantes",
+        "price": "dès ${from}",
+        "per": "par bureau / mois",
+        "time": "Aucune limite de durée de session",
+        "storage": "Stockage persistant et snapshots",
+        "specs": "Jusqu'à {vcpu} vCPU · {ram} Go de RAM",
+        "factor": "Factor, avec des crédits IA mensuels",
+        "cta": "Comparer les formules"
+      }
+    },
+    "faq": {
+      "title": "Les questions des développeurs",
+      "items": [
+        {
+          "q": "À quel point un bureau est-il isolé ?",
+          "a": "Chaque bureau tourne dans son propre environnement isolé, avec son propre réseau et son propre stockage, chiffré avec des clés créées pour cette session. Votre agent accède à Internet et à ce que vous y installez, pas à votre portable ni aux fichiers de vos autres bureaux."
+        },
+        {
+          "q": "Puis-je utiliser mon propre framework d'agents ?",
+          "a": "Oui. Tout ce qui tourne sous Linux fonctionne : votre propre code, des frameworks d'agents open source, des scripts d'automatisation de navigateur. Installez-le dans le bureau avec l'accès root, ou gardez votre agent à l'extérieur et pilotez le bureau via l'API."
+        },
+        {
+          "q": "Que deviennent les fichiers à la fin d'une exécution ?",
+          "a": "Avec la formule gratuite, chaque session repart de zéro et rien n'est conservé. Les formules payantes conservent le stockage d'un bureau d'une session à l'autre, et les snapshots enregistrent un bureau que vous pouvez relancer autant de fois que vous voulez."
+        },
+        {
+          "q": "Une personne peut-elle prendre la main en pleine exécution ?",
+          "a": "Oui. Ouvrez le bureau dans votre navigateur : vous avez votre propre curseur et votre propre clavier à côté de ceux de votre agent. Faites l'étape, puis laissez l'agent continuer. Vos collègues peuvent aussi rejoindre le même bureau."
+        },
+        {
+          "q": "Comment faire tourner des agents en parallèle ?",
+          "a": "Prenez un snapshot d'un bureau configuré, puis lancez un clone par tâche via l'API. Chaque clone est un bureau à part entière, et vous pouvez en faire tourner simultanément autant que vous avez de bureaux sur votre compte."
+        },
+        {
+          "q": "Combien ça coûte ?",
+          "a": "La formule gratuite offre des sessions courtes avec un accès à l'API, sans frais. Les formules payantes sont facturées par bureau et ajoutent le stockage persistant, les snapshots, des sessions sans limite de durée et Factor. Les formules sont détaillées plus haut."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Donnez à votre agent son propre ordinateur",
+      "description": "Lancez un bureau et installez votre agent. La formule gratuite ne demande pas de carte bancaire.",
+      "button": "Lancer un bureau gratuit",
+      "note": "Formules payantes dès ${from}/mois par bureau."
     }
   },
   "footer": {
